@@ -1,4 +1,4 @@
-# OpenMRS 3.0 Reference Application
+# SSEMR
 
 This project holds the build configuration for the SSEMR application, found on
 https://ssemr.intellisoftkenya.com/openmrs/spa
