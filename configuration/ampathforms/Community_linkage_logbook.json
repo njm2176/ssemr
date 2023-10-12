@@ -1,0 +1,198 @@
+{
+	"name": "Community Linkage logbook",
+	"pages": [
+		{
+			"label": "Visit Details",
+			"sections": [
+				{
+					"label": "Visit Details",
+					"isExpanded": "true",
+					"questions": [
+						{
+							"label": "Date:",
+							"type": "encounterDatetime",
+							"questionOptions": {
+								"rendering": "ui-select-extended"
+							},
+							"id": "encDate"
+						},
+						{
+							"label": "Provider:",
+							"type": "encounterProvider",
+							"questionOptions": {
+								"rendering": "ui-select-extended"
+							},
+							"id": "encProvider "
+						},
+						{
+							"label": "Location:",
+							"type": "encounterLocation",
+							"questionOptions": {
+								"rendering": "ui-select-extended"
+							},
+							"id": "encLocation"
+						}
+					]
+				}
+			]
+		},
+		{
+			"label": "Client Details",
+			"sections": [
+				{
+					"label": "Client details",
+					"isExpanded": "true",
+					"questions": [
+						{
+							"label": "Date of entry",
+							"type": "obs",
+							"required": false,
+							"id": "sno",
+							"questionOptions": {
+								"rendering": "date",
+								"concept": "c09e9674-4bca-40e6-b6d6-7dc790900b50",
+								"conceptMappings": [],
+								"answers": []
+							},
+							"validators": []
+						},
+						{
+							"label": "UAN",
+							"type": "obs",
+							"required": false,
+							"id": "uan",
+							"questionOptions": {
+								"rendering": "text",
+								"concept": "e8d6ed35-dad7-4370-a2fb-017a758406f4",
+								"conceptMappings": [],
+								"answers": []
+							},
+							"validators": []
+						},
+						{
+							"label": "Category of the client",
+							"type": "obs",
+							"required": false,
+							"id": "clientCategory",
+							"questionOptions": {
+								"rendering": "select",
+								"concept": "579c3be1-7012-4956-b25d-77b686b70081",
+								"conceptMappings": [],
+								"answers": [
+									{
+										"concept": "65057ee0-acf4-4536-bf60-a9675fb96d42",
+										"label": "Breast feeding Woman"
+									},
+									{
+										"concept": "2826a1bd-df43-4488-b72b-bc53d6331674",
+										"label": "Pregnant"
+									},
+									{
+										"concept": "54f0a4fb-477a-4bb2-977d-59b6ec3d4b34",
+										"label": "TX_New"
+									}
+								]
+							},
+							"validators": []
+						},
+						{
+							"label": "Name of the COV assigned",
+							"type": "obs",
+							"required": false,
+							"id": "covAssigned",
+							"questionOptions": {
+								"rendering": "text",
+								"concept": "5b258179-1872-4339-8b29-5ecf618bd4d3",
+								"conceptMappings": [],
+								"answers": []
+							},
+							"validators": []
+						},
+						{
+							"label": "Client met COV in the community",
+							"type": "obs",
+							"required": false,
+							"id": "clientMetCov",
+							"questionOptions": {
+								"rendering": "select",
+								"concept": "9d38ebe3-85fe-486d-9b76-798ce890e99a",
+								"conceptMappings": [],
+								"answers": [
+									{
+										"concept": "true",
+										"label": "Yes"
+									},
+									{
+										"concept": "false",
+										"label": "No"
+									}
+								]
+							},
+							"validators": []
+						},
+						{
+							"label": "Date client met the COV",
+							"type": "obs",
+							"required": false,
+							"id": "dateClientMetCov",
+							"questionOptions": {
+								"rendering": "date",
+								"concept": "fef6ef98-6d8d-4921-80f2-93255a7a5faf",
+								"conceptMappings": [],
+								"answers": []
+							},
+							"validators": []
+						},
+						{
+							"label": "COV knows the client’s home address",
+							"type": "obs",
+							"required": false,
+							"id": "covKnows",
+							"questionOptions": {
+								"rendering": "select",
+								"concept": "fb4b5185-a416-42b0-b949-96438f7b99a8",
+								"conceptMappings": [],
+								"answers": [
+									{
+										"concept": "d920ae36-79ce-49e8-b959-dca64de2cf45",
+										"label": "Meet at agreed location"
+									},
+									{
+										"concept": "5a28999d-abcb-49c9-9a07-fb4d31292c24",
+										"label": "Phone connections"
+									},
+									{
+										"concept": "48ac7ac9-f95a-4a78-a7b3-88653885b751",
+										"label": "Seen home address"
+									}
+								]
+							},
+							"validators": []
+						},
+						{
+							"label": "Comments",
+							"type": "obs",
+							"required": false,
+							"id": "comments",
+							"questionOptions": {
+								"rendering": "text",
+								"concept": "c3659bf9-3f10-11e4-adec-0800271c1b75",
+								"conceptMappings": [],
+								"answers": []
+							},
+							"validators": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"processor": "EncounterFormProcessor",
+	"encounterType": "",
+	"referencedForms": [],
+	"uuid": "",
+	"description": "Community linkage logbook",
+	"published": true,
+	"retired": false,
+	"encounter": "Community Linkage"
+}
