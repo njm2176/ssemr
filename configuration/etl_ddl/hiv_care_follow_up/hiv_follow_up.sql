@@ -24,7 +24,7 @@ BEGIN
 
 -- Create table hiv_care_follow_up --
 
-CREATE TABLE ssemr.ssemr_flat_encounter_hiv_care_follow_up
+CREATE TABLE flat_encounter_hiv_care_follow_up
 (
     date_of_death                                DATE,
     lost_to_follow_up                            VARCHAR(255),
@@ -65,7 +65,7 @@ CREATE TABLE ssemr.ssemr_flat_encounter_hiv_care_follow_up
 
     UPDATE ssemr.etl_script_status SET stop_time = NOW() WHERE id = script_id;
     
-    SELECT "Successfully created ssemr_flat_encounter_hiv_care_follow_up table";
+    SELECT "Successfully created flat_encounter_hiv_care_follow_up table";
     
 END //
 

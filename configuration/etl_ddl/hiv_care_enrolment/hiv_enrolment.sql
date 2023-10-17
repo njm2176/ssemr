@@ -27,7 +27,7 @@ BEGIN
 
 -- Create table hiv_care_enrolment --
 
-CREATE TABLE ssemr.ssemr_flat_encounter_hiv_care_enrolment
+CREATE TABLE flat_encounter_hiv_care_enrolment
 (
     date_first_tested_positive                        DATE,
     place_first_tested_positive                       VARCHAR(255),
@@ -89,8 +89,8 @@ CREATE TABLE ssemr.ssemr_flat_encounter_hiv_care_enrolment
     -- Update the etl_script_status with the stop time
     UPDATE ssemr.etl_script_status SET stop_time = NOW() WHERE id = script_id;
     
-    SELECT "Successfully created ssemr_flat_encounter_hiv_care_enrolment table";
-    
+    SELECT "Successfully created flat_encounter_hiv_care_enrolment table";
+
 END //
 
 DELIMITER ;
