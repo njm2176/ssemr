@@ -1,17 +1,48 @@
 <addressConfiguration>
     <addressComponents>
-		<addressComponent>
-            <field>LANDMARK</field>
-            <nameMapping>Location.neighborhood</nameMapping>
+        <addressComponent>
+            <field>COUNTRY</field>
+            <nameMapping>Location.country</nameMapping>
             <sizeMapping>40</sizeMapping>
-			<elementDefault>addresshierarchy.healthFacility</elementDefault>
+            <elementDefault>South Sudan</elementDefault>
+            <requiredInHierarchy>true</requiredInHierarchy>
+        </addressComponent>
+        <addressComponent>
+            <field>STATE</field>
+            <nameMapping>Location.address1</nameMapping>
+            <sizeMapping>40</sizeMapping>
+            <requiredInHierarchy>true</requiredInHierarchy>
+        </addressComponent>
+        <addressComponent>
+            <field>COUNTY</field>
+            <nameMapping>Location.address2</nameMapping>
+            <sizeMapping>40</sizeMapping>
+            <requiredInHierarchy>true</requiredInHierarchy>
+        </addressComponent>
+        <addressComponent>
+            <field>PAYAM</field>
+            <nameMapping>Location.address3</nameMapping>
+            <sizeMapping>40</sizeMapping>
+            <requiredInHierarchy>true</requiredInHierarchy>
+        </addressComponent>
+        <addressComponent>
+            <field>BOMA</field>
+            <nameMapping>Location.address4</nameMapping>
+            <sizeMapping>40</sizeMapping>
             <requiredInHierarchy>true</requiredInHierarchy>
         </addressComponent>
         <addressComponent>
             <field>VILLAGE</field>
-            <nameMapping>Location.cityVillage</nameMapping>
+            <nameMapping>Location.address5</nameMapping>
             <sizeMapping>40</sizeMapping>
-            <requiredInHierarchy>true</requiredInHierarchy>
+            <requiredInHierarchy>false</requiredInHierarchy>
+        </addressComponent>
+		<addressComponent>
+            <field>LANDMARK</field>
+            <nameMapping>Location.address6</nameMapping>
+            <sizeMapping>40</sizeMapping>
+			<elementDefault>addresshierarchy.healthFacility</elementDefault>
+            <requiredInHierarchy>false</requiredInHierarchy>
         </addressComponent>
 	</addressComponents>
     <lineByLineFormat>
