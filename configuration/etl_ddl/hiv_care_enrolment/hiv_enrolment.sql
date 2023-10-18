@@ -1,29 +1,5 @@
-DELIMITER //
-
-DROP PROCEDURE IF EXISTS ssemr_etl_tables;
-
--- Create the procedure
-CREATE PROCEDURE ssemr_etl_tables()
-BEGIN
-    DECLARE script_id INT(11);
-
-    -- Drop the etl_script_status table if it exists
-    DROP TABLE IF EXISTS ssemr.etl_script_status;
-
-    -- Create the etl_script_status table
-    CREATE TABLE ssemr.etl_script_status
-    (
-        id          INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-        script_name VARCHAR(50)  DEFAULT null,
-        start_time  DATETIME     DEFAULT NULL,
-        stop_time   DATETIME     DEFAULT NULL,
-        error       VARCHAR(255) DEFAULT NULL
-    );
-
-    -- Log start time
-    INSERT INTO ssemr.etl_script_status(script_name, start_time) VALUES ('initial_creation_of_tables', NOW());
-    SET script_id = LAST_INSERT_ID();
-
+-- Drop the table if exists --
+DROP TABLE IF EXISTS flat_encounter_hiv_care_enrolment;
 
 -- Create table hiv_care_enrolment --
 
@@ -85,15 +61,5 @@ CREATE TABLE flat_encounter_hiv_care_enrolment
     art_treatment_reasons_for_stop                    VARCHAR(255),
     date_if_restarted                                 DATE
 );
-
-    -- Update the etl_script_status with the stop time
-    UPDATE ssemr.etl_script_status SET stop_time = NOW() WHERE id = script_id;
     
     SELECT "Successfully created flat_encounter_hiv_care_enrolment table";
-
-END //
-
-DELIMITER ;
-
--- Call the procedure
-CALL ssemr_etl_tables();

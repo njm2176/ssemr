@@ -1,25 +1,6 @@
-DELIMITER //
+-- DROP Table if exists --
 
-DROP PROCEDURE IF EXISTS ssemr_etl_tables;
-
--- Create the procedure
-CREATE PROCEDURE ssemr_etl_tables()
-BEGIN
-    DECLARE script_id INT(11);
-
-    DROP TABLE IF EXISTS ssemr.etl_script_status;
-
-    CREATE TABLE ssemr.etl_script_status
-    (
-        id          INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-        script_name VARCHAR(50)  DEFAULT null,
-        start_time  DATETIME     DEFAULT NULL,
-        stop_time   DATETIME     DEFAULT NULL,
-        error       VARCHAR(255) DEFAULT NULL
-    );
- 
-    INSERT INTO ssemr.etl_script_status(script_name, start_time) VALUES ('initial_creation_of_tables', NOW());
-    SET script_id = LAST_INSERT_ID();
+DROP TABLE IF EXISTS flat_encounter_tb_screening;
 
 
 -- Create table tb_screening --
@@ -42,14 +23,5 @@ CREATE TABLE flat_encounter_tb_screening
     tb_diagnosed                             VARCHAR(255),
     hivtc_tb_type                            VARCHAR(255)
 );
-
-    UPDATE ssemr.etl_script_status SET stop_time = NOW() WHERE id = script_id;
     
     SELECT "Successfully created flat_encounter_tb_screening table";
-    
-END //
-
-DELIMITER ;
-
--- Call the procedure
-CALL ssemr_etl_tables();
