@@ -1,0 +1,619 @@
+{
+  "name": "HIV Enrollment South",
+  "description": "HIV Enrollment",
+  "version": "1",
+  "retired": false,
+  "encounter": "HIV Enrollment",
+  "processor": "EncounterFormProcessor",
+  "referencedForms": [],
+  "pages": [
+    {
+      "label": "HIV Enrollment",
+      "sections": [
+        {
+          "label": "Encounter Details",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Visit date:",
+              "type": "encounterDatetime",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ],
+              "id": "encDate"
+            },
+            {
+              "label": "Provider:",
+              "type": "encounterProvider",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "encProvider "
+            },
+            {
+              "label": "Location:",
+              "type": "encounterLocation",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "encLocation"
+            }
+          ]
+        },
+        {
+          "label": "Client identification",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Treatment supporter’s name (if disclosed) ",
+              "type": "obs",
+              "id": "supporterName",
+              "questionOptions": {
+                "concept": "79454234-7515-4f84-9081-ba50d22e4eac",
+                "rendering": "text"
+              }
+            },
+            {
+              "label": "Treatment supporter’s telephone",
+              "type": "obs",
+              "id": "supporterPhone",
+              "questionOptions": {
+                "concept": "5301d9dc-7b9a-401f-94bc-9a13d371a145",
+                "rendering": "text"
+              }
+            },
+            {
+              "label": "Address of treatment supporter",
+              "type": "obs",
+              "id": "supporterAddress",
+              "questionOptions": {
+                "concept": "3d34d4ff-8e3e-4147-83c9-b5005501a34c",
+                "rendering": "text"
+              }
+            },
+            {
+              "label": "Home based care provided by",
+              "type": "obs",
+              "id": "homeBaseCare",
+              "questionOptions": {
+                "concept": "67321ae6-2bdb-4af6-8491-ee91de346404",
+                "rendering": "text"
+              }
+            },
+            {
+              "label": "Date first tested  HIV+ ",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "7482b976-56fe-44b0-b30f-1e957cc0cbb0"
+              },
+              "id": "confirmedPositiveDate",
+              "required": "true",
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ]
+            },
+            {
+              "label": "Place where test done",
+              "type": "obs",
+              "id": "facilityConfirmed",
+              "questionOptions": {
+                "concept": "2e528392-b1dc-4bcc-bf7a-cc8250082174",
+                "rendering": "text"
+              }
+            },
+            {
+              "label": "Entry point",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "0ee6f07d-2fad-472f-a2f8-84c0257f5b70",
+                "answers": [
+                  {
+                    "concept": "ec5d13de-ee22-4d8a-b39c-bdee6cd3d88c",
+                    "label": "VCT"
+                  },
+                  {
+                    "concept": "04c64451-9e19-43e9-ac3d-9333824bc1dd",
+                    "label": "TB Clinic"
+                  },
+                  {
+                    "concept": "dfa49cd5-3859-4184-84cc-ada016092680",
+                    "label": "STI Clinic"
+                  },
+                  {
+                    "concept": "17f90888-9c88-4db2-8750-edb1d760a9ca",
+                    "label": "ANC"
+                  },
+                  {
+                    "concept": "62cceeab-adf9-4f3b-bdb3-89687557ecab",
+                    "label": "In patient"
+                  },
+                  {
+                    "concept": "8244fd10-f813-4e52-a13e-9e3df7cd599c",
+                    "label": "OPD"
+                  },
+                  {
+                    "concept": "10f6dfd0-c23c-4fad-9f9b-1948ecba3d40",
+                    "label": "Pediatric"
+                  },
+                  {
+                    "concept": "cb976d23-ab3e-4369-a88f-73f56505783b",
+                    "label": "CBTC"
+                  },
+                  {
+                    "concept": "d2e964c9-c546-4444-8fca-5179a22c8b31",
+                    "label": "Nutrition"
+                  },
+                  {
+                    "concept": "8fc10249-842b-4944-8018-c758bd0263d8",
+                    "label": "Index testing"
+                  },
+                  {
+                    "concept": "0464a6fd-d3c5-427b-b147-3f156ac86d63",
+                    "label": "Other"
+                  }
+                ]
+              },
+              "id": "entryPoint",
+              "required": "true"
+            },
+            {
+              "label": "Other Entry point",
+              "type": "obs",
+              "id": "OtherEntryPoint",
+              "questionOptions": {
+                "concept": "80732fbe-6f6f-4fca-bbd6-3507e411af92",
+                "rendering": "text"
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "isEmpty(entryPoint) || entryPoint !== '0464a6fd-d3c5-427b-b147-3f156ac86d63' "
+              }
+            },
+            {
+              "label": "Date of HIV Re-testing before ART",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "fee1095f-a0a7-4694-a352-4e88d6ce6c7c"
+              },
+              "id": "retestDate",
+              "required": "true",
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ]
+            },
+            {
+              "label": "Place where Re-test done",
+              "type": "obs",
+              "id": "retestLocation",
+              "questionOptions": {
+                "concept": "13d6e54e-c8bb-41b2-902b-6ad193f77f40",
+                "rendering": "text"
+              }
+            },
+            {
+              "label": "Transferred in on ART from another treatment site in the national programme",
+              "type": "obs",
+              "id": "transferInChecked",
+              "questionOptions": {
+                "concept": "1d2b7c28-eada-404a-9fab-2075a91ce069",
+                "rendering": "radio",
+                "answers": [
+                  {
+                    "concept": "true",
+                    "label": "Yes"
+                  },
+                  {
+                    "concept": "false",
+                    "label": "No"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Name of previous clinic:",
+              "type": "obs",
+              "id": "previousClinic",
+              "questionOptions": {
+                "concept": "14026b25-6642-4002-a5ed-2049fb82afb2",
+                "rendering": "text"
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "isEmpty(transferInChecked) || transferInChecked !== 'true'"
+              }
+            },
+            {
+              "label": "Transfer in date:",
+              "type": "obs",
+              "id": "transferInDate",
+              "questionOptions": {
+                "concept": "2509d668-caa1-4223-8f70-b0b61eb5b39e",
+                "rendering": "date"
+              },
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ],
+              "hide": {
+                "hideWhenExpression": "isEmpty(transferInChecked) || transferInChecked !== 'true'"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Personal & Family history",
+      "sections": [
+        {
+          "label": "Personal history",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Literate?",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "159400AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "answers": [
+                  {
+                    "concept": "true",
+                    "label": "Yes"
+                  },
+                  {
+                    "concept": "false",
+                    "label": "No"
+                  }
+                ]
+              },
+              "id": "literate"
+            },
+            {
+              "label": "Alcohol intake?",
+              "type": "obs",
+              "id": "alcoholIntake",
+              "questionOptions": {
+                "concept": "f77b636b-21e7-4568-9719-bbdd67c3c736",
+                "rendering": "radio",
+                "answers": [
+                  {
+                    "concept": "ec6c8192-0fa3-4d43-aecc-0ec700b8acfa",
+                    "label": "Habitual"
+                  },
+                  {
+                    "concept": "ec9aef4b-2cd1-40d6-83d8-d331e682ca9e",
+                    "label": "Social"
+                  },
+                  {
+                    "concept": "d228c63f-212d-4214-a68f-6880297a29a0",
+                    "label": "Not use"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "label": "Family history",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Marital status",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "fdcd966e-0870-4d5d-a506-121efc0c39fb",
+                "answers": [
+                  {
+                    "concept": "c0009f16-4675-4474-bd56-ff6766eda682",
+                    "label": "Single"
+                  },
+                  {
+                    "concept": "2a328f83-cbe4-457e-b0f3-5063aff3d6bf",
+                    "label": "Married monogamous"
+                  },
+                  {
+                    "concept": "f6025192-1116-4184-b281-bd7fbd975881",
+                    "label": "Married polygamous"
+                  },
+                  {
+                    "concept": "3b451011-f8e9-4d9e-8dc7-432e8cc69243",
+                    "label": "Divorced/Separated"
+                  },
+                  {
+                    "concept": "fcf34be1-20fd-41b0-8562-8e123ed40145",
+                    "label": "Widowed"
+                  },
+                  {
+                    "concept": "f2355233-c552-4cd6-802f-0c7c75221f03",
+                    "label": "Not applicable"
+                  }
+                ]
+              },
+              "id": "maritalStatus"
+            },
+            {
+              "label": "Occupation",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "c221869a-3f10-11e4-adec-0800271c1b75",
+                "answers": [
+                  {
+                    "concept": "c2222941-3f10-11e4-adec-0800271c1b75",
+                    "label": "Unemployed"
+                  },
+                  {
+                    "concept": "0819d4ce-4da6-4b89-9c6c-e2878b842f85",
+                    "label": "Student"
+                  },
+                  {
+                    "concept": "d56c17b5-501a-4d2d-b1bb-2cb80e4da056",
+                    "label": "Housewife"
+                  },
+                  {
+                    "concept": "f3518564-c580-4663-acce-021369fea26f",
+                    "label": "Salaried Employee"
+                  },
+                  {
+                    "concept": "94d8dc78-0e00-4525-81bc-31db6961bc5e",
+                    "label": "Business"
+                  },
+                  {
+                    "concept": "0c493079-9882-47e5-9a10-361405560678",
+                    "label": "Farmer"
+                  },
+                  {
+                    "concept": "3be283c2-a773-419f-98e0-9b912d26f5f9",
+                    "label": "Military personnel"
+                  },
+                  {
+                    "concept": "3d124657-7776-4f0d-9e96-49f14b20d7f4",
+                    "label": "Other Uniformed forces(Police,Prisons Wildlife, Fire Brigades etc)"
+                  },
+                  {
+                    "concept": "f6ae430a-a197-426e-b54f-08f45fae0ad0",
+                    "label": "Other"
+                  }
+                ]
+              },
+              "id": "occupation"
+            },
+            {
+              "label": "Specify",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "9e9df8b6-3bad-454e-a2fc-04842d02d62a",
+                "conceptMappings": []
+              },
+              "id": "otherOccupation",
+              "hide": {
+                "hideWhenExpression": "isEmpty(occupation) || occupation !== 'f6ae430a-a197-426e-b54f-08f45fae0ad0'"
+              }
+            },
+            {
+              "label": "General family info",
+              "type": "obsGroup",
+              "questionOptions": {
+                "rendering": "repeating",
+                "concept": "63ec7ffb-8a42-42ec-9aaa-4758955205b2"
+              },
+              "id": "generalInfo",
+              "questions": [
+                {
+                  "label": "Family member name",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "text",
+                    "concept": "53b3f5b4-85bc-415f-8e14-5bfc35cb2e89",
+                    "conceptMappings": []
+                  },
+                  "id": "familyMemberName"
+                },
+                {
+                  "label": "Sex",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "select",
+                    "concept": "d969948d-6671-4149-a234-7b991c70e1c1",
+                    "answers": [
+                      {
+                        "concept": "544634f2-4c08-48b0-9b2b-35251189a59b",
+                        "label": "Male"
+                      },
+                      {
+                        "concept": "e74aebd1-51b5-424f-b9f0-339fd8cd3588",
+                        "label": "Female"
+                      }
+                    ]
+                  },
+                  "id": "memberSex"
+                },
+                {
+                  "label": "Age",
+                  "type": "obs",
+                  "id": "memberAge",
+                  "questionOptions": {
+                    "concept": "db25b3c5-10da-49a9-9137-cc8a2507585a",
+                    "rendering": "number"
+                  },
+                  "validators": []
+                },
+                {
+                  "label": "HIV status?",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "radio",
+                    "concept": "160f21c0-9a96-4ffd-a72c-aabed02b6a53",
+                    "answers": [
+                      {
+                        "concept": "7acfafa4-f19b-485e-97a7-c9e002dbe37a",
+                        "label": "Positive"
+                      },
+                      {
+                        "concept": "718b4589-2a11-4355-b8dc-aa668a93e098",
+                        "label": "Negative"
+                      },
+                      {
+                        "concept": "a5bcac8d-305a-4b46-9121-014d72ac4c2d",
+                        "label": "Don't Know"
+                      }
+                    ]
+                  },
+                  "id": "hivStatus"
+                },
+                {
+                  "label": "On ART?",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "select",
+                    "concept": "48741238-7ad4-42f0-a1f4-d2bb6b355614",
+                    "answers": [
+                      {
+                        "concept": "true",
+                        "label": "Yes"
+                      },
+                      {
+                        "concept": "false",
+                        "label": "No"
+                      }
+                    ]
+                  },
+                  "id": "onArt"
+                },
+                {
+                  "label": "Unique No.",
+                  "type": "obs",
+                  "id": "uniqueNo",
+                  "questionOptions": {
+                    "concept": "15c72e37-bd8f-47ef-8f12-96e69e241b1a",
+                    "rendering": "text"
+                  },
+                  "validators": [],
+                  "hide": {
+                    "hideWhenExpression": "isEmpty(onArt) || onArt !== 'true'"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Antiretroviral Treatment History",
+      "sections": [
+        {
+          "label": "Antiretroviral Treatment History",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Were ARVs received before?",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "4ba4ea3a-a4dc-41c0-94ab-89a1985f9354",
+                "answers": [
+                  {
+                    "concept": "true",
+                    "label": "Yes"
+                  },
+                  {
+                    "concept": "false",
+                    "label": "No"
+                  }
+                ]
+              },
+              "id": "arvsReceived"
+            },
+            {
+              "label": "If yes? ",
+              "type": "obs",
+              "id": "yesReceivedArvs",
+              "questionOptions": {
+                "concept": "6d75a232-9d41-46b6-a986-0551ce0b99c1",
+                "rendering": "radio",
+                "answers": [
+                  {
+                    "concept": "bdc00ba0-548a-46d3-9f48-28e0a9be61f9",
+                    "label": "PMTCT"
+                  },
+                  {
+                    "concept": "bcb584dd-d241-4c2f-a6b6-88b01a1ae13f",
+                    "label": "PEP"
+                  },
+                  {
+                    "concept": "066b35ad-f206-4d00-992a-b068ff9f8089",
+                    "label": "Earlier ART not transfer in"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": "isEmpty(arvsReceived) || arvsReceived !== 'true'"
+              }
+            },
+            {
+              "label": "Place ",
+              "type": "obs",
+              "id": "placeReceivedArvs",
+              "questionOptions": {
+                "concept": "368dfc46-41a0-4a43-b945-f10ede2ac683",
+                "rendering": "radio",
+                "answers": [
+                  {
+                    "concept": "d12d6c6d-23d9-4164-9234-13154efe545a",
+                    "label": "Private"
+                  },
+                  {
+                    "concept": "c223fe8d-3f10-11e4-adec-0800271c1b75",
+                    "label": "Government"
+                  },
+                  {
+                    "concept": "4fdc5b5b-ff7a-4bdf-920f-92276ef6c07f",
+                    "label": "Other"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": "isEmpty(arvsReceived) || arvsReceived !== 'true'"
+              }
+            },
+            {
+              "label": "Specify",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "c84d3697-4097-46cf-9a90-bc970aba241e",
+                "conceptMappings": []
+              },
+              "id": "otherArvPlace",
+              "hide": {
+                "hideWhenExpression": "isEmpty(placeReceivedArvs) || placeReceivedArvs !== '4fdc5b5b-ff7a-4bdf-920f-92276ef6c07f'"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "encounterType": "81da9590-3f10-11e4-adec-0800271c1b75",
+  "uuid": "cf245d5c-9e6b-46f5-bf07-1c2746a9e54d"
+}

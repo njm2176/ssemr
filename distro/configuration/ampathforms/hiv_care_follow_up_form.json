@@ -1,0 +1,600 @@
+{
+  "name": "HIV Care Follow Up",
+  "pages": [
+    {
+      "label": "Follow up",
+      "sections": [
+        {
+          "label": "Client Details",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Date scheduled",
+              "type": "obs",
+              "required": true,
+              "id": "dateScheduled",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "e605731b-2e81-41a9-8446-2ed442c339e2"
+              },
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ]
+            },
+            {
+              "label": "Follow up Date",
+              "type": "obs",
+              "required": true,
+              "id": "followUpDate",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "ee31f5fc-40b8-417d-8350-1a74431c220b"
+              },
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ]
+            },
+            {
+              "label": "Duration in months since first starting ART/since starting current regimen",
+              "required": true,
+              "id": "durationDays",
+              "questionOptions": {
+                "rendering": "numeric",
+                "attributeType": "e0e2acbe-f88b-4710-adbd-08637d80ea97",
+                "isSimpleValue": true
+              },
+              "validators": []
+            },
+            {
+              "label": "Weight",
+              "id": "weight",
+              "required": true,
+              "questionOptions": {
+                "answers": [],
+                "concept": "ca055d08-6cd7-4331-83bb-1d27dc5aa61f",
+                "rendering": "numeric"
+              },
+              "type": "obs",
+              "validators": []
+            },
+            {
+              "label": "Height(cm) at first visit",
+              "id": "height",
+              "required": true,
+              "questionOptions": {
+                "answers": [],
+                "concept": "4940b0bb-e1b0-44b9-803d-9720ee5743d8",
+                "rendering": "numeric"
+              },
+              "type": "obs",
+              "validators": []
+            },
+            {
+              "label": "BMI",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "c367d9ee-3f10-11e4-adec-0800271c1b75",
+                "max": "100",
+                "min": "0",
+                "calculate": {
+                  "calculateExpression": "calcBMI(height,weight)"
+                }
+              },
+              "id": "bMi"
+            },
+            {
+              "label": "MUAC",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "90f53912-95d5-4b5c-a9eb-81f3f937225e",
+                "max": "250",
+                "min": "0"
+              },
+              "id": "mUaC"
+            },
+            {
+              "label": "Current on FP",
+              "type": "obs",
+              "required": true,
+              "id": "currentFP",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "8df413d9-e018-4a38-817f-fcf718f0df2f",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "label": "Yes",
+                    "concept": "true"
+                  },
+                  {
+                    "label": "No",
+                    "concept": "false"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "Family Planning method",
+              "type": "obs",
+              "required": true,
+              "id": "fpMethod",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "609d59f7-79d1-4748-ad86-57c831dbff60",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "label": "Condoms",
+                    "concept": "1fe0597e-470d-49bd-9d82-9c7b7342dab0"
+                  },
+                  {
+                    "label": "Implant",
+                    "concept": "1fe0597e-470d-49bd-9d82-9c7b7342dab0"
+                  },
+                  {
+                    "label": "IUD",
+                    "concept": "1fe0597e-470d-49bd-9d82-9c7b7342dab0"
+                  },
+                  {
+                    "label": "Depo",
+                    "concept": "1fe0597e-470d-49bd-9d82-9c7b7342dab0"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": "currentFP !== 'true'"
+              },
+              "validators": []
+            },
+            {
+              "label": "Is the client Pregnant?",
+              "type": "obs",
+              "required": true,
+              "id": "pregStatus",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "1ccceceb-fb05-4ef6-845b-e0d64d3f9ba4",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "label": "Yes",
+                    "concept": "true"
+                  },
+                  {
+                    "label": "No",
+                    "concept": "false"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "Clients EDD",
+              "type": "obs",
+              "required": true,
+              "id": "eDDdate",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "12118225-edad-45e2-9313-a5bca2cb4995"
+              },
+              "hide": {
+                "hideWhenExpression": "pregStatus !== 'true'"
+              },
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "true"
+                }
+              ]
+            },
+            {
+              "label": "Is the client a PMTCT?",
+              "type": "obs",
+              "required": true,
+              "id": "clientPmTct",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "1d593268-8a2d-4030-bf1d-9c341d47f875",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "label": "Yes",
+                    "concept": "true"
+                  },
+                  {
+                    "label": "No",
+                    "concept": "false"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "Is the client on TB treatment",
+              "type": "obs",
+              "required": true,
+              "id": "clientTB",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "58ab89cd-6674-480b-95a0-5b761b0275cb",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "label": "Yes",
+                    "concept": "true"
+                  },
+                  {
+                    "label": "No",
+                    "concept": "false"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "Date started on TB",
+              "type": "obs",
+              "required": true,
+              "id": "dateStartedTB",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "ce828c13-dea2-43b7-85b9-975c5613b2db"
+              },
+              "hide": {
+                "hideWhenExpression": "clientTB !== 'true'"
+              },
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ]
+            },
+            {
+              "label": "TB Unit Number",
+              "type": "obs",
+              "required": false,
+              "id": "tbNumber",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "6cc3d304-26b5-43e1-951a-8a94a30841da"
+              },
+              "hide": {
+                "hideWhenExpression": "clientTB !== 'true'",
+                "validators": []
+              }
+            },
+            {
+              "label": "Side Effects",
+              "required": true,
+              "id": "sideEffects",
+              "questionOptions": {
+                "rendering": "text",
+                "attributeType": "13498474-ba95-4fec-8010-c8c5e24748ff"
+              }
+            },
+            {
+              "label": "Any new Opportunistic Infections",
+              "required": false,
+              "id": "oiNew",
+              "questionOptions": {
+                "rendering": "text",
+                "attributeType": "be8d8351-6dad-4f91-a5a1-40c56656bbf5",
+                "isSimpleValue": true
+              }
+            },
+            {
+              "label": "WHO Stage",
+              "id": "whoStage",
+              "required": true,
+              "questionOptions": {
+                "concept": "e38e6ce2-92d9-4382-927b-5555ff9fa850",
+                "rendering": "select",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "label": "WHO Stage 1",
+                    "concept": "88f2a6ea-367d-45dc-942a-b809b0d17275"
+                  },
+                  {
+                    "label": "WHO Stage 2",
+                    "concept": "17a3b24b-e107-49fe-8b0d-69c3b7e60f4c"
+                  },
+                  {
+                    "label": "WHO Stage 3",
+                    "concept": "ebd187f8-d15a-4fad-8849-9f74da5c3fc9"
+                  },
+                  {
+                    "label": "WHO Stage 4",
+                    "concept": "831d263e-4dfb-4f05-bcfb-629961c07844"
+                  }
+                ]
+              },
+              "type": "obs",
+              "validators": []
+            },
+            {
+              "label": "Adherence",
+              "type": "obs",
+              "required": true,
+              "id": "adheRence",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "e360501a-123a-4efb-93ef-4dc19d031921",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "label": "Good",
+                    "concept": "714752ad-61df-44e0-ae40-fa9bf4f9d831"
+                  },
+                  {
+                    "label": "Fair",
+                    "concept": "535ea56b-0138-4804-ab23-e70f2dbe0b61"
+                  },
+                  {
+                    "label": "Poor",
+                    "concept": "f05f31c1-5f06-4ada-8cbd-a877cb06442a"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "INH Given",
+              "type": "obs",
+              "required": true,
+              "id": "inhGiven",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "7ddb08f2-09e8-48ef-a08f-3744467fec48",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "label": "Yes",
+                    "concept": "true"
+                  },
+                  {
+                    "label": "No",
+                    "concept": "false"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "Number of Pill Dispensed(INH)",
+              "type": "obs",
+              "required": true,
+              "id": "inhNumber",
+              "questionOptions": {
+                "rendering": "numeric",
+                "concept": "41cde1fd-31b7-4e76-821a-c6b85b73ffe3"
+              },
+              "hide": {
+                "hideWhenExpression": "inhGiven !== 'true'",
+                "validators": []
+              }
+            },
+            {
+              "label": "Any other Medications Given",
+              "required": false,
+              "id": "medsGiven",
+              "questionOptions": {
+                "rendering": "text",
+                "attributeType": "f9cd08a2-c316-11e9-9cb5-2a2ae2dbcce4",
+                "isSimpleValue": true
+              }
+            },
+            {
+              "label": " ART regimen given",
+              "id": "ArtRegimen",
+              "required": true,
+              "questionOptions": {
+                "concept": "23322fd6-3dbb-410e-8bee-6210dfcd5f71",
+                "rendering": "select",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "label": "1a = AZT/3TC+EFV",
+                    "concept": "9062c6d9-a650-44d2-8929-da84f617c427"
+                  },
+                  {
+                    "label": "1b = AZT/3TC/NVP",
+                    "concept": "c22e6700-a937-4909-b4ad-e82ff51325ac"
+                  },
+                  {
+                    "label": "1c = TDF/3TC/DTG",
+                    "concept": "544634f2-4c08-48b0-9b2b-35251189a59b"
+                  },
+                  {
+                    "label": "1d=ABC/3TC (600/300)/DTG",
+                    "concept": "5d500ca2-350a-49ee-a3d4-f340db32ff31"
+                  },
+                  {
+                    "label": "1e = AZT/3TC +DTG",
+                    "concept": "3fd242a8-7ade-463c-8919-d82573ea8526"
+                  },
+                  {
+                    "label": "1f = TDF/3TC+EFV",
+                    "concept": "91f5d0d6-eb81-484f-9376-4bfb926a5a81"
+                  },
+                  {
+                    "label": "1g = TDF/3TC+NVP",
+                    "concept": "0dd3e78f-e1fc-47de-95bc-1f489d0dfcc5"
+                  },
+                  {
+                    "label": "1h = TDF/FTC/EFV",
+                    "concept": "4a86fbee-07a9-422a-bf69-16256c0c2b8b"
+                  },
+                  {
+                    "label": "1J = TDF/FTC+NVP",
+                    "concept": "03224cae-f115-4814-bd53-c99c72288446"
+                  },
+                  {
+                    "label": "2a=AZT/3TC+DTG",
+                    "concept": "bd97cacd-4a91-4901-8803-3a4a2e5f1ca8"
+                  },
+                  {
+                    "label": "2b=ABC/3TC+DTG",
+                    "concept": "ad6ff4ef-769e-4aec-b8bb-7f033fe6aaaa"
+                  },
+                  {
+                    "label": "2c=TDF+3TC+LPV/r",
+                    "concept": "47167ec1-4957-4d0a-a58c-3894bdeb93f"
+                  },
+                  {
+                    "label": "2d=TDF/3TC+ATV/r",
+                    "concept": "e649a0ec-e193-4af0-bb49-02687107a893"
+                  },
+                  {
+                    "label": "2e=TDF/FTC-LPV/r",
+                    "concept": "accca537-b8ee-41ec-b902-7de814d099b2"
+                  },
+                  {
+                    "label": "2f=TDF/FTC-ATV/r",
+                    "concept": "77f201fc-aefc-4068-baa7-cb3284782a38"
+                  },
+                  {
+                    "label": "2g=AZT/3TC+LPV/r",
+                    "concept": "cb0f9fcd-fb52-493f-95aa-d0197387fbdb"
+                  },
+                  {
+                    "label": "2h=AZT/3TC+ATV/r",
+                    "concept": "28790bde-81db-4490-806b-ac10c17b41dc"
+                  },
+                  {
+                    "label": "2i=ABC/3TC+LPV/r",
+                    "concept": "aae69cae-2806-4e8b-a916-f22ed733a19b"
+                  },
+                  {
+                    "label": "2j=ABC/3TC+ATV/r",
+                    "concept": "64336206-c9bc-4d37-accf-c7abac7a37f6"
+                  },
+                  {
+                    "label": "2k=TDF/3TC/DTG",
+                    "concept": "25f0cca5-902d-4e36-9e4f-5ce5da744a75"
+                  }
+                ]
+              },
+              "type": "obs",
+              "validators": []
+            },
+            {
+              "label": "Number of Days Dispensed",
+              "required": true,
+              "id": "noOfDays",
+              "questionOptions": {
+                "rendering": "numeric",
+                "attributeType": "4ab28128-7ef3-452d-86d5-73561761b08a",
+                "isSimpleValue": true
+              }
+            },
+            {
+              "label": "Date VL Sample Collected?",
+              "required": true,
+              "id": "dateCollected",
+              "questionOptions": {
+                "rendering": "date",
+                "attributeType": "fc684917-4deb-42cf-9245-8a13c6a232bc",
+                "isSimpleValue": true
+              },
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ]
+            },
+            {
+              "label": "VL Results",
+              "type": "obs",
+              "required": true,
+              "id": "vlResults",
+              "questionOptions": {
+                "rendering": "numeric",
+                "concept": "8b5ef5c4-3c88-49b8-87e5-cb8d30caa77d"
+              }
+            },
+            {
+              "label": "Other Investigations Done",
+              "required": true,
+              "id": "otherInve",
+              "questionOptions": {
+                "rendering": "text",
+                "attributeType": "b0058799-4655-471d-8124-6acd14c6beb1",
+                "isSimpleValue": true
+              }
+            },
+            {
+              "label": "Patients Plan",
+              "type": "obs",
+              "required": true,
+              "id": "ptPlan",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "0fc3cc86-6c9f-4d79-9c39-900dab27a33c",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "label": "Refer",
+                    "concept": "8ec83611-795e-44d0-b359-a667a073bf07"
+                  },
+                  {
+                    "label": "Consult",
+                    "concept": "5b4c24fd-b3b2-454b-8b26-2300ea774b07"
+                  },
+                  {
+                    "label": "Link/Provide",
+                    "concept": "d521c7e0-207e-4e9d-97e4-e376b38b664f"
+                  },
+                  {
+                    "label": "Hospitalised",
+                    "concept": "b87bac5e-b6ca-40a5-a3d0-a3fa34a94f5d"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "Number of Days Hospitalized",
+              "type": "obs",
+              "required": true,
+              "id": "noDayHospital",
+              "questionOptions": {
+                "rendering": "numeric",
+                "concept": "73aeaec5-4169-40a9-8b59-f799b28a548c"
+              },
+              "hide": {
+                "hideWhenExpression": "ptPlan !== 'b87bac5e-b6ca-40a5-a3d0-a3fa34a94f5d'",
+                "validators": []
+              }
+            },
+            {
+              "label": "Clinician Name",
+              "required": true,
+              "id": "clinicianName",
+              "questionOptions": {
+                "rendering": "text",
+                "attributeType": "611d6c22-7c6d-47cf-a74e-190f9e3cdd47",
+                "isSimpleValue": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "version": "1.1",
+  "description": "HIV Care Follow Up",
+  "encounterType": "e8481555-9dd1-4bb5-ba8c-cb721dafb166",
+  "uuid": "ffd28fcd-8cba-425c-9647-34e7420f6a88"
+}
