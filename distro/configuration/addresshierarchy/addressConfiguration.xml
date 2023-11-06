@@ -53,9 +53,6 @@
         <string>address4</string>
         <string>address5</string>
         <string>address6</string>
-        <string>cityVillage</string>
-        <string>postalCode</string>
-        <string>stateProvince</string>
     </lineByLineFormat>
     <addressHierarchyFile>
         <filename>addresshierarchy.csv</filename>
