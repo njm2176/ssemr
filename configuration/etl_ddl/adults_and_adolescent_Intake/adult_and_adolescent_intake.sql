@@ -6,6 +6,8 @@ DROP TABLE IF EXISTS flat_encounter_adult_and_adolescent_intake;
 
 CREATE TABLE flat_encounter_adult_and_adolescent_intake
 (
+    patient_id                                        INT,
+    encounter_id                                      INT,
     date_of_enrollment                                DATE,
     marital_status                                    VARCHAR(255),
     past_medical_history                              VARCHAR(255),
