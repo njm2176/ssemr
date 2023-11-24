@@ -29,6 +29,7 @@ fd56417c-3e95-47d8-988d-d69b8996c62f,,Results at mapping,Results at mapping,Resu
 dbc64fad-de50-47b1-86a7-8f16df7cf28c,,Negative,Results of HTS Negative,Results of HTS Negative,,,,Misc,N/A,
 f2c2cdcf-550f-427c-96af-52b6a12c3d42,,Inconclusive,Results of HTS Inconclusive,Results of HTS Inconclusive,,,,Misc,N/A,
 cbe44a8f-77fd-4452-9e7e-11a5cf62bdc2,,Results of HTS,Results of HTS,Results of HTS,,,,Misc,Coded,"Positive, Negative, Inconclusive"
+ddcd2df8-9c6b-4b00-8822-0609de34ee54,,Date HIV tested,Date HIV tested,Date HIV tested,,,,Question,Date,
 53b3f5b4-85bc-415f-8e14-5bfc35cb2e89,,Family Member names,,,,,,Question,Text,
 da4c7442-f1b1-4d82-947a-1cdca78a35b4,,Sexual Partner?,,,,,,Question,Boolean,
 14467f43-c872-414b-945f-ad316a6ddf1b,,Spouse,,,,,,Misc,N/A,
