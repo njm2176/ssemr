@@ -5,6 +5,9 @@ services:
     # image: openmrs/openmrs-reference-application-3-gateway:${TAG:-qa}
     image: nginx:alpine
     restart: "unless-stopped"
+    volumes:
+      - ./nginx:/etc/nginx
+      - /opt/certs:/opt/certs
     depends_on:
       - frontend
       - backend
@@ -29,6 +32,8 @@ services:
   backend:
     image: openmrs/openmrs-reference-application-3-backend:${TAG:-qa}
     restart: "unless-stopped"
+    ports:
+      - 8080:8080
     depends_on:
       - db
     environment:
