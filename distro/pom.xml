@@ -49,6 +49,14 @@
     <ordertemplates.version>1.0.2</ordertemplates.version>
     <patientflags.version>3.0.6-SNAPSHOT</patientflags.version>
     <o3forms.version>2.1.0</o3forms.version>
+    <ssemrreports.version>1.0.0-SNAPSHOT</ssemrreports.version>
+    <uiframework.version>3.23.0</uiframework.version>
+    <reportingui.version>1.11.0</reportingui.version>
+    <reportingrest.version>1.14.0</reportingrest.version>
+    <uicommons.version>2.23.0</uicommons.version>
+    <appframework.version>2.17.0</appframework.version>
+    <appui.version>1.16.0</appui.version>
+    <appframework.version>2.17.0</appframework.version>
   </properties>
 
   <dependencies>
