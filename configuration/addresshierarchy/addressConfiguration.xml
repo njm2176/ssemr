@@ -19,7 +19,7 @@
         <string>LANDMARK</string>
     </lineByLineFormat>
     <addressHierarchyFile>
-        <filename>addresshierarchy.csv</filename>
+        <filename>ihs_address_hierachy.csv</filename>
         <entryDelimiter>,</entryDelimiter>
         <identifierDelimiter>^</identifierDelimiter>
     </addressHierarchyFile>
