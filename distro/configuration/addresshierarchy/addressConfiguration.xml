@@ -11,12 +11,11 @@
             <field>VILLAGE</field>
             <nameMapping>Location.cityVillage</nameMapping>
             <sizeMapping>40</sizeMapping>
-            <requiredInHierarchy>true</requiredInHierarchy>
+            <requiredInHierarchy>false</requiredInHierarchy>
         </addressComponent>
 	</addressComponents>
     <lineByLineFormat>
         <string>VILLAGE</string>
-        <string>LANDMARK</string>
     </lineByLineFormat>
     <addressHierarchyFile>
         <filename>ihs_address_hierachy.csv</filename>
