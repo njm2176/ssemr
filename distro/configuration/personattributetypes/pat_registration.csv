@@ -43,6 +43,7 @@ fc9626ff-aab0-4a92-9755-7510a88037ae,,FacilityName,Facility Name,java.lang.Strin
 d5e67a9d-a423-4858-aab3-1631a60934e4,,MothersContactNumber,Mother's Contact Number,java.lang.String,,yes,Edit:PAT,,
 48e0f9e5-3ce6-41aa-bd86-fc226821ec4d,,AlternateContactPerson,Full Name,java.lang.String,,yes,Edit:PAT,,
 bc851ec1-9fb7-49da-acd7-1a61168002fe,,TelephoneNo,Contact Number,java.lang.String,,yes,Edit:PAT,,
+be6d2471-4152-42f5-904d-3f2274f35fe4,,AltTelephoneNo,Alternate Contact Number,java.lang.String,,yes,Edit:PAT,,
 b4417be2-9990-4e33-8e28-42b6453c13fb,,AlternateContactPersonLocation,Location,java.lang.String,,yes,Edit:PAT,,
 e23be2e9-00d1-4cfc-aa2e-0598b1dd3c3f,,AlternateContactPersonRelationship,Relationship,org.openmrs.Concept,39749542-413c-4186-9cc0-42948908705d,yes,Edit:PAT,,
 699dded0-f413-45f3-831c-710d85d9855a,,ContactPersonDisclosedTo,Has this person been disclosed to?,org.openmrs.Concept,0eafd7bd-dc93-4324-9d8d-14fbaa7257e4,yes,Edit:PAT,,
