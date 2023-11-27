@@ -24,7 +24,8 @@
     "@openmrs/esm-system-admin-app": "next",
     "@openmrs/esm-dispensing-app": "next",
     "@openmrs/esm-form-builder-app": "next",
-    "@ssemr/esm-patient-hiv-art-app": "next"
+    "@ssemr/esm-patient-hiv-art-app": "next",
+    "@ssemr/esm-reports-dashboard":"5.1.6"
   },
   "spaPath": "$SPA_PATH",
   "apiUrl": "$API_URL",
