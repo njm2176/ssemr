@@ -28,18 +28,69 @@
     }
   },
   "@openmrs/esm-patient-registration-app": {
+    "sections": [
+      "demographics",
+      "contact"
+    ],
     "fieldDefinitions": [
       {
         "id": "phone",
         "type": "person attribute",
         "uuid": "bc851ec1-9fb7-49da-acd7-1a61168002fe",
-        "label": "Telephone contact",
+        "label": "Client's Telephone number",
         "validation": {
           "required": true,
           "matches": "^0([0-9](?:(?:[0-9][0-9])|(?:0[0-8])|(4[0-1]))[0-9]{6})$"
         }
+      },      
+      {
+        "id": "altPhone",
+        "type": "person attribute",
+        "uuid": "be6d2471-4152-42f5-904d-3f2274f35fe4",
+        "label": "Alternate telephone number",
+        "validation": {
+          "required": false,
+          "matches": "^0([0-9](?:(?:[0-9][0-9])|(?:0[0-8])|(4[0-1]))[0-9]{6})$"
+        }
+      },     
+      {
+        "id": "txSupporterName",
+        "type": "person attribute",
+        "uuid": "80fcb21b-f0af-493e-bcd2-75d587fcbbe9",
+        "label": "Treatment supporter's name(is disclosed)",
+        "validation": {
+          "required": false
+        }
+      },     
+      {
+        "id": "txSupporterAddress",
+        "type": "person attribute",
+        "uuid": "0aa1708e-64a4-4edf-b02e-bc75bc4cd970",
+        "label": "Treatment supporter's address(is disclosed)",
+        "validation": {
+          "required": false
+        }
+      },     
+      {
+        "id": "txSupporterPhoneNo",
+        "type": "person attribute",
+        "uuid": "21884b9f-2300-411b-adc0-af80954c4c69",
+        "label": "Treatment supporter's telephone number",
+        "validation": {
+          "required": false,
+          "matches": "^0([0-9](?:(?:[0-9][0-9])|(?:0[0-8])|(4[0-1]))[0-9]{6})$"
+        }
+      },     
+      {
+        "id": "homeBasedcareProvider",
+        "type": "person attribute",
+        "uuid": "ec95bdcd-8bb5-4b29-95bc-4fe600df3f07",
+        "label": "Home-based care provided by",
+        "validation": {
+          "required": false
+        }
       }
-    ],
+      ],
     "registrationObs": {
       "encounterTypeUuid": "de1f9d67-b73e-4e1b-90d0-036166fc6995",
       "registrationFormUuid": "add7abdc-59d1-11e8-9c2d-fa7ae01bbebc"
