@@ -1,433 +1,8 @@
 {
-  "name": "HIV Care And ART Card",
+  "name": "Initial HIV Care And ART Card",
   "pages": [
     {
-      "label": "Client Identification Data",
-      "sections": [
-        {
-          "label": "Client Data",
-          "isExpanded": "true",
-          "questions": [
-            {
-              "label": "Unique ART No.",
-              "type": "personAttribute",
-              "required": true,
-              "id": "uniqueArtNo",
-              "questionOptions": {
-                "rendering": "text",
-                "attributeType": "6cc3d304-26b5-43e1-951a-8a94a30841da",
-                "isSimpleValue": true
-              },
-              "validators": []
-            },
-            {
-              "label": "HEI No.",
-              "type": "personAttribute",
-              "required": false,
-              "id": "heiNumber",
-              "questionOptions": {
-                "rendering": "text",
-                "attributeType": "718d9c66-2931-4f00-afea-73a6fe1e061d",
-                "isSimpleValue": true
-              },
-              "validators": []
-            },
-            {
-              "label": "Client Name",
-              "type": "personAttribute",
-              "required": true,
-              "id": "clientName",
-              "questionOptions": {
-                "rendering": "text",
-                "attributeType": "53b3f5b4-85bc-415f-8e14-5bfc35cb2e89",
-                "isSimpleValue": true
-              },
-              "validators": []
-            },
-            {
-              "label": "Sex",
-              "type": "obs",
-              "required": true,
-              "id": "sEx",
-              "questionOptions": {
-                "rendering": "radio",
-                "concept": "d969948d-6671-4149-a234-7b991c70e1c1",
-                "conceptMappings": [],
-                "answers": [
-                  {
-                    "label": "Male",
-                    "concept": "544634f2-4c08-48b0-9b2b-35251189a59b"
-                  },
-                  {
-                    "label": "Female",
-                    "concept": "e74aebd1-51b5-424f-b9f0-339fd8cd3588"
-                  }
-                ]
-              },
-              "validators": []
-            },
-            {
-              "label": "Date of Birth",
-              "type": "obs",
-              "required": true,
-              "id": "birthDate",
-              "questionOptions": {
-                "rendering": "date",
-                "concept": "e605731b-2e81-41a9-8446-2ed442c339e2"
-              },
-              "validators": [
-                {
-                  "type": "date",
-                  "allowFutureDates": "false"
-                }
-              ]
-            },
-            {
-              "label": "Age(years)",
-              "type": "obs",
-              "required": true,
-              "id": "ageYears",
-              "questionOptions": {
-                "rendering": "numeric",
-                "concept": "0a91130c-131d-4407-be81-6a591637e316"
-              },
-              "validators": []
-            },
-            {
-              "label": "Boma",
-              "type": "obs",
-              "required": false,
-              "id": "bOMa",
-              "questionOptions": {
-                "rendering": "text",
-                "concept": "880fb921-cfe6-4558-a4c4-b4833f8fdf14"
-              },
-              "validators": []
-            },
-            {
-              "label": "Payam",
-              "type": "obs",
-              "required": false,
-              "id": "paYam",
-              "questionOptions": {
-                "rendering": "text",
-                "concept": "6f567334-ea04-4e52-abc6-85540d04608d"
-              },
-              "validators": []
-            },
-            {
-              "label": "County",
-              "type": "obs",
-              "required": false,
-              "id": "couNty",
-              "questionOptions": {
-                "rendering": "text",
-                "concept": "837daf2a-3735-40d2-abbc-b2806ea881ad"
-              },
-              "validators": []
-            },
-            {
-              "label": "State",
-              "type": "obs",
-              "required": false,
-              "id": "staTe",
-              "questionOptions": {
-                "rendering": "text",
-                "concept": "f94a1899-ae70-429f-8259-d7c0ffcac40e"
-              },
-              "validators": []
-            },
-            {
-              "label": "Village/Town",
-              "type": "obs",
-              "required": false,
-              "id": "viLLage",
-              "questionOptions": {
-                "rendering": "text",
-                "concept": "f94a1899-ae70-429f-8259-d7c0ffcac40e"
-              },
-              "validators": []
-            },
-            {
-              "label": "Landmark",
-              "type": "obs",
-              "required": false,
-              "id": "landMark",
-              "questionOptions": {
-                "rendering": "text",
-                "concept": "7e0d7a8d-a10f-4a25-9b64-a686933a46bf"
-              },
-              "validators": []
-            },
-            {
-              "label": "Client's telephone phone",
-              "type": "personAttribute",
-              "required": true,
-              "id": "clientAlternativeTelephone",
-              "questionOptions": {
-                "rendering": "text",
-                "attributeType": "bc851ec1-9fb7-49da-acd7-1a61168002fe",
-                "isSimpleValue": true
-              },
-              "validators": []
-            },
-            {
-              "label": "Client's alternative telephone",
-              "type": "personAttribute",
-              "required": true,
-              "id": "clientAlternativeTelephone",
-              "questionOptions": {
-                "rendering": "text",
-                "attributeType": "c98d1ea8-ec7e-442d-86bc-4ed69441d98b",
-                "isSimpleValue": true
-              },
-              "validators": []
-            },
-            {
-              "label": "Treatment supporter's name",
-              "type": "personAttribute",
-              "required": true,
-              "id": "treatmentSupportName",
-              "questionOptions": {
-                "rendering": "text",
-                "attributeType": "80fcb21b-f0af-493e-bcd2-75d587fcbbe9",
-                "isSimpleValue": true
-              },
-              "validators": []
-            },
-            {
-              "label": "Treatement supporter's address",
-              "type": "personAttribute",
-              "required": true,
-              "id": "treatmentSupportAddress",
-              "questionOptions": {
-                "rendering": "text",
-                "attributeType": "0aa1708e-64a4-4edf-b02e-bc75bc4cd970",
-                "isSimpleValue": true
-              },
-              "validators": []
-            },
-            {
-              "label": "Treatment supporter's telephone",
-              "type": "personAttribute",
-              "required": true,
-              "id": "treatmentSupportersTelephone",
-              "questionOptions": {
-                "rendering": "text",
-                "attributeType": "21884b9f-2300-411b-adc0-af80954c4c69",
-                "isSimpleValue": true
-              },
-              "validators": []
-            },
-            {
-              "label": "Home based care provider by",
-              "type": "personAttribute",
-              "required": true,
-              "id": "homeBasedCareProvider",
-              "questionOptions": {
-                "rendering": "text",
-                "attributeType": "ec95bdcd-8bb5-4b29-95bc-4fe600df3f07",
-                "isSimpleValue": true
-              },
-              "validators": []
-            },
-            {
-              "label": "Date first tested positive (+)",
-              "type": "obs",
-              "required": true,
-              "id": "dateFirstTestedPositive",
-              "questionOptions": {
-                "rendering": "date",
-                "concept": "7482b976-56fe-44b0-b30f-1e957cc0cbb0",
-                "conceptMappings": [],
-                "answers": []
-              },
-              "validators": [
-                {
-                  "type": "date",
-                  "allowFutureDates": "false"
-                }
-              ]
-            },
-            {
-              "label": "Place first tested positive",
-              "type": "obs",
-              "required": true,
-              "id": "placeFirstTestedPositive",
-              "questionOptions": {
-                "rendering": "text",
-                "concept": "2e528392-b1dc-4bcc-bf7a-cc8250082174",
-                "conceptMappings": [],
-                "answers": []
-              },
-              "validators": []
-            },
-            {
-              "label": "Entry Point",
-              "type": "obs",
-              "required": true,
-              "id": "entryPointTestedPositive",
-              "questionOptions": {
-                "rendering": "select",
-                "concept": "f1a35737-434c-46e9-8c46-4e17b98e305d",
-                "conceptMappings": [],
-                "answers": [
-                  {
-                    "concept": "17f90888-9c88-4db2-8750-edb1d760a9ca",
-                    "label": "ANC Clinic"
-                  },
-                  {
-                    "concept": "cb976d23-ab3e-4369-a88f-73f56505783b",
-                    "label": "CBTC"
-                  },
-                  {
-                    "concept": "8244fd10-f813-4e52-a13e-9e3df7cd599c",
-                    "label": "Entry Point - OPD"
-                  },
-                  {
-                    "concept": "62cceeab-adf9-4f3b-bdb3-89687557ecab",
-                    "label": "In Patient"
-                  },
-                  {
-                    "concept": "8fc10249-842b-4944-8018-c758bd0263d8",
-                    "label": "Index Testing"
-                  },
-                  {
-                    "concept": "26560ed4-3ccc-4f85-85f1-f2c9f9238d3b",
-                    "label": "Pediatric Clinic"
-                  },
-                  {
-                    "concept": "0464a6fd-d3c5-427b-b147-3f156ac86d63",
-                    "label": "Other Entry Point (Specify)"
-                  },
-                  {
-                    "concept": "dfa49cd5-3859-4184-84cc-ada016092680",
-                    "label": "STI Clinic"
-                  },
-                  {
-                    "concept": "04c64451-9e19-43e9-ac3d-9333824bc1dd",
-                    "label": "TB Clinic"
-                  },
-                  {
-                    "concept": "ec5d13de-ee22-4d8a-b39c-bdee6cd3d88c",
-                    "label": "VCT Clinic"
-                  }
-                ]
-              },
-              "validators": []
-            },
-            {
-              "label": "Other place of entry",
-              "type": "obs",
-              "required": true,
-              "id": "otherPlaceOfEntry",
-              "questionOptions": {
-                "rendering": "text",
-                "concept": "c84d3697-4097-46cf-9a90-bc970aba241e",
-                "conceptMappings": [],
-                "answers": []
-              },
-              "hide": {
-                "hideWhenExpression": "entryPointTestedPositive !== '0464a6fd-d3c5-427b-b147-3f156ac86d63'"
-              },
-              "validators": []
-            },
-            {
-              "label": "Date of HIV Retesting Before ART",
-              "type": "obs",
-              "required": false,
-              "id": "dateOfHIVRetestingBeforeART",
-              "questionOptions": {
-                "rendering": "date",
-                "concept": "fee1095f-a0a7-4694-a352-4e88d6ce6c7c",
-                "conceptMappings": [],
-                "answers": []
-              },
-              "validators": [
-                {
-                  "type": "date",
-                  "allowFutureDates": "false"
-                }
-              ]
-            },
-            {
-              "label": "Place of HIV Retesting Before ART",
-              "type": "obs",
-              "required": false,
-              "id": "placeOfHIVRetestingBeforeART",
-              "questionOptions": {
-                "rendering": "text",
-                "concept": "13d6e54e-c8bb-41b2-902b-6ad193f77f40",
-                "conceptMappings": [],
-                "answers": []
-              },
-              "validators": []
-            },
-            {
-              "label": "Transferred in on ART from another treatment site in the national programme",
-              "type": "control",
-              "required": false,
-              "id": "transferInOnARTFromAnotherTreatmentSite",
-              "questionOptions": {
-                "rendering": "radio",
-                "concept": "735cd395-0ef1-4832-a58c-e8afb567d3b3",
-                "conceptMappings": [],
-                "answers": [
-                  {
-                    "label": "Yes",
-                    "concept": "Yes"
-                  },
-                  {
-                    "label": "No",
-                    "concept": "No"
-                  }
-                ]
-              },
-              "validators": []
-            },
-            {
-              "label": "Name of previous clinic",
-              "type": "obs",
-              "required": true,
-              "id": "nameOfPreviousClinic",
-              "questionOptions": {
-                "rendering": "text",
-                "concept": "14026b25-6642-4002-a5ed-2049fb82afb2",
-                "conceptMappings": [],
-                "answers": []
-              },
-              "hide": {
-                "hideWhenExpression": "transferInOnARTFromAnotherTreatmentSite !== 'Yes'"
-              },
-              "validators": []
-            },
-            {
-              "label": "Date transferred in",
-              "type": "obs",
-              "required": true,
-              "id": "dateTransferredIn",
-              "questionOptions": {
-                "rendering": "date",
-                "concept": "2509d668-caa1-4223-8f70-b0b61eb5b39e",
-                "conceptMappings": [],
-                "answers": []
-              },
-              "hide": {
-                "hideWhenExpression": "transferInOnARTFromAnotherTreatmentSite !== 'Yes'"
-              },
-              "validators": [
-                {
-                  "type": "date",
-                  "allowFutureDates": "false"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "label": "History",
+      "label": "Personal history",
       "sections": [
         {
           "label": "Personal history",
@@ -504,7 +79,12 @@
               "validators": []
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "label": "Family history",
+      "sections": [
         {
           "label": "Family History",
           "isExpanded": "true",
@@ -624,7 +204,7 @@
               },
               "questions": [
                 {
-                  "label": "Family members names; partner/children, & Unique No if in care",
+                  "label": "Individual name",
                   "id": "familyMembersNames",
                   "required": true,
                   "questionOptions": {
@@ -636,7 +216,7 @@
                   "validators": []
                 },
                 {
-                  "label": "Family member Age",
+                  "label": "Age",
                   "id": "familyMemberAge",
                   "required": true,
                   "questionOptions": {
@@ -648,7 +228,7 @@
                   "validators": []
                 },
                 {
-                  "label": "Family member Sex",
+                  "label": "Sex",
                   "id": "familyMemberSex",
                   "required": true,
                   "questionOptions": {
@@ -669,25 +249,173 @@
                   "validators": []
                 },
                 {
+                  "label": "Relationship",
+                  "type": "obs",
+                  "id": "relationship",
+                  "questionOptions": {
+                    "rendering": "select",
+                    "concept": "2eed6753-c2b7-4b85-a099-a78beb4eaff3",
+                    "conceptMappings": [],
+                    "answers": [
+                      {
+                        "concept": "09ab218f-95c4-4a43-b4bc-cb671ffa4421",
+                        "label": "Husband"
+                      },
+                      {
+                        "concept": "1fe41951-aa3e-4517-9d90-eee66ee0dfde",
+                        "label": "Wife"
+                      },
+                      {
+                        "concept": "16b2b91e-a357-4407-b3c1-d9d634ff1e5d",
+                        "label": "Mother"
+                      },
+                      {
+                        "concept": "e3036b78-b41e-45b8-965e-6ae87584a7be",
+                        "label": "Father"
+                      },
+                      {
+                        "concept": "fe01b63c-289f-4e87-9e6d-46376cb3dcf6",
+                        "label": "Sexual"
+                      },
+                      {
+                        "concept": "5fd33475-6a79-4987-9376-5651de230262",
+                        "label": "Brother"
+                      },
+                      {
+                        "concept": "10c9b5c5-80b7-432a-97f6-a15e711e9832",
+                        "label": "Sister"
+                      },
+                      {
+                        "concept": "7d563689-1e2f-4d18-8407-c08361397d93",
+                        "label": "Child"
+                      },
+                      {
+                        "concept": "14467f43-c872-414b-945f-ad316a6ddf1b",
+                        "label": "Spouse"
+                      }
+                    ]
+                  },
+                  "validators": []
+                },
+                {
+                  "label": "Phone Number",
+                  "id": "familyMemberPhoneNumberKnownUnknown",
+                  "questionOptions": {
+                    "answers": [
+                      {
+                        "label": "Known",
+                        "concept": "c91e78ca-dee2-4149-b0c9-3270bfff5357"
+                      },
+                      {
+                        "label": "Unknown",
+                        "concept": "4a30682d-93e1-4afa-93e6-c87e3c99c31d"
+                      }
+                    ],
+                    "concept": "cce02a4f-9212-4a85-8e55-0d8f6814e393",
+                    "rendering": "radio"
+                  },
+                  "validators": []
+                },
+                {
+                  "label": "Enter Phone Number",
+                  "id": "familyMemberPhoneNumber",
+                  "questionOptions": {
+                    "answers": [],
+                    "concept": "ea7dbf27-e84d-43a3-bbac-d7bb06ff1f23",
+                    "rendering": "text"
+                  },
+                  "type": "obs",
+                  "hide": {
+                    "hideWhenExpression": "isEmpty(familyMemberPhoneNumberKnownUnknown) || familyMemberPhoneNumberKnownUnknown !== 'c91e78ca-dee2-4149-b0c9-3270bfff5357' "
+                  },
+                  "validators": []
+                },
+                {
+                  "label": "HIV status during mapping",
+                  "id": "familyMemberHivDuringMapping",
+                  "questionOptions": {
+                    "answers": [
+                      {
+                        "label": "Known",
+                        "concept": "c1c0789b-eaee-4e25-bd1a-600b2c15a19f"
+                      },
+                      {
+                        "label": "Unknown",
+                        "concept": "9202b40e-349a-4033-a6b5-7305dbf9dc96"
+                      }
+                    ],
+                    "concept": "03ae7466-a616-42d8-b827-46024c88a831",
+                    "rendering": "radio"
+                  },
+                  "validators": []
+                },
+                {
                   "label": "HIV Status",
                   "id": "familyMemberHIVStatus",
-                  "required": true,
                   "questionOptions": {
                     "answers": [
                       {
                         "label": "Positive",
-                        "concept": "a395dc8c-2129-4ac4-b5c3-b8c57f4f08b5"
+                        "concept": "7acfafa4-f19b-485e-97a7-c9e002dbe37a"
                       },
                       {
                         "label": "Negative",
-                        "concept": "453d955f-7755-4230-9a69-caf17a191864"
+                        "concept": "718b4589-2a11-4355-b8dc-aa668a93e098"
                       },
                       {
                         "label": "Do not know",
-                        "concept": "a5bcac8d-305a-4b46-9121-014d72ac4c2d"
+                        "concept": "9024e06b-ec26-4d13-a876-70ea1eebfa3e"
                       }
                     ],
                     "concept": "160f21c0-9a96-4ffd-a72c-aabed02b6a53",
+                    "rendering": "radio"
+                  },
+                  "type": "obs",
+                  "hide": {
+                    "hideWhenExpression": "isEmpty(familyMemberHivDuringMapping) || familyMemberHivDuringMapping !== 'c1c0789b-eaee-4e25-bd1a-600b2c15a19f' "
+                  },
+                  "validators": []
+                },
+                {
+                  "label": "Date HIV Tested",
+                  "type": "obs",
+                  "required": true,
+                  "id": "dateHivTested",
+                  "questionOptions": {
+                    "rendering": "date",
+                    "concept": "11dc9dd8-bba8-4e4e-a2a3-528d9082d153",
+                    "conceptMappings": [],
+                    "answers": []
+                  },
+                  "hide": {
+                    "hideWhenExpression": "isEmpty(familyMemberHivDuringMapping) || familyMemberHivDuringMapping !== 'c1c0789b-eaee-4e25-bd1a-600b2c15a19f'"
+                  },
+                  "validators": [
+                    {
+                      "type": "date",
+                      "allowFutureDates": "false"
+                    }
+                  ]
+                },
+                {
+                  "label": "Results of HTS",
+                  "id": "resultsOfHts",
+                  "questionOptions": {
+                    "answers": [
+                      {
+                        "label": "Positive",
+                        "concept": "4e863543-07ed-4e81-9452-9e309007e713"
+                      },
+                      {
+                        "label": "Negative",
+                        "concept": "24de217b-03c4-4fd5-a1f6-ba163580fac1"
+                      },
+                      {
+                        "label": "Inconclusive",
+                        "concept": "f2c2cdcf-550f-427c-96af-52b6a12c3d42"
+                      }
+                    ],
+                    "concept": "75e39180-fe17-4075-9642-f389e6d1ea20",
                     "rendering": "radio"
                   },
                   "type": "obs",
@@ -710,13 +438,36 @@
                         "concept": "false"
                       }
                     ]
+                  },
+                  "hide": {
+                    "hideWhenExpression": "!(familyMemberHIVStatus === '7acfafa4-f19b-485e-97a7-c9e002dbe37a' || resultsOfHts === '4e863543-07ed-4e81-9452-9e309007e713')"
                   }
+                },
+                {
+                  "label": "Unique ART No/HEI No",
+                  "type": "personAttribute",
+                  "required": false,
+                  "id": "artOrHeiNumber",
+                  "questionOptions": {
+                    "rendering": "text",
+                    "attributeType": "7bec5791-6cdc-4fe4-bfbb-89cbf3ab03b4",
+                    "isSimpleValue": true
+                  },
+                  "hide": {
+                    "hideWhenExpression": "isEmpty(familyMemberOnART) || familyMemberOnART !== 'true'"
+                  },
+                  "validators": []
                 }
               ],
               "validators": []
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "label": "Antiretroviral Treatment History",
+      "sections": [
         {
           "label": "Antiretroviral Treatment History",
           "isExpanded": "true",
@@ -748,7 +499,7 @@
       ]
     },
     {
-      "label": "Milestones",
+      "label": "Clinical and laboratory milestones",
       "sections": [
         {
           "label": "Clinical and Laboratory Milestones",
@@ -880,7 +631,12 @@
               ]
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "label": "Antiretroviral Treatment ",
+      "sections": [
         {
           "label": "Antiretroviral Treatment",
           "isExpanded": "true",
@@ -1254,324 +1010,6 @@
                   "validators": []
                 }
               ]
-            }
-          ]
-        },
-        {
-          "label": "ART Treatment Interruption",
-          "isExpanded": "true",
-          "questions": [
-            {
-              "label": "Was ART Treatment Interruption Stop or Lost",
-              "id": "artInterruption",
-              "required": true,
-              "questionOptions": {
-                "concept": "2b19035d-46a7-4007-b63b-87753dd5b6d3",
-                "rendering": "radio",
-                "conceptMappings": [],
-                "answers": [
-                  {
-                    "label": "Stop",
-                    "concept": "6bde1029-3d73-4214-abd8-90650bda75c1"
-                  },
-                  {
-                    "label": "Lost",
-                    "concept": "48e7693b-d128-475a-a5f5-ad00ae913fdc"
-                  }
-                ]
-              },
-              "type": "obs",
-              "validators": []
-            },
-            {
-              "label": "ART Treatment Stop/Lost Date",
-              "id": "cOhort",
-              "required": true,
-              "questionOptions": {
-                "answers": [],
-                "concept": "84c23dc4-40f4-4d9a-a2f5-ebeb4b4f3250",
-                "rendering": "date"
-              },
-              "type": "obs",
-              "validators": [
-                {
-                  "type": "date",
-                  "allowFutureDates": "false"
-                }
-              ]
-            },
-            {
-              "label": "ART Treatment Reasons For Stop",
-              "id": "stopSwiReason",
-              "required": true,
-              "questionOptions": {
-                "concept": "a7f113ad-f18b-41fe-a1ea-5f468c911b1d",
-                "rendering": "select",
-                "conceptMappings": [],
-                "answers": [
-                  {
-                    "label": "Pregnancy",
-                    "concept": "88f2a6ea-367d-45dc-942a-b809b0d17275"
-                  },
-                  {
-                    "label": " Failure of Treatment",
-                    "concept": "17a3b24b-e107-49fe-8b0d-69c3b7e60f4c"
-                  },
-                  {
-                    "label": "Poor Adherence Interruption",
-                    "concept": "93e4aff2-d952-448e-88e3-ee138e13abd4"
-                  },
-                  {
-                    "label": "Illness Hospitalisation",
-                    "concept": "6633ce0b-0237-4f6a-b092-787f42d86464"
-                  },
-                  {
-                    "label": "Drug stockout",
-                    "concept": "b4d8805f-40ff-4c9d-9118-feeab45ad8be"
-                  },
-                  {
-                    "label": "Patient Lack Finances",
-                    "concept": "c25a938d-a1d9-4e01-879a-0ed00ec5bd07"
-                  },
-                  {
-                    "label": "Other Reason For ART Stop(Specify)",
-                    "concept": "ad422a59-e314-4283-8b0e-5f3d6b524eb5"
-                  }
-                ]
-              },
-              "type": "obs",
-              "validators": []
-            },
-            {
-              "label": "Other Answer",
-              "type": "obs",
-              "required": true,
-              "id": "otherSReason",
-              "questionOptions": {
-                "rendering": "text",
-                "concept": "9e9df8b6-3bad-454e-a2fc-04842d02d62a",
-                "conceptMappings": [],
-                "answers": []
-              },
-              "hide": {
-                "hideWhenExpression": "stopSwiReason !== 'ad422a59-e314-4283-8b0e-5f3d6b524eb5'"
-              },
-              "validators": []
-            },
-            {
-              "label": "Date If Restarted",
-              "id": "dateRestart",
-              "required": true,
-              "questionOptions": {
-                "answers": [],
-                "concept": "fa954f61-ffaf-426c-a70b-3da7fddafbf8",
-                "rendering": "date"
-              },
-              "type": "obs",
-              "validators": [
-                {
-                  "type": "date",
-                  "allowFutureDates": "false"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "label": "End of Follow-Up",
-          "isExpanded": "true",
-          "questions": [
-            {
-              "label": "End Of Follow Up Reason",
-              "id": "endOfFollowup",
-              "required": true,
-              "questionOptions": {
-                "concept": "28cf30e9-d37b-474d-a715-f62cd19a62e5",
-                "rendering": "radio",
-                "conceptMappings": [],
-                "answers": [
-                  {
-                    "label": "Death",
-                    "concept": "041daad2-198b-4223-aa46-6b23e85776a9"
-                  },
-                  {
-                    "label": "Lost Follow Up(< 28days)",
-                    "concept": "0759fae0-bebf-4fd0-b5d5-999be4296f01"
-                  },
-                  {
-                    "label": " Transferred Out",
-                    "concept": "b949cd75-97cb-4de2-9553-e6d335696f07"
-                  }
-                ]
-              },
-              "type": "obs",
-              "validators": []
-            },
-            {
-              "label": "Date of Death",
-              "id": "deathDate",
-              "required": true,
-              "questionOptions": {
-                "answers": [],
-                "concept": "52ce6b47-a049-4b56-9cf7-0852939a87af",
-                "rendering": "date"
-              },
-              "hide": {
-                "hideWhenExpression": "endOfFollowup !== '041daad2-198b-4223-aa46-6b23e85776a9'"
-              },
-              "type": "obs",
-              "validators": [
-                {
-                  "type": "date",
-                  "allowFutureDates": "false"
-                }
-              ]
-            },
-            {
-              "label": "Cause Of Death Reasons",
-              "id": "causeOfDeathReasons",
-              "required": true,
-              "questionOptions": {
-                "concept": "4acd75d7-1bd1-40a1-8ba2-0653893319ef",
-                "rendering": "select",
-                "conceptMappings": [],
-                "answers": [
-                  {
-                    "label": "Cause Of Death, TB",
-                    "concept": "762eba17-cee2-4a40-9f82-8bc291ffa535"
-                  },
-                  {
-                    "label": " Cause Of Death, Cancer",
-                    "concept": "4641d6d8-1a47-40c6-aac2-d59e9ce064bb"
-                  },
-                  {
-                    "label": "Cause Of Death, Other Other infectious and parasitic disease",
-                    "concept": "e03e32aa-cfa1-47a4-b24e-c37af2b28836"
-                  },
-                  {
-                    "label": "Cause Of Death, Non-natural causes (accident/war)",
-                    "concept": "1c4cf2ab-4982-4f81-817c-0e2cf9c33aba"
-                  },
-                  {
-                    "label": "Cause Of Death,Unknown Cause",
-                    "concept": "4d48b677-fc7f-4177-98bd-1c9944677d1a"
-                  }
-                ]
-              },
-              "hide": {
-                "hideWhenExpression": "endOfFollowup !== '041daad2-198b-4223-aa46-6b23e85776a9'"
-              },
-              "type": "obs",
-              "validators": []
-            },
-            {
-              "label": "Lost Follow up (Last Visit Date)",
-              "id": "ltfuDate",
-              "required": true,
-              "questionOptions": {
-                "answers": [],
-                "concept": "773cd838-7b21-4f34-9b33-0a071140f817",
-                "rendering": "date"
-              },
-              "hide": {
-                "hideWhenExpression": "endOfFollowup !== '0759fae0-bebf-4fd0-b5d5-999be4296f01'"
-              },
-              "type": "obs",
-              "validators": [
-                {
-                  "type": "date",
-                  "allowFutureDates": "false"
-                }
-              ]
-            },
-            {
-              "label": "Cause Of Lost to Follow-Up Reasons",
-              "id": "causeOfltfuReasons",
-              "required": true,
-              "questionOptions": {
-                "concept": "12b33328-f06b-40ec-81f0-7da20ddc9580",
-                "rendering": "select",
-                "conceptMappings": [],
-                "answers": [
-                  {
-                    "label": "Self transfer(Silent Transfer)",
-                    "concept": "7c288980-ccab-4633-a5e0-bdbab0d8ff32"
-                  },
-                  {
-                    "label": " Traced patient (Unable to locate)",
-                    "concept": "011eb423-8936-418a-a160-329ff33589ca"
-                  },
-                  {
-                    "label": "Did not attempt to trace patient",
-                    "concept": "0a27ae7a-d145-4ef9-8ba1-594cdcc7cb39"
-                  },
-                  {
-                    "label": "Death",
-                    "concept": "f49a0381-3dc7-47d8-a9a6-4cfd433f1d34"
-                  }
-                ]
-              },
-              "hide": {
-                "hideWhenExpression": "endOfFollowup !== '0759fae0-bebf-4fd0-b5d5-999be4296f01'"
-              },
-              "type": "obs",
-              "validators": []
-            },
-            {
-              "label": "Self Transfer Date",
-              "id": "selfTransferDate",
-              "required": true,
-              "questionOptions": {
-                "answers": [],
-                "concept": "760ce522-ff7e-4064-82b4-814964b3e83a",
-                "rendering": "date"
-              },
-              "hide": {
-                "hideWhenExpression": "endOfFollowup !== '0759fae0-bebf-4fd0-b5d5-999be4296f01' || causeOfltfuReasons !== '7c288980-ccab-4633-a5e0-bdbab0d8ff32' "
-              },
-              "type": "obs",
-              "validators": [
-                {
-                  "type": "date",
-                  "allowFutureDates": "false"
-                }
-              ]
-            },
-            {
-              "label": "Transferred Out Date",
-              "id": "transferOutDate",
-              "required": true,
-              "questionOptions": {
-                "answers": [],
-                "concept": "9531371b-ba97-4f57-9edb-7480d908b8f8",
-                "rendering": "date"
-              },
-              "hide": {
-                "hideWhenExpression": "endOfFollowup !== 'b949cd75-97cb-4de2-9553-e6d335696f07'"
-              },
-              "type": "obs",
-              "validators": [
-                {
-                  "type": "date",
-                  "allowFutureDates": "false"
-                }
-              ]
-            },
-            {
-              "label": "Transfer To Location",
-              "type": "obs",
-              "required": true,
-              "id": "locationTransferto",
-              "questionOptions": {
-                "rendering": "text",
-                "concept": "ccdfc79c-0c19-4731-ab95-f41a82480069",
-                "conceptMappings": [],
-                "answers": []
-              },
-              "hide": {
-                "hideWhenExpression": "endOfFollowup !== 'b949cd75-97cb-4de2-9553-e6d335696f07'"
-              },
-              "validators": []
             }
           ]
         }
