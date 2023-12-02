@@ -213,6 +213,32 @@
 							"validators": []
 						},
 						{
+							"label": "EAC Session",
+							"type": "obs",
+							"required": true,
+							"id": "eacSession",
+							"questionOptions": {
+								"rendering": "radio",
+								"concept": "65536958-fc01-4002-8839-af4b6ab0489b",
+								"conceptMappings": [],
+								"answers": [
+									{
+										"concept": "37f1e487-24f7-48f3-a347-391e877152e4",
+										"label": "First EAC Session"
+									},
+									{
+										"concept": "348c5147-4e54-420a-a035-b322e1ba0b6e",
+										"label": "Second EAC Session"
+									},
+									{
+										"concept": "60966dae-3999-42b9-aec1-6161cebb22c1",
+										"label": "Third EAC Session"
+									}
+								]
+							},
+							"validators": []
+						},
+						{
 							"label": "Adherence",
 							"type": "obs",
 							"required": false,
@@ -738,5 +764,6 @@
 		}
 	],
 	"processor": "EncounterFormProcessor",
-	"referencedForms": []
+	"referencedForms": [],
+	"encounterType": "f7f1c854-69e5-11ee-8c99-0242ac120002"
 }
