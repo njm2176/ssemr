@@ -218,7 +218,7 @@
 							"required": true,
 							"id": "eacSession",
 							"questionOptions": {
-								"rendering": "radio",
+								"rendering": "select",
 								"concept": "65536958-fc01-4002-8839-af4b6ab0489b",
 								"conceptMappings": [],
 								"answers": [
