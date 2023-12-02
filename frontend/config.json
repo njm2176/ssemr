@@ -28,9 +28,23 @@
     }
   },
   "@openmrs/esm-patient-registration-app": {
+    "sectionDefinitions": [
+      {
+        "id": "nextOfKin",
+        "name": "Next of Kin",
+        "fields": [
+          "altPhone",
+          "txSupporterName",
+          "txSupporterAddress",
+          "txSupporterPhoneNo",
+          "homeBasedcareProvider"
+        ]
+      }
+    ],
     "sections": [
       "demographics",
-      "contact"
+      "contact",
+      "nextOfKin"
     ],
     "fieldDefinitions": [
       {
@@ -57,7 +71,7 @@
         "id": "txSupporterName",
         "type": "person attribute",
         "uuid": "80fcb21b-f0af-493e-bcd2-75d587fcbbe9",
-        "label": "Treatment supporter's name(is disclosed)",
+        "label": "Treatment supporter's name(if disclosed)",
         "validation": {
           "required": false
         }
@@ -66,7 +80,7 @@
         "id": "txSupporterAddress",
         "type": "person attribute",
         "uuid": "0aa1708e-64a4-4edf-b02e-bc75bc4cd970",
-        "label": "Treatment supporter's address(is disclosed)",
+        "label": "Treatment supporter's address(if disclosed)",
         "validation": {
           "required": false
         }
