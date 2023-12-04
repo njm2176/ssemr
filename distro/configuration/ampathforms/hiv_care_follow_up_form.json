@@ -181,7 +181,7 @@
               "label": "Clients EDD",
               "type": "obs",
               "required": true,
-              "id": "eDDdate",
+              "id": "eddDate",
               "questionOptions": {
                 "rendering": "date",
                 "concept": "12118225-edad-45e2-9313-a5bca2cb4995"
@@ -200,7 +200,7 @@
               "label": "Is the client a PMTCT?",
               "type": "obs",
               "required": true,
-              "id": "clientPmTct",
+              "id": "clientPmtct",
               "questionOptions": {
                 "rendering": "radio",
                 "concept": "1d593268-8a2d-4030-bf1d-9c341d47f875",
@@ -262,7 +262,7 @@
             {
               "label": "Current cough",
               "type": "obs",
-              "id": "cOughDuratiOn",
+              "id": "coughDuration",
               "questionOptions": {
                 "concept": "147b8be8-d657-4e46-8970-6f9983b27722",
                 "rendering": "radio",
@@ -284,7 +284,7 @@
             {
               "label": "Fever:",
               "type": "obs",
-              "id": "FeverIsh",
+              "id": "feverIsh",
               "questionOptions": {
                 "concept": "f405d8ec-14d0-485a-b52d-bffdfeb26581",
                 "rendering": "radio",
@@ -306,7 +306,7 @@
             {
               "label": "Weight loss",
               "type": "obs",
-              "id": "WeigHtLossGain",
+              "id": "WeightLossGain",
               "questionOptions": {
                 "concept": "78f5bc62-ecbe-457f-87dd-def20dbee82e",
                 "rendering": "radio",
@@ -329,7 +329,7 @@
               "label": "Poor weight gain",
               "type": "obs",
               "required": "true",
-              "id": "pWeigHtGain",
+              "id": "pWeightGain",
               "questionOptions": {
                 "concept": "78f5bc62-ecbe-457f-87dd-def20dbee82e",
                 "rendering": "radio",
@@ -351,7 +351,7 @@
             {
               "label": "Night sweats:",
               "type": "obs",
-              "id": "NighTsWeatS",
+              "id": "nightSweats",
               "questionOptions": {
                 "concept": "9e0bf1ca-dbbe-4024-9d1c-174f4ab1e80d",
                 "rendering": "radio",
@@ -373,7 +373,7 @@
             {
               "label": "Close contact history with TB patient",
               "type": "obs",
-              "id": "ConTacTbCase",
+              "id": "contacTbCase",
               "questionOptions": {
                 "concept": "51b82f82-0c27-46e3-9f33-6d65cc1f6eed",
                 "rendering": "radio",
@@ -411,13 +411,13 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "((String(cOughDuratiOn) === 'true'? 1 : 0) + (String(FeverIsh) === 'true'? 1 : 0) + (String(WeigHtLossGain) === 'true'? 1 : 0) + (String(NighTsWeatS) === 'true'? 1 : 0) + (String(pWeigHtGain) === 'true'? 1 : 0) + (String(ConTacTbCase) === 'true'? 1 : 0)) === 0"
+                "hideWhenExpression": "((String(coughDuration) === 'true'? 1 : 0) + (String(feverIsh) === 'true'? 1 : 0) + (String(WeightLossGain) === 'true'? 1 : 0) + (String(nightSweats) === 'true'? 1 : 0) + (String(pWeightGain) === 'true'? 1 : 0) + (String(contacTbCase) === 'true'? 1 : 0)) === 0"
               }
             },
             {
               "label": "Sputum for AFB result",
               "type": "obs",
-              "id": "sPutUmResuLts",
+              "id": "sputumResults",
               "questionOptions": {
                 "concept": "fdaa7259-df0b-4e26-9d9c-de2ca68dff1d",
                 "rendering": "radio",
@@ -459,7 +459,7 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "((String(cOughDuratiOn) === 'true'? 1 : 0) + (String(FeverIsh) === 'true'? 1 : 0) + (String(WeigHtLossGain) === 'true'? 1 : 0) + (String(NighTsWeatS) === 'true'? 1 : 0) + (String(pWeigHtGain) === 'true'? 1 : 0) + (String(ConTacTbCase) === 'true'? 1 : 0)) === 0"
+                "hideWhenExpression": "((String(coughDuration) === 'true'? 1 : 0) + (String(feverIsh) === 'true'? 1 : 0) + (String(WeightLossGain) === 'true'? 1 : 0) + (String(nightSweats) === 'true'? 1 : 0) + (String(pWeightGain) === 'true'? 1 : 0) + (String(contacTbCase) === 'true'? 1 : 0)) === 0"
               }
             },
             {
@@ -511,7 +511,7 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "((String(cOughDuratiOn) === 'true'? 1 : 0) + (String(FeverIsh) === 'true'? 1 : 0) + (String(WeigHtLossGain) === 'true'? 1 : 0) + (String(NighTsWeatS) === 'true'? 1 : 0) + (String(pWeigHtGain) === 'true'? 1 : 0) + (String(ConTacTbCase) === 'true'? 1 : 0)) === 0"
+                "hideWhenExpression": "((String(coughDuration) === 'true'? 1 : 0) + (String(feverIsh) === 'true'? 1 : 0) + (String(WeightLossGain) === 'true'? 1 : 0) + (String(nightSweats) === 'true'? 1 : 0) + (String(pWeightGain) === 'true'? 1 : 0) + (String(contacTbCase) === 'true'? 1 : 0)) === 0"
               }
             },
             {
@@ -555,13 +555,13 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "((String(cOughDuratiOn) === 'true'? 1 : 0) + (String(FeverIsh) === 'true'? 1 : 0) + (String(WeigHtLossGain) === 'true'? 1 : 0) + (String(NighTsWeatS) === 'true'? 1 : 0) + (String(pWeigHtGain) === 'true'? 1 : 0) + (String(ConTacTbCase) === 'true'? 1 : 0)) === 0"
+                "hideWhenExpression": "((String(coughDuration) === 'true'? 1 : 0) + (String(feverIsh) === 'true'? 1 : 0) + (String(WeightLossGain) === 'true'? 1 : 0) + (String(nightSweats) === 'true'? 1 : 0) + (String(pWeightGain) === 'true'? 1 : 0) + (String(contacTbCase) === 'true'? 1 : 0)) === 0"
               }
             },
             {
               "label": "TB diagnosed",
               "type": "obs",
-              "id": "cliNicalDiagnosisAction",
+              "id": "clinicalDiagnosisAction",
               "questionOptions": {
                 "concept": "1b4f4df7-dddc-4e73-ab18-304c4fd12953",
                 "rendering": "radio",
@@ -577,7 +577,7 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "((String(cOughDuratiOn) === 'true'? 1 : 0) + (String(FeverIsh) === 'true'? 1 : 0) + (String(WeigHtLossGain) === 'true'? 1 : 0) + (String(NighTsWeatS) === 'true'? 1 : 0) + (String(pWeigHtGain) === 'true'? 1 : 0) + (String(ConTacTbCase) === 'true'? 1 : 0)) === 0"
+                "hideWhenExpression": "((String(coughDuration) === 'true'? 1 : 0) + (String(feverIsh) === 'true'? 1 : 0) + (String(WeightLossGain) === 'true'? 1 : 0) + (String(nightSweats) === 'true'? 1 : 0) + (String(pWeightGain) === 'true'? 1 : 0) + (String(contacTbCase) === 'true'? 1 : 0)) === 0"
               }
             },
             {
