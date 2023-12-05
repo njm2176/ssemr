@@ -603,7 +603,7 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "cliNicalDiagnosisAction !=='true'"
+                "hideWhenExpression": "clinicalDiagnosisAction !=='true'"
               }
             },
             {
