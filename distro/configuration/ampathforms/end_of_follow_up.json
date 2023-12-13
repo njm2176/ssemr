@@ -1,0 +1,118 @@
+{
+    "name": "End of follow up",
+    "pages": [
+      {
+        "label": "End of follow up",
+        "sections": [
+          {
+            "label": "End of follow up",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "Death",
+                "type": "obs",
+                "required": true,
+                "id": "isDeath",
+                "questionOptions": {
+                  "rendering": "radio",
+                  "concept": "bced5365-80f5-4a27-a287-60296c4e4ff9",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "label": "Yes",
+                      "concept": "Yes"
+                    },
+                    {
+                      "label": "No",
+                      "concept": "No"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Date of death",
+                "type": "obs",
+                "required": true,
+                "id": "dateOfDeath",
+                "questionOptions": {
+                  "rendering": "date",
+                  "concept": "bced5365-80f5-4a27-a287-60296c4e4ff9",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": " Lost to follow-up (>3 months)",
+                "type": "obs",
+                "required": true,
+                "id": "lostToFollowUp",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "2d5caeac-2172-11ea-978f-2e728ce88125",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Transfer out (to)",
+                "type": "obs",
+                "required": false,
+                "id": "transferOut",
+                "questionOptions": {
+                  "rendering": "radio",
+                  "concept": "a1ffcbd2-3372-45ea-8177-562c42af081d",
+                  "conceptMappings": [],
+                  "answers": [
+                    {
+                      "label": "Yes",
+                      "concept": "Yes"
+                    },
+                    {
+                      "label": "No",
+                      "concept": "No"
+                    }
+                  ]
+                },
+                "validators": []
+              },
+              {
+                "label": "Date",
+                "type": "obs",
+                "required": false,
+                "id": "dateTransferDate",
+                "questionOptions": {
+                  "rendering": "date",
+                  "concept": "9531371b-ba97-4f57-9edb-7480d908b8f8",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              },
+              {
+                "label": "Transfer to",
+                "type": "obs",
+                "required": false,
+                "id": "transferTo",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "a1ffcbd2-3372-45ea-8177-562c42af081d",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "processor": "EncounterFormProcessor",
+    "encounterType": "81e13b91-3f10-11e4-adec-0800271c1b75",
+    "referencedForms": [],
+    "uuid": "61c0c516-f240-423f-8fc0-14e478809480",
+    "description": "End of follow up form",
+    "version": "1.0.0"
+  }

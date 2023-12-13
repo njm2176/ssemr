@@ -21,12 +21,12 @@
         <property name="country" value="South Sudan"/>
     </elementDefaults>
     <lineByLineFormat>
-        <string>address6</string>
-        <string>address5</string>
-        <string>address4</string>
-        <string>address3</string>
-        <string>address2</string>
-        <string>address1</string>
         <string>country</string>
+        <string>address1</string>
+        <string>address2</string>
+        <string>address3</string>
+        <string>address4</string>
+        <string>address5</string>
+        <string>address6</string>
     </lineByLineFormat>
 </org.openmrs.layout.address.AddressTemplate>
