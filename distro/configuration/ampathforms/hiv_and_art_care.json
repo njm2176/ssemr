@@ -879,7 +879,10 @@
                   "type": "date",
                   "allowFutureDates": "false"
                 }
-              ]
+              ],
+              "hide": {
+                "hideWhenExpression": "isEmpty(sectionBlank) || sectionBlank !== 'false'"
+              }
             },
             {
               "label": "WHO Stage",
@@ -909,7 +912,10 @@
                 ]
               },
               "type": "obs",
-              "validators": []
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "isEmpty(sectionBlank) || sectionBlank !== 'false'"
+              }
             },
             {
               "label": "Weight",
@@ -923,7 +929,10 @@
                 "max": 150
               },
               "type": "obs",
-              "validators": []
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "isEmpty(sectionBlank) || sectionBlank !== 'false'"
+              }
             },
             {
               "label": "Height(cm) / length for child<2yrs",
@@ -936,7 +945,10 @@
                 "min": 0
               },
               "type": "obs",
-              "validators": []
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "isEmpty(sectionBlank) || sectionBlank !== 'false'"
+              }
             },
             {
               "label": "CD4 Count",
@@ -949,7 +961,7 @@
               },
               "type": "obs",
               "hide": {
-                "hideWhenExpression": "age <= 5"
+                "hideWhenExpression": "age <= 5 || isEmpty(sectionBlank) || sectionBlank !== 'false'"
               },
               "validators": []
             },
@@ -964,11 +976,14 @@
               },
               "type": "obs",
               "hide": {
-                "hideWhenExpression": "age > 5"
+                "hideWhenExpression": "age > 5 || isEmpty(sectionBlank) || sectionBlank !== 'false'"
               },
               "validators": []
             }
-          ]
+          ],
+          "hide": {
+            "hideWhenExpression": "isEmpty(sectionBlank) || sectionBlank !== 'false'"
+          }
         }
       ]
     },

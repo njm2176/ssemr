@@ -41,12 +41,25 @@
               ]
             },
             {
-              "label": "Duration in months since first starting ART/since starting current regimen",
+              "label": "Duration in months since first starting ART",
               "required": true,
-              "id": "durationDays",
+              "id": "durationDaysStartingArt",
+              "questionOptions": {
+                "rendering": "numeric",
+                "attributeType": "a8dd544d-fe87-4ff1-9911-6acdc6847d21",
+                "min": 0,
+                "isSimpleValue": true
+              },
+              "validators": []
+            },
+            {
+              "label": "Duration in months since starting current regimen",
+              "required": true,
+              "id": "durationDaysStartingRegimen",
               "questionOptions": {
                 "rendering": "numeric",
                 "attributeType": "e0e2acbe-f88b-4710-adbd-08637d80ea97",
+                "min": 0,
                 "isSimpleValue": true
               },
               "validators": []
@@ -55,28 +68,32 @@
               "label": "Weight",
               "id": "weight",
               "required": true,
+              "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('ca055d08-6cd7-4331-83bb-1d27dc5aa61f')) ? undefined : HD.getObject('prevEnc').getValue('ca055d08-6cd7-4331-83bb-1d27dc5aa61f')",
               "questionOptions": {
                 "answers": [],
                 "concept": "ca055d08-6cd7-4331-83bb-1d27dc5aa61f",
-                "rendering": "numeric"
+                "rendering": "numeric",
+                "min": 0
               },
               "type": "obs",
               "validators": []
             },
             {
-              "label": "Height(cm) at first visit",
+              "label": "Height(cm)",
               "id": "height",
               "required": true,
+              "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('4940b0bb-e1b0-44b9-803d-9720ee5743d8')) ? undefined : HD.getObject('prevEnc').getValue('4940b0bb-e1b0-44b9-803d-9720ee5743d8')",
               "questionOptions": {
                 "answers": [],
                 "concept": "4940b0bb-e1b0-44b9-803d-9720ee5743d8",
-                "rendering": "numeric"
+                "rendering": "numeric",
+                "min": 2.5
               },
               "type": "obs",
               "validators": []
             },
             {
-              "label": "BMI",
+              "label": "BMI for adult and children above 5 Years",
               "type": "obs",
               "questionOptions": {
                 "rendering": "number",
@@ -90,7 +107,7 @@
               "id": "bMi"
             },
             {
-              "label": "MUAC",
+              "label": "MUAC for children and pregnant mothers",
               "type": "obs",
               "questionOptions": {
                 "rendering": "number",
@@ -98,7 +115,7 @@
                 "max": "250",
                 "min": "0"
               },
-              "id": "mUaC"
+              "id": "muac"
             },
             {
               "label": "Current on FP",
@@ -119,6 +136,9 @@
                     "concept": "false"
                   }
                 ]
+              },
+              "hide": {
+                "hideWhenExpression": "sex === 'M'"
               },
               "validators": []
             },
@@ -151,7 +171,7 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "currentFP !== 'true'"
+                "hideWhenExpression": "sex === 'M' || currentFP !== 'true'"
               },
               "validators": []
             },
@@ -175,6 +195,9 @@
                   }
                 ]
               },
+              "hide": {
+                "hideWhenExpression": "sex === 'M'"
+              },
               "validators": []
             },
             {
@@ -187,7 +210,7 @@
                 "concept": "12118225-edad-45e2-9313-a5bca2cb4995"
               },
               "hide": {
-                "hideWhenExpression": "pregStatus !== 'true'"
+                "hideWhenExpression": "sex === 'M' || pregStatus !== 'true'"
               },
               "validators": [
                 {
@@ -215,6 +238,9 @@
                     "concept": "false"
                   }
                 ]
+              },
+              "hide": {
+                "hideWhenExpression": "sex === 'M'"
               },
               "validators": []
             },
@@ -258,6 +284,40 @@
                   "allowFutureDates": "false"
                 }
               ]
+            },
+            {
+              "label": "TB Status",
+              "type": "obs",
+              "id": "TBStatus",
+              "questionOptions": {
+                "concept": "9a1a731e-937b-46fe-aca2-acf83a326b71",
+                "rendering": "select",
+                "answers": [
+                  {
+                    "concept": "33475272-c82b-4476-b6a2-1908d532af8f",
+                    "label": "No Signs"
+                  },
+                  {
+                    "concept": "4897c2f3-9d36-4d6c-bf5a-780db6b4ab12",
+                    "label": "Pr TB - Presumptive TB"
+                  },
+                  {
+                    "concept": "8942c092-9ea4-4128-bade-060cd1a97c34",
+                    "label": "INH screened negative and currently on INH prophylaxis"
+                  },
+                  {
+                    "concept": "19b61c26-6533-4682-bd54-d45ad218e8f5",
+                    "label": "TB Rx - currently on TB treatment"
+                  },
+                  {
+                    "concept": "283858ee-c0b7-4691-ad6e-0785e9b737f4",
+                    "label": "ND - TB Screening not done"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": "clientTB !== 'true'"
+              }
             },
             {
               "label": "Current cough",
@@ -393,20 +453,32 @@
               }
             },
             {
-              "label": "Sputum for AFB, Has it been done?",
+              "label": "Type of test",
               "type": "obs",
-              "id": "sputumDone",
+              "id": "typeOfTest",
               "questionOptions": {
-                "concept": "06fbce51-d4ff-4ad3-b911-def303f3d2e2",
-                "rendering": "radio",
+                "concept": "6ceb4493-a690-46fd-98a2-9f86ee1410b9",
+                "rendering": "select",
                 "answers": [
                   {
-                    "concept": "true",
-                    "label": "Yes"
+                    "concept": "06fbce51-d4ff-4ad3-b911-def303f3d2e2",
+                    "label": "Sputum for AFB"
                   },
                   {
-                    "concept": "false",
-                    "label": "No"
+                    "concept": "edf1eec7-f766-4371-814b-0c18024217bb",
+                    "label": "CxR"
+                  },
+                  {
+                    "concept": "c50addfe-baf4-4ed0-b470-d6d4678b4359",
+                    "label": "GeneXpert"
+                  },
+                  {
+                    "concept": "ad8ecb63-6b5d-49b2-9a9d-e16d7a0efc40",
+                    "label": "FNA,Culture, UltraSound"
+                  },
+                  {
+                    "concept": "1b4f4df7-dddc-4e73-ab18-304c4fd12953",
+                    "label": "TB Diagnosed"
                   }
                 ]
               },
@@ -437,35 +509,14 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "sputumDone !== 'true'"
-              }
-            },
-            {
-              "label": "Has CxR been Done?",
-              "type": "obs",
-              "id": "cxrDone",
-              "questionOptions": {
-                "concept": "edf1eec7-f766-4371-814b-0c18024217bb",
-                "rendering": "radio",
-                "answers": [
-                  {
-                    "concept": "true",
-                    "label": "Yes"
-                  },
-                  {
-                    "concept": "false",
-                    "label": "No"
-                  }
-                ]
-              },
-              "hide": {
-                "hideWhenExpression": "((String(coughDuration) === 'true'? 1 : 0) + (String(feverIsh) === 'true'? 1 : 0) + (String(WeightLossGain) === 'true'? 1 : 0) + (String(nightSweats) === 'true'? 1 : 0) + (String(pWeightGain) === 'true'? 1 : 0) + (String(contacTbCase) === 'true'? 1 : 0)) === 0"
+                "hideWhenExpression": "typeOfTest !== '06fbce51-d4ff-4ad3-b911-def303f3d2e2'"
               }
             },
             {
               "label": "CxR result ",
               "type": "obs",
               "id": "cxrResult",
+              "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('7c679f4f-cae6-43ba-bf18-0f3bd9f060a8')) ? undefined : HD.getObject('prevEnc').getValue('7c679f4f-cae6-43ba-bf18-0f3bd9f060a8')",
               "questionOptions": {
                 "concept": "7c679f4f-cae6-43ba-bf18-0f3bd9f060a8",
                 "rendering": "select",
@@ -489,35 +540,26 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "cxrDone !== 'true'"
+                "hideWhenExpression": "typeOfTest !== 'edf1eec7-f766-4371-814b-0c18024217bb'"
               }
             },
             {
-              "label": "Has GeneXpert been Done?",
+              "label": "Other Dx Specify",
               "type": "obs",
-              "id": "geneDone",
+              "id": "otherDXSpecify",
               "questionOptions": {
-                "concept": "c50addfe-baf4-4ed0-b470-d6d4678b4359",
-                "rendering": "radio",
-                "answers": [
-                  {
-                    "concept": "true",
-                    "label": "Yes"
-                  },
-                  {
-                    "concept": "false",
-                    "label": "No"
-                  }
-                ]
+                "concept": "598aee3b-470c-4cfb-9b79-6bf34f988093",
+                "rendering": "text"
               },
               "hide": {
-                "hideWhenExpression": "((String(coughDuration) === 'true'? 1 : 0) + (String(feverIsh) === 'true'? 1 : 0) + (String(WeightLossGain) === 'true'? 1 : 0) + (String(nightSweats) === 'true'? 1 : 0) + (String(pWeightGain) === 'true'? 1 : 0) + (String(contacTbCase) === 'true'? 1 : 0)) === 0"
+                "hideWhenExpression": "cxrResult !== 'd10cedcc-ba9b-426b-8a23-5c906caf0579'"
               }
             },
             {
               "label": "GeneXpert result",
               "type": "obs",
               "id": "geneXpertResult",
+              "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('c2f01b10-1b5e-485a-a352-05788359d881')) ? undefined : HD.getObject('prevEnc').getValue('c2f01b10-1b5e-485a-a352-05788359d881')",
               "questionOptions": {
                 "concept": "c2f01b10-1b5e-485a-a352-05788359d881",
                 "rendering": "radio",
@@ -533,57 +575,14 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "geneDone !== 'true'"
+                "hideWhenExpression": "typeOfTest !== 'c50addfe-baf4-4ed0-b470-d6d4678b4359'"
               }
             },
             {
-              "label": "FNA,Culture, UltraSound - Done?",
-              "type": "obs",
-              "id": "fnaCulture",
-              "questionOptions": {
-                "concept": "ad8ecb63-6b5d-49b2-9a9d-e16d7a0efc40",
-                "rendering": "radio",
-                "answers": [
-                  {
-                    "concept": "true",
-                    "label": "Yes"
-                  },
-                  {
-                    "concept": "false",
-                    "label": "No"
-                  }
-                ]
-              },
-              "hide": {
-                "hideWhenExpression": "((String(coughDuration) === 'true'? 1 : 0) + (String(feverIsh) === 'true'? 1 : 0) + (String(WeightLossGain) === 'true'? 1 : 0) + (String(nightSweats) === 'true'? 1 : 0) + (String(pWeightGain) === 'true'? 1 : 0) + (String(contacTbCase) === 'true'? 1 : 0)) === 0"
-              }
-            },
-            {
-              "label": "TB diagnosed",
-              "type": "obs",
-              "id": "clinicalDiagnosisAction",
-              "questionOptions": {
-                "concept": "1b4f4df7-dddc-4e73-ab18-304c4fd12953",
-                "rendering": "radio",
-                "answers": [
-                  {
-                    "concept": "true",
-                    "label": "Yes"
-                  },
-                  {
-                    "concept": "false",
-                    "label": "No"
-                  }
-                ]
-              },
-              "hide": {
-                "hideWhenExpression": "((String(coughDuration) === 'true'? 1 : 0) + (String(feverIsh) === 'true'? 1 : 0) + (String(WeightLossGain) === 'true'? 1 : 0) + (String(nightSweats) === 'true'? 1 : 0) + (String(pWeightGain) === 'true'? 1 : 0) + (String(contacTbCase) === 'true'? 1 : 0)) === 0"
-              }
-            },
-            {
-              "label": "Write type of TB",
+              "label": "Type of TB",
               "type": "obs",
               "id": "tbDiagnosed",
+              "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('3109983a-98af-4017-a16b-e3bac0c48d25')) ? undefined : HD.getObject('prevEnc').getValue('3109983a-98af-4017-a16b-e3bac0c48d25')",
               "questionOptions": {
                 "concept": "3109983a-98af-4017-a16b-e3bac0c48d25",
                 "rendering": "radio",
@@ -603,7 +602,7 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "clinicalDiagnosisAction !=='true'"
+                "hideWhenExpression": "typeOfTest !=='1b4f4df7-dddc-4e73-ab18-304c4fd12953'"
               }
             },
             {
@@ -611,6 +610,7 @@
               "type": "obs",
               "required": false,
               "id": "tbNumber",
+              "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('6cc3d304-26b5-43e1-951a-8a94a30841da')) ? undefined : HD.getObject('prevEnc').getValue('6cc3d304-26b5-43e1-951a-8a94a30841da')",
               "questionOptions": {
                 "rendering": "text",
                 "concept": "6cc3d304-26b5-43e1-951a-8a94a30841da"
@@ -621,13 +621,166 @@
               }
             },
             {
+              "label": "Is the client on CTX",
+              "type": "obs",
+              "required": true,
+              "id": "clientCTX",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "6e259aec-edea-4ee0-8aa8-4e03f266cd60",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "label": "Yes",
+                    "concept": "true"
+                  },
+                  {
+                    "label": "No",
+                    "concept": "false"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "Date started on CTX",
+              "type": "obs",
+              "required": true,
+              "id": "dateStartedCTX",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "420bd170-df26-4948-9e80-f8f95e8492f3"
+              },
+              "hide": {
+                "hideWhenExpression": "clientCTX !== 'true'"
+              },
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ]
+            },
+            {
+              "label": "Is the client on Dapsone",
+              "type": "obs",
+              "required": true,
+              "id": "clientDapsone",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "0cb0b2c1-6609-4d98-9ebf-72ba3f33118d",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "label": "Yes",
+                    "concept": "true"
+                  },
+                  {
+                    "label": "No",
+                    "concept": "false"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "Date started on Dapsone",
+              "type": "obs",
+              "required": true,
+              "id": "dateStartedDapsone",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "d8a05f0f-3a39-4338-b40e-45567d5fd406"
+              },
+              "hide": {
+                "hideWhenExpression": "clientDapsone !== 'true'"
+              },
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ]
+            },
+            {
               "label": "Side Effects",
+              "type": "obsGroup",
               "required": true,
               "id": "sideEffects",
               "questionOptions": {
-                "rendering": "text",
-                "attributeType": "13498474-ba95-4fec-8010-c8c5e24748ff"
-              }
+                "rendering": "repeating",
+                "concept": "647b0940-2f7b-40ae-b37a-82f21e0edb54"
+              },
+              "questions": [
+                {
+                  "label": "Side Effect",
+                  "required": true,
+                  "id": "sideEffects",
+                  "questionOptions": {
+                    "rendering": "text",
+                    "attributeType": "13498474-ba95-4fec-8010-c8c5e24748ff"
+                  }
+                }
+              ],
+              "validators": []
+            },
+            {
+              "label": "Opportunistic Infections",
+              "required": false,
+              "id": "oi",
+              "questionOptions": {
+                "concept": "e0d24a66-6fb5-47e1-852f-32a8f8ed71e2",
+                "rendering": "multiCheckbox",
+                "conceptMapping": [],
+                "answers": [
+                  {
+                    "label": "Toxo Plasmosis",
+                    "concept": "d9a0a7c1-66d8-4f71-aef6-e0aef4a5f2b1"
+                  },
+                  {
+                    "label": "Diarrhoea Opportunistic Infection",
+                    "concept": "99e4878e-16ea-49d3-aa0e-585def370014"
+                  },
+                  {
+                    "label": "Herpes Genitalis Opportunistic Infection",
+                    "concept": "0cf0ac7e-a631-474e-8fcd-f1dbba986589"
+                  },
+                  {
+                    "label": "Herpes Zoster Opportunistic Infection",
+                    "concept": "d0a66c85-1bd1-4ae9-aed3-7fddf87680cf"
+                  },
+                  {
+                    "label": "Candidiasis Opportunistic Infection",
+                    "concept": "f5efbdba-0950-421a-bf08-451fb6fe1752"
+                  },
+                  {
+                    "label": "Tuberculosis Opportunistic Infection",
+                    "concept": "4ec32e51-cf72-4e93-a586-da62bd0ba703"
+                  },
+                  {
+                    "label": "Bacterial Pneumonia Opportunistic Infection",
+                    "concept": "7b542ebb-dedd-4f3d-903e-a33e7118dcd8"
+                  },
+                  {
+                    "label": "Cytomegato Virus Opportunistic Infection",
+                    "concept": "8ee9d84c-8ad4-483c-8951-d6ec976822fc"
+                  },
+                  {
+                    "label": "Pneumocysitis Pneumonia Opportunistic Infection",
+                    "concept": "9c7b5817-5b77-4601-a11f-bc4508998c56"
+                  },
+                  {
+                    "label": "Crypto Meningitis Opportunistic Infection",
+                    "concept": "1eb028a7-d8eb-4fcc-a99c-e47f3dc00d5b"
+                  },
+                  {
+                    "label": "Others",
+                    "concept": "ef5d7595-87f6-4814-95e0-41533a517783"
+                  }
+                ]
+              },
+              "type": "obs",
+              "validators": []
             },
             {
               "label": "Any new Opportunistic Infections",
@@ -643,6 +796,7 @@
               "label": "WHO Stage",
               "id": "whoStage",
               "required": true,
+              "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('e38e6ce2-92d9-4382-927b-5555ff9fa850')) ? undefined : HD.getObject('prevEnc').getValue('e38e6ce2-92d9-4382-927b-5555ff9fa850')",
               "questionOptions": {
                 "concept": "e38e6ce2-92d9-4382-927b-5555ff9fa850",
                 "rendering": "select",
@@ -673,7 +827,8 @@
               "label": "Adherence",
               "type": "obs",
               "required": true,
-              "id": "adheRence",
+              "id": "adherence",
+              "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('e360501a-123a-4efb-93ef-4dc19d031921')) ? undefined : HD.getObject('prevEnc').getValue('e360501a-123a-4efb-93ef-4dc19d031921')",
               "questionOptions": {
                 "rendering": "radio",
                 "concept": "e360501a-123a-4efb-93ef-4dc19d031921",
@@ -696,7 +851,33 @@
               "validators": []
             },
             {
-              "label": "INH Given",
+              "label": "Reason why Adherence is Poor",
+              "type": "obs",
+              "id": "reasonWhyAdherenceisPoor",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "b0058799-4655-471d-8124-6acd14c6beb1"
+              },
+              "hide": {
+                "hideWhenExpression": "adherence !== 'f05f31c1-5f06-4ada-8cbd-a877cb06442a'",
+                "validators": []
+              }
+            },
+            {
+              "label": "Reason why Adherence is Fair",
+              "type": "obs",
+              "id": "reasonWhyAdherenceisFair",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "d0f3605e-f026-4ef8-973a-f471a236049a"
+              },
+              "hide": {
+                "hideWhenExpression": "adherence !== '535ea56b-0138-4804-ab23-e70f2dbe0b61'",
+                "validators": []
+              }
+            },
+            {
+              "label": "TPT Given",
               "type": "obs",
               "required": true,
               "id": "inhGiven",
@@ -745,6 +926,7 @@
               "label": " ART regimen given",
               "id": "ArtRegimen",
               "required": true,
+              "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('d1f02073-460c-4cd4-89b0-c16766e06334')) ? undefined : HD.getObject('prevEnc').getValue('d1f02073-460c-4cd4-89b0-c16766e06334')",
               "questionOptions": {
                 "concept": "23322fd6-3dbb-410e-8bee-6210dfcd5f71",
                 "rendering": "select",
@@ -838,12 +1020,16 @@
             {
               "label": "Number of Days Dispensed",
               "required": true,
-              "id": "noOfDays",
+              "id": "artRegimenNoOfDaysDispensed",
               "questionOptions": {
                 "rendering": "select",
                 "concept": "4ab28128-7ef3-452d-86d5-73561761b08a",
                 "conceptMappings": [],
                 "answers": [
+                  {
+                    "label": "0 days",
+                    "concept": "39ec38d1-7b35-4f05-ab87-10983da0b484"
+                  },
                   {
                     "label": "30 days",
                     "concept": "7b0642e1-7607-4b0f-806e-703b195345ea"
@@ -858,6 +1044,19 @@
                   }
                 ]
               },
+              "type": "obs",
+              "validators": []
+            },
+            {
+              "label": "Number of Pills Dispensed",
+              "required": true,
+              "id": "artRegimenNoOfPillsDispensed",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "41cde1fd-31b7-4e76-821a-c6b85b73ffe3",
+                "min": 0
+              },
+              "type": "obs",
               "validators": []
             },
             {
@@ -883,7 +1082,7 @@
               "id": "vlResults",
               "questionOptions": {
                 "rendering": "numeric",
-                "concept": "8b5ef5c4-3c88-49b8-87e5-cb8d30caa77d"
+                "concept": "01c3ce55-b7eb-45f5-93d5-bace353e3cfd"
               }
             },
             {
@@ -921,6 +1120,10 @@
                   {
                     "label": "Hospitalised",
                     "concept": "b87bac5e-b6ca-40a5-a3d0-a3fa34a94f5d"
+                  },
+                  {
+                    "label": "Not Applicable",
+                    "concept": "f2355233-c552-4cd6-802f-0c7c75221f03"
                   }
                 ]
               },
