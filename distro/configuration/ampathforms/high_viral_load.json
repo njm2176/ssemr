@@ -496,10 +496,7 @@
 				  "conceptMappings": [],
 				  "answers": []
 				},
-				"validators": [],
-				"hide": {
-				  "hideWhenExpression": "isEmpty(eacSession) || eacSession === '37f1e487-24f7-48f3-a347-391e877152e4'"
-				}
+				"validators": []
 			  },
 			  {
 				"label": "Pill percentage",
