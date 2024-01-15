@@ -33,7 +33,6 @@
         "id": "nextOfKin",
         "name": "Next of Kin",
         "fields": [
-          "altPhone",
           "txSupporterName",
           "txSupporterAddress",
           "txSupporterPhoneNo",
@@ -50,7 +49,7 @@
       {
         "id": "phone",
         "type": "person attribute",
-        "uuid": "bc851ec1-9fb7-49da-acd7-1a61168002fe",
+        "uuid": "8f0a2a16-c073-4622-88ad-a11f2d6966ad",
         "label": "Client's Telephone number",
         "validation": {
           "required": true,
