@@ -1086,6 +1086,22 @@
               }
             },
             {
+              "label": "Date Viral Load Results Received",
+              "required": true,
+              "id": "dateVLResultsReceived",
+              "questionOptions": {
+                "rendering": "date",
+                "attributeType": "80e34f1b-26e8-49ea-9b6e-d7d903a91e26",
+                "isSimpleValue": true
+              },
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ]
+            },
+            {
               "label": "Other Investigations Done",
               "required": true,
               "id": "otherInve",
