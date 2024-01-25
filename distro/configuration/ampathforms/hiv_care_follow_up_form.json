@@ -153,20 +153,56 @@
                 "conceptMappings": [],
                 "answers": [
                   {
-                    "label": "Condoms",
+                    "label": "C-Condoms",
                     "concept": "1fe0597e-470d-49bd-9d82-9c7b7342dab0"
                   },
                   {
-                    "label": "Implant",
-                    "concept": "1fe0597e-470d-49bd-9d82-9c7b7342dab0"
+                    "label": "I-Injectable",
+                    "concept": "5279AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
                   },
                   {
-                    "label": "IUD",
-                    "concept": "1fe0597e-470d-49bd-9d82-9c7b7342dab0"
+                    "label": "ECP-Emergency contraceptive pills",
+                    "concept": "160570AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
                   },
                   {
-                    "label": "Depo",
-                    "concept": "1fe0597e-470d-49bd-9d82-9c7b7342dab0"
+                    "label": "ECP-Emergency contraceptive pills",
+                    "concept": "160570AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "label": "ECP-Emergency contraceptive pills",
+                    "concept": "160570AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "label": "OC-Oral contraceptive pills",
+                    "concept": "780AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "label": "IUD-Intrauterine device",
+                    "concept": "136452AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "label": "LAM-Lactational Amenorrhea Method",
+                    "concept": "136163AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "label": "D-Diaphragm/Cervical cap",
+                    "concept": "5278AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "label": "FA-Fertility awareness method",
+                    "concept": "43e4fec7-244d-45c9-bda2-1e8145999a20"
+                  },
+                  {
+                    "label": "TL-Tubal Ligation",
+                    "concept": "1472AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "label": "V-Vasectomy (Partner's)",
+                    "concept": "1489AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "label": "UND-Undecided",
+                    "concept": "162332AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
                   }
                 ]
               },
