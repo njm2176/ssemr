@@ -1,6 +1,5 @@
 Uuid,Void/Retire,Name,Description,_version:1
-7b0f5697-27e3-40c4-8bae-f4049abfb4ed,,Facility Visit,"Patient visits the clinic/hospital (
-as opposed to a home visit, or telephone contact)",
+7b0f5697-27e3-40c4-8bae-f4049abfb4ed,,Facility Visit,"Patient visits the clinic/hospital (as opposed to a home visit, or telephone contact)",
 d66e9fe0-7d51-4801-a550-5d462ad1c944,,Home Visit,Provider visits the patient at their home,
 287463d3-2233-4c69-9851-5841a1f5e109,,OPD Visit,OPD Visit,
 a22733fa-3501-4020-a520-da024eeff088,,Offline Visit,Visit type for offline features,
@@ -17,5 +16,5 @@ ed615131-0db3-4b16-8fb5-c423da3b1c6e,,Receiving repeat VL result/Switch to 2 nd 
 43d1990d-b524-4a91-b4c9-bc5f3bbe97c6,,Receiving VL result,Receiving VL result,
 a469b8d3-7a61-4a62-9ca7-adbcaf5cec11,,EID sample collection,EID sample collection,
 43583f69-00d5-49fb-9899-03d1fba4d30d,,Receiving EID result,Receiving EID result,
-5532b8be-2b98-4bff-997b-66e9873a95bd,,Other (specify)                                                                                                                                                                        ,Other (specify)																					,
+5532b8be-2b98-4bff-997b-66e9873a95bd,,Other (specify),Other (specify),
 e425d710-e13c-4a86-911b-2a9818be28b0,,Visit Type Other (specify),Visit Type Other (specify),
