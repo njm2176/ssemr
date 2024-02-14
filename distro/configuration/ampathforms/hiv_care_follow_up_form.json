@@ -1084,10 +1084,6 @@
                     "concept": "188dc5ba-1c33-4789-b39c-267a2ff29b96"
                   },
                   {
-                    "label": "Forgot",
-                    "concept": "188dc5ba-1c33-4789-b39c-267a2ff29b96"
-                  },
-                  {
                     "label": "Felt better",
                     "concept": "675c6d61-1637-48e3-a78f-cb77b4e55b86"
                   },
@@ -1165,10 +1161,6 @@
                   {
                     "label": "Share with others",
                     "concept": "046c6032-7030-4b50-9e8e-831b8ee76bc5"
-                  },
-                  {
-                    "label": "Forgot",
-                    "concept": "188dc5ba-1c33-4789-b39c-267a2ff29b96"
                   },
                   {
                     "label": "Forgot",
@@ -1426,10 +1418,6 @@
                     "concept": "188dc5ba-1c33-4789-b39c-267a2ff29b96"
                   },
                   {
-                    "label": "Forgot",
-                    "concept": "188dc5ba-1c33-4789-b39c-267a2ff29b96"
-                  },
-                  {
                     "label": "Felt better",
                     "concept": "675c6d61-1637-48e3-a78f-cb77b4e55b86"
                   },
@@ -1507,10 +1495,6 @@
                   {
                     "label": "Share with others",
                     "concept": "046c6032-7030-4b50-9e8e-831b8ee76bc5"
-                  },
-                  {
-                    "label": "Forgot",
-                    "concept": "188dc5ba-1c33-4789-b39c-267a2ff29b96"
                   },
                   {
                     "label": "Forgot",
@@ -2228,8 +2212,7 @@
               "id": "otherInve",
               "questionOptions": {
                 "rendering": "text",
-                "concept": "b0058799-4655-471d-8124-6acd14c6beb1",
-                "isSimpleValue": true
+                "concept": "9fc6b318-054e-45c0-983b-912d1c93e86e"
               }
             }
           ]
