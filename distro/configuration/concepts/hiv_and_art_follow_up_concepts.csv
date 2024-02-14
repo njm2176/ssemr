@@ -1,6 +1,6 @@
 Uuid,Void/Retire,Fully specified name:en,Short name:en,Description:en,...,_version:3,_order:126,Data class,Data type,Answers
 a226366c-01ca-4c6c-8817-15ccceba3263,,Follow up - Scheduled,Scheduled,Follow up - Scheduled,,,,Question,Boolean,
-ee31f5fc-40b8-417d-8350-1a74431c220b,,ART Follow up - Scheduled Date,Date,ART Follow up - Scheduled Date,,,,Question,Date,
+ee31f5fc-40b8-417d-8350-1a74431c220b,,ART Follow up Date,Date,ART Follow up - Scheduled Date,,,,Question,Date,
 9efbdca3-7ca8-4205-8285-46151802a887,,Duration For Current Regimen,Duration For Current Regimen,Duration For Current Regimen,,,,Question,Date,
 8df413d9-e018-4a38-817f-fcf718f0df2f,,Current on FP,Current on FP,Current on FP,,,,Question,Boolean,
 1fe0597e-470d-49bd-9d82-9c7b7342dab0,,Condoms,Condoms,,,,,Misc,N/A,
@@ -36,12 +36,12 @@ d02b83cd-eaff-4015-a434-01406239c298,,4 Am-Mfx-Pto-Clz-Z-H high-dose-E/5 Mfx-Cfx
 1c44444b-ac9a-4d2a-bb83-9299ab05668c,,TB Regimen On,TB Regimen On,TB Regimen On,,,,Question,Coded,2HRZE/4RH ; 2SHRZE/1HRZE/5RH
 e31c3a3c-8156-4896-812c-be78fee13273,,Nausea,Nausea,,,,,Misc,N/A,
 85d4c4b0-67e1-484b-8eeb-2f7f0f877f4f,,Rash,Rash,,,,,Misc,N/A,
-50c3a7a0-a602-46e8-98bc-83e4442f8871,,Headache,Headache,,,,,Misc,N/A,
+47be2dc7-acfc-43e8-8c27-4331856164db,,Headache,Headache,,,,,Misc,N/A,
 f2cc0f34-6546-4af3-bd2d-3466047c0ce5,,Diarrhoea,Diarrhoea,,,,,Misc,N/A,
 fabf10c0-c5c3-446b-9a61-9802a88b0409,,Anaemia,Anaemia,,,,,Misc,N/A,
-8eda311c-7841-40cd-aff9-283452fd1673,,Jaundice,Jaundice,,,,,Misc,N/A,
+f20b15b2-4e14-11e4-8a57-0800271c1b75,,Jaundice,Jaundice,,,,,Misc,N/A,
 a1656477-2650-4861-bdbd-84a7d985fa5a,,Fatigue,Fatigue,,,,,Misc,N/A,
-d66c5803-a906-4d66-9773-653b698a8f72,,Abdominal pain,Abdominal pain,,,,,Misc,N/A,
+1dfb0948-4e15-11e4-8a57-0800271c1b75,,Abdominal pain,Abdominal pain,,,,,Misc,N/A,
 acecabeb-008a-4924-981f-fcc2807087f6,,FAT changes,FAT changes,,,,,Misc,N/A,
 50622f1f-9367-4a4e-a510-e969681d8df0,,"B, N burning/numb/tingling","B, N burning/numb/tingling",,,,,Misc,N/A,
 db99694b-a058-48a9-832c-64c28847a1a9,,"CNS: dizzy, anxiety, nightmare, depression ","CNS: dizzy, anxiety, nightmare, depression ",,,,,Misc,N/A,
@@ -68,7 +68,14 @@ e38e6ce2-92d9-4382-927b-5555ff9fa850,,WHO Stage,WHO Stage,WHO Stage,,,,Question,
 4238e921-d4c8-4645-ab94-b4f4bf5f2d93,,Dose,Dose,Dose,,,,Question,Text,
 ac775264-a811-4b3e-a64f-0c20ae8f9b0c,,Adherence Dose/Days - Number of Days,Number of Days Dispensed,,,,,Question,Numeric,
 7ddb08f2-09e8-48ef-a08f-3744467fec48,,INH,INH,INH,,,,Question,Boolean,
-41cde1fd-31b7-4e76-821a-c6b85b73ffe3,,Number of Pill Dispensed(INH),Number of Pill Dispensed(INH),Number of Pill Dispensed(INH),,,,Question,Numeric,
+        f3e0e70f-3630-410d-b56f-4c5b896bfb99,,180,180,,,,,Misc,N/A,
+        07c7248c-87af-4fe5-8cc4-9d04b22a3cb2,,720,720,,,,,Misc,N/A,
+6e1eec92-c447-4814-a6ad-798e657f9470,,760,760,,,,,Misc,N/A,
+41cde1fd-31b7-4e76-821a-c6b85b73ffe3,,Number of Pill Dispensed(INH),Number of Pill Dispensed(INH),Number of Pill Dispensed(INH),,,,Question,Coded,"180;
+720;
+760"
+,,,,,,,,,,
+,,,,,,,,,,
 b6ae8e33-aa58-47e4-84be-5b8599a177b7,,ART Follow up - Information,Follow Up Information,ART Follow up - Information,,,,Misc,N/A,
 9062c6d9-a650-44d2-8929-da84f617c427,,1a = AZT/3TC+EFV,1a = AZT/3TC+EFV,,,,,Misc,N/A,
 c22e6700-a937-4909-b4ad-e82ff51325ac,,1b = AZT/3TC/NVP,1b = AZT/3TC/NVP,,,,,Misc,N/A,
@@ -160,7 +167,7 @@ e360501a-123a-4efb-93ef-4dc19d031921,,CTX Adherence,CTX Adherence,CTX Adherence,
 d5d1d355-9e77-4e11-b733-884974f51169,,was counselling done?,was counselling done?,,,,,Question,Boolean,
 a4b7b40d-bd4a-4b7a-9826-593088f1e3af,,Toxicity/side effects,Toxicity/side effects,,,,,Misc,N/A,
 046c6032-7030-4b50-9e8e-831b8ee76bc5,,Share with others,Share with others,,,,,Misc,N/A,
-9d23e507-f476-42c4-a56b-4d04d245119f,,Forgot,Forgot,,,,,Misc,N/A,
+188dc5ba-1c33-4789-b39c-267a2ff29b96,,Forgot,Forgot,,,,,Misc,N/A,
 675c6d61-1637-48e3-a78f-cb77b4e55b86,,Felt better,Felt better,,,,,Misc,N/A,
 b31d8882-4c3d-4cd6-b6fa-d6bc1165922e,,Too ill,Too ill,,,,,Misc,N/A,
 174de9e8-81d4-4d2c-89df-521d1d4ab501,,"Stigma, disclosure or privacy issues","Stigma, disclosure or privacy issues",,,,,Misc,N/A,
@@ -168,9 +175,9 @@ b31d8882-4c3d-4cd6-b6fa-d6bc1165922e,,Too ill,Too ill,,,,,Misc,N/A,
 2302714c-9480-41fd-8395-2c9728c06ab6,,Patient lost/ran out of pills,Patient lost/ran out of pills,,,,,Misc,N/A,
 9959c107-2771-4221-a31b-38861cd56526,,Delivery/travel problems,Delivery/travel problems,,,,,Misc,N/A,
 45724737-ec75-41e6-b7a3-f0289888bf76,,Inability to pay,Inability to pay,,,,,Misc,N/A,
-10014384-232d-49d9-84fe-c7f915b4c246,,Alcohol,Alcohol,,,,,Misc,N/A,
-3f0492c8-272f-4271-9363-84b60390bbf6,,Depression,Depression,,,,,Misc,N/A,
-59917ccc-19c3-47a8-a039-4aa256d1d7c3,,pill burden,pill burden,,,,,Misc,N/A,
+a2832452-f729-4d85-87ff-04caa9185a5b,,Alcohol,Alcohol,,,,,Misc,N/A,
+506d37ec-84b7-418c-925e-2a0ff9d72300,,Depression,Depression,,,,,Misc,N/A,
+68a10b27-ab05-470c-b2c0-0a13e26b14c1,,pill burden,pill burden,,,,,Misc,N/A,
 64cac639-8e44-4059-90e8-16984280e7a7,,Other Adherence Reason,Other Adherence Reason,,,,,Misc,N/A,
 d0f3605e-f026-4ef8-973a-f471a236049a,,Reason why Adherence is Fair,Reason,,,,,Question,Coded,"Toxicity/side effects;                                  
 Share with others;
@@ -189,7 +196,7 @@ Other"
 66e7bd78-5956-4fda-84a1-80ff8e96c579,,Reason why Adherence Fair Other (specify),Reason why Adherence Fair Other (specify),,,,,Question,Text,
 a4b7b40d-bd4a-4b7a-9826-593088f1e3af,,Toxicity/side effects,Toxicity/side effects,,,,,Misc,N/A,
 046c6032-7030-4b50-9e8e-831b8ee76bc5,,Share with others,Share with others,,,,,Misc,N/A,
-9d23e507-f476-42c4-a56b-4d04d245119f,,Forgot,Forgot,,,,,Misc,N/A,
+188dc5ba-1c33-4789-b39c-267a2ff29b96,,Forgot,Forgot,,,,,Misc,N/A,
 675c6d61-1637-48e3-a78f-cb77b4e55b86,,Felt better,Felt better,,,,,Misc,N/A,
 b31d8882-4c3d-4cd6-b6fa-d6bc1165922e,,Too ill,Too ill,,,,,Misc,N/A,
 174de9e8-81d4-4d2c-89df-521d1d4ab501,,"Stigma, disclosure or privacy issues","Stigma, disclosure or privacy issues",,,,,Misc,N/A,
@@ -197,9 +204,9 @@ b31d8882-4c3d-4cd6-b6fa-d6bc1165922e,,Too ill,Too ill,,,,,Misc,N/A,
 2302714c-9480-41fd-8395-2c9728c06ab6,,Patient lost/ran out of pills,Patient lost/ran out of pills,,,,,Misc,N/A,
 9959c107-2771-4221-a31b-38861cd56526,,Delivery/travel problems,Delivery/travel problems,,,,,Misc,N/A,
 45724737-ec75-41e6-b7a3-f0289888bf76,,Inability to pay,Inability to pay,,,,,Misc,N/A,
-10014384-232d-49d9-84fe-c7f915b4c246,,Alcohol,Alcohol,,,,,Misc,N/A,
-3f0492c8-272f-4271-9363-84b60390bbf6,,Depression,Depression,,,,,Misc,N/A,
-59917ccc-19c3-47a8-a039-4aa256d1d7c3,,pill burden,pill burden,,,,,Misc,N/A,
+a2832452-f729-4d85-87ff-04caa9185a5b,,Alcohol,Alcohol,,,,,Misc,N/A,
+506d37ec-84b7-418c-925e-2a0ff9d72300,,Depression,Depression,,,,,Misc,N/A,
+68a10b27-ab05-470c-b2c0-0a13e26b14c1,,pill burden,pill burden,,,,,Misc,N/A,
 64cac639-8e44-4059-90e8-16984280e7a7,,Other Adherence Reason,Other Adherence Reason,,,,,Misc,N/A,
 b0058799-4655-471d-8124-6acd14c6beb1,,Reason why Adherence is Poor,Reason,,,,,Question,Coded,"Toxicity/side effects;                                  
 Share with others;
@@ -310,3 +317,39 @@ b87bac5e-b6ca-40a5-a3d0-a3fa34a94f5d,,Hospitalised,Hospitalised,Hospitalised,,,,
 beffd410-b9a4-4cfd-9a29-22512980de1b,,HIV AND ART FOLLOW UP FORM,HIV AND ART FOLLOW UP FORM,HIV AND ART FOLLOW UP FORM,,,,Misc,N/A,
 651fe449-14f9-44e7-8114-7dcd6d3f80ec,,EAC FORM,EAC FORM,EAC FORM,,,,Misc,N/A,
 940923e2-433e-4d58-869f-dd099333af9b,,ENHANCED ADHERENCE COUNSELLING FORM,ENHANCED ADHERENCE COUNSELLING FORM,ENHANCED ADHERENCE COUNSELLING FORM,,,,Misc,N/A,
+39ec38d1-7b35-4f05-ab87-10983da0b484,,0 Days,1 Days,,,,,Misc,N/A,
+7b0642e1-7607-4b0f-806e-703b195345ea,,30 Days,31 Days,,,,,Misc,N/A,
+3cd5ec7d-ac0e-46cc-8a46-ab7628da0a4f,,60 Days,61 Days,,,,,Misc,N/A,
+af06426c-e63e-4f83-bdbc-a855c42bb0ca,,90 Days,91 Days,,,,,Misc,N/A,
+c036d8cb-9416-43b3-b23f-91913ce424a3,,120 Days,121 Days,,,,,Misc,N/A,
+faf5d5dc-1547-49f7-941d-6fdf2d1bfa50,,150 Days,151 Days,,,,,Misc,N/A,
+91e0bcf5-8968-4004-9e14-bb466fccaf53,,180 Days,181 Days,,,,,Misc,N/A,
+2e74862a-bb28-4e10-9a9a-b959a4a5da60,,180+ Days,180+ Days,,,,,Misc,N/A,
+3fa33347-9871-497b-81f3-7a791b9f4bae,,Pills Dispensed Dose,Pills Dispensed Dose,,,,,Question,Coded,"0 Days;
+30 Days;
+60 Days;
+90 Days;
+120 Days;
+150 Days;
+180 Days;
+180+ Days"
+ef1c0931-32ee-47f5-9ecc-8c18eef2d706,,RPR,RPR,,,,,Misc,N/A,
+cfecd49f-41ed-405e-994f-3bf346413c7b,,HB - Lab Test,HB - Lab Test,,,,,Misc,N/A,
+b36e7148-6d1b-4347-901e-e5811f1fa899,,Sputum - Lab Test,Sputum - Lab Test,,,,,Misc,N/A,
+7c8d0b1c-d080-4c1d-8aae-0a990d8fda71,,CXR - Lab Test,CXR - Lab Test,,,,,Misc,N/A,
+d7d9d923-c7fe-4573-81cf-9e3d48158014,,HepB,HepB,,,,,Misc,N/A,
+90be4b0d-f2b8-46d8-ace5-6246608acbb9,,RFTs,RFTs,,,,,Misc,N/A,
+4cfb4018-141a-4387-9e2a-6980aa3840c7,,LFTs,LFTs,,,,,Misc,N/A,
+f5b60f09-9d8a-4bda-9318-9ef097c77945,,Lab Tests,Lab Tests,,,,,Question,Coded,"RPR;
+HB;
+Sputum;
+CXR;
+HepB;
+RFTs;
+LFTs"
+e8efb800-7c83-4616-ad7e-46c74ef0acd0,,Nutritional support,Nutritional support,,,,,Misc,N/A,
+99d197a6-c316-11e9-9cb5-2a2ae2dbcce4,,Infant feeding,Infant feeding,,,,,Misc,N/A,
+d3f86020-1ce2-4bff-8dbc-42bc98fcf080,,CVS,CVS,,,,,Misc,N/A,
+ce7573a3-c680-458a-8abb-a25088d4d261,,Refer or Consult,Refer or Consult,,,,,Question,Coded,"Nutritional support;
+Infant feeding;
+CVS"

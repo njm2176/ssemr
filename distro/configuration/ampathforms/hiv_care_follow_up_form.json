@@ -41,7 +41,7 @@
               "id": "durationDaysStartingArt",
               "questionOptions": {
                 "rendering": "numeric",
-                "attributeType": "a8dd544d-fe87-4ff1-9911-6acdc6847d21",
+                "concept": "a8dd544d-fe87-4ff1-9911-6acdc6847d21",
                 "min": 0,
                 "isSimpleValue": true
               },
@@ -59,7 +59,7 @@
               "id": "durationDaysStartingRegimen",
               "questionOptions": {
                 "rendering": "numeric",
-                "attributeType": "e0e2acbe-f88b-4710-adbd-08637d80ea97",
+                "concept": "e0e2acbe-f88b-4710-adbd-08637d80ea97",
                 "min": 0,
                 "isSimpleValue": true
               },
@@ -833,7 +833,7 @@
               "required": true,
               "id": "sideEfects",
               "questionOptions": {
-                "concept": "",
+                "concept": "13498474-ba95-4fec-8010-c8c5e24748ff",
                 "rendering": "multiCheckbox",
                 "conceptMapping": [],
                 "answers": [
@@ -946,7 +946,7 @@
               "id": "oiNew",
               "questionOptions": {
                 "rendering": "text",
-                "attributeType": "be8d8351-6dad-4f91-a5a1-40c56656bbf5",
+                "concept": "be8d8351-6dad-4f91-a5a1-40c56656bbf5",
                 "isSimpleValue": true
               }
             },
@@ -980,341 +980,6 @@
               },
               "type": "obs",
               "validators": []
-            },
-            {
-              "label": "Adherence",
-              "type": "obs",
-              "required": true,
-              "id": "adherence",
-              "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('e360501a-123a-4efb-93ef-4dc19d031921')) ? undefined : HD.getObject('prevEnc').getValue('e360501a-123a-4efb-93ef-4dc19d031921')",
-              "questionOptions": {
-                "rendering": "radio",
-                "concept": "e360501a-123a-4efb-93ef-4dc19d031921",
-                "conceptMappings": [],
-                "answers": [
-                  {
-                    "label": "Good",
-                    "concept": "714752ad-61df-44e0-ae40-fa9bf4f9d831"
-                  },
-                  {
-                    "label": "Fair",
-                    "concept": "535ea56b-0138-4804-ab23-e70f2dbe0b61"
-                  },
-                  {
-                    "label": "Poor",
-                    "concept": "f05f31c1-5f06-4ada-8cbd-a877cb06442a"
-                  }
-                ]
-              },
-              "validators": []
-            },
-            {
-              "label": "Reason why Adherence is Poor",
-              "type": "obs",
-              "id": "reasonWhyAdherenceisPoor",
-              "questionOptions": {
-                "rendering": "text",
-                "concept": "b0058799-4655-471d-8124-6acd14c6beb1"
-              },
-              "hide": {
-                "hideWhenExpression": "adherence !== 'f05f31c1-5f06-4ada-8cbd-a877cb06442a'",
-                "validators": []
-              }
-            },
-            {
-              "label": "Reason why Adherence is Fair",
-              "type": "obs",
-              "id": "reasonWhyAdherenceisFair",
-              "questionOptions": {
-                "rendering": "text",
-                "concept": "d0f3605e-f026-4ef8-973a-f471a236049a"
-              },
-              "hide": {
-                "hideWhenExpression": "adherence !== '535ea56b-0138-4804-ab23-e70f2dbe0b61'",
-                "validators": []
-              }
-            },
-            {
-              "label": "Any other Medications Given",
-              "required": false,
-              "id": "medsGiven",
-              "questionOptions": {
-                "rendering": "text",
-                "attributeType": "f9cd08a2-c316-11e9-9cb5-2a2ae2dbcce4",
-                "isSimpleValue": true
-              }
-            },
-            {
-              "label": " ART regimen given",
-              "id": "ArtRegimen",
-              "required": true,
-              "questionOptions": {
-                "concept": "23322fd6-3dbb-410e-8bee-6210dfcd5f71",
-                "rendering": "select",
-                "conceptMappings": [],
-                "answers": [
-                  {
-                    "label": "1a = AZT/3TC+EFV",
-                    "concept": "9062c6d9-a650-44d2-8929-da84f617c427"
-                  },
-                  {
-                    "label": "1b = AZT/3TC/NVP",
-                    "concept": "c22e6700-a937-4909-b4ad-e82ff51325ac"
-                  },
-                  {
-                    "label": "1c = TDF/3TC/DTG",
-                    "concept": "544634f2-4c08-48b0-9b2b-35251189a59b"
-                  },
-                  {
-                    "label": "1d=ABC/3TC (600/300)/DTG",
-                    "concept": "a00d9620-e88b-4c2f-9293-b1ac9e5943f2"
-                  },
-                  {
-                    "label": "1e = AZT/3TC +DTG",
-                    "concept": "3fd242a8-7ade-463c-8919-d82573ea8526"
-                  },
-                  {
-                    "label": "1f = TDF/3TC+EFV",
-                    "concept": "91f5d0d6-eb81-484f-9376-4bfb926a5a81"
-                  },
-                  {
-                    "label": "1g = TDF/3TC+NVP",
-                    "concept": "0dd3e78f-e1fc-47de-95bc-1f489d0dfcc5"
-                  },
-                  {
-                    "label": "1h = TDF/FTC/EFV",
-                    "concept": "4a86fbee-07a9-422a-bf69-16256c0c2b8b"
-                  },
-                  {
-                    "label": "1J = TDF/FTC+NVP",
-                    "concept": "03224cae-f115-4814-bd53-c99c72288446"
-                  },
-                  {
-                    "label": "2a=AZT/3TC+DTG",
-                    "concept": "bd97cacd-4a91-4901-8803-3a4a2e5f1ca8"
-                  },
-                  {
-                    "label": "2b=ABC/3TC+DTG",
-                    "concept": "ad6ff4ef-769e-4aec-b8bb-7f033fe6aaaa"
-                  },
-                  {
-                    "label": "2c=TDF+3TC+LPV/r",
-                    "concept": "47167ec1-4957-4d0a-a58c-3894bdeb93f"
-                  },
-                  {
-                    "label": "2d=TDF/3TC+ATV/r",
-                    "concept": "e649a0ec-e193-4af0-bb49-02687107a893"
-                  },
-                  {
-                    "label": "2e=TDF/FTC-LPV/r",
-                    "concept": "accca537-b8ee-41ec-b902-7de814d099b2"
-                  },
-                  {
-                    "label": "2f=TDF/FTC-ATV/r",
-                    "concept": "77f201fc-aefc-4068-baa7-cb3284782a38"
-                  },
-                  {
-                    "label": "2g=AZT/3TC+LPV/r",
-                    "concept": "cb0f9fcd-fb52-493f-95aa-d0197387fbdb"
-                  },
-                  {
-                    "label": "2h=AZT/3TC+ATV/r",
-                    "concept": "28790bde-81db-4490-806b-ac10c17b41dc"
-                  },
-                  {
-                    "label": "2i=ABC/3TC+LPV/r",
-                    "concept": "aae69cae-2806-4e8b-a916-f22ed733a19b"
-                  },
-                  {
-                    "label": "2j=ABC/3TC+ATV/r",
-                    "concept": "64336206-c9bc-4d37-accf-c7abac7a37f6"
-                  },
-                  {
-                    "label": "2k=TDF/3TC/DTG",
-                    "concept": "25f0cca5-902d-4e36-9e4f-5ce5da744a75"
-                  }
-                ]
-              },
-              "historicalExpression": "_.isEmpty(HD.getObject('rawPrevObs').getValue('18c93362-69c7-4343-bb3e-7e6fdae66307')) ? undefined : HD.getObject('rawPrevObs').getValue('18c93362-69c7-4343-bb3e-7e6fdae66307')",
-              "type": "obs",
-              "validators": []
-            },
-            {
-              "label": "Pills Dispensed",
-              "type": "obs",
-              "required": true,
-              "id": "pillsDispensed",
-              "questionOptions": {
-                "rendering": "select",
-                "concept": "82388a45-07a3-4248-a296-3e8951670fab",
-                "conceptMappings": [],
-                "answers": [
-                  {
-                    "label": "CTX",
-                    "concept": "9844649e-0411-4011-a1f8-4a0da4155c76"
-                  },
-                  {
-                    "label": "Dapsone",
-                    "concept": "44209b47-f2d4-412b-991b-2cdd076f9361"
-                  }
-                ]
-              },
-              "validators": []
-            },
-            {
-              "label": "Number of Days Dispensed",
-              "required": true,
-              "id": "artRegimenNoOfDaysDispensed",
-              "questionOptions": {
-                "rendering": "select",
-                "concept": "4ab28128-7ef3-452d-86d5-73561761b08a",
-                "conceptMappings": [],
-                "answers": [
-                  {
-                    "label": "0 days",
-                    "concept": "39ec38d1-7b35-4f05-ab87-10983da0b484"
-                  },
-                  {
-                    "label": "30 days",
-                    "concept": "7b0642e1-7607-4b0f-806e-703b195345ea"
-                  },
-                  {
-                    "label": "90 days",
-                    "concept": "af06426c-e63e-4f83-bdbc-a855c42bb0ca"
-                  },
-                  {
-                    "label": "180 days",
-                    "concept": "91e0bcf5-8968-4004-9e14-bb466fccaf53"
-                  }
-                ]
-              },
-              "type": "obs",
-              "validators": []
-            },
-            {
-              "label": "Number of Pills Dispensed",
-              "required": true,
-              "id": "artRegimenNoOfPillsDispensed",
-              "questionOptions": {
-                "rendering": "number",
-                "concept": "41cde1fd-31b7-4e76-821a-c6b85b73ffe3",
-                "min": 0
-              },
-              "type": "obs",
-              "validators": []
-            },
-            {
-              "label": "Date VL Sample Collected?",
-              "required": true,
-              "type": "obs",
-              "id": "dateCollected",
-              "questionOptions": {
-                "rendering": "date",
-                "attributeType": "fc684917-4deb-42cf-9245-8a13c6a232bc",
-                "isSimpleValue": true
-              },
-              "validators": [
-                {
-                  "type": "date",
-                  "allowFutureDates": "false"
-                }
-              ]
-            },
-            {
-              "label": "VL Results",
-              "type": "obs",
-              "required": true,
-              "id": "vlResults",
-              "questionOptions": {
-                "rendering": "numeric",
-                "concept": "01c3ce55-b7eb-45f5-93d5-bace353e3cfd"
-              }
-            },
-            {
-              "label": "Date Viral Load Results Received",
-              "required": true,
-              "type": "obs",
-              "id": "dateVLResultsReceived",
-              "questionOptions": {
-                "rendering": "date",
-                "attributeType": "80e34f1b-26e8-49ea-9b6e-d7d903a91e26",
-                "isSimpleValue": true
-              },
-              "validators": [
-                {
-                  "type": "date",
-                  "allowFutureDates": "false"
-                }
-              ]
-            },
-            {
-              "label": "Other Investigations Done",
-              "required": true,
-              "type": "obs",
-              "id": "otherInve",
-              "questionOptions": {
-                "rendering": "text",
-                "attributeType": "b0058799-4655-471d-8124-6acd14c6beb1",
-                "isSimpleValue": true
-              }
-            },
-            {
-              "label": "Patients Plan",
-              "type": "obs",
-              "required": true,
-              "id": "ptPlan",
-              "questionOptions": {
-                "rendering": "radio",
-                "concept": "0fc3cc86-6c9f-4d79-9c39-900dab27a33c",
-                "conceptMappings": [],
-                "answers": [
-                  {
-                    "label": "Refer",
-                    "concept": "8ec83611-795e-44d0-b359-a667a073bf07"
-                  },
-                  {
-                    "label": "Consult",
-                    "concept": "5b4c24fd-b3b2-454b-8b26-2300ea774b07"
-                  },
-                  {
-                    "label": "Link/Provide",
-                    "concept": "d521c7e0-207e-4e9d-97e4-e376b38b664f"
-                  },
-                  {
-                    "label": "Hospitalised",
-                    "concept": "b87bac5e-b6ca-40a5-a3d0-a3fa34a94f5d"
-                  },
-                  {
-                    "label": "Not Applicable",
-                    "concept": "f2355233-c552-4cd6-802f-0c7c75221f03"
-                  }
-                ]
-              },
-              "validators": []
-            },
-            {
-              "label": "Number of Days Hospitalized",
-              "type": "obs",
-              "required": true,
-              "id": "noDayHospital",
-              "questionOptions": {
-                "rendering": "numeric",
-                "concept": "73aeaec5-4169-40a9-8b59-f799b28a548c"
-              },
-              "hide": {
-                "hideWhenExpression": "ptPlan !== 'b87bac5e-b6ca-40a5-a3d0-a3fa34a94f5d'",
-                "validators": []
-              }
-            },
-            {
-              "label": "Clinician Name",
-              "required": true,
-              "id": "clinicianName",
-              "questionOptions": {
-                "rendering": "text",
-                "attributeType": "611d6c22-7c6d-47cf-a74e-190f9e3cdd47",
-                "isSimpleValue": true
-              }
             }
           ]
         }
@@ -2017,7 +1682,7 @@
               "id": "medsGiven",
               "questionOptions": {
                 "rendering": "text",
-                "attributeType": "f9cd08a2-c316-11e9-9cb5-2a2ae2dbcce4",
+                "concept": "f9cd08a2-c316-11e9-9cb5-2a2ae2dbcce4",
                 "isSimpleValue": true
               }
             }
@@ -2125,28 +1790,6 @@
               },
               "historicalExpression": "_.isEmpty(HD.getObject('rawPrevObs').getValue('18c93362-69c7-4343-bb3e-7e6fdae66307')) ? undefined : HD.getObject('rawPrevObs').getValue('18c93362-69c7-4343-bb3e-7e6fdae66307')",
               "type": "obs",
-              "validators": []
-            },
-            {
-              "label": "Pills Dispensed",
-              "type": "obs",
-              "required": true,
-              "id": "pillsDispensed",
-              "questionOptions": {
-                "rendering": "select",
-                "concept": "82388a45-07a3-4248-a296-3e8951670fab",
-                "conceptMappings": [],
-                "answers": [
-                  {
-                    "label": "CTX",
-                    "concept": "9844649e-0411-4011-a1f8-4a0da4155c76"
-                  },
-                  {
-                    "label": "Dapsone",
-                    "concept": "44209b47-f2d4-412b-991b-2cdd076f9361"
-                  }
-                ]
-              },
               "validators": []
             },
             {
@@ -2475,14 +2118,35 @@
               ]
             },
             {
+              "label": "CD4 %",
+              "id": "cd4CountPercentage",
+              "required": true,
+              "questionOptions": {
+                "answers": [],
+                "concept": "809dd0f5-ce54-441c-b835-a2a8b06a6140",
+                "rendering": "numeric",
+                "min": 0
+              },
+              "type": "obs",
+              "hide": {
+                "hideWhenExpression": "age > 5"
+              },
+              "validators": [
+                {
+                  "type": "js_expression",
+                  "failsWhenExpression": "cd4Count < 0",
+                  "message": "CD4% should not be less than 0"
+                }
+              ]
+            },
+            {
               "label": "Date VL Sample Collected?",
               "required": true,
               "type": "obs",
               "id": "dateCollected",
               "questionOptions": {
                 "rendering": "date",
-                "attributeType": "fc684917-4deb-42cf-9245-8a13c6a232bc",
-                "isSimpleValue": true
+                "concept": "fc684917-4deb-42cf-9245-8a13c6a232bc"
               },
               "validators": [
                 {
@@ -2508,8 +2172,7 @@
               "id": "dateVLResultsReceived",
               "questionOptions": {
                 "rendering": "date",
-                "attributeType": "80e34f1b-26e8-49ea-9b6e-d7d903a91e26",
-                "isSimpleValue": true
+                "concept": "80e34f1b-26e8-49ea-9b6e-d7d903a91e26"
               },
               "validators": [
                 {
@@ -2525,7 +2188,7 @@
               "id": "labTests",
               "questionOptions": {
                 "rendering": "checkbox",
-                "concept": "",
+                "concept": "f5b60f09-9d8a-4bda-9318-9ef097c77945",
                 "answers": [
                   {
                     "label": "RPR",
@@ -2565,7 +2228,7 @@
               "id": "otherInve",
               "questionOptions": {
                 "rendering": "text",
-                "attributeType": "b0058799-4655-471d-8124-6acd14c6beb1",
+                "concept": "b0058799-4655-471d-8124-6acd14c6beb1",
                 "isSimpleValue": true
               }
             }
@@ -2663,7 +2326,7 @@
               "id": "clinicianName",
               "questionOptions": {
                 "rendering": "text",
-                "attributeType": "611d6c22-7c6d-47cf-a74e-190f9e3cdd47",
+                "concept": "611d6c22-7c6d-47cf-a74e-190f9e3cdd47",
                 "isSimpleValue": true
               }
             }
