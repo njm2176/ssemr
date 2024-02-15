@@ -516,15 +516,16 @@
             {
               "label": "BMI",
               "type": "obs",
-              "required": false,
-              "id": "bmi",
               "questionOptions": {
                 "rendering": "number",
                 "concept": "1342AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "min": 0,
-                "conceptMappings": [],
-                "answers": []
+                "max": "100",
+                "min": "0",
+                "calculate": {
+                  "calculateExpression": "calcBMI(height,weight)"
+                }
               },
+              "id": "bMi",
               "validators": [
                 {
                   "type": "js_expression",

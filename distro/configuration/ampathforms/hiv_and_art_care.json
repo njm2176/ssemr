@@ -1,5 +1,5 @@
 {
-  "name": "Initial HIV Care And ART Card",
+  "name": "Personal, Family and Treatment History",
   "pages": [
     {
       "label": "Personal history",
@@ -1012,7 +1012,8 @@
                 "answers": [],
                 "concept": "809dd0f5-ce54-441c-b835-a2a8b06a6140",
                 "rendering": "numeric",
-                "min": 0
+                "min": 0,
+                "max": 100
               },
               "type": "obs",
               "hide": {
@@ -1021,8 +1022,8 @@
               "validators": [
                 {
                   "type": "js_expression",
-                  "failsWhenExpression": "cd4Count < 0",
-                  "message": "CD4 Count should not be less than 0"
+                  "failsWhenExpression": "cd4Count < 0 || cd4Count > 100",
+                  "message": "CD4 Count should not be less than 0 or above 100%"
                 }
               ]
             },
@@ -1034,7 +1035,8 @@
                 "answers": [],
                 "concept": "809dd0f5-ce54-441c-b835-a2a8b06a6140",
                 "rendering": "numeric",
-                "min": 0
+                "min": 0,
+                "max": 100
               },
               "type": "obs",
               "hide": {
@@ -1043,8 +1045,8 @@
               "validators": [
                 {
                   "type": "js_expression",
-                  "failsWhenExpression": "cd4Count < 0",
-                  "message": "CD4% should not be less than 0"
+                  "failsWhenExpression": "cd4CountPercentage < 0 || cd4CountPercentage > 100",
+                  "message": "CD4% should not be less than 0 or above 100%"
                 }
               ]
             }
