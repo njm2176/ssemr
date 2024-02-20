@@ -15,12 +15,17 @@
 			"isExpanded": "true",
 			"questions": [
 			  {
-				"label": "Date:",
-				"type": "encounterDatetime",
+				"label": "Date",
+				"type": "obs",
+				"required": false,
+				"id": "date",
 				"questionOptions": {
-				  "rendering": "ui-select-extended"
+				  "rendering": "date",
+				  "concept": "e605731b-2e81-41a9-8446-2ed442c339e2",
+				  "conceptMappings": [],
+				  "answers": []
 				},
-				"id": "encDate"
+				"validators": []
 			  },
 			  {
 				"label": "Provider:",

@@ -1,5 +1,5 @@
 {
-  "name": "Client enrollment ",
+  "name": "HIV Testing Information ",
   "pages": [
     {
       "label": "Client identification data",
@@ -32,7 +32,7 @@
               "questionOptions": {
                 "rendering": "ui-select-extended"
               },
-              "id": "encLocation"
+              "id": "placeFirstTestedHIVPositive"
             },
             {
               "label": "Entry point",
@@ -46,7 +46,7 @@
                 "answers": [
                   {
                     "concept": "17f90888-9c88-4db2-8750-edb1d760a9ca",
-                    "label": "ANC Clinic"
+                    "label": "ANC"
                   },
                   {
                     "concept": "cb976d23-ab3e-4369-a88f-73f56505783b",
@@ -54,7 +54,7 @@
                   },
                   {
                     "concept": "8244fd10-f813-4e52-a13e-9e3df7cd599c",
-                    "label": "Entry Point - OPD"
+                    "label": "OPD"
                   },
                   {
                     "concept": "62cceeab-adf9-4f3b-bdb3-89687557ecab",
@@ -66,19 +66,23 @@
                   },
                   {
                     "concept": "26560ed4-3ccc-4f85-85f1-f2c9f9238d3b",
-                    "label": "Pediatric Clinic"
+                    "label": "Pediatric"
                   },
                   {
                     "concept": "dfa49cd5-3859-4184-84cc-ada016092680",
-                    "label": "STI Clinic"
+                    "label": "STI"
                   },
                   {
                     "concept": "04c64451-9e19-43e9-ac3d-9333824bc1dd",
-                    "label": "TB Clinic"
+                    "label": "TB"
                   },
                   {
                     "concept": "ec5d13de-ee22-4d8a-b39c-bdee6cd3d88c",
-                    "label": "VCT Clinic"
+                    "label": "VCT"
+                  },
+                  {
+                    "concept": "675702bb-8456-4e10-86ca-65ee8b70d1bd",
+                    "label": "Nutrition"
                   },
                   {
                     "concept": "0464a6fd-d3c5-427b-b147-3f156ac86d63",
@@ -128,7 +132,7 @@
               "questionOptions": {
                 "rendering": "ui-select-extended"
               },
-              "id": "encLocation"
+              "id": "placeOfHIVRetestingBeforeART"
             },
             {
               "label": "Is transferred in on ART from another treatment site in the national programme",
@@ -157,7 +161,7 @@
               "questionOptions": {
                 "rendering": "ui-select-extended"
               },
-              "id": "encLocation"
+              "id": "placeTransferredInOnARTFromAnotherProgramme"
             },
             {
               "label": "Date transferred in",

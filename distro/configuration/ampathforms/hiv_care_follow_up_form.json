@@ -123,7 +123,10 @@
                   "calculateExpression": "calcBMI(height,weight)"
                 }
               },
-              "id": "bMi"
+              "id": "bMi",
+              "hide": {
+                "hideWhenExpression": "age < 5"
+              }
             },
             {
               "label": "MUAC for children and pregnant mothers",
