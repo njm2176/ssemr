@@ -1,5 +1,5 @@
 {
-  "name": "Adult and Adolescent intake Form ",
+  "name": "D. 7.1 - Adult and Adolescent intake Form ",
   "version": "1",
   "retired": false,
   "pages": [
@@ -69,7 +69,7 @@
               "required": false,
               "id": "medicalHistory",
               "questionOptions": {
-                "rendering": "select",
+                "rendering": "multiCheckbox",
                 "concept": "9af72d4e-8f50-4545-b154-7dd12fea2ea4",
                 "conceptMappings": [],
                 "answers": [
@@ -205,215 +205,226 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Current symptoms screen",
-              "type": "obs",
-              "required": false,
-              "id": "currentSymptoms",
+              "type": "obsGroup",
+              "required": true,
+              "id": "currentSymptomScreen",
               "questionOptions": {
-                "rendering": "select",
-                "concept": "aa25ca53-21b8-4e2f-b44b-61c2c20d4dee",
-                "conceptMappings": [],
-                "answers": [
-                  {
-                    "concept": "1dfb0948-4e15-11e4-8a57-0800271c1b75",
-                    "label": "Abdominal pain"
+                "rendering": "repeating",
+                "concept": "74926ae2-dbb8-4ae4-9148-7dc189502e4b"
+              },
+              "questions": [
+                {
+                  "label": "Current symptoms screen",
+                  "type": "obs",
+                  "required": false,
+                  "id": "currentSymptoms",
+                  "questionOptions": {
+                    "rendering": "select",
+                    "concept": "aa25ca53-21b8-4e2f-b44b-61c2c20d4dee",
+                    "conceptMappings": [],
+                    "answers": [
+                      {
+                        "concept": "1dfb0948-4e15-11e4-8a57-0800271c1b75",
+                        "label": "Abdominal pain"
+                      },
+                      {
+                        "concept": "2934795c-486e-4819-a4ac-b476630c710c",
+                        "label": "Chronic fatigue"
+                      },
+                      {
+                        "concept": "147b8be8-d657-4e46-8970-6f9983b27722",
+                        "label": "Current Cough"
+                      },
+                      {
+                        "concept": "8166b90f-671c-4787-a3a4-d4ea8fd74f43",
+                        "label": "Diarrhea"
+                      },
+                      {
+                        "concept": "e77f0416-4e14-11e4-8a57-0800271c1b75",
+                        "label": "Dyspepsia"
+                      },
+                      {
+                        "concept": "ecee97e6-47af-44c0-a941-804afa11bbd0",
+                        "label": "Dysphagia or Odynophagia"
+                      },
+                      {
+                        "concept": "19909766-298e-4595-942e-f8df8c293231",
+                        "label": "Dyspnea"
+                      },
+                      {
+                        "concept": "44a3c656-5584-4044-9cad-e265a8f90a01",
+                        "label": "Ear pain, discharge or decreased hearing"
+                      },
+                      {
+                        "concept": "1f0f8ec6-4e15-11e4-8a57-0800271c1b75",
+                        "label": "Fever"
+                      },
+                      {
+                        "concept": "8f91cfe8-8920-47b0-858f-bd36726643ae",
+                        "label": "Genital ulcer/vesicles"
+                      },
+                      {
+                        "concept": "1f6a5ea9-4e15-11e4-8a57-0800271c1b75",
+                        "label": "Hemoptysis"
+                      },
+                      {
+                        "concept": "974188d4-5caa-4a1a-a2e2-4076aa018eb6",
+                        "label": "Inguinal swellings"
+                      },
+                      {
+                        "concept": "f20b15b2-4e14-11e4-8a57-0800271c1b75",
+                        "label": "Jaundice"
+                      },
+                      {
+                        "concept": "39acc2a5-564b-4879-ac91-eb719a752084",
+                        "label": "loss of consciousness"
+                      },
+                      {
+                        "concept": "ef463179-467b-4d67-a4f6-adb5095c21da",
+                        "label": "Mental confusion"
+                      },
+                      {
+                        "concept": "203d9e67-4e15-11e4-8a57-0800271c1b75",
+                        "label": "Nausea and vomiting"
+                      },
+                      {
+                        "concept": "64122e23-ca4a-4603-839b-af4197aef9a4",
+                        "label": "Neck or Armpit swellings"
+                      },
+                      {
+                        "concept": "5e20b5a6-571f-483d-95f2-822a66ff77b1",
+                        "label": "Neck pain"
+                      },
+                      {
+                        "concept": "886c7ef0-b104-49bf-bd54-23429eec070d",
+                        "label": "Night Sweats"
+                      },
+                      {
+                        "concept": "2584edf4-6e85-4be8-93ba-6c27692ea0be",
+                        "label": "Numbness/tingling"
+                      },
+                      {
+                        "concept": "47be2dc7-acfc-43e8-8c27-4331856164db",
+                        "label": "Persistent headaches"
+                      },
+                      {
+                        "concept": "2bba04c7-d7c0-417d-9736-f34acaa489e1",
+                        "label": "Photophobia"
+                      },
+                      {
+                        "concept": "fc4a6283-70f2-49fd-82fb-d8c8a6bbd5ba",
+                        "label": "Joint pain and/or swelling"
+                      },
+                      {
+                        "concept": "0df5db1f-a1fe-4dbb-82aa-c3beeb84ad31",
+                        "label": "Skin lesions/Pruritus"
+                      },
+                      {
+                        "concept": "ceaa3f86-23e4-4ca0-bb8f-b095d5831677",
+                        "label": "Sore mouth or throat"
+                      },
+                      {
+                        "concept": "785f673e-c961-4b0b-90d7-c2f7c94c4166",
+                        "label": "Urethral discharge/Vaginal discharge"
+                      },
+                      {
+                        "concept": "65d9c0b5-a9a3-4bb8-b20c-5244c917fcb4",
+                        "label": "Weakness of extremities"
+                      },
+                      {
+                        "concept": "1fc47a4b-e35d-4f89-953e-52c4c6a69eb5",
+                        "label": "Weight loss"
+                      }
+                    ]
                   },
-                  {
-                    "concept": "2934795c-486e-4819-a4ac-b476630c710c",
-                    "label": "Chronic fatigue"
+                  "validators": []
+                },
+                {
+                  "label": "Duration for Current Cough",
+                  "type": "obs",
+                  "required": false,
+                  "id": "durationForCurrentCough",
+                  "questionOptions": {
+                    "rendering": "number",
+                    "concept": "9125f7ff-f703-42f1-8a6d-ae6a4c2b5b94",
+                    "min": 0,
+                    "conceptMappings": [],
+                    "answers": []
                   },
-                  {
-                    "concept": "147b8be8-d657-4e46-8970-6f9983b27722",
-                    "label": "Current Cough"
-                  },
-                  {
-                    "concept": "8166b90f-671c-4787-a3a4-d4ea8fd74f43",
-                    "label": "Diarrhea"
-                  },
-                  {
-                    "concept": "e77f0416-4e14-11e4-8a57-0800271c1b75",
-                    "label": "Dyspepsia"
-                  },
-                  {
-                    "concept": "ecee97e6-47af-44c0-a941-804afa11bbd0",
-                    "label": "Dysphagia or Odynophagia"
-                  },
-                  {
-                    "concept": "19909766-298e-4595-942e-f8df8c293231",
-                    "label": "Dyspnea"
-                  },
-                  {
-                    "concept": "44a3c656-5584-4044-9cad-e265a8f90a01",
-                    "label": "Ear pain, discharge or decreased hearing"
-                  },
-                  {
-                    "concept": "1f0f8ec6-4e15-11e4-8a57-0800271c1b75",
-                    "label": "Fever"
-                  },
-                  {
-                    "concept": "8f91cfe8-8920-47b0-858f-bd36726643ae",
-                    "label": "Genital ulcer/vesicles"
-                  },
-                  {
-                    "concept": "1f6a5ea9-4e15-11e4-8a57-0800271c1b75",
-                    "label": "Hemoptysis"
-                  },
-                  {
-                    "concept": "974188d4-5caa-4a1a-a2e2-4076aa018eb6",
-                    "label": "Inguinal swellings"
-                  },
-                  {
-                    "concept": "f20b15b2-4e14-11e4-8a57-0800271c1b75",
-                    "label": "Jaundice"
-                  },
-                  {
-                    "concept": "39acc2a5-564b-4879-ac91-eb719a752084",
-                    "label": "loss of consciousness"
-                  },
-                  {
-                    "concept": "ef463179-467b-4d67-a4f6-adb5095c21da",
-                    "label": "Mental confusion"
-                  },
-                  {
-                    "concept": "203d9e67-4e15-11e4-8a57-0800271c1b75",
-                    "label": "Nausea and vomiting"
-                  },
-                  {
-                    "concept": "64122e23-ca4a-4603-839b-af4197aef9a4",
-                    "label": "Neck or Armpit swellings"
-                  },
-                  {
-                    "concept": "5e20b5a6-571f-483d-95f2-822a66ff77b1",
-                    "label": "Neck pain"
-                  },
-                  {
-                    "concept": "886c7ef0-b104-49bf-bd54-23429eec070d",
-                    "label": "Night Sweats"
-                  },
-                  {
-                    "concept": "2584edf4-6e85-4be8-93ba-6c27692ea0be",
-                    "label": "Numbness/tingling"
-                  },
-                  {
-                    "concept": "47be2dc7-acfc-43e8-8c27-4331856164db",
-                    "label": "Persistent headaches"
-                  },
-                  {
-                    "concept": "2bba04c7-d7c0-417d-9736-f34acaa489e1",
-                    "label": "Photophobia"
-                  },
-                  {
-                    "concept": "fc4a6283-70f2-49fd-82fb-d8c8a6bbd5ba",
-                    "label": "Joint pain and/or swelling"
-                  },
-                  {
-                    "concept": "0df5db1f-a1fe-4dbb-82aa-c3beeb84ad31",
-                    "label": "Skin lesions/Pruritus"
-                  },
-                  {
-                    "concept": "ceaa3f86-23e4-4ca0-bb8f-b095d5831677",
-                    "label": "Sore mouth or throat"
-                  },
-                  {
-                    "concept": "785f673e-c961-4b0b-90d7-c2f7c94c4166",
-                    "label": "Urethral discharge/Vaginal discharge"
-                  },
-                  {
-                    "concept": "65d9c0b5-a9a3-4bb8-b20c-5244c917fcb4",
-                    "label": "Weakness of extremities"
-                  },
-                  {
-                    "concept": "1fc47a4b-e35d-4f89-953e-52c4c6a69eb5",
-                    "label": "Weight loss"
+                  "validators": [],
+                  "hide": {
+                    "hideWhenExpression": " currentSymptoms !== '147b8be8-d657-4e46-8970-6f9983b27722'"
                   }
-                ]
-              },
-              "validators": []
-            },
-            {
-              "label": "Duration for Current Cough",
-              "type": "obs",
-              "required": false,
-              "id": "durationForCurrentCough",
-              "questionOptions": {
-                "rendering": "number",
-                "concept": "9125f7ff-f703-42f1-8a6d-ae6a4c2b5b94",
-                "min": 0,
-                "conceptMappings": [],
-                "answers": []
-              },
-              "validators": [],
-              "hide": {
-                "hideWhenExpression": " currentSymptoms !== '147b8be8-d657-4e46-8970-6f9983b27722'"
-              }
-            },
-            {
-              "label": "Duration for Fever",
-              "type": "obs",
-              "required": false,
-              "id": "durationForFever",
-              "questionOptions": {
-                "rendering": "number",
-                "concept": "74ffce7d-e863-4e02-9081-64cefaf2e28a",
-                "min": 0,
-                "conceptMappings": [],
-                "answers": []
-              },
-              "validators": [],
-              "hide": {
-                "hideWhenExpression": " currentSymptoms !== '1f0f8ec6-4e15-11e4-8a57-0800271c1b75'"
-              }
-            },
-            {
-              "label": "Duration for Diarrhoea",
-              "type": "obs",
-              "required": false,
-              "id": "durationForDiarrhoea",
-              "questionOptions": {
-                "rendering": "number",
-                "concept": "c0810998-e30c-4b10-adfe-8cef59afbfc1",
-                "min": 0,
-                "conceptMappings": [],
-                "answers": []
-              },
-              "validators": [],
-              "hide": {
-                "hideWhenExpression": " currentSymptoms !== '8166b90f-671c-4787-a3a4-d4ea8fd74f43'"
-              }
-            },
-            {
-              "label": "Duration for Weight Loss",
-              "type": "obs",
-              "required": false,
-              "id": "durationForWeightLoss",
-              "questionOptions": {
-                "rendering": "number",
-                "concept": "5396bc8f-12ab-4310-a2ff-6fac9f07e804",
-                "min": 0,
-                "conceptMappings": [],
-                "answers": []
-              },
-              "validators": [],
-              "hide": {
-                "hideWhenExpression": " currentSymptoms !== '1fc47a4b-e35d-4f89-953e-52c4c6a69eb5'"
-              }
-            },
-            {
-              "label": "Percentage of Weight Loss",
-              "type": "obs",
-              "required": false,
-              "id": "percentageOfWeightLoss",
-              "questionOptions": {
-                "rendering": "number",
-                "concept": "83557c06-044a-45e6-9947-8aab137ecde9",
-                "min": 0,
-                "conceptMappings": [],
-                "answers": []
-              },
-              "validators": [],
-              "hide": {
-                "hideWhenExpression": " currentSymptoms !== '1fc47a4b-e35d-4f89-953e-52c4c6a69eb5'"
-              }
+                },
+                {
+                  "label": "Duration for Fever",
+                  "type": "obs",
+                  "required": false,
+                  "id": "durationForFever",
+                  "questionOptions": {
+                    "rendering": "number",
+                    "concept": "74ffce7d-e863-4e02-9081-64cefaf2e28a",
+                    "min": 0,
+                    "conceptMappings": [],
+                    "answers": []
+                  },
+                  "validators": [],
+                  "hide": {
+                    "hideWhenExpression": " currentSymptoms !== '1f0f8ec6-4e15-11e4-8a57-0800271c1b75'"
+                  }
+                },
+                {
+                  "label": "Duration for Diarrhoea",
+                  "type": "obs",
+                  "required": false,
+                  "id": "durationForDiarrhoea",
+                  "questionOptions": {
+                    "rendering": "number",
+                    "concept": "c0810998-e30c-4b10-adfe-8cef59afbfc1",
+                    "min": 0,
+                    "conceptMappings": [],
+                    "answers": []
+                  },
+                  "validators": [],
+                  "hide": {
+                    "hideWhenExpression": " currentSymptoms !== '8166b90f-671c-4787-a3a4-d4ea8fd74f43'"
+                  }
+                },
+                {
+                  "label": "Duration for Weight Loss",
+                  "type": "obs",
+                  "required": false,
+                  "id": "durationForWeightLoss",
+                  "questionOptions": {
+                    "rendering": "number",
+                    "concept": "5396bc8f-12ab-4310-a2ff-6fac9f07e804",
+                    "min": 0,
+                    "conceptMappings": [],
+                    "answers": []
+                  },
+                  "validators": [],
+                  "hide": {
+                    "hideWhenExpression": " currentSymptoms !== '1fc47a4b-e35d-4f89-953e-52c4c6a69eb5'"
+                  }
+                },
+                {
+                  "label": "Percentage of Weight Loss",
+                  "type": "obs",
+                  "required": false,
+                  "id": "percentageOfWeightLoss",
+                  "questionOptions": {
+                    "rendering": "number",
+                    "concept": "83557c06-044a-45e6-9947-8aab137ecde9",
+                    "min": 0,
+                    "conceptMappings": [],
+                    "answers": []
+                  },
+                  "validators": [],
+                  "hide": {
+                    "hideWhenExpression": " currentSymptoms !== '1fc47a4b-e35d-4f89-953e-52c4c6a69eb5'"
+                  }
+                }
+              ]
             }
           ]
         },
@@ -540,7 +551,7 @@
               ]
             },
             {
-              "label": "RR",
+              "label": "RR (breaths/min)",
               "type": "obs",
               "required": false,
               "id": "rr",
@@ -560,7 +571,7 @@
               ]
             },
             {
-              "label": "Temperature",
+              "label": "Temperature (°C)",
               "type": "obs",
               "required": false,
               "id": "temperature",
@@ -600,7 +611,7 @@
               ]
             },
             {
-              "label": "Height(m)",
+              "label": "Height(cm)",
               "type": "obs",
               "required": false,
               "id": "heightForBMI",
@@ -620,7 +631,7 @@
               ]
             },
             {
-              "label": "BMI",
+              "label": "BMI (kg / m²)",
               "type": "obs",
               "required": false,
               "id": "bmi",
@@ -1154,17 +1165,42 @@
               "validators": []
             },
             {
-              "label": "Other clinical findings",
+              "label": "Other clinical findings?",
               "type": "obs",
               "required": false,
               "id": "otherClinicalFindings",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "ec694822-57e1-4739-b1d8-7055b4a5b22a",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "label": "Yes",
+                    "concept": "true"
+                  },
+                  {
+                    "label": "No",
+                    "concept": "false"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "Record Other clinical findings",
+              "type": "obs",
+              "required": false,
+              "id": "recordOtherClinicalFindings",
               "questionOptions": {
                 "rendering": "text",
                 "concept": "91ef252c-7ecf-4272-8197-3bada6cdb65b",
                 "conceptMappings": [],
                 "answers": []
               },
-              "validators": []
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "otherClinicalFindings !== 'true'"
+              }
             }
           ]
         }
