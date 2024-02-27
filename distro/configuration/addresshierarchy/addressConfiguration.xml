@@ -1,14 +1,14 @@
 <addressConfiguration>
     <addressComponents>
 		<addressComponent>
-            <field>LANDMARK</field>
+            <field>ADDRESS_6</field>
             <nameMapping>Location.neighborhood</nameMapping>
             <sizeMapping>40</sizeMapping>
 			<elementDefault>addresshierarchy.healthFacility</elementDefault>
             <requiredInHierarchy>true</requiredInHierarchy>
         </addressComponent>
         <addressComponent>
-            <field>VILLAGE</field>
+            <field>ADDRESS_5</field>
             <nameMapping>Location.cityVillage</nameMapping>
             <sizeMapping>40</sizeMapping>
             <requiredInHierarchy>false</requiredInHierarchy>
