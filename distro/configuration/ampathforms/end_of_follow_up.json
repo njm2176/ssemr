@@ -100,44 +100,6 @@
               "validators": []
             },
             {
-              "label": " Lost to follow-up (28+ days)",
-              "type": "obs",
-              "required": true,
-              "id": "lostToFollowUp",
-              "questionOptions": {
-                "rendering": "radio",
-                "concept": "7053eaca-fc21-4b73-b246-b6e9ae3b3f67",
-                "conceptMappings": [],
-                "answers": [
-                  {
-                    "label": "Yes",
-                    "concept": "78763e68-104e-465d-8ce3-35f9edfb083d"
-                  },
-                  {
-                    "label": "No",
-                    "concept": "f9f633a5-1544-4c44-9394-a7f746a12dff"
-                  }
-                ]
-              },
-              "validators": []
-            },
-            {
-              "label": "Date of last visit",
-              "type": "obs",
-              "required": false,
-              "id": "dateOfLastVisit",
-              "questionOptions": {
-                "rendering": "date",
-                "concept": "773cd838-7b21-4f34-9b33-0a071140f817",
-                "conceptMappings": [],
-                "answers": []
-              },
-              "hide": {
-                "hideWhenExpression": "lostToFollowUp !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
-              },
-              "validators": []
-            },
-            {
               "label": "Transfer out",
               "type": "obs",
               "required": false,
