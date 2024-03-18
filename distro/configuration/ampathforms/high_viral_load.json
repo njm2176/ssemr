@@ -238,6 +238,10 @@
 					{
 					  "concept": "60966dae-3999-42b9-aec1-6161cebb22c1",
 					  "label": "Third EAC Session"
+					},
+					{
+					  "concept": "99c7c0f1-3c7c-4e26-bf4b-60a74734bc7c",
+					  "label": "Extended session of EAC"
 					}
 				  ]
 				},
