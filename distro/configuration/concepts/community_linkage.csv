@@ -1,0 +1,17 @@
+Uuid,Void/Retire,Fully specified name:en,Short name:en,Description:en,...,_version:1,_order:201,Data class,Data type,Answers
+50e0276f-9c7b-4982-9edb-1ba7895efc5f,,Children,Children,,,,,Misc,N/A,
+f12f1fe4-1dfc-41ac-97f2-042bd140c4d3,,Return after treatment interruption,Return after treatment interruption,,,,,Misc,N/A,
+2826a1bd-df43-4488-b72b-bc53d6331674,,Pregnant Mother,Pregnant Mother,,,,,Misc,N/A,
+65057ee0-acf4-4536-bf60-a9675fb96d42,,Breastfeeding Woman,Breastfeeding Woman,,,,,Misc,N/A,
+ce97a3fe-fae2-45e3-99b5-35e7ba121805,,Unsuppressed VL,Unsuppressed VL,,,,,Misc,N/A,
+54f0a4fb-477a-4bb2-977d-59b6ec3d4b34,,New Client,New Client,,,,,Misc,Text,
+579c3be1-7012-4956-b25d-77b686b70081,,Category of the client,Category of the client,,,,,Question,Coded,"Children;
+Return after treatment interruption;
+Pregnant Mother;
+Breastfeeding Woman;
+Unsuppressed VL;
+New Client"
+5b258179-1872-4339-8b29-5ecf618bd4d3,,Name of CHW,Name of CHW,,,,,Question,Text,
+cb3385ee-18c3-4856-a410-c7b4d105a779,,CHW Phone number,CHW Phone number,,,,,Question,Text,
+77a35b01-7713-437a-a82b-7f74c75ea41d,,CHW Address,CHW Address,,,,,Question,Text,
+fef6ef98-6d8d-4921-80f2-93255a7a5faf,,Date of Linkage,Date of Linkage,,,,,Question,Date,

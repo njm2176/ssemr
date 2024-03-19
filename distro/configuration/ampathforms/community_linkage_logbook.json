@@ -19,12 +19,28 @@
 				  "conceptMappings": [],
 				  "answers": [
 					{
+					  "concept": "50e0276f-9c7b-4982-9edb-1ba7895efc5f",
+					  "label": "Children"
+					},
+					{
+					  "concept": "f12f1fe4-1dfc-41ac-97f2-042bd140c4d3",
+					  "label": "Return after treatment interruption"
+					},
+					{
+					  "concept": "2826a1bd-df43-4488-b72b-bc53d6331674",
+					  "label": "Pregnant Mother"
+					},
+					{
 					  "concept": "65057ee0-acf4-4536-bf60-a9675fb96d42",
-					  "label": "Pregnant or Breastfeeding Woman"
+					  "label": "Breastfeeding Woman"
+					},
+					{
+					  "concept": "ce97a3fe-fae2-45e3-99b5-35e7ba121805",
+					  "label": "Unsuppressed VL"
 					},
 					{
 					  "concept": "54f0a4fb-477a-4bb2-977d-59b6ec3d4b34",
-					  "label": "TX_New"
+					  "label": "New Client"
 					}
 				  ]
 				},
@@ -52,7 +68,17 @@
 				  "rendering": "text",
 				  "concept": "cb3385ee-18c3-4856-a410-c7b4d105a779"
 				},
-				"validators": []
+				"validators": [
+				  {
+					"type": "js_expression",
+					"failsWhenExpression": "chwPhone && (!chwPhone.startsWith('+211') || chwPhone.length < 13 || chwPhone.length > 13)",
+					"message": "The phone number should start with a country code, e.g., +211 and should be at least 9 digits long."
+				  }
+				],
+				"alert": {
+				  "alertWhenExpression": "chwPhone && (!chwPhone.startsWith('+211') || chwPhone.length < 13 || chwPhone.length > 13)",
+				  "message": "The phone number should start with a country code, e.g., +211 and should be at least 9 digits long."
+				}
 			  },
 			  {
 				"label": "CHW Address",
