@@ -100,14 +100,15 @@
                 "answers": [],
                 "concept": "5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "numeric",
-                "min": 2.5
+                "min": 2.5,
+                "max": 200
               },
               "type": "obs",
               "validators": [
                 {
                   "type": "js_expression",
-                  "failsWhenExpression": "isEmpty(height) || height < 2.5",
-                  "message": "Height should not be less than 2.5"
+                  "failsWhenExpression": "isEmpty(height) || height < 2.5 || height > 200",
+                  "message": "Height should not be less than 2.5cm and not above 200cm"
                 }
               ]
             },
@@ -832,7 +833,7 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Side Effects",
+              "label": "Side Effects (multi-select)",
               "required": true,
               "id": "sideEfects",
               "questionOptions": {
@@ -1723,7 +1724,7 @@
           "questions": [
             {
               "label": " ART regimen given",
-              "id": "ArtRegimen",
+              "id": "ArtRegimenAdult",
               "required": true,
               "questionOptions": {
                 "concept": "23322fd6-3dbb-410e-8bee-6210dfcd5f71",
@@ -1809,6 +1810,10 @@
                   {
                     "label": "2k=TDF/3TC/DTG",
                     "concept": "25f0cca5-902d-4e36-9e4f-5ce5da744a75"
+                  },
+                  {
+                    "label": "Other Regimen",
+                    "concept": "d75c973c-06d4-43d2-a57d-6340fc8c0100"
                   }
                 ]
               },
@@ -1820,8 +1825,21 @@
               }
             },
             {
+              "label": "Other ART Regimen Specify",
+              "type": "obs",
+              "id": "otherARTRegimenAdultsSpecify",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "d110f0ef-18bd-42a3-a4db-58f9d8469a39"
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "ArtRegimenAdult !== 'd75c973c-06d4-43d2-a57d-6340fc8c0100'"
+              }
+            },
+            {
               "label": " ART regimen given",
-              "id": "ArtRegimen",
+              "id": "ArtRegimenChild",
               "required": true,
               "questionOptions": {
                 "concept": "23322fd6-3dbb-410e-8bee-6210dfcd5f71",
@@ -1913,6 +1931,10 @@
                     "concept": "50b60d77-186d-4a0d-8784-659ee2d60ec9"
                   },
                   {
+                    "label": "Other Regimen",
+                    "concept": "d75c973c-06d4-43d2-a57d-6340fc8c0100"
+                  },
+                  {
                     "label": "5j = AZT/3TC (120/60) + DTG10",
                     "concept": "78e49624-0e33-4374-93b7-60b132b26dae"
                   }
@@ -1923,6 +1945,19 @@
               "validators": [],
               "hide": {
                 "hideWhenExpression": "age >= 15"
+              }
+            },
+            {
+              "label": "Other ART Regimen Specify",
+              "type": "obs",
+              "id": "otherARTRegimenChildSpecify",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "d110f0ef-18bd-42a3-a4db-58f9d8469a39"
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "ArtRegimenChild !== 'd75c973c-06d4-43d2-a57d-6340fc8c0100'"
               }
             },
             {
@@ -2291,7 +2326,7 @@
             {
               "label": "VL Results",
               "type": "obs",
-              "required": true,
+              "required": false,
               "id": "vlResults",
               "questionOptions": {
                 "rendering": "numeric",
@@ -2315,7 +2350,7 @@
               ]
             },
             {
-              "label": "Lab Tests",
+              "label": "Lab Tests (multi-select)",
               "type": "obs",
               "required": true,
               "id": "labTests",
