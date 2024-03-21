@@ -118,51 +118,6 @@
         "validation": {
           "required": false
         }
-      },
-      {
-        "id": "dateFirstTestedHIVPositive",
-        "type": "person attribute",
-        "uuid": "8e73267c-9627-4500-90b2-e79e73c672c5",
-        "label": "Date First Tested HIV+ (dd/mm/YYYY)",
-        "validation": {
-          "required": false
-        }
-      },
-      {
-        "id": "placeFirstTestedHIVPositive",
-        "type": "person attribute",
-        "uuid": "73475d83-d0f2-4670-b8e3-1784c831a90b",
-        "label": "Place First Tested HIV+",
-        "validation": {
-          "required": false
-        }
-      },
-      {
-        "id": "EntryPoint",
-        "type": "person attribute",
-        "uuid": "6de9988f-c2ca-4f7f-9a0a-3757352d848e",
-        "label": "Entry Point",
-        "validation": {
-          "required": false
-        }
-      },
-      {
-        "id": "dateOfHIVRetestingBeforeART",
-        "type": "person attribute",
-        "uuid": "e9fff08c-392a-4b7a-ab89-b75b1aa464ea",
-        "label": "Date Of HIV Retesting Before ART (dd/mm/YYYY)",
-        "validation": {
-          "required": false
-        }
-      },
-      {
-        "id": "placeOfHIVRetestingBeforeART",
-        "type": "person attribute",
-        "uuid": "5a3d84a9-00db-44ab-8173-2462033cf85d",
-        "label": "Place Of HIV Retesting Before ART",
-        "validation": {
-          "required": false
-        }
       }
       ],
     "registrationObs": {
