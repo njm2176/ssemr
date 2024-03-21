@@ -30,17 +30,6 @@
   "@ssemr/esm-patient-registration-app": {
     "sectionDefinitions": [
       {
-        "id": "hivTestingInformation",
-        "name": "HIV Testing Information",
-        "fields": [
-          "dateFirstTestedHIVPositive",
-          "placeFirstTestedHIVPositive",
-          "EntryPoint",
-          "dateOfHIVRetestingBeforeART",
-          "placeOfHIVRetestingBeforeART"
-        ]
-      },
-      {
         "id": "nextOfKin",
         "name": "Treatment Supporter Details",
         "fields": [
@@ -54,7 +43,6 @@
     "sections": [
       "demographics",
       "contact",
-      "hivTestingInformation",
       "nextOfKin"
     ],
     "fieldDefinitions": [
