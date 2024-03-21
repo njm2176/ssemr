@@ -30,6 +30,17 @@
   "@ssemr/esm-patient-registration-app": {
     "sectionDefinitions": [
       {
+        "id": "hivTestingInformation",
+        "name": "HIV Testing Information",
+        "fields": [
+          "dateFirstTestedHIVPositive",
+          "placeFirstTestedHIVPositive",
+          "EntryPoint",
+          "dateOfHIVRetestingBeforeART",
+          "placeOfHIVRetestingBeforeART"
+        ]
+      },
+      {
         "id": "nextOfKin",
         "name": "Treatment Supporter Details",
         "fields": [
@@ -43,6 +54,7 @@
     "sections": [
       "demographics",
       "contact",
+      "hivTestingInformation",
       "nextOfKin"
     ],
     "fieldDefinitions": [
@@ -83,15 +95,19 @@
         "validation": {
           "required": false
         }
-      },     
+      },    
       {
         "id": "txSupporterPhoneNo",
         "type": "person attribute",
         "uuid": "21884b9f-2300-411b-adc0-af80954c4c69",
-        "label": "Treatment supporter's telephone number",
+        "label": "Treatment supporter's telephone number (starting with country code e.g +211)",
         "validation": {
           "required": false,
-          "matches": "^0([0-9](?:(?:[0-9][0-9])|(?:0[0-8])|(4[0-1]))[0-9]{6})$"
+          "matches": "^\\+[0-9]{3}[0-9]{9}$"
+        },
+        "alert": {
+          "alertWhenExpression": "txSupporterPhoneNo !== '^\\+[0-9]{3}[0-9]{9}$'",
+          "message": "The phone number should start with a country code e.g +211 followed by exactly 9 digits"
         }
       },     
       {
@@ -136,19 +152,6 @@
         "useAddressHierarchy": {
           "searchAddressByLevel": true
         }
-      }
-    }
-  },
-  "@openmrs/esm-home-app": {
-    "extensionSlots": {
-      "homepage-widgets-slot": {
-        "remove": [
-          "home-appointments",
-          "active-visits-widget"
-        ]
-      },
-      "homepage-dashboard-slot": {
-        "remove": ["home-appointments", "active-visits-widget"]
       }
     }
   }

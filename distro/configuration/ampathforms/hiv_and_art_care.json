@@ -101,11 +101,11 @@
                 "answers": [
                   {
                     "label": "Yes",
-                    "concept": "true"
+                    "concept": "78763e68-104e-465d-8ce3-35f9edfb083d"
                   },
                   {
                     "label": "No",
-                    "concept": "false"
+                    "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e"
                   }
                 ]
               },
@@ -123,7 +123,7 @@
                 "answers": []
               },
               "hide": {
-                "hideWhenExpression": "drugAllergies !== 'true'"
+                "hideWhenExpression": "drugAllergies !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
               },
               "validators": []
             }
@@ -312,11 +312,11 @@
                     "answers": [
                       {
                         "label": "Positive",
-                        "concept": "7acfafa4-f19b-485e-97a7-c9e002dbe37a"
+                        "concept": "3aeed9a2-4c74-4945-9067-63da3386b102"
                       },
                       {
                         "label": "Negative",
-                        "concept": "718b4589-2a11-4355-b8dc-aa668a93e098"
+                        "concept": "80008f38-5991-4170-9ddf-9490dbcbe064"
                       },
                       {
                         "label": "Do not know",
@@ -339,11 +339,11 @@
                     "answers": [
                       {
                         "label": "Yes",
-                        "concept": "true"
+                        "concept": "78763e68-104e-465d-8ce3-35f9edfb083d"
                       },
                       {
                         "label": "No",
-                        "concept": "false"
+                        "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e"
                       }
                     ]
                   },
@@ -362,7 +362,7 @@
                     "concept": "7bec5791-6cdc-4fe4-bfbb-89cbf3ab03b4"
                   },
                   "hide": {
-                    "hideWhenExpression": "isEmpty(familyMemberOnART) || familyMemberOnART !== 'true'"
+                    "hideWhenExpression": "isEmpty(familyMemberOnART) || familyMemberOnART !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
                   },
                   "validators": []
                 }
@@ -508,7 +508,17 @@
                   "hide": {
                     "hideWhenExpression": "isEmpty(familyMemberPhoneNumberKnownUnknown) || familyMemberPhoneNumberKnownUnknown !== 'c91e78ca-dee2-4149-b0c9-3270bfff5357' "
                   },
-                  "validators": []
+                  "validators": [
+                    {
+                      "type": "js_expression",
+                      "failsWhenExpression": "familyMemberPhoneNumber && (!familyMemberPhoneNumber.startsWith('+211') || familyMemberPhoneNumber.length < 13 || familyMemberPhoneNumber.length > 13)",
+                      "message": "The phone number should start with a country code, e.g., +211 and should be at least 9 digits long."
+                    }
+                  ],
+                  "alert": {
+                    "alertWhenExpression": "familyMemberPhoneNumber && (!familyMemberPhoneNumber.startsWith('+211') || familyMemberPhoneNumber.length < 13 || familyMemberPhoneNumber.length > 13)",
+                    "message": "The phone number should start with a country code, e.g., +211 and should be at least 9 digits long."
+                  }
                 },
                 {
                   "label": "HIV status during mapping",
@@ -536,11 +546,11 @@
                     "answers": [
                       {
                         "label": "Positive",
-                        "concept": "7acfafa4-f19b-485e-97a7-c9e002dbe37a"
+                        "concept": "3aeed9a2-4c74-4945-9067-63da3386b102"
                       },
                       {
                         "label": "Negative",
-                        "concept": "718b4589-2a11-4355-b8dc-aa668a93e098"
+                        "concept": "80008f38-5991-4170-9ddf-9490dbcbe064"
                       }
                     ],
                     "concept": "160f21c0-9a96-4ffd-a72c-aabed02b6a53",
@@ -584,7 +594,7 @@
                       },
                       {
                         "label": "No",
-                        "concept": "f9f633a5-1544-4c44-9394-a7f746a12dff"
+                        "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e"
                       }
                     ],
                     "concept": "7a55ed45-6de2-4c3a-b88e-4de25a898148",
@@ -603,11 +613,11 @@
                     "answers": [
                       {
                         "label": "Positive",
-                        "concept": "4e863543-07ed-4e81-9452-9e309007e713"
+                        "concept": "3aeed9a2-4c74-4945-9067-63da3386b102"
                       },
                       {
                         "label": "Negative",
-                        "concept": "24de217b-03c4-4fd5-a1f6-ba163580fac1"
+                        "concept": "80008f38-5991-4170-9ddf-9490dbcbe064"
                       },
                       {
                         "label": "Inconclusive",
@@ -633,11 +643,11 @@
                     "answers": [
                       {
                         "label": "Yes",
-                        "concept": "true"
+                        "concept": "78763e68-104e-465d-8ce3-35f9edfb083d"
                       },
                       {
                         "label": "No",
-                        "concept": "false"
+                        "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e"
                       }
                     ]
                   },
@@ -655,7 +665,7 @@
                     "concept": "7bec5791-6cdc-4fe4-bfbb-89cbf3ab03b4"
                   },
                   "hide": {
-                    "hideWhenExpression": "isEmpty(familyMemberOnART) || familyMemberOnART !== 'true'"
+                    "hideWhenExpression": "isEmpty(familyMemberOnART) || familyMemberOnART !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
                   },
                   "validators": []
                 }
@@ -689,7 +699,7 @@
                   },
                   {
                     "label": "No",
-                    "concept": "f9f633a5-1544-4c44-9394-a7f746a12dff"
+                    "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e"
                   }
                 ]
               },
@@ -794,7 +804,7 @@
                   },
                   {
                     "label": "other healthcare facility",
-                    "concept": "34f7cc27-6c09-48e4-ad54-626ad3f5bd54"
+                    "concept": "4fdc5b5b-ff7a-4bdf-920f-92276ef6c07f"
                   }
                 ]
               },
@@ -815,7 +825,7 @@
                 "answers": []
               },
               "hide": {
-                "hideWhenExpression": "isEmpty(placeARVRecieved) || placeARVRecieved !== '34f7cc27-6c09-48e4-ad54-626ad3f5bd54'"
+                "hideWhenExpression": "isEmpty(placeARVRecieved) || placeARVRecieved !== '4fdc5b5b-ff7a-4bdf-920f-92276ef6c07f'"
               },
               "validators": []
             },
@@ -874,11 +884,11 @@
                 "answers": [
                   {
                     "label": "Yes",
-                    "concept": "true"
+                    "concept": "78763e68-104e-465d-8ce3-35f9edfb083d"
                   },
                   {
                     "label": "No",
-                    "concept": "false"
+                    "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e"
                   }
                 ]
               },
@@ -896,7 +906,7 @@
                 "answers": []
               },
               "hide": {
-                "hideWhenExpression": "isEmpty(sectionBlank) || sectionBlank !== 'false'"
+                "hideWhenExpression": "isEmpty(sectionBlank) || sectionBlank !== 'b497171e-0410-4d8d-bbd4-7e1a8f8b504e'"
               },
               "validators": [
                 {
@@ -1187,7 +1197,7 @@
                     "concept": "5efe8d99-c65e-4136-8820-5f3646437ff7"
                   },
                   {
-                    "label": "4c = TDF/3TC (120/60) + LPV/r",
+                    "label": "4c = ABC/3TC (120/60) + LPV/r",
                     "concept": "f8f64be8-ccb4-404d-b99e-3c4975155da5"
                   },
                   {
@@ -1195,7 +1205,7 @@
                     "concept": "28c5d192-ba71-4ef5-8604-ecf6bd177126"
                   },
                   {
-                    "label": "4e = ABC/3TC(120/60mg)+DTG10",
+                    "label": "4e = ABC/3TC (120/60)+DTG10",
                     "concept": "3eaf04dc-e284-42f7-860e-02cda37cf230"
                   },
                   {
@@ -1224,7 +1234,7 @@
                   },
                   {
                     "label": "4l = ABC +3TC + AZT",
-                    "concept": "2e96e432-ba6f-4e08-a500-7cba2663e6cd"
+                    "concept": "5287f2a4-23e5-4314-b60c-0a4b91753ec6"
                   },
                   {
                     "label": "5a = AZT/3TC+LPV/r",
@@ -1261,6 +1271,10 @@
                   {
                     "label": "5i = ABC/3TC +LPV/r",
                     "concept": "50b60d77-186d-4a0d-8784-659ee2d60ec9"
+                  },
+                  {
+                    "label": "5j = AZT/3TC (120/60) + DTG10",
+                    "concept": "78e49624-0e33-4374-93b7-60b132b26dae"
                   }
                 ]
               },
@@ -1371,27 +1385,27 @@
                     "answers": [
                       {
                         "label": "Pregnancy",
-                        "concept": "88f2a6ea-367d-45dc-942a-b809b0d17275"
+                        "concept": "2afdbb1f-4f2f-48fd-ad92-090f1a5332cc"
                       },
                       {
-                        "label": " Risk of pregnancy",
-                        "concept": "17a3b24b-e107-49fe-8b0d-69c3b7e60f4c"
+                        "label": "Risk of pregnancy",
+                        "concept": "baee8420-727a-4abf-a746-f2f34d352b93"
                       },
                       {
                         "label": "Newly diagnosed TB",
-                        "concept": "ebd187f8-d15a-4fad-8849-9f74da5c3fc9"
+                        "concept": "42223c76-ed2d-40a0-8d93-c4571309a5f8"
                       },
                       {
                         "label": "New drug available",
-                        "concept": "831d263e-4dfb-4f05-bcfb-629961c07844"
+                        "concept": "99c040fa-150a-4144-8453-a94ead0de2b7"
                       },
                       {
                         "label": "Drug stockout",
-                        "concept": "b4d8805f-40ff-4c9d-9118-feeab45ad8be"
+                        "concept": "096b1e7d-4d8c-4386-a5dc-54b6ad84a167"
                       },
                       {
                         "label": "Other Reason (Specify)",
-                        "concept": "b59fff1c-ab4f-4686-9435-783994432356"
+                        "concept": "b4d8805f-40ff-4c9d-9118-feeab45ad8be"
                       }
                     ]
                   },
@@ -1399,18 +1413,18 @@
                   "validators": []
                 },
                 {
-                  "label": "Other Answer",
+                  "label": "Other Reason For First Line Regimen Change Specify",
                   "type": "obs",
                   "required": true,
                   "id": "otherSpecifyReason",
                   "questionOptions": {
                     "rendering": "text",
-                    "concept": "9e9df8b6-3bad-454e-a2fc-04842d02d62a",
+                    "concept": "b59fff1c-ab4f-4686-9435-783994432356",
                     "conceptMappings": [],
                     "answers": []
                   },
                   "hide": {
-                    "hideWhenExpression": "changeReason !== 'b59fff1c-ab4f-4686-9435-783994432356'"
+                    "hideWhenExpression": "changeReason !== 'b4d8805f-40ff-4c9d-9118-feeab45ad8be'"
                   },
                   "validators": []
                 }
@@ -1512,27 +1526,27 @@
                     "answers": [
                       {
                         "label": "Pregnancy",
-                        "concept": "88f2a6ea-367d-45dc-942a-b809b0d17275"
+                        "concept": "2afdbb1f-4f2f-48fd-ad92-090f1a5332cc"
                       },
                       {
-                        "label": " Risk of pregnancy",
-                        "concept": "17a3b24b-e107-49fe-8b0d-69c3b7e60f4c"
+                        "label": "Risk of pregnancy",
+                        "concept": "baee8420-727a-4abf-a746-f2f34d352b93"
                       },
                       {
                         "label": "Newly diagnosed TB",
-                        "concept": "ebd187f8-d15a-4fad-8849-9f74da5c3fc9"
+                        "concept": "42223c76-ed2d-40a0-8d93-c4571309a5f8"
                       },
                       {
                         "label": "New drug available",
-                        "concept": "831d263e-4dfb-4f05-bcfb-629961c07844"
+                        "concept": "99c040fa-150a-4144-8453-a94ead0de2b7"
                       },
                       {
                         "label": "Drug stockout",
-                        "concept": "b4d8805f-40ff-4c9d-9118-feeab45ad8be"
+                        "concept": "096b1e7d-4d8c-4386-a5dc-54b6ad84a167"
                       },
                       {
                         "label": "Other Reason (Specify)",
-                        "concept": "b59fff1c-ab4f-4686-9435-783994432356"
+                        "concept": "b4d8805f-40ff-4c9d-9118-feeab45ad8be"
                       }
                     ]
                   },
@@ -1546,12 +1560,12 @@
                   "id": "otherReason",
                   "questionOptions": {
                     "rendering": "text",
-                    "concept": "9e9df8b6-3bad-454e-a2fc-04842d02d62a",
+                    "concept": "41c2e674-babe-469d-bdf3-2b57ba568a4b",
                     "conceptMappings": [],
                     "answers": []
                   },
                   "hide": {
-                    "hideWhenExpression": "switchReason !== 'b59fff1c-ab4f-4686-9435-783994432356'"
+                    "hideWhenExpression": "switchReason !== 'b4d8805f-40ff-4c9d-9118-feeab45ad8be'"
                   },
                   "validators": []
                 }
@@ -1563,7 +1577,7 @@
     }
   ],
   "processor": "EncounterFormProcessor",
-  "encounterType": "f469b65f-a4f6-4723-989a-46090de6a0e5",
+  "encounterType": "0e9f540d-92cb-43c9-a95c-9407f5bf3f2a",
   "referencedForms": [],
   "uuid": "",
   "description": "A form to capture HIV Care and ART card information",

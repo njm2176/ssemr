@@ -53,3 +53,8 @@ e23be2e9-00d1-4cfc-aa2e-0598b1dd3c3f,,AlternateContactPersonRelationship,Relatio
 ed0c1e38-9c78-4e20-81d5-6ebffe0371bc,,TransferInformation,Transfer-In Method,org.openmrs.Concept,56da3fe4-f8ed-4ec6-bcb3-0204964853a4,yes,Edit:PAT,,
 67f96a54-c695-4292-bd84-3b1ed6ec9748,,OnART?,On ART?,java.lang.Boolean,,yes,Edit:PAT,,
 8860ceae-034e-47a6-8c7a-a8eb839a2ed1,,TransferInTreatmentStatus,Treatment Status,org.openmrs.Concept,20153e36-2606-4230-ad8d-9c344a1ea0b7,yes,Edit:PAT,,
+8e73267c-9627-4500-90b2-e79e73c672c5,,dateFirstTestedHIVPositive,dateFirstTestedHIVPositive,org.openmrs.Concept,7482b976-56fe-44b0-b30f-1e957cc0cbb0,yes,Edit:PAT,,
+6de9988f-c2ca-4f7f-9a0a-3757352d848e,,EntryPoint,EntryPoint,org.openmrs.Concept,f1a35737-434c-46e9-8c46-4e17b98e305d,yes,Edit:PAT,,
+e9fff08c-392a-4b7a-ab89-b75b1aa464ea,,dateOfHIVRetestingBeforeART,dateOfHIVRetestingBeforeART,org.openmrs.Concept,fee1095f-a0a7-4694-a352-4e88d6ce6c7c,yes,Edit:PAT,,
+73475d83-d0f2-4670-b8e3-1784c831a90b,,placeFirstTestedHIVPositive,placeFirstTestedHIVPositive,org.openmrs.Concept,,yes,Edit:PAT,,
+5a3d84a9-00db-44ab-8173-2462033cf85d,,placeOfHIVRetestingBeforeART,placeOfHIVRetestingBeforeART,org.openmrs.Concept,,yes,Edit:PAT,,
