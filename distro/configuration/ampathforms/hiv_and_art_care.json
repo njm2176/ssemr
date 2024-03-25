@@ -150,7 +150,7 @@
                 "answers": [
                   {
                     "label": "Single",
-                    "concept": "c0009f16-4675-4474-bd56-ff6766eda682"
+                    "concept": "39dbc547-8bf2-49a0-9b4a-deb24ed1fa08"
                   },
                   {
                     "label": "Married, monogamous",
@@ -349,7 +349,7 @@
                   },
                   "validators": [],
                   "hide": {
-                    "hideWhenExpression": "familyMemberHIVStatus !== '7acfafa4-f19b-485e-97a7-c9e002dbe37a'"
+                    "hideWhenExpression": "familyMemberHIVStatus !== '3aeed9a2-4c74-4945-9067-63da3386b102'"
                   }
                 },
                 {
@@ -511,13 +511,13 @@
                   "validators": [
                     {
                       "type": "js_expression",
-                      "failsWhenExpression": "familyMemberPhoneNumber && (!familyMemberPhoneNumber.startsWith('+211') || familyMemberPhoneNumber.length < 13 || familyMemberPhoneNumber.length > 13)",
-                      "message": "The phone number should start with a country code, e.g., +211 and should be at least 9 digits long."
+                      "failsWhenExpression": "familyMemberPhoneNumber && !familyMemberPhoneNumber.match(/^\\+[0-9]{1,3}[0-9]{9,9}$/)",
+                      "message": "The phone number should start with a country code, e.g., +211, and should be at least 9 digits after the country code."
                     }
                   ],
                   "alert": {
-                    "alertWhenExpression": "familyMemberPhoneNumber && (!familyMemberPhoneNumber.startsWith('+211') || familyMemberPhoneNumber.length < 13 || familyMemberPhoneNumber.length > 13)",
-                    "message": "The phone number should start with a country code, e.g., +211 and should be at least 9 digits long."
+                    "alertWhenExpression": "familyMemberPhoneNumber && !familyMemberPhoneNumber.match(/^\\+[0-9]{1,3}[0-9]{9,9}$/)",
+                    "message": "The phone number should start with a country code, e.g., +211, and should be at least 9 digits after the country code."
                   }
                 },
                 {
@@ -1015,7 +1015,7 @@
             {
               "label": "CD4 Count",
               "id": "cd4Count",
-              "required": true,
+              "required": false,
               "questionOptions": {
                 "answers": [],
                 "concept": "809dd0f5-ce54-441c-b835-a2a8b06a6140",
@@ -1037,7 +1037,7 @@
             {
               "label": "CD4 %",
               "id": "cd4CountPercentage",
-              "required": true,
+              "required": false,
               "questionOptions": {
                 "answers": [],
                 "concept": "809dd0f5-ce54-441c-b835-a2a8b06a6140",
@@ -1294,280 +1294,6 @@
                 {
                   "type": "date",
                   "allowFutureDates": "false"
-                }
-              ]
-            },
-            {
-              "label": "Art Substitution & Switch",
-              "type": "obsGroup",
-              "required": true,
-              "id": "clinicalMilestones",
-              "questionOptions": {
-                "rendering": "repeating",
-                "concept": "9734068e-4f96-4133-a7c0-d9d524c0fd7b"
-              },
-              "questions": [
-                {
-                  "label": "Substitution Regimen For Adults(First Line)",
-                  "id": "substArtRegimen",
-                  "required": true,
-                  "questionOptions": {
-                    "concept": "23322fd6-3dbb-410e-8bee-6210dfcd5f71",
-                    "rendering": "select",
-                    "conceptMappings": [],
-                    "answers": [
-                      {
-                        "label": "1a = AZT/3TC+EFV",
-                        "concept": "9062c6d9-a650-44d2-8929-da84f617c427"
-                      },
-                      {
-                        "label": "1b = AZT/3TC/NVP",
-                        "concept": "c22e6700-a937-4909-b4ad-e82ff51325ac"
-                      },
-                      {
-                        "label": "1c = TDF/3TC/DTG",
-                        "concept": "a00d9620-e88b-4c2f-9293-b1ac9e5943f2"
-                      },
-                      {
-                        "label": "1d=ABC/3TC (600/300)/DTG",
-                        "concept": "5d500ca2-350a-49ee-a3d4-f340db32ff31"
-                      },
-                      {
-                        "label": "1e = AZT/3TC +DTG",
-                        "concept": "3fd242a8-7ade-463c-8919-d82573ea8526"
-                      },
-                      {
-                        "label": "1f = TDF/3TC+EFV",
-                        "concept": "91f5d0d6-eb81-484f-9376-4bfb926a5a81"
-                      },
-                      {
-                        "label": "1g = TDF/3TC+NVP",
-                        "concept": "0dd3e78f-e1fc-47de-95bc-1f489d0dfcc5"
-                      },
-                      {
-                        "label": "1h = TDF/FTC/EFV",
-                        "concept": "4a86fbee-07a9-422a-bf69-16256c0c2b8b"
-                      },
-                      {
-                        "label": "1J = TDF/FTC+NVP",
-                        "concept": "03224cae-f115-4814-bd53-c99c72288446"
-                      }
-                    ]
-                  },
-                  "type": "obs",
-                  "validators": []
-                },
-                {
-                  "label": "ART First Line Switch Date",
-                  "id": "firstLineSwitch",
-                  "required": true,
-                  "questionOptions": {
-                    "answers": [],
-                    "concept": "ad884e26-5e18-4ec3-b471-c1cd1374387f",
-                    "rendering": "date"
-                  },
-                  "type": "obs",
-                  "validators": [
-                    {
-                      "type": "date",
-                      "allowFutureDates": "false"
-                    }
-                  ]
-                },
-                {
-                  "label": "Reason For Regimen Change(First Line)",
-                  "id": "changeReason",
-                  "required": true,
-                  "questionOptions": {
-                    "concept": "f0941906-3277-4ca0-891a-a58efb541c66",
-                    "rendering": "select",
-                    "conceptMappings": [],
-                    "answers": [
-                      {
-                        "label": "Pregnancy",
-                        "concept": "2afdbb1f-4f2f-48fd-ad92-090f1a5332cc"
-                      },
-                      {
-                        "label": "Risk of pregnancy",
-                        "concept": "baee8420-727a-4abf-a746-f2f34d352b93"
-                      },
-                      {
-                        "label": "Newly diagnosed TB",
-                        "concept": "42223c76-ed2d-40a0-8d93-c4571309a5f8"
-                      },
-                      {
-                        "label": "New drug available",
-                        "concept": "99c040fa-150a-4144-8453-a94ead0de2b7"
-                      },
-                      {
-                        "label": "Drug stockout",
-                        "concept": "096b1e7d-4d8c-4386-a5dc-54b6ad84a167"
-                      },
-                      {
-                        "label": "Other Reason (Specify)",
-                        "concept": "b4d8805f-40ff-4c9d-9118-feeab45ad8be"
-                      }
-                    ]
-                  },
-                  "type": "obs",
-                  "validators": []
-                },
-                {
-                  "label": "Other Reason For First Line Regimen Change Specify",
-                  "type": "obs",
-                  "required": true,
-                  "id": "otherSpecifyReason",
-                  "questionOptions": {
-                    "rendering": "text",
-                    "concept": "b59fff1c-ab4f-4686-9435-783994432356",
-                    "conceptMappings": [],
-                    "answers": []
-                  },
-                  "hide": {
-                    "hideWhenExpression": "changeReason !== 'b4d8805f-40ff-4c9d-9118-feeab45ad8be'"
-                  },
-                  "validators": []
-                }
-              ]
-            },
-            {
-              "label": "Switch to 2nd Line",
-              "type": "obsGroup",
-              "required": true,
-              "id": "switchSecondline",
-              "questionOptions": {
-                "rendering": "repeating",
-                "concept": "9734068e-4f96-4133-a7c0-d9d524c0fd7b"
-              },
-              "questions": [
-                {
-                  "label": "Substitution Regimen For Adults(Second Line)",
-                  "id": "switchArtRegimen",
-                  "required": true,
-                  "questionOptions": {
-                    "concept": "23322fd6-3dbb-410e-8bee-6210dfcd5f71",
-                    "rendering": "select",
-                    "conceptMappings": [],
-                    "answers": [
-                      {
-                        "label": "2a=AZT/3TC+DTG",
-                        "concept": "bd97cacd-4a91-4901-8803-3a4a2e5f1ca8"
-                      },
-                      {
-                        "label": "2b=ABC/3TC+DTG",
-                        "concept": "ad6ff4ef-769e-4aec-b8bb-7f033fe6aaaa"
-                      },
-                      {
-                        "label": "2c=TDF+3TC+LPV/r",
-                        "concept": "47167ec1-4957-4d0a-a58c-3894bdeb93ff"
-                      },
-                      {
-                        "label": "2d=TDF/3TC+ATV/r",
-                        "concept": "e649a0ec-e193-4af0-bb49-02687107a893"
-                      },
-                      {
-                        "label": "2e=TDF/FTC-LPV/r",
-                        "concept": "accca537-b8ee-41ec-b902-7de814d099b2"
-                      },
-                      {
-                        "label": "2f=TDF/FTC-ATV/r",
-                        "concept": "77f201fc-aefc-4068-baa7-cb3284782a38"
-                      },
-                      {
-                        "label": "2g=AZT/3TC+LPV/r",
-                        "concept": "cb0f9fcd-fb52-493f-95aa-d0197387fbdb"
-                      },
-                      {
-                        "label": "2h=AZT/3TC+ATV/r",
-                        "concept": "28790bde-81db-4490-806b-ac10c17b41dc"
-                      },
-                      {
-                        "label": "2i=ABC/3TC+LPV/r",
-                        "concept": "aae69cae-2806-4e8b-a916-f22ed733a19b"
-                      },
-                      {
-                        "label": "2j=ABC/3TC+ATV/r",
-                        "concept": "64336206-c9bc-4d37-accf-c7abac7a37f6"
-                      },
-                      {
-                        "label": "2k=TDF/3TC/DTG",
-                        "concept": "25f0cca5-902d-4e36-9e4f-5ce5da744a75"
-                      }
-                    ]
-                  },
-                  "type": "obs",
-                  "validators": []
-                },
-                {
-                  "label": "ART Swith to 2nd Line Date",
-                  "id": "switchDate",
-                  "required": true,
-                  "questionOptions": {
-                    "answers": [],
-                    "concept": "55337ca1-c8b5-43e4-bed3-845a01463020",
-                    "rendering": "date"
-                  },
-                  "type": "obs",
-                  "validators": [
-                    {
-                      "type": "date",
-                      "allowFutureDates": "false"
-                    }
-                  ]
-                },
-                {
-                  "label": "Reason For Regimen Switch(2nd Line)",
-                  "id": "switchReason",
-                  "required": true,
-                  "questionOptions": {
-                    "concept": "847b1998-5b2f-4818-a6c0-4284e2f85403",
-                    "rendering": "select",
-                    "conceptMappings": [],
-                    "answers": [
-                      {
-                        "label": "Pregnancy",
-                        "concept": "2afdbb1f-4f2f-48fd-ad92-090f1a5332cc"
-                      },
-                      {
-                        "label": "Risk of pregnancy",
-                        "concept": "baee8420-727a-4abf-a746-f2f34d352b93"
-                      },
-                      {
-                        "label": "Newly diagnosed TB",
-                        "concept": "42223c76-ed2d-40a0-8d93-c4571309a5f8"
-                      },
-                      {
-                        "label": "New drug available",
-                        "concept": "99c040fa-150a-4144-8453-a94ead0de2b7"
-                      },
-                      {
-                        "label": "Drug stockout",
-                        "concept": "096b1e7d-4d8c-4386-a5dc-54b6ad84a167"
-                      },
-                      {
-                        "label": "Other Reason (Specify)",
-                        "concept": "b4d8805f-40ff-4c9d-9118-feeab45ad8be"
-                      }
-                    ]
-                  },
-                  "type": "obs",
-                  "validators": []
-                },
-                {
-                  "label": "Other Answer",
-                  "type": "obs",
-                  "required": true,
-                  "id": "otherReason",
-                  "questionOptions": {
-                    "rendering": "text",
-                    "concept": "41c2e674-babe-469d-bdf3-2b57ba568a4b",
-                    "conceptMappings": [],
-                    "answers": []
-                  },
-                  "hide": {
-                    "hideWhenExpression": "switchReason !== 'b4d8805f-40ff-4c9d-9118-feeab45ad8be'"
-                  },
-                  "validators": []
                 }
               ]
             }

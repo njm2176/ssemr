@@ -1055,15 +1055,15 @@
               "id": "clientPregnant",
               "questionOptions": {
                 "rendering": "select",
-                "concept": "150f69fd-140d-4559-85b7-6be94f371167",
+                "concept": "5dcb1bc9-ee89-4b57-9493-a1f245c5ee8b",
                 "conceptMappings": [],
                 "answers": [
                   {
-                    "concept": "true",
+                    "concept": "78763e68-104e-465d-8ce3-35f9edfb083d",
                     "label": "Yes"
                   },
                   {
-                    "concept": "fasle",
+                    "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e",
                     "label": "No"
                   }
                 ]
@@ -1086,7 +1086,7 @@
               },
               "validators": [],
               "hide": {
-                "hideWhenExpression": "clientPregnant !== 'true'"
+                "hideWhenExpression": "clientPregnant !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
               }
             },
             {
@@ -1109,7 +1109,7 @@
                 }
               ],
               "hide": {
-                "hideWhenExpression": "clientPregnant !== 'true'"
+                "hideWhenExpression": "clientPregnant !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
               }
             },
             {
@@ -1149,15 +1149,15 @@
                 "conceptMappings": [],
                 "answers": [
                   {
-                    "concept": "a1dcc066-550c-42a3-90aa-83d8336cb7d5",
+                    "concept": "3aeed9a2-4c74-4945-9067-63da3386b102",
                     "label": "POSITIVE"
                   },
                   {
-                    "concept": "f9c1016a-dead-42c1-8ea3-7a1325f1159c",
+                    "concept": "80008f38-5991-4170-9ddf-9490dbcbe064",
                     "label": "NEGATIVE"
                   },
                   {
-                    "concept": "5d8d6b9f-1acf-4a4c-a79c-acd0ccd32df8",
+                    "concept": "9202b40e-349a-4033-a6b5-7305dbf9dc96",
                     "label": "Unknown"
                   }
                 ]
@@ -1175,12 +1175,12 @@
                 "conceptMappings": [],
                 "answers": [
                   {
-                    "label": "Yes",
-                    "concept": "true"
+                    "concept": "78763e68-104e-465d-8ce3-35f9edfb083d",
+                    "label": "Yes"
                   },
                   {
-                    "label": "No",
-                    "concept": "false"
+                    "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e",
+                    "label": "No"
                   }
                 ]
               },
@@ -1199,7 +1199,7 @@
               },
               "validators": [],
               "hide": {
-                "hideWhenExpression": "otherClinicalFindings !== 'true'"
+                "hideWhenExpression": "otherClinicalFindings !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
               }
             }
           ]
@@ -1477,8 +1477,8 @@
     }
   ],
   "processor": "EncounterFormProcessor",
-  "encounterType": "81852aee-3f10-11e4-adec-0800271c1b75",
+  "encounterType": "b645dbdd-7d58-41d4-9b11-eeff023b8ee5",
   "referencedForms": [],
-  "uuid": "61636d1e-8861-46e0-868f-a83f71086a23",
+  "uuid": "7d6941dd-dda4-46c9-ae3a-2b938c9c34b4",
   "description": "Adult and adolescent intake form"
 }

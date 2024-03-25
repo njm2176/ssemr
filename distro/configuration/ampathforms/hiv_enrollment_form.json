@@ -53,16 +53,20 @@
                     "label": "CBTC"
                   },
                   {
-                    "concept": "8244fd10-f813-4e52-a13e-9e3df7cd599c",
-                    "label": "OPD"
-                  },
-                  {
                     "concept": "62cceeab-adf9-4f3b-bdb3-89687557ecab",
                     "label": "In Patient"
                   },
                   {
                     "concept": "8fc10249-842b-4944-8018-c758bd0263d8",
                     "label": "Index Testing"
+                  },
+                  {
+                    "concept": "675702bb-8456-4e10-86ca-65ee8b70d1bd",
+                    "label": "Nutrition"
+                  },
+                  {
+                    "concept": "8244fd10-f813-4e52-a13e-9e3df7cd599c",
+                    "label": "OPD"
                   },
                   {
                     "concept": "26560ed4-3ccc-4f85-85f1-f2c9f9238d3b",
@@ -79,10 +83,6 @@
                   {
                     "concept": "ec5d13de-ee22-4d8a-b39c-bdee6cd3d88c",
                     "label": "VCT"
-                  },
-                  {
-                    "concept": "675702bb-8456-4e10-86ca-65ee8b70d1bd",
-                    "label": "Nutrition"
                   },
                   {
                     "concept": "0464a6fd-d3c5-427b-b147-3f156ac86d63",
@@ -145,7 +145,7 @@
                 "conceptMappings": [],
                 "answers": [
                   {
-                    "concept": "a2065636-5326-40f5-aed6-0cc2cca81ccc",
+                    "concept": "78763e68-104e-465d-8ce3-35f9edfb083d",
                     "label": "Yes"
                   },
                   {
@@ -192,7 +192,7 @@
   "processor": "EncounterFormProcessor",
   "encounterType": "f469b65f-a4f6-4723-989a-46090de6a0e5",
   "referencedForms": [],
-  "uuid": "2d27155e-f40c-4339-b292-232fa4ac53ff",
+  "uuid": "bdd87531-870c-46df-9e6f-04cad088b8de",
   "description": "HIV and ART Enrollment form",
   "version": "1.0.0"
 }

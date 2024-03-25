@@ -43,10 +43,19 @@ a4dfd4b4-97e5-4642-9c33-72375b0bc3d8,,CXR,Chest X-Ray,Chest X-Ray,,,,Misc,N/A,
 ,,,,,,,,,,
 31265036-2f0a-4ef0-a6ce-648c3e0844c5,,Suggestive,Suggestive,Suggestive,,,,Misc,N/A,
 60c1d4e9-09f4-4fe1-9960-52738f01d3a3,,Inclusive,Inclusive,Inclusive,,,,Misc,N/A,
+f2c2cdcf-550f-427c-96af-52b6a12c3d42,,Inconclusive,Inconclusive,Inconclusive,,,,Misc,N/A,
 d10cedcc-ba9b-426b-8a23-5c906caf0579,,Other Dx,Other Dx,Other Dx,,,,Misc,N/A,
 3b75cc72-924b-4d36-8891-95484287495e,,CxR result Unknown,CxR result Unknown,,,,,Misc,N/A,
-7c679f4f-cae6-43ba-bf18-0f3bd9f060a8,,CxR Results,Results, Results,,,,Question,Coded,Suggestive ; Inclusive ; Other Dx; CxR result Unknown
-73d4e98c-564d-4256-bf8c-bc28f560e8a8,,CRX Results,Results,CRX Results,,,,Question,Coded,Suggestive ; Inclusive ; Other Dx; CxR result Unknown
+7c679f4f-cae6-43ba-bf18-0f3bd9f060a8,,CxR Results,Results, Results,,,,Question,Coded,"Suggestive;
+Inclusive;
+Inconclusive;
+Other Dx;
+CxR result Unknown"
+73d4e98c-564d-4256-bf8c-bc28f560e8a8,,CRX Results,Results,CRX Results,,,,Question,Coded,"Suggestive;
+Inclusive;
+Inconclusive;
+Other Dx;
+CxR result Unknown"
 598aee3b-470c-4cfb-9b79-6bf34f988093,,Other Dx Specify,Other Dx Specify,,,,,Question,Text,
 363f10c8-bce7-4627-8890-62fafd8edb43,,Radiology CrX Information,Radiology CrX Information,Radiology CrX Information,,,,Misc,N/A,
 3d1e61d3-94cd-42f4-aa2a-82cbe801af70,,IPT Status,Status,IPT Status,,,,Question,Text,

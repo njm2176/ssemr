@@ -143,21 +143,24 @@
 				"required": false,
 				"id": "pregnant",
 				"questionOptions": {
-				  "rendering": "select",
+				  "rendering": "radio",
 				  "concept": "235a6246-6179-4309-ba84-6f0ec337eb48",
 				  "conceptMappings": [],
 				  "answers": [
 					{
-					  "concept": "true",
+					  "concept": "78763e68-104e-465d-8ce3-35f9edfb083d",
 					  "label": "Yes"
 					},
 					{
-					  "concept": "false",
+					  "concept": "f9f633a5-1544-4c44-9394-a7f746a12dff",
 					  "label": "No"
 					}
 				  ]
 				},
-				"validators": []
+				"validators": [],
+				"hide": {
+				  "hideWhenExpression": "sex === 'M' || age < 15"
+				}
 			  },
 			  {
 				"label": "Is patient breastfeeding?",
@@ -170,16 +173,19 @@
 				  "conceptMappings": [],
 				  "answers": [
 					{
-					  "concept": "true",
+					  "concept": "78763e68-104e-465d-8ce3-35f9edfb083d",
 					  "label": "Yes"
 					},
 					{
-					  "concept": "false",
+					  "concept": "f9f633a5-1544-4c44-9394-a7f746a12dff",
 					  "label": "No"
 					}
 				  ]
 				},
-				"validators": []
+				"validators": [],
+				"hide": {
+				  "hideWhenExpression": "sex === 'M' || age < 15"
+				}
 			  },
 			  {
 				"label": "ARV Adherence ",
@@ -192,12 +198,12 @@
 				  "conceptMappings": [],
 				  "answers": [
 					{
-					  "concept": "53b5adc3-a342-48fc-bff9-5981db672d06",
-					  "label": "Fair  85 - 95 %"
-					},
-					{
 					  "concept": "82a03cc2-89aa-4c6a-85d4-66bba07a6334",
 					  "label": "Good > 95 %"
+					},
+					{
+					  "concept": "53b5adc3-a342-48fc-bff9-5981db672d06",
+					  "label": "Fair  85 - 95 %"
 					},
 					{
 					  "concept": "c253579e-c9ad-4c83-b322-6b1c34ce81c2",
@@ -232,7 +238,7 @@
 				"validators": []
 			  },
 			  {
-				"label": "Value",
+				"label": "Viral Load Value",
 				"type": "obs",
 				"required": false,
 				"id": "valueMonitoring",
@@ -264,7 +270,7 @@
 				"validators": []
 			  },
 			  {
-				"label": "Value",
+				"label": "Viral Load Value",
 				"type": "obs",
 				"required": false,
 				"id": "ValueRepeatVL",
@@ -343,7 +349,17 @@
 				  "conceptMappings": [],
 				  "answers": []
 				},
-				"validators": []
+				"validators": [
+				  {
+					"type": "js_expression",
+					"failsWhenExpression": "clinicianPhone && !clinicianPhone.match(/^\\+[0-9]{1,3}[0-9]{9,9}$/)",
+					"message": "The phone number should start with a country code, e.g., +211, and should be at least 9 digits after the country code."
+				  }
+				],
+				"alert": {
+				  "alertWhenExpression": "clinicianPhone && !clinicianPhone.match(/^\\+[0-9]{1,3}[0-9]{9,9}$/)",
+				  "message": "The phone number should start with a country code, e.g., +211, and should be at least 9 digits after the country code."
+				}
 			  },
 			  {
 				"label": "Request Date",
@@ -388,7 +404,17 @@
 				  "conceptMappings": [],
 				  "answers": []
 				},
-				"validators": []
+				"validators": [
+				  {
+					"type": "js_expression",
+					"failsWhenExpression": "focalPersonPhone && !focalPersonPhone.match(/^\\+[0-9]{1,3}[0-9]{9,9}$/)",
+					"message": "The phone number should start with a country code, e.g., +211, and should be at least 9 digits after the country code."
+				  }
+				],
+				"alert": {
+				  "alertWhenExpression": "focalPersonPhone && !focalPersonPhone.match(/^\\+[0-9]{1,3}[0-9]{9,9}$/)",
+				  "message": "The phone number should start with a country code, e.g., +211, and should be at least 9 digits after the country code."
+				}
 			  }
 			]
 		  },
@@ -407,7 +433,17 @@
 				  "conceptMappings": [],
 				  "answers": []
 				},
-				"validators": []
+				"validators": [
+				  {
+					"type": "js_expression",
+					"failsWhenExpression": "emailHF && !emailHF.match(/^[\\w.-]+@[\\w-]+(\\.[\\w-]+)+$/)",
+					"message": "Invalid email address. Please provide a valid email address e.g example@gmail.com."
+				  }
+				],
+				"alert": {
+				  "alertWhenExpression": "emailHF && !emailHF.match(/^[\\w.-]+@[\\w-]+(\\.[\\w-]+)+$/)",
+				  "message": "Invalid email address. Please provide a valid email address in the correct format e.g example@gmail.com."
+				}
 			  },
 			  {
 				"label": "Date sample received at testing Lab",
@@ -442,20 +478,36 @@
 				"id": "rejection",
 				"questionOptions": {
 				  "rendering": "select",
-				  "concept": "5986b9bb-b9e0-4c8a-bf16-6562fc3076a6",
+				  "concept": "b5d1c0b4-6cce-4a23-9754-60b6da6b5d88",
 				  "conceptMappings": [],
 				  "answers": [
 					{
-					  "concept": "true",
+					  "concept": "78763e68-104e-465d-8ce3-35f9edfb083d",
 					  "label": "Yes"
 					},
 					{
-					  "concept": "false",
+					  "concept": "f9f633a5-1544-4c44-9394-a7f746a12dff",
 					  "label": "No"
 					}
 				  ]
 				},
 				"validators": []
+			  },
+			  {
+				"label": "Reason for rejection",
+				"type": "obs",
+				"required": false,
+				"id": "reasonForRejection",
+				"questionOptions": {
+				  "rendering": "text",
+				  "concept": "1754e917-3956-4032-b7f9-e54edfa1f9d0",
+				  "conceptMappings": [],
+				  "answers": []
+				},
+				"validators": [],
+				"hide": {
+				  "hideWhenExpression": "rejection !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
+				}
 			  }
 			]
 		  }
@@ -465,7 +517,7 @@
 	"processor": "EncounterFormProcessor",
 	"encounterType": "82024e00-3f10-11e4-adec-0800271c1b75",
 	"referencedForms": [],
-	"uuid": "5560f1f1-0903-4853-89d0-70365282ceb9",
+	"uuid": "ded5a004-c41a-49c2-ab9a-3e9f6a31da5f",
 	"description": "VL Labaratory request form",
 	"version": "1.0"
   }

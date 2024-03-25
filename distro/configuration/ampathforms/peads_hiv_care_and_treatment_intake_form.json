@@ -82,7 +82,7 @@
 					  "label": "Non-Reactive"
 					},
 					{
-					  "concept": "3b75cc72-924b-4d36-8891-95484287495e",
+					  "concept": "9202b40e-349a-4033-a6b5-7305dbf9dc96",
 					  "label": "Unknown"
 					}
 				  ]
@@ -96,15 +96,15 @@
 				"id": "immunization",
 				"questionOptions": {
 				  "rendering": "radio",
-				  "concept": "99d1ad7c-c316-11e9-9cb5-2a2ae2dbcce4",
+				  "concept": "a5cf84c1-495d-431a-b1a6-28d943e389f8",
 				  "conceptMappings": [],
 				  "answers": [
 					{
-					  "concept": "true",
+					  "concept": "78763e68-104e-465d-8ce3-35f9edfb083d",
 					  "label": "Yes"
 					},
 					{
-					  "concept": "false",
+					  "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e",
 					  "label": "No"
 					}
 				  ]
@@ -118,11 +118,11 @@
 				"id": "feedingPattern",
 				"questionOptions": {
 				  "rendering": "radio",
-				  "concept": "99d197a6-c316-11e9-9cb5-2a2ae2dbcce4",
+				  "concept": "74717127-b986-42e5-a125-139d4655c108",
 				  "conceptMappings": [],
 				  "answers": [
 					{
-					  "concept": "99d18c16-c316-11e9-9cb5-2a2ae2dbcce4",
+					  "concept": "b8b2bd85-52eb-4b80-9842-88fd177befe3",
 					  "label": "Breast milk only"
 					},
 					{
@@ -312,7 +312,7 @@
 				"id": "otherMedicalHistorySpecify",
 				"questionOptions": {
 				  "rendering": "text",
-				  "concept": "1bf494b3-5dad-4f34-b3f7-f17c42030590",
+				  "concept": "f16c6a11-453f-44a2-a7a5-77aeaa93e67d",
 				  "conceptMappings": [],
 				  "answers": []
 				},
@@ -486,7 +486,7 @@
 				"id": "percentageOfBodyWeight",
 				"questionOptions": {
 				  "rendering": "numeric",
-				  "concept": "421a649f-143f-455a-9751-b42d15b7fa7e",
+				  "concept": "83557c06-044a-45e6-9947-8aab137ecde9",
 				  "conceptMappings": [],
 				  "answers": []
 				},
@@ -502,7 +502,7 @@
 				"id": "currentCoughDuration",
 				"questionOptions": {
 				  "rendering": "numeric",
-				  "concept": "68ab5333-aa71-4f8b-81d9-926bb1b54812",
+				  "concept": "9125f7ff-f703-42f1-8a6d-ae6a4c2b5b94",
 				  "conceptMappings": [],
 				  "answers": []
 				},
@@ -518,7 +518,7 @@
 				"id": "feverDuration",
 				"questionOptions": {
 				  "rendering": "numeric",
-				  "concept": "9f2c12c9-0c2b-4321-bfe2-ec37f7546803",
+				  "concept": "74ffce7d-e863-4e02-9081-64cefaf2e28a",
 				  "conceptMappings": [],
 				  "answers": []
 				},
@@ -534,7 +534,7 @@
 				"id": "diarrheaDuration",
 				"questionOptions": {
 				  "rendering": "numeric",
-				  "concept": "a53ab34b-8639-48ae-9e8a-fea08c3713be",
+				  "concept": "c0810998-e30c-4b10-adfe-8cef59afbfc1",
 				  "conceptMappings": [],
 				  "answers": []
 				},
@@ -1380,7 +1380,7 @@
 				"id": "HBsAg",
 				"questionOptions": {
 				  "rendering": "text",
-				  "concept": "b58afffd-10c0-4956-84ea-5587b6a296a8",
+				  "concept": "33a340e7-67e7-4bc0-a669-6a5f6a6abe88",
 				  "conceptMappings": [],
 				  "answers": []
 				},
@@ -1393,7 +1393,7 @@
 				"id": "hcv",
 				"questionOptions": {
 				  "rendering": "text",
-				  "concept": "6c58e6d0-746a-4761-9b28-8a6db0d3264b",
+				  "concept": "8218c436-897e-4298-be27-c58016b00e7a",
 				  "conceptMappings": [],
 				  "answers": []
 				},
@@ -1410,15 +1410,15 @@
 				  "conceptMappings": [],
 				  "answers": [
 					{
-					  "concept": "f9c1016a-dead-42c1-8ea3-7a1325f1159c",
+					  "concept": "3aeed9a2-4c74-4945-9067-63da3386b102",
 					  "label": "AFB -"
 					},
 					{
-					  "concept": "a1dcc066-550c-42a3-90aa-83d8336cb7d5",
+					  "concept": "80008f38-5991-4170-9ddf-9490dbcbe064",
 					  "label": "AFB +"
 					},
 					{
-					  "concept": "5d8d6b9f-1acf-4a4c-a79c-acd0ccd32df8",
+					  "concept": "9202b40e-349a-4033-a6b5-7305dbf9dc96",
 					  "label": "Sputum Results, Unknown"
 					}
 				  ]
@@ -1438,7 +1438,7 @@
 				"id": "otherClinicalFindings",
 				"questionOptions": {
 				  "rendering": "textarea",
-				  "concept": "905bfa09-2be8-4aac-8086-9c9918f9a76c",
+				  "concept": "91ef252c-7ecf-4272-8197-3bada6cdb65b",
 				  "conceptMappings": [],
 				  "answers": []
 				},
@@ -1721,6 +1721,6 @@
 	"processor": "EncounterFormProcessor",
 	"encounterType": "356def6a-fa66-4a78-97d5-b43154064875",
 	"referencedForms": [],
-	"uuid": "44ea4ba6-0993-45e2-992c-99b533ac815c",
+	"uuid": "a01143c8-86ff-43a1-8a09-0ddf56425524",
 	"description": "Pediatric hiv care and treatment intake form"
   }
