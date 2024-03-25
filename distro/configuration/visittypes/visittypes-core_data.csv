@@ -1,6 +1,5 @@
 Uuid,Void/Retire,Name,Description,_version:1
-7b0f5697-27e3-40c4-8bae-f4049abfb4ed,,Facility Visit,"Patient visits the clinic/hospital (as opposed to a home visit, or telephone contact)",
-d66e9fe0-7d51-4801-a550-5d462ad1c944,,Home Visit,Provider visits the patient at their home,
+3972fca0-96ed-4c89-832d-e182345f4fe6,,ART Initiation,ART Initiation,
 45c4eb10-3fcd-405e-ae2f-a8350fb84b51,,First EAC,First EAC,
 9788003c-b4fd-49f6-b2f0-17a9916e178e,,Second EAC,Second EAC,
 4f6446d5-62d3-4379-b5b2-df5bfa314032,,Third EAC,Third EAC,
@@ -14,4 +13,3 @@ ed615131-0db3-4b16-8fb5-c423da3b1c6e,,Receiving repeat VL result/Switch to 2 nd 
 a469b8d3-7a61-4a62-9ca7-adbcaf5cec11,,EID sample collection,EID sample collection,
 43583f69-00d5-49fb-9899-03d1fba4d30d,,Receiving EID result,Receiving EID result,
 5532b8be-2b98-4bff-997b-66e9873a95bd,,Other (specify),Other (specify),
-e425d710-e13c-4a86-911b-2a9818be28b0,,Visit Type Other (specify),Visit Type Other (specify),

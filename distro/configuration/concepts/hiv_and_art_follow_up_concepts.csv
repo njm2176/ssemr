@@ -26,7 +26,8 @@ IUD-Intrauterine device;
 LAM-Lactational Amenorrhea Method;
 D-Diaphragm/Cervical cap;
 FA-Fertility awareness method;
-TL-Tubal Ligation;V-Vasectomy (Partners);
+TL-Tubal Ligation;
+V-Vasectomy (Partner's);
 UND-Undecided"
 1ccceceb-fb05-4ef6-845b-e0d64d3f9ba4,,FP Pregnant,Pregnant,Pregnant,,,,Question,Coded,Yes;No
 12118225-edad-45e2-9313-a5bca2cb4995,,EDD,EDD,EDD,,,,Question,Date,
@@ -54,8 +55,8 @@ f20b15b2-4e14-11e4-8a57-0800271c1b75,,Jaundice,Jaundice,,,,,Misc,N/A,
 a1656477-2650-4861-bdbd-84a7d985fa5a,,Fatigue,Fatigue,,,,,Misc,N/A,
 1dfb0948-4e15-11e4-8a57-0800271c1b75,,Abdominal pain,Abdominal pain,,,,,Misc,N/A,
 acecabeb-008a-4924-981f-fcc2807087f6,,FAT changes,FAT changes,,,,,Misc,N/A,
-50622f1f-9367-4a4e-a510-e969681d8df0,,"B, N burning/numb/tingling","B, N burning/numb/tingling",,,,,Misc,N/A,
-db99694b-a058-48a9-832c-64c28847a1a9,,"CNS: dizzy, anxiety, nightmare, depression ","CNS: dizzy, anxiety, nightmare, depression ",,,,,Misc,N/A,
+50622f1f-9367-4a4e-a510-e969681d8df0,,"B, N burning, numb, tingling","B, N burning/numb/tingling",,,,,Misc,N/A,
+db99694b-a058-48a9-832c-64c28847a1a9,,"CNS: dizzy, anxiety, nightmare, depression",CNS: dizzy/anxiety/nightmare/depression ,,,,,Misc,N/A,
 13498474-ba95-4fec-8010-c8c5e24748ff,,Side Effects,Side Effects,Side Effects,,,,Question,Coded,"Nausea;
 Rash;
 Headache;
@@ -65,8 +66,8 @@ Jaundice;
 Fatigue;
 Abdominal pain;
 FAT changes;
-burning/numb/tingling;
-CNS"
+B, N burning, numb, tingling;
+CNS: dizzy, anxiety, nightmare, depression"
 be8d8351-6dad-4f91-a5a1-40c56656bbf5,,New OI (other Problems),New OI (other Problems),,,,,Question,Text,
 88f2a6ea-367d-45dc-942a-b809b0d17275,,Stage 1,Stage 1,Stage 1,,,,Misc,N/A,
 17a3b24b-e107-49fe-8b0d-69c3b7e60f4c,,Stage 2,Stage 2,Stage 2,,,,Misc,N/A,
@@ -139,7 +140,7 @@ d75c973c-06d4-43d2-a57d-6340fc8c0100,,Other ART Regimen,Other ART Regimen,,,,,Mi
 1f = TDF/3TC/EFV;
 1g = TDF/3TC + NVP;
 1h = TDF/FTC/ EFV;
-1J  = TDF/FTC + NVP;
+1J = TDF/FTC + NVP;
 2a = AZT/3TC + DTG;
 2b = ABC/3TC + DTG;
 2c = TDF+3TC + LPV/r;
@@ -149,7 +150,7 @@ d75c973c-06d4-43d2-a57d-6340fc8c0100,,Other ART Regimen,Other ART Regimen,,,,,Mi
 2g = AZT/3TC + LPV/r;
 2h = AZT/3TC + ATV/r;
 2i = ABC/3TC + LPV/r;
-2J  = ABC/3TC + ATV/r;
+2J = ABC/3TC + ATV/r;
 2k = TDF/3TC/DTG;
 4a = AZT/3TC/NVP;
 4b = AZT/3TC + EFV;
@@ -159,7 +160,7 @@ d75c973c-06d4-43d2-a57d-6340fc8c0100,,Other ART Regimen,Other ART Regimen,,,,,Mi
 4f = ABC/3TC + NVP;
 4g = ABC/3TC (120/60) + EFV (200mg);
 4h = TDF/3TC/EFV;
-4i  = ABC/3TC + LPV/r;
+4i = ABC/3TC + LPV/r;
 4j = AZT/3TC (60/30) + LPV/r;
 4k = TDF/3TC + NVP;
 4l = ABC/3TC + AZT;
@@ -174,6 +175,7 @@ d75c973c-06d4-43d2-a57d-6340fc8c0100,,Other ART Regimen,Other ART Regimen,,,,,Mi
 5i = ABC/3TC + LPV/r;
 5j = AZT/3TC (120/60)+DTG10;
 Other ART Regimen"
+b0afac64-54b5-412c-86d0-7cf5dc6afb35,,Other ART Regimen Specify,Other ART Regimen Specify,,,,,Question,Text,
 4ab28128-7ef3-452d-86d5-73561761b08a,,Number of Days Dispensed,Number of Days,Number of Days Dispensed,,,,Question,Numeric,
 fc684917-4deb-42cf-9245-8a13c6a232bc,,Date VL Sample Collected?,Date VL Sample Collected?,Date VL Sample Collected?,,,,Question,Date,
 8b5ef5c4-3c88-49b8-87e5-cb8d30caa77d,,VL Results,VL Result,VL Results,,,,Question,Numeric,
@@ -192,24 +194,24 @@ b31d8882-4c3d-4cd6-b6fa-d6bc1165922e,,Too ill,Too ill,,,,,Misc,N/A,
 2302714c-9480-41fd-8395-2c9728c06ab6,,Patient lost/ran out of pills,Patient lost/ran out of pills,,,,,Misc,N/A,
 9959c107-2771-4221-a31b-38861cd56526,,Delivery/travel problems,Delivery/travel problems,,,,,Misc,N/A,
 45724737-ec75-41e6-b7a3-f0289888bf76,,Inability to pay,Inability to pay,,,,,Misc,N/A,
-a2832452-f729-4d85-87ff-04caa9185a5b,,Alcohol,Alcohol,,,,,Misc,N/A,
+a2832452-f729-4d85-87ff-04caa9185a5b,,Alcohol/Drugs;,Alcohol/Drugs;,,,,,Misc,N/A,
 506d37ec-84b7-418c-925e-2a0ff9d72300,,Depression,Depression,,,,,Misc,N/A,
 68a10b27-ab05-470c-b2c0-0a13e26b14c1,,pill burden,pill burden,,,,,Misc,N/A,
 64cac639-8e44-4059-90e8-16984280e7a7,,Other Adherence Reason,Other Adherence Reason,,,,,Misc,N/A,
-d0f3605e-f026-4ef8-973a-f471a236049a,,Reason why Adherence is Fair,Reason,,,,,Question,Coded,"Toxicity/side effects;                                  
+d0f3605e-f026-4ef8-973a-f471a236049a,,Reason why Adherence is Fair,Reason why Adherence is Fair,,,,,Question,Coded,"Toxicity/side effects;
 Share with others;
 Forgot;
 Felt better;
 Too ill;
-Stigma, disclosure or privacy issues;                 
-Drug stock out—dispensary;             
-Patient lost/ran out of pills;               
+Stigma, disclosure or privacy issues;
+Drug stock out—dispensary;
+Patient lost/ran out of pills;
 Delivery/travel problems;
 Inability to pay;
-Alcohol;
-Depression; 
+Alcohol/Drugs;
+Depression;
 pill burden;
-Other"
+Other Adherence Reason"
 66e7bd78-5956-4fda-84a1-80ff8e96c579,,Reason why Adherence Fair Other (specify),Reason why Adherence Fair Other (specify),,,,,Question,Text,
 a4b7b40d-bd4a-4b7a-9826-593088f1e3af,,Toxicity/side effects,Toxicity/side effects,,,,,Misc,N/A,
 046c6032-7030-4b50-9e8e-831b8ee76bc5,,Share with others,Share with others,,,,,Misc,N/A,
@@ -221,24 +223,24 @@ b31d8882-4c3d-4cd6-b6fa-d6bc1165922e,,Too ill,Too ill,,,,,Misc,N/A,
 2302714c-9480-41fd-8395-2c9728c06ab6,,Patient lost/ran out of pills,Patient lost/ran out of pills,,,,,Misc,N/A,
 9959c107-2771-4221-a31b-38861cd56526,,Delivery/travel problems,Delivery/travel problems,,,,,Misc,N/A,
 45724737-ec75-41e6-b7a3-f0289888bf76,,Inability to pay,Inability to pay,,,,,Misc,N/A,
-a2832452-f729-4d85-87ff-04caa9185a5b,,Alcohol,Alcohol,,,,,Misc,N/A,
+a2832452-f729-4d85-87ff-04caa9185a5b,,Alcohol/Drugs,Alcohol/Drugs,,,,,Misc,N/A,
 506d37ec-84b7-418c-925e-2a0ff9d72300,,Depression,Depression,,,,,Misc,N/A,
 68a10b27-ab05-470c-b2c0-0a13e26b14c1,,pill burden,pill burden,,,,,Misc,N/A,
 64cac639-8e44-4059-90e8-16984280e7a7,,Other Adherence Reason,Other Adherence Reason,,,,,Misc,N/A,
-b0058799-4655-471d-8124-6acd14c6beb1,,Reason why Adherence is Poor,Reason,,,,,Question,Coded,"Toxicity/side effects;                                  
+b0058799-4655-471d-8124-6acd14c6beb1,,Reason why Adherence Poor,Reason why Adherence Poor,,,,,Question,Coded,"Toxicity/side effects;
 Share with others;
 Forgot;
 Felt better;
 Too ill;
-Stigma, disclosure or privacy issues;                 
-Drug stock out—dispensary;             
-Patient lost/ran out of pills;               
+Stigma, disclosure or privacy issues;
+Drug stock out—dispensary;
+Patient lost/ran out of pills;
 Delivery/travel problems;
 Inability to pay;
-Alcohol;
-Depression; 
+Alcohol/Drugs;
+Depression;
 pill burden;
-Other"
+Other Adherence Reason"
 58ab093d-6cee-4b2d-a85f-dd40e1025a42,,Adherence Why Poor Other (specify),Adherence Why Poor Other (specify),,,,,Question,Text,
 6ad327aa-d514-4b31-b21c-294a62a6fb30,,Classification Of Adherence,EAC Results,Classification Of Adherence,,,,Question,Coded,Adherence Good ; Adherence Fair ; Adherence Poor
 1a07bffa-2e01-43bb-880e-c68c02300b36,,EAC Results,EAC Results,Classification Of Adherence,,,,Question,Coded,Adherence Good ; Adherence Fair ; Adherence Poor
@@ -277,15 +279,79 @@ a437c938-ff0f-44f6-82d1-9363d593638d,,Transport,Transport,,,,,Misc,N/A,
 dd8f80f0-d238-4d4b-bd26-a58316eba54c,,Long Wait,Long Wait,,,,,Misc,N/A,
 0cf0ff1e-09b7-40d8-ba16-431033de9828,,Stigma,Stigma,,,,,Misc,N/A,
 24c7d1f1-26f6-495e-b7f8-79b45991ef1a,,Political Crisis,Political Crisis,,,,,Misc,N/A,
-a393d1ee-e6eb-4f84-b75c-848a99343760,,Other First EAC Barrier Reason,Other Reason,,,,,Misc,N/A,
-4d1b1fcb-2f88-4c54-b81c-b80faea42146,,First EAC Adherence Barriers,Barriers,,,,,Question,Coded,Knowledge ; Forgot ; Feeling Better ; Concurrent illness ; Alcohol/Drugs ; Health/Beliefs/Alternate Remedies ; Depression ; Fear Disclosure ; Lack of Familiy/Partner Support ; Pill Burden ; Child Behaviour/Refusing for Children on ART ; Side Effects ; Ran out Of Medcation ; Lost/Damaged ; Sharing Medications ; Transport ; Scheduling ; Failure To Adjust To food Insecurity ; Drug Stock Out ; Long Wait ;Stigma ; Political Crisis ; Other First EAC Barrier Reason
+a393d1ee-e6eb-4f84-b75c-848a99343760,,Other EAC Barrier Reason,Other Reason,,,,,Misc,N/A,
+4d1b1fcb-2f88-4c54-b81c-b80faea42146,,Adherence Barriers,Barriers,,,,,Question,Coded,"Knowledge;
+Forgot;
+Feeling Better;
+Concurrent illness;
+Alcohol/Drugs;
+Health/Beliefs/Alternate Remedies;
+Depression;
+Fear Disclosure;
+Lack of Familiy/Partner Support;
+Pill Burden;
+Child Behaviour/Refusing for Children on ART;
+Side Effects;
+Ran out Of Medcation;
+Lost/Damaged;
+Sharing Medications;
+Transport;
+Scheduling;
+Failure To Adjust To food Insecurity;
+Drug Stock Out;
+Long Wait;
+Stigma;
+Political Crisis;
+Other EAC Barrier Reason"
 f481d175-85fa-45d6-bfd7-66d9deb34eaf,,First EAC Barrier Reason Specify,Specify Reason,,,,,Question,Text,
-ad021c58-24b4-44cc-9390-c677528a7a0d,,Other Second EAC Barrier Reason,Other Reason,,,,,Misc,N/A,
+39fa451a-8867-4881-a774-61f666f8ee89,,Second EAC Adherence Barriers,Barriers,,,,,Question,Coded,"Knowledge;
+Forgot;
+Feeling Better;
+Concurrent illness;
+Alcohol/Drugs;
+Health/Beliefs/Alternate Remedies;
+Depression;
+Fear Disclosure;
+Lack of Familiy/Partner Support;
+Pill Burden;
+Child Behaviour/Refusing for Children on ART;
+Side Effects;
+Ran out Of Medcation;
+Lost/Damaged;
+Sharing Medications;
+Transport;
+Scheduling;
+Failure To Adjust To food Insecurity;
+Drug Stock Out;
+Long Wait;
+Stigma;
+Political Crisis;
+Other EAC Barrier Reason"
 17b6bbe0-3e4d-44fd-a4b9-5bcd0f442659,,Second EAC Barrier Reason Specify,Specify Reason,,,,,Question,Text,
-39fa451a-8867-4881-a774-61f666f8ee89,,Second EAC Adherence Barriers,Barriers,,,,,Question,Coded,Knowledge ; Forgot ; Feeling Better ; Concurrent illness ; Alcohol/Drugs ; Health/Beliefs/Alternate Remedies ; Depression ; Fear Disclosure ; Lack of Familiy/Partner Support ; Pill Burden ; Child Behaviour/Refusing for Children on ART ; Side Effects ; Ran out Of Medcation ; Lost/Damaged ; Sharing Medications ; Transport ; Scheduling ; Failure To Adjust To food Insecurity ; Drug Stock Out ; Long Wait ;Stigma ; Political Crisis ; Other Second EAC Barrier Reason
-47ddabf8-1b6f-4f8f-84d3-556ff5569a80,,Other Third EAC Barrier Reason,Other Reason,,,,,Misc,N/A,
+ac329b24-bdfe-494f-ab54-42766df12299,,Third EAC Adherence Barriers,Barriers,,,,,Question,Coded,"Knowledge;
+Forgot;
+Feeling Better;
+Concurrent illness;
+Alcohol/Drugs;
+Health/Beliefs/Alternate Remedies;
+Depression;
+Fear Disclosure;
+Lack of Familiy/Partner Support;
+Pill Burden;
+Child Behaviour/Refusing for Children on ART;
+Side Effects;
+Ran out Of Medcation;
+Lost/Damaged;
+Sharing Medications;
+Transport;
+Scheduling;
+Failure To Adjust To food Insecurity;
+Drug Stock Out;
+Long Wait;
+Stigma;
+Political Crisis;
+Other EAC Barrier Reason"
 f02fc247-6425-4aff-8557-e6db5701a9c9,,Third EAC Barrier Reason Specify,Specify Reason,,,,,Question,Text,
-ac329b24-bdfe-494f-ab54-42766df12299,,Third EAC Adherence Barriers,Barriers,,,,,Question,Coded,Knowledge ; Forgot ; Feeling Better ; Concurrent illness ; Alcohol/Drugs ; Health/Beliefs/Alternate Remedies ; Depression ; Fear Disclosure ; Lack of Familiy/Partner Support ; Pill Burden ; Child Behaviour/Refusing for Children on ART ; Side Effects ; Ran out Of Medcation ; Lost/Damaged ; Sharing Medications ; Transport ; Scheduling ; Failure To Adjust To food Insecurity ; Drug Stock Out ; Long Wait ;Stigma ; Political Crisis ; Other Third EAC Barrier Reason
 53c0db5c-38f9-4863-bcb2-a547d6b6b24a,,Clinical,,,,,,Misc,N/A,
 65b2b048-039c-49a5-8712-cfec020af970,,Education,,,,,,Misc,N/A,
 548d084a-1eb2-46f8-bc2b-8b721f5511de,,Counselling(ind),,,,,,Misc,N/A,
@@ -302,18 +368,112 @@ c8c12202-78cd-4487-a372-9e0bb7b82d22,,Journal/Log,,,,,,Misc,N/A,
 f76732e9-2326-4e93-9621-620813671885,,Phone Calls,,,,,,Misc,N/A,
 35377043-8cdd-4c4d-9882-ee84e7a5e0a7,,SMS,,,,,,Misc,N/A,
 310d8d2e-f0ea-43b5-810c-b6ea7d682e2a,,Alarms,,,,,,Misc,N/A,
-fde15ffa-a932-4283-a2fb-644e2a6f78be,,Other Tools for First EAC,Other,Other Tools for First EAC,,,,Misc,N/A,
+fde15ffa-a932-4283-a2fb-644e2a6f78be,,Other Tools for EAC,Other,Other Tools for EAC,,,,Misc,N/A,
+bd2f2773-e364-47c1-b824-07a5e6efbe06,,First EAC Service,Services,First EAC Service,,,,Question,Coded,"Clinical;
+Education;
+Counselling(ind);
+Counselling(grp);
+Peer Support;
+Treatment Buddy;
+Drug pick-up;
+DOT;
+Case Mgmt.;
+Pill Box;
+Calendar;
+Journal/Log;
+Written Intructions;
+Phone Calls;
+SMS;
+Alarms;
+Other Tools for EAC"
 e56df280-c5d1-4462-953d-a01c9c76548c,,Specify Other Tools for First EAC,Specify,Specify Other Tools for First EAC,,,,Question,Text,
-bd2f2773-e364-47c1-b824-07a5e6efbe06,,First EAC Service,Services,First EAC Service,,,,Question,Coded,Clinical ; Education ; Counselling(ind) ; Counselling(grp) ;Peer Support ;  Treatment Buddy;Drug pick-up ; DOT ; Case Mgmt.
-8f856c55-6048-4a5d-97b7-4c1ee8e64424,,First EAC Tools,Tools,First EAC Tools,,,,Question,Coded,Pill Box ; Calendar ; Journal/Log ; Written Intructions ; Phone Calls ; SMS ; Alarms ; Other Tools for First EAC
-759a95da-c775-497d-8df9-8e8d7c4ff960,,Second EAC Service,Services,Second EAC Service,,,,Question,Coded,Clinical ; Education ; Counselling(ind) ; Counselling(grp) ;Peer Support ;  Treatment Buddy;Drug pick-up ; DOT ; Case Mgmt.
-3b7b5f6c-9cb0-4955-af8c-e62899bb6c0b,,Other Tools for Second EAC,Other,Other Tools for Second EAC,,,,Misc,N/A,
-d6546dc9-132f-48d6-88f2-019c527e18fc,,Specify Other Tools for Second EAC,Specify,Specify Other Tools for Second EAC,,,,Question,Text,
-6174b8e5-67c6-4a63-81c6-59424303b07b,,Second EAC Tools,Tools,Second EAC Tools,,,,Question,Coded,Pill Box ; Calendar ; Journal/Log ; Written Intructions ; Phone Calls ; SMS ; Alarms ; Other Tools for Second EAC
-29d17d06-1e19-4977-a3c7-449ac9124955,,Third EAC Service,Services,Third EAC Service,,,,Question,Coded,Clinical ; Education ; Counselling(ind) ; Counselling(grp) ;Peer Support ;  Treatment Buddy;Drug pick-up ; DOT ; Case Mgmt.
-4f2e942a-99db-4c8d-bf80-3492edf5097a,,Other Tools For Third EAC,Other,Other Tools For Third EAC,,,,Misc,N/A,
+8f856c55-6048-4a5d-97b7-4c1ee8e64424,,First EAC Tools,Tools,First EAC Tools,,,,Question,Coded,"Clinical;
+Education;
+Counselling(ind);
+Counselling(grp);
+Peer Support;
+Treatment Buddy;
+Drug pick-up;
+DOT;
+Case Mgmt.;
+Pill Box;
+Calendar;
+Journal/Log;
+Written Intructions;
+Phone Calls;
+SMS;
+Alarms;
+Other Tools for EAC"
+759a95da-c775-497d-8df9-8e8d7c4ff960,,Second EAC Service,Services,Second EAC Service,,,,Question,Coded,"Clinical;
+Education;
+Counselling(ind);
+Counselling(grp);
+Peer Support;
+Treatment Buddy;
+Drug pick-up;
+DOT;
+Case Mgmt.;
+Pill Box;
+Calendar;
+Journal/Log;
+Written Intructions;
+Phone Calls;
+SMS;
+Alarms;
+Other Tools for EAC"
+d6546dc9-132f-48d6-88f2-019c527e18fc,,Specify Other Tools for Second EAC,Specify Other Tools for Second EAC,Specify Other Tools for Second EAC,,,,Question,Text,
+6174b8e5-67c6-4a63-81c6-59424303b07b,,Second EAC Tools,Tools,Second EAC Tools,,,,Question,Coded,"Clinical;
+Education;
+Counselling(ind);
+Counselling(grp);
+Peer Support;
+Treatment Buddy;
+Drug pick-up;
+DOT;
+Case Mgmt.;
+Pill Box;
+Calendar;
+Journal/Log;
+Written Intructions;
+Phone Calls;
+SMS;
+Alarms;
+Other Tools for EAC"
+29d17d06-1e19-4977-a3c7-449ac9124955,,Third EAC Service,Services,Third EAC Service,,,,Question,Coded,"Clinical;
+Education;
+Counselling(ind);
+Counselling(grp);
+Peer Support;
+Treatment Buddy;
+Drug pick-up;
+DOT;
+Case Mgmt.;
+Pill Box;
+Calendar;
+Journal/Log;
+Written Intructions;
+Phone Calls;
+SMS;
+Alarms;
+Other Tools for EAC"
 8ac67e0e-6e78-4ac3-8b51-bafea1b02c8c,,Specify Other Tools for Third EAC,Specify,Specify Other Tools for Third EAC,,,,Question,Text,
-125f676b-28f0-424a-b321-f7fd0ccc857b,,Third EAC Tools,Tools,Third EAC Tools,,,,Question,Coded,Pill Box ; Calendar ; Journal/Log ; Written Intructions ; Phone Calls ; SMS ; Alarms ; Other Tools For Third EAC
+125f676b-28f0-424a-b321-f7fd0ccc857b,,Third EAC Tools,Tools,Third EAC Tools,,,,Question,Coded,"Clinical;
+Education;
+Counselling(ind);
+Counselling(grp);
+Peer Support;
+Treatment Buddy;
+Drug pick-up;
+DOT;
+Case Mgmt.;
+Pill Box;
+Calendar;
+Journal/Log;
+Written Intructions;
+Phone Calls;
+SMS;
+Alarms;
+Other Tools for EAC"
 0e16232e-3aa9-42b1-a8d3-b6ce2bc1a544,,First EAC Interventions,Interventions,First EAC Interventions,,,,Misc,N/A,
 703a84f7-5f68-49b9-a0b5-af9d371e2248,,Second EAC Interventions,Interventions,Second EAC Interventions,,,,Misc,N/A,
 9137a9c6-fb5c-403e-a148-21f964db1c9e,,Third EAC Interventions,Interventions,Third EAC Interventions,,,,Misc,N/A,
@@ -322,9 +482,14 @@ d6546dc9-132f-48d6-88f2-019c527e18fc,,Specify Other Tools for Second EAC,Specify
 c38e5cc4-3f10-11e4-adec-0800271c1b75,,Follow up Date,Follow up Date,Follow up Date,,,,Question,Date,
 8ec83611-795e-44d0-b359-a667a073bf07,,Refer,Refer,Refer,,,,Misc,N/A,
 5b4c24fd-b3b2-454b-8b26-2300ea774b07,,Consult,Consult,Consult,,,,Misc,N/A,
+b87bac5e-b6ca-40a5-a3d0-a3fa34a94f5d,,Hospitalised,Hospitalised,Hospitalised,,,,Misc,N/A,
 d521c7e0-207e-4e9d-97e4-e376b38b664f,,Link/Provide,Link/Provide,Link/Provide,,,,Misc,N/A,
-0fc3cc86-6c9f-4d79-9c39-900dab27a33c,,Plan,Plan,Plan,,,,Question,Coded,Refer ; Consult ;Link/Provide;None
-b87bac5e-b6ca-40a5-a3d0-a3fa34a94f5d,,Hospitalised,Hospitalised,Hospitalised,,,,Question,Boolean,
+f2355233-c552-4cd6-802f-0c7c75221f03,,Not Applicable,Not Applicable,Not Applicable,,,,Misc,N/A,
+3352d2b2-67b6-4e84-9b2c-1baef41b0d05,,Patient Plan,Patient Plan,Patient Plan,,,,Question,Coded,"Refer;
+Consult;
+Hospitalised;
+Link/Provide;
+Not Applicable"
 73aeaec5-4169-40a9-8b59-f799b28a548c,,Number of Days Hospitalized,# of Days,Number of Days Hospitalized,,,,Question,Numeric,
 611d6c22-7c6d-47cf-a74e-190f9e3cdd47,,Clinician Name,Clinician Name,Clinician Name,,,,Question,Text,
 9890cc1e-dbaf-49ec-82bb-1093dcf92ab6,,Follow up Information,Follow up Information,Follow up Information,,,,Misc,N/A,
@@ -334,15 +499,47 @@ b87bac5e-b6ca-40a5-a3d0-a3fa34a94f5d,,Hospitalised,Hospitalised,Hospitalised,,,,
 beffd410-b9a4-4cfd-9a29-22512980de1b,,HIV AND ART FOLLOW UP FORM,HIV AND ART FOLLOW UP FORM,HIV AND ART FOLLOW UP FORM,,,,Misc,N/A,
 651fe449-14f9-44e7-8114-7dcd6d3f80ec,,EAC FORM,EAC FORM,EAC FORM,,,,Misc,N/A,
 940923e2-433e-4d58-869f-dd099333af9b,,ENHANCED ADHERENCE COUNSELLING FORM,ENHANCED ADHERENCE COUNSELLING FORM,ENHANCED ADHERENCE COUNSELLING FORM,,,,Misc,N/A,
-39ec38d1-7b35-4f05-ab87-10983da0b484,,0 Days,1 Days,,,,,Misc,N/A,
-7b0642e1-7607-4b0f-806e-703b195345ea,,30 Days,31 Days,,,,,Misc,N/A,
-3cd5ec7d-ac0e-46cc-8a46-ab7628da0a4f,,60 Days,61 Days,,,,,Misc,N/A,
-af06426c-e63e-4f83-bdbc-a855c42bb0ca,,90 Days,91 Days,,,,,Misc,N/A,
-c036d8cb-9416-43b3-b23f-91913ce424a3,,120 Days,121 Days,,,,,Misc,N/A,
-faf5d5dc-1547-49f7-941d-6fdf2d1bfa50,,150 Days,151 Days,,,,,Misc,N/A,
-91e0bcf5-8968-4004-9e14-bb466fccaf53,,180 Days,181 Days,,,,,Misc,N/A,
+39ec38d1-7b35-4f05-ab87-10983da0b484,,0 Days,0 Days,,,,,Misc,N/A,
+7b0642e1-7607-4b0f-806e-703b195345ea,,30 Days,30 Days,,,,,Misc,N/A,
+3cd5ec7d-ac0e-46cc-8a46-ab7628da0a4f,,60 Days,60 Days,,,,,Misc,N/A,
+af06426c-e63e-4f83-bdbc-a855c42bb0ca,,90 Days,90 Days,,,,,Misc,N/A,
+c036d8cb-9416-43b3-b23f-91913ce424a3,,120 Days,120 Days,,,,,Misc,N/A,
+faf5d5dc-1547-49f7-941d-6fdf2d1bfa50,,150 Days,150 Days,,,,,Misc,N/A,
+91e0bcf5-8968-4004-9e14-bb466fccaf53,,180 Days,180 Days,,,,,Misc,N/A,
 2e74862a-bb28-4e10-9a9a-b959a4a5da60,,180+ Days,180+ Days,,,,,Misc,N/A,
 3fa33347-9871-497b-81f3-7a791b9f4bae,,Pills Dispensed Dose,Pills Dispensed Dose,,,,,Question,Coded,"0 Days;
+30 Days;
+60 Days;
+90 Days;
+120 Days;
+150 Days;
+180 Days;
+180+ Days"
+043177ba-5090-4369-896f-982f046773d6,,Number pills Dispensed,Number pills Dispensed,,,,,Question,Coded,"0 Days;
+30 Days;
+60 Days;
+90 Days;
+120 Days;
+150 Days;
+180 Days;
+180+ Days"
+417625de-7d5e-45e4-bec7-60d72c94e657,,Number of Days Dispensed,Number of Days Dispensed,,,,,Question,Coded,"0 Days;
+30 Days;
+60 Days;
+90 Days;
+120 Days;
+150 Days;
+180 Days;
+180+ Days"
+4ab28128-7ef3-452d-86d5-73561761b08a,,"Dapsone, Number of Days Dispensed",Number of Days Dispensed,,,,,Question,Coded,"0 Days;
+30 Days;
+60 Days;
+90 Days;
+120 Days;
+150 Days;
+180 Days;
+180+ Days"
+1c8a00ad-8d9c-48e0-8011-8f79f5f9fa05,,"Dapsone, Pills Dispensed Dose","Dapsone, Pills Dispensed Dose",,,,,Question,Coded,"0 Days;
 30 Days;
 60 Days;
 90 Days;
@@ -358,9 +555,9 @@ d7d9d923-c7fe-4573-81cf-9e3d48158014,,HepB,HepB,,,,,Misc,N/A,
 90be4b0d-f2b8-46d8-ace5-6246608acbb9,,RFTs,RFTs,,,,,Misc,N/A,
 4cfb4018-141a-4387-9e2a-6980aa3840c7,,LFTs,LFTs,,,,,Misc,N/A,
 f5b60f09-9d8a-4bda-9318-9ef097c77945,,Lab Tests,Lab Tests,,,,,Question,Coded,"RPR;
-HB;
-Sputum;
-CXR;
+HB - Lab Test;
+Sputum - Lab Test;
+CXR - Lab Test;
 HepB;
 RFTs;
 LFTs"
@@ -371,5 +568,50 @@ ce7573a3-c680-458a-8abb-a25088d4d261,,Refer or Consult,Refer or Consult,,,,,Ques
 Infant feeding;
 CVS"
 9fc6b318-054e-45c0-983b-912d1c93e86e,,Other Investigation Done,Other Investigation Done,,,,,Question,Text,
-a8dd544d-fe87-4ff1-9911-6acdc6847d21,,Duration in months since first starting ART,,,,,,Question,Numeric,
-e0e2acbe-f88b-4710-adbd-08637d80ea97,,Duration in months since starting current regimen,,,,,,Question,Numeric,
+a8dd544d-fe87-4ff1-9911-6acdc6847d21,,Duration in months since first starting ART,Duration in months since first starting ART,,,,,Question,Numeric,
+e0e2acbe-f88b-4710-adbd-08637d80ea97,,Duration in months since starting current regimen,Duration in months since starting current regimen,,,,,Question,Numeric,
+5dcd9f36-9688-4b92-b42b-6c1e0300ff87,,Extra Pulmonary,Extra Pulmonary,,,,,Misc,N/A,
+a9c54233-4e2a-4619-bda8-09a9925b7571,,Pulmonary(BC),Pulmonary(BC),,,,,Misc,N/A,
+4a8affbe-5d69-4103-9f77-4c9a50dee630,,Pulmonary(CD),Pulmonary(CD),,,,,Misc,N/A,
+3109983a-98af-4017-a16b-e3bac0c48d25,,Type of TB,Type of TB,,,,,Question,Coded,"Extra Pulmonary;
+Pulmonary(BC);
+Pulmonary(CD)"
+13498474-ba95-4fec-8010-c8c5e24748ff,,Side Effects,Side Effects,,,,,Question,Coded,"Nausea;
+Rash;
+Diarrhoea;
+Anaemia;
+FAT changes;
+B, N burning/numb/tingling;
+CNS: dizzy, anxiety, nightmare, depression;
+Jaundice;
+Abdominal pain;
+Persistent headaches"
+d9a0a7c1-66d8-4f71-aef6-e0aef4a5f2b1,,Toxo Plasmosis,Toxo Plasmosis,,,,,Misc,N/A,
+99e4878e-16ea-49d3-aa0e-585def370014,,Diarrhoea Opportunistic Infection,Diarrhoea Opportunistic Infection,,,,,Misc,N/A,
+0cf0ac7e-a631-474e-8fcd-f1dbba986589,,Herpes Genitalis Opportunistic Infection,Herpes Genitalis Opportunistic Infection,,,,,Misc,N/A,
+d0a66c85-1bd1-4ae9-aed3-7fddf87680cf,,Herpes Zoster Opportunistic Infection,Herpes Zoster Opportunistic Infection,,,,,Misc,N/A,
+f5efbdba-0950-421a-bf08-451fb6fe1752,,Candidiasis Opportunistic Infection,Candidiasis Opportunistic Infection,,,,,Misc,N/A,
+4ec32e51-cf72-4e93-a586-da62bd0ba703,,Tuberculosis Opportunistic Infection,Tuberculosis Opportunistic Infection,,,,,Misc,N/A,
+7b542ebb-dedd-4f3d-903e-a33e7118dcd8,,Bacterial Pneumonia Opportunistic Infection,Bacterial Pneumonia Opportunistic Infection,,,,,Misc,N/A,
+8ee9d84c-8ad4-483c-8951-d6ec976822fc,,Cytomegato Virus Opportunistic Infection,Cytomegato Virus Opportunistic Infection,,,,,Misc,N/A,
+9c7b5817-5b77-4601-a11f-bc4508998c56,,Pneumocysitis Pneumonia Opportunistic Infection,Pneumocysitis Pneumonia Opportunistic Infection,,,,,Misc,N/A,
+1eb028a7-d8eb-4fcc-a99c-e47f3dc00d5b,,Crypto Meningitis Opportunistic Infection,Crypto Meningitis Opportunistic Infection,,,,,Misc,N/A,
+ef5d7595-87f6-4814-95e0-41533a517783,,Others-Opportunistic infection,Others-Opportunistic infection,,,,,Misc,N/A,
+e0d24a66-6fb5-47e1-852f-32a8f8ed71e2,,Opportunistic Infections,Opportunistic Infections,,,,,Question,Coded,"Toxo Plasmosis;
+Diarrhoea Opportunistic Infection;
+Herpes Genitalis Opportunistic Infection;
+Herpes Zoster Opportunistic Infection;
+Candidiasis Opportunistic Infection;
+Tuberculosis Opportunistic Infection;
+Bacterial Pneumonia Opportunistic Infection;
+Cytomegato Virus Opportunistic Infection;
+Pneumocysitis Pneumonia Opportunistic Infection;
+Crypto Meningitis Opportunistic Infection;
+Others-Opportunistic infection"
+420bd170-df26-4948-9e80-f8f95e8492f3,,Date started on CTX,Date started on CTX,,,,,Question,Date,
+d8a05f0f-3a39-4338-b40e-45567d5fd406,,Date started on Dapsone,Date started on Dapsone,,,,,Question,Date,
+01c3ce55-b7eb-45f5-93d5-bace353e3cfd,,"VL Results, Follow Up","VL Results, Follow Up",,,,,Question,Numeric,
+80e34f1b-26e8-49ea-9b6e-d7d903a91e26,,Date Viral Load Results Received,Date Viral Load Results Received,,,,,Question,Date,
+7ccc6227-f42f-4c45-822a-e11961ada35a,,Pill intake,Pill intake,,,,,Question,Numeric,
+4ba12b8a-72a4-4135-8c06-be72532b7650,,Pill percentage,Pill percentage,,,,,Question,Numeric,
+0fa5669b-041d-446d-9ae6-8e88a980858f,,Date of extra session,Date of extra session,,,,,Question,Date,

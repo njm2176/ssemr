@@ -30,6 +30,7 @@ fe8890ae-bacb-4fe4-b41e-9b843166cb2b,,"GeneXpert Information ; AFB Microscopic ;
 147b8be8-d657-4e46-8970-6f9983b27722,Yes;No,,Current Cough,,Question,Coded,,
 f405d8ec-14d0-485a-b52d-bffdfeb26581,Yes;No,,"TB Screening , Fever",,Question,Coded,,
 78f5bc62-ecbe-457f-87dd-def20dbee82e,Yes;No,,"TB Screening ,Weight loss",,Question,Coded,,
+0fe4cff0-4646-4180-9d2e-8314ffb7a0f4,Yes;No,,"TB Screening, Weight Gain",,Question,Coded,,
 2e3a7f51-8063-4ff4-9621-af2debc7e3c0,Yes;No,,"Failure to Thrive, Children",,Question,Coded,,
 9e0bf1ca-dbbe-4024-9d1c-174f4ab1e80d,Yes;No,,"TB Screening , Night Sweats",,Question,Coded,,
 51b82f82-0c27-46e3-9f33-6d65cc1f6eed,Yes;No,,Close Contact History with TB patients,,Question,Coded,,
