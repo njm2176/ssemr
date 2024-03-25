@@ -34,7 +34,7 @@
         "name": "Contact Details",
         "fields": [
           "address",
-          "phone",
+          "clientPhone",
           "altPhone"
         ]
       },
@@ -56,7 +56,7 @@
     ],
     "fieldDefinitions": [
       {
-        "id": "phone",
+        "id": "clientPhone",
         "type": "person attribute",
         "uuid": "8f0a2a16-c073-4622-88ad-a11f2d6966ad",
         "label": "Telephone Number (starting with country code e.g +211)",
