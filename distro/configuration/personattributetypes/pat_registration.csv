@@ -23,7 +23,7 @@ d0baff49-be45-4876-9638-b4f4fe22a8cc,,RegistrantName,Registrant Name,java.lang.S
 b9cb0b28-e06a-4d62-b39b-adc5317ab9b2,,UniqueArtNo,Unique ART No.,java.lang.String,,yes,Edit:PAT,,
 4b523cfc-5862-4026-bc91-77c1123fbd4d,,HIVExposedInfant(HEI)No,HIV Exposed Infant (HEI) No.,java.lang.String,,yes,Edit:PAT,,
 60345422-8766-488c-9baf-374fb11d61be,,MobileCountryCode,Mobile Country Code,org.openmrs.Concept,2fe5c749-0e42-42ad-8317-cce3a25e5fec,yes,Edit:PAT,,
-8f0a2a16-c073-4622-88ad-a11f2d6966ad,,MobileNumber,Client Mobile Number,java.lang.String,,yes,Edit:PAT,,
+8f0a2a16-c073-4622-88ad-a11f2d6966ad,,Client Telephone Number,Client Mobile Number,java.lang.String,,yes,Edit:PAT,,
 1bdaafb5-0146-4d7a-b323-38cdc66e4e66,,TypeofPatient,Type Of Patient,org.openmrs.Concept,913cfe7a-fef0-4ca9-9339-3e48fa5ca8bd,yes,Edit:PAT,,
 5675473e-801f-4e9f-a08a-7f7b18c572dc,,Walk-InReason,Walk-In Reason,org.openmrs.Concept,63fabc42-a2ea-44e6-b530-098e16992bdf,yes,Edit:PAT,,
 4b07880f-6148-478b-9a6c-d916a7fcde7a,,MaritalStatus,Marital Status,org.openmrs.Concept,f87c42ab-aadf-4188-af4d-e92878864ee1,yes,Edit:PAT,,
