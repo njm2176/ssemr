@@ -1,13 +1,13 @@
-Uuid,Void/Retire,Fully specified name:en,Short name:en,Description:en,Allow decimals ,Display precision,...,_version:5,_order:137,Data class,Data type,Answers
+Uuid,Void/Retire,Fully specified name:en,Short name:en,Description:en,Allow decimals,Display precision,...,_version:5,_order:137,Data class,Data type,Answers
 ed520e2d-acb4-4ea9-8ae5-16ca27ace96d,,Date of Sample Collection,Date of Sample Collection,Date of Sample Collection,,,,,,Question,Date,
-9fc84874-ec1c-4f15-9e0d-5a73dd416667,,Time Sample Collected,Time,Time Sample Collected,yes,1,,,,Question,Numeric,
+9fc84874-ec1c-4f15-9e0d-5a73dd416667,,Time Sample Collected,Time,Time Sample Collected,yes,1,,,,Question,Time,
 c7b68a75-903e-4740-9482-bffc01fb844a,,"Sample Type ,DBS",DBS,"Sample Type ,DBS",,,,,,Misc,N/A,
 f0da3750-83bc-400e-b3f0-a0ced2e7e47f,,"Sample Type ,Plasma",Plasma,"Sample Type ,Plasma",,,,,,Misc,N/A,
 ff67ca7f-4e07-42f3-884e-7e36878b344e,,"Sample Type,Whole Blood",Whole Blood,"Sample Type,Whole Blood",,,,,,Misc,N/A,
 7b532bef-9232-4675-a359-7b1310b66d3a,,Sample Type,Sample Type,Sample Type,,,,,,Question,Coded,"Sample Type ,DBS ; Sample Type ,Plasma;Sample Type,Whole Blood"
 a7f1b0ac-9825-4018-b0b8-bae663f77133,,Sample Information,Sample Information,Sample Information,,,,,,Misc,N/A,
 44dba186-7507-41d4-811f-79eae073cdcc,,Date Of Treatment Initiation,Date Of Treatment Initiation,Date Of Treatment Initiation,,,,,,Question,Date,
-e288fc7d-bbc5-479a-b94d-857e3819f926,,Is the patient Breastfeeding?,Is patient Breastfeeding?,,,,,,,Question,Boolean,
+e288fc7d-bbc5-479a-b94d-857e3819f926,,Is the patient Breastfeeding?,Is patient Breastfeeding?,,,,,,,Question,Coded,Yes; No
 69b8377b-073a-476c-a6ab-1b3869c78202,,Current Regimen,Current Regimen,Current Regimen,,,,,,Question,Coded,1a = AZT/3TC+EFV
 30f1f347-d72c-4920-9962-6d55d138e8e5,,Date of Initiation of Current Regimen,Date of Initiation of Current Regimen,Date of Initiation of Current Regimen,,,,,,Question,Date,
 82a03cc2-89aa-4c6a-85d4-66bba07a6334,,Good > 95 %,Good > 95 %,Good > 95 %,,,,,,Misc,N/A,
@@ -35,15 +35,15 @@ b3b195ff-0e6c-420f-bf60-483f24902066,,"Last VL Date, Suspected Treatment Failure
 48e2db35-a1a3-425a-ad08-852d7a2d8acf,,VL Treatment Failure Information,Treatment Failure Information,VL Treatment Failure Information,,,,,,Misc,N/A,
 4f968437-31cf-4cd9-bccf-c594618d12f5,,Clinician Phone,Clinician Phone,Clinician Phone,,,,,,Question,Numeric,
 65dc2979-06b8-49b1-829b-39a8e0edd3ed,,Clinician Information,Clinician Information,Clinician Information,,,,,,Misc,N/A,
-db73e6cd-57e7-4cca-83b7-7d4c532c5621,,VL Focal Person ,VL Focal Person ,VL Focal Person ,,,,,,Question,Text,
+db73e6cd-57e7-4cca-83b7-7d4c532c5621,,VL Focal Person,VL Focal Person,VL Focal Person,,,,,,Question,Text,
 dff0ffef-5c14-458a-a4db-8b106daf3876,,VL  Focal Person Phone,Phone,VL  Focal Person Phone,,,,,,Question,Numeric,
 5508412a-cbcb-41ff-a838-ef2b46f78e2e,,Focal Person Information,Focal Person Information,Focal Person Information,,,,,,Misc,N/A,
 0bfdbae3-ea5d-4173-a4e1-7f42d50e0bc6,,Date Sample Received at Testing Lab,Date Sample Received at Testing Lab,Date Sample Received at Testing Lab,,,,,,Misc,Date,
 4db52045-d459-4c3e-b0b4-b7d00b18ed1e,,Date Results Dispatched,Date Results Dispatched,Date Results Dispatched,,,,,,Misc,Date,
-b853ddc3-3d8c-4b0b-99ac-497624c9904d,,Date Requested ,Date Requested ,Date Requested ,,,,,,Misc,Date,
+b853ddc3-3d8c-4b0b-99ac-497624c9904d,,Date Requested,Date Requested,Date Requested,,,,,,Misc,Date,
 dfcedbb1-11fe-4e19-969c-f88539ebc31f,,Email,Email,Email,,,,,,Question,Text,
-b5d1c0b4-6cce-4a23-9754-60b6da6b5d88,,Was sample Rejected?,Rejected?,,,,,,,Question,Boolean,
-1754e917-3956-4032-b7f9-e54edfa1f9d0,,Rejection,Reason,Rejection Reason,,,,,,Question,Text,
+b5d1c0b4-6cce-4a23-9754-60b6da6b5d88,,Was sample Rejected?,Rejected?,,,,,,,Question,Coded,Yes; No
+1754e917-3956-4032-b7f9-e54edfa1f9d0,,Rejection for Rejection,Reason,Rejection Reason,,,,,,Question,Text,
 48ebc193-aa2b-4503-9846-430d226d1d80,,VL Sample Information,Sample Information,VL Sample Information,,,,,,Misc,N/A,
 c189da8e-b689-4b78-809d-72d1fa28ebf4,,Indication For VL Testing Information,Indication For VL Testing Information,Indication For VL Testing Information,,,,,,Misc,N/A,
 3832ac3f-50a8-481d-a470-5c634f7c25b8,,"Routine monitoring,Vl Testing",Routine monitoring,,,,,,,Misc,N/A,
@@ -60,4 +60,7 @@ c8a48f18-eec2-462a-893a-fe8b36d37de3,,Vlab,Vlab,,,,,,,Misc,N/A,
 348c5147-4e54-420a-a035-b322e1ba0b6e,,Second EAC Session,Second EAC Session,Second EAC Session,,,,,,Misc,N/A,
 60966dae-3999-42b9-aec1-6161cebb22c1,,Third EAC Session,Third EAC Session,Third EAC Session,,,,,,Misc,N/A,
 99c7c0f1-3c7c-4e26-bf4b-60a74734bc7c,,Extended EAC Session,Extended EAC Session,Extended EAC Session,,,,,,Misc,N/A,
-65536958-fc01-4002-8839-af4b6ab0489b,,Enhanced Adherence Sessions,EAC,Enhanced Adherence Sessions,,,,,,Question,Coded,"First EAC Session,Second EAC Session,Third EAC Session,Extended EAC Session"
+65536958-fc01-4002-8839-af4b6ab0489b,,Enhanced Adherence Sessions,EAC,Enhanced Adherence Sessions,,,,,,Question,Coded,"First EAC Session;
+Second EAC Session;
+Third EAC Session;
+Extended EAC Session"

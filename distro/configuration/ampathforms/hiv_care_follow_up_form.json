@@ -100,15 +100,14 @@
                 "answers": [],
                 "concept": "5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "numeric",
-                "min": 2.5,
-                "max": 200
+                "min": 2.5
               },
               "type": "obs",
               "validators": [
                 {
                   "type": "js_expression",
-                  "failsWhenExpression": "isEmpty(height) || height < 2.5 || height > 200",
-                  "message": "Height should not be less than 2.5cm and not above 200cm"
+                  "failsWhenExpression": "isEmpty(height) || height < 2.5",
+                  "message": "Height should not be less than 2.5"
                 }
               ]
             },
@@ -183,11 +182,11 @@
                 "answers": [
                   {
                     "label": "Yes",
-                    "concept": "78763e68-104e-465d-8ce3-35f9edfb083d"
+                    "concept": "true"
                   },
                   {
                     "label": "No",
-                    "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e"
+                    "concept": "false"
                   }
                 ]
               },
@@ -212,7 +211,11 @@
                   },
                   {
                     "label": "Implant",
-                    "concept": "3c8d2964-2794-4c75-b544-5806b55d5c9d"
+                    "concept": "66a6bacc-8ac0-4c2c-b44a-d62ca9a3e89b"
+                  },
+                  {
+                    "label": "IUD",
+                    "concept": "f49566c2-213e-4529-894b-e5e56d270841"
                   },
                   {
                     "label": "Depo",
@@ -261,7 +264,7 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "sex === 'M' || currentFP !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
+                "hideWhenExpression": "sex === 'M' || currentFP !== 'true'"
               },
               "validators": []
             },
@@ -276,12 +279,37 @@
                 "conceptMappings": [],
                 "answers": [
                   {
-                    "label": "Yes",
-                    "concept": "78763e68-104e-465d-8ce3-35f9edfb083d"
+                    "concept": "78763e68-104e-465d-8ce3-35f9edfb083d",
+                    "label": "Yes"
                   },
                   {
-                    "label": "No",
-                    "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e"
+                    "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e",
+                    "label": "No"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": "sex === 'M' || age < 15"
+              },
+              "validators": []
+            },
+            {
+              "label": "Is the client BreastFeeding?",
+              "type": "obs",
+              "required": true,
+              "id": "isClientBreastFeeding",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "cf5c7deb-f67c-4406-82ea-d619e502f47c",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "concept": "78763e68-104e-465d-8ce3-35f9edfb083d",
+                    "label": "Yes"
+                  },
+                  {
+                    "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e",
+                    "label": "No"
                   }
                 ]
               },
@@ -300,7 +328,7 @@
                 "concept": "12118225-edad-45e2-9313-a5bca2cb4995"
               },
               "hide": {
-                "hideWhenExpression": "sex === 'M' || age < 15 || pregStatus !== 'true'"
+                "hideWhenExpression": "sex === 'M' || age < 15 || pregStatus !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
               },
               "validators": [
                 {
@@ -316,16 +344,16 @@
               "id": "clientPmtct",
               "questionOptions": {
                 "rendering": "radio",
-                "concept": "1d593268-8a2d-4030-bf1d-9c341d47f875",
+                "concept": "da20f4fc-94b4-421c-896c-cf16a834227a",
                 "conceptMappings": [],
                 "answers": [
                   {
-                    "label": "Yes",
-                    "concept": "78763e68-104e-465d-8ce3-35f9edfb083d"
+                    "concept": "78763e68-104e-465d-8ce3-35f9edfb083d",
+                    "label": "Yes"
                   },
                   {
-                    "label": "No",
-                    "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e"
+                    "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e",
+                    "label": "No"
                   }
                 ]
               },
@@ -355,12 +383,12 @@
                 "concept": "58ab89cd-6674-480b-95a0-5b761b0275cb",
                 "answers": [
                   {
-                    "label": "Yes",
-                    "concept": "78763e68-104e-465d-8ce3-35f9edfb083d"
+                    "concept": "78763e68-104e-465d-8ce3-35f9edfb083d",
+                    "label": "Yes"
                   },
                   {
-                    "label": "No",
-                    "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e"
+                    "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e",
+                    "label": "No"
                   }
                 ]
               },
@@ -409,12 +437,12 @@
                 "rendering": "radio",
                 "answers": [
                   {
-                    "label": "Yes",
-                    "concept": "78763e68-104e-465d-8ce3-35f9edfb083d"
+                    "concept": "78763e68-104e-465d-8ce3-35f9edfb083d",
+                    "label": "Yes"
                   },
                   {
-                    "label": "No",
-                    "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e"
+                    "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e",
+                    "label": "No"
                   }
                 ]
               },
@@ -431,12 +459,12 @@
                 "rendering": "radio",
                 "answers": [
                   {
-                    "label": "Yes",
-                    "concept": "78763e68-104e-465d-8ce3-35f9edfb083d"
+                    "concept": "78763e68-104e-465d-8ce3-35f9edfb083d",
+                    "label": "Yes"
                   },
                   {
-                    "label": "No",
-                    "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e"
+                    "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e",
+                    "label": "No"
                   }
                 ]
               },
@@ -453,12 +481,12 @@
                 "rendering": "radio",
                 "answers": [
                   {
-                    "label": "Yes",
-                    "concept": "78763e68-104e-465d-8ce3-35f9edfb083d"
+                    "concept": "78763e68-104e-465d-8ce3-35f9edfb083d",
+                    "label": "Yes"
                   },
                   {
-                    "label": "No",
-                    "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e"
+                    "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e",
+                    "label": "No"
                   }
                 ]
               },
@@ -476,12 +504,12 @@
                 "rendering": "radio",
                 "answers": [
                   {
-                    "label": "Yes",
-                    "concept": "78763e68-104e-465d-8ce3-35f9edfb083d"
+                    "concept": "78763e68-104e-465d-8ce3-35f9edfb083d",
+                    "label": "Yes"
                   },
                   {
-                    "label": "No",
-                    "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e"
+                    "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e",
+                    "label": "No"
                   }
                 ]
               },
@@ -498,12 +526,12 @@
                 "rendering": "radio",
                 "answers": [
                   {
-                    "label": "Yes",
-                    "concept": "78763e68-104e-465d-8ce3-35f9edfb083d"
+                    "concept": "78763e68-104e-465d-8ce3-35f9edfb083d",
+                    "label": "Yes"
                   },
                   {
-                    "label": "No",
-                    "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e"
+                    "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e",
+                    "label": "No"
                   }
                 ]
               },
@@ -520,12 +548,12 @@
                 "rendering": "radio",
                 "answers": [
                   {
-                    "label": "Yes",
-                    "concept": "78763e68-104e-465d-8ce3-35f9edfb083d"
+                    "concept": "78763e68-104e-465d-8ce3-35f9edfb083d",
+                    "label": "Yes"
                   },
                   {
-                    "label": "No",
-                    "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e"
+                    "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e",
+                    "label": "No"
                   }
                 ]
               },
@@ -573,23 +601,23 @@
                 "rendering": "select",
                 "answers": [
                   {
-                    "concept": "94e0286e-e5aa-4153-8ba4-859ad3406dbd",
+                    "concept": "06fbce51-d4ff-4ad3-b911-def303f3d2e2",
                     "label": "Sputum for AFB"
                   },
                   {
-                    "concept": "f34477b6-53e0-4028-9a4d-e514bc0aee37",
+                    "concept": "edf1eec7-f766-4371-814b-0c18024217bb",
                     "label": "CxR"
                   },
                   {
-                    "concept": "da181793-1129-41f5-973e-90ca12b4687c",
+                    "concept": "c50addfe-baf4-4ed0-b470-d6d4678b4359",
                     "label": "GeneXpert"
                   },
                   {
-                    "concept": "ea9baf9e-bd80-445e-8443-a21edbeb3dde",
+                    "concept": "ad8ecb63-6b5d-49b2-9a9d-e16d7a0efc40",
                     "label": "FNA,Culture, UltraSound"
                   },
                   {
-                    "concept": "e557637b-236e-4e26-b25a-9f23d5eca9c9",
+                    "concept": "1b4f4df7-dddc-4e73-ab18-304c4fd12953",
                     "label": "TB Diagnosed"
                   }
                 ]
@@ -607,12 +635,12 @@
                 "rendering": "radio",
                 "answers": [
                   {
-                    "label": "Yes",
-                    "concept": "78763e68-104e-465d-8ce3-35f9edfb083d"
+                    "concept": "78763e68-104e-465d-8ce3-35f9edfb083d",
+                    "label": "Yes"
                   },
                   {
-                    "label": "No",
-                    "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e"
+                    "concept": "f9f633a5-1544-4c44-9394-a7f746a12dff",
+                    "label": "No"
                   }
                 ]
               },
@@ -631,12 +659,12 @@
                 "conceptMappings": [],
                 "answers": [
                   {
-                    "label": "Yes",
-                    "concept": "78763e68-104e-465d-8ce3-35f9edfb083d"
+                    "concept": "78763e68-104e-465d-8ce3-35f9edfb083d",
+                    "label": "Yes"
                   },
                   {
-                    "label": "No",
-                    "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e"
+                    "concept": "f9f633a5-1544-4c44-9394-a7f746a12dff",
+                    "label": "No"
                   }
                 ]
               },
@@ -652,7 +680,7 @@
               "id": "inhNumber",
               "questionOptions": {
                 "rendering": "select",
-                "concept": "41cde1fd-31b7-4e76-821a-c6b85b73ffe3",
+                "concept": "9fa616bc-e749-434c-b43a-438fefc5b104",
                 "answers": [
                   {
                     "label": "180",
@@ -687,7 +715,7 @@
                   },
                   {
                     "concept": "f9c1016a-dead-42c1-8ea3-7a1325f1159c",
-                    "label": "NEGATIVE"
+                    "label": "AFB-"
                   },
                   {
                     "concept": "5d8d6b9f-1acf-4a4c-a79c-acd0ccd32df8",
@@ -696,7 +724,7 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "typeOfTest !== '94e0286e-e5aa-4153-8ba4-859ad3406dbd'"
+                "hideWhenExpression": "typeOfTest !== '06fbce51-d4ff-4ad3-b911-def303f3d2e2'"
               }
             },
             {
@@ -713,7 +741,7 @@
                     "label": "Suggestive"
                   },
                   {
-                    "concept": "60c1d4e9-09f4-4fe1-9960-52738f01d3a3",
+                    "concept": "f2c2cdcf-550f-427c-96af-52b6a12c3d42",
                     "label": "Inconclusive"
                   },
                   {
@@ -727,7 +755,7 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "typeOfTest !== 'f34477b6-53e0-4028-9a4d-e514bc0aee37'"
+                "hideWhenExpression": "typeOfTest !== 'edf1eec7-f766-4371-814b-0c18024217bb'"
               }
             },
             {
@@ -762,7 +790,7 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "typeOfTest !== 'da181793-1129-41f5-973e-90ca12b4687c'"
+                "hideWhenExpression": "typeOfTest !== 'c50addfe-baf4-4ed0-b470-d6d4678b4359'"
               }
             },
             {
@@ -789,7 +817,7 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "typeOfTest !=='e557637b-236e-4e26-b25a-9f23d5eca9c9'"
+                "hideWhenExpression": "typeOfTest !=='1b4f4df7-dddc-4e73-ab18-304c4fd12953'"
               }
             },
             {
@@ -803,18 +831,18 @@
                 "conceptMappings": [],
                 "answers": [
                   {
-                    "label": "Yes",
-                    "concept": "78763e68-104e-465d-8ce3-35f9edfb083d"
+                    "concept": "78763e68-104e-465d-8ce3-35f9edfb083d",
+                    "label": "Yes"
                   },
                   {
-                    "label": "No",
-                    "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e"
+                    "concept": "f9f633a5-1544-4c44-9394-a7f746a12dff",
+                    "label": "No"
                   }
                 ]
               },
               "validators": [],
               "hide": {
-                "hideWhenExpression": "typeOfTest !=='ea9baf9e-bd80-445e-8443-a21edbeb3dde'"
+                "hideWhenExpression": "typeOfTest !=='ad8ecb63-6b5d-49b2-9a9d-e16d7a0efc40'"
               }
             }
           ]
@@ -829,7 +857,7 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Side Effects (multi-select)",
+              "label": "Side Effects",
               "required": true,
               "id": "sideEfects",
               "questionOptions": {
@@ -1018,12 +1046,12 @@
                 "conceptMappings": [],
                 "answers": [
                   {
-                    "label": "Yes",
-                    "concept": "true"
+                    "concept": "78763e68-104e-465d-8ce3-35f9edfb083d",
+                    "label": "Yes"
                   },
                   {
-                    "label": "No",
-                    "concept": "false"
+                    "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e",
+                    "label": "No"
                   }
                 ]
               },
@@ -1039,7 +1067,7 @@
                 "concept": "420bd170-df26-4948-9e80-f8f95e8492f3"
               },
               "hide": {
-                "hideWhenExpression": "clientCTX !== 'true'"
+                "hideWhenExpression": "clientCTX !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
               },
               "validators": [
                 {
@@ -1075,7 +1103,7 @@
               },
               "validators": [],
               "hide": {
-                "hideWhenExpression": "clientCTX !== 'true'"
+                "hideWhenExpression": "clientCTX !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
               }
             },
             {
@@ -1250,7 +1278,7 @@
               "id": "artRegimenNoOfDaysDispensedCTX",
               "questionOptions": {
                 "rendering": "select",
-                "concept": "4ab28128-7ef3-452d-86d5-73561761b08a",
+                "concept": "3fa33347-9871-497b-81f3-7a791b9f4bae",
                 "conceptMappings": [],
                 "answers": [
                   {
@@ -1299,7 +1327,7 @@
               "id": "artRegimenNoOfPillsDispensedCTX",
               "questionOptions": {
                 "rendering": "select",
-                "concept": "3fa33347-9871-497b-81f3-7a791b9f4bae",
+                "concept": "043177ba-5090-4369-896f-982f046773d6",
                 "answers": [
                   {
                     "label": "0 days",
@@ -1351,13 +1379,13 @@
                 "concept": "0cb0b2c1-6609-4d98-9ebf-72ba3f33118d",
                 "conceptMappings": [],
                 "answers": [
-                  {
-                    "label": "Yes",
-                    "concept": "true"
+                   {
+                    "concept": "78763e68-104e-465d-8ce3-35f9edfb083d",
+                    "label": "Yes"
                   },
                   {
-                    "label": "No",
-                    "concept": "false"
+                    "concept": "f9f633a5-1544-4c44-9394-a7f746a12dff",
+                    "label": "No"
                   }
                 ]
               },
@@ -1373,7 +1401,7 @@
                 "concept": "d8a05f0f-3a39-4338-b40e-45567d5fd406"
               },
               "hide": {
-                "hideWhenExpression": "clientDapsone !== 'true'"
+                "hideWhenExpression": "clientDapsone !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
               },
               "validators": [
                 {
@@ -1409,7 +1437,7 @@
               },
               "validators": [],
               "hide": {
-                "hideWhenExpression": "clientDapsone !== 'true'"
+                "hideWhenExpression": "clientDapsone !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
               }
             },
             {
@@ -1624,7 +1652,7 @@
               "type": "obs",
               "validators": [],
               "hide": {
-                "hideWhenExpression": "clientDapsone !== 'true'"
+                "hideWhenExpression": "clientDapsone !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
               }
             },
             {
@@ -1633,7 +1661,7 @@
               "id": "artRegimenNoOfPillsDispensedDapsone",
               "questionOptions": {
                 "rendering": "select",
-                "concept": "3fa33347-9871-497b-81f3-7a791b9f4bae",
+                "concept": "1c8a00ad-8d9c-48e0-8011-8f79f5f9fa05",
                 "answers": [
                   {
                     "label": "0 days",
@@ -1672,7 +1700,7 @@
               "type": "obs",
               "validators": [],
               "hide": {
-                "hideWhenExpression": "clientDapsone !== 'true'"
+                "hideWhenExpression": "clientDapsone !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
               }
             },
             {
@@ -1683,13 +1711,13 @@
                 "rendering": "radio",
                 "concept": "9a67ecbf-5229-4de0-a533-382a87c01d76",
                 "answers": [
-                  {
-                    "label": "Yes",
-                    "concept": "true"
+                   {
+                    "concept": "78763e68-104e-465d-8ce3-35f9edfb083d",
+                    "label": "Yes"
                   },
                   {
-                    "label": "No",
-                    "concept": "false"
+                    "concept": "f9f633a5-1544-4c44-9394-a7f746a12dff",
+                    "label": "No"
                   }
                 ]
               }
@@ -1704,7 +1732,7 @@
                 "isSimpleValue": true
               },
               "hide": {
-                "hideWhenExpression": "anyOtherMedsGiven !== 'true'"
+                "hideWhenExpression": "anyOtherMedsGiven !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
               }
             }
           ]
@@ -1720,7 +1748,7 @@
           "questions": [
             {
               "label": " ART regimen given",
-              "id": "ArtRegimenAdult",
+              "id": "ArtRegimenAdults",
               "required": true,
               "questionOptions": {
                 "concept": "23322fd6-3dbb-410e-8bee-6210dfcd5f71",
@@ -1821,16 +1849,16 @@
               }
             },
             {
-              "label": "Other ART Regimen Specify",
-              "type": "obs",
-              "id": "otherARTRegimenAdultsSpecify",
+              "label": "Other Regimen Specify",
+              "required": false,
+              "id": "otherRigimenAdult",
               "questionOptions": {
                 "rendering": "text",
-                "concept": "d110f0ef-18bd-42a3-a4db-58f9d8469a39"
+                "concept": "b0afac64-54b5-412c-86d0-7cf5dc6afb35",
+                "isSimpleValue": true
               },
-              "validators": [],
               "hide": {
-                "hideWhenExpression": "ArtRegimenAdult !== 'd75c973c-06d4-43d2-a57d-6340fc8c0100'"
+                "hideWhenExpression": "ArtRegimenAdults !== 'd75c973c-06d4-43d2-a57d-6340fc8c0100'"
               }
             },
             {
@@ -1851,7 +1879,7 @@
                     "concept": "5efe8d99-c65e-4136-8820-5f3646437ff7"
                   },
                   {
-                    "label": "4c = ABC/3TC (120/60) + LPV/r",
+                    "label": "4c = TDF/3TC (120/60) + LPV/r",
                     "concept": "f8f64be8-ccb4-404d-b99e-3c4975155da5"
                   },
                   {
@@ -1859,7 +1887,7 @@
                     "concept": "28c5d192-ba71-4ef5-8604-ecf6bd177126"
                   },
                   {
-                    "label": "4e = ABC/3TC (120/60)+DTG10",
+                    "label": "4e = ABC/3TC(120/60mg)+DTG10",
                     "concept": "3eaf04dc-e284-42f7-860e-02cda37cf230"
                   },
                   {
@@ -1888,7 +1916,7 @@
                   },
                   {
                     "label": "4l = ABC +3TC + AZT",
-                    "concept": "5287f2a4-23e5-4314-b60c-0a4b91753ec6"
+                    "concept": "2e96e432-ba6f-4e08-a500-7cba2663e6cd"
                   },
                   {
                     "label": "5a = AZT/3TC+LPV/r",
@@ -1927,10 +1955,6 @@
                     "concept": "50b60d77-186d-4a0d-8784-659ee2d60ec9"
                   },
                   {
-                    "label": "5j = AZT/3TC (120/60) + DTG10",
-                    "concept": "78e49624-0e33-4374-93b7-60b132b26dae"
-                  },
-                  {
                     "label": "Other Regimen",
                     "concept": "d75c973c-06d4-43d2-a57d-6340fc8c0100"
                   }
@@ -1944,14 +1968,14 @@
               }
             },
             {
-              "label": "Other ART Regimen Specify",
-              "type": "obs",
-              "id": "otherARTRegimenChildSpecify",
+              "label": "Other Regimen Specify",
+              "required": false,
+              "id": "otherRigimenChildren",
               "questionOptions": {
                 "rendering": "text",
-                "concept": "d110f0ef-18bd-42a3-a4db-58f9d8469a39"
+                "concept": "b0afac64-54b5-412c-86d0-7cf5dc6afb35",
+                "isSimpleValue": true
               },
-              "validators": [],
               "hide": {
                 "hideWhenExpression": "ArtRegimenChild !== 'd75c973c-06d4-43d2-a57d-6340fc8c0100'"
               }
@@ -1962,7 +1986,7 @@
               "id": "artRegimenNoOfDaysDispensed",
               "questionOptions": {
                 "rendering": "select",
-                "concept": "4ab28128-7ef3-452d-86d5-73561761b08a",
+                "concept": "417625de-7d5e-45e4-bec7-60d72c94e657",
                 "conceptMappings": [],
                 "answers": [
                   {
@@ -2247,6 +2271,486 @@
               "hide": {
                 "hideWhenExpression": "reasonWhyAdherenceisFairDapsoneARV !== '64cac639-8e44-4059-90e8-16984280e7a7'"
               }
+            },
+            {
+              "label": "Art Substitution & Switch",
+              "type": "obsGroup",
+              "required": true,
+              "id": "clinicalMilestones",
+              "questionOptions": {
+                "rendering": "repeating",
+                "concept": "9734068e-4f96-4133-a7c0-d9d524c0fd7b"
+              },
+              "questions": [
+                {
+                  "label": "Substitution Regimen For Adults(First Line)",
+                  "id": "substArtAdultRegimen",
+                  "required": true,
+                  "questionOptions": {
+                    "concept": "23322fd6-3dbb-410e-8bee-6210dfcd5f71",
+                    "rendering": "select",
+                    "conceptMappings": [],
+                    "answers": [
+                      {
+                        "label": "1a = AZT/3TC+EFV",
+                        "concept": "9062c6d9-a650-44d2-8929-da84f617c427"
+                      },
+                      {
+                        "label": "1b = AZT/3TC/NVP",
+                        "concept": "c22e6700-a937-4909-b4ad-e82ff51325ac"
+                      },
+                      {
+                        "label": "1c = TDF/3TC/DTG",
+                        "concept": "a00d9620-e88b-4c2f-9293-b1ac9e5943f2"
+                      },
+                      {
+                        "label": "1d=ABC/3TC (600/300)/DTG",
+                        "concept": "5d500ca2-350a-49ee-a3d4-f340db32ff31"
+                      },
+                      {
+                        "label": "1e = AZT/3TC +DTG",
+                        "concept": "3fd242a8-7ade-463c-8919-d82573ea8526"
+                      },
+                      {
+                        "label": "1f = TDF/3TC+EFV",
+                        "concept": "91f5d0d6-eb81-484f-9376-4bfb926a5a81"
+                      },
+                      {
+                        "label": "1g = TDF/3TC+NVP",
+                        "concept": "0dd3e78f-e1fc-47de-95bc-1f489d0dfcc5"
+                      },
+                      {
+                        "label": "1h = TDF/FTC/EFV",
+                        "concept": "4a86fbee-07a9-422a-bf69-16256c0c2b8b"
+                      },
+                      {
+                        "label": "1J = TDF/FTC+NVP",
+                        "concept": "03224cae-f115-4814-bd53-c99c72288446"
+                      },
+                      {
+                        "label": "Other",
+                        "concept": "d75c973c-06d4-43d2-a57d-6340fc8c0100"
+                      }
+                    ]
+                  },
+                  "type": "obs",
+                  "validators": [],
+                  "hide": {
+                    "hideWhenExpression": "age < 15"
+                  }
+                },
+                {
+                  "label": "Other ARV Regimen Specify",
+                  "id": "otherAdultARVRegimenSpecify",
+                  "required": true,
+                  "questionOptions": {
+                    "answers": [],
+                    "concept": "b0afac64-54b5-412c-86d0-7cf5dc6afb35",
+                    "rendering": "Text"
+                  },
+                  "type": "obs",
+                  "validators": [],
+                  "hide": {
+                    "hideWhenExpression": "substArtAdultRegimen !== 'd75c973c-06d4-43d2-a57d-6340fc8c0100'"
+                  }
+                },
+                {
+                  "label": "Substitution Regimen For Child(First Line)",
+                  "id": "substArtChildRegimen",
+                  "required": true,
+                  "questionOptions": {
+                    "concept": "23322fd6-3dbb-410e-8bee-6210dfcd5f71",
+                    "rendering": "select",
+                    "conceptMappings": [],
+                    "answers": [
+                      {
+                        "label": "4a = AZT/3TC+NVP",
+                        "concept": "c224b116-27ec-4156-93ba-d4838a3ac1c0"
+                      },
+                      {
+                        "label": "4b = AZT/3TC +EFV",
+                        "concept": "5efe8d99-c65e-4136-8820-5f3646437ff7"
+                      },
+                      {
+                        "label": "4c = ABC/3TC (120/60) + LPV/r",
+                        "concept": "f8f64be8-ccb4-404d-b99e-3c4975155da5"
+                      },
+                      {
+                        "label": "4d = ABC/3TC (120/60) +DTG",
+                        "concept": "28c5d192-ba71-4ef5-8604-ecf6bd177126"
+                      },
+                      {
+                        "label": "4e = ABC/3TC (120/60)+DTG10",
+                        "concept": "3eaf04dc-e284-42f7-860e-02cda37cf230"
+                      },
+                      {
+                        "label": "4f = ABC/3TC +NVP",
+                        "concept": "0372f3fb-5e8a-474f-8250-01af7a485778"
+                      },
+                      {
+                        "label": "4g = TDF/3TC (120/60) + EFV (200mg)",
+                        "concept": "ce2412c4-a041-4328-bfaa-35e041ca4802"
+                      },
+                      {
+                        "label": "4h = TDF/FTC/EFV",
+                        "concept": "6ed47806-8809-4c5a-a1b6-fe2ec0158563"
+                      },
+                      {
+                        "label": "4i = ABC/3TC +LPV/r",
+                        "concept": "f6b1c6ea-b0a2-46a0-b7e0-3038d268356c"
+                      },
+                      {
+                        "label": "4J = AZT/3TC (60/30)+LPV/r",
+                        "concept": "2e1ab9d3-7fe1-48ba-a12c-fd8d26bc161d"
+                      },
+                      {
+                        "label": "4k = TDF/3TC+NVP",
+                        "concept": "99f54f96-e761-4d86-bb1b-0abc2a24fa16"
+                      },
+                      {
+                        "label": "4l = ABC +3TC + AZT",
+                        "concept": "5287f2a4-23e5-4314-b60c-0a4b91753ec6"
+                      },
+                      {
+                        "label": "Other",
+                        "concept": "d75c973c-06d4-43d2-a57d-6340fc8c0100"
+                      }
+                    ]
+                  },
+                  "type": "obs",
+                  "validators": [],
+                  "hide": {
+                    "hideWhenExpression": "age >= 15"
+                  }
+                },
+                {
+                  "label": "Other ARV Regimen Specify",
+                  "id": "otherChildARVRegimenSpecify",
+                  "required": true,
+                  "questionOptions": {
+                    "answers": [],
+                    "concept": "b0afac64-54b5-412c-86d0-7cf5dc6afb35",
+                    "rendering": "Text"
+                  },
+                  "type": "obs",
+                  "validators": [],
+                  "hide": {
+                    "hideWhenExpression": "substArtChildRegimen !== 'd75c973c-06d4-43d2-a57d-6340fc8c0100'"
+                  }
+                },
+                {
+                  "label": "ART First Line Switch Date",
+                  "id": "firstLineSwitch",
+                  "required": true,
+                  "questionOptions": {
+                    "answers": [],
+                    "concept": "ad884e26-5e18-4ec3-b471-c1cd1374387f",
+                    "rendering": "date"
+                  },
+                  "type": "obs",
+                  "validators": [
+                    {
+                      "type": "date",
+                      "allowFutureDates": "false"
+                    }
+                  ]
+                },
+                {
+                  "label": "Reason For Regimen Change(First Line)",
+                  "id": "changeReason",
+                  "required": true,
+                  "questionOptions": {
+                    "concept": "f0941906-3277-4ca0-891a-a58efb541c66",
+                    "rendering": "select",
+                    "conceptMappings": [],
+                    "answers": [
+                      {
+                        "label": "Pregnancy",
+                        "concept": "2afdbb1f-4f2f-48fd-ad92-090f1a5332cc"
+                      },
+                      {
+                        "label": "Risk of pregnancy",
+                        "concept": "baee8420-727a-4abf-a746-f2f34d352b93"
+                      },
+                      {
+                        "label": "Newly diagnosed TB",
+                        "concept": "42223c76-ed2d-40a0-8d93-c4571309a5f8"
+                      },
+                      {
+                        "label": "New drug available",
+                        "concept": "99c040fa-150a-4144-8453-a94ead0de2b7"
+                      },
+                      {
+                        "label": "Drug stockout",
+                        "concept": "096b1e7d-4d8c-4386-a5dc-54b6ad84a167"
+                      },
+                      {
+                        "label": "Other Reason (Specify)",
+                        "concept": "b4d8805f-40ff-4c9d-9118-feeab45ad8be"
+                      }
+                    ]
+                  },
+                  "type": "obs",
+                  "validators": []
+                },
+                {
+                  "label": "Other Reason For First Line Regimen Change Specify",
+                  "type": "obs",
+                  "required": true,
+                  "id": "otherSpecifyReason",
+                  "questionOptions": {
+                    "rendering": "text",
+                    "concept": "b59fff1c-ab4f-4686-9435-783994432356",
+                    "conceptMappings": [],
+                    "answers": []
+                  },
+                  "hide": {
+                    "hideWhenExpression": "changeReason !== 'b4d8805f-40ff-4c9d-9118-feeab45ad8be'"
+                  },
+                  "validators": []
+                }
+              ]
+            },
+            {
+              "label": "Switch to 2nd Line",
+              "type": "obsGroup",
+              "required": true,
+              "id": "switchSecondline",
+              "questionOptions": {
+                "rendering": "repeating",
+                "concept": "9734068e-4f96-4133-a7c0-d9d524c0fd7b"
+              },
+              "questions": [
+                {
+                  "label": "Substitution Regimen For Adults(Second Line)",
+                  "id": "switchAdultSecondLineArtRegimen",
+                  "required": true,
+                  "questionOptions": {
+                    "concept": "23322fd6-3dbb-410e-8bee-6210dfcd5f71",
+                    "rendering": "select",
+                    "conceptMappings": [],
+                    "answers": [
+                      {
+                        "label": "2a=AZT/3TC+DTG",
+                        "concept": "bd97cacd-4a91-4901-8803-3a4a2e5f1ca8"
+                      },
+                      {
+                        "label": "2b=ABC/3TC+DTG",
+                        "concept": "ad6ff4ef-769e-4aec-b8bb-7f033fe6aaaa"
+                      },
+                      {
+                        "label": "2c=TDF+3TC+LPV/r",
+                        "concept": "47167ec1-4957-4d0a-a58c-3894bdeb93ff"
+                      },
+                      {
+                        "label": "2d=TDF/3TC+ATV/r",
+                        "concept": "e649a0ec-e193-4af0-bb49-02687107a893"
+                      },
+                      {
+                        "label": "2e=TDF/FTC-LPV/r",
+                        "concept": "accca537-b8ee-41ec-b902-7de814d099b2"
+                      },
+                      {
+                        "label": "2f=TDF/FTC-ATV/r",
+                        "concept": "77f201fc-aefc-4068-baa7-cb3284782a38"
+                      },
+                      {
+                        "label": "2g=AZT/3TC+LPV/r",
+                        "concept": "cb0f9fcd-fb52-493f-95aa-d0197387fbdb"
+                      },
+                      {
+                        "label": "2h=AZT/3TC+ATV/r",
+                        "concept": "28790bde-81db-4490-806b-ac10c17b41dc"
+                      },
+                      {
+                        "label": "2i=ABC/3TC+LPV/r",
+                        "concept": "aae69cae-2806-4e8b-a916-f22ed733a19b"
+                      },
+                      {
+                        "label": "2j=ABC/3TC+ATV/r",
+                        "concept": "64336206-c9bc-4d37-accf-c7abac7a37f6"
+                      },
+                      {
+                        "label": "2k=TDF/3TC/DTG",
+                        "concept": "25f0cca5-902d-4e36-9e4f-5ce5da744a75"
+                      },
+                      {
+                        "label": "Other Reason (Specify)",
+                        "concept": "b4d8805f-40ff-4c9d-9118-feeab45ad8be"
+                      }
+                    ]
+                  },
+                  "type": "obs",
+                  "validators": [],
+                  "hide": {
+                    "hideWhenExpression": "age < 15"
+                  }
+                },
+                {
+                  "label": "Other Reason For First Line Regimen Change Specify",
+                  "type": "obs",
+                  "required": true,
+                  "id": "otherAdultSwitchSpecifyReason",
+                  "questionOptions": {
+                    "rendering": "text",
+                    "concept": "b59fff1c-ab4f-4686-9435-783994432356",
+                    "conceptMappings": [],
+                    "answers": []
+                  },
+                  "hide": {
+                    "hideWhenExpression": "switchAdultSecondLineArtRegimen !== 'b4d8805f-40ff-4c9d-9118-feeab45ad8be'"
+                  },
+                  "validators": []
+                },
+                {
+                  "label": "Substitution Regimen For Child(Second Line)",
+                  "id": "switchChildSecondLineArtRegimen",
+                  "required": true,
+                  "questionOptions": {
+                    "concept": "23322fd6-3dbb-410e-8bee-6210dfcd5f71",
+                    "rendering": "select",
+                    "conceptMappings": [],
+                    "answers": [
+                      {
+                        "label": "5a = AZT/3TC+LPV/r",
+                        "concept": "b23cf614-dfec-48c9-a12f-ba577e28347d"
+                      },
+                      {
+                        "label": "5b = AZT/3TC +RAL",
+                        "concept": "dabc93c3-8c3d-41e1-b3e3-d7e14c4765b6"
+                      },
+                      {
+                        "label": "5c = ABC/3TC (120/60) + RAL",
+                        "concept": "da3c6710-c431-4582-a444-a466d54693ec"
+                      },
+                      {
+                        "label": "5d = AZT/3TC +ATV/r",
+                        "concept": "6c383d11-2b29-4cc2-bfa4-811ff7a988f1"
+                      },
+                      {
+                        "label": "5e = ABC/3TC + ATV/r",
+                        "concept": "82725d14-00c6-4864-bf8b-ad5db0b3c3fa"
+                      },
+                      {
+                        "label": "5f = TDF/3TC + ATV/r",
+                        "concept": "140ede93-5691-463b-9d17-2dc8834621f8"
+                      },
+                      {
+                        "label": "5g = AZT/3TC +DTG",
+                        "concept": "06017ac1-2ce8-4689-a3bf-4e9f3d54978f"
+                      },
+                      {
+                        "label": "5h = ABC/3TC + DTG*",
+                        "concept": "2c0a5b91-7b2a-4f8e-86fd-a8007841fca8"
+                      },
+                      {
+                        "label": "5i = ABC/3TC +LPV/r",
+                        "concept": "50b60d77-186d-4a0d-8784-659ee2d60ec9"
+                      },
+                      {
+                        "label": "5j = AZT/3TC (120/60) + DTG10",
+                        "concept": "78e49624-0e33-4374-93b7-60b132b26dae"
+                      },
+                      {
+                        "label": "Other Reason (Specify)",
+                        "concept": "b4d8805f-40ff-4c9d-9118-feeab45ad8be"
+                      }
+                    ]
+                  },
+                  "type": "obs",
+                  "validators": [],
+                  "hide": {
+                    "hideWhenExpression": "age >= 15"
+                  }
+                },
+                {
+                  "label": "Other Reason For First Line Regimen Change Specify",
+                  "type": "obs",
+                  "required": true,
+                  "id": "otherChildSwitchSpecifyReason",
+                  "questionOptions": {
+                    "rendering": "text",
+                    "concept": "b59fff1c-ab4f-4686-9435-783994432356",
+                    "conceptMappings": [],
+                    "answers": []
+                  },
+                  "hide": {
+                    "hideWhenExpression": "switchChildSecondLineArtRegimen !== 'b4d8805f-40ff-4c9d-9118-feeab45ad8be'"
+                  },
+                  "validators": []
+                },
+                {
+                  "label": "ART Swith to 2nd Line Date",
+                  "id": "switchDate",
+                  "required": true,
+                  "questionOptions": {
+                    "answers": [],
+                    "concept": "55337ca1-c8b5-43e4-bed3-845a01463020",
+                    "rendering": "date"
+                  },
+                  "type": "obs",
+                  "validators": [
+                    {
+                      "type": "date",
+                      "allowFutureDates": "false"
+                    }
+                  ]
+                },
+                {
+                  "label": "Reason For Regimen Switch(2nd Line)",
+                  "id": "switchReason",
+                  "required": true,
+                  "questionOptions": {
+                    "concept": "847b1998-5b2f-4818-a6c0-4284e2f85403",
+                    "rendering": "select",
+                    "conceptMappings": [],
+                    "answers": [
+                      {
+                        "label": "Pregnancy",
+                        "concept": "2afdbb1f-4f2f-48fd-ad92-090f1a5332cc"
+                      },
+                      {
+                        "label": "Risk of pregnancy",
+                        "concept": "baee8420-727a-4abf-a746-f2f34d352b93"
+                      },
+                      {
+                        "label": "Newly diagnosed TB",
+                        "concept": "42223c76-ed2d-40a0-8d93-c4571309a5f8"
+                      },
+                      {
+                        "label": "New drug available",
+                        "concept": "99c040fa-150a-4144-8453-a94ead0de2b7"
+                      },
+                      {
+                        "label": "Drug stockout",
+                        "concept": "096b1e7d-4d8c-4386-a5dc-54b6ad84a167"
+                      },
+                      {
+                        "label": "Other Reason (Specify)",
+                        "concept": "b4d8805f-40ff-4c9d-9118-feeab45ad8be"
+                      }
+                    ]
+                  },
+                  "type": "obs",
+                  "validators": []
+                },
+                {
+                  "label": "Other Answer",
+                  "type": "obs",
+                  "required": true,
+                  "id": "otherReason",
+                  "questionOptions": {
+                    "rendering": "text",
+                    "concept": "41c2e674-babe-469d-bdf3-2b57ba568a4b",
+                    "conceptMappings": [],
+                    "answers": []
+                  },
+                  "hide": {
+                    "hideWhenExpression": "switchReason !== 'b4d8805f-40ff-4c9d-9118-feeab45ad8be'"
+                  },
+                  "validators": []
+                }
+              ]
             }
           ]
         }
@@ -2262,7 +2766,7 @@
             {
               "label": "CD4 Count",
               "id": "cd4Count",
-              "required": true,
+              "required": false,
               "questionOptions": {
                 "answers": [],
                 "concept": "809dd0f5-ce54-441c-b835-a2a8b06a6140",
@@ -2322,11 +2826,15 @@
             {
               "label": "VL Results",
               "type": "obs",
-              "required": false,
+              "required": true,
               "id": "vlResults",
               "questionOptions": {
                 "rendering": "numeric",
                 "concept": "01c3ce55-b7eb-45f5-93d5-bace353e3cfd"
+              },
+              "alert": {
+                "alertWhenExpression": "vlResults > 1000",
+                "message": "VL is above 1000, please fill the EAC Form"
               }
             },
             {
@@ -2346,7 +2854,7 @@
               ]
             },
             {
-              "label": "Lab Tests (multi-select)",
+              "label": "Lab Tests",
               "type": "obs",
               "required": true,
               "id": "labTests",
@@ -2395,12 +2903,12 @@
                 "concept": "32fb9948-d296-4eec-8dfd-699539ba5b05",
                 "answers": [
                   {
-                    "label": "Yes",
-                    "concept": "true"
+                    "concept": "78763e68-104e-465d-8ce3-35f9edfb083d",
+                    "label": "Yes"
                   },
                   {
-                    "label": "No",
-                    "concept": "false"
+                    "concept": "f9f633a5-1544-4c44-9394-a7f746a12dff",
+                    "label": "No"
                   }
                 ]
               }
@@ -2415,7 +2923,7 @@
                 "concept": "9fc6b318-054e-45c0-983b-912d1c93e86e"
               },
               "hide": {
-                "hideWhenExpression": "otherInvestigationDone !== 'true'"
+                "hideWhenExpression": "otherInvestigationDone !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
               }
             }
           ]
@@ -2436,7 +2944,7 @@
               "id": "ptPlan",
               "questionOptions": {
                 "rendering": "radio",
-                "concept": "0fc3cc86-6c9f-4d79-9c39-900dab27a33c",
+                "concept": "3352d2b2-67b6-4e84-9b2c-1baef41b0d05",
                 "conceptMappings": [],
                 "answers": [
                   {
@@ -2524,5 +3032,5 @@
   "version": "1.1",
   "description": "HIV Care Follow Up",
   "encounterType": "e8481555-9dd1-4bb5-ba8c-cb721dafb166",
-  "uuid": "ffd28fcd-8cba-425c-9647-34e7420f6a88"
+  "uuid": "6ecd2735-3030-43e1-b466-5d3958af7109"
 }

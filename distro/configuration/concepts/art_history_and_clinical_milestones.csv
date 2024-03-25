@@ -52,3 +52,9 @@ Drug stockout;
 Other Reason For Regimen Change(First Line)"
 b59fff1c-ab4f-4686-9435-783994432356,,Other Reason For First Line Regimen Change Specify,,,,,,Question,Text,
 41c2e674-babe-469d-bdf3-2b57ba568a4b,,Other Reason For Regimen Switch(2nd Line) Specify,,,,,,Question,Text,
+78763e68-104e-465d-8ce3-35f9edfb083d,,Yes,Yes,,,,,Misc,N/A,
+b497171e-0410-4d8d-bbd4-7e1a8f8b504e,,No,No,,,,,Misc,N/A,
+4ba4ea3a-a4dc-41c0-94ab-89a1985f9354,,Were ARVS Received?,Were ARVS Received?,,,,,Question,Coded,"Yes ; 
+No"
+dc60a613-0676-410b-a3aa-54a9ccfa822f,,Is this section blank?,Is this section blank?,,,,,Question,Coded,"Yes ; 
+No"
