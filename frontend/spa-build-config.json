@@ -7,7 +7,7 @@
     "@openmrs/esm-home-app": "next",
     "@openmrs/esm-form-entry-app": "next",
     "@openmrs/esm-generic-patient-widgets-app": "next",
-    "@openmrs/esm-patient-appointments-app": "next",
+    "@openmrs/esm-appointments-app": "next",
     "@openmrs/esm-patient-banner-app": "next",
     "@openmrs/esm-patient-chart-app": "next",
     "@openmrs/esm-patient-forms-app": "next",
