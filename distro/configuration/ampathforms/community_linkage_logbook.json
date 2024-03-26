@@ -1,5 +1,6 @@
 {
 	"name": "A. 4 - Community linkage",
+	"published": true,
 	"pages": [
 	  {
 		"label": "Client Details",
@@ -19,28 +20,32 @@
 				  "conceptMappings": [],
 				  "answers": [
 					{
+					  "concept": "65057ee0-acf4-4536-bf60-a9675fb96d42",
+					  "label": "Breastfeeding Woman"
+					},
+					{
 					  "concept": "50e0276f-9c7b-4982-9edb-1ba7895efc5f",
 					  "label": "Children"
 					},
 					{
-					  "concept": "f12f1fe4-1dfc-41ac-97f2-042bd140c4d3",
-					  "label": "Return after treatment interruption"
+					  "concept": "54f0a4fb-477a-4bb2-977d-59b6ec3d4b34",
+					  "label": "New Client"
+					},
+					{
+					  "concept": "63f89d17-0157-4489-8fc8-966d66324c12",
+					  "label": "Old Client"
 					},
 					{
 					  "concept": "2826a1bd-df43-4488-b72b-bc53d6331674",
 					  "label": "Pregnant Mother"
 					},
 					{
-					  "concept": "65057ee0-acf4-4536-bf60-a9675fb96d42",
-					  "label": "Breastfeeding Woman"
+					  "concept": "f12f1fe4-1dfc-41ac-97f2-042bd140c4d3",
+					  "label": "Return after treatment interruption"
 					},
 					{
 					  "concept": "ce97a3fe-fae2-45e3-99b5-35e7ba121805",
 					  "label": "Unsuppressed VL"
-					},
-					{
-					  "concept": "54f0a4fb-477a-4bb2-977d-59b6ec3d4b34",
-					  "label": "New Client"
 					}
 				  ]
 				},
