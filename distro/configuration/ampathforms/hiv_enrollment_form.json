@@ -1,5 +1,6 @@
 {
   "name": "B. 5 - HIV testing information",
+  "published": true,
   "pages": [
     {
       "label": "Client identification data",
@@ -161,7 +162,10 @@
               "questionOptions": {
                 "rendering": "ui-select-extended"
               },
-              "id": "placeTransferredInOnARTFromAnotherProgramme"
+              "id": "placeTransferredInOnARTFromAnotherProgramme",
+              "hide": {
+                "hideWhenExpression": "transferredInOnARTFromAnotherProgramme !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
+              }
             },
             {
               "label": "Date transferred in",
@@ -181,7 +185,7 @@
                 }
               ],
               "hide": {
-                "hideWhenExpression": "transferredInOnARTFromAnotherProgramme !== 'a2065636-5326-40f5-aed6-0cc2cca81ccc'"
+                "hideWhenExpression": "transferredInOnARTFromAnotherProgramme !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
               }
             }
           ]
