@@ -1,6 +1,8 @@
 {
     "name": "J. 12 - Follow up outcome",
     "published": true,
+    "retired": false,
+    "encounter": "Follow up outcome",
     "pages": [
       {
         "label": "End of follow up",
@@ -148,6 +150,19 @@
                 "hide": {
                   "hideWhenExpression": "transferOut !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
                 }
+              },
+              {
+                "label": "Date of last visit",
+                "type": "obs",
+                "required": true,
+                "id": "dateOfLastVisit",
+                "questionOptions": {
+                  "rendering": "date",
+                  "concept": "773cd838-7b21-4f34-9b33-0a071140f817",
+                  "conceptMappings": [],
+                  "answers": []
+                },
+                "validators": []
               }
             ]
           }

@@ -1,5 +1,8 @@
 {
   "name": "F. 8 - Follow up",
+  "retired": false,
+	"encounter": "Follow up",
+  "published": true,
   "pages": [
     {
       "label": "Client Details",
@@ -181,12 +184,12 @@
                 "conceptMappings": [],
                 "answers": [
                   {
-                    "label": "Yes",
-                    "concept": "true"
+                    "concept": "78763e68-104e-465d-8ce3-35f9edfb083d",
+                    "label": "Yes"
                   },
                   {
-                    "label": "No",
-                    "concept": "false"
+                    "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e",
+                    "label": "No"
                   }
                 ]
               },
@@ -264,7 +267,7 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "sex === 'M' || currentFP !== 'true'"
+                "hideWhenExpression": "sex === 'M' || currentFP !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
               },
               "validators": []
             },
@@ -1379,7 +1382,7 @@
                 "concept": "0cb0b2c1-6609-4d98-9ebf-72ba3f33118d",
                 "conceptMappings": [],
                 "answers": [
-                   {
+                  {
                     "concept": "78763e68-104e-465d-8ce3-35f9edfb083d",
                     "label": "Yes"
                   },
@@ -1711,7 +1714,7 @@
                 "rendering": "radio",
                 "concept": "9a67ecbf-5229-4de0-a533-382a87c01d76",
                 "answers": [
-                   {
+                  {
                     "concept": "78763e68-104e-465d-8ce3-35f9edfb083d",
                     "label": "Yes"
                   },

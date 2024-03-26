@@ -1,7 +1,9 @@
 {
   "name": "D. 7.1 - Adult and Adolescent intake Form ",
   "version": "1",
+  "published": true,
   "retired": false,
+	"encounter": "Adult and Adolescent intake Form",
   "pages": [
     {
       "label": "Visit details",
@@ -57,7 +59,7 @@
       ]
     },
     {
-      "label": "Medical history",
+      "label": "Past Medical History",
       "sections": [
         {
           "label": "Past Medical History",
@@ -65,135 +67,188 @@
           "questions": [
             {
               "label": "Past Medical History",
-              "type": "obs",
-              "required": false,
-              "id": "medicalHistory",
+              "id": "pastMedicalHistorySection",
+              "type": "obsGroup",
               "questionOptions": {
-                "rendering": "multiCheckbox",
-                "concept": "9af72d4e-8f50-4545-b154-7dd12fea2ea4",
-                "conceptMappings": [],
-                "answers": [
-                  {
-                    "concept": "b33300b5-2dc1-45e9-b70e-9d08ef16474e",
-                    "label": "Acute necrotizing Ulcerative gingivitis or periodontitis"
+                "rendering": "repeating",
+                "concept": "759e2ceb-0311-46bd-9f00-5df5b2897f71"
+              },
+              "questions": [
+                {
+                  "label": "Past medical history",
+                  "type": "obs",
+                  "required": false,
+                  "id": "medicalHistory",
+                  "questionOptions": {
+                    "rendering": "select",
+                    "concept": "9af72d4e-8f50-4545-b154-7dd12fea2ea4",
+                    "conceptMappings": [],
+                    "answers": [
+                      {
+                        "concept": "bff040c5-7865-4756-8fdc-2fe2cec784c1",
+                        "label": "Persistent Generalized Lymphadenopathy (PGL)"
+                      },
+                      {
+                        "concept": "d8ce02ab-9d65-4efb-aa04-4fce6a1c82fd",
+                        "label": "Unexplained persistent diarrhea (>14 days)"
+                      },
+                      {
+                        "concept": "f5acb290-917f-4b3d-92f7-7c29552f00ba",
+                        "label": "Pneumocystis pneumonia (PCP)"
+                      },
+                      {
+                        "concept": "68993e4b-581e-43a6-ac9b-45bcb8f4a185",
+                        "label": "Recurrent or chronic Bacterial URTIs (Sinusitis, Otitis Media, Ottorhea, Tonsillitis)"
+                      },
+                      {
+                        "concept": "cc35f955-3e7a-44e4-999d-df181a5e4a11",
+                        "label": "Oral Candidiasis"
+                      },
+                      {
+                        "concept": "469408fd-bc9e-457f-b4f9-e7a78e04cbfa",
+                        "label": "Oral hairy leukoplakia"
+                      },
+                      {
+                        "concept": "cc646a0a-36aa-44a7-abae-a531082c3dc0",
+                        "label": "Chronic herpes simplex virus infection (orolabial or visceral)"
+                      },
+                      {
+                        "concept": "37a734d2-227f-43af-b3cb-1bb936a275bd",
+                        "label": "Persistent Parotid enlargement"
+                      },
+                      {
+                        "concept": "318aa6ec-edf3-4369-943d-c8f2a508e045",
+                        "label": "Fever (> 1 month, unexplained)"
+                      },
+                      {
+                        "concept": "f6083b46-8b38-46c4-a44b-5a28db07ae54",
+                        "label": "Cryptococcal meningitis"
+                      },
+                      {
+                        "concept": "8b7dd03f-5c59-4118-9565-ecd990263258",
+                        "label": "Oral Ulcer"
+                      },
+                      {
+                        "concept": "d946be39-07d1-4e1b-9990-6f626445b8a7",
+                        "label": "Angular cheilitis"
+                      },
+                      {
+                        "concept": "b213e6bd-14fe-40a1-83a6-53e5d8742efc",
+                        "label": "Extra pulmonary TB"
+                      },
+                      {
+                        "concept": "ab89262b-afe0-4aef-ae81-ea79ab236deb",
+                        "label": "Lymph node TB"
+                      },
+                      {
+                        "concept": "2623106d-a067-414a-9c61-8084599f855b",
+                        "label": "Toxoplasmosis Herpes simplex (>1 month)"
+                      },
+                      {
+                        "concept": "88a2072d-c629-45d6-962c-5da2ce3eee39",
+                        "label": "Extensive Molluscum Contagiosum"
+                      },
+                      {
+                        "concept": "fa428486-cd06-4ccc-811c-623c5eaac561",
+                        "label": "Extensive warts"
+                      },
+                      {
+                        "concept": "c25fb8c5-c309-4873-a3b2-de0565b269fd",
+                        "label": "Severe Recurrent bacterial pneumonia"
+                      },
+                      {
+                        "concept": "65a52277-09b3-4157-b2a1-9cca33f66ac8",
+                        "label": "Severe Bacterial Infections excluding pneumonia"
+                      },
+                      {
+                        "concept": "49b1128f-5d64-4373-a6ea-9d329e2e54a6",
+                        "label": "Herpes Zoster"
+                      },
+                      {
+                        "concept": "b33300b5-2dc1-45e9-b70e-9d08ef16474e",
+                        "label": "Acute necrotizing Ulcerative gingivitis or periodontitis"
+                      },
+                      {
+                        "concept": "12e8cb0d-f421-4778-b49d-6781c105cca4",
+                        "label": "Kaposi sarcoma"
+                      },
+                      {
+                        "concept": "cc23bab5-d6eb-4e16-948b-25a366080dba",
+                        "label": "Papular pruritic eruption"
+                      },
+                      {
+                        "concept": "35a99b2b-4b1a-4815-adb8-36446842289a",
+                        "label": "Extra pulmonary TB except Lymph node TB"
+                      },
+                      {
+                        "concept": "951c142f-e9e8-4e03-8e87-4f571aa99e8f",
+                        "label": "HIV Associated Dementia (HIV Encephalopathy)"
+                      },
+                      {
+                        "concept": "e7c704d0-9bf0-47b2-8371-d74c87f93eec",
+                        "label": "Fungal nail infection"
+                      },
+                      {
+                        "concept": "924652f0-26c5-4a2b-a2bc-67ddb9607dbf",
+                        "label": "Chronic herpes simplex virus infection (orolabial, genital or anorectal)"
+                      },
+                      {
+                        "concept": "13216581-b1cd-4087-9297-1eb4b55b40ce",
+                        "label": "Esophageal Candidiasis"
+                      },
+                      {
+                        "concept": "ee4f01d5-819f-4130-b5e2-fbebf2b00e11",
+                        "label": "Pulmonary TB"
+                      },
+                      {
+                        "concept": "9d2bfb0c-807c-4f43-8c63-06debd52cf3e",
+                        "label": "Recurrent bacterial pneumonia"
+                      },
+                      {
+                        "concept": "1661d025-dfca-451e-a914-626cdfae6336",
+                        "label": "Recurrent Bacterial URTIs (Sinusitis, Otitis Media, Tonsillopharyngitis )"
+                      },
+                      {
+                        "concept": "82a4cd70-96be-4c8d-9e7e-9c871e1e4953",
+                        "label": "Seborrheic dermatitis"
+                      },
+                      {
+                        "concept": "82950d3b-18a8-40a5-9bb2-fefbcd2d8c78",
+                        "label": "Severe Bacterial Infections (Pneumonia, Septic arthritis, osteomyelitis, Pyomyositis, PID)"
+                      },
+                      {
+                        "concept": "901d53c5-fd75-40c7-a39b-b5e25b6255fd",
+                        "label": "Unexplained chronic diarrhea (>1 month)"
+                      },
+                      {
+                        "concept": "c5120716-e297-40f6-9eb5-ef432cc791c0",
+                        "label": "Other Past Medical History(Specify)"
+                      }
+                    ]
                   },
-                  {
-                    "concept": "d946be39-07d1-4e1b-9990-6f626445b8a7",
-                    "label": "Angular cheilitis"
+                  "validators": []
+                },
+                {
+                  "label": "Other medical history Specify",
+                  "type": "obs",
+                  "required": false,
+                  "id": "otherMedicalHistorySpecify",
+                  "questionOptions": {
+                    "rendering": "text",
+                    "concept": "f16c6a11-453f-44a2-a7a5-77aeaa93e67d",
+                    "conceptMappings": [],
+                    "answers": []
                   },
-                  {
-                    "concept": "924652f0-26c5-4a2b-a2bc-67ddb9607dbf",
-                    "label": "Chronic herpes simplex virus infection (orolabial, genital or anorectal)"
-                  },
-                  {
-                    "concept": "f6083b46-8b38-46c4-a44b-5a28db07ae54",
-                    "label": "Cryptococcal meningitis"
-                  },
-                  {
-                    "concept": "13216581-b1cd-4087-9297-1eb4b55b40ce",
-                    "label": "Esophageal Candidiasis"
-                  },
-                  {
-                    "concept": "b213e6bd-14fe-40a1-83a6-53e5d8742efc",
-                    "label": "Extra pulmonary TB"
-                  },
-                  {
-                    "concept": "318aa6ec-edf3-4369-943d-c8f2a508e045",
-                    "label": "Fever (> 1 month, unexplained)"
-                  },
-                  {
-                    "concept": "e7c704d0-9bf0-47b2-8371-d74c87f93eec",
-                    "label": "Fungal nail infection"
-                  },
-                  {
-                    "concept": "49b1128f-5d64-4373-a6ea-9d329e2e54a6",
-                    "label": "Herpes Zoster"
-                  },
-                  {
-                    "concept": "951c142f-e9e8-4e03-8e87-4f571aa99e8f",
-                    "label": "HIV Associated Dementia (HIV Encephalopathy)"
-                  },
-                  {
-                    "concept": "12e8cb0d-f421-4778-b49d-6781c105cca4",
-                    "label": "Kaposi sarcoma"
-                  },
-                  {
-                    "concept": "cc35f955-3e7a-44e4-999d-df181a5e4a11",
-                    "label": "Oral Candidiasis"
-                  },
-                  {
-                    "concept": "469408fd-bc9e-457f-b4f9-e7a78e04cbfa",
-                    "label": "Oral hairy leukoplakia"
-                  },
-                  {
-                    "concept": "8b7dd03f-5c59-4118-9565-ecd990263258",
-                    "label": "Oral Ulcer"
-                  },
-                  {
-                    "concept": "cc23bab5-d6eb-4e16-948b-25a366080dba",
-                    "label": "Papular pruritic eruption"
-                  },
-                  {
-                    "concept": "bff040c5-7865-4756-8fdc-2fe2cec784c1",
-                    "label": "Persistent Generalized Lymphadenopathy (PGL)"
-                  },
-                  {
-                    "concept": "f5acb290-917f-4b3d-92f7-7c29552f00ba",
-                    "label": "Pneumocystis pneumonia (PCP)"
-                  },
-                  {
-                    "concept": "ee4f01d5-819f-4130-b5e2-fbebf2b00e11",
-                    "label": "Pulmonary TB"
-                  },
-                  {
-                    "concept": "9d2bfb0c-807c-4f43-8c63-06debd52cf3e",
-                    "label": "Recurrent bacterial pneumonia"
-                  },
-                  {
-                    "concept": "1661d025-dfca-451e-a914-626cdfae6336",
-                    "label": "Recurrent Bacterial URTIs (Sinusitis, Otitis Media, Tonsillopharyngitis )"
-                  },
-                  {
-                    "concept": "82a4cd70-96be-4c8d-9e7e-9c871e1e4953",
-                    "label": "Seborrheic dermatitis"
-                  },
-                  {
-                    "concept": "82950d3b-18a8-40a5-9bb2-fefbcd2d8c78",
-                    "label": "Severe Bacterial Infections (Pneumonia, Septic arthritis, osteomyelitis, Pyomyositis, PID)"
-                  },
-                  {
-                    "concept": "2623106d-a067-414a-9c61-8084599f855b",
-                    "label": "Toxoplasmosis Herpes simplex (>1 month)"
-                  },
-                  {
-                    "concept": "901d53c5-fd75-40c7-a39b-b5e25b6255fd",
-                    "label": "Unexplained chronic diarrhea (>1 month)"
-                  },
-                  {
-                    "concept": "c5120716-e297-40f6-9eb5-ef432cc791c0",
-                    "label": "Other Past Medical History"
+                  "hide": {
+                    "hideWhenExpression": "medicalHistory !== 'c5120716-e297-40f6-9eb5-ef432cc791c0'",
+                    "validators": []
                   }
-                ]
-              },
+                }
+              ],
               "validators": []
-            },
-            {
-              "label": "Specify Other Past Medical History",
-              "type": "obs",
-              "required": false,
-              "id": "otherPastMedicalHistory",
-              "questionOptions": {
-                "rendering": "text",
-                "concept": "f16c6a11-453f-44a2-a7a5-77aeaa93e67d",
-                "conceptMappings": [],
-                "answers": []
-              },
-              "validators": [],
-              "hide": {
-                "hideWhenExpression": " medicalHistory !== 'c5120716-e297-40f6-9eb5-ef432cc791c0'"
-              }
             }
-          ]
+          ],
+          "validators": []
         }
       ]
     },
@@ -993,7 +1048,7 @@
             {
               "label": "CD4 Count",
               "id": "cd4Count",
-              "required": true,
+              "required": false,
               "questionOptions": {
                 "answers": [],
                 "concept": "809dd0f5-ce54-441c-b835-a2a8b06a6140",
@@ -1015,7 +1070,7 @@
             {
               "label": "CD4 %",
               "id": "cd4CountPercentage",
-              "required": true,
+              "required": false,
               "questionOptions": {
                 "answers": [],
                 "concept": "809dd0f5-ce54-441c-b835-a2a8b06a6140",
