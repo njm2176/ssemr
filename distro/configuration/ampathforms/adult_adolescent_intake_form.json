@@ -3,6 +3,7 @@
   "version": "1",
   "published": true,
   "retired": false,
+	"encounter": "Adult and Adolescent intake Form",
   "pages": [
     {
       "label": "Visit details",

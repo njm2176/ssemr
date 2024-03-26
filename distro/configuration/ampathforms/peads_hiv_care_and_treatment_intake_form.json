@@ -3,6 +3,7 @@
 	"version": "1",
 	"published": true,
 	"retired": false,
+	"encounter": "Pediatric HIV care and treatment intake",
 	"pages": [
 	  {
 		"label": "Visit details",
