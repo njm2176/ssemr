@@ -915,86 +915,74 @@
             },
             {
               "label": "Opportunistic Infections",
-              "type": "obsGroup",
-              "required": true,
-              "id": "opportunisticInfections",
+              "required": false,
+              "id": "oi",
               "questionOptions": {
-                "rendering": "repeating",
-                "concept": "fa688045-dcfc-48bd-b2fc-1ddf8ff33ecb"
-              },
-              "questions": [
-                {
-                  "label": "Opportunistic Infections",
-                  "required": false,
-                  "id": "oi",
-                  "questionOptions": {
-                    "concept": "e0d24a66-6fb5-47e1-852f-32a8f8ed71e2",
-                    "rendering": "select",
-                    "conceptMapping": [],
-                    "answers": [
-                      {
-                        "label": "Toxo Plasmosis",
-                        "concept": "d9a0a7c1-66d8-4f71-aef6-e0aef4a5f2b1"
-                      },
-                      {
-                        "label": "Diarrhoea Opportunistic Infection",
-                        "concept": "99e4878e-16ea-49d3-aa0e-585def370014"
-                      },
-                      {
-                        "label": "Herpes Genitalis Opportunistic Infection",
-                        "concept": "0cf0ac7e-a631-474e-8fcd-f1dbba986589"
-                      },
-                      {
-                        "label": "Herpes Zoster Opportunistic Infection",
-                        "concept": "d0a66c85-1bd1-4ae9-aed3-7fddf87680cf"
-                      },
-                      {
-                        "label": "Candidiasis Opportunistic Infection",
-                        "concept": "f5efbdba-0950-421a-bf08-451fb6fe1752"
-                      },
-                      {
-                        "label": "Tuberculosis Opportunistic Infection",
-                        "concept": "4ec32e51-cf72-4e93-a586-da62bd0ba703"
-                      },
-                      {
-                        "label": "Bacterial Pneumonia Opportunistic Infection",
-                        "concept": "7b542ebb-dedd-4f3d-903e-a33e7118dcd8"
-                      },
-                      {
-                        "label": "Cytomegato Virus Opportunistic Infection",
-                        "concept": "8ee9d84c-8ad4-483c-8951-d6ec976822fc"
-                      },
-                      {
-                        "label": "Pneumocysitis Pneumonia Opportunistic Infection",
-                        "concept": "9c7b5817-5b77-4601-a11f-bc4508998c56"
-                      },
-                      {
-                        "label": "Crypto Meningitis Opportunistic Infection",
-                        "concept": "1eb028a7-d8eb-4fcc-a99c-e47f3dc00d5b"
-                      },
-                      {
-                        "label": "Others",
-                        "concept": "ef5d7595-87f6-4814-95e0-41533a517783"
-                      }
-                    ]
+                "concept": "e0d24a66-6fb5-47e1-852f-32a8f8ed71e2",
+                "rendering": "multiCheckbox",
+                "conceptMapping": [],
+                "answers": [
+                  {
+                    "label": "Toxo Plasmosis",
+                    "concept": "d9a0a7c1-66d8-4f71-aef6-e0aef4a5f2b1"
                   },
-                  "type": "obs",
-                  "validators": []
-                },
-                {
-                  "label": "Any new Opportunistic Infections",
-                  "required": false,
-                  "id": "oiNew",
-                  "questionOptions": {
-                    "rendering": "text",
-                    "concept": "be8d8351-6dad-4f91-a5a1-40c56656bbf5",
-                    "isSimpleValue": true
+                  {
+                    "label": "Diarrhoea Opportunistic Infection",
+                    "concept": "99e4878e-16ea-49d3-aa0e-585def370014"
                   },
-                  "hide": {
-                    "hideWhenExpression": "oi !== 'ef5d7595-87f6-4814-95e0-41533a517783'"
+                  {
+                    "label": "Herpes Genitalis Opportunistic Infection",
+                    "concept": "0cf0ac7e-a631-474e-8fcd-f1dbba986589"
+                  },
+                  {
+                    "label": "Herpes Zoster Opportunistic Infection",
+                    "concept": "d0a66c85-1bd1-4ae9-aed3-7fddf87680cf"
+                  },
+                  {
+                    "label": "Candidiasis Opportunistic Infection",
+                    "concept": "f5efbdba-0950-421a-bf08-451fb6fe1752"
+                  },
+                  {
+                    "label": "Tuberculosis Opportunistic Infection",
+                    "concept": "4ec32e51-cf72-4e93-a586-da62bd0ba703"
+                  },
+                  {
+                    "label": "Bacterial Pneumonia Opportunistic Infection",
+                    "concept": "7b542ebb-dedd-4f3d-903e-a33e7118dcd8"
+                  },
+                  {
+                    "label": "Cytomegato Virus Opportunistic Infection",
+                    "concept": "8ee9d84c-8ad4-483c-8951-d6ec976822fc"
+                  },
+                  {
+                    "label": "Pneumocysitis Pneumonia Opportunistic Infection",
+                    "concept": "9c7b5817-5b77-4601-a11f-bc4508998c56"
+                  },
+                  {
+                    "label": "Crypto Meningitis Opportunistic Infection",
+                    "concept": "1eb028a7-d8eb-4fcc-a99c-e47f3dc00d5b"
+                  },
+                  {
+                    "label": "Others",
+                    "concept": "ef5d7595-87f6-4814-95e0-41533a517783"
                   }
-                }
-              ]
+                ]
+              },
+              "type": "obs",
+              "validators": []
+            },
+            {
+              "label": "Any new Opportunistic Infections",
+              "required": false,
+              "id": "oiNew",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "be8d8351-6dad-4f91-a5a1-40c56656bbf5",
+                "isSimpleValue": true
+              },
+              "hide": {
+                "hideWhenExpression": "isEmpty(oi) || !arrayContains(oi, 'ef5d7595-87f6-4814-95e0-41533a517783')",
+              }
             },
             {
               "label": "WHO Stage",
