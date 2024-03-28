@@ -490,7 +490,7 @@
 				},
 				"validators": [],
 				"hide": {
-				  "hideWhenExpression": "firstEACTools !== 'fde15ffa-a932-4283-a2fb-644e2a6f78be'"
+				  "hideWhenExpression": "isEmpty(firstEACTools) || !arrayContains(firstEACTools, 'fde15ffa-a932-4283-a2fb-644e2a6f78be')"
 				}
 			  },
 			  {
