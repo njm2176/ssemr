@@ -76,7 +76,7 @@ f16c6a11-453f-44a2-a7a5-77aeaa93e67d,,Specify Other Past Medical History,,,,,,Qu
 74926ae2-dbb8-4ae4-9148-7dc189502e4b,,Current Symptoms Screen section,,,,,,Misc,N/A,
 1dfb0948-4e15-11e4-8a57-0800271c1b75,,Abdominal pain,,,,,,Misc,N/A,
 2934795c-486e-4819-a4ac-b476630c710c,,Chronic fatigue,,,,,,Misc,N/A,
-147b8be8-d657-4e46-8970-6f9983b27722,,Current Cough,,,,,,Misc,N/A,
+147b8be8-d657-4e46-8970-6f9983b27722,,Current Cough,,,,,,Misc,Coded,Yes; No
 8166b90f-671c-4787-a3a4-d4ea8fd74f43,,Diarrhea,,,,,,Misc,N/A,
 e77f0416-4e14-11e4-8a57-0800271c1b75,,Dyspepsia,,,,,,Misc,N/A,
 ecee97e6-47af-44c0-a941-804afa11bbd0,,Dysphagia or Odynophagia,,,,,,Misc,N/A,
@@ -191,11 +191,11 @@ cc23bab5-d6eb-4e16-948b-25a366080dba,,Papular pruritic eruption,Papular pruritic
 2f08824f-742f-4a0e-a954-360785142bfb,,"Recurrent bacterial upper respiratory tract infections (two or more in last 6 months): sinusitis, otitis media, tonsillopharyngitis","Recurrent bacterial upper respiratory tract infections (two or more in last 6 months): sinusitis, otitis media, tonsillopharyngitis",,,,,Misc,N/A,
 fd058231-e7bf-4c3b-a0d5-7649b83fcb52,,Recurrent oral ulcerations (two or more episodes in last 6 months),Recurrent oral ulcerations (two or more episodes in last 6 months),,,,,Misc,N/A,
 82a4cd70-96be-4c8d-9e7e-9c871e1e4953,,Seborrheic dermatitis,Seborrheic dermatitis,,,,,Misc,N/A,
-48bcb0b6-46a5-42e5-a50c-d572f28badda,,lineal gingival erythemaunexplained persistent parotid enlargement,lineal gingival erythemaunexplained persistent parotid enlargement,,,,,Misc,N/A,
+48bcb0b6-46a5-42e5-a50c-d572f28badda,,lineal gingival erythema,lineal gingival erythema,,,,,Misc,N/A,
 5bd38576-57c2-4488-966e-8d1e303deb06,,extensive wart virus infection,extensive wart virus infection,,,,,Misc,N/A,
 7ff0ed86-3414-418d-9cbd-73d94cde0290,,extensive molluscum contagiosum,extensive molluscum contagiosum,,,,,Misc,N/A,
 def9e08f-00f4-49b1-9d47-2a22e0129303,,Unexplained Persistent  hepatsoplenomegaly,Unexplained Persistent  hepatsoplenomegaly ,,,,,Misc,N/A,
-65ea0d8c-d600-4af2-906d-6d2984bac229,,Unexplained persistent aprotid enlargement,Unexplained persistent aprotid enlargement,,,,,Misc,N/A,
+65ea0d8c-d600-4af2-906d-6d2984bac229,,unexplained persistent parotid enlargement,unexplained persistent parotid enlargement,,,,,Misc,N/A,
 e7112b84-4321-41a9-8c04-c96c427dd7b6,,Clinical stage 2,Clinical stage 2,,,,,Question,Coded,"Angular cheilitis;
 Fungal nail infection;
 Herpes Zoster;
@@ -204,11 +204,11 @@ Papular pruritic eruption;
 Recurrent bacterial upper respiratory tract infections (two or more in last 6 months): sinusitis, otitis media, tonsillopharyngitis;
 Recurrent oral ulcerations (two or more episodes in last 6 months);
 Seborrheic dermatitis;
-lineal gingival erythemaunexplained persistent parotid enlargement;
+lineal gingival erythema;
 extensive wart virus infection;
 extensive molluscum contagiosum;
 Unexplained Persistent  hepatsoplenomegaly ;
-Unexplained persistent aprotid enlargement"
+unexplained persistent parotid enlargement"
 a4b796d7-603a-49a4-b48a-30398dfaab7e,,"Acute necrotizing ulcerative stomatitis, gingivitis or periodontitis","Acute necrotizing ulcerative stomatitis, gingivitis or periodontitis",,,,,Misc,N/A,
 0ad0e066-3a2e-4cef-a0e2-4c40e322f6af,,Current Pulmonary TB,Current Pulmonary TB,,,,,Misc,N/A,
 cc35f955-3e7a-44e4-999d-df181a5e4a11,,Oral Candidiasis,Oral Candidiasis,,,,,Misc,N/A,

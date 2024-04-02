@@ -1,8 +1,9 @@
 {
   "name": "F. 8 - Follow up",
+  "version": "1.0",
   "retired": false,
-	"encounter": "Follow up",
   "published": true,
+  "encounter": "Follow up",
   "pages": [
     {
       "label": "Client Details",
@@ -155,7 +156,7 @@
             {
               "label": "MUAC for children and pregnant mothers",
               "type": "obs",
-              "id": "muac",
+              "id": "muacAdults",
               "questionOptions": {
                 "rendering": "number",
                 "concept": "1343AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
@@ -204,7 +205,7 @@
               "required": true,
               "id": "fpMethod",
               "questionOptions": {
-                "rendering": "radio",
+                "rendering": "checkbox",
                 "concept": "609d59f7-79d1-4748-ad86-57c831dbff60",
                 "conceptMappings": [],
                 "answers": [
@@ -297,6 +298,25 @@
               "validators": []
             },
             {
+              "label": "Clients EDD",
+              "type": "obs",
+              "required": true,
+              "id": "eddDate",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "12118225-edad-45e2-9313-a5bca2cb4995"
+              },
+              "hide": {
+                "hideWhenExpression": "sex === 'M' || age < 15 || pregStatus !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
+              },
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "true"
+                }
+              ]
+            },
+            {
               "label": "Is the client BreastFeeding?",
               "type": "obs",
               "required": true,
@@ -320,25 +340,6 @@
                 "hideWhenExpression": "sex === 'M' || age < 15"
               },
               "validators": []
-            },
-            {
-              "label": "Clients EDD",
-              "type": "obs",
-              "required": true,
-              "id": "eddDate",
-              "questionOptions": {
-                "rendering": "date",
-                "concept": "12118225-edad-45e2-9313-a5bca2cb4995"
-              },
-              "hide": {
-                "hideWhenExpression": "sex === 'M' || age < 15 || pregStatus !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
-              },
-              "validators": [
-                {
-                  "type": "date",
-                  "allowFutureDates": "true"
-                }
-              ]
             },
             {
               "label": "Is the client a PMTCT?",
@@ -630,28 +631,6 @@
               }
             },
             {
-              "label": "TB Diagnosed?",
-              "type": "obs",
-              "id": "tbDiagnosed",
-              "questionOptions": {
-                "concept": "1b4f4df7-dddc-4e73-ab18-304c4fd12953",
-                "rendering": "radio",
-                "answers": [
-                  {
-                    "concept": "78763e68-104e-465d-8ce3-35f9edfb083d",
-                    "label": "Yes"
-                  },
-                  {
-                    "concept": "f9f633a5-1544-4c44-9394-a7f746a12dff",
-                    "label": "No"
-                  }
-                ]
-              },
-              "hide": {
-                "hideWhenExpression": "TBStatus !== '4897c2f3-9d36-4d6c-bf5a-780db6b4ab12'"
-              }
-            },
-            {
               "label": "TPT Given (INH)",
               "type": "obs",
               "required": true,
@@ -666,7 +645,7 @@
                     "label": "Yes"
                   },
                   {
-                    "concept": "f9f633a5-1544-4c44-9394-a7f746a12dff",
+                    "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e",
                     "label": "No"
                   }
                 ]
@@ -838,7 +817,7 @@
                     "label": "Yes"
                   },
                   {
-                    "concept": "f9f633a5-1544-4c44-9394-a7f746a12dff",
+                    "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e",
                     "label": "No"
                   }
                 ]
@@ -927,39 +906,39 @@
                     "concept": "d9a0a7c1-66d8-4f71-aef6-e0aef4a5f2b1"
                   },
                   {
-                    "label": "Diarrhoea Opportunistic Infection",
+                    "label": "Diarrhoea",
                     "concept": "99e4878e-16ea-49d3-aa0e-585def370014"
                   },
                   {
-                    "label": "Herpes Genitalis Opportunistic Infection",
+                    "label": "Herpes Genitalis",
                     "concept": "0cf0ac7e-a631-474e-8fcd-f1dbba986589"
                   },
                   {
-                    "label": "Herpes Zoster Opportunistic Infection",
+                    "label": "Herpes Zoster",
                     "concept": "d0a66c85-1bd1-4ae9-aed3-7fddf87680cf"
                   },
                   {
-                    "label": "Candidiasis Opportunistic Infection",
+                    "label": "Candidiasis",
                     "concept": "f5efbdba-0950-421a-bf08-451fb6fe1752"
                   },
                   {
-                    "label": "Tuberculosis Opportunistic Infection",
+                    "label": "Tuberculosis",
                     "concept": "4ec32e51-cf72-4e93-a586-da62bd0ba703"
                   },
                   {
-                    "label": "Bacterial Pneumonia Opportunistic Infection",
+                    "label": "Bacterial Pneumonia",
                     "concept": "7b542ebb-dedd-4f3d-903e-a33e7118dcd8"
                   },
                   {
-                    "label": "Cytomegato Virus Opportunistic Infection",
+                    "label": "Cytomegato Virus",
                     "concept": "8ee9d84c-8ad4-483c-8951-d6ec976822fc"
                   },
                   {
-                    "label": "Pneumocysitis Pneumonia Opportunistic Infection",
+                    "label": "Pneumocysitis Pneumonia",
                     "concept": "9c7b5817-5b77-4601-a11f-bc4508998c56"
                   },
                   {
-                    "label": "Crypto Meningitis Opportunistic Infection",
+                    "label": "Crypto Meningitis",
                     "concept": "1eb028a7-d8eb-4fcc-a99c-e47f3dc00d5b"
                   },
                   {
@@ -981,7 +960,7 @@
                 "isSimpleValue": true
               },
               "hide": {
-                "hideWhenExpression": "isEmpty(oi) || !arrayContains(oi, 'ef5d7595-87f6-4814-95e0-41533a517783')",
+                "hideWhenExpression": "isEmpty(oi) || !arrayContains(oi, 'ef5d7595-87f6-4814-95e0-41533a517783')"
               }
             },
             {
@@ -1375,7 +1354,7 @@
                     "label": "Yes"
                   },
                   {
-                    "concept": "f9f633a5-1544-4c44-9394-a7f746a12dff",
+                    "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e",
                     "label": "No"
                   }
                 ]
@@ -1707,7 +1686,7 @@
                     "label": "Yes"
                   },
                   {
-                    "concept": "f9f633a5-1544-4c44-9394-a7f746a12dff",
+                    "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e",
                     "label": "No"
                   }
                 ]
@@ -2476,7 +2455,7 @@
                         "concept": "096b1e7d-4d8c-4386-a5dc-54b6ad84a167"
                       },
                       {
-                        "label": "Other Reason (Specify)",
+                        "label": "Other",
                         "concept": "b4d8805f-40ff-4c9d-9118-feeab45ad8be"
                       }
                     ]
@@ -2566,7 +2545,7 @@
                         "concept": "25f0cca5-902d-4e36-9e4f-5ce5da744a75"
                       },
                       {
-                        "label": "Other Reason (Specify)",
+                        "label": "Other",
                         "concept": "b4d8805f-40ff-4c9d-9118-feeab45ad8be"
                       }
                     ]
@@ -2643,7 +2622,7 @@
                         "concept": "78e49624-0e33-4374-93b7-60b132b26dae"
                       },
                       {
-                        "label": "Other Reason (Specify)",
+                        "label": "Other",
                         "concept": "b4d8805f-40ff-4c9d-9118-feeab45ad8be"
                       }
                     ]
@@ -2779,7 +2758,7 @@
             {
               "label": "CD4 %",
               "id": "cd4CountPercentage",
-              "required": true,
+              "required": false,
               "questionOptions": {
                 "answers": [],
                 "concept": "809dd0f5-ce54-441c-b835-a2a8b06a6140",
@@ -2898,7 +2877,7 @@
                     "label": "Yes"
                   },
                   {
-                    "concept": "f9f633a5-1544-4c44-9394-a7f746a12dff",
+                    "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e",
                     "label": "No"
                   }
                 ]
@@ -3020,7 +2999,6 @@
       ]
     }
   ],
-  "version": "1.1",
   "description": "HIV Care Follow Up",
   "encounterType": "e8481555-9dd1-4bb5-ba8c-cb721dafb166",
   "uuid": "6ecd2735-3030-43e1-b466-5d3958af7109"

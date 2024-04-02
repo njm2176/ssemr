@@ -602,9 +602,9 @@
 				  "answers": []
 				},
 				"alert": {
-					"alertWhenExpression": "myValue && (myValue >= 100.5 || myValue < 59.5)",
-					"message": "Pulse Rate is out of range (Normal range 60-100)"
-				  },
+				  "alertWhenExpression": "myValue && (myValue >= 100.5 || myValue < 59.5)",
+				  "message": "Pulse Rate is out of range (Normal range 60-100)"
+				},
 				"validators": []
 			  },
 			  {
@@ -620,9 +620,9 @@
 				  "answers": []
 				},
 				"alert": {
-					"alertWhenExpression": "myValue && (myValue >= 16.5 || myValue < 11.5)",
-					"message": "Respiratory Rate is out of range (Normal range 12-16)"
-				  },
+				  "alertWhenExpression": "myValue && (myValue >= 16.5 || myValue < 11.5)",
+				  "message": "Respiratory Rate is out of range (Normal range 12-16)"
+				},
 				"validators": []
 			  },
 			  {
@@ -638,9 +638,9 @@
 				  "answers": []
 				},
 				"alert": {
-					"alertWhenExpression": "myValue && (myValue >= 37.5 || myValue < 35)",
-					"message": "Temperature is out of range (Normal range 35-37)"
-				  },
+				  "alertWhenExpression": "myValue && (myValue >= 37.5 || myValue < 35)",
+				  "message": "Temperature is out of range (Normal range 35-37)"
+				},
 				"validators": []
 			  }
 			]
@@ -1854,7 +1854,7 @@
 					},
 					{
 					  "concept": "48bcb0b6-46a5-42e5-a50c-d572f28badda",
-					  "label": "lineal gingival erythemaunexplained persistent parotid enlargement"
+					  "label": "Lineal gingival erythema"
 					},
 					{
 					  "concept": "cc23bab5-d6eb-4e16-948b-25a366080dba",
@@ -1862,7 +1862,7 @@
 					},
 					{
 					  "concept": "2f08824f-742f-4a0e-a954-360785142bfb",
-					  "label": "Recurrent bacterial upper respiratory tract infections (two or more in last 6 months): sinusitis, otitis media, tonsillopharyngitis"
+					  "label": "Recurrent  or chronic upper respiratory  tract infection(otitis media, ottorhea, sinusitis or tonsillitis)"
 					},
 					{
 					  "concept": "fd058231-e7bf-4c3b-a0d5-7649b83fcb52",
@@ -1899,7 +1899,7 @@
 					},
 					{
 					  "concept": "0ad0e066-3a2e-4cef-a0e2-4c40e322f6af",
-					  "label": "Current Pulmonary TB"
+					  "label": "Pulmonary TB"
 					},
 					{
 					  "concept": "4aad5db8-837b-4695-9248-f61063d857ba",
