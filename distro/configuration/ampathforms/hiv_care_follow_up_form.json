@@ -1,10 +1,8 @@
 {
   "name": "F. 8 - Follow up",
   "version": "1.0",
-  "version": "1.0",
   "retired": false,
   "published": true,
-  "encounter": "Follow up",
   "encounter": "Follow up",
   "pages": [
     {
@@ -317,6 +315,27 @@
                   "allowFutureDates": "true"
                 }
               ]
+            },
+            {
+              "label": "MUAC for pregnant mothers",
+              "type": "obs",
+              "id": "muacAdults",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "1343AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "max": "250",
+                "min": "0"
+              },
+              "validators": [
+                {
+                  "type": "js_expression",
+                  "failsWhenExpression": "muac < 0 || muac > 250",
+                  "message": "MUAC should not be less than 0 or higher that 250"
+                }
+              ],
+              "hide": {
+                "hideWhenExpression": "pregStatus !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
+              }
             },
             {
               "label": "Is the client BreastFeeding?",
