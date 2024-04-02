@@ -26,10 +26,13 @@
 							"label": "Provider:",
 							"type": "encounterProvider",
 							"questionOptions": {
-								"rendering": "ui-select-extended"
+							  "rendering": "text",
+							  "concept": "7f77c914-aff6-4378-ad07-755ccf99353a",
+							  "conceptMappings": [],
+							  "answers": []
 							},
-							"id": "encProvider "
-						},
+							"id": "encProvider"
+						  },
 						{
 							"label": "Location:",
 							"type": "encounterLocation",

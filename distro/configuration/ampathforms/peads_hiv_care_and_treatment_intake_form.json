@@ -29,9 +29,12 @@
 				"label": "Provider:",
 				"type": "encounterProvider",
 				"questionOptions": {
-				  "rendering": "ui-select-extended"
+				  "rendering": "text",
+				  "concept": "7f77c914-aff6-4378-ad07-755ccf99353a",
+				  "conceptMappings": [],
+				  "answers": []
 				},
-				"id": "encProvider "
+				"id": "encProvider"
 			  },
 			  {
 				"label": "Health Facility name:",
@@ -1640,38 +1643,70 @@
 			"label": "Baseline Laboratory Findings",
 			"isExpanded": "true",
 			"questions": [
-			  {
-				"label": "CD4",
-				"type": "obs",
-				"required": false,
-				"id": "cd4",
-				"questionOptions": {
-				  "rendering": "number",
-				  "concept": "809dd0f5-ce54-441c-b835-a2a8b06a6140",
-				  "conceptMappings": [],
-				  "answers": []
-				},
-				"validators": [],
-				"hide": {
-				  "hideWhenExpression": "age < 5"
-				}
-			  },
-			  {
-				"label": "CD4 %",
-				"type": "obs",
-				"required": false,
-				"id": "cd4UnderFive",
-				"questionOptions": {
-				  "rendering": "number",
-				  "concept": "809dd0f5-ce54-441c-b835-a2a8b06a6140",
-				  "conceptMappings": [],
-				  "answers": []
-				},
-				"validators": [],
-				"hide": {
-				  "hideWhenExpression": "age >= 5"
-				}
-			  },
+				{
+					"label": "Is CD4 Done?",
+					"required": true,
+					"type": "obs",
+					"id": "cd4Done",
+					"questionOptions": {
+					  "rendering": "radio",
+					  "concept": "2652c9e7-72c5-48ae-b6ee-0bd3dcb65fca",
+					  "answers": [
+						{
+						  "concept": "78763e68-104e-465d-8ce3-35f9edfb083d",
+						  "label": "Yes"
+						},
+						{
+						  "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e",
+						  "label": "No"
+						}
+					  ]
+					}
+				  },
+				  {
+					"label": "CD4 Count",
+					"id": "cd4Count",
+					"required": false,
+					"questionOptions": {
+					  "answers": [],
+					  "concept": "809dd0f5-ce54-441c-b835-a2a8b06a6140",
+					  "rendering": "numeric",
+					  "min": 0
+					},
+					"type": "obs",
+					"hide": {
+					  "hideWhenExpression": "age <= 5 || cd4Done !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
+					},
+					"validators": [
+					  {
+						"type": "js_expression",
+						"failsWhenExpression": "cd4Count < 0",
+						"message": "CD4 Count should not be less than 0"
+					  }
+					]
+				  },
+				  {
+					"label": "CD4 %",
+					"id": "cd4CountPercentage",
+					"required": false,
+					"questionOptions": {
+					  "answers": [],
+					  "concept": "809dd0f5-ce54-441c-b835-a2a8b06a6140",
+					  "rendering": "numeric",
+					  "min": 0
+					},
+					"type": "obs",
+					"hide": {
+					  "hideWhenExpression": "age > 5 || cd4Done !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
+					},
+					"validators": [
+					  {
+						"type": "js_expression",
+						"failsWhenExpression": "cd4Count < 0",
+						"message": "CD4% should not be less than 0"
+					  }
+					]
+				  },
 			  {
 				"label": "CBC",
 				"type": "obs",
