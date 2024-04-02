@@ -1061,8 +1061,8 @@
               "validators": [
                 {
                   "type": "js_expression",
-                  "failsWhenExpression": "cd4Count < 0",
-                  "message": "CD4% should not be less than 0"
+                  "failsWhenExpression": "cd4CountPercentage < 0 || cd4CountPercentage > 100",
+                  "message": "CD4% should not be less than 0 or above 100%"
                 }
               ]
             },

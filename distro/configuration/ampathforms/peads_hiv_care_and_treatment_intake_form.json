@@ -1700,11 +1700,11 @@
 					  "hideWhenExpression": "age > 5 || cd4Done !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
 					},
 					"validators": [
-					  {
-						"type": "js_expression",
-						"failsWhenExpression": "cd4Count < 0",
-						"message": "CD4% should not be less than 0"
-					  }
+						{
+							"type": "js_expression",
+							"failsWhenExpression": "cd4CountPercentage < 0 || cd4CountPercentage > 100",
+							"message": "CD4% should not be less than 0 or above 100%"
+						  }
 					]
 				  },
 			  {
