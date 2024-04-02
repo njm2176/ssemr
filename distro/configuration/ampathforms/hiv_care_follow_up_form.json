@@ -1,8 +1,9 @@
 {
   "name": "F. 8 - Follow up",
+  "version": "1.0",
   "retired": false,
-  "encounter": "Follow up",
   "published": true,
+  "encounter": "Follow up",
   "pages": [
     {
       "label": "Client Details",
@@ -2998,7 +2999,6 @@
       ]
     }
   ],
-  "version": "1.1",
   "description": "HIV Care Follow Up",
   "encounterType": "e8481555-9dd1-4bb5-ba8c-cb721dafb166",
   "uuid": "6ecd2735-3030-43e1-b466-5d3958af7109"
