@@ -28,9 +28,12 @@
 				"label": "Provider:",
 				"type": "encounterProvider",
 				"questionOptions": {
-				  "rendering": "ui-select-extended"
+				  "rendering": "text",
+				  "concept": "7f77c914-aff6-4378-ad07-755ccf99353a",
+				  "conceptMappings": [],
+				  "answers": []
 				},
-				"id": "encProvider "
+				"id": "encProvider"
 			  },
 			  {
 				"label": "Location:",
@@ -70,7 +73,7 @@
 				"required": false,
 				"id": "timesampleCol",
 				"questionOptions": {
-				  "rendering": "number",
+				  "rendering": "time",
 				  "concept": "9fc84874-ec1c-4f15-9e0d-5a73dd416667",
 				  "conceptMappings": [],
 				  "answers": []
