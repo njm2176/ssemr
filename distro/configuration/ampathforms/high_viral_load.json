@@ -29,7 +29,7 @@
 			  },
 			  {
 				"label": "Provider:",
-				"type": "encounterProvider",
+				"type": "obs",
 				"questionOptions": {
 				  "rendering": "text",
 				  "concept": "7f77c914-aff6-4378-ad07-755ccf99353a",
@@ -172,7 +172,7 @@
 			  {
 				"label": "Current WHO T-staging",
 				"type": "obs",
-				"id": "dateSampleCollection",
+				"id": "currentWhoStaging",
 				"questionOptions": {
 				  "concept": "e38e6ce2-92d9-4382-927b-5555ff9fa850",
 				  "rendering": "select",
@@ -383,6 +383,21 @@
 				"validators": []
 			  },
 			  {
+				"label": "Specify Other EAC Barrier",
+				"type": "obs",
+				"required": false,
+				"id": "otherBarriers",
+				"questionOptions": {
+				  "rendering": "text",
+				  "concept": "f481d175-85fa-45d6-bfd7-66d9deb34eaf",
+				  "conceptMappings": []
+				},
+				"validators": [],
+				"hide": {
+				  "hideWhenExpression": "isEmpty(adherenceBarriers) || !arrayContains(adherenceBarriers, 'a393d1ee-e6eb-4f84-b75c-848a99343760')"
+				}
+			  },
+			  {
 				"label": "Interventions",
 				"type": "obs",
 				"required": false,
@@ -549,13 +564,13 @@
 				  "conceptMappings": [],
 				  "answers": [
 					{
-						"concept": "78763e68-104e-465d-8ce3-35f9edfb083d",
-						"label": "Yes"
-					  },
-					  {
-						"concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e",
-						"label": "No"
-					  }
+					  "concept": "78763e68-104e-465d-8ce3-35f9edfb083d",
+					  "label": "Yes"
+					},
+					{
+					  "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e",
+					  "label": "No"
+					}
 				  ]
 				},
 				"validators": []
@@ -757,7 +772,7 @@
 				"validators": [],
 				"alert": {
 				  "alertWhenExpression": "repeatVLResult >= 1000",
-				  "message": "VL is 1000 or above, please fill the EAC Details"
+				  "message": "VL is still 1000 or above"
 				}
 			  },
 			  {
