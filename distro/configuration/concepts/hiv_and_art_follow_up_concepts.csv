@@ -74,12 +74,12 @@ be8d8351-6dad-4f91-a5a1-40c56656bbf5,,New OI (other Problems),New OI (other Prob
 ebd187f8-d15a-4fad-8849-9f74da5c3fc9,,Stage 3,Stage 3,Stage 3,,,,Misc,N/A,
 831d263e-4dfb-4f05-bcfb-629961c07844,,Stage 4,Stage 4,Stage 4,,,,Misc,N/A,
 e38e6ce2-92d9-4382-927b-5555ff9fa850,,WHO Stage,WHO Stage,WHO Stage,,,,Question,Coded,Stage 1 ;Stage 2 ;Stage 3;Stage 4
-222dc837-30a5-42c4-a0a9-7d4a125ffe70,,Cotrimoxazole/Dapsone,Cotrimoxazole/Dapsone,Cotrimoxazole/Dapsone,,,,Question,Boolean,
-74e61e07-fd72-4d67-ab85-b87ceec3b637,,"Cotrimoxazole/Dapsone,ART Followup",Cotrimoxazole/Dapsone,,,,,Question,Boolean,
+222dc837-30a5-42c4-a0a9-7d4a125ffe70,,Cotrimoxazole/Dapsone,Cotrimoxazole/Dapsone,Cotrimoxazole/Dapsone,,,,Question,Coded,Yes; No
+74e61e07-fd72-4d67-ab85-b87ceec3b637,,"Cotrimoxazole/Dapsone,ART Followup",Cotrimoxazole/Dapsone,,,,,Question,Coded,Yes; No
 2b103b92-c562-4cae-b433-9cdbb5d7bff3,,CTX Dose,,,,,,Question,Text,
 4238e921-d4c8-4645-ab94-b4f4bf5f2d93,,Dose,Dose,Dose,,,,Question,Text,
 ac775264-a811-4b3e-a64f-0c20ae8f9b0c,,Adherence Dose/Days - Number of Days,Number of Days Dispensed,,,,,Question,Numeric,
-7ddb08f2-09e8-48ef-a08f-3744467fec48,,INH,INH,INH,,,,Question,Boolean,
+7ddb08f2-09e8-48ef-a08f-3744467fec48,,INH,INH,INH,,,,Question,Coded,Yes; No
 f3e0e70f-3630-410d-b56f-4c5b896bfb99,,180,180,,,,,Misc,N/A,
 07c7248c-87af-4fe5-8cc4-9d04b22a3cb2,,720,720,,,,,Misc,N/A,
 6e1eec92-c447-4814-a6ad-798e657f9470,,760,760,,,,,Misc,N/A,
@@ -182,8 +182,8 @@ fc684917-4deb-42cf-9245-8a13c6a232bc,,Date VL Sample Collected?,Date VL Sample C
 714752ad-61df-44e0-ae40-fa9bf4f9d831,,Adherence Good,Good,Adherence Good,,,,Misc,N/A,
 535ea56b-0138-4804-ab23-e70f2dbe0b61,,Adherence Fair,Fair,Adherence Fair,,,,Misc,N/A,
 f05f31c1-5f06-4ada-8cbd-a877cb06442a,,Adherence Poor,Poor,Adherence Poor,,,,Misc,N/A,
-e360501a-123a-4efb-93ef-4dc19d031921,,CTX Adherence,CTX Adherence,CTX Adherence,,,,Question,Coded,Adherence Good ; Adherence Fair ; Adherence Poor
-d5d1d355-9e77-4e11-b733-884974f51169,,was counselling done?,was counselling done?,,,,,Question,Boolean,
+e360501a-123a-4efb-93ef-4dc19d031921,,CTX Adherence,CTX Adherence,CTX Adherence,,,,Question,Coded,Adherence Good ; Adherence Fair ; Adherence Poor; Not Applicable
+d5d1d355-9e77-4e11-b733-884974f51169,,was counselling done?,was counselling done?,,,,,Question,Coded,Yes; No
 a4b7b40d-bd4a-4b7a-9826-593088f1e3af,,Toxicity/side effects,Toxicity/side effects,,,,,Misc,N/A,
 046c6032-7030-4b50-9e8e-831b8ee76bc5,,Share with others,Share with others,,,,,Misc,N/A,
 188dc5ba-1c33-4789-b39c-267a2ff29b96,,Forgot,Forgot,,,,,Misc,N/A,
@@ -252,7 +252,7 @@ Other Adherence Reason"
 599137e4-9f91-4b51-aa73-c9b68fe81ac5,,Third EAC Session Date,Third EAC Session Date,,,,,Question,Date,
 6851bf56-ded4-4b89-ba93-d9d380927e15,,Classification Of Adherence(Third EAC session),Adherence(Third session),,,,,Question,Coded,Adherence Good ; Adherence Fair ; Adherence Poor
 ee910383-e469-4eab-a634-76a2f7a762c9,,Classification Of Adherence After EAC,Adherence After EAC,,,,,Question,Coded,Adherence Good ; Adherence Fair ; Adherence Poor
-eeb4976d-704f-4dd0-a84b-34cfb06a52d6,,MDT Held?,MDT Held?,Multi-displinary team,,,,Question,Boolean,
+eeb4976d-704f-4dd0-a84b-34cfb06a52d6,,MDT Held?,MDT Held?,Multi-displinary team,,,,Question,Coded,Yes; No
 f46b65c5-f62b-4ad9-a8c8-30cc6aca82f2,,Date MDT Held,Date MDT Held,,,,,Question,Date,
 2252b2e9-adcd-4ee0-8bac-b74ce21a4627,,Extending EAC,Extending EAC,Extending EAC,,,,Misc,N/A,
 af4406c4-bd39-4523-942c-8a45d95453f6,,Switch Regimen,Switch Regimen,Switch Regimen,,,,Misc,N/A,
@@ -499,30 +499,38 @@ Not Applicable"
 beffd410-b9a4-4cfd-9a29-22512980de1b,,HIV AND ART FOLLOW UP FORM,HIV AND ART FOLLOW UP FORM,HIV AND ART FOLLOW UP FORM,,,,Misc,N/A,
 651fe449-14f9-44e7-8114-7dcd6d3f80ec,,EAC FORM,EAC FORM,EAC FORM,,,,Misc,N/A,
 940923e2-433e-4d58-869f-dd099333af9b,,ENHANCED ADHERENCE COUNSELLING FORM,ENHANCED ADHERENCE COUNSELLING FORM,ENHANCED ADHERENCE COUNSELLING FORM,,,,Misc,N/A,
-39ec38d1-7b35-4f05-ab87-10983da0b484,,0 Days,0 Days,,,,,Misc,N/A,
-7b0642e1-7607-4b0f-806e-703b195345ea,,30 Days,30 Days,,,,,Misc,N/A,
-3cd5ec7d-ac0e-46cc-8a46-ab7628da0a4f,,60 Days,60 Days,,,,,Misc,N/A,
-af06426c-e63e-4f83-bdbc-a855c42bb0ca,,90 Days,90 Days,,,,,Misc,N/A,
-c036d8cb-9416-43b3-b23f-91913ce424a3,,120 Days,120 Days,,,,,Misc,N/A,
-faf5d5dc-1547-49f7-941d-6fdf2d1bfa50,,150 Days,150 Days,,,,,Misc,N/A,
-91e0bcf5-8968-4004-9e14-bb466fccaf53,,180 Days,180 Days,,,,,Misc,N/A,
-2e74862a-bb28-4e10-9a9a-b959a4a5da60,,180+ Days,180+ Days,,,,,Misc,N/A,
-3fa33347-9871-497b-81f3-7a791b9f4bae,,Pills Dispensed Dose,Pills Dispensed Dose,,,,,Question,Coded,"0 Days;
-30 Days;
-60 Days;
-90 Days;
-120 Days;
-150 Days;
-180 Days;
-180+ Days"
-043177ba-5090-4369-896f-982f046773d6,,Number pills Dispensed,Number pills Dispensed,,,,,Question,Coded,"0 Days;
-30 Days;
-60 Days;
-90 Days;
-120 Days;
-150 Days;
-180 Days;
-180+ Days"
+39ec38d1-7b35-4f05-ab87-10983da0b484,,0 Pills,0 Pills,,,,,Misc,N/A,
+7b0642e1-7607-4b0f-806e-703b195345ea,,30 Pills,30 Pills,,,,,Misc,N/A,
+3cd5ec7d-ac0e-46cc-8a46-ab7628da0a4f,,60 Pills,60 Pills,,,,,Misc,N/A,
+af06426c-e63e-4f83-bdbc-a855c42bb0ca,,90 Pills,90 Pills,,,,,Misc,N/A,
+c036d8cb-9416-43b3-b23f-91913ce424a3,,120 Pills,120 Pills,,,,,Misc,N/A,
+faf5d5dc-1547-49f7-941d-6fdf2d1bfa50,,150 Pills,150 Pills,,,,,Misc,N/A,
+91e0bcf5-8968-4004-9e14-bb466fccaf53,,180 Pills,180 Pills,,,,,Misc,N/A,
+2e74862a-bb28-4e10-9a9a-b959a4a5da60,,180+ Pills,180+ Pills,,,,,Misc,N/A,
+3fa33347-9871-497b-81f3-7a791b9f4bae,,Pills Dispensed Dose,Pills Dispensed Dose,,,,,Question,Coded,"0 Pills;
+30 Pills;
+60 Pills;
+90 Pills;
+120 Pills;
+150 Pills;
+180 Pills;
+180+ Pills"
+043177ba-5090-4369-896f-982f046773d6,,Number pills Dispensed,Number pills Dispensed,,,,,Question,Coded,"0 Pills;
+30 Pills;
+60 Pills;
+90 Pills;
+120 Pills;
+150 Pills;
+180 Pills;
+180+ Pills"
+e9d42057-5171-4ca6-8024-2d80162a094a,,0 Days,0 Days,,,,,Misc,N/A,
+c595ca5a-0392-41b3-be35-57c0def42c07,,30 Days,30 Days,,,,,Misc,N/A,
+b86d480a-c6a9-421b-85ac-fa63fd5b31ae,,60 Days,60 Days,,,,,Misc,N/A,
+e01b566c-9660-49e2-8693-b9ca4cf84b1d,,90 Days,90 Days,,,,,Misc,N/A,
+ea0a6423-365f-488b-a316-f1953db1e064,,120 Days,120 Days,,,,,Misc,N/A,
+8257517f-402f-4613-8dda-3d79a0c1451d,,150 Days,150 Days,,,,,Misc,N/A,
+5c7c6c22-672c-4847-8723-622e0e062f4d,,180 Days,180 Days,,,,,Misc,N/A,
+bc8f2249-10f4-40a8-a960-952ea5f29b30,,180+ Days,180+ Days,,,,,Misc,N/A,
 417625de-7d5e-45e4-bec7-60d72c94e657,,Number of Days Dispensed,Number of Days Dispensed,,,,,Question,Coded,"0 Days;
 30 Days;
 60 Days;
@@ -539,14 +547,14 @@ faf5d5dc-1547-49f7-941d-6fdf2d1bfa50,,150 Days,150 Days,,,,,Misc,N/A,
 150 Days;
 180 Days;
 180+ Days"
-1c8a00ad-8d9c-48e0-8011-8f79f5f9fa05,,"Dapsone, Pills Dispensed Dose","Dapsone, Pills Dispensed Dose",,,,,Question,Coded,"0 Days;
-30 Days;
-60 Days;
-90 Days;
-120 Days;
-150 Days;
-180 Days;
-180+ Days"
+1c8a00ad-8d9c-48e0-8011-8f79f5f9fa05,,"Dapsone, Pills Dispensed Dose","Dapsone, Pills Dispensed Dose",,,,,Question,Coded,"0 Pills;
+30 Pills;
+60 Pills;
+90 Pills;
+120 Pills;
+150 Pills;
+180 Pills;
+180+ Pills"
 ef1c0931-32ee-47f5-9ecc-8c18eef2d706,,RPR,RPR,,,,,Misc,N/A,
 cfecd49f-41ed-405e-994f-3bf346413c7b,,HB - Lab Test,HB - Lab Test,,,,,Misc,N/A,
 b36e7148-6d1b-4347-901e-e5811f1fa899,,Sputum - Lab Test,Sputum - Lab Test,,,,,Misc,N/A,
@@ -554,13 +562,15 @@ b36e7148-6d1b-4347-901e-e5811f1fa899,,Sputum - Lab Test,Sputum - Lab Test,,,,,Mi
 d7d9d923-c7fe-4573-81cf-9e3d48158014,,HepB,HepB,,,,,Misc,N/A,
 90be4b0d-f2b8-46d8-ace5-6246608acbb9,,RFTs,RFTs,,,,,Misc,N/A,
 4cfb4018-141a-4387-9e2a-6980aa3840c7,,LFTs,LFTs,,,,,Misc,N/A,
+6cfc61ed-08ec-45cf-8317-325958dfdb9a,,No Information,No Information,,,,,Misc,N/A,
 f5b60f09-9d8a-4bda-9318-9ef097c77945,,Lab Tests,Lab Tests,,,,,Question,Coded,"RPR;
 HB - Lab Test;
 Sputum - Lab Test;
 CXR - Lab Test;
 HepB;
 RFTs;
-LFTs"
+LFTs;
+No Information"
 e8efb800-7c83-4616-ad7e-46c74ef0acd0,,Nutritional support,Nutritional support,,,,,Misc,N/A,
 99d197a6-c316-11e9-9cb5-2a2ae2dbcce4,,Infant feeding,Infant feeding,,,,,Misc,N/A,
 d3f86020-1ce2-4bff-8dbc-42bc98fcf080,,CVS,CVS,,,,,Misc,N/A,
@@ -585,7 +595,8 @@ B, N burning/numb/tingling;
 CNS: dizzy, anxiety, nightmare, depression;
 Jaundice;
 Abdominal pain;
-Persistent headaches"
+Persistent headaches;
+Not Applicable"
 d9a0a7c1-66d8-4f71-aef6-e0aef4a5f2b1,,Toxo Plasmosis,Toxo Plasmosis,,,,,Misc,N/A,
 99e4878e-16ea-49d3-aa0e-585def370014,,Diarrhoea Opportunistic Infection,Diarrhoea Opportunistic Infection,,,,,Misc,N/A,
 0cf0ac7e-a631-474e-8fcd-f1dbba986589,,Herpes Genitalis Opportunistic Infection,Herpes Genitalis Opportunistic Infection,,,,,Misc,N/A,
@@ -596,6 +607,7 @@ f5efbdba-0950-421a-bf08-451fb6fe1752,,Candidiasis Opportunistic Infection,Candid
 8ee9d84c-8ad4-483c-8951-d6ec976822fc,,Cytomegato Virus Opportunistic Infection,Cytomegato Virus Opportunistic Infection,,,,,Misc,N/A,
 9c7b5817-5b77-4601-a11f-bc4508998c56,,Pneumocysitis Pneumonia Opportunistic Infection,Pneumocysitis Pneumonia Opportunistic Infection,,,,,Misc,N/A,
 1eb028a7-d8eb-4fcc-a99c-e47f3dc00d5b,,Crypto Meningitis Opportunistic Infection,Crypto Meningitis Opportunistic Infection,,,,,Misc,N/A,
+26706674-eda4-49e8-a48b-3ccf0293bebf,,No Opportunistic Infections,No Opportunistic Infections,,,,,Misc,N/A,
 ef5d7595-87f6-4814-95e0-41533a517783,,Others-Opportunistic infection,Others-Opportunistic infection,,,,,Misc,N/A,
 e0d24a66-6fb5-47e1-852f-32a8f8ed71e2,,Opportunistic Infections,Opportunistic Infections,,,,,Question,Coded,"Toxo Plasmosis;
 Diarrhoea Opportunistic Infection;
@@ -607,6 +619,7 @@ Bacterial Pneumonia Opportunistic Infection;
 Cytomegato Virus Opportunistic Infection;
 Pneumocysitis Pneumonia Opportunistic Infection;
 Crypto Meningitis Opportunistic Infection;
+No Opportunistic Infections;
 Others-Opportunistic infection"
 420bd170-df26-4948-9e80-f8f95e8492f3,,Date started on CTX,Date started on CTX,,,,,Question,Date,
 d8a05f0f-3a39-4338-b40e-45567d5fd406,,Date started on Dapsone,Date started on Dapsone,,,,,Question,Date,
@@ -615,3 +628,5 @@ d8a05f0f-3a39-4338-b40e-45567d5fd406,,Date started on Dapsone,Date started on Da
 7ccc6227-f42f-4c45-822a-e11961ada35a,,Pill intake,Pill intake,,,,,Question,Numeric,
 4ba12b8a-72a4-4135-8c06-be72532b7650,,Pill percentage,Pill percentage,,,,,Question,Numeric,
 0fa5669b-041d-446d-9ae6-8e88a980858f,,Date of extra session,Date of extra session,,,,,Question,Date,
+2652c9e7-72c5-48ae-b6ee-0bd3dcb65fca,,Is CD4 done?,Is CD4 done?,,,,,Question,Coded,Yes; No
+2cef90d7-7d4f-4bda-accd-8e51e612037f,,Viral Load test done?,Viral Load test done?,,,,,Question,Coded,Yes; No
