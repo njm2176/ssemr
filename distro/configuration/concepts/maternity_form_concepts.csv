@@ -11,17 +11,14 @@ e559db34-2171-11ea-978f-2e728ce88125,,"Maternity card, Place Test Hiv","Place Te
 "e559dc7e-2171-11ea-978f-2e728ce88125
 
 ",,"Maternity card, Date Test Hiv",Date Tested HIV,"Maternity card, Date Test Hiv",,,,Question,Date,
-e559ddbe-2171-11ea-978f-2e728ce88125,,"Maternity card, Mother tested in Maternity",Mother Tested In Maternity,"Maternity card, Mother tested Hiv",,,,Question,Coded,"Yes;
-No"
+e559ddbe-2171-11ea-978f-2e728ce88125,,"Maternity card, Mother tested in Maternity",Mother Tested In Maternity,"Maternity card, Mother tested Hiv",,,,Question,Boolean,
 14e36949-4867-4448-b6db-0f71b5462290,,"Maternity card, Date tested in Maternity",Date tested in Maternity,Date tested in Maternity,,,,Question,Date,
 "e559e1d8-2171-11ea-978f-2e728ce88125
 ",,"Maternity card, Status After Testing HIV",Status After Testing HIV,"Maternity card, Status After Testing Hiv",,,,Question,Coded,"Positive;Negative;Hiv Test, inconclusive"
 e559e340-2171-11ea-978f-2e728ce88125,,"
 Maternity Card, Known +ve On ART",Known +ve On ART,"
-Maternity Card, Known +ve On ART",,,,Question,Coded,"Yes;
-No"
-e559e52a-2171-11ea-978f-2e728ce88125,,"Maternity card, New On ART",New On ART,"Maternity card, New On ART",,,,Question,Coded,"Yes;
-No"
+Maternity Card, Known +ve On ART",,,,Question,Boolean,
+e559e52a-2171-11ea-978f-2e728ce88125,,"Maternity card, New On ART",New On ART,"Maternity card, New On ART",,,,Question,Boolean,
 e559e692-2171-11ea-978f-2e728ce88125,,"Maternity card, Date Started ART",Date Started ART,"Maternity card, Date Started ART",,,,Question,Date,
 2d5c99da-2172-11ea-978f-2e728ce88125,,"Maternity card, ART Regimen During Pregnacy",ART Regimen During Pregnacy,"Maternity card, ART Regimen During Pregnacy",,,,Question,Coded,"1a = AZT/3TC+EFV ;
 1b = AZT/3TC/NVP ;
@@ -63,8 +60,7 @@ e559e692-2171-11ea-978f-2e728ce88125,,"Maternity card, Date Started ART",Date St
 2j=ABC/3TC+ATV/r ;
 2k=TDF/3TC/DTG"
 "
-2d5c9e4e-2172-11ea-978f-2e728ce88125",,"Maternity card,ART Newly Started in Labor",Newly Started in Labor,"Maternity card, Newly Started in Labor",,,,Question,Coded,"Yes;
-No"
+2d5c9e4e-2172-11ea-978f-2e728ce88125",,"Maternity card,ART Newly Started in Labor",Newly Started in Labor,"Maternity card, Newly Started in Labor",,,,Question,Boolean,
 2d5ca0c4-2172-11ea-978f-2e728ce88125,,"Maternity card, General Information",General Information,"Maternity card, General Information",,,,Misc,N/A,
 2d5ca218-2172-11ea-978f-2e728ce88125,,"Delivery Outcome, Live Birth(LB)",Live Birth(LB),"Delivery Outcome, Live Birth(LB)",,,,Misc,N/A,
 2d5ca45c-2172-11ea-978f-2e728ce88125,,"Delivery Outcome, Macerated Still Birth(MSB)",Macerated Still Birth(MSB),"Delivery Outcome, Macerated Still Birth(MSB)",,,,Misc,N/A,
@@ -84,8 +80,7 @@ f78e08ab-124f-4983-9c94-fb23e2343518,,Maternal Outcome(last  Follow up),Outcome 
 fb1e13b5-ba4e-436f-b4ce-d54e8ce89119,,Date Mother/Baby Transferred to ART,Date Mother/Baby Transferred to ART,Date Mother/Baby Transferred to ART,,,,Question,Date,
 6d26a9c9-23cd-44fe-82b2-251aca750711,,ARV Mother Discharged With,ARV Mother Discharged With,ARV Mother Discharged With,,,,Question,Coded,1a;1b;1c;1d;1e;1f;1g;1h;2a;2b;2c;2d;2e;2f;2g;2h;2i;2j;2k
 02f876c6-c9c0-4a76-9a3e-4027e1cfb777,,Infant HIV Status,HIV Status,Infant HIV Status,,,,Question,Coded,Negative;Positive;Unknown
-fed906cd-33eb-4b04-bce7-8d7ed74e5bb8,,Infant Received ARV Prophylaxis at Birth,Infant Received ARV Prophylaxis at Birth,Infant Received ARV Prophylaxis at Birth,,,,Question,Coded,"Yes;
-No"
+fed906cd-33eb-4b04-bce7-8d7ed74e5bb8,,Infant Received ARV Prophylaxis at Birth,Infant Received ARV Prophylaxis at Birth,Infant Received ARV Prophylaxis at Birth,,,,Question,Boolean,
 17aa0c29-62fb-4482-8c86-3ca3b6a888b2,,High Risk Infant,High Risk Infant,High Risk Infant,,,,Misc,N/A,
 47937120-0c38-4994-a518-c988f0381746,,Low Risk Infant,Low Risk Infant,Low Risk Infant,,,,Misc,N/A,
 "

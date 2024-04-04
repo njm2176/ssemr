@@ -1,7 +1,6 @@
 Uuid,Void/Retire,Fully specified name:en,Short name:en,Description:en,...,_version:1,_order:126,Data class,Data type,Answers
 874452af-4d24-483a-a3c0-6c6de76274cc,,CBC,CBC,,,,,Finding,Text,
-150f69fd-140d-4559-85b7-6be94f371167,,Is the Client Pregnant,Is the Client Pregnant,,,,,Finding,Coded,"Yes;
-No"
+150f69fd-140d-4559-85b7-6be94f371167,,Is the Client Pregnant,Is the Client Pregnant,,,,,Finding,Boolean,
 f9e6254d-fd14-4831-9ee0-85099a72b3e8,,Pregnancy Test,Pregnancy Test,,,,,Finding,Text,
 33a340e7-67e7-4bc0-a669-6a5f6a6abe88,,HBsAg,HBsAg,,,,,Finding,Text,
 8218c436-897e-4298-be27-c58016b00e7a,,HCV Antibody,HCV Antibody,,,,,Finding,Text,
@@ -302,4 +301,3 @@ HIV encephalopathy;
 Disseminated endemic mycosis(coccidiomycosis or histoplasmosis);
 chronic  cryptosporidiosis(with diarrhea);
 cerebral  or B-cell non- Hodgkin lymphoma"
-7f77c914-aff6-4378-ad07-755ccf99353a,,Provider,Provider,,,,,Question,Text,

@@ -1,6 +1,5 @@
 Uuid,Answers,Members,Fully specified name:en,Data class,Data type,_version:1,_order:111
-75cb96fc-c15c-48a8-a989-a84fa53ea11d,"Yes;
-No",,Switched Regimen,Question,Coded,,
+75cb96fc-c15c-48a8-a989-a84fa53ea11d,,,Switched Regimen,Question,Boolean,,
 846b66b2-1073-4377-b787-580db9b3ccde,Regimen Switched To (Adult First Line) ; Regimen Switched To (Adult Second Line),,Regimen Switched To,Question,Coded,,
 d1f02073-460c-4cd4-89b0-c16766e06334,"1a = AZT/3TC + EFV;
 1b = AZT/3TC/NVP;

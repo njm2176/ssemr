@@ -2,8 +2,7 @@ Uuid,Void/Retire,Fully specified name:en,Short name:en,Description:en,...,_versi
 14a4cf16-3781-4d5b-8a50-8e095d6a7cc6,,ART Readiness Confirmed By,ART Readiness Confirmed By,ART Readiness Confirmed By,,,,Question,Text,
 436e5ca5-a5ad-42e3-9a73-4325b82693ca,,ART Readiness Confirmation Date,Date,ART REadiness Confirmation Date,,,,Question,Date,
 d0214403-61a6-46dd-b8b1-bd8e8dfacd38,,Cohort,Cohort,Cohort,,,,Question,Date,
-75cb96fc-c15c-48a8-a989-a84fa53ea11d,,Switched Regimen,Switched Regimen,Switched Regimen,,,,Question,Coded,"Yes;
-No"
+75cb96fc-c15c-48a8-a989-a84fa53ea11d,,Switched Regimen,Switched Regimen,Switched Regimen,,,,Question,Boolean,
 bfb1f736-7e74-4adf-96ac-02c38093827b,,Regimen Switched To (Adult First Line),First Line,Regimen Switched To (Adult First Line),,,,Misc,N/A,
 6e93c7cb-d3f0-4934-9427-10edf29a4abf,,Regimen Switched To (Adult Second Line),Second Line,Regimen Switched To (Adult Second Line),,,,Misc,N/A,
 846b66b2-1073-4377-b787-580db9b3ccde,,Regimen Switched To,Regimen Switched To,Regimen Switched To,,,,Question,Coded,Regimen Switched To (Adult First Line) ; Regimen Switched To (Adult Second Line)
