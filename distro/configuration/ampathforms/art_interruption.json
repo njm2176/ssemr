@@ -196,7 +196,7 @@
               },
               "validators": [],
               "hide":{
-                "hideWhenExpression":"reasonForARTInt !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
+                "hideWhenExpression":"restartedInTreatment !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
               }
             },
             {
