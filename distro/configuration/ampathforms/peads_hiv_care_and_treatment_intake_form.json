@@ -27,7 +27,7 @@
 			  },
 			  {
 				"label": "Provider:",
-				"type": "obs",
+				"type": "encounterProvider",
 				"questionOptions": {
 				  "rendering": "text",
 				  "concept": "7f77c914-aff6-4378-ad07-755ccf99353a",
@@ -162,188 +162,149 @@
 				"required": false,
 				"id": "medicalHistory",
 				"questionOptions": {
-				  "rendering": "checkbox",
+				  "rendering": "multiCheckbox",
 				  "concept": "9af72d4e-8f50-4545-b154-7dd12fea2ea4",
 				  "conceptMappings": [],
 				  "answers": [
 					{
-					  "concept": "6cfc61ed-08ec-45cf-8317-325958dfdb9a",
-					  "label": "No Information"
-					},
-					{
 					  "concept": "bff040c5-7865-4756-8fdc-2fe2cec784c1",
-					  "label": "Persistent Generalized Lymphadenopathy (PGL)",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Persistent Generalized Lymphadenopathy (PGL)"
 					},
 					{
 					  "concept": "d8ce02ab-9d65-4efb-aa04-4fce6a1c82fd",
-					  "label": "Unexplained persistent diarrhea (>14 days)",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Unexplained persistent diarrhea (>14 days)"
 					},
 					{
 					  "concept": "f5acb290-917f-4b3d-92f7-7c29552f00ba",
-					  "label": "Pneumocystis pneumonia (PCP)",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Pneumocystis pneumonia (PCP)"
 					},
 					{
 					  "concept": "68993e4b-581e-43a6-ac9b-45bcb8f4a185",
-					  "label": "Recurrent or chronic Bacterial URTIs (Sinusitis, Otitis Media, Ottorhea, Tonsillitis)",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Recurrent or chronic Bacterial URTIs (Sinusitis, Otitis Media, Ottorhea, Tonsillitis)"
 					},
 					{
 					  "concept": "cc35f955-3e7a-44e4-999d-df181a5e4a11",
-					  "label": "Oral Candidiasis",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Oral Candidiasis"
 					},
 					{
 					  "concept": "469408fd-bc9e-457f-b4f9-e7a78e04cbfa",
-					  "label": "Oral hairy leukoplakia",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Oral hairy leukoplakia"
 					},
 					{
 					  "concept": "cc646a0a-36aa-44a7-abae-a531082c3dc0",
-					  "label": "Chronic herpes simplex virus infection (orolabial or visceral)",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Chronic herpes simplex virus infection (orolabial or visceral)"
 					},
 					{
 					  "concept": "37a734d2-227f-43af-b3cb-1bb936a275bd",
-					  "label": "Persistent Parotid enlargement",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Persistent Parotid enlargement"
 					},
 					{
 					  "concept": "318aa6ec-edf3-4369-943d-c8f2a508e045",
-					  "label": "Fever (> 1 month, unexplained)",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Fever (> 1 month, unexplained)"
 					},
 					{
 					  "concept": "f6083b46-8b38-46c4-a44b-5a28db07ae54",
-					  "label": "Cryptococcal meningitis",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Cryptococcal meningitis"
 					},
 					{
 					  "concept": "8b7dd03f-5c59-4118-9565-ecd990263258",
-					  "label": "Oral Ulcer",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Oral Ulcer"
 					},
 					{
 					  "concept": "d946be39-07d1-4e1b-9990-6f626445b8a7",
-					  "label": "Angular cheilitis",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Angular cheilitis"
 					},
 					{
 					  "concept": "b213e6bd-14fe-40a1-83a6-53e5d8742efc",
-					  "label": "Extra pulmonary TB",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Extra pulmonary TB"
 					},
 					{
 					  "concept": "ab89262b-afe0-4aef-ae81-ea79ab236deb",
-					  "label": "Lymph node TB",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Lymph node TB"
 					},
 					{
 					  "concept": "2623106d-a067-414a-9c61-8084599f855b",
-					  "label": "Toxoplasmosis Herpes simplex (>1 month)",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Toxoplasmosis Herpes simplex (>1 month)"
 					},
 					{
 					  "concept": "88a2072d-c629-45d6-962c-5da2ce3eee39",
-					  "label": "Extensive Molluscum Contagiosum",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Extensive Molluscum Contagiosum"
 					},
 					{
 					  "concept": "fa428486-cd06-4ccc-811c-623c5eaac561",
-					  "label": "Extensive warts",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Extensive warts"
 					},
 					{
 					  "concept": "c25fb8c5-c309-4873-a3b2-de0565b269fd",
-					  "label": "Severe Recurrent bacterial pneumonia",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Severe Recurrent bacterial pneumonia"
 					},
 					{
 					  "concept": "65a52277-09b3-4157-b2a1-9cca33f66ac8",
-					  "label": "Severe Bacterial Infections excluding pneumonia",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Severe Bacterial Infections excluding pneumonia"
 					},
 					{
 					  "concept": "49b1128f-5d64-4373-a6ea-9d329e2e54a6",
-					  "label": "Herpes Zoster",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Herpes Zoster"
 					},
 					{
 					  "concept": "b33300b5-2dc1-45e9-b70e-9d08ef16474e",
-					  "label": "Acute necrotizing Ulcerative gingivitis or periodontitis",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Acute necrotizing Ulcerative gingivitis or periodontitis"
 					},
 					{
 					  "concept": "12e8cb0d-f421-4778-b49d-6781c105cca4",
-					  "label": "Kaposi sarcoma",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Kaposi sarcoma"
 					},
 					{
 					  "concept": "cc23bab5-d6eb-4e16-948b-25a366080dba",
-					  "label": "Papular pruritic eruption",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Papular pruritic eruption"
 					},
 					{
 					  "concept": "35a99b2b-4b1a-4815-adb8-36446842289a",
-					  "label": "Extra pulmonary TB except Lymph node TB",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Extra pulmonary TB except Lymph node TB"
 					},
 					{
 					  "concept": "951c142f-e9e8-4e03-8e87-4f571aa99e8f",
-					  "label": "HIV Associated Dementia (HIV Encephalopathy)",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "HIV Associated Dementia (HIV Encephalopathy)"
 					},
 					{
 					  "concept": "e7c704d0-9bf0-47b2-8371-d74c87f93eec",
-					  "label": "Fungal nail infection",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Fungal nail infection"
 					},
 					{
 					  "concept": "924652f0-26c5-4a2b-a2bc-67ddb9607dbf",
-					  "label": "Chronic herpes simplex virus infection (orolabial, genital or anorectal)",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Chronic herpes simplex virus infection (orolabial, genital or anorectal)"
 					},
 					{
 					  "concept": "13216581-b1cd-4087-9297-1eb4b55b40ce",
-					  "label": "Esophageal Candidiasis",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Esophageal Candidiasis"
 					},
 					{
 					  "concept": "ee4f01d5-819f-4130-b5e2-fbebf2b00e11",
-					  "label": "Pulmonary TB",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Pulmonary TB"
 					},
 					{
 					  "concept": "9d2bfb0c-807c-4f43-8c63-06debd52cf3e",
-					  "label": "Recurrent bacterial pneumonia",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Recurrent bacterial pneumonia"
 					},
 					{
 					  "concept": "1661d025-dfca-451e-a914-626cdfae6336",
-					  "label": "Recurrent Bacterial URTIs (Sinusitis, Otitis Media, Tonsillopharyngitis )",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Recurrent Bacterial URTIs (Sinusitis, Otitis Media, Tonsillopharyngitis )"
 					},
 					{
 					  "concept": "82a4cd70-96be-4c8d-9e7e-9c871e1e4953",
-					  "label": "Seborrheic dermatitis",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Seborrheic dermatitis"
 					},
 					{
 					  "concept": "82950d3b-18a8-40a5-9bb2-fefbcd2d8c78",
-					  "label": "Severe Bacterial Infections (Pneumonia, Septic arthritis, osteomyelitis, Pyomyositis, PID)",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Severe Bacterial Infections (Pneumonia, Septic arthritis, osteomyelitis, Pyomyositis, PID)"
 					},
 					{
 					  "concept": "901d53c5-fd75-40c7-a39b-b5e25b6255fd",
-					  "label": "Unexplained chronic diarrhea (>1 month)",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Unexplained chronic diarrhea (>1 month)"
 					},
 					{
 					  "concept": "c5120716-e297-40f6-9eb5-ef432cc791c0",
-					  "label": "Other Past Medical History(Specify)",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Other Past Medical History(Specify)"
 					}
 				  ]
 				},
@@ -383,178 +344,141 @@
 				"required": false,
 				"id": "currentSymptoms",
 				"questionOptions": {
-				  "rendering": "checkbox",
+				  "rendering": "multiCheckbox",
 				  "concept": "aa25ca53-21b8-4e2f-b44b-61c2c20d4dee",
 				  "conceptMappings": [],
 				  "answers": [
 					{
-					  "concept": "6cfc61ed-08ec-45cf-8317-325958dfdb9a",
-					  "label": "No Information"
-					},
-					{
 					  "concept": "1fc47a4b-e35d-4f89-953e-52c4c6a69eb5",
-					  "label": "Weight loss",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Weight loss"
 					},
 					{
 					  "concept": "147b8be8-d657-4e46-8970-6f9983b27722",
-					  "label": "Current Cough",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Current Cough"
 					},
 					{
 					  "concept": "47be2dc7-acfc-43e8-8c27-4331856164db",
-					  "label": "Persistent headaches",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Persistent headaches"
 					},
 					{
 					  "concept": "2934795c-486e-4819-a4ac-b476630c710c",
-					  "label": "Chronic fatigue",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Chronic fatigue"
 					},
 					{
 					  "concept": "cca3e06d-37fc-4dfb-90e7-bf799d073d25",
-					  "label": "Difficulty breathing",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Difficulty breathing"
 					},
 					{
 					  "concept": "b50b5dc9-9a05-4190-9db3-f157477ed2d5",
-					  "label": "Irritability",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Irritability"
 					},
 					{
 					  "concept": "1f0f8ec6-4e15-11e4-8a57-0800271c1b75",
-					  "label": "Fever",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Fever"
 					},
 					{
 					  "concept": "ecee97e6-47af-44c0-a941-804afa11bbd0",
-					  "label": "Dysphagia or Odynophagia",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Dysphagia or Odynophagia"
 					},
 					{
 					  "concept": "5e20b5a6-571f-483d-95f2-822a66ff77b1",
-					  "label": "Neck pain",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Neck pain"
 					},
 					{
 					  "concept": "886c7ef0-b104-49bf-bd54-23429eec070d",
-					  "label": "Night Sweats",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Night Sweats"
 					},
 					{
 					  "concept": "8166b90f-671c-4787-a3a4-d4ea8fd74f43",
-					  "label": "Diarrhea",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Diarrhea"
 					},
 					{
 					  "concept": "2584edf4-6e85-4be8-93ba-6c27692ea0be",
-					  "label": "Numbness/tingling",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Numbness/tingling"
 					},
 					{
 					  "concept": "f20b15b2-4e14-11e4-8a57-0800271c1b75",
-					  "label": "Jaundice",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Jaundice"
 					},
 					{
 					  "concept": "203d9e67-4e15-11e4-8a57-0800271c1b75",
-					  "label": "Nausea w/ vomiting",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Nausea w/ vomiting"
 					},
 					{
 					  "concept": "ef463179-467b-4d67-a4f6-adb5095c21da",
-					  "label": "Mental confusion",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Mental confusion"
 					},
 					{
 					  "concept": "44a3c656-5584-4044-9cad-e265a8f90a01",
-					  "label": "Ear pain, discharge or decreased hearing",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Ear pain, discharge or decreased hearing"
 					},
 					{
 					  "concept": "1dfb0948-4e15-11e4-8a57-0800271c1b75",
-					  "label": "Abdominal pain",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Abdominal pain"
 					},
 					{
 					  "concept": "978573fd-04cb-4fa2-aa79-53064e6d0aea",
-					  "label": "Abdominal swelling",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Abdominal swelling"
 					},
 					{
 					  "concept": "39acc2a5-564b-4879-ac91-eb719a752084",
-					  "label": "loss of consciousness",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "loss of consciousness"
 					},
 					{
 					  "concept": "ceaa3f86-23e4-4ca0-bb8f-b095d5831677",
-					  "label": "Sore mouth or throat",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Sore mouth or throat"
 					},
 					{
 					  "concept": "0df5db1f-a1fe-4dbb-82aa-c3beeb84ad31",
-					  "label": "Skin lesions/Pruritus",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Skin lesions/Pruritus"
 					},
 					{
 					  "concept": "65d9c0b5-a9a3-4bb8-b20c-5244c917fcb4",
-					  "label": "Weakness of extremities",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Weakness of extremities"
 					},
 					{
 					  "concept": "64122e23-ca4a-4603-839b-af4197aef9a4",
-					  "label": "Neck or Armpit swellings",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Neck or Armpit swellings"
 					},
 					{
 					  "concept": "91657cbc-e603-4187-818e-a6f9b2a62e54",
-					  "label": "Neurodevelopmental delay or regression",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Neurodevelopmental delay or regression"
 					},
 					{
 					  "concept": "c8a795fb-ba79-43d3-a85e-e79c367ec97c",
-					  "label": "Pain on micturition",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Pain on micturition"
 					},
 					{
 					  "concept": "8f91cfe8-8920-47b0-858f-bd36726643ae",
-					  "label": "Genital ulcer/vesicles",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Genital ulcer/vesicles"
 					},
 					{
 					  "concept": "e77f0416-4e14-11e4-8a57-0800271c1b75",
-					  "label": "Dyspepsia",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Dyspepsia"
 					},
 					{
 					  "concept": "19909766-298e-4595-942e-f8df8c293231",
-					  "label": "Dyspnea",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Dyspnea"
 					},
 					{
 					  "concept": "1f6a5ea9-4e15-11e4-8a57-0800271c1b75",
-					  "label": "Hemoptysis",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Hemoptysis"
 					},
 					{
 					  "concept": "974188d4-5caa-4a1a-a2e2-4076aa018eb6",
-					  "label": "Inguinal swellings",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Inguinal swellings"
 					},
 					{
 					  "concept": "2bba04c7-d7c0-417d-9736-f34acaa489e1",
-					  "label": "Photophobia",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Photophobia"
 					},
 					{
 					  "concept": "fc4a6283-70f2-49fd-82fb-d8c8a6bbd5ba",
-					  "label": "Rheumatoid Arthritis, Joint Pain or Joint Swelling Today",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Rheumatoid Arthritis, Joint Pain or Joint Swelling Today"
 					},
 					{
 					  "concept": "785f673e-c961-4b0b-90d7-c2f7c94c4166",
-					  "label": "Urethral discharge/Vaginal discharge",
-					  "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+					  "label": "Urethral discharge/Vaginal discharge"
 					}
 				  ]
 				},
@@ -577,7 +501,7 @@
 				}
 			  },
 			  {
-				"label": "Current Cough Duration (In Days)",
+				"label": "Current Cough Duration",
 				"type": "obs",
 				"required": false,
 				"id": "currentCoughDuration",
@@ -593,7 +517,7 @@
 				}
 			  },
 			  {
-				"label": "Fever Duration (In Days)",
+				"label": "Fever Duration",
 				"type": "obs",
 				"required": false,
 				"id": "feverDuration",
@@ -609,7 +533,7 @@
 				}
 			  },
 			  {
-				"label": "Diarrhea duration (In Days)",
+				"label": "Diarrhea duration",
 				"type": "obs",
 				"required": false,
 				"id": "diarrheaDuration",
@@ -647,10 +571,6 @@
 				  "conceptMappings": [],
 				  "answers": [
 					{
-					  "concept": "6cfc61ed-08ec-45cf-8317-325958dfdb9a",
-					  "label": "No Information"
-					},
-					{
 					  "concept": "3655ba19-dff1-44bf-b8e4-b1d0240f653c",
 					  "label": "Acutely ill"
 					},
@@ -673,7 +593,7 @@
 			"isExpanded": "true",
 			"questions": [
 			  {
-				"label": "Pulse Rate(beats/min)",
+				"label": "Pulse Rate",
 				"type": "obs",
 				"required": false,
 				"id": "pulseRate",
@@ -683,9 +603,6 @@
 				  "conceptMappings": [],
 				  "isSimpleValue": true,
 				  "answers": []
-				},
-				"hide": {
-				  "hideWhenExpression": "generalAppearance === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
 				},
 				"alert": {
 				  "alertWhenExpression": "myValue && (myValue >= 100.5 || myValue < 59.5)",
@@ -705,9 +622,6 @@
 				  "conceptMappings": [],
 				  "answers": []
 				},
-				"hide": {
-				  "hideWhenExpression": "generalAppearance === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
-				},
 				"alert": {
 				  "alertWhenExpression": "myValue && (myValue >= 16.5 || myValue < 11.5)",
 				  "message": "Respiratory Rate is out of range (Normal range 12-16)"
@@ -726,26 +640,20 @@
 				  "conceptMappings": [],
 				  "answers": []
 				},
-				"hide": {
-				  "hideWhenExpression": "generalAppearance === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
-				},
 				"alert": {
 				  "alertWhenExpression": "myValue && (myValue >= 37.5 || myValue < 35)",
 				  "message": "Temperature is out of range (Normal range 35-37)"
 				},
 				"validators": []
 			  }
-			],
-			"hide": {
-			  "hideWhenExpression": "generalAppearance === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
-			}
+			]
 		  },
 		  {
 			"label": "Anthropometric Measurement and assessment",
 			"isExpanded": "true",
 			"questions": [
 			  {
-				"label": " Weight(Kg)",
+				"label": " Weight(KG)",
 				"type": "obs",
 				"required": false,
 				"id": "weight",
@@ -756,9 +664,6 @@
 				  "isSimpleValue": true,
 				  "conceptMappings": [],
 				  "answers": []
-				},
-				"hide": {
-				  "hideWhenExpression": "generalAppearance === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
 				},
 				"validators": [
 				  {
@@ -781,9 +686,6 @@
 				  "conceptMappings": [],
 				  "answers": []
 				},
-				"hide": {
-				  "hideWhenExpression": "generalAppearance === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
-				},
 				"validators": [
 				  {
 					"type": "js_expression",
@@ -804,9 +706,6 @@
 				  "conceptMappings": [],
 				  "answers": []
 				},
-				"hide": {
-				  "hideWhenExpression": "generalAppearance === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
-				},
 				"validators": []
 			  },
 			  {
@@ -820,9 +719,6 @@
 				  "isSimpleValue": true,
 				  "conceptMappings": [],
 				  "answers": []
-				},
-				"hide": {
-				  "hideWhenExpression": "generalAppearance === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
 				},
 				"validators": []
 			  },
@@ -850,15 +746,9 @@
 					}
 				  ]
 				},
-				"hide": {
-				  "hideWhenExpression": "generalAppearance === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
-				},
 				"validators": []
 			  }
-			],
-			"hide": {
-			  "hideWhenExpression": "generalAppearance === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
-			}
+			]
 		  },
 		  {
 			"label": "Systemic findings",
@@ -1753,70 +1643,70 @@
 			"label": "Baseline Laboratory Findings",
 			"isExpanded": "true",
 			"questions": [
-			  {
-				"label": "Is CD4 Done?",
-				"required": true,
-				"type": "obs",
-				"id": "cd4Done",
-				"questionOptions": {
-				  "rendering": "radio",
-				  "concept": "2652c9e7-72c5-48ae-b6ee-0bd3dcb65fca",
-				  "answers": [
-					{
-					  "concept": "78763e68-104e-465d-8ce3-35f9edfb083d",
-					  "label": "Yes"
-					},
-					{
-					  "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e",
-					  "label": "No"
+				{
+					"label": "Is CD4 Done?",
+					"required": true,
+					"type": "obs",
+					"id": "cd4Done",
+					"questionOptions": {
+					  "rendering": "radio",
+					  "concept": "2652c9e7-72c5-48ae-b6ee-0bd3dcb65fca",
+					  "answers": [
+						{
+						  "concept": "78763e68-104e-465d-8ce3-35f9edfb083d",
+						  "label": "Yes"
+						},
+						{
+						  "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e",
+						  "label": "No"
+						}
+					  ]
 					}
-				  ]
-				}
-			  },
-			  {
-				"label": "CD4 Count",
-				"id": "cd4Count",
-				"required": false,
-				"questionOptions": {
-				  "answers": [],
-				  "concept": "809dd0f5-ce54-441c-b835-a2a8b06a6140",
-				  "rendering": "numeric",
-				  "min": 0
-				},
-				"type": "obs",
-				"hide": {
-				  "hideWhenExpression": "age <= 5 || cd4Done !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
-				},
-				"validators": [
+				  },
 				  {
-					"type": "js_expression",
-					"failsWhenExpression": "cd4Count < 0",
-					"message": "CD4 Count should not be less than 0"
-				  }
-				]
-			  },
-			  {
-				"label": "CD4 %",
-				"id": "cd4CountPercentage",
-				"required": false,
-				"questionOptions": {
-				  "answers": [],
-				  "concept": "809dd0f5-ce54-441c-b835-a2a8b06a6140",
-				  "rendering": "numeric",
-				  "min": 0
-				},
-				"type": "obs",
-				"hide": {
-				  "hideWhenExpression": "age > 5 || cd4Done !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
-				},
-				"validators": [
+					"label": "CD4 Count",
+					"id": "cd4Count",
+					"required": false,
+					"questionOptions": {
+					  "answers": [],
+					  "concept": "809dd0f5-ce54-441c-b835-a2a8b06a6140",
+					  "rendering": "numeric",
+					  "min": 0
+					},
+					"type": "obs",
+					"hide": {
+					  "hideWhenExpression": "age <= 5 || cd4Done !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
+					},
+					"validators": [
+					  {
+						"type": "js_expression",
+						"failsWhenExpression": "cd4Count < 0",
+						"message": "CD4 Count should not be less than 0"
+					  }
+					]
+				  },
 				  {
-					"type": "js_expression",
-					"failsWhenExpression": "cd4CountPercentage < 0 || cd4CountPercentage > 100",
-					"message": "CD4% should not be less than 0 or above 100%"
-				  }
-				]
-			  },
+					"label": "CD4 %",
+					"id": "cd4CountPercentage",
+					"required": false,
+					"questionOptions": {
+					  "answers": [],
+					  "concept": "809dd0f5-ce54-441c-b835-a2a8b06a6140",
+					  "rendering": "numeric",
+					  "min": 0
+					},
+					"type": "obs",
+					"hide": {
+					  "hideWhenExpression": "age > 5 || cd4Done !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
+					},
+					"validators": [
+						{
+							"type": "js_expression",
+							"failsWhenExpression": "cd4CountPercentage < 0 || cd4CountPercentage > 100",
+							"message": "CD4% should not be less than 0 or above 100%"
+						  }
+					]
+				  },
 			  {
 				"label": "CBC",
 				"type": "obs",
