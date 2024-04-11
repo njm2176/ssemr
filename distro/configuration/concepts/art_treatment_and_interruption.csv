@@ -198,10 +198,10 @@ cd20a916-e12f-435d-afef-6b29f48c4057,,Lack of food,,,,,,Misc,N/A,
 9ddab9bb-93e6-438b-9b13-ff85fe25169c,,Knowledge gap,,,,,,Misc,N/A,
 92bb7cf8-3a50-4003-8535-77a2bca3f1a9,,Traditional/Religious believes,,,,,,Misc,N/A,
 b4a3e18d-71ee-4e73-8502-e2962d215bb1,,Co-infection treatment/ Pill burden,,,,,,Misc,N/A,
-8a9f51ef-08f1-4c3a-98e1-20c6444d9b53,,"Health System Challenges: Long waiting times, inconvenient clinic hours, and limited access to healthcare facilities can discourage PLHIV from continuing treatment.",,,,,,Misc,N/A,
-9c125fc3-9c99-488b-85e5-182b43593727,,"Psychological Factors: Depression, anxiety, and other mental health issues can affect a person's ability to adhere to their treatment plan.",,,,,,Misc,N/A,
-9cee5302-2399-4f3d-9bfe-cc8fbfd8c4d7,,Substance Abuse: Drug or alcohol abuse can interfere with a person's ability to adhere to their ART regimen. You can replace “drug abuse with substance abuse”,,,,,,Misc,N/A,
-fb137449-ee69-492a-8b04-024f52a15d15,,"Migration and Mobility: PLHIV who frequently travel or relocate may face challenges in accessing services, leading to interruptions in treatment.",,,,,,Misc,N/A,
+8a9f51ef-08f1-4c3a-98e1-20c6444d9b53,,Health System Challenges,,,,,,Misc,N/A,
+9c125fc3-9c99-488b-85e5-182b43593727,,Psychological Factors,,,,,,Misc,N/A,
+9cee5302-2399-4f3d-9bfe-cc8fbfd8c4d7,,Substance Abuse,,,,,,Misc,N/A,
+fb137449-ee69-492a-8b04-024f52a15d15,,Migration and Mobility,,,,,,Misc,N/A,
 f6ae430a-a197-426e-b54f-08f45fae0ad0,,Other (specify),,,,,,Misc,N/A,
 949c3f14-03af-4a00-9647-5f7575ed0719,,Reasons for ART Interruption,Reasons for ART Interruption,,,,,Question,Coded,"Toxicity/side effects;
 Patient lack finance;
@@ -222,10 +222,10 @@ Stigma and disclosure issue;
 Knowledge gap;
 Traditional/Religious believes;
 Co-infection treatment/ Pill burden;
-Health System Challenges: Long waiting times, inconvenient clinic hours, and limited access to healthcare facilities can discourage PLHIV from continuing treatment;
-Psychological Factors: Depression, anxiety, and other mental health issues can affect a person's ability to adhere to their treatment plan;
-Substance Abuse: Drug or alcohol abuse can interfere with a person's ability to adhere to their ART regimen. You can replace “drug abuse with substance abuse”;
-Migration and Mobility: PLHIV who frequently travel or relocate may face challenges in accessing services, leading to interruptions in treatment;
+Health System Challenges;
+Psychological Factors;
+Substance Abuse;
+Migration and Mobility;
 Other (specify)"
 0498d422-dbf7-4d64-9daf-e09e08a3be49,,Specify Reason For Art Stop,Specify Reason For Art Stop,Specify Reason For Art Stop,,,,Question,Text,
 fa954f61-ffaf-426c-a70b-3da7fddafbf8,,Date If Restarted,Date If Restarted,Date If Restarted,,,,Question,Date,
