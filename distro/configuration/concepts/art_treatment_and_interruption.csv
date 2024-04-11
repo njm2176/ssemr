@@ -179,6 +179,54 @@ dede40dc-2a4a-4f40-ad29-845e8d50be58,,Changed Regimen,Changed Regimen,Changed Re
 55337ca1-c8b5-43e4-bed3-845a01463020,,Regimen Change Date(Adults),Regimen Change Date,Regimen Change Date(Adults),,,,Question,Date,
 a7f113ad-f18b-41fe-a1ea-5f468c911b1d,,ART Treatment Reasons For Stop,Reason,ART Treatment Reasons For Stop,,,,Question,Coded,Toxic Side Effect ; Pregnancy ;  Failure of Treatment ; Poor Adherence Interruption ; Illness Hospitalisation ; Drug stockout ; Patient Lack Finances ; Other Reason For ART Stop
 2b19035d-46a7-4007-b63b-87753dd5b6d3,,Interruption Type,Interruption Type,Interruption Type,,,,Question,Coded,Stop ; Lost ; Changed Regimen
+a4b7b40d-bd4a-4b7a-9826-593088f1e3af,,Toxicity/side effects,,,,,,Misc,N/A,
+fa2e953a-90f8-47b7-882b-c3c4a6cd518f,,Patient lack finance,,,,,,Misc,N/A,
+2afdbb1f-4f2f-48fd-ad92-090f1a5332cc,,Pregnancy,,,,,,Misc,N/A,
+28c002e2-d3b1-4c39-bf40-eb4ebdda1a23,,Travelled,,,,,,Misc,N/A,
+a75406fc-ba04-4da1-86ad-ce89982bf2de,,Treatment failure,,,,,,Misc,N/A,
+5d6b4766-dc66-4472-9a59-d7f6b28661ad,,Planned Rx interruption,,,,,,Misc,N/A,
+ae9c4b50-cf63-4d7e-a7c2-9b6deb74ccdc,,Getting from another facility,,,,,,Misc,N/A,
+c3bd1d31-fbad-4e75-aabf-4f9000acb36e,,Getting from family member,,,,,,Misc,N/A,
+624d8fa6-d7a6-4c34-8284-525611d5623c,,Poor adherence,,,,,,Misc,N/A,
+c3103ad9-a5ff-4e8f-b382-90c8c6030e67,,"Illness, hospitalization",,,,,,Misc,N/A,
+b6d43865-1a80-4f69-97b9-4425c019e435,,Drugs out of stock,,,,,,Misc,N/A,
+6fc682fa-e683-42de-ba48-719430065f56,,Transport challenge,,,,,,Misc,N/A,
+cd20a916-e12f-435d-afef-6b29f48c4057,,Lack of food,,,,,,Misc,N/A,
+3d2e64cc-9262-49be-aab7-082b18cd2601,,Drug abuse,,,,,,Misc,N/A,
+42f493ad-29a5-47d1-9518-61164b10aa1b,,Staff attitude towards clients,,,,,,Misc,N/A,
+8b3e209c-3557-4137-a127-583d8bbbd290,,Stigma and disclosure issue,,,,,,Misc,N/A,
+9ddab9bb-93e6-438b-9b13-ff85fe25169c,,Knowledge gap,,,,,,Misc,N/A,
+92bb7cf8-3a50-4003-8535-77a2bca3f1a9,,Traditional/Religious believes,,,,,,Misc,N/A,
+b4a3e18d-71ee-4e73-8502-e2962d215bb1,,Co-infection treatment/ Pill burden,,,,,,Misc,N/A,
+8a9f51ef-08f1-4c3a-98e1-20c6444d9b53,,"Health System Challenges: Long waiting times, inconvenient clinic hours, and limited access to healthcare facilities can discourage PLHIV from continuing treatment.",,,,,,Misc,N/A,
+9c125fc3-9c99-488b-85e5-182b43593727,,"Psychological Factors: Depression, anxiety, and other mental health issues can affect a person's ability to adhere to their treatment plan.",,,,,,Misc,N/A,
+9cee5302-2399-4f3d-9bfe-cc8fbfd8c4d7,,Substance Abuse: Drug or alcohol abuse can interfere with a person's ability to adhere to their ART regimen. You can replace “drug abuse with substance abuse”,,,,,,Misc,N/A,
+fb137449-ee69-492a-8b04-024f52a15d15,,"Migration and Mobility: PLHIV who frequently travel or relocate may face challenges in accessing services, leading to interruptions in treatment.",,,,,,Misc,N/A,
+f6ae430a-a197-426e-b54f-08f45fae0ad0,,Other (specify),,,,,,Misc,N/A,
+949c3f14-03af-4a00-9647-5f7575ed0719,,Reasons for ART Interruption,Reasons for ART Interruption,,,,,Question,Coded,"Toxicity/side effects;
+Patient lack finance;
+Pregnancy;
+Travelled;
+Treatment failure;
+Planned Rx interruption;
+Getting from another facility;
+Getting from family member;
+Poor adherence;
+Illness, hospitalization;
+Drugs out of stock;
+Transport challenge;
+Lack of food;
+Drug abuse;
+Staff attitude towards clients;
+Stigma and disclosure issue;
+Knowledge gap;
+Traditional/Religious believes;
+Co-infection treatment/ Pill burden;
+Health System Challenges: Long waiting times, inconvenient clinic hours, and limited access to healthcare facilities can discourage PLHIV from continuing treatment;
+Psychological Factors: Depression, anxiety, and other mental health issues can affect a person's ability to adhere to their treatment plan;
+Substance Abuse: Drug or alcohol abuse can interfere with a person's ability to adhere to their ART regimen. You can replace “drug abuse with substance abuse”;
+Migration and Mobility: PLHIV who frequently travel or relocate may face challenges in accessing services, leading to interruptions in treatment;
+Other (specify)"
 0498d422-dbf7-4d64-9daf-e09e08a3be49,,Specify Reason For Art Stop,Specify Reason For Art Stop,Specify Reason For Art Stop,,,,Question,Text,
 fa954f61-ffaf-426c-a70b-3da7fddafbf8,,Date If Restarted,Date If Restarted,Date If Restarted,,,,Question,Date,
 4e350390-7055-4e71-924f-a80e2de4f192,,ART Treatment Interruption Stop or Lost,ART Treatment Interruption Stop or Lost,ART Treatment Interruption Stop or Lost,,,,Misc,N/A,
@@ -198,7 +246,7 @@ No"
 b8b2bd85-52eb-4b80-9842-88fd177befe3,,Breast milk only,Breast milk only,,,,,Misc,N/A,
 99d19260-c316-11e9-9cb5-2a2ae2dbcce4,,Mixed Feeding(> 6 Months),Mixed Feeding,,,,,Misc,N/A,
 99d18ffe-c316-11e9-9cb5-2a2ae2dbcce4,,RF-Replacement feeding(Never Breastfeed),Replacement feeding(Never Breastfeed),,,,,Misc,N/A,
-74717127-b986-42e5-a125-139d4655c108,,Feeding pattern in the first 6 months of life,,Feeding pattern in the first 6 months of life,,,,Question,Coded,"Breast milk only;
+74717127-b986-42e5-a125-139d4655c108,,Feeding pattern in the first 6 months of life,,"                ""concept"": """",",,,,Question,Coded,"Breast milk only;
 Mixed Feeding(> 6 Months);
 RF-Replacement feeding(Never Breastfeed)"
 c45f6876-3f10-11e4-adec-0800271c1b75,,Normal,Normal,,,,,Misc,N/A,
@@ -283,3 +331,4 @@ be31e243-c2a5-4fa4-9f93-d5e06bc78293,,Abnormal Findings - Abdomen,,,,,,Question,
 Splenomegaly;
 Ascites;
 Abnormal Other"
+4913c7f0-3362-4407-8d48-4b115f2f59dd,,Restarted In Treatment,Restarted In Treatment,,,,,Question,Coded,Yes; No
