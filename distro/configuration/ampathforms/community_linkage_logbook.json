@@ -1,6 +1,10 @@
 {
 	"name": "A. 4 - Community linkage",
+	"referencedForms": [],
+	"description": "Community linkage",
+	"version": "1.0.0",
 	"published": true,
+	"uuid": "b1b52aa1-b868-4787-9ce2-d7048b1a7cf8",
 	"retired": false,
 	"encounter": "Community linkage",
 	"pages": [
@@ -117,9 +121,5 @@
 	  }
 	],
 	"processor": "EncounterFormProcessor",
-	"encounterType": "3c2df02e-6856-11ee-8c99-0242ac120002",
-	"referencedForms": [],
-	"uuid": "6e32ee4c-335f-4bd2-a5fc-a0c40bd2e7d8",
-	"description": "Community linkage",
-	"version": "1.0.0"
+	"encounterType": "3c2df02e-6856-11ee-8c99-0242ac120002"
   }
