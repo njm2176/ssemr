@@ -29,7 +29,7 @@
 			  },
 			  {
 				"label": "Provider:",
-				"type": "encounterProvider",
+				"type": "obs",
 				"questionOptions": {
 				  "rendering": "text",
 				  "concept": "7f77c914-aff6-4378-ad07-755ccf99353a",
