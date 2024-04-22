@@ -41,10 +41,19 @@ f5acb290-917f-4b3d-92f7-7c29552f00ba,,Pneumocystis pneumonia (PCP),Pneumocystis 
 ee4f01d5-819f-4130-b5e2-fbebf2b00e11,,Pulmonary TB,Pulmonary TB,,,,,Misc,N/A,
 9d2bfb0c-807c-4f43-8c63-06debd52cf3e,,Recurrent bacterial pneumonia,Recurrent bacterial pneumonia,,,,,Misc,N/A,
 1661d025-dfca-451e-a914-626cdfae6336,,"Recurrent Bacterial URTIs (Sinusitis, Otitis Media, Tonsillopharyngitis )","Recurrent Bacterial URTIs (Sinusitis, Otitis Media, Tonsillopharyngitis )",,,,,Misc,N/A,
+68993e4b-581e-43a6-ac9b-45bcb8f4a185,,"Recurrent or chronic Bacterial URTIs (Sinusitis, Otitis Media, Ottorhea, Tonsillitis)","Recurrent or chronic Bacterial URTIs (Sinusitis, Otitis Media, Ottorhea, Tonsillitis)",,,,,Misc,N/A,
 82a4cd70-96be-4c8d-9e7e-9c871e1e4953,,Seborrheic dermatitis,Seborrheic dermatitis,,,,,Misc,N/A,
 82950d3b-18a8-40a5-9bb2-fefbcd2d8c78,,"Severe Bacterial Infections (Pneumonia, Septic arthritis, osteomyelitis, Pyomyositis, PID)","Severe Bacterial Infections (Pneumonia, Septic arthritis, osteomyelitis, Pyomyositis, PID)",,,,,Misc,N/A,
 2623106d-a067-414a-9c61-8084599f855b,,Toxoplasmosis Herpes simplex (>1 month),Toxoplasmosis Herpes simplex (>1 month),,,,,Misc,N/A,
 901d53c5-fd75-40c7-a39b-b5e25b6255fd,,Unexplained chronic diarrhea (>1 month),Unexplained chronic diarrhea (>1 month),,,,,Misc,N/A,
+35a99b2b-4b1a-4815-adb8-36446842289a,,Extra pulmonary TB except Lymph node TB,Extra pulmonary TB except Lymph node TB,,,,,Misc,N/A,
+65a52277-09b3-4157-b2a1-9cca33f66ac8,,Severe Bacterial Infections excluding pneumonia,Severe Bacterial Infections excluding pneumonia,,,,,Misc,N/A,
+f32d0fa8-f53e-42b1-b83d-fcaed08174be,,Severe Recurrent bacterial pneumonia,Severe Recurrent bacterial pneumonia,,,,,Misc,N/A,
+fa428486-cd06-4ccc-811c-623c5eaac561,,Extensive warts,Extensive warts,,,,,Misc,N/A,
+7ff0ed86-3414-418d-9cbd-73d94cde0290,,Extensive Molluscum Contagiosum,Extensive Molluscum Contagiosum,,,,,Misc,N/A,
+ab89262b-afe0-4aef-ae81-ea79ab236deb,,Lymph node TB,Lymph node TB,,,,,Misc,N/A,
+37a734d2-227f-43af-b3cb-1bb936a275bd,,Persistent Parotid enlargement,Persistent Parotid enlargement,,,,,Misc,N/A,
+cc646a0a-36aa-44a7-abae-a531082c3dc0,,Chronic herpes simplex virus infection (orolabial or visceral),Chronic herpes simplex virus infection (orolabial or visceral),,,,,Misc,N/A,
 c5120716-e297-40f6-9eb5-ef432cc791c0,,Other Past Medical History,Other Past Medical History,,,,,Misc,N/A,
 9af72d4e-8f50-4545-b154-7dd12fea2ea4,,Past Medical History,Past Medical History,,,,,Question,Coded,"Acute necrotizing Ulcerative gingivitis or periodontitis;
 Angular cheilitis;
@@ -67,10 +76,19 @@ Pneumocystis pneumonia (PCP);
 Pulmonary TB;
 Recurrent bacterial pneumonia;
 Recurrent Bacterial URTIs (Sinusitis, Otitis Media, Tonsillopharyngitis );
+Recurrent or chronic Bacterial URTIs (Sinusitis, Otitis Media, Ottorhea, Tonsillitis);
 Seborrheic dermatitis;
 Severe Bacterial Infections (Pneumonia, Septic arthritis, osteomyelitis, Pyomyositis, PID);
 Toxoplasmosis Herpes simplex (>1 month);
 Unexplained chronic diarrhea (>1 month);
+Extra pulmonary TB except Lymph node TB;
+Severe Bacterial Infections excluding pneumonia;
+Severe Recurrent bacterial pneumonia;
+Extensive warts;
+Extensive Molluscum Contagiosum;
+Lymph node TB;
+Persistent Parotid enlargement;
+Chronic herpes simplex virus infection (orolabial or visceral);
 Other Past Medical History"
 f16c6a11-453f-44a2-a7a5-77aeaa93e67d,,Specify Other Past Medical History,,,,,,Question,Text,
 759e2ceb-0311-46bd-9f00-5df5b2897f71,,Past Medical History Section,Past Medical History Section,,,,,Misc,N/A,
@@ -103,6 +121,11 @@ ceaa3f86-23e4-4ca0-bb8f-b095d5831677,,Sore mouth or throat,,,,,,Misc,N/A,
 785f673e-c961-4b0b-90d7-c2f7c94c4166,,Urethral discharge/Vaginal discharge,,,,,,Misc,N/A,
 65d9c0b5-a9a3-4bb8-b20c-5244c917fcb4,,Weakness of extremities,,,,,,Misc,N/A,
 1fc47a4b-e35d-4f89-953e-52c4c6a69eb5,,Weight loss,,,,,,Misc,N/A,
+c8a795fb-ba79-43d3-a85e-e79c367ec97c,,Pain on micturition,,,,,,Misc,N/A,
+91657cbc-e603-4187-818e-a6f9b2a62e54,,Neurodevelopmental delay or regression,,,,,,Misc,N/A,
+978573fd-04cb-4fa2-aa79-53064e6d0aea,,Abdominal swelling,,,,,,Misc,N/A,
+b50b5dc9-9a05-4190-9db3-f157477ed2d5,,Irritability,,,,,,Misc,N/A,
+cca3e06d-37fc-4dfb-90e7-bf799d073d25,,Difficulty breathing,,,,,,Misc,N/A,
 aa25ca53-21b8-4e2f-b44b-61c2c20d4dee,,Current symptoms screen,,,,,,Question,Coded,"Abdominal pain;
 Chronic fatigue;
 Current Cough;
@@ -130,7 +153,12 @@ Skin lesions/Pruritus;
 Sore mouth or throat;
 Urethral discharge/Vaginal discharge;
 Weakness of extremities;
-Weight loss"
+Weight loss;
+Pain on micturition;
+Neurodevelopmental delay or regression;
+Abdominal swelling;
+Irritability;
+Difficulty breathing"
 9125f7ff-f703-42f1-8a6d-ae6a4c2b5b94,,Duration for Current Cough,,,,,,Question,Numeric,
 74ffce7d-e863-4e02-9081-64cefaf2e28a,,Duration for Fever,,,,,,Question,Numeric,
 c0810998-e30c-4b10-adfe-8cef59afbfc1,,Duration for Diarrhoea,,,,,,Question,Numeric,

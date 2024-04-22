@@ -246,7 +246,7 @@
 						"disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
 					  },
 					  {
-						"concept": "88a2072d-c629-45d6-962c-5da2ce3eee39",
+						"concept": "7ff0ed86-3414-418d-9cbd-73d94cde0290",
 						"label": "Extensive Molluscum Contagiosum",
 						"disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
 					  },
@@ -256,7 +256,7 @@
 						"disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
 					  },
 					  {
-						"concept": "c25fb8c5-c309-4873-a3b2-de0565b269fd",
+						"concept": "f32d0fa8-f53e-42b1-b83d-fcaed08174be",
 						"label": "Severe Recurrent bacterial pneumonia",
 						"disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
 					  },
@@ -577,7 +577,7 @@
 				  }
 				},
 				{
-				  "label": "Current Cough Duration",
+				  "label": "Current Cough Duration (Days)",
 				  "type": "obs",
 				  "required": false,
 				  "id": "currentCoughDuration",
@@ -593,7 +593,7 @@
 				  }
 				},
 				{
-				  "label": "Fever Duration",
+				  "label": "Fever Duration (Days)",
 				  "type": "obs",
 				  "required": false,
 				  "id": "feverDuration",
@@ -609,7 +609,7 @@
 				  }
 				},
 				{
-				  "label": "Diarrhea duration",
+				  "label": "Diarrhea duration (Days)",
 				  "type": "obs",
 				  "required": false,
 				  "id": "diarrheaDuration",
