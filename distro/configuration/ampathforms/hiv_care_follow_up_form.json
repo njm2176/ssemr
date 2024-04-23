@@ -504,7 +504,7 @@
               "required": "true",
               "id": "pWeightGain",
               "questionOptions": {
-                "concept": "78f5bc62-ecbe-457f-87dd-def20dbee82e",
+                "concept": "0fe4cff0-4646-4180-9d2e-8314ffb7a0f4",
                 "rendering": "radio",
                 "answers": [
                   {
@@ -2586,20 +2586,19 @@
                   }
                 },
                 {
-                  "label": "Other Reason For First Line Regimen Change Specify",
-                  "type": "obs",
+                  "label": "Other ARV Regimen Specify",
+                  "id": "otherAdultARVRegimenSecondLineSpecify",
                   "required": true,
-                  "id": "otherAdultSwitchSpecifyReason",
                   "questionOptions": {
-                    "rendering": "text",
-                    "concept": "b59fff1c-ab4f-4686-9435-783994432356",
-                    "conceptMappings": [],
-                    "answers": []
+                    "answers": [],
+                    "concept": "b0afac64-54b5-412c-86d0-7cf5dc6afb35",
+                    "rendering": "Text"
                   },
+                  "type": "obs",
+                  "validators": [],
                   "hide": {
                     "hideWhenExpression": "switchAdultSecondLineArtRegimen !== 'b4d8805f-40ff-4c9d-9118-feeab45ad8be'"
-                  },
-                  "validators": []
+                  }
                 },
                 {
                   "label": "Substitution Regimen For Child(Second Line)",
@@ -2663,20 +2662,19 @@
                   }
                 },
                 {
-                  "label": "Other Reason For First Line Regimen Change Specify",
-                  "type": "obs",
+                  "label": "Other ARV Regimen Specify",
+                  "id": "otherChildARVRegimenSecondLineSpecify",
                   "required": true,
-                  "id": "otherChildSwitchSpecifyReason",
                   "questionOptions": {
-                    "rendering": "text",
-                    "concept": "b59fff1c-ab4f-4686-9435-783994432356",
-                    "conceptMappings": [],
-                    "answers": []
+                    "answers": [],
+                    "concept": "b0afac64-54b5-412c-86d0-7cf5dc6afb35",
+                    "rendering": "Text"
                   },
+                  "type": "obs",
+                  "validators": [],
                   "hide": {
                     "hideWhenExpression": "switchChildSecondLineArtRegimen !== 'b4d8805f-40ff-4c9d-9118-feeab45ad8be'"
-                  },
-                  "validators": []
+                  }
                 },
                 {
                   "label": "ART Swith to 2nd Line Date",
@@ -2734,10 +2732,10 @@
                   "validators": []
                 },
                 {
-                  "label": "Other Answer",
+                  "label": "Other Reason For Second Line Regimen Change Specify",
                   "type": "obs",
                   "required": true,
-                  "id": "otherReason",
+                  "id": "otherChildRegimenChangeSpecifyReason",
                   "questionOptions": {
                     "rendering": "text",
                     "concept": "41c2e674-babe-469d-bdf3-2b57ba568a4b",

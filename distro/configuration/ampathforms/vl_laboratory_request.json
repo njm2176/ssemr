@@ -351,7 +351,7 @@
 				"id": "clinicianPhone",
 				"questionOptions": {
 				  "rendering": "text",
-				  "concept": "f53940f7-5fbb-45a2-a567-26a64240b42b",
+				  "concept": "4f968437-31cf-4cd9-bccf-c594618d12f5",
 				  "conceptMappings": [],
 				  "answers": []
 				},
@@ -406,7 +406,7 @@
 				"id": "focalPersonPhone",
 				"questionOptions": {
 				  "rendering": "text",
-				  "concept": "d3522e54-bbea-47e8-bc0d-c275cc00427b",
+				  "concept": "dff0ffef-5c14-458a-a4db-8b106daf3876",
 				  "conceptMappings": [],
 				  "answers": []
 				},
