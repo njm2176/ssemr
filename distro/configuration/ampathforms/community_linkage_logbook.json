@@ -52,6 +52,10 @@
 					{
 					  "concept": "ce97a3fe-fae2-45e3-99b5-35e7ba121805",
 					  "label": "Unsuppressed VL"
+					},
+					{
+					  "concept": "674058f9-7136-459a-a2df-fa1d3f4aa53e",
+					  "label": "Key population (KP)"
 					}
 				  ]
 				},

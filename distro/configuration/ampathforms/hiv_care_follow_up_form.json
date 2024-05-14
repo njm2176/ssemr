@@ -2864,6 +2864,26 @@
               ]
             },
             {
+              "label": "Viral Load Result Received?",
+              "required": true,
+              "type": "obs",
+              "id": "vlResultReceived",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "fb3df5ea-5527-4fd3-bc09-4ea5a0a6dc22",
+                "answers": [
+                  {
+                    "concept": "78763e68-104e-465d-8ce3-35f9edfb083d",
+                    "label": "Yes"
+                  },
+                  {
+                    "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e",
+                    "label": "No"
+                  }
+                ]
+              }
+            },
+            {
               "label": "VL Results",
               "type": "obs",
               "required": false,
@@ -2873,7 +2893,7 @@
                 "concept": "01c3ce55-b7eb-45f5-93d5-bace353e3cfd"
               },
               "hide": {
-                "hideWhenExpression": "vlTestDone !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
+                "hideWhenExpression": "vlResultReceived !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
               },
               "alert": {
                 "alertWhenExpression": "vlResults > 1000",
@@ -2890,7 +2910,7 @@
                 "concept": "80e34f1b-26e8-49ea-9b6e-d7d903a91e26"
               },
               "hide": {
-                "hideWhenExpression": "vlTestDone !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
+                "hideWhenExpression": "vlResultReceived !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
               },
               "validators": [
                 {
@@ -3000,7 +3020,7 @@
               "required": true,
               "id": "ptPlan",
               "questionOptions": {
-                "rendering": "radio",
+                "rendering": "multiCheckbox",
                 "concept": "3352d2b2-67b6-4e84-9b2c-1baef41b0d05",
                 "conceptMappings": [],
                 "answers": [
@@ -3047,14 +3067,30 @@
                     "concept": "99d197a6-c316-11e9-9cb5-2a2ae2dbcce4"
                   },
                   {
-                    "label": "CVS",
+                    "label": "COV",
                     "concept": "d3f86020-1ce2-4bff-8dbc-42bc98fcf080"
+                  },
+                  {
+                    "label": "Orphans & Vulnerable Children (OVC)",
+                    "concept": "449c62ad-689f-4b6c-8623-d95e1ec7c9cd"
+                  },
+                  {
+                    "label": "Family Planning (FP)",
+                    "concept": "dd57ccdf-a0f0-408c-a9d3-3c97552a9c19"
+                  },
+                  {
+                    "label": "Gender-Based Violence (GBV)",
+                    "concept": "a233c797-30b1-4418-bf8e-64f63608c3cc"
+                  },
+                  {
+                    "label": "Psychosocial support",
+                    "concept": "61c88f46-7fa7-4c5d-bd22-6d409b0a33d5"
                   }
                 ]
               },
               "validators": [],
               "hide": {
-                "hideWhenExpression": "ptPlan !== '8ec83611-795e-44d0-b359-a667a073bf07'"
+                "hideWhenExpression": "isEmpty(ptPlan) || !arrayContains(ptPlan, '8ec83611-795e-44d0-b359-a667a073bf07')"
               }
             },
             {
@@ -3067,7 +3103,7 @@
                 "concept": "73aeaec5-4169-40a9-8b59-f799b28a548c"
               },
               "hide": {
-                "hideWhenExpression": "ptPlan !== 'b87bac5e-b6ca-40a5-a3d0-a3fa34a94f5d'",
+                "hideWhenExpression": "isEmpty(ptPlan) || !arrayContains(ptPlan, 'b87bac5e-b6ca-40a5-a3d0-a3fa34a94f5d')",
                 "validators": []
               }
             },

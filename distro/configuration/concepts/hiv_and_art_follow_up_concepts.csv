@@ -573,10 +573,18 @@ LFTs;
 No Information"
 e8efb800-7c83-4616-ad7e-46c74ef0acd0,,Nutritional support,Nutritional support,,,,,Misc,N/A,
 99d197a6-c316-11e9-9cb5-2a2ae2dbcce4,,Infant feeding,Infant feeding,,,,,Misc,N/A,
-d3f86020-1ce2-4bff-8dbc-42bc98fcf080,,CVS,CVS,,,,,Misc,N/A,
+d3f86020-1ce2-4bff-8dbc-42bc98fcf080,,COV,COV,,,,,Misc,N/A,
+449c62ad-689f-4b6c-8623-d95e1ec7c9cd,,Orphans & Vulnerable Children (OVC),Orphans & Vulnerable Children (OVC),,,,,Misc,N/A,
+dd57ccdf-a0f0-408c-a9d3-3c97552a9c19,,Family Planning (FP),Family Planning (FP),,,,,Misc,N/A,
+a233c797-30b1-4418-bf8e-64f63608c3cc,,Gender-Based Violence (GBV),Gender-Based Violence (GBV),,,,,Misc,N/A,
+61c88f46-7fa7-4c5d-bd22-6d409b0a33d5,,Psychosocial support,Psychosocial support,,,,,Misc,N/A,
 ce7573a3-c680-458a-8abb-a25088d4d261,,Refer or Consult,Refer or Consult,,,,,Question,Coded,"Nutritional support;
 Infant feeding;
-CVS"
+COV;
+Orphans & Vulnerable Children (OVC);
+Family Planning (FP);
+Gender-Based Violence (GBV);
+Psychosocial support"
 9fc6b318-054e-45c0-983b-912d1c93e86e,,Other Investigation Done,Other Investigation Done,,,,,Question,Text,
 a8dd544d-fe87-4ff1-9911-6acdc6847d21,,Duration in months since first starting ART,Duration in months since first starting ART,,,,,Question,Numeric,
 e0e2acbe-f88b-4710-adbd-08637d80ea97,,Duration in months since starting current regimen,Duration in months since starting current regimen,,,,,Question,Numeric,
@@ -630,3 +638,4 @@ d8a05f0f-3a39-4338-b40e-45567d5fd406,,Date started on Dapsone,Date started on Da
 0fa5669b-041d-446d-9ae6-8e88a980858f,,Date of extra session,Date of extra session,,,,,Question,Date,
 2652c9e7-72c5-48ae-b6ee-0bd3dcb65fca,,Is CD4 done?,Is CD4 done?,,,,,Question,Coded,Yes; No
 2cef90d7-7d4f-4bda-accd-8e51e612037f,,Viral Load test done?,Viral Load test done?,,,,,Question,Coded,Yes; No
+fb3df5ea-5527-4fd3-bc09-4ea5a0a6dc22,,Viral Load Result Received?,Viral Load Result Received?,,,,,Question,Coded,Yes; No

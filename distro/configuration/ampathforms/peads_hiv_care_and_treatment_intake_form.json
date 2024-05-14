@@ -760,7 +760,7 @@
 				  "validators": [
 					{
 					  "type": "js_expression",
-					  "failsWhenExpression": "isEmpty(weight) || weight < 0 || weight > 150",
+					  "failsWhenExpression": "weight < 0 || weight > 150",
 					  "message": "Weight should not be less than 0kg and should not exceed 150kg"
 					}
 				  ],
@@ -784,7 +784,7 @@
 				  "validators": [
 					{
 					  "type": "js_expression",
-					  "failsWhenExpression": "isEmpty(height) || height < 0 || height > 200",
+					  "failsWhenExpression": "height < 0 || height > 200",
 					  "message": "Height should not be less than 0cm or should not exceed 200cm"
 					}
 				  ],
