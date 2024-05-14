@@ -3020,7 +3020,7 @@
               "required": true,
               "id": "ptPlan",
               "questionOptions": {
-                "rendering": "multiCheckbox",
+                "rendering": "checkbox",
                 "concept": "3352d2b2-67b6-4e84-9b2c-1baef41b0d05",
                 "conceptMappings": [],
                 "answers": [
