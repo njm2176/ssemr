@@ -172,7 +172,7 @@
 			  {
 				"label": "Current WHO T-staging",
 				"type": "obs",
-				"id": "dateSampleCollection",
+				"id": "whoStaging",
 				"questionOptions": {
 				  "concept": "e38e6ce2-92d9-4382-927b-5555ff9fa850",
 				  "rendering": "select",

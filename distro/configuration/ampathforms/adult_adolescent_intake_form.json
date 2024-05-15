@@ -603,7 +603,7 @@
               "validators": [
                 {
                   "type": "js_expression",
-                  "failsWhenExpression": "isEmpty(bpSystolic) || bpSystolic < 0",
+                  "failsWhenExpression": "bpSystolic < 0",
                   "message": "Blood Pressure Systolic should not be less than 0"
                 }
               ],
@@ -630,7 +630,7 @@
               "validators": [
                 {
                   "type": "js_expression",
-                  "failsWhenExpression": "isEmpty(bpDiastolic) || bpDiastolic < 0",
+                  "failsWhenExpression": "bpDiastolic < 0",
                   "message": "Boold Pressure Diastolic should not be less than 0"
                 }
               ],
@@ -657,7 +657,7 @@
               "validators": [
                 {
                   "type": "js_expression",
-                  "failsWhenExpression": "isEmpty(rr) || rr < 0",
+                  "failsWhenExpression": "rr < 0",
                   "message": "Respiratory Rate should not be less than 0"
                 }
               ],
@@ -684,14 +684,23 @@
               "validators": [
                 {
                   "type": "js_expression",
-                  "failsWhenExpression": "isEmpty(temperature) || temperature < 0",
+                  "failsWhenExpression": "temperature < 0",
                   "message": "Temperature should not be less than 0"
                 }
               ],
               "hide": {
                 "hideWhenExpression": "generalAppearance === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
               }
-            },
+            }
+          ],
+          "hide": {
+            "hideWhenExpression": "generalAppearance === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+          }
+        },
+        {
+          "label": "Weight and Height",
+          "isExpanded": "true",
+          "questions": [
             {
               "label": "Weight(Kg)",
               "type": "obs",
@@ -708,7 +717,7 @@
               "validators": [
                 {
                   "type": "js_expression",
-                  "failsWhenExpression": "isEmpty(weightForBMI) || weightForBMI < 0 || weightForBMI > 150",
+                  "failsWhenExpression": "weightForBMI < 0 || weightForBMI > 150",
                   "message": "Weight should not be less than 0kg and should not exceed 150kg"
                 }
               ],
@@ -732,7 +741,7 @@
               "validators": [
                 {
                   "type": "js_expression",
-                  "failsWhenExpression": "isEmpty(heightForBMI) || heightForBMI < 0 || heightForBMI > 200",
+                  "failsWhenExpression": "heightForBMI < 0 || heightForBMI > 200",
                   "message": "Height should not be less than 0cm or should not exceed 200cm"
                 }
               ],
@@ -759,7 +768,7 @@
               "validators": [
                 {
                   "type": "js_expression",
-                  "failsWhenExpression": "isEmpty(bmi) || bmi < 0",
+                  "failsWhenExpression": "bmi < 0",
                   "message": "BMI should not be less than 0"
                 }
               ],
@@ -767,10 +776,7 @@
                 "hideWhenExpression": "generalAppearance === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
               }
             }
-          ],
-          "hide": {
-            "hideWhenExpression": "generalAppearance === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
-          }
+          ]
         },
         {
           "label": "Systemic findings",
