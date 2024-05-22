@@ -25,6 +25,44 @@
   "@openmrs/esm-patient-chart-app": {
     "logo": {
       "src": "/openmrs/spa/primary-navigation.png"
+    },
+    "extensionSlots": {
+      "patient-highlights-bar-slot": {
+        "remove": ["patient-flag-tags"]
+      },
+      "patient-chart-summary-dashboard-slot": {
+        "remove": ["biometrics-overview-widget", "vitals-overview-widget"],
+        "add": ["allergies-details-widget", "immunization-overview-widget"]
+      },
+      "patient-chart-dashboard-slot": {
+        "remove": ["test-results-summary-dashboard", "results-summary-dashboard", 
+        "programs-summary-dashboard", "patient-chart-vitals-biometrics-dashboard-slot"],
+        "Translation overrides": {
+          "en": {
+            "Patient Summary": "Client Summary",
+            "Patient Summary dashboard": "Client Summary dashboard",
+            "visits": "visits history",
+            "Visits": "Visits History"
+          }
+        }
+      },
+      "top-of-all-patient-dashboards-slot": {
+        "configure": {
+          "patient-flag": {
+            "Display conditions": {
+              "privileges": ["o3: View Patient Flags"]
+            }
+          }
+        }
+      },
+      "Translation overrides": {
+        "en": {
+          "Patient Summary": "Client Summary",
+            "Patient Summary dashboard": "Client Summary dashboard",
+            "visits": "visits history",
+            "Visits": "Visits History"
+        }
+      }
     }
   },
   "@ssemr/esm-patient-registration-app": {
@@ -294,5 +332,38 @@
     },
     "visitQueueNumberAttributeUuid": "",
     "defaultFacilityUrl": ""
+  },
+  "@openmrs/esm-home-app": {
+    "extensionSlots": {
+      "homepage-dashboard-slot": {
+        "Translation overrides": {
+          "en": {
+            "patientLists": "Client Lists"
+          }
+        }
+      }
+    }
+  },
+  "@openmrs/esm-patient-list-management-app": {
+    "extensionSlots": {
+      "@openmrs/esm-patient-list-management-app": {
+        "Translation overrides": {
+          "en": {
+            "patientLists": "Client Lists"
+          }
+        }
+      }
+    }
+  },
+  "@ssemr/esm-reports-dashboard": {
+    "extensionSlots": {
+      "@ssemr/esm-reports-dashboard": {
+        "Translation overrides": {
+          "en": {
+            "reports": "Reports and Line Lists"
+          }
+        }
+      }
+    }
   }
 }
