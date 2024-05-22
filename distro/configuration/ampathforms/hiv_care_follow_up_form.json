@@ -799,7 +799,7 @@
               }
             },
             {
-              "label": "Type of TB",
+              "label": "Type of TB",         
               "type": "obs",
               "id": "tbDiagnosed",
               "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('3109983a-98af-4017-a16b-e3bac0c48d25')) ? undefined : HD.getObject('prevEnc').getValue('3109983a-98af-4017-a16b-e3bac0c48d25')",
@@ -3116,7 +3116,7 @@
                     "concept": "99d197a6-c316-11e9-9cb5-2a2ae2dbcce4"
                   },
                   {
-                    "label": "COV",
+                    "label": "Community Health Worker (CHW)",
                     "concept": "d3f86020-1ce2-4bff-8dbc-42bc98fcf080"
                   },
                   {
