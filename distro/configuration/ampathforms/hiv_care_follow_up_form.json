@@ -2951,7 +2951,7 @@
                 "hideWhenExpression": "vlResultResult !== '12e201ff-c83a-4f3f-920e-37288d39fa55'"
               },
               "alert": {
-                "alertWhenExpression": "viralLoadValue > 1000",
+                "alertWhenExpression": "viralLoadValue >= 1000",
                 "message": "VL Value is above 1000, please fill the EAC Form"
               }
             },
