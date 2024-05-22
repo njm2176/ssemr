@@ -325,7 +325,7 @@
 		]
 	  },
 	  {
-		"label": "Request Clinician",
+		"label": "Requesting Clinician",
 		"sections": [
 		  {
 			"label": "Request Clinician",
@@ -381,9 +381,14 @@
 				"validators": []
 			  }
 			]
-		  },
+		  }
+		]
+	  },
+	  {
+		"label": "Viral Load (VL) Details",
+		"sections": [
 		  {
-			"label": "VL Focal Person",
+			"label": "Viral Load (VL) Details",
 			"isExpanded": "true",
 			"questions": [
 			  {
