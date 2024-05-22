@@ -820,6 +820,9 @@
                     "label": "Pulmonary(CD)"
                   }
                 ]
+              },
+              "hide": {
+                "hideWhenExpression": "currentlyOnTBTreatment !== 'b497171e-0410-4d8d-bbd4-7e1a8f8b504e'"
               }
             },
             {
