@@ -79,10 +79,6 @@
                 "conceptMappings": [],
                 "answers": [
                   {
-                    "label": "No information",
-                    "concept": "6cfc61ed-08ec-45cf-8317-325958dfdb9a"
-                  },
-                  {
                     "concept": "bff040c5-7865-4756-8fdc-2fe2cec784c1",
                     "label": "Persistent Generalized Lymphadenopathy (PGL)",
                     "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
@@ -256,6 +252,10 @@
                     "concept": "c5120716-e297-40f6-9eb5-ef432cc791c0",
                     "label": "Other Past Medical History(Specify)",
                     "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "label": "No information",
+                    "concept": "6cfc61ed-08ec-45cf-8317-325958dfdb9a"
                   }
                 ]
               },
@@ -299,10 +299,6 @@
                 "concept": "aa25ca53-21b8-4e2f-b44b-61c2c20d4dee",
                 "conceptMappings": [],
                 "answers": [
-                  {
-                    "label": "No information",
-                    "concept": "6cfc61ed-08ec-45cf-8317-325958dfdb9a"
-                  },
                   {
                     "concept": "1fc47a4b-e35d-4f89-953e-52c4c6a69eb5",
                     "label": "Weight loss",
@@ -467,6 +463,10 @@
                     "concept": "785f673e-c961-4b0b-90d7-c2f7c94c4166",
                     "label": "Urethral discharge/Vaginal discharge",
                     "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "label": "No information",
+                    "concept": "6cfc61ed-08ec-45cf-8317-325958dfdb9a"
                   }
                 ]
               },
@@ -559,10 +559,6 @@
                 "conceptMappings": [],
                 "answers": [
                   {
-                    "label": "No information",
-                    "concept": "6cfc61ed-08ec-45cf-8317-325958dfdb9a"
-                  },
-                  {
                     "concept": "3655ba19-dff1-44bf-b8e4-b1d0240f653c",
                     "label": "Acutely ill"
                   },
@@ -573,6 +569,10 @@
                   {
                     "concept": "ff115f4e-c296-4d79-b9cf-4a6e5d9fa5e0",
                     "label": "Healthy"
+                  },
+                  {
+                    "label": "No information",
+                    "concept": "6cfc61ed-08ec-45cf-8317-325958dfdb9a"
                   }
                 ]
               },
@@ -1177,6 +1177,28 @@
               ]
             },
             {
+              "label": "CBC Done?",
+              "type": "obs",
+              "required": false,
+              "id": "cbcDone",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "0df219bd-c2bc-406b-bfcb-ddf3f1e3ecac",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "concept": "78763e68-104e-465d-8ce3-35f9edfb083d",
+                    "label": "Yes"
+                  },
+                  {
+                    "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e",
+                    "label": "No"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
               "label": "CBC",
               "type": "obs",
               "required": false,
@@ -1187,7 +1209,10 @@
                 "conceptMappings": [],
                 "answers": []
               },
-              "validators": []
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "cbcDone !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
+              }
             },
             {
               "label": "Is the Client Pregnant?",

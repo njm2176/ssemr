@@ -30,15 +30,13 @@
             },
             {
               "label": "Follow up Date",
-              "type": "obs",
               "required": true,
-              "id": "followUpDate",
-              "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('ee31f5fc-40b8-417d-8350-1a74431c220b')) ? undefined : HD.getObject('prevEnc').getValue('ee31f5fc-40b8-417d-8350-1a74431c220b')",
+              "id": "appointmentWorkspaceLauncher",
               "questionOptions": {
-                "rendering": "date",
-                "concept": "ee31f5fc-40b8-417d-8350-1a74431c220b"
-              },
-              "validators": []
+                "rendering": "workspace-launcher",
+                "buttonLabel": "Add appointments",
+                "workspaceName": "appointments-form-workspace"
+              }
             },
             {
               "label": "Duration in months since first starting ART",
@@ -609,7 +607,7 @@
                   },
                   {
                     "concept": "8942c092-9ea4-4128-bade-060cd1a97c34",
-                    "label": "INH screened negative and currently on INH prophylaxis"
+                    "label": "TB Screened Negative and currently on INH prophylaxis"
                   },
                   {
                     "concept": "19b61c26-6533-4682-bd54-d45ad218e8f5",
@@ -648,10 +646,6 @@
                   {
                     "concept": "ad8ecb63-6b5d-49b2-9a9d-e16d7a0efc40",
                     "label": "FNA,Culture, UltraSound"
-                  },
-                  {
-                    "concept": "1b4f4df7-dddc-4e73-ab18-304c4fd12953",
-                    "label": "TB Diagnosed"
                   }
                 ]
               },
@@ -826,9 +820,6 @@
                     "label": "Pulmonary(CD)"
                   }
                 ]
-              },
-              "hide": {
-                "hideWhenExpression": "typeOfTest !=='1b4f4df7-dddc-4e73-ab18-304c4fd12953'"
               }
             },
             {
@@ -2147,10 +2138,6 @@
                     "concept": "188dc5ba-1c33-4789-b39c-267a2ff29b96"
                   },
                   {
-                    "label": "Forgot",
-                    "concept": "188dc5ba-1c33-4789-b39c-267a2ff29b96"
-                  },
-                  {
                     "label": "Felt better",
                     "concept": "675c6d61-1637-48e3-a78f-cb77b4e55b86"
                   },
@@ -2228,10 +2215,6 @@
                   {
                     "label": "Share with others",
                     "concept": "046c6032-7030-4b50-9e8e-831b8ee76bc5"
-                  },
-                  {
-                    "label": "Forgot",
-                    "concept": "188dc5ba-1c33-4789-b39c-267a2ff29b96"
                   },
                   {
                     "label": "Forgot",
@@ -2984,10 +2967,6 @@
                 "concept": "f5b60f09-9d8a-4bda-9318-9ef097c77945",
                 "answers": [
                   {
-                    "label": "No information",
-                    "concept": "6cfc61ed-08ec-45cf-8317-325958dfdb9a"
-                  },
-                  {
                     "label": "RPR",
                     "concept": "ef1c0931-32ee-47f5-9ecc-8c18eef2d706",
                     "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
@@ -3021,6 +3000,14 @@
                     "label": "LFTs",
                     "concept": "4cfb4018-141a-4387-9e2a-6980aa3840c7",
                     "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+                  },
+                  {
+                    "label": "No information",
+                    "concept": "6cfc61ed-08ec-45cf-8317-325958dfdb9a"
+                  },
+                  {
+                    "label": "Not Applicable",
+                    "concept": "f2355233-c552-4cd6-802f-0c7c75221f03"
                   }
                 ]
               }
@@ -3080,10 +3067,6 @@
                 "conceptMappings": [],
                 "answers": [
                   {
-                    "label": "Not Applicable",
-                    "concept": "f2355233-c552-4cd6-802f-0c7c75221f03"
-                  },
-                  {
                     "label": "Refer",
                     "concept": "8ec83611-795e-44d0-b359-a667a073bf07",
                     "disableWhenExpression": "myValue === 'f2355233-c552-4cd6-802f-0c7c75221f03'"
@@ -3102,6 +3085,10 @@
                     "label": "Hospitalised",
                     "concept": "b87bac5e-b6ca-40a5-a3d0-a3fa34a94f5d",
                     "disableWhenExpression": "myValue === 'f2355233-c552-4cd6-802f-0c7c75221f03'"
+                  },
+                  {
+                    "label": "Not Applicable",
+                    "concept": "f2355233-c552-4cd6-802f-0c7c75221f03"
                   }
                 ]
               },
