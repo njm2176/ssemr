@@ -178,7 +178,10 @@ Other ART Regimen"
 b0afac64-54b5-412c-86d0-7cf5dc6afb35,,Other ART Regimen Specify,Other ART Regimen Specify,,,,,Question,Text,
 4ab28128-7ef3-452d-86d5-73561761b08a,,Number of Days Dispensed,Number of Days,Number of Days Dispensed,,,,Question,Numeric,
 fc684917-4deb-42cf-9245-8a13c6a232bc,,Date VL Sample Collected?,Date VL Sample Collected?,Date VL Sample Collected?,,,,Question,Date,
-8b5ef5c4-3c88-49b8-87e5-cb8d30caa77d,,VL Results,VL Result,VL Results,,,,Question,Numeric,
+62df0577-a1f7-493e-80d2-e458998f1a2f,,Below Detectable (BDL),Below Detectable (BDL),Below Detectable (BDL),,,,Misc,N/A,
+12e201ff-c83a-4f3f-920e-37288d39fa55,,Viral Load Value,Viral Load Value,Viral Load Value,,,,Misc,N/A,
+8b5ef5c4-3c88-49b8-87e5-cb8d30caa77d,,VL Results,VL Result,VL Results,,,,Question,Coded,"Below Detectable (BDL);
+Viral Load Value"
 714752ad-61df-44e0-ae40-fa9bf4f9d831,,Adherence Good,Good,Adherence Good,,,,Misc,N/A,
 535ea56b-0138-4804-ab23-e70f2dbe0b61,,Adherence Fair,Fair,Adherence Fair,,,,Misc,N/A,
 f05f31c1-5f06-4ada-8cbd-a877cb06442a,,Adherence Poor,Poor,Adherence Poor,,,,Misc,N/A,

@@ -29,7 +29,7 @@
     "@openmrs/esm-appointments-app": "next",
     "@ssemr/esm-reports-dashboard":"1.0.1",
     "@ssemr/esm-patient-registration-app": "1.4.8",
-    "@ssemr/esm-patient-hiv-art-app": "5.7.1",
+    "@ssemr/esm-patient-hiv-art-app": "5.7.3",
     "@ssemr/esm-patient-summary-app": "1.0.1"
   },
   "spaPath": "$SPA_PATH",
