@@ -11,6 +11,7 @@ COPY config.json .
 COPY /assets /app/assets
 
 ARG CACHE_BUST
+RUN npm install @swc/core swc-loader --save-dev
 RUN npx --legacy-peer-deps openmrs@${APP_SHELL_VERSION:-next} assemble --manifest --mode config --config spa-build-config.json --target ./spa
 RUN npx --legacy-peer-deps openmrs@${APP_SHELL_VERSION:-next} build --build-config spa-build-config.json --target ./spa
 

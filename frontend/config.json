@@ -31,7 +31,6 @@
         "remove": ["patient-flag-tags"]
       },
       "patient-chart-summary-dashboard-slot": {
-        "remove": ["biometrics-overview-widget", "vitals-overview-widget"],
         "add": ["allergies-details-widget", "immunization-overview-widget"]
       },
       "patient-chart-dashboard-slot": {
@@ -54,14 +53,21 @@
             }
           }
         }
-      },
-      "Translation overrides": {
-        "en": {
-          "Patient Summary": "Client Summary",
-            "Patient Summary dashboard": "Client Summary dashboard",
-            "visits": "visits history",
-            "Visits": "Visits History"
-        }
+      }
+    },
+    "Translation overrides": {
+      "en": {
+        "Patient Summary": "Client Summary",
+        "Patient Summary dashboard": "Client Summary dashboard",
+        "visits": "visits history",
+        "Visits": "Visits History"
+      }
+    }
+  },
+  "@openmrs/esm-appointments-app": {
+    "Translation overrides": {
+      "en": {
+        "Appointments": "Appointment Logs"
       }
     }
   },
@@ -168,11 +174,19 @@
         }
       },
       {
-        "label": "Date First Tested HIV+ (dd/mm/YYYY)",
-        "type": "obs",
-        "required": false,
+
         "id": "dateFirstTestedHIVPositive",
-        "uuid": "7482b976-56fe-44b0-b30f-1e957cc0cbb0"
+        "type": "obs",
+        "label": "Date First Tested HIV+",
+        "placeholder": "dd/mm/YYYY",
+        "showHeading": false,
+        "uuid": "7482b976-56fe-44b0-b30f-1e957cc0cbb0",
+        "validation": {
+          "required": false,
+          "matches": null
+        },
+        "answerConceptSetUuid": null,
+        "customConceptAnswers": []
       },
       {
         "id": "placeFirstTestedHIVPositive",
@@ -245,11 +259,19 @@
         }
       },
       {
-        "label": "Date Of HIV Retesting Before ART (dd/mm/YYYY)",
-        "type": "obs",
-        "required": false,
+
         "id": "dateOfHIVRetestingBeforeART",
-        "uuid": "fee1095f-a0a7-4694-a352-4e88d6ce6c7c"
+        "type": "obs",
+        "label": "Date Of HIV Retesting Before ART",
+        "placeholder": "dd/mm/YYYY",
+        "showHeading": false,
+        "uuid": "fee1095f-a0a7-4694-a352-4e88d6ce6c7c",
+        "validation": {
+          "required": false,
+          "matches": null
+        },
+        "answerConceptSetUuid": null,
+        "customConceptAnswers": []
       },
       {
         "id": "placeOfHIVRetestingBeforeART",
