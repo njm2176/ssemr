@@ -866,7 +866,7 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "currentlyOnTBTreatment !== 'b497171e-0410-4d8d-bbd4-7e1a8f8b504e'"
+                "hideWhenExpression": "currentlyOnTBTreatment !== 'b497171e-0410-4d8d-bbd4-7e1a8f8b504e' || TBStatus !== '4897c2f3-9d36-4d6c-bf5a-780db6b4ab12'"
               }
             },
             {
@@ -955,8 +955,12 @@
                     "concept": "47be2dc7-acfc-43e8-8c27-4331856164db"
                   },
                   {
-                    "label": "Not Applicable",
+                    "label": "No information",
                     "concept": "f2355233-c552-4cd6-802f-0c7c75221f03"
+                  },
+                  {
+                    "label": "No side effects",
+                    "concept": "2b663228-adaa-4cf0-ae77-5a2559e3f3a0"
                   }
                 ]
               },
