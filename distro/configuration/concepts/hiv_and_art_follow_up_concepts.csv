@@ -57,6 +57,7 @@ a1656477-2650-4861-bdbd-84a7d985fa5a,,Fatigue,Fatigue,,,,,Misc,N/A,
 acecabeb-008a-4924-981f-fcc2807087f6,,FAT changes,FAT changes,,,,,Misc,N/A,
 50622f1f-9367-4a4e-a510-e969681d8df0,,"B, N burning, numb, tingling","B, N burning/numb/tingling",,,,,Misc,N/A,
 db99694b-a058-48a9-832c-64c28847a1a9,,"CNS: dizzy, anxiety, nightmare, depression",CNS: dizzy/anxiety/nightmare/depression ,,,,,Misc,N/A,
+2b663228-adaa-4cf0-ae77-5a2559e3f3a0,,No side effects,No side effects,,,,,Misc,N/A,
 13498474-ba95-4fec-8010-c8c5e24748ff,,Side Effects,Side Effects,Side Effects,,,,Question,Coded,"Nausea;
 Rash;
 Headache;
@@ -67,7 +68,8 @@ Fatigue;
 Abdominal pain;
 FAT changes;
 B, N burning, numb, tingling;
-CNS: dizzy, anxiety, nightmare, depression"
+CNS: dizzy, anxiety, nightmare, depression;
+No side effects"
 be8d8351-6dad-4f91-a5a1-40c56656bbf5,,New OI (other Problems),New OI (other Problems),,,,,Question,Text,
 88f2a6ea-367d-45dc-942a-b809b0d17275,,Stage 1,Stage 1,Stage 1,,,,Misc,N/A,
 17a3b24b-e107-49fe-8b0d-69c3b7e60f4c,,Stage 2,Stage 2,Stage 2,,,,Misc,N/A,
