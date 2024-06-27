@@ -39,7 +39,7 @@
         "Translation overrides": {
           "en": {
             "Patient Summary": "Client Summary",
-            "Patient Summary dashboard": "Client Summary dashboard",
+            "Patient Summary dashboard": "Client Summary Dashboard",
             "visits": "visits history",
             "Visits": "Visits History"
           }
