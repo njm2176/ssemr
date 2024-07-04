@@ -148,11 +148,11 @@
                 "conceptMappings": [],
                 "answers": [
                   {
-                    "concept": "78763e68-104e-465d-8ce3-35f9edfb083d",
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Yes"
                   },
                   {
-                    "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e",
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "No"
                   }
                 ]
@@ -166,7 +166,7 @@
               },
               "id": "placeTransferredInOnARTFromAnotherProgramme",
               "hide": {
-                "hideWhenExpression": "transferredInOnARTFromAnotherProgramme !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
+                "hideWhenExpression": "transferredInOnARTFromAnotherProgramme !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
             },
             {
@@ -187,7 +187,7 @@
                 }
               ],
               "hide": {
-                "hideWhenExpression": "transferredInOnARTFromAnotherProgramme !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
+                "hideWhenExpression": "transferredInOnARTFromAnotherProgramme !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
             }
           ]
