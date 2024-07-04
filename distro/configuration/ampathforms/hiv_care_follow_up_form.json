@@ -866,7 +866,7 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "currentlyOnTBTreatment !== '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                "hideWhenExpression": "currentlyOnTBTreatment !== '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || TBStatus !== '4897c2f3-9d36-4d6c-bf5a-780db6b4ab12'"
               }
             },
             {
