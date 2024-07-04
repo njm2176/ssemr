@@ -650,10 +650,7 @@ cfb88615-f596-49da-90f3-7ef98ae45b20,no,Juba Military HOSPITAL,,,Visit Location,
 f11fa265-e9d2-495c-804b-af0de664fef9,no,Juba POC,,,Visit Location,,,,Munuki Payam,,,,,Juba County,Central Equatoria State,,,
 094d19f4-c8e5-493f-a044-a58a8c8ef228,no,Juba Police PHCC,,,Visit Location,,,,Juba Town Payam,,,,,Juba County,Central Equatoria State,,,
 a0d5b86e-da34-42a0-8b62-16879d7e8135,no,Juba Prison PHCC,,,Visit Location,,,,Juba Town Payam,,,,,Juba County,Central Equatoria State,,,
-b7d4142c-9e54-45c8-bf08-c11510307480,no,Juba Teaching HOSPITAL,Juba Teaching Hospital Location,,"Visit Location;
-Queue Location;
-Login Location;
-Appointment Location",CES/JTH,,,Juba Town Payam,,,,,Juba County,Central Equatoria State,,,
+b7d4142c-9e54-45c8-bf08-c11510307480,no,Juba Teaching HOSPITAL,Juba Teaching Hospital Location,,Visit Location,CES/JTH,,,Juba Town Payam,,,,,Juba County,Central Equatoria State,,,
 a0b57caa-2d25-48e5-aaeb-ac9587e817c2,no,Juljok PHCC,,,Visit Location,,,,Rumamer Payam,,,,,Abyei County,Abyei Administrative Area,,,
 fa32e88a-b95b-4d84-8d85-76e4c7245c71,no,Juong PHCU,,,Visit Location,,,,Dok Payam,,,,,Leer County,Unity State,,,
 5b2fd808-2494-4ce6-9bd5-a19093b3df50,no,Jurbeech PHCU,,,Visit Location,,,,Malual West Payam (Aweil N),,,,,Aweil North County,Northern Bahr El Ghazal State,,,
@@ -1317,7 +1314,10 @@ b00096de-f8d7-41f3-8831-1d1e5231c1e5,no,Muktah PHCC,,,Visit Location,,,,Wau Nort
 5c10c612-3fe0-4410-8a52-e8943ffb9697,no,Mundari Bura PHCC,,,Visit Location,,,,Tindilo Payam,,,,,Terekeka County,Central Equatoria State,,,
 dc79fa85-b75d-4495-a232-3517440bb6d3,no,Mundri PHCC,,,Visit Location,,,,Mundri Payam,,,,,Mundri West County,Western Equatoria State,,,
 e3fc89d5-327f-433c-a706-65742b8d3f05,no,Muni PHCC,,,Visit Location,,,,Muni Payam,,,,,Terekeka County,Central Equatoria State,,,
-a6c0ca1d-5b6a-4c5b-b7b9-6bd839c9cae2,no,Munuki PHCC,,,Visit Location,,,,Munuki Payam,,,,,Juba County,Central Equatoria State,,,
+a6c0ca1d-5b6a-4c5b-b7b9-6bd839c9cae2,no,Munuki PHCC,,,"Visit Location;
+Queue Location;
+Login Location;
+Appointment Location",,,,Munuki Payam,,,,,Juba County,Central Equatoria State,,,
 8c930b24-fbd2-45c1-9454-7d3bdddb0a18,no,Mupoi PHCC,,,Visit Location,,,,Mupoi Payam,,,,,Tambura County,Western Equatoria State,,,
 e82cd425-fbb1-4103-9f5e-7cec3976bcc7,no,Mura Hatiha PHCU,,,Visit Location,,,,Hiyala Payam,,,,,Torit County,Eastern Equatoria State,,,
 14232489-41be-4014-a09d-43ae3669b35e,no,Mura Lopit PHCU,,,Visit Location,,,,Imehejek Payam,,,,,Lafon/Lopa County,Eastern Equatoria State,,,

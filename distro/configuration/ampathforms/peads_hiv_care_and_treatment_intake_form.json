@@ -105,11 +105,11 @@
 					"conceptMappings": [],
 					"answers": [
 					  {
-						"concept": "78763e68-104e-465d-8ce3-35f9edfb083d",
+						"concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 						"label": "Yes"
 					  },
 					  {
-						"concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e",
+						"concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 						"label": "No"
 					  }
 					]
@@ -1763,11 +1763,11 @@
 					"concept": "2652c9e7-72c5-48ae-b6ee-0bd3dcb65fca",
 					"answers": [
 					  {
-						"concept": "78763e68-104e-465d-8ce3-35f9edfb083d",
+						"concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 						"label": "Yes"
 					  },
 					  {
-						"concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e",
+						"concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 						"label": "No"
 					  }
 					]
@@ -1785,7 +1785,7 @@
 				  },
 				  "type": "obs",
 				  "hide": {
-					"hideWhenExpression": "age <= 5 || cd4Done !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
+					"hideWhenExpression": "age <= 5 || cd4Done !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
 				  },
 				  "validators": [
 					{
@@ -1807,7 +1807,7 @@
 				  },
 				  "type": "obs",
 				  "hide": {
-					"hideWhenExpression": "age > 5 || cd4Done !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
+					"hideWhenExpression": "age > 5 || cd4Done !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
 				  },
 				  "validators": [
 					{
