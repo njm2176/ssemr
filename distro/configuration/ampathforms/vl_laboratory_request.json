@@ -18,7 +18,7 @@
 				"id": "date",
 				"questionOptions": {
 				  "rendering": "date",
-				  "concept": "e605731b-2e81-41a9-8446-2ed442c339e2",
+				  "concept": "668cdec8-bc73-457d-9026-4c8946816611",
 				  "conceptMappings": [],
 				  "answers": []
 				},
@@ -244,17 +244,41 @@
 				"validators": []
 			  },
 			  {
-				"label": "Viral Load Value",
+				"label": "VL Results",
+				"required": true,
+				"type": "obs",
+				"id": "valueMonitoringResult",
+				"questionOptions": {
+				  "rendering": "select",
+				  "concept": "8b5ef5c4-3c88-49b8-87e5-cb8d30caa77d",
+				  "answers": [
+					{
+					  "concept": "62df0577-a1f7-493e-80d2-e458998f1a2f",
+					  "label": "Below Detectable (BDL)"
+					},
+					{
+					  "concept": "12e201ff-c83a-4f3f-920e-37288d39fa55",
+					  "label": "Viral Load value"
+					}
+				  ]
+				}
+			  },
+			  {
+				"label": "Record Viral Load value",
 				"type": "obs",
 				"required": false,
 				"id": "valueMonitoring",
 				"questionOptions": {
-				  "rendering": "number",
-				  "concept": "db923866-cfc6-47a5-8ae4-1e37d75db195",
-				  "conceptMappings": [],
-				  "answers": []
+				  "rendering": "numeric",
+				  "concept": "01c3ce55-b7eb-45f5-93d5-bace353e3cfd"
 				},
-				"validators": []
+				"hide": {
+				  "hideWhenExpression": "valueMonitoringResult !== '12e201ff-c83a-4f3f-920e-37288d39fa55'"
+				},
+				"alert": {
+				  "alertWhenExpression": "valueMonitoring >= 1000",
+				  "message": "VL Value is above 1000, please fill the EAC Form"
+				}
 			  }
 			]
 		  },
@@ -276,17 +300,41 @@
 				"validators": []
 			  },
 			  {
-				"label": "Viral Load Value",
+				"label": "VL Results",
+				"required": true,
 				"type": "obs",
-				"required": false,
 				"id": "ValueRepeatVL",
 				"questionOptions": {
-				  "rendering": "number",
-				  "concept": "5ad34c7c-3a92-496c-b7d7-2210aca554bd",
-				  "conceptMappings": [],
-				  "answers": []
+				  "rendering": "select",
+				  "concept": "8b5ef5c4-3c88-49b8-87e5-cb8d30caa77d",
+				  "answers": [
+					{
+					  "concept": "62df0577-a1f7-493e-80d2-e458998f1a2f",
+					  "label": "Below Detectable (BDL)"
+					},
+					{
+					  "concept": "12e201ff-c83a-4f3f-920e-37288d39fa55",
+					  "label": "Viral Load value"
+					}
+				  ]
+				}
+			  },
+			  {
+				"label": "Record Viral Load value",
+				"type": "obs",
+				"required": false,
+				"id": "ValueRepeatVLValue",
+				"questionOptions": {
+				  "rendering": "numeric",
+				  "concept": "01c3ce55-b7eb-45f5-93d5-bace353e3cfd"
 				},
-				"validators": []
+				"hide": {
+				  "hideWhenExpression": "ValueRepeatVL !== '12e201ff-c83a-4f3f-920e-37288d39fa55'"
+				},
+				"alert": {
+				  "alertWhenExpression": "ValueRepeatVLValue >= 1000",
+				  "message": "VL Value is above 1000, please fill the EAC Form"
+				}
 			  }
 			]
 		  },
@@ -308,17 +356,41 @@
 				"validators": []
 			  },
 			  {
-				"label": "Value",
+				"label": "VL Results",
+				"required": true,
 				"type": "obs",
-				"required": false,
 				"id": "valueTreatFailure",
 				"questionOptions": {
-				  "rendering": "number",
-				  "concept": "7906cef9-4843-40f7-8fee-0e69cb00e7b8",
-				  "conceptMappings": [],
-				  "answers": []
+				  "rendering": "select",
+				  "concept": "8b5ef5c4-3c88-49b8-87e5-cb8d30caa77d",
+				  "answers": [
+					{
+					  "concept": "62df0577-a1f7-493e-80d2-e458998f1a2f",
+					  "label": "Below Detectable (BDL)"
+					},
+					{
+					  "concept": "12e201ff-c83a-4f3f-920e-37288d39fa55",
+					  "label": "Viral Load value"
+					}
+				  ]
+				}
+			  },
+			  {
+				"label": "Record Viral Load value",
+				"type": "obs",
+				"required": false,
+				"id": "valueTreatFailureValue",
+				"questionOptions": {
+				  "rendering": "numeric",
+				  "concept": "01c3ce55-b7eb-45f5-93d5-bace353e3cfd"
 				},
-				"validators": []
+				"hide": {
+				  "hideWhenExpression": "valueTreatFailure !== '12e201ff-c83a-4f3f-920e-37288d39fa55'"
+				},
+				"alert": {
+				  "alertWhenExpression": "valueTreatFailureValue >= 1000",
+				  "message": "VL Value is above 1000, please fill the EAC Form"
+				}
 			  }
 			]
 		  }

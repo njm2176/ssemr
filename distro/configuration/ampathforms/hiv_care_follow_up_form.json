@@ -19,7 +19,7 @@
               "id": "dateScheduled",
               "questionOptions": {
                 "rendering": "date",
-                "concept": "e605731b-2e81-41a9-8446-2ed442c339e2"
+                "concept": "494915d8-4cf3-4c24-9efa-371710992cb3"
               },
               "validators": [
                 {
@@ -41,6 +41,7 @@
             {
               "label": "Duration in months since first starting ART",
               "required": true,
+              "type": "obs",
               "id": "durationDaysStartingArt",
               "questionOptions": {
                 "rendering": "numeric",
@@ -59,6 +60,7 @@
             {
               "label": "Duration in months since starting current regimen",
               "required": true,
+              "type": "obs",
               "id": "durationDaysStartingRegimen",
               "questionOptions": {
                 "rendering": "numeric",
@@ -407,7 +409,7 @@
                 "rendering": "select",
                 "concept": "58ab89cd-6674-480b-95a0-5b761b0275cb",
                 "calculate": {
-                  "calculateExpression": "clientRepresented === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' ? 'f2355233-c552-4cd6-802f-0c7c75221f03' : ''"
+                  "calculateExpression": "clientRepresented === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' ? '608f6df4-bc19-4afa-a1ff-58f407389221' : ''"
                 },
                 "answers": [
                   {
@@ -420,7 +422,7 @@
                   },
                   {
                     "label": "Not Applicable",
-                    "concept": "f2355233-c552-4cd6-802f-0c7c75221f03"
+                    "concept": "608f6df4-bc19-4afa-a1ff-58f407389221"
                   }
                 ]
               },
@@ -843,7 +845,7 @@
               }
             },
             {
-              "label": "Type of TB",         
+              "label": "Type of TB",
               "type": "obs",
               "id": "tbDiagnosed",
               "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('3109983a-98af-4017-a16b-e3bac0c48d25')) ? undefined : HD.getObject('prevEnc').getValue('3109983a-98af-4017-a16b-e3bac0c48d25')",
@@ -956,7 +958,7 @@
                   },
                   {
                     "label": "No information",
-                    "concept": "f2355233-c552-4cd6-802f-0c7c75221f03"
+                    "concept": "608f6df4-bc19-4afa-a1ff-58f407389221"
                   },
                   {
                     "label": "No side effects",
@@ -1156,7 +1158,7 @@
                   },
                   {
                     "label": "Not Applicable",
-                    "concept": "f2355233-c552-4cd6-802f-0c7c75221f03"
+                    "concept": "608f6df4-bc19-4afa-a1ff-58f407389221"
                   }
                 ]
               },
@@ -1497,7 +1499,7 @@
                   },
                   {
                     "label": "Not Applicable",
-                    "concept": "f2355233-c552-4cd6-802f-0c7c75221f03"
+                    "concept": "608f6df4-bc19-4afa-a1ff-58f407389221"
                   }
                 ]
               },
@@ -2162,7 +2164,7 @@
                   },
                   {
                     "label": "Not Applicable",
-                    "concept": "f2355233-c552-4cd6-802f-0c7c75221f03"
+                    "concept": "608f6df4-bc19-4afa-a1ff-58f407389221"
                   }
                 ]
               },
@@ -3058,7 +3060,7 @@
                   },
                   {
                     "label": "Not Applicable",
-                    "concept": "f2355233-c552-4cd6-802f-0c7c75221f03"
+                    "concept": "608f6df4-bc19-4afa-a1ff-58f407389221"
                   }
                 ]
               }
@@ -3120,26 +3122,26 @@
                   {
                     "label": "Refer",
                     "concept": "8ec83611-795e-44d0-b359-a667a073bf07",
-                    "disableWhenExpression": "myValue === 'f2355233-c552-4cd6-802f-0c7c75221f03'"
+                    "disableWhenExpression": "myValue === '608f6df4-bc19-4afa-a1ff-58f407389221'"
                   },
                   {
                     "label": "Consult",
                     "concept": "5b4c24fd-b3b2-454b-8b26-2300ea774b07",
-                    "disableWhenExpression": "myValue === 'f2355233-c552-4cd6-802f-0c7c75221f03'"
+                    "disableWhenExpression": "myValue === '608f6df4-bc19-4afa-a1ff-58f407389221'"
                   },
                   {
                     "label": "Link/Provide",
                     "concept": "d521c7e0-207e-4e9d-97e4-e376b38b664f",
-                    "disableWhenExpression": "myValue === 'f2355233-c552-4cd6-802f-0c7c75221f03'"
+                    "disableWhenExpression": "myValue === '608f6df4-bc19-4afa-a1ff-58f407389221'"
                   },
                   {
                     "label": "Hospitalised",
                     "concept": "b87bac5e-b6ca-40a5-a3d0-a3fa34a94f5d",
-                    "disableWhenExpression": "myValue === 'f2355233-c552-4cd6-802f-0c7c75221f03'"
+                    "disableWhenExpression": "myValue === '608f6df4-bc19-4afa-a1ff-58f407389221'"
                   },
                   {
                     "label": "Not Applicable",
-                    "concept": "f2355233-c552-4cd6-802f-0c7c75221f03"
+                    "concept": "608f6df4-bc19-4afa-a1ff-58f407389221"
                   }
                 ]
               },
