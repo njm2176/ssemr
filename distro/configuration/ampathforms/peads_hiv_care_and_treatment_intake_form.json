@@ -19,7 +19,7 @@
 				  "id": "date",
 				  "questionOptions": {
 					"rendering": "date",
-					"concept": "e605731b-2e81-41a9-8446-2ed442c339e2",
+					"concept": "668cdec8-bc73-457d-9026-4c8946816611",
 					"conceptMappings": [],
 					"answers": []
 				  },
@@ -87,7 +87,7 @@
 						"label": "Non-Reactive"
 					  },
 					  {
-						"concept": "9202b40e-349a-4033-a6b5-7305dbf9dc96",
+						"concept": "1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 						"label": "Unknown"
 					  }
 					]
@@ -418,7 +418,7 @@
 						"disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
 					  },
 					  {
-						"concept": "1f0f8ec6-4e15-11e4-8a57-0800271c1b75",
+						"concept": "140238AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 						"label": "Fever",
 						"disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
 					  },
@@ -604,7 +604,7 @@
 					"answers": []
 				  },
 				  "hide": {
-					"hideWhenExpression": "isEmpty(currentSymptoms) || !arrayContains(currentSymptoms, '1f0f8ec6-4e15-11e4-8a57-0800271c1b75')",
+					"hideWhenExpression": "isEmpty(currentSymptoms) || !arrayContains(currentSymptoms, '140238AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')",
 					"validators": []
 				  }
 				},
@@ -837,7 +837,7 @@
 					"conceptMappings": [],
 					"answers": [
 					  {
-						"concept": "c45f6876-3f10-11e4-adec-0800271c1b75",
+						"concept": "1115AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 						"label": "Normal Nutrition"
 					  },
 					  {
@@ -875,11 +875,11 @@
 					"conceptMappings": [],
 					"answers": [
 					  {
-						"concept": "c45f6876-3f10-11e4-adec-0800271c1b75",
+						"concept": "1115AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 						"label": "Normal"
 					  },
 					  {
-						"concept": "5cd2823c-fa3b-47e4-9a20-9802ebbec8c5",
+						"concept": "1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 						"label": "Abnormal"
 					  }
 					]
@@ -911,7 +911,7 @@
 					]
 				  },
 				  "hide": {
-					"hideWhenExpression": "head !== '5cd2823c-fa3b-47e4-9a20-9802ebbec8c5'",
+					"hideWhenExpression": "head !== '1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'",
 					"validators": []
 				  }
 				},
@@ -942,11 +942,11 @@
 					"conceptMappings": [],
 					"answers": [
 					  {
-						"concept": "c45f6876-3f10-11e4-adec-0800271c1b75",
+						"concept": "1115AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 						"label": "Normal"
 					  },
 					  {
-						"concept": "5cd2823c-fa3b-47e4-9a20-9802ebbec8c5",
+						"concept": "1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 						"label": "Abnormal"
 					  }
 					]
@@ -978,7 +978,7 @@
 					]
 				  },
 				  "hide": {
-					"hideWhenExpression": "ears !=='5cd2823c-fa3b-47e4-9a20-9802ebbec8c5'",
+					"hideWhenExpression": "ears !=='1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'",
 					"validators": []
 				  }
 				},
@@ -1009,11 +1009,11 @@
 					"conceptMappings": [],
 					"answers": [
 					  {
-						"concept": "c45f6876-3f10-11e4-adec-0800271c1b75",
+						"concept": "1115AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 						"label": "Normal"
 					  },
 					  {
-						"concept": "5cd2823c-fa3b-47e4-9a20-9802ebbec8c5",
+						"concept": "1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 						"label": "Abnormal"
 					  }
 					]
@@ -1049,7 +1049,7 @@
 					]
 				  },
 				  "hide": {
-					"hideWhenExpression": "eyes !=='5cd2823c-fa3b-47e4-9a20-9802ebbec8c5'",
+					"hideWhenExpression": "eyes !=='1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'",
 					"validators": []
 				  }
 				},
@@ -1080,11 +1080,11 @@
 					"conceptMappings": [],
 					"answers": [
 					  {
-						"concept": "c45f6876-3f10-11e4-adec-0800271c1b75",
+						"concept": "1115AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 						"label": "Normal"
 					  },
 					  {
-						"concept": "5cd2823c-fa3b-47e4-9a20-9802ebbec8c5",
+						"concept": "1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 						"label": "Abnormal"
 					  }
 					]
@@ -1103,7 +1103,7 @@
 					"answers": []
 				  },
 				  "hide": {
-					"hideWhenExpression": "nose !== '5cd2823c-fa3b-47e4-9a20-9802ebbec8c5'",
+					"hideWhenExpression": "nose !== '1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'",
 					"validators": []
 				  }
 				},
@@ -1118,11 +1118,11 @@
 					"conceptMappings": [],
 					"answers": [
 					  {
-						"concept": "c45f6876-3f10-11e4-adec-0800271c1b75",
+						"concept": "1115AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 						"label": "Normal"
 					  },
 					  {
-						"concept": "5cd2823c-fa3b-47e4-9a20-9802ebbec8c5",
+						"concept": "1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 						"label": "Abnormal"
 					  }
 					]
@@ -1162,7 +1162,7 @@
 					]
 				  },
 				  "hide": {
-					"hideWhenExpression": "mouth !=='5cd2823c-fa3b-47e4-9a20-9802ebbec8c5'",
+					"hideWhenExpression": "mouth !=='1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'",
 					"validators": []
 				  }
 				},
@@ -1193,11 +1193,11 @@
 					"conceptMappings": [],
 					"answers": [
 					  {
-						"concept": "c45f6876-3f10-11e4-adec-0800271c1b75",
+						"concept": "1115AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 						"label": "Normal"
 					  },
 					  {
-						"concept": "5cd2823c-fa3b-47e4-9a20-9802ebbec8c5",
+						"concept": "1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 						"label": "Abnormal"
 					  }
 					]
@@ -1225,7 +1225,7 @@
 					]
 				  },
 				  "hide": {
-					"hideWhenExpression": "throat !=='5cd2823c-fa3b-47e4-9a20-9802ebbec8c5'",
+					"hideWhenExpression": "throat !=='1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'",
 					"validators": []
 				  }
 				},
@@ -1256,11 +1256,11 @@
 					"conceptMappings": [],
 					"answers": [
 					  {
-						"concept": "c45f6876-3f10-11e4-adec-0800271c1b75",
+						"concept": "1115AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 						"label": "Normal"
 					  },
 					  {
-						"concept": "5cd2823c-fa3b-47e4-9a20-9802ebbec8c5",
+						"concept": "1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 						"label": "Abnormal"
 					  }
 					]
@@ -1296,7 +1296,7 @@
 					]
 				  },
 				  "hide": {
-					"hideWhenExpression": "lymphNodesGlands !=='5cd2823c-fa3b-47e4-9a20-9802ebbec8c5'",
+					"hideWhenExpression": "lymphNodesGlands !=='1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'",
 					"validators": []
 				  }
 				},
@@ -1327,11 +1327,11 @@
 					"conceptMappings": [],
 					"answers": [
 					  {
-						"concept": "c45f6876-3f10-11e4-adec-0800271c1b75",
+						"concept": "1115AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 						"label": "Normal"
 					  },
 					  {
-						"concept": "5cd2823c-fa3b-47e4-9a20-9802ebbec8c5",
+						"concept": "1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 						"label": "Abnormal"
 					  }
 					]
@@ -1367,7 +1367,7 @@
 					]
 				  },
 				  "hide": {
-					"hideWhenExpression": "respiratory !=='5cd2823c-fa3b-47e4-9a20-9802ebbec8c5'",
+					"hideWhenExpression": "respiratory !=='1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'",
 					"validators": []
 				  }
 				},
@@ -1398,11 +1398,11 @@
 					"conceptMappings": [],
 					"answers": [
 					  {
-						"concept": "c45f6876-3f10-11e4-adec-0800271c1b75",
+						"concept": "1115AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 						"label": "Normal"
 					  },
 					  {
-						"concept": "5cd2823c-fa3b-47e4-9a20-9802ebbec8c5",
+						"concept": "1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 						"label": "Abnormal"
 					  }
 					]
@@ -1421,7 +1421,7 @@
 					"answers": []
 				  },
 				  "hide": {
-					"hideWhenExpression": "csvHeart !== '5cd2823c-fa3b-47e4-9a20-9802ebbec8c5'",
+					"hideWhenExpression": "csvHeart !== '1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'",
 					"validators": []
 				  }
 				},
@@ -1436,11 +1436,11 @@
 					"conceptMappings": [],
 					"answers": [
 					  {
-						"concept": "c45f6876-3f10-11e4-adec-0800271c1b75",
+						"concept": "1115AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 						"label": "Normal"
 					  },
 					  {
-						"concept": "5cd2823c-fa3b-47e4-9a20-9802ebbec8c5",
+						"concept": "1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 						"label": "Abnormal"
 					  }
 					]
@@ -1476,7 +1476,7 @@
 					]
 				  },
 				  "hide": {
-					"hideWhenExpression": "abdomen !=='5cd2823c-fa3b-47e4-9a20-9802ebbec8c5'",
+					"hideWhenExpression": "abdomen !=='1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'",
 					"validators": []
 				  }
 				},
@@ -1507,11 +1507,11 @@
 					"conceptMappings": [],
 					"answers": [
 					  {
-						"concept": "c45f6876-3f10-11e4-adec-0800271c1b75",
+						"concept": "1115AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 						"label": "Normal"
 					  },
 					  {
-						"concept": "5cd2823c-fa3b-47e4-9a20-9802ebbec8c5",
+						"concept": "1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 						"label": "Abnormal"
 					  }
 					]
@@ -1551,7 +1551,7 @@
 					]
 				  },
 				  "hide": {
-					"hideWhenExpression": "skin !=='5cd2823c-fa3b-47e4-9a20-9802ebbec8c5'",
+					"hideWhenExpression": "skin !=='1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'",
 					"validators": []
 				  }
 				},
@@ -1582,11 +1582,11 @@
 					"conceptMappings": [],
 					"answers": [
 					  {
-						"concept": "c45f6876-3f10-11e4-adec-0800271c1b75",
+						"concept": "1115AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 						"label": "Normal"
 					  },
 					  {
-						"concept": "5cd2823c-fa3b-47e4-9a20-9802ebbec8c5",
+						"concept": "1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 						"label": "Abnormal"
 					  }
 					]
@@ -1622,7 +1622,7 @@
 					]
 				  },
 				  "hide": {
-					"hideWhenExpression": "muscuskeletal !=='5cd2823c-fa3b-47e4-9a20-9802ebbec8c5'",
+					"hideWhenExpression": "muscuskeletal !=='1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'",
 					"validators": []
 				  }
 				},
@@ -1653,11 +1653,11 @@
 					"conceptMappings": [],
 					"answers": [
 					  {
-						"concept": "c45f6876-3f10-11e4-adec-0800271c1b75",
+						"concept": "1115AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 						"label": "Normal"
 					  },
 					  {
-						"concept": "5cd2823c-fa3b-47e4-9a20-9802ebbec8c5",
+						"concept": "1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 						"label": "Abnormal"
 					  }
 					]
@@ -1676,7 +1676,7 @@
 					"answers": []
 				  },
 				  "hide": {
-					"hideWhenExpression": "externalGenitilia !== '5cd2823c-fa3b-47e4-9a20-9802ebbec8c5'",
+					"hideWhenExpression": "externalGenitilia !== '1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'",
 					"validators": []
 				  }
 				},
@@ -1691,11 +1691,11 @@
 					"conceptMappings": [],
 					"answers": [
 					  {
-						"concept": "c45f6876-3f10-11e4-adec-0800271c1b75",
+						"concept": "1115AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 						"label": "Normal"
 					  },
 					  {
-						"concept": "5cd2823c-fa3b-47e4-9a20-9802ebbec8c5",
+						"concept": "1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 						"label": "Abnormal"
 					  }
 					]
@@ -1727,7 +1727,7 @@
 					]
 				  },
 				  "hide": {
-					"hideWhenExpression": "nervous !=='5cd2823c-fa3b-47e4-9a20-9802ebbec8c5'",
+					"hideWhenExpression": "nervous !=='1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'",
 					"validators": []
 				  }
 				},
@@ -1867,15 +1867,15 @@
 					"conceptMappings": [],
 					"answers": [
 					  {
-						"concept": "3aeed9a2-4c74-4945-9067-63da3386b102",
+						"concept": "664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 						"label": "AFB -"
 					  },
 					  {
-						"concept": "80008f38-5991-4170-9ddf-9490dbcbe064",
+						"concept": "703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 						"label": "AFB +"
 					  },
 					  {
-						"concept": "9202b40e-349a-4033-a6b5-7305dbf9dc96",
+						"concept": "1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 						"label": "Sputum Results, Unknown"
 					  }
 					]

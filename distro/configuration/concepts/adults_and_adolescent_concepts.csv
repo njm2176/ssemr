@@ -103,7 +103,7 @@ e77f0416-4e14-11e4-8a57-0800271c1b75,,Dyspepsia,,,,,,Misc,N/A,
 ecee97e6-47af-44c0-a941-804afa11bbd0,,Dysphagia or Odynophagia,,,,,,Misc,N/A,
 19909766-298e-4595-942e-f8df8c293231,,Dyspnea,,,,,,Misc,N/A,
 44a3c656-5584-4044-9cad-e265a8f90a01,,"Ear pain, discharge or decreased hearing",,,,,,Misc,N/A,
-1f0f8ec6-4e15-11e4-8a57-0800271c1b75,,Fever,,,,,,Misc,N/A,
+140238AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,Fever,,,,,,Misc,N/A,
 8f91cfe8-8920-47b0-858f-bd36726643ae,,Genital ulcer/vesicles,,,,,,Misc,N/A,
 1f6a5ea9-4e15-11e4-8a57-0800271c1b75,,Hemoptysis,,,,,,Misc,N/A,
 974188d4-5caa-4a1a-a2e2-4076aa018eb6,,Inguinal swellings,,,,,,Misc,N/A,
@@ -174,8 +174,8 @@ ff115f4e-c296-4d79-b9cf-4a6e5d9fa5e0,,Healthy,,,,,,Misc,N/A,
 fc7a725d-9d0e-4254-abf7-bcc25d1866ec,,General appearance,,,,,,Question,Coded,"Acutely ill;
 Chronically ill;
 Healthy"
-5cd2823c-fa3b-47e4-9a20-9802ebbec8c5,,Abnormal,,,,,,Misc,N/A,
-c45f6876-3f10-11e4-adec-0800271c1b75,,Normal,,,,,,Misc,N/A,
+1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,Abnormal,,,,,,Misc,N/A,
+1115AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,Normal,,,,,,Misc,N/A,
 aacc89a1-1da4-4331-aea8-6b0399074db6,,HEENT,,,,,,Question,Coded,"Abnormal;
 Normal"
 87dc3313-51ca-46bd-aeb7-059b1fc27bf6,,Specify HEENT Abnormality,,,,,,Question,Text,
