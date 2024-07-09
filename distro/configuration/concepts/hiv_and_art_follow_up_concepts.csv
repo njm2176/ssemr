@@ -1,4 +1,6 @@
 Uuid,Void/Retire,Fully specified name:en,Short name:en,Description:en,...,_version:3,_order:126,Data class,Data type,Answers
+668cdec8-bc73-457d-9026-4c8946816611,,Date of visit,Date of visit,Date of visit,,,,Question,Date,
+494915d8-4cf3-4c24-9efa-371710992cb3,,Date Scheduled,Date Scheduled,Date Scheduled,,,,Question,Date,
 a226366c-01ca-4c6c-8817-15ccceba3263,,Follow up - Scheduled,Scheduled,Follow up - Scheduled,,,,Question,Coded,Yes;No
 ee31f5fc-40b8-417d-8350-1a74431c220b,,ART Follow up Date,Date,ART Follow up - Scheduled Date,,,,Question,Date,
 9efbdca3-7ca8-4205-8285-46151802a887,,Duration For Current Regimen,Duration For Current Regimen,Duration For Current Regimen,,,,Question,Date,
@@ -489,7 +491,7 @@ c38e5cc4-3f10-11e4-adec-0800271c1b75,,Follow up Date,Follow up Date,Follow up Da
 5b4c24fd-b3b2-454b-8b26-2300ea774b07,,Consult,Consult,Consult,,,,Misc,N/A,
 b87bac5e-b6ca-40a5-a3d0-a3fa34a94f5d,,Hospitalised,Hospitalised,Hospitalised,,,,Misc,N/A,
 d521c7e0-207e-4e9d-97e4-e376b38b664f,,Link/Provide,Link/Provide,Link/Provide,,,,Misc,N/A,
-f2355233-c552-4cd6-802f-0c7c75221f03,,Not Applicable,Not Applicable,Not Applicable,,,,Misc,N/A,
+608f6df4-bc19-4afa-a1ff-58f407389221,,Not Applicable,Not Applicable,Not Applicable,,,,Misc,N/A,
 3352d2b2-67b6-4e84-9b2c-1baef41b0d05,,Patient Plan,Patient Plan,Patient Plan,,,,Question,Coded,"Refer;
 Consult;
 Hospitalised;
