@@ -1,178 +1,178 @@
 {
-    "name": "J. 12 - Follow up outcome",
-    "published": true,
-    "retired": false,
-    "encounter": "Follow up outcome",
-    "pages": [
-      {
-        "label": "End of follow up",
-        "sections": [
-          {
-            "label": "End of follow up",
-            "isExpanded": "true",
-            "questions": [
-              {
-                "label": "Death",
-                "type": "obs",
-                "required": true,
-                "id": "isDeath",
-                "questionOptions": {
-                  "rendering": "radio",
-                  "concept": "417b7273-8d62-4720-9fb6-075e9d1530ec",
-                  "conceptMappings": [],
-                  "answers": [
-                    {
-                      "label": "Yes",
-                      "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-                    },
-                    {
-                      "label": "No",
-                      "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-                    }
-                  ]
-                },
-                "validators": []
+  "name": "J. 12 - Follow up outcome",
+  "published": true,
+  "retired": false,
+  "encounter": "Follow up outcome",
+  "pages": [
+    {
+      "label": "End of follow up",
+      "sections": [
+        {
+          "label": "End of follow up",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Death",
+              "type": "obs",
+              "required": true,
+              "id": "isDeath",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "417b7273-8d62-4720-9fb6-075e9d1530ec",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "label": "Yes",
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "label": "No",
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  }
+                ]
               },
-              {
-                "label": "Date of death",
-                "type": "obs",
-                "required": true,
-                "id": "dateOfDeath",
-                "questionOptions": {
-                  "rendering": "date",
-                  "concept": "bced5365-80f5-4a27-a287-60296c4e4ff9",
-                  "conceptMappings": [],
-                  "answers": []
-                },
-                "hide": {
-                  "hideWhenExpression": "isDeath !=='1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
-                },
-                "validators": []
+              "validators": []
+            },
+            {
+              "label": "Date of death",
+              "type": "obs",
+              "required": true,
+              "id": "dateOfDeath",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "bced5365-80f5-4a27-a287-60296c4e4ff9",
+                "conceptMappings": [],
+                "answers": []
               },
-              {
-                "label": "Cause of death",
-                "type": "obs",
-                "required": true,
-                "id": "causeOfDeath",
-                "questionOptions": {
-                  "rendering": "select",
-                  "concept": "4acd75d7-1bd1-40a1-8ba2-0653893319ef",
-                  "conceptMappings": [],
-                  "answers": [
-                    {
-                      "label": "TB",
-                      "concept": "762eba17-cee2-4a40-9f82-8bc291ffa535"
-                    },
-                    {
-                      "label": "Cancer",
-                      "concept": "4641d6d8-1a47-40c6-aac2-d59e9ce064bb"
-                    },
-                    {
-                      "label": "Non-natural causes (accident/war)",
-                      "concept": "1c4cf2ab-4982-4f81-817c-0e2cf9c33aba"
-                    },
-                    {
-                      "label": "Other infectious and parasitic disease",
-                      "concept": "e03e32aa-cfa1-47a4-b24e-c37af2b28836"
-                    },
-                    {
-                      "label": "Unknown Cause",
-                      "concept": "4d48b677-fc7f-4177-98bd-1c9944677d1a"
-                    }
-                  ]
-                },
-                "hide": {
-                  "hideWhenExpression": "isDeath !=='1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
-                },
-                "validators": []
+              "hide": {
+                "hideWhenExpression": "isDeath !=='1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               },
-              {
-                "label": "Specify Other infectious and parasitic disease",
-                "type": "obs",
-                "required": true,
-                "id": "specifyOtherInfectiousDisease",
-                "questionOptions": {
-                  "rendering": "text",
-                  "concept": "98fb1bba-dc86-4a68-a098-f1dfe593d933",
-                  "conceptMappings": [],
-                  "answers": []
-                },
-                "hide": {
-                  "hideWhenExpression": "causeOfDeath !=='e03e32aa-cfa1-47a4-b24e-c37af2b28836'"
-                },
-                "validators": []
+              "validators": []
+            },
+            {
+              "label": "Cause of death",
+              "type": "obs",
+              "required": true,
+              "id": "causeOfDeath",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "4acd75d7-1bd1-40a1-8ba2-0653893319ef",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "label": "TB",
+                    "concept": "762eba17-cee2-4a40-9f82-8bc291ffa535"
+                  },
+                  {
+                    "label": "Cancer",
+                    "concept": "4641d6d8-1a47-40c6-aac2-d59e9ce064bb"
+                  },
+                  {
+                    "label": "Non-natural causes (accident/war)",
+                    "concept": "1c4cf2ab-4982-4f81-817c-0e2cf9c33aba"
+                  },
+                  {
+                    "label": "Other infectious and parasitic disease",
+                    "concept": "e03e32aa-cfa1-47a4-b24e-c37af2b28836"
+                  },
+                  {
+                    "label": "Unknown Cause",
+                    "concept": "4d48b677-fc7f-4177-98bd-1c9944677d1a"
+                  }
+                ]
               },
-              {
-                "label": "Transfer out",
-                "type": "obs",
-                "required": false,
-                "id": "transferOut",
-                "questionOptions": {
-                  "rendering": "radio",
-                  "concept": "68f68ae1-272c-44e4-85af-009e46e60015",
-                  "conceptMappings": [],
-                  "answers": [
-                    {
-                      "label": "Yes",
-                      "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-                    },
-                    {
-                      "label": "No",
-                      "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-                    }
-                  ]
-                },
-                "validators": []
+              "hide": {
+                "hideWhenExpression": "isDeath !=='1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               },
-              {
-                "label": "Transferred Out Date",
-                "type": "obs",
-                "required": false,
-                "id": "dateTransferDate",
-                "questionOptions": {
-                  "rendering": "date",
-                  "concept": "9531371b-ba97-4f57-9edb-7480d908b8f8",
-                  "conceptMappings": [],
-                  "answers": []
-                },
-                "hide": {
-                  "hideWhenExpression": "transferOut !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
-                },
-                "validators": []
+              "validators": []
+            },
+            {
+              "label": "Specify Other infectious and parasitic disease",
+              "type": "obs",
+              "required": true,
+              "id": "specifyOtherInfectiousDisease",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "98fb1bba-dc86-4a68-a098-f1dfe593d933",
+                "conceptMappings": [],
+                "answers": []
               },
-              {
-                "label": "Transfer To",
-                "type": "encounterLocation",
-                "questionOptions": {
-                  "rendering": "ui-select-extended"
-                },
-                "id": "transferTo",
-                "hide": {
-                  "hideWhenExpression": "transferOut !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
-                }
+              "hide": {
+                "hideWhenExpression": "causeOfDeath !=='e03e32aa-cfa1-47a4-b24e-c37af2b28836'"
               },
-              {
-                "label": "Date of last visit",
-                "type": "obs",
-                "required": true,
-                "id": "dateOfLastVisit",
-                "questionOptions": {
-                  "rendering": "date",
-                  "concept": "773cd838-7b21-4f34-9b33-0a071140f817",
-                  "conceptMappings": [],
-                  "answers": []
-                },
-                "validators": []
+              "validators": []
+            },
+            {
+              "label": "Transfer out",
+              "type": "obs",
+              "required": false,
+              "id": "transferOut",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "68f68ae1-272c-44e4-85af-009e46e60015",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "label": "Yes",
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "label": "No",
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "Transferred Out Date",
+              "type": "obs",
+              "required": false,
+              "id": "dateTransferDate",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "9531371b-ba97-4f57-9edb-7480d908b8f8",
+                "conceptMappings": [],
+                "answers": []
+              },
+              "hide": {
+                "hideWhenExpression": "transferOut !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              },
+              "validators": []
+            },
+            {
+              "label": "Transfer To",
+              "type": "encounterLocation",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "transferTo",
+              "hide": {
+                "hideWhenExpression": "transferOut !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
-            ]
-          }
-        ]
-      }
-    ],
-    "processor": "EncounterFormProcessor",
-    "encounterType": "3bf40d2b-c8a2-4a7d-9da2-adb33860e0f8",
-    "referencedForms": [],
-    "uuid": "61c0c516-f240-423f-8fc0-14e478809480",
-    "description": "End of follow up form",
-    "version": "1.0.0"
-  }
+            },
+            {
+              "label": "Date of last visit",
+              "type": "obs",
+              "required": true,
+              "id": "dateOfLastVisit",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "773cd838-7b21-4f34-9b33-0a071140f817",
+                "conceptMappings": [],
+                "answers": []
+              },
+              "validators": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+  "encounterType": "3bf40d2b-c8a2-4a7d-9da2-adb33860e0f8",
+  "referencedForms": [],
+  "uuid": "61c0c516-f240-423f-8fc0-14e478809480",
+  "description": "End of follow up form",
+  "version": "1.0.0"
+}

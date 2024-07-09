@@ -41,6 +41,7 @@
             {
               "label": "Duration in months since first starting ART",
               "required": true,
+              "type": "obs",
               "id": "durationDaysStartingArt",
               "questionOptions": {
                 "rendering": "numeric",
@@ -59,6 +60,7 @@
             {
               "label": "Duration in months since starting current regimen",
               "required": true,
+              "type": "obs",
               "id": "durationDaysStartingRegimen",
               "questionOptions": {
                 "rendering": "numeric",
@@ -843,7 +845,7 @@
               }
             },
             {
-              "label": "Type of TB",         
+              "label": "Type of TB",
               "type": "obs",
               "id": "tbDiagnosed",
               "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('3109983a-98af-4017-a16b-e3bac0c48d25')) ? undefined : HD.getObject('prevEnc').getValue('3109983a-98af-4017-a16b-e3bac0c48d25')",
