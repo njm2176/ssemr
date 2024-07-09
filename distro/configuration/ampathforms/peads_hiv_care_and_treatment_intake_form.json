@@ -87,7 +87,7 @@
 						"label": "Non-Reactive"
 					  },
 					  {
-						"concept": "9202b40e-349a-4033-a6b5-7305dbf9dc96",
+						"concept": "1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 						"label": "Unknown"
 					  }
 					]
@@ -1867,15 +1867,15 @@
 					"conceptMappings": [],
 					"answers": [
 					  {
-						"concept": "3aeed9a2-4c74-4945-9067-63da3386b102",
+						"concept": "664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 						"label": "AFB -"
 					  },
 					  {
-						"concept": "80008f38-5991-4170-9ddf-9490dbcbe064",
+						"concept": "703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 						"label": "AFB +"
 					  },
 					  {
-						"concept": "9202b40e-349a-4033-a6b5-7305dbf9dc96",
+						"concept": "1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 						"label": "Sputum Results, Unknown"
 					  }
 					]
