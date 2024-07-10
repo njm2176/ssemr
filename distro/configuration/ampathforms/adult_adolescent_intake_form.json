@@ -350,7 +350,7 @@
                     "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
                   },
                   {
-                    "concept": "8166b90f-671c-4787-a3a4-d4ea8fd74f43",
+                    "concept": "142412AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Diarrhea",
                     "disableWhenExpression": "myValue === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
                   },
@@ -532,7 +532,7 @@
                 "answers": []
               },
               "hide": {
-                "hideWhenExpression": "isEmpty(currentSymptoms) || !arrayContains(currentSymptoms, '8166b90f-671c-4787-a3a4-d4ea8fd74f43')",
+                "hideWhenExpression": "isEmpty(currentSymptoms) || !arrayContains(currentSymptoms, '142412AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')",
                 "validators": []
               }
             }
@@ -1182,7 +1182,7 @@
               "required": false,
               "id": "cbcDone",
               "questionOptions": {
-                "rendering": "select",
+                "rendering": "radio",
                 "concept": "131cf572-4664-49f9-9655-6023fc629a33",
                 "conceptMappings": [],
                 "answers": [
