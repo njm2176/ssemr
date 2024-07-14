@@ -25,11 +25,11 @@
     "@openmrs/esm-cohort-builder-app": "next",
     "@openmrs/esm-form-builder-app": "next",
     "@openmrs/esm-appointments-app": "next",
-    "@ssemr/esm-reports-dashboard":"1.0.3",
-    "@ssemr/esm-patient-registration-app": "1.5.1",
-    "@ssemr/esm-patient-hiv-art-app": "5.9.6",
+    "@ssemr/esm-reports-dashboard":"next",
+    "@ssemr/esm-patient-registration-app": "next",
+    "@ssemr/esm-patient-hiv-art-app": "6.0.1",
     "@ssemr/esm-patient-summary-app": "1.0.4",
-    "@ssemr/esm-patient-list-management-app": "1.1.4"
+    "@ssemr/esm-patient-list-management-app": "1.1.7"
   },
   "spaPath": "$SPA_PATH",
   "apiUrl": "$API_URL",
