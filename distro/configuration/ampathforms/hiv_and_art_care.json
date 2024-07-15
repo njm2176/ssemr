@@ -993,17 +993,10 @@
               "questionOptions": {
                 "answers": [],
                 "concept": "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "rendering": "numeric",
-                "min": 2.5,
-                "max": 250
+                "rendering": "numeric"
               },
               "type": "obs",
               "validators": [
-                {
-                  "type": "js_expression",
-                  "failsWhenExpression": "weight < 2.5 || weight > 150",
-                  "message": "Weight cannot be less than 2.5kg and should not exceed 150kg"
-                }
               ]
             },
             {
@@ -1013,16 +1006,10 @@
               "questionOptions": {
                 "answers": [],
                 "concept": "5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "rendering": "numeric",
-                "min": 2.5
+                "rendering": "numeric"
               },
               "type": "obs",
               "validators": [
-                {
-                  "type": "js_expression",
-                  "failsWhenExpression": "height < 2.5",
-                  "message": "Height should not be less than 2.5"
-                }
               ]
             },
             {

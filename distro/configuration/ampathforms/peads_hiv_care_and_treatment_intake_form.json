@@ -758,11 +758,6 @@
 					"answers": []
 				  },
 				  "validators": [
-					{
-					  "type": "js_expression",
-					  "failsWhenExpression": "weight < 0 || weight > 150",
-					  "message": "Weight should not be less than 0kg and should not exceed 150kg"
-					}
 				  ],
 				  "hide": {
 					"hideWhenExpression": "generalAppearance === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
@@ -782,11 +777,6 @@
 					"answers": []
 				  },
 				  "validators": [
-					{
-					  "type": "js_expression",
-					  "failsWhenExpression": "height < 0 || height > 200",
-					  "message": "Height should not be less than 0cm or should not exceed 200cm"
-					}
 				  ],
 				  "hide": {
 					"hideWhenExpression": "generalAppearance === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
