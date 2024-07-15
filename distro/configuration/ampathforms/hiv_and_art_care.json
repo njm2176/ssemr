@@ -989,7 +989,7 @@
             {
               "label": "Weight(Kg)",
               "id": "weight",
-              "required": true,
+              "required": false,
               "questionOptions": {
                 "answers": [],
                 "concept": "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
@@ -1009,7 +1009,7 @@
             {
               "label": "Height(cm) / length for child<2yrs",
               "id": "height",
-              "required": true,
+              "required": false,
               "questionOptions": {
                 "answers": [],
                 "concept": "5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",

@@ -49,10 +49,10 @@ d02b83cd-eaff-4015-a434-01406239c298,,4 Am-Mfx-Pto-Clz-Z-H high-dose-E/5 Mfx-Cfx
 4199b8d5-ab1f-4623-9083-a6764059f424,,TB Regimen For Children,TB Regimen For Children,TB Regimen For Children,,,,Question,Coded,2HRZE/10RH
 1c44444b-ac9a-4d2a-bb83-9299ab05668c,,TB Regimen On,TB Regimen On,TB Regimen On,,,,Question,Coded,2HRZE/4RH ; 2SHRZE/1HRZE/5RH
 e31c3a3c-8156-4896-812c-be78fee13273,,Nausea,Nausea,,,,,Misc,N/A,
-85d4c4b0-67e1-484b-8eeb-2f7f0f877f4f,,Rash,Rash,,,,,Misc,N/A,
+512AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,Rash,Rash,,,,,Misc,N/A,
 47be2dc7-acfc-43e8-8c27-4331856164db,,Headache,Headache,,,,,Misc,N/A,
 f2cc0f34-6546-4af3-bd2d-3466047c0ce5,,Diarrhoea,Diarrhoea,,,,,Misc,N/A,
-fabf10c0-c5c3-446b-9a61-9802a88b0409,,Anaemia,Anaemia,,,,,Misc,N/A,
+121629AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,Anaemia,Anaemia,,,,,Misc,N/A,
 f20b15b2-4e14-11e4-8a57-0800271c1b75,,Jaundice,Jaundice,,,,,Misc,N/A,
 a1656477-2650-4861-bdbd-84a7d985fa5a,,Fatigue,Fatigue,,,,,Misc,N/A,
 1dfb0948-4e15-11e4-8a57-0800271c1b75,,Abdominal pain,Abdominal pain,,,,,Misc,N/A,
@@ -588,7 +588,7 @@ a233c797-30b1-4418-bf8e-64f63608c3cc,,Gender-Based Violence (GBV),Gender-Based V
 61c88f46-7fa7-4c5d-bd22-6d409b0a33d5,,Psychosocial support,Psychosocial support,,,,,Misc,N/A,
 ce7573a3-c680-458a-8abb-a25088d4d261,,Refer or Consult,Refer or Consult,,,,,Question,Coded,"Nutritional support;
 Infant feeding;
-COV;
+Community Health Worker;
 Orphans & Vulnerable Children (OVC);
 Family Planning (FP);
 Gender-Based Violence (GBV);
