@@ -13,7 +13,7 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Date scheduled",
+              "label": "Scheduled/Visit Date",
               "type": "obs",
               "required": true,
               "id": "dateScheduled",
@@ -29,7 +29,7 @@
               ]
             },
             {
-              "label": "Follow up Date",
+              "label": "Follow-up/Next Appointment Date",
               "required": true,
               "id": "appointmentWorkspaceLauncher",
               "questionOptions": {
@@ -79,42 +79,27 @@
             {
               "label": "Weight (Kg)",
               "id": "weight",
-              "required": true,
+              "required": false,
               "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')) ? undefined : HD.getObject('prevEnc').getValue('5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')",
               "questionOptions": {
                 "concept": "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "rendering": "numeric",
-                "min": 2.5,
-                "max": 150
+                "rendering": "numeric"
               },
               "type": "obs",
-              "validators": [
-                {
-                  "type": "js_expression",
-                  "failsWhenExpression": "isEmpty(weight) || weight < 2.5 || weight > 150",
-                  "message": "Weight cannot be less than 2.5kg and should not exceed 150kg"
-                }
-              ]
+              "validators": []
             },
             {
               "label": "Height(cm)",
               "id": "height",
-              "required": true,
+              "required": false,
               "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')) ? undefined : HD.getObject('prevEnc').getValue('5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')",
               "questionOptions": {
                 "answers": [],
                 "concept": "5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "rendering": "numeric",
-                "min": 2.5
+                "rendering": "numeric"
               },
               "type": "obs",
-              "validators": [
-                {
-                  "type": "js_expression",
-                  "failsWhenExpression": "isEmpty(height) || height < 2.5",
-                  "message": "Height should not be less than 2.5"
-                }
-              ]
+              "validators": []
             },
             {
               "label": "BMI for adult and children above 5 Years",
@@ -922,7 +907,7 @@
                   },
                   {
                     "label": "Rash",
-                    "concept": "85d4c4b0-67e1-484b-8eeb-2f7f0f877f4f"
+                    "concept": "512AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
                   },
                   {
                     "label": "Diarrhoea",
@@ -930,7 +915,7 @@
                   },
                   {
                     "label": "Anaemia",
-                    "concept": "fabf10c0-c5c3-446b-9a61-9802a88b0409"
+                    "concept": "121629AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
                   },
                   {
                     "label": "FAT changes",

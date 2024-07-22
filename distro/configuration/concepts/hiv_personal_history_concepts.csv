@@ -1,32 +1,43 @@
 Uuid,Void/Retire,Fully specified name:en,Short name:en,Description:en,...,_version:1,_order:122,Data class,Data type,Answers
 7482b976-56fe-44b0-b30f-1e957cc0cbb0,,Date First Tested HIV + ,Date Tested HIV + ,Date First Tested HIV + ,,,,Question,Date,
 2e528392-b1dc-4bcc-bf7a-cc8250082174,,Place Tested HIV + ,Place,Place,,,,Question,Text,
-8eaae386-92dd-47df-b39e-89e60a42d00b,,First HIV Test Information,First HIV Test Information,First HIV Test Information,,,,Misc,N/A,
-ec5d13de-ee22-4d8a-b39c-bdee6cd3d88c,,VCT Clinic,VCT,VCT Clinic,,,,Misc,N/A,
 8bcf0a4f-3c18-4858-9129-957e6ed2eecc,,VCT Clinic registration Date,VCT Clinic registration Date,VCT Clinic registration Date,,,,Question,Date,
-04c64451-9e19-43e9-ac3d-9333824bc1dd,,TB Clinic,TB Clinic,TB Clinic,,,,Misc,N/A,
 a407b0c4-4c65-4c28-8326-523760890823,,TB Clincic Registration Date,TB Clincic Registration Date,TB Clincic Registration Date,,,,Question,Date,
-dfa49cd5-3859-4184-84cc-ada016092680,,STI Clinic,STI Clinic,STI Clinic,,,,Misc,N/A,
 c2d47add-bc15-41d7-9270-5d5f7d157693,,STI Clinic Registration Date,STI Clinic Registration Date,STI Clinic Registration Date,,,,Question,Date,
-17f90888-9c88-4db2-8750-edb1d760a9ca,,ANC Clinic,ANC,ANC Clinic,,,,Misc,N/A,
 bde6d490-23fc-40b9-b13a-4d889514f316,,ANC Clinic Registration Date,ANC Clinic Registration Date,ANC Clinic Regstration Date,,,,Question,Date,
-62cceeab-adf9-4f3b-bdb3-89687557ecab,,In Patient,In Patient,In Patient,,,,Misc,N/A,
 350871d6-92fc-4d64-b1b6-adc336ec39f0,,In Patient Registration Date,In Patient Registration Date,In Patient Registration Date,,,,Question,Date,
+0ab49af1-3303-4afe-b23d-1517bea77355,,Pediatric Clinic Registration Date,Pediatric Clinic Registration Date,Pediatric Clinic Registration Date,,,,Question,Date,
+c7589211-fba6-46f5-aca9-57b825a6a350,,OPD Registration Date,OPD Registration Date,OPD Registration Date,,,,Question,Date,
+62c871fa-24dc-42eb-a976-5661e88d66c5,,CBTC Registration Date,CBTC Registration Date,CBTC Registration Date,,,,Question,Date,
+403ee0c0-f119-4a2c-91d5-b5274a5e611a,,Index Testing Date,Index Testing Date,Index Testing Date,,,,Question,Date,
+4322253f-85aa-4e59-abf1-1fa3e6a0a810,,Emergency ward Registration Date,Emergency ward Registration Date,Emergency ward registration date,,,,Question,Date,
+9500a606-2d70-47d1-a238-935d3c228a16,,Malnutrion facilities entry date,Malnutrion facility entry date,Malnutrion facilities entry date,,,,Question,Date,
+62cceeab-adf9-4f3b-bdb3-89687557ecab,,In Patient,In Patient,In Patient,,,,Misc,N/A,
+8eaae386-92dd-47df-b39e-89e60a42d00b,,First HIV Test Information,First HIV Test Information,First HIV Test Information,,,,Misc,N/A,
+04c64451-9e19-43e9-ac3d-9333824bc1dd,,TB Clinic,TB Clinic,TB Clinic,,,,Misc,N/A,
+dfa49cd5-3859-4184-84cc-ada016092680,,STI Clinic,STI Clinic,STI Clinic,,,,Misc,N/A,
+675702bb-8456-4e10-86ca-65ee8b70d1bd,,Nutrition - Entry Point,Nutrition - Entry Point,Nutrition - Entry Point,,,,Misc,N/A,
+ec5d13de-ee22-4d8a-b39c-bdee6cd3d88c,,VCT Clinic,VCT,VCT Clinic,,,,Misc,N/A,
+17f90888-9c88-4db2-8750-edb1d760a9ca,,ANC Clinic,ANC,ANC Clinic,,,,Misc,N/A,
 6ecce064-414c-4bf8-9048-21d6cd55ee51,yes,Padeatric,Padeatric,Padeatric,,,,Misc,N/A,
 26560ed4-3ccc-4f85-85f1-f2c9f9238d3b,,Pediatric Clinic ,Pediatric Clinic ,Pediatric Clinic ,,,,Misc,N/A,
-0ab49af1-3303-4afe-b23d-1517bea77355,,Pediatric Clinic Registration Date,Pediatric Clinic Registration Date,Pediatric Clinic Registration Date,,,,Question,Date,
 8244fd10-f813-4e52-a13e-9e3df7cd599c,,Entry Point - OPD,OPD,Entry Point - OPD,,,,Misc,N/A,
-c7589211-fba6-46f5-aca9-57b825a6a350,,OPD Registration Date,OPD Registration Date,OPD Registration Date,,,,Question,Date,
-cb976d23-ab3e-4369-a88f-73f56505783b,,CBTC,CBTC,CBTC,,,,Misc,N/A,
-62c871fa-24dc-42eb-a976-5661e88d66c5,,CBTC Registration Date,CBTC Registration Date,CBTC Registration Date,,,,Question,Date,
-8fc10249-842b-4944-8018-c758bd0263d8,,Index Testing,Index Testing,Index Testing,,,,Misc,N/A,
-403ee0c0-f119-4a2c-91d5-b5274a5e611a,,Index Testing Date,Index Testing Date,Index Testing Date,,,,Question,Date,
-1da6f29c-47f6-11ea-b8c4-7747c45cb2fb,,"Emergency, entry point",Emergency,,,,,Misc,N/A,
-4322253f-85aa-4e59-abf1-1fa3e6a0a810,,Emergency ward Registration Date,Emergency ward Registration Date,Emergency ward registration date,,,,Question,Date,
 23784478-47f6-11ea-8584-9b5a4858c6c1,,Malnutrition Facilities,Malnutrition Facilities,,,,,Misc,N/A,
-9500a606-2d70-47d1-a238-935d3c228a16,,Malnutrion facilities entry date,Malnutrion facility entry date,Malnutrion facilities entry date,,,,Question,Date,
+1da6f29c-47f6-11ea-b8c4-7747c45cb2fb,,"Emergency, entry point",Emergency,,,,,Misc,N/A,
+cb976d23-ab3e-4369-a88f-73f56505783b,,CBTC,CBTC,CBTC,,,,Misc,N/A,
+8fc10249-842b-4944-8018-c758bd0263d8,,Index Testing,Index Testing,Index Testing,,,,Misc,N/A,
 0464a6fd-d3c5-427b-b147-3f156ac86d63,,Other Entry Point (Specify),Other (Specify),Other Entry Point (Specify),,,,Misc,N/A,
-f1a35737-434c-46e9-8c46-4e17b98e305d,,HIV - Entry Point,Entry Point,Entry Point,,,,Question,Coded,VCT Clinic;TB Clinic ; STI Clinic ; ANC Clinic ; In Patient ; Pediatric Clinic  ; Entry Point - OPD; CBTC ; Index Testing ; Other Entry Point (Specify)
+f1a35737-434c-46e9-8c46-4e17b98e305d,,HIV - Entry Point,Entry Point,Entry Point,,,,Question,Coded,"VCT Clinic;
+TB Clinic ; 
+Nutrition - Entry Point ;
+STI Clinic ; 
+ANC Clinic ; 
+In Patient ; 
+Pediatric Clinic  ; 
+Entry Point - OPD; 
+CBTC ; 
+Index Testing ; 
+Other Entry Point (Specify)"
 80732fbe-6f6f-4fca-bbd6-3507e411af92,,Other Entry Point,Other,"Other Entry Point, Other",,,,Question,Text,
 fee1095f-a0a7-4694-a352-4e88d6ce6c7c,,Date of HIV Retesting Before ART,Date of Hiv Retesting Before ART,Date of Hiv Retesting Before ART,,,,Question,Date,
 13d6e54e-c8bb-41b2-902b-6ad193f77f40,,Place of HIV Retesting Before ART,Place,Place of Hiv Retesting Before ART,,,,Question,Text,
@@ -84,8 +95,8 @@ Married-polygamous;
 Divorced/separated;
 Windowed;
 Not applicable"
-3aeed9a2-4c74-4945-9067-63da3386b102,,Positive,Positive,,,,,Misc,N/A,
-80008f38-5991-4170-9ddf-9490dbcbe064,,Negative,Negative,,,,,Misc,N/A,
+703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,Positive,Positive,,,,,Misc,N/A,
+664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,Negative,Negative,,,,,Misc,N/A,
 f2c2cdcf-550f-427c-96af-52b6a12c3d42,,Inconclusive,Inconclusive,,,,,Misc,N/A,
 9024e06b-ec26-4d13-a876-70ea1eebfa3e,,Not Known,Not Known,,,,,Misc,N/A,
 160f21c0-9a96-4ffd-a72c-aabed02b6a53,,Family Member - HIV Status,Family Member - HIV Status,,,,,Question,Coded,"Positive;
@@ -111,3 +122,9 @@ No"
 1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,No,No,,,,,Misc,N/A,
 1d37d37a-590a-46fc-b65f-0bf2b9276f0c,,Was Sexual Partner Tested?,Was Sexual Partner Tested?,,,,,Question,Coded,"Yes ; 
 No"
+c584ddf3-0e0f-4411-9e63-af668b45360d,,Index - Family Member Name,Index - Family Member Name,,,,,Question,Text,
+f3723ab5-1d2f-4dc5-9588-5c299e86a0ac,,Index - Family Member Age,Index - Family Member Age,,,,,Question,Text,
+99674ab0-043d-4897-bdc1-e9c9ed410487,,Index - Family Member Sex,Index - Family Member Sex,,,,,Question,Coded,"Male;
+Female"
+b0edd166-2dca-47a3-ac36-a79e12b2e532,,Index - Family Member HIV Status,Index - Family Member HIV Status,,,,,Question,Coded,"Positive;
+Negative"
