@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "published": true,
   "retired": false,
-	"encounter": "Adult and Adolescent intake Form",
+  "encounter": "Adult and Adolescent intake Form",
   "pages": [
     {
       "label": "Visit details",
@@ -710,17 +710,10 @@
               "questionOptions": {
                 "rendering": "number",
                 "concept": "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "min": 0,
                 "conceptMappings": [],
                 "answers": []
               },
-              "validators": [
-                {
-                  "type": "js_expression",
-                  "failsWhenExpression": "weightForBMI < 0 || weightForBMI > 150",
-                  "message": "Weight should not be less than 0kg and should not exceed 150kg"
-                }
-              ],
+              "validators": [],
               "hide": {
                 "hideWhenExpression": "generalAppearance === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
               }
@@ -734,17 +727,10 @@
               "questionOptions": {
                 "rendering": "number",
                 "concept": "5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "min": 0,
                 "conceptMappings": [],
                 "answers": []
               },
-              "validators": [
-                {
-                  "type": "js_expression",
-                  "failsWhenExpression": "heightForBMI < 0 || heightForBMI > 200",
-                  "message": "Height should not be less than 0cm or should not exceed 200cm"
-                }
-              ],
+              "validators": [],
               "hide": {
                 "hideWhenExpression": "generalAppearance === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
               }
@@ -1426,6 +1412,10 @@
                   {
                     "concept": "bff040c5-7865-4756-8fdc-2fe2cec784c1",
                     "label": "Persistent Generalized Lymphadenopathy (PGL)"
+                  },
+                  {
+                    "label": "No information",
+                    "concept": "6cfc61ed-08ec-45cf-8317-325958dfdb9a"
                   }
                 ]
               },
@@ -1475,6 +1465,10 @@
                   {
                     "concept": "82a4cd70-96be-4c8d-9e7e-9c871e1e4953",
                     "label": "Seborrheic dermatitis"
+                  },
+                  {
+                    "label": "No information",
+                    "concept": "6cfc61ed-08ec-45cf-8317-325958dfdb9a"
                   }
                 ]
               },
@@ -1528,6 +1522,10 @@
                   {
                     "concept": "1bb7493d-4819-4879-87e0-447966b7f912",
                     "label": "Unexplained persistent fever (intermittent or constant and lasting for longer than 1 month)"
+                  },
+                  {
+                    "label": "No information",
+                    "concept": "6cfc61ed-08ec-45cf-8317-325958dfdb9a"
                   }
                 ]
               },
@@ -1629,6 +1627,10 @@
                   {
                     "concept": "5583dc05-734d-43d1-ac3b-f77f573cd442",
                     "label": "Recurrent bacterial pneumonia (this episode plus one or more episodes in last 6 months)"
+                  },
+                  {
+                    "label": "No information",
+                    "concept": "6cfc61ed-08ec-45cf-8317-325958dfdb9a"
                   }
                 ]
               },
