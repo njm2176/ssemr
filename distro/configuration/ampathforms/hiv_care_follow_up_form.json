@@ -13,7 +13,7 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Date scheduled",
+              "label": "Scheduled/Visit Date",
               "type": "obs",
               "required": true,
               "id": "dateScheduled",
@@ -29,7 +29,7 @@
               ]
             },
             {
-              "label": "Follow up Date",
+              "label": "Follow-up/Next Appointment Date",
               "required": true,
               "id": "appointmentWorkspaceLauncher",
               "questionOptions": {
@@ -86,8 +86,7 @@
                 "rendering": "numeric"
               },
               "type": "obs",
-              "validators": [
-              ]
+              "validators": []
             },
             {
               "label": "Height(cm)",
@@ -100,8 +99,7 @@
                 "rendering": "numeric"
               },
               "type": "obs",
-              "validators": [
-              ]
+              "validators": []
             },
             {
               "label": "BMI for adult and children above 5 Years",
