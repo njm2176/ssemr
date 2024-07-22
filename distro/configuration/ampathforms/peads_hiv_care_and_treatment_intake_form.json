@@ -1094,6 +1094,52 @@
 				  "hideWhenExpression": "nose !== '1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'",
 				  "validators": []
 				}
+			  ],
+			  "hide": {
+				"hideWhenExpression": "generalAppearance === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+			  }
+			},
+			{
+			  "label": "Anthropometric Measurement and assessment",
+			  "isExpanded": "true",
+			  "questions": [
+				{
+				  "label": " Weight(Kg)",
+				  "type": "obs",
+				  "required": false,
+				  "id": "weight",
+				  "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')) ? undefined : HD.getObject('prevEnc').getValue('5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')",
+				  "questionOptions": {
+					"rendering": "number",
+					"concept": "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+					"isSimpleValue": true,
+					"conceptMappings": [],
+					"answers": []
+				  },
+				  "validators": [
+				  ],
+				  "hide": {
+					"hideWhenExpression": "generalAppearance === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+				  }
+				},
+				{
+				  "label": "Height(cm)",
+				  "type": "obs",
+				  "required": false,
+				  "id": "height",
+				  "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')) ? undefined : HD.getObject('prevEnc').getValue('5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')",
+				  "questionOptions": {
+					"rendering": "number",
+					"concept": "5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+					"isSimpleValue": true,
+					"conceptMappings": [],
+					"answers": []
+				  },
+				  "validators": [
+				  ],
+				  "hide": {
+					"hideWhenExpression": "generalAppearance === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+				  }
 			  },
 			  {
 				"label": "Mouth",

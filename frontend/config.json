@@ -95,7 +95,7 @@
       {
         "id": "hivTestingInformation",
         "name": "HIV Testing Information",
-        "fields": [
+        "fields": [ 
           "dateFirstTestedHIVPositive",
           "placeFirstTestedHIVPositive",
           "EntryPoint",
@@ -174,33 +174,31 @@
         }
       },
       {
-
         "id": "dateFirstTestedHIVPositive",
         "type": "obs",
-        "label": "Date First Tested HIV+",
-        "placeholder": "dd/mm/YYYY",
-        "showHeading": false,
         "uuid": "7482b976-56fe-44b0-b30f-1e957cc0cbb0",
+        "label": "Date First Tested HIV Positive",
         "validation": {
-          "required": false,
-          "matches": null
-        },
-        "answerConceptSetUuid": null,
-        "customConceptAnswers": []
+          "required": false
+        }
       },
       {
         "id": "placeFirstTestedHIVPositive",
         "type": "obs",
-        "required": false,
         "uuid": "2e528392-b1dc-4bcc-bf7a-cc8250082174",
-        "label": "Place First Tested HIV+"
+        "label": "Place First Tested HIV+",
+        "validation": {
+          "required": false
+        }
       },
       {
         "id": "EntryPoint",
         "type": "obs",
-        "required": false,
         "uuid": "f1a35737-434c-46e9-8c46-4e17b98e305d",
         "label": "Entry Point",
+        "validation": {
+          "required": false
+        },
         "customConceptAnswers": [
           {
             "uuid": "17f90888-9c88-4db2-8750-edb1d760a9ca",
@@ -251,39 +249,34 @@
       {
         "label": "Other Entry Point (Specify)",
         "type": "obs",
-        "required": false,
         "id": "otherEntryPoint",
         "uuid": "80732fbe-6f6f-4fca-bbd6-3507e411af92",
-        "hide": {
-          "hideWhenExpression": "EntryPoint !== '0464a6fd-d3c5-427b-b147-3f156ac86d63'"
+        "validation": {
+          "required": false
         }
       },
       {
-
         "id": "dateOfHIVRetestingBeforeART",
         "type": "obs",
-        "label": "Date Of HIV Retesting Before ART",
-        "placeholder": "dd/mm/YYYY",
-        "showHeading": false,
         "uuid": "fee1095f-a0a7-4694-a352-4e88d6ce6c7c",
+        "label": "Date Of HIV Retesting Before ART",
         "validation": {
-          "required": false,
-          "matches": null
-        },
-        "answerConceptSetUuid": null,
-        "customConceptAnswers": []
+          "required": false
+        }
       },
       {
         "id": "placeOfHIVRetestingBeforeART",
         "type": "obs",
-        "required": false,
         "uuid": "13d6e54e-c8bb-41b2-902b-6ad193f77f40",
-        "label": "Place Of HIV Retesting Before ART"
+        "label": "Place Of HIV Retesting Before ART",
+        "validation": {
+          "required": false
+        }
       }
       ],
     "registrationObs": {
-      "encounterTypeUuid": "de1f9d67-b73e-4e1b-90d0-036166fc6995",
-      "registrationFormUuid": "add7abdc-59d1-11e8-9c2d-fa7ae01bbebc"
+      "encounterTypeUuid": "f469b65f-a4f6-4723-989a-46090de6a0e5",
+      "registrationFormUuid": "50d7605c-9670-331c-bf19-5794548c8540"
     },
     "fieldConfigurations": {
       "name": {
