@@ -22,7 +22,7 @@
       "src": "/openmrs/spa/primary-navigation.png"
     }
   },
-  "@openmrs/esm-patient-chart-app": {
+  "@ssemr/esm-patient-chart-app": {
     "logo": {
       "src": "/openmrs/spa/primary-navigation.png"
     },
