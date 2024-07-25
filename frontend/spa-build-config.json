@@ -8,7 +8,6 @@
     "@openmrs/esm-form-entry-app": "next",
     "@openmrs/esm-generic-patient-widgets-app": "next",
     "@openmrs/esm-patient-banner-app": "next",
-    "@openmrs/esm-patient-chart-app": "next",
     "@openmrs/esm-patient-forms-app": "next",
     "@openmrs/esm-patient-flags-app": "next",
     "@openmrs/esm-patient-labs-app": "next",
@@ -29,7 +28,8 @@
     "@ssemr/esm-patient-registration-app": "next",
     "@ssemr/esm-patient-hiv-art-app": "6.0.3",
     "@ssemr/esm-patient-summary-app": "next",
-    "@ssemr/esm-patient-list-management-app": "1.1.9"
+    "@ssemr/esm-patient-list-management-app": "1.1.9",
+    "@ssemr/esm-patient-chart-app": "next"
   },
   "spaPath": "$SPA_PATH",
   "apiUrl": "$API_URL",
