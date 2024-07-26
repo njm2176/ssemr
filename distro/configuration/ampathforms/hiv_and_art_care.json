@@ -1010,13 +1010,13 @@
               },
               "type": "obs",
               "hide": {
-                "hideWhenExpression": "age >= 2"
+                "hideWhenExpression": "age < 2"
               },
               "validators": []
             },
             {
               "label": "Length for child < 2yrs",
-              "id": "height",
+              "id": "lengthChild",
               "required": false,
               "questionOptions": {
                 "answers": [],
@@ -1025,7 +1025,7 @@
               },
               "type": "obs",
               "hide": {
-                "hideWhenExpression": "age < 2"
+                "hideWhenExpression": "age >= 2"
               },
               "validators": []
             },
