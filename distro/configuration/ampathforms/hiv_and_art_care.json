@@ -780,7 +780,7 @@
                 "answers": [
                   {
                     "label": "PMTCT",
-                    "concept": "31d8cf82-5b62-4ebd-97d8-31b19690bc32"
+                    "concept": "650ae97a-24cb-4745-b9b6-ef4e941793c1"
                   },
                   {
                     "label": "PEP",
@@ -1000,7 +1000,7 @@
               ]
             },
             {
-              "label": "Height(cm) / length for child<2yrs",
+              "label": "Height(cm)",
               "id": "height",
               "required": false,
               "questionOptions": {
@@ -1009,8 +1009,25 @@
                 "rendering": "numeric"
               },
               "type": "obs",
-              "validators": [
-              ]
+              "hide": {
+                "hideWhenExpression": "age >= 2"
+              },
+              "validators": []
+            },
+            {
+              "label": "Length for child < 2yrs",
+              "id": "height",
+              "required": false,
+              "questionOptions": {
+                "answers": [],
+                "concept": "5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "rendering": "numeric"
+              },
+              "type": "obs",
+              "hide": {
+                "hideWhenExpression": "age < 2"
+              },
+              "validators": []
             },
             {
               "label": "Is CD4 Done?",
