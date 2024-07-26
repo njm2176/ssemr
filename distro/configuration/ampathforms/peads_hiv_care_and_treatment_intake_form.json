@@ -1094,6 +1094,7 @@
 				  "hideWhenExpression": "nose !== '1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'",
 				  "validators": []
 				}
+			}
 			  ],
 			  "hide": {
 				"hideWhenExpression": "generalAppearance === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
