@@ -396,19 +396,19 @@
               "label": "Family Info",
               "type": "obsGroup",
               "required": true,
-              "id": "generalFamilyInfo",
+              "id": "indexFamilyInfo",
               "questionOptions": {
                 "rendering": "repeating",
-                "concept": "63ec7ffb-8a42-42ec-9aaa-4758955205b2"
+                "concept": "3480554d-fd52-462d-b3fd-e1c551d6a3eb"
               },
               "questions": [
                 {
                   "label": "Individual name",
-                  "id": "familyMembersNames",
+                  "id": "indexFamilyMembersNames",
                   "required": true,
                   "questionOptions": {
                     "answers": [],
-                    "concept": "1074cef5-e4f9-470d-aaea-a4d8d7436c49",
+                    "concept": "c584ddf3-0e0f-4411-9e63-af668b45360d",
                     "rendering": "text"
                   },
                   "type": "obs",
@@ -416,11 +416,11 @@
                 },
                 {
                   "label": "Age",
-                  "id": "familyMemberAge",
+                  "id": "indexFamilyMemberAge",
                   "required": true,
                   "questionOptions": {
                     "answers": [],
-                    "concept": "db25b3c5-10da-49a9-9137-cc8a2507585a",
+                    "concept": "f3723ab5-1d2f-4dc5-9588-5c299e86a0ac",
                     "rendering": "number",
                     "min": 0,
                     "max": 120
@@ -430,7 +430,7 @@
                 },
                 {
                   "label": "Sex",
-                  "id": "familyMemberSex",
+                  "id": "indexFamilyMemberSex",
                   "required": true,
                   "questionOptions": {
                     "answers": [
@@ -443,7 +443,7 @@
                         "concept": "e74aebd1-51b5-424f-b9f0-339fd8cd3588"
                       }
                     ],
-                    "concept": "d969948d-6671-4149-a234-7b991c70e1c1",
+                    "concept": "99674ab0-043d-4897-bdc1-e9c9ed410487",
                     "rendering": "radio"
                   },
                   "type": "obs",
@@ -452,7 +452,7 @@
                 {
                   "label": "Relationship",
                   "type": "obs",
-                  "id": "relationship",
+                  "id": "indexFamilyMemberrelationship",
                   "questionOptions": {
                     "rendering": "select",
                     "concept": "2eed6753-c2b7-4b85-a099-a78beb4eaff3",
@@ -492,7 +492,7 @@
                 },
                 {
                   "label": "Phone Number",
-                  "id": "familyMemberPhoneNumberKnownUnknown",
+                  "id": "indexFamilyMemberPhoneNumberKnownUnknown",
                   "questionOptions": {
                     "answers": [
                       {
@@ -519,7 +519,7 @@
                   },
                   "type": "obs",
                   "hide": {
-                    "hideWhenExpression": "isEmpty(familyMemberPhoneNumberKnownUnknown) || familyMemberPhoneNumberKnownUnknown !== 'c91e78ca-dee2-4149-b0c9-3270bfff5357' "
+                    "hideWhenExpression": "isEmpty(indexFamilyMemberPhoneNumberKnownUnknown) || indexFamilyMemberPhoneNumberKnownUnknown !== 'c91e78ca-dee2-4149-b0c9-3270bfff5357' "
                   },
                   "validators": [
                     {
@@ -535,7 +535,7 @@
                 },
                 {
                   "label": "HIV status during mapping",
-                  "id": "familyMemberHivDuringMapping",
+                  "id": "indexFamilyMemberHivDuringMapping",
                   "questionOptions": {
                     "answers": [
                       {
@@ -554,7 +554,7 @@
                 },
                 {
                   "label": "HIV Status",
-                  "id": "familyMemberHIVStatus",
+                  "id": "indexFamilyMemberHIVStatus",
                   "questionOptions": {
                     "answers": [
                       {
@@ -566,12 +566,12 @@
                         "concept": "664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
                       }
                     ],
-                    "concept": "160f21c0-9a96-4ffd-a72c-aabed02b6a53",
+                    "concept": "b0edd166-2dca-47a3-ac36-a79e12b2e532",
                     "rendering": "radio"
                   },
                   "type": "obs",
                   "hide": {
-                    "hideWhenExpression": "isEmpty(familyMemberHivDuringMapping) || familyMemberHivDuringMapping !== 'c1c0789b-eaee-4e25-bd1a-600b2c15a19f' "
+                    "hideWhenExpression": "isEmpty(indexFamilyMemberHivDuringMapping) || indexFamilyMemberHivDuringMapping !== 'c1c0789b-eaee-4e25-bd1a-600b2c15a19f' "
                   },
                   "validators": []
                 },
@@ -587,7 +587,7 @@
                     "answers": []
                   },
                   "hide": {
-                    "hideWhenExpression": "isEmpty(familyMemberHivDuringMapping) || familyMemberHivDuringMapping !== 'c1c0789b-eaee-4e25-bd1a-600b2c15a19f'"
+                    "hideWhenExpression": "isEmpty(indexFamilyMemberHivDuringMapping) || indexFamilyMemberHivDuringMapping !== 'c1c0789b-eaee-4e25-bd1a-600b2c15a19f'"
                   },
                   "validators": [
                     {
@@ -615,7 +615,7 @@
                   },
                   "type": "obs",
                   "hide": {
-                    "hideWhenExpression": "familyMemberHIVStatus !== '9024e06b-ec26-4d13-a876-70ea1eebfa3e'"
+                    "hideWhenExpression": "indexFamilyMemberHIVStatus !== '9024e06b-ec26-4d13-a876-70ea1eebfa3e'"
                   },
                   "validators": []
                 },
@@ -648,7 +648,7 @@
                 },
                 {
                   "label": "On ART",
-                  "id": "familyMemberOnART",
+                  "id": "indexFamilyMemberOnART",
                   "required": true,
                   "questionOptions": {
                     "concept": "48741238-7ad4-42f0-a1f4-d2bb6b355614",
@@ -665,7 +665,7 @@
                     ]
                   },
                   "hide": {
-                    "hideWhenExpression": "!(familyMemberHIVStatus === '7acfafa4-f19b-485e-97a7-c9e002dbe37a' || resultsOfHts === '4e863543-07ed-4e81-9452-9e309007e713')"
+                    "hideWhenExpression": "!(indexFamilyMemberHIVStatus === '7acfafa4-f19b-485e-97a7-c9e002dbe37a' || resultsOfHts === '4e863543-07ed-4e81-9452-9e309007e713')"
                   }
                 },
                 {
@@ -678,7 +678,7 @@
                     "concept": "7bec5791-6cdc-4fe4-bfbb-89cbf3ab03b4"
                   },
                   "hide": {
-                    "hideWhenExpression": "isEmpty(familyMemberOnART) || familyMemberOnART !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                    "hideWhenExpression": "isEmpty(indexFamilyMemberOnART) || indexFamilyMemberOnART !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
                   },
                   "validators": []
                 }
@@ -780,7 +780,7 @@
                 "answers": [
                   {
                     "label": "PMTCT",
-                    "concept": "31d8cf82-5b62-4ebd-97d8-31b19690bc32"
+                    "concept": "650ae97a-24cb-4745-b9b6-ef4e941793c1"
                   },
                   {
                     "label": "PEP",
@@ -996,11 +996,10 @@
                 "rendering": "numeric"
               },
               "type": "obs",
-              "validators": [
-              ]
+              "validators": []
             },
             {
-              "label": "Height(cm) / length for child<2yrs",
+              "label": "Height(cm)",
               "id": "height",
               "required": false,
               "questionOptions": {
@@ -1009,8 +1008,25 @@
                 "rendering": "numeric"
               },
               "type": "obs",
-              "validators": [
-              ]
+              "hide": {
+                "hideWhenExpression": "age < 2"
+              },
+              "validators": []
+            },
+            {
+              "label": "Length for child < 2yrs",
+              "id": "lengthChild",
+              "required": false,
+              "questionOptions": {
+                "answers": [],
+                "concept": "5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "rendering": "numeric"
+              },
+              "type": "obs",
+              "hide": {
+                "hideWhenExpression": "age >= 2"
+              },
+              "validators": []
             },
             {
               "label": "Is CD4 Done?",
