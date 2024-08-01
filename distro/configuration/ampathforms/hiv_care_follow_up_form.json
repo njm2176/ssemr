@@ -13,7 +13,7 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Date scheduled",
+              "label": "Scheduled/Visit Date",
               "type": "obs",
               "required": true,
               "id": "dateScheduled",
@@ -29,7 +29,7 @@
               ]
             },
             {
-              "label": "Follow up Date",
+              "label": "Follow-up/Next Appointment Date",
               "required": true,
               "id": "appointmentWorkspaceLauncher",
               "questionOptions": {
@@ -86,8 +86,7 @@
                 "rendering": "numeric"
               },
               "type": "obs",
-              "validators": [
-              ]
+              "validators": []
             },
             {
               "label": "Height(cm)",
@@ -100,8 +99,7 @@
                 "rendering": "numeric"
               },
               "type": "obs",
-              "validators": [
-              ]
+              "validators": []
             },
             {
               "label": "BMI for adult and children above 5 Years",
@@ -204,7 +202,7 @@
                   },
                   {
                     "label": "Implant",
-                    "concept": "66a6bacc-8ac0-4c2c-b44a-d62ca9a3e89b"
+                    "concept": "3c8d2964-2794-4c75-b544-5806b55d5c9d"
                   },
                   {
                     "label": "IUD",
