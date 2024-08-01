@@ -396,15 +396,15 @@
               "label": "Family Info",
               "type": "obsGroup",
               "required": true,
-              "id": "generalFamilyInfo",
+              "id": "indexFamilyInfo",
               "questionOptions": {
                 "rendering": "repeating",
-                "concept": "3b43cb5f-6a7d-4904-9bbd-0be3dae9394a"
+                "concept": "3480554d-fd52-462d-b3fd-e1c551d6a3eb"
               },
               "questions": [
                 {
                   "label": "Individual name",
-                  "id": "familyMembersNames",
+                  "id": "indexFamilyMembersNames",
                   "required": true,
                   "questionOptions": {
                     "answers": [],
@@ -416,7 +416,7 @@
                 },
                 {
                   "label": "Age",
-                  "id": "familyMemberAge",
+                  "id": "indexFamilyMemberAge",
                   "required": true,
                   "questionOptions": {
                     "answers": [],
@@ -430,7 +430,7 @@
                 },
                 {
                   "label": "Sex",
-                  "id": "familyMemberSex",
+                  "id": "indexFamilyMemberSex",
                   "required": true,
                   "questionOptions": {
                     "answers": [
@@ -452,7 +452,7 @@
                 {
                   "label": "Relationship",
                   "type": "obs",
-                  "id": "relationship",
+                  "id": "indexFamilyMemberrelationship",
                   "questionOptions": {
                     "rendering": "select",
                     "concept": "2eed6753-c2b7-4b85-a099-a78beb4eaff3",
@@ -492,7 +492,7 @@
                 },
                 {
                   "label": "Phone Number",
-                  "id": "familyMemberPhoneNumberKnownUnknown",
+                  "id": "indexFamilyMemberPhoneNumberKnownUnknown",
                   "questionOptions": {
                     "answers": [
                       {
@@ -519,7 +519,7 @@
                   },
                   "type": "obs",
                   "hide": {
-                    "hideWhenExpression": "isEmpty(familyMemberPhoneNumberKnownUnknown) || familyMemberPhoneNumberKnownUnknown !== 'c91e78ca-dee2-4149-b0c9-3270bfff5357' "
+                    "hideWhenExpression": "isEmpty(indexFamilyMemberPhoneNumberKnownUnknown) || indexFamilyMemberPhoneNumberKnownUnknown !== 'c91e78ca-dee2-4149-b0c9-3270bfff5357' "
                   },
                   "validators": [
                     {
@@ -535,7 +535,7 @@
                 },
                 {
                   "label": "HIV status during mapping",
-                  "id": "familyMemberHivDuringMapping",
+                  "id": "indexFamilyMemberHivDuringMapping",
                   "questionOptions": {
                     "answers": [
                       {
@@ -554,7 +554,7 @@
                 },
                 {
                   "label": "HIV Status",
-                  "id": "familyMemberHIVStatus",
+                  "id": "indexFamilyMemberHIVStatus",
                   "questionOptions": {
                     "answers": [
                       {
@@ -571,7 +571,7 @@
                   },
                   "type": "obs",
                   "hide": {
-                    "hideWhenExpression": "isEmpty(familyMemberHivDuringMapping) || familyMemberHivDuringMapping !== 'c1c0789b-eaee-4e25-bd1a-600b2c15a19f' "
+                    "hideWhenExpression": "isEmpty(indexFamilyMemberHivDuringMapping) || indexFamilyMemberHivDuringMapping !== 'c1c0789b-eaee-4e25-bd1a-600b2c15a19f' "
                   },
                   "validators": []
                 },
@@ -587,7 +587,7 @@
                     "answers": []
                   },
                   "hide": {
-                    "hideWhenExpression": "isEmpty(familyMemberHivDuringMapping) || familyMemberHivDuringMapping !== 'c1c0789b-eaee-4e25-bd1a-600b2c15a19f'"
+                    "hideWhenExpression": "isEmpty(indexFamilyMemberHivDuringMapping) || indexFamilyMemberHivDuringMapping !== 'c1c0789b-eaee-4e25-bd1a-600b2c15a19f'"
                   },
                   "validators": [
                     {
@@ -615,7 +615,7 @@
                   },
                   "type": "obs",
                   "hide": {
-                    "hideWhenExpression": "familyMemberHIVStatus !== '9024e06b-ec26-4d13-a876-70ea1eebfa3e'"
+                    "hideWhenExpression": "indexFamilyMemberHIVStatus !== '9024e06b-ec26-4d13-a876-70ea1eebfa3e'"
                   },
                   "validators": []
                 },
@@ -648,7 +648,7 @@
                 },
                 {
                   "label": "On ART",
-                  "id": "familyMemberOnART",
+                  "id": "indexFamilyMemberOnART",
                   "required": true,
                   "questionOptions": {
                     "concept": "48741238-7ad4-42f0-a1f4-d2bb6b355614",
@@ -665,7 +665,7 @@
                     ]
                   },
                   "hide": {
-                    "hideWhenExpression": "!(familyMemberHIVStatus === '7acfafa4-f19b-485e-97a7-c9e002dbe37a' || resultsOfHts === '4e863543-07ed-4e81-9452-9e309007e713')"
+                    "hideWhenExpression": "!(indexFamilyMemberHIVStatus === '7acfafa4-f19b-485e-97a7-c9e002dbe37a' || resultsOfHts === '4e863543-07ed-4e81-9452-9e309007e713')"
                   }
                 },
                 {
@@ -678,7 +678,7 @@
                     "concept": "7bec5791-6cdc-4fe4-bfbb-89cbf3ab03b4"
                   },
                   "hide": {
-                    "hideWhenExpression": "isEmpty(familyMemberOnART) || familyMemberOnART !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                    "hideWhenExpression": "isEmpty(indexFamilyMemberOnART) || indexFamilyMemberOnART !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
                   },
                   "validators": []
                 }
@@ -996,8 +996,7 @@
                 "rendering": "numeric"
               },
               "type": "obs",
-              "validators": [
-              ]
+              "validators": []
             },
             {
               "label": "Height(cm)",
