@@ -26,7 +26,7 @@
     "@openmrs/esm-appointments-app": "next",
     "@ssemr/esm-reports-dashboard":"next",
     "@ssemr/esm-patient-registration-app": "next",
-    "@ssemr/esm-patient-hiv-art-app": "6.0.3",
+    "@ssemr/esm-patient-hiv-art-app": "6.0.6",
     "@ssemr/esm-patient-summary-app": "next",
     "@ssemr/esm-patient-list-management-app": "1.1.9",
     "@openmrs/esm-patient-chart-app": "next"
