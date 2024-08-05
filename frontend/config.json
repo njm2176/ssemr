@@ -176,8 +176,10 @@
       {
         "id": "dateFirstTestedHIVPositive",
         "type": "obs",
-        "uuid": "7482b976-56fe-44b0-b30f-1e957cc0cbb0",
         "label": "Date First Tested HIV Positive",
+        "uuid": "7482b976-56fe-44b0-b30f-1e957cc0cbb0",
+        "placeholder": "dd-MM-YYYY",
+        "dateFormat": "dd-MM-YYYY",
         "validation": {
           "required": false
         }
@@ -258,8 +260,10 @@
       {
         "id": "dateOfHIVRetestingBeforeART",
         "type": "obs",
-        "uuid": "fee1095f-a0a7-4694-a352-4e88d6ce6c7c",
         "label": "Date Of HIV Retesting Before ART",
+        "uuid": "fee1095f-a0a7-4694-a352-4e88d6ce6c7c",
+        "placeholder": "dd-MM-YYYY",
+        "dateFormat": "dd-MM-YYYY",
         "validation": {
           "required": false
         }
