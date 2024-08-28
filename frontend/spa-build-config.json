@@ -29,7 +29,7 @@
     "@ssemr/esm-patient-hiv-art-app": "6.0.8",
     "@ssemr/esm-patient-summary-app": "1.1.3",
     "@ssemr/esm-patient-list-management-app": "1.1.9",
-    "@openmrs/esm-patient-chart-app": "next"
+    "@ssemr/esm-patient-chart-app": "next"
   },
   "spaPath": "$SPA_PATH",
   "apiUrl": "$API_URL",
