@@ -751,7 +751,21 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "isClientEligibleForTPT !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                "hideWhenExpression": "isTptDispensed !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              }
+            },
+            {
+              "label": "Date Given/Dispensed TPT",
+              "type": "obs",
+              "required": true,
+              "id": "dateTPTDispensed",
+              "datePickerFormat": "calendar",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "b236df66-d1af-40ad-ad12-66c9f424dba6"
+              },
+              "hide": {
+                "hideWhenExpression": "isTptDispensed !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
             },
             {
@@ -774,21 +788,7 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "isClientEligibleForTPT !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
-              }
-            },
-            {
-              "label": "Date Given/Dispensed TPT",
-              "type": "obs",
-              "required": true,
-              "id": "dateTPTDispensed",
-              "datePickerFormat": "calendar",
-              "questionOptions": {
-                "rendering": "date",
-                "concept": "b236df66-d1af-40ad-ad12-66c9f424dba6"
-              },
-              "hide": {
-                "hideWhenExpression": "isClientEligibleForTPT !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'|| clientFinishedTPT!== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                "hideWhenExpression": "isTptDispensed !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
             },
             {
@@ -802,7 +802,7 @@
                 "concept": "01c21238-6f58-4f8f-b0ef-b6554e427875"
               },
               "hide": {
-                "hideWhenExpression": "isClientEligibleForTPT !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'|| clientFinishedTPT!== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                "hideWhenExpression": "clientFinishedTPT !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
             },
             {
