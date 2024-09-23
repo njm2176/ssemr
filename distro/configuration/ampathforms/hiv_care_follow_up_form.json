@@ -685,6 +685,127 @@
               }
             },
             {
+              "label": "TPT Dispensed?",
+              "type": "obs",
+              "required": true,
+              "id": "isTptDispensed",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "d56d2c1a-d385-4b75-bfec-a548f286d3c4",
+                "answers": [
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes"
+                  },
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": "isClientEligibleForTPT !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              }
+            },
+            {
+              "label": "TPT Pills  Dispensed?",
+              "type": "obs",
+              "required": true,
+              "id": "tptPillsDispensed",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "4bc80a63-ee07-400f-bcc6-22de7efb4d58",
+                "answers": [
+                  {
+                    "concept": "39ec38d1-7b35-4f05-ab87-10983da0b484",
+                    "label": "0 Pills"
+                  },
+                  {
+                    "concept": "7b0642e1-7607-4b0f-806e-703b195345ea",
+                    "label": "30 Pills"
+                  },
+                  {
+                    "concept": "3cd5ec7d-ac0e-46cc-8a46-ab7628da0a4f",
+                    "label": "60 Pills"
+                  },
+                  {
+                    "concept": "af06426c-e63e-4f83-bdbc-a855c42bb0ca",
+                    "label": "90 Pills"
+                  },
+                  {
+                    "concept": "c036d8cb-9416-43b3-b23f-91913ce424a3",
+                    "label": "120 Pills"
+                  },
+                  {
+                    "concept": "faf5d5dc-1547-49f7-941d-6fdf2d1bfa50",
+                    "label": "150 Pills"
+                  },
+                  {
+                    "concept": "91e0bcf5-8968-4004-9e14-bb466fccaf53",
+                    "label": "180 Pills"
+                  },
+                  {
+                    "concept": "2e74862a-bb28-4e10-9a9a-b959a4a5da60",
+                    "label": "180+ Pills"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": "isClientEligibleForTPT !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              }
+            },
+            {
+              "label": "Is TPT Finished?",
+              "type": "obs",
+              "required": true,
+              "id": "clientFinishedTPT",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "57c785e4-3552-455f-8506-4776987b4801",
+                "answers": [
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes"
+                  },
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": "isClientEligibleForTPT !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              }
+            },
+            {
+              "label": "Date Given/Dispensed TPT",
+              "type": "obs",
+              "required": true,
+              "id": "dateTPTDispensed",
+              "datePickerFormat": "calendar",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "b236df66-d1af-40ad-ad12-66c9f424dba6"
+              },
+              "hide": {
+                "hideWhenExpression": "isClientEligibleForTPT !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'|| clientFinishedTPT!== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              }
+            },
+            {
+              "label": "Date Completed TPT",
+              "type": "obs",
+              "required": true,
+              "id": "dateTPTFinished",
+              "datePickerFormat": "calendar",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "01c21238-6f58-4f8f-b0ef-b6554e427875"
+              },
+              "hide": {
+                "hideWhenExpression": "isClientEligibleForTPT !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'|| clientFinishedTPT!== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              }
+            },
+            {
               "label": "TPT Given (INH)",
               "type": "obs",
               "required": true,
