@@ -321,7 +321,7 @@
 			"isExpanded": "true",
 			"questions": [
 			  {
-				"label": "Date",
+				"label": "First EAC Date",
 				"type": "obs",
 				"required": false,
 				"id": "adherenceDate",
@@ -334,37 +334,7 @@
 				"validators": []
 			  },
 			  {
-				"label": "EAC Session",
-				"type": "obs",
-				"required": true,
-				"id": "eacSession",
-				"questionOptions": {
-				  "rendering": "select",
-				  "concept": "65536958-fc01-4002-8839-af4b6ab0489b",
-				  "conceptMappings": [],
-				  "answers": [
-					{
-					  "concept": "37f1e487-24f7-48f3-a347-391e877152e4",
-					  "label": "First EAC Session"
-					},
-					{
-					  "concept": "348c5147-4e54-420a-a035-b322e1ba0b6e",
-					  "label": "Second EAC Session"
-					},
-					{
-					  "concept": "60966dae-3999-42b9-aec1-6161cebb22c1",
-					  "label": "Third EAC Session"
-					},
-					{
-					  "concept": "99c7c0f1-3c7c-4e26-bf4b-60a74734bc7c",
-					  "label": "Extended session of EAC"
-					}
-				  ]
-				},
-				"validators": []
-			  },
-			  {
-				"label": "Adherence",
+				"label": "First EAC Adherence",
 				"type": "obs",
 				"required": false,
 				"id": "adherence",
@@ -496,6 +466,19 @@
 				"validators": []
 			  },
 			  {
+				"label": "Other First EAC Barrier Reason Specify",
+				"type": "obs",
+				"id": "firstEacBarrierSpecify",
+				"questionOptions": {
+				  "rendering": "text",
+				  "concept": "f481d175-85fa-45d6-bfd7-66d9deb34eaf"
+				},
+				"validators": [],
+				"hide": {
+				  "hideWhenExpression": "adherenceBarriers !== 'a393d1ee-e6eb-4f84-b75c-848a99343760'"
+				}
+			  },
+			  {
 				"label": "Interventions",
 				"type": "obs",
 				"required": false,
@@ -589,10 +572,7 @@
 					}
 				  ]
 				},
-				"validators": [],
-				"hide": {
-				  "hideWhenExpression": "eacSession !== '37f1e487-24f7-48f3-a347-391e877152e4'"
-				}
+				"validators": []
 			  },
 			  {
 				"label": "Specify Other Tools for First EAC",
@@ -635,11 +615,622 @@
 				  "conceptMappings": [],
 				  "answers": []
 				},
-				"validators": [],
-				"hide": {
-				  "hideWhenExpression": "isEmpty(eacSession) || eacSession === '37f1e487-24f7-48f3-a347-391e877152e4'"
-				}
+				"validators": []
 			  }
+			]
+		  },
+		  {
+			"label": "Second EAC Session",
+			"type": "obsGroup",
+			"required": true,
+			"id": "secondEacSession",
+			"questionOptions": {
+			  "rendering": "repeating",
+			  "concept": "57a3514d-28cd-4340-9ebf-4d3e1f3c5efd"
+			},
+			"questions": [
+				{
+					"label": "Second EAC Date",
+					"type": "obs",
+					"required": false,
+					"id": "secondEACDate",
+					"questionOptions": {
+					  "rendering": "date",
+					  "concept": "4bf2af69-1576-44a9-ae60-95cd3ca2ae72"
+					},
+					"validators": []
+				  },
+				  {
+					"label": "Second EAC Adherence",
+					"type": "obs",
+					"required": false,
+					"id": "secondEacadherence",
+					"questionOptions": {
+					  "rendering": "select",
+					  "concept": "7c9976a3-f646-4ed4-8d2f-ab133ea9b292",
+					  "conceptMappings": [],
+					  "answers": [
+						{
+						  "concept": "714752ad-61df-44e0-ae40-fa9bf4f9d831",
+						  "label": "Good"
+						},
+						{
+						  "concept": "535ea56b-0138-4804-ab23-e70f2dbe0b61",
+						  "label": "Fair"
+						},
+						{
+						  "concept": "f05f31c1-5f06-4ada-8cbd-a877cb06442a",
+						  "label": "Poor"
+						}
+					  ]
+					},
+					"validators": []
+				  },
+				  {
+					"label": "Second EAC Barriers",
+					"type": "obs",
+					"required": false,
+					"id": "secondAdherenceBarriers",
+					"questionOptions": {
+					  "rendering": "multiCheckbox",
+					  "concept": "39fa451a-8867-4881-a774-61f666f8ee89",
+					  "conceptMappings": [],
+					  "answers": [
+						{
+						  "concept": "a2832452-f729-4d85-87ff-04caa9185a5b",
+						  "label": "Alcohol/Drugs"
+						},
+						{
+						  "concept": "f02ffea9-5b05-4330-ba18-38222fd24028",
+						  "label": "Child Behaviour/Refusing for Children on ART"
+						},
+						{
+						  "concept": "f94de22a-75cc-4361-afb8-57ebc2f95579",
+						  "label": "Concurrent illness"
+						},
+						{
+						  "concept": "506d37ec-84b7-418c-925e-2a0ff9d72300",
+						  "label": "Depression"
+						},
+						{
+						  "concept": "15ca08ce-8b64-4652-ad03-2ff3da85a015",
+						  "label": "Drug Stock Out"
+						},
+						{
+						  "concept": "6d258ec0-6cf0-4905-b439-027fcbb0732f",
+						  "label": "Failure To Adjust To food Insecurity"
+						},
+						{
+						  "concept": "2a28777a-037f-4334-af14-a8feb6acfb2d",
+						  "label": "Fear Disclosure"
+						},
+						{
+						  "concept": "c417a890-ceea-487e-b19f-6358a6e39379",
+						  "label": "Feeling Better"
+						},
+						{
+						  "concept": "188dc5ba-1c33-4789-b39c-267a2ff29b96",
+						  "label": "Forgot"
+						},
+						{
+						  "concept": "d7be0a00-82a2-47ef-87f7-13a25f881dc1",
+						  "label": "Health/Beliefs/Alternate Remedies"
+						},
+						{
+						  "concept": "d55337ae-d344-44cb-b780-0f051f6cb6b2",
+						  "label": "Knowledge"
+						},
+						{
+						  "concept": "6ff84fab-c338-42f6-9e43-aebdd72a12a8",
+						  "label": "Lack of Familiy/Partner Support"
+						},
+						{
+						  "concept": "dd8f80f0-d238-4d4b-bd26-a58316eba54c",
+						  "label": "Long Wait"
+						},
+						{
+						  "concept": "19c263aa-395e-4250-a762-2405c5d3b533",
+						  "label": "Lost/Damaged"
+						},
+						{
+						  "concept": "68a10b27-ab05-470c-b2c0-0a13e26b14c1",
+						  "label": "Pill Burden"
+						},
+						{
+						  "concept": "24c7d1f1-26f6-495e-b7f8-79b45991ef1a",
+						  "label": "Political Crisis"
+						},
+						{
+						  "concept": "a9b92884-e629-4a6a-8214-0557f52ebb97",
+						  "label": "Ran out Of Medication"
+						},
+						{
+						  "concept": "7a15f044-a900-4c68-8d66-40f93aa94102",
+						  "label": "Scheduling"
+						},
+						{
+						  "concept": "edbb167f-935e-41d2-b699-9e437ceea7f3",
+						  "label": "Sharing Medications"
+						},
+						{
+						  "concept": "e2e0c503-842c-4ddf-891d-111c65322dc5",
+						  "label": "Side Effects"
+						},
+						{
+						  "concept": "0cf0ff1e-09b7-40d8-ba16-431033de9828",
+						  "label": "Stigma"
+						},
+						{
+						  "concept": "a437c938-ff0f-44f6-82d1-9363d593638d",
+						  "label": "Transport"
+						},
+						{
+						  "concept": "a393d1ee-e6eb-4f84-b75c-848a99343760",
+						  "label": "Other EAC Barrier Reason"
+						}
+					  ]
+					},
+					"validators": []
+				  },
+				  {
+					"label": "Other Second EAC Barrier Reason Specify",
+					"type": "obs",
+					"id": "secondEacBarrierSpecify",
+					"questionOptions": {
+					  "rendering": "text",
+					  "concept": "17b6bbe0-3e4d-44fd-a4b9-5bcd0f442659"
+					},
+					"validators": [],
+					"hide": {
+					  "hideWhenExpression": "secondAdherenceBarriers !== 'a393d1ee-e6eb-4f84-b75c-848a99343760'"
+					}
+				  },
+				  {
+					"label": "Second EAC Interventions",
+					"type": "obs",
+					"required": false,
+					"id": "secondEacIntervention",
+					"questionOptions": {
+					  "rendering": "multiCheckbox",
+					  "concept": "759a95da-c775-497d-8df9-8e8d7c4ff960",
+					  "conceptMappings": [],
+					  "answers": [
+						{
+						  "concept": "7c03516d-9ad0-4cc6-8e02-b8f7d92f571a",
+						  "label": "Case Mgmt."
+						},
+						{
+						  "concept": "53c0db5c-38f9-4863-bcb2-a547d6b6b24a",
+						  "label": "Clinical"
+						},
+						{
+						  "concept": "a7675030-3110-4b81-9380-4eceb0b8cf2d",
+						  "label": "Counselling(grp)"
+						},
+						{
+						  "concept": "548d084a-1eb2-46f8-bc2b-8b721f5511de",
+						  "label": "Counselling(ind)"
+						},
+						{
+						  "concept": "9b2056fd-7ecd-4852-87e4-fb75d66d7d1c",
+						  "label": "DOT"
+						},
+						{
+						  "concept": "c11dcd7e-2ba5-42a2-96bb-91c1320541ba",
+						  "label": "Drug pick-up"
+						},
+						{
+						  "concept": "65b2b048-039c-49a5-8712-cfec020af970",
+						  "label": "Education"
+						},
+						{
+						  "concept": "de829763-efa4-4abf-b31d-ccb3cb631554",
+						  "label": "Peer Support"
+						},
+						{
+						  "concept": "3bbe3de8-66bb-4873-8355-78b672a4cd4f",
+						  "label": "Treatment Buddy"
+						}
+					  ]
+					},
+					"validators": []
+				  },
+				  {
+					"label": "Second EAC Tools",
+					"type": "obs",
+					"required": false,
+					"id": "secondEACTools",
+					"questionOptions": {
+					  "rendering": "multiCheckbox",
+					  "concept": "6174b8e5-67c6-4a63-81c6-59424303b07b",
+					  "conceptMappings": [],
+					  "answers": [
+						{
+						  "concept": "310d8d2e-f0ea-43b5-810c-b6ea7d682e2a",
+						  "label": "Alarms"
+						},
+						{
+						  "concept": "10e70817-2ddd-4c0f-901f-f880cf174f4a",
+						  "label": "Calendar"
+						},
+						{
+						  "concept": "c8c12202-78cd-4487-a372-9e0bb7b82d22",
+						  "label": "Journal/Log"
+						},
+						{
+						  "concept": "f76732e9-2326-4e93-9621-620813671885",
+						  "label": "Phone Calls"
+						},
+						{
+						  "concept": "67985df7-5e83-421d-93af-adf4f79bd8bb",
+						  "label": "Pill Box"
+						},
+						{
+						  "concept": "35377043-8cdd-4c4d-9882-ee84e7a5e0a7",
+						  "label": "SMS"
+						},
+						{
+						  "concept": "040e2374-cba4-4ed2-9a78-ca6bf7794b19",
+						  "label": "Written Intructions"
+						},
+						{
+						  "concept": "fde15ffa-a932-4283-a2fb-644e2a6f78be",
+						  "label": "Other Tools for Second EAC"
+						}
+					  ]
+					},
+					"validators": []
+				  },
+				  {
+					"label": "Specify Other Tools for Second EAC",
+					"type": "obs",
+					"required": false,
+					"id": "otherSecondEACTools",
+					"questionOptions": {
+					  "rendering": "text",
+					  "concept": "d6546dc9-132f-48d6-88f2-019c527e18fc",
+					  "conceptMappings": []
+					},
+					"validators": [],
+					"hide": {
+					  "hideWhenExpression": "isEmpty(secondEACTools) || !arrayContains(secondEACTools, 'fde15ffa-a932-4283-a2fb-644e2a6f78be')"
+					}
+				  },
+				  {
+					"label": "Second EAC Pill intake",
+					"type": "obs",
+					"required": false,
+					"id": "secondEacPillIntake",
+					"questionOptions": {
+					  "rendering": "number",
+					  "concept": "298d22a4-dc21-4f3a-a081-ee6f1c393d0a",
+					  "min": 0,
+					  "conceptMappings": [],
+					  "answers": []
+					},
+					"validators": []
+				  },
+				  {
+					"label": "Second EAC Pill percentage",
+					"type": "obs",
+					"required": false,
+					"id": "secondEacPillPercentange",
+					"questionOptions": {
+					  "rendering": "number",
+					  "concept": "5ef9ac25-5db3-4e02-904b-3dce31dc0b06",
+					  "min": 0,
+					  "conceptMappings": [],
+					  "answers": []
+					},
+					"validators": []
+				  }
+			]
+		  },
+		  {
+			"label": "Third EAC Session",
+			"type": "obsGroup",
+			"required": true,
+			"id": "thirdEacSession",
+			"questionOptions": {
+			  "rendering": "repeating",
+			  "concept": "360bc040-6d64-4b6a-8405-87cfd081880c"
+			},
+			"questions": [
+				{
+					"label": "Third EAC Date",
+					"type": "obs",
+					"required": false,
+					"id": "secondEACDate",
+					"questionOptions": {
+					  "rendering": "date",
+					  "concept": "4bf2af69-1576-44a9-ae60-95cd3ca2ae72"
+					},
+					"validators": []
+				  },
+				  {
+					"label": "Third EAC Adherence",
+					"type": "obs",
+					"required": false,
+					"id": "thirdEacadherence",
+					"questionOptions": {
+					  "rendering": "select",
+					  "concept": "6851bf56-ded4-4b89-ba93-d9d380927e15",
+					  "conceptMappings": [],
+					  "answers": [
+						{
+						  "concept": "714752ad-61df-44e0-ae40-fa9bf4f9d831",
+						  "label": "Good"
+						},
+						{
+						  "concept": "535ea56b-0138-4804-ab23-e70f2dbe0b61",
+						  "label": "Fair"
+						},
+						{
+						  "concept": "f05f31c1-5f06-4ada-8cbd-a877cb06442a",
+						  "label": "Poor"
+						}
+					  ]
+					},
+					"validators": []
+				  },
+				  {
+					"label": "Third EAC Barriers",
+					"type": "obs",
+					"required": false,
+					"id": "thirdAdherenceBarriers",
+					"questionOptions": {
+					  "rendering": "multiCheckbox",
+					  "concept": "ac329b24-bdfe-494f-ab54-42766df12299",
+					  "conceptMappings": [],
+					  "answers": [
+						{
+						  "concept": "a2832452-f729-4d85-87ff-04caa9185a5b",
+						  "label": "Alcohol/Drugs"
+						},
+						{
+						  "concept": "f02ffea9-5b05-4330-ba18-38222fd24028",
+						  "label": "Child Behaviour/Refusing for Children on ART"
+						},
+						{
+						  "concept": "f94de22a-75cc-4361-afb8-57ebc2f95579",
+						  "label": "Concurrent illness"
+						},
+						{
+						  "concept": "506d37ec-84b7-418c-925e-2a0ff9d72300",
+						  "label": "Depression"
+						},
+						{
+						  "concept": "15ca08ce-8b64-4652-ad03-2ff3da85a015",
+						  "label": "Drug Stock Out"
+						},
+						{
+						  "concept": "6d258ec0-6cf0-4905-b439-027fcbb0732f",
+						  "label": "Failure To Adjust To food Insecurity"
+						},
+						{
+						  "concept": "2a28777a-037f-4334-af14-a8feb6acfb2d",
+						  "label": "Fear Disclosure"
+						},
+						{
+						  "concept": "c417a890-ceea-487e-b19f-6358a6e39379",
+						  "label": "Feeling Better"
+						},
+						{
+						  "concept": "188dc5ba-1c33-4789-b39c-267a2ff29b96",
+						  "label": "Forgot"
+						},
+						{
+						  "concept": "d7be0a00-82a2-47ef-87f7-13a25f881dc1",
+						  "label": "Health/Beliefs/Alternate Remedies"
+						},
+						{
+						  "concept": "d55337ae-d344-44cb-b780-0f051f6cb6b2",
+						  "label": "Knowledge"
+						},
+						{
+						  "concept": "6ff84fab-c338-42f6-9e43-aebdd72a12a8",
+						  "label": "Lack of Familiy/Partner Support"
+						},
+						{
+						  "concept": "dd8f80f0-d238-4d4b-bd26-a58316eba54c",
+						  "label": "Long Wait"
+						},
+						{
+						  "concept": "19c263aa-395e-4250-a762-2405c5d3b533",
+						  "label": "Lost/Damaged"
+						},
+						{
+						  "concept": "68a10b27-ab05-470c-b2c0-0a13e26b14c1",
+						  "label": "Pill Burden"
+						},
+						{
+						  "concept": "24c7d1f1-26f6-495e-b7f8-79b45991ef1a",
+						  "label": "Political Crisis"
+						},
+						{
+						  "concept": "a9b92884-e629-4a6a-8214-0557f52ebb97",
+						  "label": "Ran out Of Medication"
+						},
+						{
+						  "concept": "7a15f044-a900-4c68-8d66-40f93aa94102",
+						  "label": "Scheduling"
+						},
+						{
+						  "concept": "edbb167f-935e-41d2-b699-9e437ceea7f3",
+						  "label": "Sharing Medications"
+						},
+						{
+						  "concept": "e2e0c503-842c-4ddf-891d-111c65322dc5",
+						  "label": "Side Effects"
+						},
+						{
+						  "concept": "0cf0ff1e-09b7-40d8-ba16-431033de9828",
+						  "label": "Stigma"
+						},
+						{
+						  "concept": "a437c938-ff0f-44f6-82d1-9363d593638d",
+						  "label": "Transport"
+						},
+						{
+						  "concept": "a393d1ee-e6eb-4f84-b75c-848a99343760",
+						  "label": "Other EAC Barrier Reason"
+						}
+					  ]
+					},
+					"validators": []
+				  },
+				  {
+					"label": "Other Third EAC Barrier Reason Specify",
+					"type": "obs",
+					"id": "thirdEacBarrierSpecify",
+					"questionOptions": {
+					  "rendering": "text",
+					  "concept": "f02fc247-6425-4aff-8557-e6db5701a9c9"
+					},
+					"validators": [],
+					"hide": {
+					  "hideWhenExpression": "thirdAdherenceBarriers !== 'a393d1ee-e6eb-4f84-b75c-848a99343760'"
+					}
+				  },
+				  {
+					"label": "Third EAC Interventions",
+					"type": "obs",
+					"required": false,
+					"id": "thirdEacIntervention",
+					"questionOptions": {
+					  "rendering": "multiCheckbox",
+					  "concept": "29d17d06-1e19-4977-a3c7-449ac9124955",
+					  "conceptMappings": [],
+					  "answers": [
+						{
+						  "concept": "7c03516d-9ad0-4cc6-8e02-b8f7d92f571a",
+						  "label": "Case Mgmt."
+						},
+						{
+						  "concept": "53c0db5c-38f9-4863-bcb2-a547d6b6b24a",
+						  "label": "Clinical"
+						},
+						{
+						  "concept": "a7675030-3110-4b81-9380-4eceb0b8cf2d",
+						  "label": "Counselling(grp)"
+						},
+						{
+						  "concept": "548d084a-1eb2-46f8-bc2b-8b721f5511de",
+						  "label": "Counselling(ind)"
+						},
+						{
+						  "concept": "9b2056fd-7ecd-4852-87e4-fb75d66d7d1c",
+						  "label": "DOT"
+						},
+						{
+						  "concept": "c11dcd7e-2ba5-42a2-96bb-91c1320541ba",
+						  "label": "Drug pick-up"
+						},
+						{
+						  "concept": "65b2b048-039c-49a5-8712-cfec020af970",
+						  "label": "Education"
+						},
+						{
+						  "concept": "de829763-efa4-4abf-b31d-ccb3cb631554",
+						  "label": "Peer Support"
+						},
+						{
+						  "concept": "3bbe3de8-66bb-4873-8355-78b672a4cd4f",
+						  "label": "Treatment Buddy"
+						}
+					  ]
+					},
+					"validators": []
+				  },
+				  {
+					"label": "Third EAC Tools",
+					"type": "obs",
+					"required": false,
+					"id": "thirdEACTools",
+					"questionOptions": {
+					  "rendering": "multiCheckbox",
+					  "concept": "125f676b-28f0-424a-b321-f7fd0ccc857b",
+					  "conceptMappings": [],
+					  "answers": [
+						{
+						  "concept": "310d8d2e-f0ea-43b5-810c-b6ea7d682e2a",
+						  "label": "Alarms"
+						},
+						{
+						  "concept": "10e70817-2ddd-4c0f-901f-f880cf174f4a",
+						  "label": "Calendar"
+						},
+						{
+						  "concept": "c8c12202-78cd-4487-a372-9e0bb7b82d22",
+						  "label": "Journal/Log"
+						},
+						{
+						  "concept": "f76732e9-2326-4e93-9621-620813671885",
+						  "label": "Phone Calls"
+						},
+						{
+						  "concept": "67985df7-5e83-421d-93af-adf4f79bd8bb",
+						  "label": "Pill Box"
+						},
+						{
+						  "concept": "35377043-8cdd-4c4d-9882-ee84e7a5e0a7",
+						  "label": "SMS"
+						},
+						{
+						  "concept": "040e2374-cba4-4ed2-9a78-ca6bf7794b19",
+						  "label": "Written Intructions"
+						},
+						{
+						  "concept": "fde15ffa-a932-4283-a2fb-644e2a6f78be",
+						  "label": "Other Tools for Second EAC"
+						}
+					  ]
+					},
+					"validators": []
+				  },
+				  {
+					"label": "Specify Other Tools for Third EAC",
+					"type": "obs",
+					"required": false,
+					"id": "otherThirdEACTools",
+					"questionOptions": {
+					  "rendering": "text",
+					  "concept": "8ac67e0e-6e78-4ac3-8b51-bafea1b02c8c",
+					  "conceptMappings": []
+					},
+					"validators": [],
+					"hide": {
+					  "hideWhenExpression": "isEmpty(thirdEACTools) || !arrayContains(thirdEACTools, 'fde15ffa-a932-4283-a2fb-644e2a6f78be')"
+					}
+				  },
+				  {
+					"label": "Third EAC Pill intake",
+					"type": "obs",
+					"required": false,
+					"id": "thirdEacPillIntake",
+					"questionOptions": {
+					  "rendering": "number",
+					  "concept": "05f55c2f-ce57-4738-8ca3-10260725a9dc",
+					  "min": 0,
+					  "conceptMappings": [],
+					  "answers": []
+					},
+					"validators": []
+				  },
+				  {
+					"label": "Third EAC Pill percentage",
+					"type": "obs",
+					"required": false,
+					"id": "thirdEacPillPercentange",
+					"questionOptions": {
+					  "rendering": "number",
+					  "concept": "46c39500-d2d9-447a-a159-707ca3d61519",
+					  "min": 0,
+					  "conceptMappings": [],
+					  "answers": []
+					},
+					"validators": []
+				  }
 			]
 		  }
 		]
