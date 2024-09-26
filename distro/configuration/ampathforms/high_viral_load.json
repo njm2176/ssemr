@@ -239,7 +239,7 @@
 			}, 
 			{
 				"label": "Other ARV Regimen Specify",
-				"id": "otherInitialRegimenSpecify",
+				"id": "otherIArvRegimenSpecify",
 				"required": true,
 				"questionOptions": {
 				"answers": [],
@@ -249,7 +249,7 @@
 				"type": "obs",
 				"validators": [],
 				"hide": {
-				"hideWhenExpression": "intialArtRegimen !== 'b4d8805f-40ff-4c9d-9118-feeab45ad8be'"
+				"hideWhenExpression": "arvRegimen !== 'b4d8805f-40ff-4c9d-9118-feeab45ad8be'"
 				}
 			},
 			  {
@@ -645,7 +645,7 @@
 		]
 	  },
 	  {
-		"label": "Major remaining barriers",
+		"label": "Extended EAC",
 		"sections": [
 		  {
 			"label": "Major remaining barriers identified after EAC sessions:  ",
