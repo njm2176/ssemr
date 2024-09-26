@@ -152,6 +152,28 @@
               }
             },
             {
+              "label": "Has client refused treatment?",
+              "type": "obs",
+              "required": false,
+              "id": "clientRefusedTreatment",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "90b90c25-7b12-4593-9306-a0fdcc93b48f",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "label": "Yes",
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "label": "No",
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
               "label": "Date of last visit",
               "type": "obs",
               "required": true,
