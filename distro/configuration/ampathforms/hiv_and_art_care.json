@@ -886,7 +886,7 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Is this section blank?",
+              "label": "Is CTX/Dapsone given?",
               "type": "obs",
               "required": true,
               "id": "sectionBlank",
@@ -1310,11 +1310,30 @@
                   {
                     "label": "5j = AZT/3TC (120/60) + DTG10",
                     "concept": "78e49624-0e33-4374-93b7-60b132b26dae"
+                  },
+                  {
+                    "label": "Other",
+                    "concept": "b4d8805f-40ff-4c9d-9118-feeab45ad8be"
                   }
                 ]
               },
               "type": "obs",
               "validators": []
+            }, 
+            {
+              "label": "Other ARV Regimen Specify",
+              "id": "otherInitialRegimenSpecify",
+              "required": true,
+              "questionOptions": {
+                "answers": [],
+                "concept": "b0afac64-54b5-412c-86d0-7cf5dc6afb35",
+                "rendering": "Text"
+              },
+              "type": "obs",
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "intialArtRegimen !== 'b4d8805f-40ff-4c9d-9118-feeab45ad8be'"
+              }
             },
             {
               "label": "Cohort (Month,Year)",
