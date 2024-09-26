@@ -1221,25 +1221,6 @@
               "validators": []
             },
             {
-              "label": "Date started on CTX",
-              "type": "obs",
-              "required": true,
-              "id": "dateStartedCTX",
-              "questionOptions": {
-                "rendering": "date",
-                "concept": "420bd170-df26-4948-9e80-f8f95e8492f3"
-              },
-              "hide": {
-                "hideWhenExpression": "clientCTX !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
-              },
-              "validators": [
-                {
-                  "type": "date",
-                  "allowFutureDates": "false"
-                }
-              ]
-            },
-            {
               "label": "Adherence",
               "type": "obs",
               "required": true,
