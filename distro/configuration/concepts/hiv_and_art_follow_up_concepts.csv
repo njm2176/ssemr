@@ -562,6 +562,11 @@ bc8f2249-10f4-40a8-a960-952ea5f29b30,,180+ Days,180+ Days,,,,,Misc,N/A,
 150 Pills;
 180 Pills;
 180+ Pills"
+8cc8c347-c558-48e1-9108-e79a1a597f64,,Pill Intake First EAC,Pill Intake First EAC,,,,,Question,Numeric,
+298d22a4-dc21-4f3a-a081-ee6f1c393d0a,,Pill Intake Second EAC,Pill Intake Second EAC,,,,,Question,Numeric,
+5ef9ac25-5db3-4e02-904b-3dce31dc0b06,,Second EAC Pill percentage,Second EAC Pill percentage,,,,,Question,Numeric,
+05f55c2f-ce57-4738-8ca3-10260725a9dc,,Pill Intake Third EAC,Pill Intake THird EAC,,,,,Question,Numeric,
+46c39500-d2d9-447a-a159-707ca3d61519,,Third EAC Pill percentage,Third EAC Pill percentage,,,,,Question,Numeric,
 ef1c0931-32ee-47f5-9ecc-8c18eef2d706,,RPR,RPR,,,,,Misc,N/A,
 cfecd49f-41ed-405e-994f-3bf346413c7b,,HB - Lab Test,HB - Lab Test,,,,,Misc,N/A,
 b36e7148-6d1b-4347-901e-e5811f1fa899,,Sputum - Lab Test,Sputum - Lab Test,,,,,Misc,N/A,
