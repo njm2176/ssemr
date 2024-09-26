@@ -863,7 +863,10 @@
 									}
 								]
 							},
-							"validators": []
+							"validators": [],
+							"hide": {
+								"hideWhenExpression": "generalAppearance === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+							}
 						},
 						{
 							"label": "Abnormal Findings - Mouth",
@@ -938,7 +941,10 @@
 									}
 								]
 							},
-							"validators": []
+							"validators": [],
+							"hide": {
+								"hideWhenExpression": "generalAppearance === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+							}
 						},
 						{
 							"label": "Abnormal Findings - Throat",
@@ -1001,7 +1007,10 @@
 									}
 								]
 							},
-							"validators": []
+							"validators": [],
+							"hide": {
+								"hideWhenExpression": "generalAppearance === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+							}
 						},
 						{
 							"label": "Abnormal Findings - Lymph nodes/ Glands",
@@ -1072,7 +1081,10 @@
 									}
 								]
 							},
-							"validators": []
+							"validators": [],
+							"hide": {
+								"hideWhenExpression": "generalAppearance === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+							}
 						},
 						{
 							"label": "Abnormal Findings - Respiratory/Chest",
@@ -1143,7 +1155,10 @@
 									}
 								]
 							},
-							"validators": []
+							"validators": [],
+							"hide": {
+								"hideWhenExpression": "generalAppearance === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+							}
 						},
 						{
 							"label": "Abnormal findings CVS/Heart specify",
@@ -1181,7 +1196,10 @@
 									}
 								]
 							},
-							"validators": []
+							"validators": [],
+							"hide": {
+								"hideWhenExpression": "generalAppearance === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+							}
 						},
 						{
 							"label": "Abnormal Findings - Abdomen",
@@ -1252,7 +1270,10 @@
 									}
 								]
 							},
-							"validators": []
+							"validators": [],
+							"hide": {
+								"hideWhenExpression": "generalAppearance === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+							}
 						},
 						{
 							"label": "Abnormal Findings - Skin",
@@ -1327,7 +1348,10 @@
 									}
 								]
 							},
-							"validators": []
+							"validators": [],
+							"hide": {
+								"hideWhenExpression": "generalAppearance === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+							}
 						},
 						{
 							"label": "Abnormal Findings - Musculoskeletal system",
@@ -1398,7 +1422,10 @@
 									}
 								]
 							},
-							"validators": []
+							"validators": [],
+							"hide": {
+								"hideWhenExpression": "generalAppearance === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+							}
 						},
 						{
 							"label": "Abnormal Findings External Genitalia Specify",
@@ -1436,7 +1463,10 @@
 									}
 								]
 							},
-							"validators": []
+							"validators": [],
+							"hide": {
+								"hideWhenExpression": "generalAppearance === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+							}
 						},
 						{
 							"label": "Abnormal Findings - Nervous system",
@@ -1512,7 +1542,10 @@
 									}
 								]
 							},
-							"validators": []
+							"validators": [],
+							"hide": {
+								"hideWhenExpression": "generalAppearance === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+							}
 						},
 						{
 							"label": "Abnormal Findings - Head",
@@ -1579,7 +1612,10 @@
 									}
 								]
 							},
-							"validators": []
+							"validators": [],
+							"hide": {
+								"hideWhenExpression": "generalAppearance === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+							}
 						},
 						{
 							"label": "Abnormal Findings - Ears",
@@ -1646,7 +1682,10 @@
 									}
 								]
 							},
-							"validators": []
+							"validators": [],
+							"hide": {
+								"hideWhenExpression": "generalAppearance === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+							}
 						},
 						{
 							"label": "Abnormal Findings - Eyes",
@@ -1717,7 +1756,10 @@
 									}
 								]
 							},
-							"validators": []
+							"validators": [],
+							"hide": {
+								"hideWhenExpression": "generalAppearance === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
+							}
 						},
 						{
 							"label": "Abnormal findings Nose specify",
