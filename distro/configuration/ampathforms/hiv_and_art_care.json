@@ -919,7 +919,7 @@
                 "answers": []
               },
               "hide": {
-                "hideWhenExpression": "isEmpty(sectionBlank) || sectionBlank !== '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                "hideWhenExpression": "isEmpty(sectionBlank) || sectionBlank !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               },
               "validators": [
                 {
