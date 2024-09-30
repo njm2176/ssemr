@@ -769,10 +769,10 @@
               }
             },
             {
-              "label": "Is TPT Finished?",
+              "label": "Is TPT Completed?",
               "type": "obs",
               "required": true,
-              "id": "clientFinishedTPT",
+              "id": "clientCompletedTPT",
               "questionOptions": {
                 "rendering": "radio",
                 "concept": "57c785e4-3552-455f-8506-4776987b4801",
@@ -795,14 +795,14 @@
               "label": "Date Completed TPT",
               "type": "obs",
               "required": true,
-              "id": "dateTPTFinished",
+              "id": "dateTPTCompleted",
               "datePickerFormat": "calendar",
               "questionOptions": {
                 "rendering": "date",
                 "concept": "01c21238-6f58-4f8f-b0ef-b6554e427875"
               },
               "hide": {
-                "hideWhenExpression": "clientFinishedTPT !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                "hideWhenExpression": "clientCompletedTPT !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
             },
             {
