@@ -940,7 +940,7 @@
 					"label": "Third EAC Date",
 					"type": "obs",
 					"required": false,
-					"id": "secondEACDate",
+					"id": "thirdEACDate",
 					"questionOptions": {
 					  "rendering": "date",
 					  "concept": "4bf2af69-1576-44a9-ae60-95cd3ca2ae72"
@@ -1182,7 +1182,7 @@
 						},
 						{
 						  "concept": "fde15ffa-a932-4283-a2fb-644e2a6f78be",
-						  "label": "Other Tools for Second EAC"
+						  "label": "Other Tools for Third EAC"
 						}
 					  ]
 					},
