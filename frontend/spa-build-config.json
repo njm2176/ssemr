@@ -23,7 +23,7 @@
     "@openmrs/esm-fast-data-entry-app": "1.0.1-pre.183",
     "@openmrs/esm-cohort-builder-app": "4.0.1-pre.236",
     "@openmrs/esm-form-builder-app": "2.7.1-pre.1188",
-    "@ssemr/esm-appointments-app": "1.0.1",
+    "@ssemr/esm-appointments-app": "1.0.2",
     "@ssemr/esm-reports-dashboard":"next",
     "@ssemr/esm-patient-registration-app": "1.6.4",
     "@ssemr/esm-patient-hiv-art-app": "6.1.8",
