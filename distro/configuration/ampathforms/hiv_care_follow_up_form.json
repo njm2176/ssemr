@@ -202,7 +202,7 @@
                   },
                   {
                     "label": "Implant",
-                    "concept": "729b9ab8-73ae-4e6f-9fa6-505331d4eddb"
+                    "concept": "3c8d2964-2794-4c75-b544-5806b55d5c9d"
                   },
                   {
                     "label": "IUD",
@@ -1219,25 +1219,6 @@
                 ]
               },
               "validators": []
-            },
-            {
-              "label": "Date started on CTX",
-              "type": "obs",
-              "required": true,
-              "id": "dateStartedCTX",
-              "questionOptions": {
-                "rendering": "date",
-                "concept": "420bd170-df26-4948-9e80-f8f95e8492f3"
-              },
-              "hide": {
-                "hideWhenExpression": "clientCTX !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
-              },
-              "validators": [
-                {
-                  "type": "date",
-                  "allowFutureDates": "false"
-                }
-              ]
             },
             {
               "label": "Adherence",
@@ -3243,6 +3224,11 @@
                 {
                   "type": "date",
                   "allowFutureDates": "false"
+                },
+                {
+                  "type": "js_expression",
+                  "failsWhenExpression": "moment(dateVLResultsReceived).isValid() && moment(dateCollected).isValid() && moment(dateVLResultsReceived).diff(moment(dateCollected), 'days') < 0",
+                  "message": "Date of results received cannot be before the date of sample collection."
                 }
               ]
             },
