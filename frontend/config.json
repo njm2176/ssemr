@@ -12,9 +12,9 @@
     "Brand color #3": "#017BFC",
     "Brand color #2": "#005CBF"
   },
-  "@openmrs/esm-login-app": {
+  "@ssemr/esm-login-app": {
     "logo": {
-      "src": "/openmrs/spa/login-icon.svg"
+      "src": "/openmrs/spa/login-icon.png"
     }
   },
   "@openmrs/esm-primary-navigation-app": {
