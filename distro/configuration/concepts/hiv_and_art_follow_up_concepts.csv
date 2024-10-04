@@ -186,18 +186,18 @@ fc684917-4deb-42cf-9245-8a13c6a232bc,,Date VL Sample Collected?,Date VL Sample C
 12e201ff-c83a-4f3f-920e-37288d39fa55,,Viral Load Value,Viral Load Value,Viral Load Value,,,,Misc,N/A,
 8b5ef5c4-3c88-49b8-87e5-cb8d30caa77d,,VL Results,VL Result,VL Results,,,,Question,Coded,"Below Detectable (BDL);
 Viral Load Value"
-714752ad-61df-44e0-ae40-fa9bf4f9d831,,Adherence Good,Good,Adherence Good,,,,Misc,N/A,
-535ea56b-0138-4804-ab23-e70f2dbe0b61,,Adherence Fair,Fair,Adherence Fair,,,,Misc,N/A,
-f05f31c1-5f06-4ada-8cbd-a877cb06442a,,Adherence Poor,Poor,Adherence Poor,,,,Misc,N/A,
-e360501a-123a-4efb-93ef-4dc19d031921,,CTX Adherence,CTX Adherence,CTX Adherence,,,,Question,Coded,Adherence Good ; Adherence Fair ; Adherence Poor; Not Applicable
-d5d1d355-9e77-4e11-b733-884974f51169,,was counselling done?,was counselling done?,,,,,Question,Coded,Yes; No
-a4b7b40d-bd4a-4b7a-9826-593088f1e3af,,Toxicity/side effects,Toxicity/side effects,,,,,Misc,N/A,
-046c6032-7030-4b50-9e8e-831b8ee76bc5,,Share with others,Share with others,,,,,Misc,N/A,
-188dc5ba-1c33-4789-b39c-267a2ff29b96,,Forgot,Forgot,,,,,Misc,N/A,
-675c6d61-1637-48e3-a78f-cb77b4e55b86,,Felt better,Felt better,,,,,Misc,N/A,
-b31d8882-4c3d-4cd6-b6fa-d6bc1165922e,,Too ill,Too ill,,,,,Misc,N/A,
-174de9e8-81d4-4d2c-89df-521d1d4ab501,,"Stigma, disclosure or privacy issues","Stigma, disclosure or privacy issues",,,,,Misc,N/A,
-693b9b22-1f10-4455-8e5f-73afa29eb136,,Drug stock out—dispensary,Drug stock out—dispensary,,,,,Misc,N/A,
+714752ad-61df-44e0-ae40-fa9bf4f9d831,,Adherence Good CTX,Good,Adherence Good CTX,,,,Misc,N/A,
+535ea56b-0138-4804-ab23-e70f2dbe0b61,,Adherence Fair CTX,Fair,Adherence Fair CTX,,,,Misc,N/A,
+f05f31c1-5f06-4ada-8cbd-a877cb06442a,,Adherence Poor CTX,Poor,Adherence Poor CTX,,,,Misc,N/A,
+d2af861b-42c5-4d34-a670-402112f75729,,Adherence Good Dapsone,Good,Adherence Good Dapsone,,,,Misc,N/A,
+94e45c9e-2ad2-444f-862f-c662c38d619f,,Adherence Fair Dapsone,Fair,Adherence Fair Dapsone,,,,Misc,N/A,
+0c718a16-0355-4d73-b746-14ab58492bd4,,Adherence Poor Dapsone,Poor,Adherence Poor Dapsone,,,,Misc,N/A,
+03adc5fe-a2e4-4cca-90a0-b46a4a35bf97,,Adherence Good ARV,Good,Adherence Good ARV,,,,Misc,N/A,
+3b6f5c3e-edc9-4b2e-8312-45c9dd9e2cbf,,Adherence Fair ARV,Fair,Adherence Fair ARV,,,,Misc,N/A,
+aa7b04fb-eede-48ab-a38b-2c9242220276,,Adherence Poor ARV,Poor,Adherence Poor ARV,,,,Misc,N/A,
+e360501a-123a-4efb-93ef-4dc19d031921,,CTX Adherence ,CTX Adherence,CTX Adherence,,,,Question,Coded,Adherence Good CTX ; Adherence Fair CTX ; Adherence Poor CTX; Not Applicable
+6d125568-df84-430b-92c7-21402e80ce14,,Dapsone Adherence,Dapsone Adherence,Dapsone Adherence,,,,Question,Coded,Adherence Good Dapsone; Adherence Fair Dapsone ; Adherence Poor Dapsone; Not Applicable
+e126652c-8d02-4c4b-a49d-5bac03eb4d03,,ARV Adherence,ARV Adherence,ARV Adherence,,,,Question,Coded,Adherence Good ARV ; Adherence Fair ARV ; Adherence Poor ARV; Not Applicable
 2302714c-9480-41fd-8395-2c9728c06ab6,,Patient lost/ran out of pills,Patient lost/ran out of pills,,,,,Misc,N/A,
 9959c107-2771-4221-a31b-38861cd56526,,Delivery/travel problems,Delivery/travel problems,,,,,Misc,N/A,
 45724737-ec75-41e6-b7a3-f0289888bf76,,Inability to pay,Inability to pay,,,,,Misc,N/A,
