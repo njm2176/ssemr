@@ -615,7 +615,7 @@
 								"conceptMappings": [],
 								"answers": [],
 								"calculate": {
-									"calculateExpression": "pillIntake ? (pillIntake / 30) * 100 : 0"
+									"calculateExpression": "pillIntake ? Math.floor((pillIntake / 30) * 100) : 0"
 								}
 							},
 							"validators": [
