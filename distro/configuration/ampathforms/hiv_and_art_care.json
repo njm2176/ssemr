@@ -399,7 +399,7 @@
               "id": "indexFamilyInfo",
               "questionOptions": {
                 "rendering": "repeating",
-                "concept": "e20ab341-3d93-445a-ac2e-78a890e832cc"
+                "concept": "1c0765df-7108-4353-9970-06cf3ce0782e"
               },
               "questions": [
                 {
@@ -493,6 +493,7 @@
                 {
                   "label": "Phone Number",
                   "id": "indexFamilyMemberPhoneNumberKnownUnknown",
+                  "type": "obs",
                   "questionOptions": {
                     "answers": [
                       {
@@ -536,6 +537,7 @@
                 {
                   "label": "HIV status during mapping",
                   "id": "indexFamilyMemberHivDuringMapping",
+                  "type": "obs",
                   "questionOptions": {
                     "answers": [
                       {
