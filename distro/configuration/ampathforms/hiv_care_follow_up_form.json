@@ -1218,7 +1218,10 @@
                   }
                 ]
               },
-              "validators": []
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "clientDapsone === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              }
             },
             {
               "label": "Adherence",
@@ -1522,6 +1525,7 @@
               "type": "obs",
               "required": true,
               "id": "clientDapsone",
+              "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('0cb0b2c1-6609-4d98-9ebf-72ba3f33118d')) ? undefined : HD.getObject('prevEnc').getValue('0cb0b2c1-6609-4d98-9ebf-72ba3f33118d')",
               "questionOptions": {
                 "rendering": "radio",
                 "concept": "0cb0b2c1-6609-4d98-9ebf-72ba3f33118d",
@@ -1566,31 +1570,30 @@
               "type": "obs",
               "required": true,
               "id": "adherenceDapsone",
-              "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('e360501a-123a-4efb-93ef-4dc19d031921')) ? undefined : HD.getObject('prevEnc').getValue('e360501a-123a-4efb-93ef-4dc19d031921')",
+              "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('6d125568-df84-430b-92c7-21402e80ce14')) ? undefined : HD.getObject('prevEnc').getValue('6d125568-df84-430b-92c7-21402e80ce14')",
               "questionOptions": {
                 "rendering": "radio",
-                "concept": "e360501a-123a-4efb-93ef-4dc19d031921",
+                "concept": "6d125568-df84-430b-92c7-21402e80ce14",
                 "conceptMappings": [],
                 "answers": [
                   {
-                    "label": "Good",
-                    "concept": "714752ad-61df-44e0-ae40-fa9bf4f9d831"
+                    "concept": "d2af861b-42c5-4d34-a670-402112f75729",
+                    "label": "Good"
                   },
                   {
-                    "label": "Fair",
-                    "concept": "535ea56b-0138-4804-ab23-e70f2dbe0b61"
+                    "concept": "94e45c9e-2ad2-444f-862f-c662c38d619f",
+                    "label": "Fair"
                   },
                   {
-                    "label": "Poor",
-                    "concept": "f05f31c1-5f06-4ada-8cbd-a877cb06442a"
+                    "concept": "0c718a16-0355-4d73-b746-14ab58492bd4",
+                    "label": "Poor"
                   },
                   {
-                    "label": "Not Applicable",
-                    "concept": "608f6df4-bc19-4afa-a1ff-58f407389221"
+                    "concept": "608f6df4-bc19-4afa-a1ff-58f407389221",
+                    "label": "Not Applicable"
                   }
                 ]
               },
-              "validators": [],
               "hide": {
                 "hideWhenExpression": "clientDapsone !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
@@ -1662,7 +1665,7 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "adherenceDapsone !== 'f05f31c1-5f06-4ada-8cbd-a877cb06442a'"
+                "hideWhenExpression": "adherenceDapsone !== '0c718a16-0355-4d73-b746-14ab58492bd4'"
               }
             },
             {
@@ -1745,7 +1748,7 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "adherenceDapsone !== '535ea56b-0138-4804-ab23-e70f2dbe0b61'"
+                "hideWhenExpression": "adherenceDapsone !== '94e45c9e-2ad2-444f-862f-c662c38d619f'"
               }
             },
             {
@@ -2193,31 +2196,30 @@
               "type": "obs",
               "required": true,
               "id": "adherenceARV",
-              "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('e360501a-123a-4efb-93ef-4dc19d031921')) ? undefined : HD.getObject('prevEnc').getValue('e360501a-123a-4efb-93ef-4dc19d031921')",
+              "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('e126652c-8d02-4c4b-a49d-5bac03eb4d03')) ? undefined : HD.getObject('prevEnc').getValue('e126652c-8d02-4c4b-a49d-5bac03eb4d03')",
               "questionOptions": {
                 "rendering": "radio",
-                "concept": "e360501a-123a-4efb-93ef-4dc19d031921",
+                "concept": "e126652c-8d02-4c4b-a49d-5bac03eb4d03",
                 "conceptMappings": [],
                 "answers": [
                   {
-                    "label": "Good",
-                    "concept": "714752ad-61df-44e0-ae40-fa9bf4f9d831"
+                    "concept": "03adc5fe-a2e4-4cca-90a0-b46a4a35bf97",
+                    "label": "Good"
                   },
                   {
-                    "label": "Fair",
-                    "concept": "535ea56b-0138-4804-ab23-e70f2dbe0b61"
+                    "concept": "3b6f5c3e-edc9-4b2e-8312-45c9dd9e2cbf",
+                    "label": "Fair"
                   },
                   {
-                    "label": "Poor",
-                    "concept": "f05f31c1-5f06-4ada-8cbd-a877cb06442a"
+                    "concept": "aa7b04fb-eede-48ab-a38b-2c9242220276",
+                    "label": "Poor"
                   },
                   {
-                    "label": "Not Applicable",
-                    "concept": "608f6df4-bc19-4afa-a1ff-58f407389221"
+                    "concept": "608f6df4-bc19-4afa-a1ff-58f407389221",
+                    "label": "Not Applicable"
                   }
                 ]
-              },
-              "validators": []
+              }
             },
             {
               "label": "Reason why Adherence is Poor",
@@ -2286,7 +2288,7 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "adherenceARV !== 'f05f31c1-5f06-4ada-8cbd-a877cb06442a'"
+                "hideWhenExpression": "adherenceARV !== 'aa7b04fb-eede-48ab-a38b-2c9242220276'"
               }
             },
             {
@@ -2369,7 +2371,7 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "adherenceARV !== '535ea56b-0138-4804-ab23-e70f2dbe0b61'"
+                "hideWhenExpression": "adherenceARV !== '3b6f5c3e-edc9-4b2e-8312-45c9dd9e2cbf'"
               }
             },
             {
