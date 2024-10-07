@@ -62,7 +62,7 @@ Other ART Regimen",,Substitution Regimen For Adults(First Line),Question,Coded,,
 Other ART Regimen",,Child Regimens (First Line),Question,Coded,,
 23074a22-84d7-4515-a295-6906773f058f, Toxic Side Effect ; Pregnancy ; Risk of pregnancy ; Newly diagnosed TB ; New drug available ; Drug stockout ; Other Reason (Specify),,Initial Regimen Change Reason,Question,Coded,,
 f0941906-3277-4ca0-891a-a58efb541c66, Toxic Side Effect ; Pregnancy ; Risk of pregnancy ; Newly diagnosed TB ; New drug available ; Drug stockout ; Other Reason (Specify),,Reason For Regimen Change(First Line),Question,Coded,,
-94550110-9649-4cc4-92fc-227d9e9a9c8d,,ART First Line Swith  Date;Substitution Regimen For Adults(First Line);Child Regimens (First Line);Reason For Regimen Change(First Line);Other Reason(First Line Regimen Change) ,ART Regimen - Substitution within 1st Line,Misc,N/A,,
+94550110-9649-4cc4-92fc-227d9e9a9c8d,,ART First Line Switch  Date;Substitution Regimen For Adults(First Line);Child Regimens (First Line);Reason For Regimen Change(First Line);Other Reason(First Line Regimen Change) ,ART Regimen - Substitution within 1st Line,Misc,N/A,,
 2a48b138-13ae-481b-8716-a3700626460d,"2a = AZT/3TC + DTG;
 2b = ABC/3TC + DTG;
 2c = TDF+3TC + LPV/r;
@@ -87,7 +87,7 @@ bed19764-a7aa-42b9-8248-5ef68cc102ab,"5a = AZT/3TC+LPV/r;
 5i = ABC/3TC + LPV/r;
 5j = AZT/3TC (120/60)+DTG10;
 Other ART Regimen",,Children Second Line Regimens,Question,Coded,,
-ea1c7482-ad23-49b7-9eee-c7b320d7cbd1,,ART Second Line Swith Date;Substitution Regimen (2nd Line Adults);Children Second Line Regimens ;Reason For Regimen Change(Second Line);Other Reason(Second Regimen Change),ART Regimen(Switch to 2nd Line),Misc,N/A,,
+ea1c7482-ad23-49b7-9eee-c7b320d7cbd1,,ART Second Line Switch Date;Substitution Regimen (2nd Line Adults);Children Second Line Regimens ;Reason For Regimen Change(Second Line);Other Reason(Second Regimen Change),ART Regimen(Switch to 2nd Line),Misc,N/A,,
 f367e08c-2c0c-45ab-93a8-9f8f3cefda6e,,ART Readiness Confirmed By ; ART Readiness Confirmation Date ,AntiRetroviral Treatment,Misc,N/A,,
 2b19035d-46a7-4007-b63b-87753dd5b6d3,Stop ; Lost; Changed Regimen,,Interruption Type,Question,Coded,,
 a7f113ad-f18b-41fe-a1ea-5f468c911b1d,Toxic Side Effect ; Pregnancy ;  Failure of Treatment ; Poor Adherence Interruption ; Illness Hospitalisation ; Drug stockout ; Patient Lack Finances ; Other Reason For ART Stop,,ART Treatment Reasons For Stop,Question,Coded,,

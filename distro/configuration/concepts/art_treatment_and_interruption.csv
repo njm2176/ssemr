@@ -7,8 +7,8 @@ No"
 bfb1f736-7e74-4adf-96ac-02c38093827b,,Regimen Switched To (Adult First Line),First Line,Regimen Switched To (Adult First Line),,,,Misc,N/A,
 6e93c7cb-d3f0-4934-9427-10edf29a4abf,,Regimen Switched To (Adult Second Line),Second Line,Regimen Switched To (Adult Second Line),,,,Misc,N/A,
 846b66b2-1073-4377-b787-580db9b3ccde,,Regimen Switched To,Regimen Switched To,Regimen Switched To,,,,Question,Coded,Regimen Switched To (Adult First Line) ; Regimen Switched To (Adult Second Line)
-ad884e26-5e18-4ec3-b471-c1cd1374387f,,ART First Line Swith  Date,Date,ART First Line Swith Date,,,,Question,Date,
-fdb79be1-587a-4034-8865-318ef8dc4b0e,,ART Second Line Swith Date,Date,ART Second Line Swith Date,,,,Question,Date,
+ad884e26-5e18-4ec3-b471-c1cd1374387f,,ART First Line Switch  Date,,ART First Line Switch  Date,,,,Question,Date,
+fdb79be1-587a-4034-8865-318ef8dc4b0e,,ART Second Line Switch Date,,ART Second Line Switch Date,,,,Question,Date,
 84c23dc4-40f4-4d9a-a2f5-ebeb4b4f3250,,ART Treatment Stop/Lost Date,Date,ART Treatment Stop/Lost Date,,,,Question,Date,
 ea8ec95f-2097-401f-9126-e4de1197d0ff,,ART Stop Date,Date,ART Stop Date,,,,Question,Date,
 d6f602ca-4ef8-4a84-a94b-00506b5ee79d,,Date when ART Drugs Lost,Date,Date when ART Drugs Lost,,,,Question,Date,
