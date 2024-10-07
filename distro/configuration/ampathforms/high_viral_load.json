@@ -931,7 +931,7 @@
 								"conceptMappings": [],
 								"answers": [],
 								"calculate": {
-									"calculateExpression": "secondEacPillIntake ? (secondEacPillIntake / 30) * 100 : 0"
+									"calculateExpression": "secondEacPillIntake ? Math.floor((secondEacPillIntake / 30) * 100) : 0"
 								}
 							},
 							"validators": [
@@ -1247,7 +1247,7 @@
 								"conceptMappings": [],
 								"answers": [],
 								"calculate": {
-									"calculateExpression": "thirdEacPillIntake ? (thirdEacPillIntake / 30) * 100 : 0"
+									"calculateExpression": "thirdEacPillIntake ? Math.floor((thirdEacPillIntake / 30) * 100) : 0"
 								}
 							},
 							"validators": [
