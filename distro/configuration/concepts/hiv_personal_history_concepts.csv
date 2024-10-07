@@ -122,9 +122,9 @@ No"
 1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,No,No,,,,,Misc,N/A,
 1d37d37a-590a-46fc-b65f-0bf2b9276f0c,,Was Sexual Partner Tested?,Was Sexual Partner Tested?,,,,,Question,Coded,"Yes ; 
 No"
-c584ddf3-0e0f-4411-9e63-af668b45360d,,Index - Family Member Name,Index - Family Member Name,,,,,Question,Text,
-f3723ab5-1d2f-4dc5-9588-5c299e86a0ac,,Index - Family Member Age,Index - Family Member Age,,,,,Question,Text,
-99674ab0-043d-4897-bdc1-e9c9ed410487,,Index - Family Member Sex,Index - Family Member Sex,,,,,Question,Coded,"Male;
+375ea4eb-6932-42a2-b675-aa6d347f975e,,Index - Family Member Name (Close Members),Index - Family Member Name (Close Members),,,,,Question,Text,
+638fc8c1-bde8-433f-a50c-7562385b580c,,Index - Family Member Age (Close Members),Index - Family Member Age (Close Members),,,,,Question,Text,
+9d030f9b-a181-41c9-a52b-2a965b2a5836,,Index - Family Member Sex (Close Members),Index - Family Member Sex (Close Members),,,,,Question,Coded,"Male;
 Female"
-b0edd166-2dca-47a3-ac36-a79e12b2e532,,Index - Family Member HIV Status,Index - Family Member HIV Status,,,,,Question,Coded,"Positive;
+a3014f0a-31ce-4477-9ae4-d686f0e6cea8,,Index - Family Member HIV Status (Close Members),Index - Family Member HIV Status (Close Members),,,,,Question,Coded,"Positive;
 Negative"
