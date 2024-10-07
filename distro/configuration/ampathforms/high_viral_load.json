@@ -1503,11 +1503,11 @@
 								"answers": [
 									{
 										"concept": "ae23fa12-b7fc-49e0-be21-aa2f5bc32f97",
-										"label": "<1000c/ml"
+										"label": "< 1000copies/ml"
 									},
 									{
 										"concept": "edaf153d-70ff-44f2-8c6e-7242dfd36f5f",
-										"label": "≥1000c/ml"
+										"label": "≥ 1000copies/ml"
 									}
 								]
 							},
