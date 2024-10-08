@@ -680,8 +680,8 @@
               "validators": [
                 {
                   "type": "js_expression",
-                  "failsWhenExpression": "temperature < 32 || temperature > 42",
-                  "message": "Temperature should not be less than 32 or more than 42"
+                  "failsWhenExpression": "temperature < 32 || temperature > 40",
+                  "message": "Temperature should not be less than 32 or more than 40"
                 }
               ],
               "hide": {
