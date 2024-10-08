@@ -614,6 +614,13 @@
                   }
                 ]
               },
+              "validators": [
+                {
+                  "type": "js_expression",
+                  "failsWhenExpression": "isEmpty(coughDuration) && isEmpty(feverIsh) && isEmpty(WeightLossGain) && isEmpty(nightSweats) && isEmpty(contacTbCase) && TBStatus === '4897c2f3-9d36-4d6c-bf5a-780db6b4ab12' ",
+                  "message": "can’t be on presumptive TB without signs"
+                }
+              ],
               "hide": {
                 "hideWhenExpression": "currentlyOnTBTreatment !== '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
@@ -1492,6 +1499,9 @@
               "questionOptions": {
                 "rendering": "select",
                 "concept": "043177ba-5090-4369-896f-982f046773d6",
+                "calculate": {
+                  "calculateExpression": "artRegimenNoOfDaysDispensedCTX === 'e9d42057-5171-4ca6-8024-2d80162a094a' ? '39ec38d1-7b35-4f05-ab87-10983da0b484' : artRegimenNoOfDaysDispensedCTX === 'c595ca5a-0392-41b3-be35-57c0def42c07' ? '7b0642e1-7607-4b0f-806e-703b195345ea' : artRegimenNoOfDaysDispensedCTX === 'b86d480a-c6a9-421b-85ac-fa63fd5b31ae' ? '3cd5ec7d-ac0e-46cc-8a46-ab7628da0a4f' : artRegimenNoOfDaysDispensedCTX === 'e01b566c-9660-49e2-8693-b9ca4cf84b1d' ? 'af06426c-e63e-4f83-bdbc-a855c42bb0ca' : artRegimenNoOfDaysDispensedCTX === 'ea0a6423-365f-488b-a316-f1953db1e064' ? 'c036d8cb-9416-43b3-b23f-91913ce424a3' : artRegimenNoOfDaysDispensedCTX === '8257517f-402f-4613-8dda-3d79a0c1451d' ? 'faf5d5dc-1547-49f7-941d-6fdf2d1bfa50' : artRegimenNoOfDaysDispensedCTX === '5c7c6c22-672c-4847-8723-622e0e062f4d' ? '91e0bcf5-8968-4004-9e14-bb466fccaf53' : artRegimenNoOfDaysDispensedCTX === 'bc8f2249-10f4-40a8-a960-952ea5f29b30' ? '2e74862a-bb28-4e10-9a9a-b959a4a5da60' : ''"
+                },
                 "answers": [
                   {
                     "label": "0 pills",
@@ -1528,13 +1538,7 @@
                 ]
               },
               "type": "obs",
-              "validators": [
-                {
-                  "type": "js_expression",
-                  "failsWhenExpression": "artRegimenNoOfDaysDispensedCTX === 'e9d42057-5171-4ca6-8024-2d80162a094a' ? artRegimenNoOfPillsDispensedCTX !== '39ec38d1-7b35-4f05-ab87-10983da0b484' : artRegimenNoOfDaysDispensedCTX === 'c595ca5a-0392-41b3-be35-57c0def42c07' ? artRegimenNoOfPillsDispensedCTX !== '7b0642e1-7607-4b0f-806e-703b195345ea' : artRegimenNoOfDaysDispensedCTX === 'b86d480a-c6a9-421b-85ac-fa63fd5b31ae' ? artRegimenNoOfPillsDispensedCTX !== '3cd5ec7d-ac0e-46cc-8a46-ab7628da0a4f' : artRegimenNoOfDaysDispensedCTX === 'e01b566c-9660-49e2-8693-b9ca4cf84b1d' ? artRegimenNoOfPillsDispensedCTX !== 'af06426c-e63e-4f83-bdbc-a855c42bb0ca' : artRegimenNoOfDaysDispensedCTX === 'ea0a6423-365f-488b-a316-f1953db1e064' ? artRegimenNoOfPillsDispensedCTX !== 'c036d8cb-9416-43b3-b23f-91913ce424a3' : artRegimenNoOfDaysDispensedCTX === '8257517f-402f-4613-8dda-3d79a0c1451d' ? artRegimenNoOfPillsDispensedCTX !== 'faf5d5dc-1547-49f7-941d-6fdf2d1bfa50' : artRegimenNoOfDaysDispensedCTX === '5c7c6c22-672c-4847-8723-622e0e062f4d' ? artRegimenNoOfPillsDispensedCTX !== '91e0bcf5-8968-4004-9e14-bb466fccaf53' : artRegimenNoOfDaysDispensedCTX === 'bc8f2249-10f4-40a8-a960-952ea5f29b30' ? artRegimenNoOfPillsDispensedCTX !== '2e74862a-bb28-4e10-9a9a-b959a4a5da60' : ''",
-                  "message": "The Number of Pills don't match the number of days"
-                }
-              ],
+              "validators": [],
               "hide": {
                 "hideWhenExpression": "clientCTX !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
@@ -1839,6 +1843,9 @@
               "questionOptions": {
                 "rendering": "select",
                 "concept": "1c8a00ad-8d9c-48e0-8011-8f79f5f9fa05",
+                "calculate": {
+                  "calculateExpression": "artRegimenNoOfDaysDispensedDapsone === 'e9d42057-5171-4ca6-8024-2d80162a094a' ? '39ec38d1-7b35-4f05-ab87-10983da0b484' : artRegimenNoOfDaysDispensedDapsone === 'c595ca5a-0392-41b3-be35-57c0def42c07' ? '7b0642e1-7607-4b0f-806e-703b195345ea' : artRegimenNoOfDaysDispensedDapsone === 'b86d480a-c6a9-421b-85ac-fa63fd5b31ae' ? '3cd5ec7d-ac0e-46cc-8a46-ab7628da0a4f' : artRegimenNoOfDaysDispensedDapsone=== 'e01b566c-9660-49e2-8693-b9ca4cf84b1d' ? 'af06426c-e63e-4f83-bdbc-a855c42bb0ca' : artRegimenNoOfDaysDispensedDapsone === 'ea0a6423-365f-488b-a316-f1953db1e064' ? 'c036d8cb-9416-43b3-b23f-91913ce424a3' : artRegimenNoOfDaysDispensedDapsone === '8257517f-402f-4613-8dda-3d79a0c1451d' ? 'faf5d5dc-1547-49f7-941d-6fdf2d1bfa50' : artRegimenNoOfDaysDispensedDapsone === '5c7c6c22-672c-4847-8723-622e0e062f4d' ? '91e0bcf5-8968-4004-9e14-bb466fccaf53' : artRegimenNoOfDaysDispensedDapsone === 'bc8f2249-10f4-40a8-a960-952ea5f29b30' ? '2e74862a-bb28-4e10-9a9a-b959a4a5da60' : ''"
+                },
                 "answers": [
                   {
                     "label": "0 pills",
@@ -1875,13 +1882,7 @@
                 ]
               },
               "type": "obs",
-              "validators": [
-                {
-                  "type": "js_expression",
-                  "failsWhenExpression": "artRegimenNoOfDaysDispensedDapsone === 'e9d42057-5171-4ca6-8024-2d80162a094a' ? artRegimenNoOfPillsDispensedDapsone !== '39ec38d1-7b35-4f05-ab87-10983da0b484' : artRegimenNoOfDaysDispensedDapsone === 'c595ca5a-0392-41b3-be35-57c0def42c07' ? artRegimenNoOfPillsDispensedDapsone !== '7b0642e1-7607-4b0f-806e-703b195345ea' : artRegimenNoOfDaysDispensedDapsone === 'b86d480a-c6a9-421b-85ac-fa63fd5b31ae' ? artRegimenNoOfPillsDispensedDapsone !== '3cd5ec7d-ac0e-46cc-8a46-ab7628da0a4f' : artRegimenNoOfDaysDispensedDapsone=== 'e01b566c-9660-49e2-8693-b9ca4cf84b1d' ? artRegimenNoOfPillsDispensedDapsone !== 'af06426c-e63e-4f83-bdbc-a855c42bb0ca' : artRegimenNoOfDaysDispensedDapsone === 'ea0a6423-365f-488b-a316-f1953db1e064' ? artRegimenNoOfPillsDispensedDapsone !== 'c036d8cb-9416-43b3-b23f-91913ce424a3' : artRegimenNoOfDaysDispensedDapsone === '8257517f-402f-4613-8dda-3d79a0c1451d' ? artRegimenNoOfPillsDispensedDapsone !== 'faf5d5dc-1547-49f7-941d-6fdf2d1bfa50' : artRegimenNoOfDaysDispensedDapsone === '5c7c6c22-672c-4847-8723-622e0e062f4d' ? artRegimenNoOfPillsDispensedDapsone !== '91e0bcf5-8968-4004-9e14-bb466fccaf53' : artRegimenNoOfDaysDispensedDapsone === 'bc8f2249-10f4-40a8-a960-952ea5f29b30' ? artRegimenNoOfPillsDispensedDapsone !== '2e74862a-bb28-4e10-9a9a-b959a4a5da60' : ''",
-                  "message": "The Number of Pills don't match the number of days"
-                }
-              ],
+              "validators": [],
               "hide": {
                 "hideWhenExpression": "clientDapsone !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
@@ -2178,6 +2179,9 @@
               "questionOptions": {
                 "rendering": "select",
                 "concept": "3fa33347-9871-497b-81f3-7a791b9f4bae",
+                "calculate": {
+                  "calculateExpression": "artRegimenNoOfDaysDispensed === 'e9d42057-5171-4ca6-8024-2d80162a094a' ? '39ec38d1-7b35-4f05-ab87-10983da0b484' : artRegimenNoOfDaysDispensed === 'c595ca5a-0392-41b3-be35-57c0def42c07' ? '7b0642e1-7607-4b0f-806e-703b195345ea' : artRegimenNoOfDaysDispensed === 'b86d480a-c6a9-421b-85ac-fa63fd5b31ae' ? '3cd5ec7d-ac0e-46cc-8a46-ab7628da0a4f' : artRegimenNoOfDaysDispensed === 'e01b566c-9660-49e2-8693-b9ca4cf84b1d' ? 'af06426c-e63e-4f83-bdbc-a855c42bb0ca' : artRegimenNoOfDaysDispensed === 'ea0a6423-365f-488b-a316-f1953db1e064' ? 'c036d8cb-9416-43b3-b23f-91913ce424a3' : artRegimenNoOfDaysDispensed === '8257517f-402f-4613-8dda-3d79a0c1451d' ? 'faf5d5dc-1547-49f7-941d-6fdf2d1bfa50' : artRegimenNoOfDaysDispensed === '5c7c6c22-672c-4847-8723-622e0e062f4d' ? '91e0bcf5-8968-4004-9e14-bb466fccaf53' : artRegimenNoOfDaysDispensed === 'bc8f2249-10f4-40a8-a960-952ea5f29b30' ? '2e74862a-bb28-4e10-9a9a-b959a4a5da60' : ''"
+                },
                 "answers": [
                   {
                     "label": "0 pills",
@@ -2214,13 +2218,7 @@
                 ]
               },
               "type": "obs",
-              "validators": [
-                {
-                  "type": "js_expression",
-                  "failsWhenExpression": "artRegimenNoOfDaysDispensed === 'e9d42057-5171-4ca6-8024-2d80162a094a' ? artRegimenNoOfPillsDispensed !== '39ec38d1-7b35-4f05-ab87-10983da0b484' : artRegimenNoOfDaysDispensed === 'c595ca5a-0392-41b3-be35-57c0def42c07' ? artRegimenNoOfPillsDispensed !== '7b0642e1-7607-4b0f-806e-703b195345ea' : artRegimenNoOfDaysDispensed === 'b86d480a-c6a9-421b-85ac-fa63fd5b31ae' ? artRegimenNoOfPillsDispensed !== '3cd5ec7d-ac0e-46cc-8a46-ab7628da0a4f' : artRegimenNoOfDaysDispensed === 'e01b566c-9660-49e2-8693-b9ca4cf84b1d' ? artRegimenNoOfPillsDispensed !== 'af06426c-e63e-4f83-bdbc-a855c42bb0ca' : artRegimenNoOfDaysDispensed === 'ea0a6423-365f-488b-a316-f1953db1e064' ? artRegimenNoOfPillsDispensed !== 'c036d8cb-9416-43b3-b23f-91913ce424a3' : artRegimenNoOfDaysDispensed === '8257517f-402f-4613-8dda-3d79a0c1451d' ? artRegimenNoOfPillsDispensed !== 'faf5d5dc-1547-49f7-941d-6fdf2d1bfa50' : artRegimenNoOfDaysDispensed === '5c7c6c22-672c-4847-8723-622e0e062f4d' ? artRegimenNoOfPillsDispensed !== '91e0bcf5-8968-4004-9e14-bb466fccaf53' : artRegimenNoOfDaysDispensed === 'bc8f2249-10f4-40a8-a960-952ea5f29b30' ? artRegimenNoOfPillsDispensed !== '2e74862a-bb28-4e10-9a9a-b959a4a5da60' : ''",
-                  "message": "The Number of Pills don't match the number of days"
-                }
-              ]
+              "validators": []
             },
             {
               "label": "Adherence",
