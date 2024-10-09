@@ -29,7 +29,8 @@
     "@ssemr/esm-patient-summary-app": "1.2.0",
     "@ssemr/esm-patient-list-management-app": "1.3.8",
     "@ssemr/esm-patient-chart-app": "next",
-    "@ssemr/esm-login-app": "1.0.0"
+    "@ssemr/esm-login-app": "1.0.0",
+    "@ssemr/esm-patient-flags-app": "1.0.0"
 
   },
   "spaPath": "$SPA_PATH",
