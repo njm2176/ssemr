@@ -72,7 +72,7 @@
             {
               "label": "Date of death",
               "type": "obs",
-              "required": true,
+              "required": false,
               "id": "dateOfDeath",
               "questionOptions": {
                 "rendering": "date",
@@ -88,7 +88,7 @@
             {
               "label": "Cause of death",
               "type": "obs",
-              "required": true,
+              "required": false,
               "id": "causeOfDeath",
               "questionOptions": {
                 "rendering": "select",
@@ -125,7 +125,7 @@
             {
               "label": "Specify Other infectious and parasitic disease",
               "type": "obs",
-              "required": true,
+              "required": false,
               "id": "specifyOtherInfectiousDisease",
               "questionOptions": {
                 "rendering": "text",
@@ -212,7 +212,7 @@
             {
               "label": "Date client refused treatment",
               "type": "obs",
-              "required": true,
+              "required": false,
               "id": "dateClientRefusedTreatment",
               "questionOptions": {
                 "rendering": "date",

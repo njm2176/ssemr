@@ -72,7 +72,7 @@
             {
               "label": "Level of Education",
               "type": "obs",
-              "required": true,
+              "required": false,
               "id": "levelOfEducation",
               "questionOptions": {
                 "rendering": "select",
@@ -268,7 +268,7 @@
             {
               "label": "Other Occupation",
               "type": "obs",
-              "required": true,
+              "required": false,
               "id": "otherSpecifyOccupation",
               "questionOptions": {
                 "rendering": "text",
@@ -371,7 +371,7 @@
                 {
                   "label": "On ART",
                   "id": "familyMemberOnART",
-                  "required": true,
+                  "required": false,
                   "questionOptions": {
                     "concept": "48741238-7ad4-42f0-a1f4-d2bb6b355614",
                     "rendering": "radio",
@@ -616,7 +616,7 @@
                 {
                   "label": "Date HIV Tested",
                   "type": "obs",
-                  "required": true,
+                  "required": false,
                   "id": "dateHivTested",
                   "questionOptions": {
                     "rendering": "date",
@@ -687,7 +687,7 @@
                 {
                   "label": "On ART",
                   "id": "indexFamilyMemberOnART",
-                  "required": true,
+                  "required": false,
                   "questionOptions": {
                     "concept": "48741238-7ad4-42f0-a1f4-d2bb6b355614",
                     "rendering": "radio",
@@ -759,7 +759,7 @@
             {
               "label": "If Yes, ARVs Received in",
               "type": "obs",
-              "required": true,
+              "required": false,
               "id": "arvReceivedYesMale",
               "questionOptions": {
                 "rendering": "select",
@@ -784,7 +784,7 @@
             {
               "label": "If Yes, ARVs Received in",
               "type": "obs",
-              "required": true,
+              "required": false,
               "id": "arvReceivedYesFemaleChild",
               "questionOptions": {
                 "rendering": "select",
@@ -809,7 +809,7 @@
             {
               "label": "If Yes, ARVs Received in",
               "type": "obs",
-              "required": true,
+              "required": false,
               "id": "arvReceivedYes",
               "questionOptions": {
                 "rendering": "select",
@@ -838,7 +838,7 @@
             {
               "label": "Place",
               "type": "obs",
-              "required": true,
+              "required": false,
               "id": "placeARVRecieved",
               "questionOptions": {
                 "rendering": "select",
@@ -867,7 +867,7 @@
             {
               "label": "Other healthcare facility, Specify",
               "type": "obs",
-              "required": true,
+              "required": false,
               "id": "otherHealthCareFacility",
               "questionOptions": {
                 "rendering": "text",
@@ -883,7 +883,7 @@
             {
               "label": "Drugs and Duration, Start Date",
               "type": "obs",
-              "required": true,
+              "required": false,
               "id": "drugsAndDurationStartDate",
               "questionOptions": {
                 "rendering": "date",
@@ -899,7 +899,7 @@
             {
               "label": "Drugs and Duration, Stop Date",
               "type": "obs",
-              "required": true,
+              "required": false,
               "id": "drugsAndDurationStopDate",
               "questionOptions": {
                 "rendering": "date",
@@ -1361,7 +1361,7 @@
             {
               "label": "Other ARV Regimen Specify",
               "id": "otherInitialRegimenSpecify",
-              "required": true,
+              "required": false,
               "questionOptions": {
                 "answers": [],
                 "concept": "b0afac64-54b5-412c-86d0-7cf5dc6afb35",
