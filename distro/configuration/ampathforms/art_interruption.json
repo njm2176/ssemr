@@ -8,6 +8,42 @@
       "label": "ART treatment interruption – Stop or Lost (missed drug pick-up)",
       "sections": [
         {
+          "label": "Visit Details",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Date",
+              "type": "encounterDatetime",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "encDate",
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ]
+            },
+            {
+              "label": "Provider",
+              "type": "encounterProvider",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "encProvider "
+            },
+            {
+              "label": "Location",
+              "type": "encounterLocation",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "encLocation"
+            }
+          ]
+        },
+        {
           "label": "ART treatment interruption – Stop or Lost (missed drug pick-up)",
           "isExpanded": "true",
           "questions": [
