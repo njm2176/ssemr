@@ -13,28 +13,26 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Date",
-              "type": "obs",
-              "required": false,
-              "id": "date",
+              "label": "Date:",
+              "type": "encounterDatetime",
               "questionOptions": {
-                "rendering": "date",
-                "concept": "668cdec8-bc73-457d-9026-4c8946816611",
-                "conceptMappings": [],
-                "answers": []
+                "rendering": "ui-select-extended"
               },
-              "validators": []
+              "id": "encDate",
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ]
             },
             {
               "label": "Provider:",
-              "type": "obs",
+              "type": "encounterProvider",
               "questionOptions": {
-                "rendering": "text",
-                "concept": "7f77c914-aff6-4378-ad07-755ccf99353a",
-                "conceptMappings": [],
-                "answers": []
+                "rendering": "ui-select-extended"
               },
-              "id": "encProvider"
+              "id": "encProvider "
             },
             {
               "label": "Health Facility name:",
