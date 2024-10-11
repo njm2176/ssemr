@@ -98,7 +98,7 @@
             {
               "label": "Other Entry Point (Specify)",
               "type": "obs",
-              "required": true,
+              "required": false,
               "id": "otherEntryPoint",
               "questionOptions": {
                 "rendering": "text",

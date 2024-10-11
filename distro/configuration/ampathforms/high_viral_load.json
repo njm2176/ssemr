@@ -240,7 +240,7 @@
 						{
 							"label": "Other ARV Regimen Specify",
 							"id": "otherIArvRegimenSpecify",
-							"required": true,
+							"required": false,
 							"questionOptions": {
 								"answers": [],
 								"concept": "b0afac64-54b5-412c-86d0-7cf5dc6afb35",
