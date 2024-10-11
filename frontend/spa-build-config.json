@@ -30,7 +30,7 @@
     "@ssemr/esm-patient-list-management-app": "1.4.0",
     "@ssemr/esm-patient-chart-app": "next",
     "@ssemr/esm-login-app": "1.0.0",
-    "@ssemr/esm-patient-flags-app": "1.0.0"
+    "@ssemr/esm-patient-flags-app": "1.0.1"
 
   },
   "spaPath": "$SPA_PATH",
