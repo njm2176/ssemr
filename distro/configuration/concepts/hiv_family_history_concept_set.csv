@@ -60,16 +60,7 @@ c2a6c127-e3ba-426f-a4ae-83713dde0736,,Family History Marital Status And Occupati
 1c0765df-7108-4353-9970-06cf3ce0782e,,"Index - Family Member Name (Close Members);
 Index - Family Member Age (Close Members);
 Index - Family Member Sex (Close Members);
-Family Member - Relationship;
-Family Member Phone Number;
-Family Member,Phone Number;
-HIV status during mapping;
-Index - Family Member HIV Status (Close Members);
-Date Tested HIV;
-HTS Tested?;
-Result of HTS;
-Is Family Member in ART Care?;
-Unique ART No/HEI No",Index Family Information(Close Family Members),,Misc,N/A,,
+Index - Family Member HIV Status (Close Members)",Close Family Members (Index Family Members),,Misc,N/A,,
 3480554d-fd52-462d-b3fd-e1c551d6a3eb,,"Index - Family Member Name (Close Members);
 Index - Family Member Age (Close Members);
 Index - Family Member Sex (Close Members);
