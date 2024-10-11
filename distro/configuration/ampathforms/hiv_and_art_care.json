@@ -311,8 +311,8 @@
                     "answers": [],
                     "concept": "db25b3c5-10da-49a9-9137-cc8a2507585a",
                     "rendering": "number",
-                    "min": 0,
-                    "max": 120
+                    "min": "0",
+                    "max": "120"
                   },
                   "type": "obs",
                   "validators": [
@@ -687,6 +687,7 @@
                 {
                   "label": "On ART",
                   "id": "indexFamilyMemberOnART",
+                  "type": "obs",
                   "required": false,
                   "questionOptions": {
                     "concept": "48741238-7ad4-42f0-a1f4-d2bb6b355614",
@@ -703,22 +704,21 @@
                     ]
                   },
                   "hide": {
-                    "hideWhenExpression": "!(indexFamilyMemberHIVStatus === '7acfafa4-f19b-485e-97a7-c9e002dbe37a' || resultsOfHts === '4e863543-07ed-4e81-9452-9e309007e713')"
+                    "hideWhenExpression": "indexFamilyMemberHIVStatus !== '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || resultsOfHts === '4e863543-07ed-4e81-9452-9e309007e713'"
                   }
                 },
                 {
                   "label": "Unique ART No/HEI No",
                   "type": "obs",
                   "required": false,
-                  "id": "artOrHeiNo",
+                  "id": "indexFamilyMemberARTNo",
                   "questionOptions": {
                     "rendering": "text",
                     "concept": "7bec5791-6cdc-4fe4-bfbb-89cbf3ab03b4"
                   },
                   "hide": {
-                    "hideWhenExpression": "isEmpty(indexFamilyMemberOnART) || indexFamilyMemberOnART !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
-                  },
-                  "validators": []
+                    "hideWhenExpression": "indexFamilyMemberOnART !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                  }
                 }
               ],
               "validators": []
