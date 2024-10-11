@@ -38,6 +38,62 @@
               "validators": []
             },
             {
+              "label": "Restarted?",
+              "type": "obs",
+              "required": true,
+              "id": "restartedInTreatment",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "4913c7f0-3362-4407-8d48-4b115f2f59dd",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "label": "Yes",
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "label": "No",
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "Date if restarted",
+              "type": "obs",
+              "required": false,
+              "id": "dateIfRestarted",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "fa954f61-ffaf-426c-a70b-3da7fddafbf8",
+                "conceptMappings": [],
+                "answers": []
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "restartedInTreatment !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              }
+            },
+            {
+              "label": "No of Days Lost?",
+              "type": "obs",
+              "required": false,
+              "id": "daysLost",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "e0dbc1f3-f7c4-46cc-a763-7b587a9d8702",
+                "disallowDecimals": true,
+                "calculate": {
+                  "calculateExpression": "moment(dateIfRestarted).isValid() && moment(dateOfLastVisit).isValid() ? moment(dateIfRestarted).diff(moment(dateOfLastVisit), 'days') : ''"
+                }
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "restartedInTreatment !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              }
+            },
+            {
               "label": "Reason for ART Interruption",
               "type": "obs",
               "required": true,
@@ -159,44 +215,6 @@
               "validators": [],
               "hide": {
                 "hideWhenExpression": "isEmpty(reasonForARTInt) || !arrayContains(reasonForARTInt, 'f6ae430a-a197-426e-b54f-08f45fae0ad0')"
-              }
-            },
-            {
-              "label": "Restarted?",
-              "type": "obs",
-              "required": true,
-              "id": "restartedInTreatment",
-              "questionOptions": {
-                "rendering": "radio",
-                "concept": "4913c7f0-3362-4407-8d48-4b115f2f59dd",
-                "conceptMappings": [],
-                "answers": [
-                  {
-                    "label": "Yes",
-                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-                  },
-                  {
-                    "label": "No",
-                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-                  }
-                ]
-              },
-              "validators": []
-            },
-            {
-              "label": "Date if restarted",
-              "type": "obs",
-              "required": false,
-              "id": "dateIfRestarted",
-              "questionOptions": {
-                "rendering": "date",
-                "concept": "fa954f61-ffaf-426c-a70b-3da7fddafbf8",
-                "conceptMappings": [],
-                "answers": []
-              },
-              "validators": [],
-              "hide": {
-                "hideWhenExpression": "restartedInTreatment !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
             },
             {
