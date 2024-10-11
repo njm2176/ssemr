@@ -8,122 +8,158 @@
 	"retired": false,
 	"encounter": "Community linkage",
 	"pages": [
-	  {
-		"label": "Client Details",
-		"sections": [
-		  {
-			"label": "Client details",
-			"isExpanded": "true",
-			"questions": [
-			  {
-				"label": "Category of the client",
-				"type": "obs",
-				"required": false,
-				"id": "clientCategory",
-				"questionOptions": {
-				  "rendering": "select",
-				  "concept": "579c3be1-7012-4956-b25d-77b686b70081",
-				  "conceptMappings": [],
-				  "answers": [
-					{
-					  "concept": "65057ee0-acf4-4536-bf60-a9675fb96d42",
-					  "label": "Breastfeeding Woman"
-					},
-					{
-					  "concept": "50e0276f-9c7b-4982-9edb-1ba7895efc5f",
-					  "label": "Children"
-					},
-					{
-					  "concept": "54f0a4fb-477a-4bb2-977d-59b6ec3d4b34",
-					  "label": "New Client"
-					},
-					{
-					  "concept": "63f89d17-0157-4489-8fc8-966d66324c12",
-					  "label": "Old Client"
-					},
-					{
-					  "concept": "2826a1bd-df43-4488-b72b-bc53d6331674",
-					  "label": "Pregnant Mother"
-					},
-					{
-					  "concept": "f12f1fe4-1dfc-41ac-97f2-042bd140c4d3",
-					  "label": "Return after treatment interruption"
-					},
-					{
-					  "concept": "ce97a3fe-fae2-45e3-99b5-35e7ba121805",
-					  "label": "Unsuppressed VL"
-					},
-					{
-					  "concept": "674058f9-7136-459a-a2df-fa1d3f4aa53e",
-					  "label": "Key population (KP)"
-					}
-				  ]
+		{
+			"label": "Client Details",
+			"sections": [
+				{
+					"label": "Visit Details",
+					"isExpanded": "true",
+					"questions": [
+						{
+							"label": "Date",
+							"type": "encounterDatetime",
+							"questionOptions": {
+								"rendering": "ui-select-extended"
+							},
+							"id": "encDate",
+							"validators": [
+								{
+									"type": "date",
+									"allowFutureDates": "false"
+								}
+							]
+						},
+						{
+							"label": "Provider",
+							"type": "encounterProvider",
+							"questionOptions": {
+								"rendering": "ui-select-extended"
+							},
+							"id": "encProvider "
+						},
+						{
+							"label": "Location",
+							"type": "encounterLocation",
+							"questionOptions": {
+								"rendering": "ui-select-extended"
+							},
+							"id": "encLocation"
+						}
+					]
 				},
-				"validators": []
-			  },
-			  {
-				"label": "Name of CHW",
-				"type": "obs",
-				"required": false,
-				"id": "covAssigned",
-				"questionOptions": {
-				  "rendering": "text",
-				  "concept": "5b258179-1872-4339-8b29-5ecf618bd4d3",
-				  "conceptMappings": [],
-				  "answers": []
-				},
-				"validators": []
-			  },
-			  {
-				"label": "CHW Phone number",
-				"type": "obs",
-				"required": false,
-				"id": "chwPhone",
-				"questionOptions": {
-				  "rendering": "text",
-				  "concept": "cb3385ee-18c3-4856-a410-c7b4d105a779"
-				},
-				"validators": [
-				  {
-					"type": "js_expression",
-					"failsWhenExpression": "chwPhone && !chwPhone.match(/^\\+[0-9]{1,3}[0-9]{9,9}$/)",
-					"message": "The phone number should start with a country code, e.g., +211 and should be at least 9 digits long."
-				  }
-				],
-				"alert": {
-				  "alertWhenExpression": "chwPhone && !chwPhone.match(/^\\+[0-9]{1,3}[0-9]{9,9}$/)",
-				  "message": "The phone number should start with a country code, e.g., +211 and should be at least 9 digits long."
+				{
+					"label": "Client details",
+					"isExpanded": "true",
+					"questions": [
+						{
+							"label": "Category of the client",
+							"type": "obs",
+							"required": false,
+							"id": "clientCategory",
+							"questionOptions": {
+								"rendering": "select",
+								"concept": "579c3be1-7012-4956-b25d-77b686b70081",
+								"conceptMappings": [],
+								"answers": [
+									{
+										"concept": "65057ee0-acf4-4536-bf60-a9675fb96d42",
+										"label": "Breastfeeding Woman"
+									},
+									{
+										"concept": "50e0276f-9c7b-4982-9edb-1ba7895efc5f",
+										"label": "Children"
+									},
+									{
+										"concept": "54f0a4fb-477a-4bb2-977d-59b6ec3d4b34",
+										"label": "New Client"
+									},
+									{
+										"concept": "63f89d17-0157-4489-8fc8-966d66324c12",
+										"label": "Old Client"
+									},
+									{
+										"concept": "2826a1bd-df43-4488-b72b-bc53d6331674",
+										"label": "Pregnant Mother"
+									},
+									{
+										"concept": "f12f1fe4-1dfc-41ac-97f2-042bd140c4d3",
+										"label": "Return after treatment interruption"
+									},
+									{
+										"concept": "ce97a3fe-fae2-45e3-99b5-35e7ba121805",
+										"label": "Unsuppressed VL"
+									},
+									{
+										"concept": "674058f9-7136-459a-a2df-fa1d3f4aa53e",
+										"label": "Key population (KP)"
+									}
+								]
+							},
+							"validators": []
+						},
+						{
+							"label": "Name of CHW",
+							"type": "obs",
+							"required": false,
+							"id": "covAssigned",
+							"questionOptions": {
+								"rendering": "text",
+								"concept": "5b258179-1872-4339-8b29-5ecf618bd4d3",
+								"conceptMappings": [],
+								"answers": []
+							},
+							"validators": []
+						},
+						{
+							"label": "CHW Phone number",
+							"type": "obs",
+							"required": false,
+							"id": "chwPhone",
+							"questionOptions": {
+								"rendering": "text",
+								"concept": "cb3385ee-18c3-4856-a410-c7b4d105a779"
+							},
+							"validators": [
+								{
+									"type": "js_expression",
+									"failsWhenExpression": "chwPhone && !chwPhone.match(/^\\+[0-9]{1,3}[0-9]{9,9}$/)",
+									"message": "The phone number should start with a country code, e.g., +211 and should be at least 9 digits long."
+								}
+							],
+							"alert": {
+								"alertWhenExpression": "chwPhone && !chwPhone.match(/^\\+[0-9]{1,3}[0-9]{9,9}$/)",
+								"message": "The phone number should start with a country code, e.g., +211 and should be at least 9 digits long."
+							}
+						},
+						{
+							"label": "CHW Address",
+							"type": "obs",
+							"required": false,
+							"id": "chwAddress",
+							"questionOptions": {
+								"rendering": "text",
+								"concept": "77a35b01-7713-437a-a82b-7f74c75ea41d"
+							},
+							"validators": []
+						},
+						{
+							"label": "Date of Linkage",
+							"type": "obs",
+							"required": false,
+							"id": "dateClientMetCov",
+							"questionOptions": {
+								"rendering": "date",
+								"concept": "fef6ef98-6d8d-4921-80f2-93255a7a5faf",
+								"conceptMappings": [],
+								"answers": []
+							},
+							"validators": []
+						}
+					]
 				}
-			  },
-			  {
-				"label": "CHW Address",
-				"type": "obs",
-				"required": false,
-				"id": "chwAddress",
-				"questionOptions": {
-				  "rendering": "text",
-				  "concept": "77a35b01-7713-437a-a82b-7f74c75ea41d"
-				},
-				"validators": []
-			  },
-			  {
-				"label": "Date of Linkage",
-				"type": "obs",
-				"required": false,
-				"id": "dateClientMetCov",
-				"questionOptions": {
-				  "rendering": "date",
-				  "concept": "fef6ef98-6d8d-4921-80f2-93255a7a5faf",
-				  "conceptMappings": [],
-				  "answers": []
-				},
-				"validators": []
-			  }
 			]
-		  }
-		]
-	  }
+		}
 	],
 	"processor": "EncounterFormProcessor",
 	"encounterType": "3c2df02e-6856-11ee-8c99-0242ac120002"
-  }
+}
