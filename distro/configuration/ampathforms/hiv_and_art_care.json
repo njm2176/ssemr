@@ -8,6 +8,42 @@
       "label": "Personal history",
       "sections": [
         {
+          "label": "Visit Details",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Date",
+              "type": "encounterDatetime",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "encDate",
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ]
+            },
+            {
+              "label": "Provider",
+              "type": "encounterProvider",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "encProvider "
+            },
+            {
+              "label": "Location",
+              "type": "encounterLocation",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "encLocation"
+            }
+          ]
+        },
+        {
           "label": "Personal history",
           "isExpanded": "true",
           "questions": [
@@ -1321,7 +1357,7 @@
               },
               "type": "obs",
               "validators": []
-            }, 
+            },
             {
               "label": "Other ARV Regimen Specify",
               "id": "otherInitialRegimenSpecify",
