@@ -561,12 +561,12 @@
                   "validators": [
                     {
                       "type": "js_expression",
-                      "failsWhenExpression": "familyMemberPhoneNumber && !familyMemberPhoneNumber.match(/^\\+[0-9]{1,3}[0-9]{9,9}$/)",
+                      "failsWhenExpression": "familyMemberPhoneNumber && !(/^\\+[0-9]{1,3}[0-9]{9,9}$/).test(familyMemberPhoneNumber)",
                       "message": "The phone number should start with a country code, e.g., +211, and should be at least 9 digits after the country code."
                     }
                   ],
                   "alert": {
-                    "alertWhenExpression": "familyMemberPhoneNumber && !familyMemberPhoneNumber.match(/^\\+[0-9]{1,3}[0-9]{9,9}$/)",
+                    "alertWhenExpression": "familyMemberPhoneNumber && !(/^\\+[0-9]{1,3}[0-9]{9,9}$/).test(familyMemberPhoneNumber)",
                     "message": "The phone number should start with a country code, e.g., +211, and should be at least 9 digits after the country code."
                   }
                 },
@@ -1365,7 +1365,7 @@
               "questionOptions": {
                 "answers": [],
                 "concept": "b0afac64-54b5-412c-86d0-7cf5dc6afb35",
-                "rendering": "Text"
+                "rendering": "text"
               },
               "type": "obs",
               "validators": [],
