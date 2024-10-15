@@ -29,7 +29,7 @@
     "@ssemr/esm-patient-summary-app": "1.2.1",
     "@ssemr/esm-patient-list-management-app": "1.4.1",
     "@ssemr/esm-patient-chart-app": "1.0.2",
-    "@ssemr/esm-login-app": "1.0.0",
+    "@ssemr/esm-login-app": "1.0.1",
     "@ssemr/esm-patient-flags-app": "1.0.1"
 
   },
