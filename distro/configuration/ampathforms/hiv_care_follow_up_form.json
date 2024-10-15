@@ -1120,7 +1120,7 @@
               "validators": [
                 {
                   "type": "js_expression",
-                  "failsWhenExpression": "(arrayContains(sideEfects, '2b663228-adaa-4cf0-ae77-5a2559e3f3a0') && arrayContainsAny(sideEfects, ['e31c3a3c-8156-4896-812c-be78fee13273', '512AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA', 'f2cc0f34-6546-4af3-bd2d-3466047c0ce5', '121629AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA', 'acecabeb-008a-4924-981f-fcc2807087f6', '50622f1f-9367-4a4e-a510-e969681d8df0', 'db99694b-a058-48a9-832c-64c28847a1a9', 'f20b15b2-4e14-11e4-8a57-0800271c1b75', '1dfb0948-4e15-11e4-8a57-0800271c1b75', '47be2dc7-acfc-43e8-8c27-4331856164db', '608f6df4-bc19-4afa-a1ff-58f407389221'])) || (arrayContains(sideEfects, '608f6df4-bc19-4afa-a1ff-58f407389221') && arrayContainsAny(sideEfects, ['e31c3a3c-8156-4896-812c-be78fee13273', '512AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA', 'f2cc0f34-6546-4af3-bd2d-3466047c0ce5', '121629AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA', 'acecabeb-008a-4924-981f-fcc2807087f6', '50622f1f-9367-4a4e-a510-e969681d8df0', 'db99694b-a058-48a9-832c-64c28847a1a9', 'f20b15b2-4e14-11e4-8a57-0800271c1b75', '1dfb0948-4e15-11e4-8a57-0800271c1b75', '47be2dc7-acfc-43e8-8c27-4331856164db', '2b663228-adaa-4cf0-ae77-5a2559e3f3a0']))",
+                  "failsWhenExpression": "arrayContains(sideEfects, '2b663228-adaa-4cf0-ae77-5a2559e3f3a0') && arrayContainsAny(sideEfects, ['e31c3a3c-8156-4896-812c-be78fee13273', '512AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA', 'f2cc0f34-6546-4af3-bd2d-3466047c0ce5', '121629AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA', 'acecabeb-008a-4924-981f-fcc2807087f6', '50622f1f-9367-4a4e-a510-e969681d8df0', 'db99694b-a058-48a9-832c-64c28847a1a9', 'f20b15b2-4e14-11e4-8a57-0800271c1b75', '1dfb0948-4e15-11e4-8a57-0800271c1b75', '47be2dc7-acfc-43e8-8c27-4331856164db', '608f6df4-bc19-4afa-a1ff-58f407389221']) || arrayContains(sideEfects, '608f6df4-bc19-4afa-a1ff-58f407389221') && arrayContainsAny(sideEfects, ['e31c3a3c-8156-4896-812c-be78fee13273', '512AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA', 'f2cc0f34-6546-4af3-bd2d-3466047c0ce5', '121629AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA', 'acecabeb-008a-4924-981f-fcc2807087f6', '50622f1f-9367-4a4e-a510-e969681d8df0', 'db99694b-a058-48a9-832c-64c28847a1a9', 'f20b15b2-4e14-11e4-8a57-0800271c1b75', '1dfb0948-4e15-11e4-8a57-0800271c1b75', '47be2dc7-acfc-43e8-8c27-4331856164db', '2b663228-adaa-4cf0-ae77-5a2559e3f3a0'])",
                   "message": "You cannot select 'No side effects' or 'No information' along with other side effect options. Please deselect conflicting choices."
                 }
               ],
@@ -1901,7 +1901,7 @@
                 "rendering": "select",
                 "concept": "1c8a00ad-8d9c-48e0-8011-8f79f5f9fa05",
                 "calculate": {
-                  "calculateExpression": "artRegimenNoOfDaysDispensedDapsone === 'e9d42057-5171-4ca6-8024-2d80162a094a' ? '39ec38d1-7b35-4f05-ab87-10983da0b484' : artRegimenNoOfDaysDispensedDapsone === 'c595ca5a-0392-41b3-be35-57c0def42c07' ? '7b0642e1-7607-4b0f-806e-703b195345ea' : artRegimenNoOfDaysDispensedDapsone === 'b86d480a-c6a9-421b-85ac-fa63fd5b31ae' ? '3cd5ec7d-ac0e-46cc-8a46-ab7628da0a4f' : artRegimenNoOfDaysDispensedDapsone=== 'e01b566c-9660-49e2-8693-b9ca4cf84b1d' ? 'af06426c-e63e-4f83-bdbc-a855c42bb0ca' : artRegimenNoOfDaysDispensedDapsone === 'ea0a6423-365f-488b-a316-f1953db1e064' ? 'c036d8cb-9416-43b3-b23f-91913ce424a3' : artRegimenNoOfDaysDispensedDapsone === '8257517f-402f-4613-8dda-3d79a0c1451d' ? 'faf5d5dc-1547-49f7-941d-6fdf2d1bfa50' : artRegimenNoOfDaysDispensedDapsone === '5c7c6c22-672c-4847-8723-622e0e062f4d' ? '91e0bcf5-8968-4004-9e14-bb466fccaf53' : artRegimenNoOfDaysDispensedDapsone === 'bc8f2249-10f4-40a8-a960-952ea5f29b30' ? '2e74862a-bb28-4e10-9a9a-b959a4a5da60' : ''"
+                  "calculateExpression": "artRegimenNoOfDaysDispensedDapsone === 'e9d42057-5171-4ca6-8024-2d80162a094a' ? '39ec38d1-7b35-4f05-ab87-10983da0b484' : artRegimenNoOfDaysDispensedDapsone === 'c595ca5a-0392-41b3-be35-57c0def42c07' ? '7b0642e1-7607-4b0f-806e-703b195345ea' : artRegimenNoOfDaysDispensedDapsone === 'b86d480a-c6a9-421b-85ac-fa63fd5b31ae' ? '3cd5ec7d-ac0e-46cc-8a46-ab7628da0a4f' : artRegimenNoOfDaysDispensedDapsone === 'e01b566c-9660-49e2-8693-b9ca4cf84b1d' ? 'af06426c-e63e-4f83-bdbc-a855c42bb0ca' : artRegimenNoOfDaysDispensedDapsone === 'ea0a6423-365f-488b-a316-f1953db1e064' ? 'c036d8cb-9416-43b3-b23f-91913ce424a3' : artRegimenNoOfDaysDispensedDapsone === '8257517f-402f-4613-8dda-3d79a0c1451d' ? 'faf5d5dc-1547-49f7-941d-6fdf2d1bfa50' : artRegimenNoOfDaysDispensedDapsone === '5c7c6c22-672c-4847-8723-622e0e062f4d' ? '91e0bcf5-8968-4004-9e14-bb466fccaf53' : artRegimenNoOfDaysDispensedDapsone === 'bc8f2249-10f4-40a8-a960-952ea5f29b30' ? '2e74862a-bb28-4e10-9a9a-b959a4a5da60' : ''"
                 },
                 "answers": [
                   {
@@ -1942,7 +1942,7 @@
               "validators": [
                 {
                   "type": "js_expression",
-                  "failsWhenExpression": "artRegimenNoOfDaysDispensedDapsone === 'e9d42057-5171-4ca6-8024-2d80162a094a' ? artRegimenNoOfPillsDispensedDapsone !== '39ec38d1-7b35-4f05-ab87-10983da0b484' : artRegimenNoOfDaysDispensedDapsone === 'c595ca5a-0392-41b3-be35-57c0def42c07' ? artRegimenNoOfPillsDispensedDapsone !== '7b0642e1-7607-4b0f-806e-703b195345ea' : artRegimenNoOfDaysDispensedDapsone === 'b86d480a-c6a9-421b-85ac-fa63fd5b31ae' ? artRegimenNoOfPillsDispensedDapsone !== '3cd5ec7d-ac0e-46cc-8a46-ab7628da0a4f' : artRegimenNoOfDaysDispensedDapsone=== 'e01b566c-9660-49e2-8693-b9ca4cf84b1d' ? artRegimenNoOfPillsDispensedDapsone !== 'af06426c-e63e-4f83-bdbc-a855c42bb0ca' : artRegimenNoOfDaysDispensedDapsone === 'ea0a6423-365f-488b-a316-f1953db1e064' ? artRegimenNoOfPillsDispensedDapsone !== 'c036d8cb-9416-43b3-b23f-91913ce424a3' : artRegimenNoOfDaysDispensedDapsone === '8257517f-402f-4613-8dda-3d79a0c1451d' ? artRegimenNoOfPillsDispensedDapsone !== 'faf5d5dc-1547-49f7-941d-6fdf2d1bfa50' : artRegimenNoOfDaysDispensedDapsone === '5c7c6c22-672c-4847-8723-622e0e062f4d' ? artRegimenNoOfPillsDispensedDapsone !== '91e0bcf5-8968-4004-9e14-bb466fccaf53' : artRegimenNoOfDaysDispensedDapsone === 'bc8f2249-10f4-40a8-a960-952ea5f29b30' ? artRegimenNoOfPillsDispensedDapsone !== '2e74862a-bb28-4e10-9a9a-b959a4a5da60' : ''",
+                  "failsWhenExpression": "artRegimenNoOfDaysDispensedDapsone === 'e9d42057-5171-4ca6-8024-2d80162a094a' ? artRegimenNoOfPillsDispensedDapsone !== '39ec38d1-7b35-4f05-ab87-10983da0b484' : artRegimenNoOfDaysDispensedDapsone === 'c595ca5a-0392-41b3-be35-57c0def42c07' ? artRegimenNoOfPillsDispensedDapsone !== '7b0642e1-7607-4b0f-806e-703b195345ea' : artRegimenNoOfDaysDispensedDapsone === 'b86d480a-c6a9-421b-85ac-fa63fd5b31ae' ? artRegimenNoOfPillsDispensedDapsone !== '3cd5ec7d-ac0e-46cc-8a46-ab7628da0a4f' : artRegimenNoOfDaysDispensedDapsone === 'e01b566c-9660-49e2-8693-b9ca4cf84b1d' ? artRegimenNoOfPillsDispensedDapsone !== 'af06426c-e63e-4f83-bdbc-a855c42bb0ca' : artRegimenNoOfDaysDispensedDapsone === 'ea0a6423-365f-488b-a316-f1953db1e064' ? artRegimenNoOfPillsDispensedDapsone !== 'c036d8cb-9416-43b3-b23f-91913ce424a3' : artRegimenNoOfDaysDispensedDapsone === '8257517f-402f-4613-8dda-3d79a0c1451d' ? artRegimenNoOfPillsDispensedDapsone !== 'faf5d5dc-1547-49f7-941d-6fdf2d1bfa50' : artRegimenNoOfDaysDispensedDapsone === '5c7c6c22-672c-4847-8723-622e0e062f4d' ? artRegimenNoOfPillsDispensedDapsone !== '91e0bcf5-8968-4004-9e14-bb466fccaf53' : artRegimenNoOfDaysDispensedDapsone === 'bc8f2249-10f4-40a8-a960-952ea5f29b30' ? artRegimenNoOfPillsDispensedDapsone !== '2e74862a-bb28-4e10-9a9a-b959a4a5da60' : ''",
                   "message": "NUmber of PIlls chosen doesnt match the number of days."
                 }
               ],
@@ -2192,15 +2192,16 @@
             },
             {
               "label": "Other Regimen Specify",
+              "type": "obs",
               "required": false,
               "id": "otherRigimenAdult",
               "questionOptions": {
                 "rendering": "text",
-                "concept": "b0afac64-54b5-412c-86d0-7cf5dc6afb35",
+                "concept": "165f04aa-04ac-4b74-81b8-ee8f7af52973",
                 "isSimpleValue": true
               },
               "hide": {
-                "hideWhenExpression": "ArtRegimenAdults !== 'd75c973c-06d4-43d2-a57d-6340fc8c0100'"
+                "hideWhenExpression": "arvRegimen !== 'd75c973c-06d4-43d2-a57d-6340fc8c0100'"
               }
             },
             {
@@ -2314,7 +2315,7 @@
               "type": "obs",
               "validators": [],
               "hide": {
-                "hideWhenExpression": "artRegimenNoOfPillsDispensed !== '2e74862a-bb28-4e10-9a9a-b959a4a5da60'"
+                "hideWhenExpression": "artRegimenNoOfPillsDispensed !== 'bc8f2249-10f4-40a8-a960-952ea5f29b30'"
               }
             },
             {
@@ -2634,8 +2635,8 @@
                   "required": false,
                   "questionOptions": {
                     "answers": [],
-                    "concept": "b0afac64-54b5-412c-86d0-7cf5dc6afb35",
-                    "rendering": "Text"
+                    "concept": "dcc697c1-d3bc-407a-bb2f-bad8acaaf8bd",
+                    "rendering": "text"
                   },
                   "type": "obs",
                   "validators": [],
@@ -2754,8 +2755,8 @@
                   "required": false,
                   "questionOptions": {
                     "answers": [],
-                    "concept": "b0afac64-54b5-412c-86d0-7cf5dc6afb35",
-                    "rendering": "Text"
+                    "concept": "f43b9529-3b66-4d53-8599-8c0390205b98",
+                    "rendering": "text"
                   },
                   "type": "obs",
                   "validators": [],
@@ -2957,8 +2958,8 @@
                   "required": false,
                   "questionOptions": {
                     "answers": [],
-                    "concept": "b0afac64-54b5-412c-86d0-7cf5dc6afb35",
-                    "rendering": "Text"
+                    "concept": "9387dbd8-897d-4097-8d4d-084c0bd241c3",
+                    "rendering": "text"
                   },
                   "type": "obs",
                   "validators": [],
@@ -3077,8 +3078,8 @@
                   "required": false,
                   "questionOptions": {
                     "answers": [],
-                    "concept": "b0afac64-54b5-412c-86d0-7cf5dc6afb35",
-                    "rendering": "Text"
+                    "concept": "06470f0d-bc1a-4375-80b6-6663b862f078",
+                    "rendering": "text"
                   },
                   "type": "obs",
                   "validators": [],
