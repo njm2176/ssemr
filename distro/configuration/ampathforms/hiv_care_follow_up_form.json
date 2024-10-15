@@ -406,7 +406,7 @@
       "label": "TB Screening",
       "sections": [
         {
-          "label": "TB Screening",
+          "label": "",
           "isExpanded": "true",
           "questions": [
             {
@@ -1054,7 +1054,7 @@
       "label": "Side Effects, New OI and WHO Stage",
       "sections": [
         {
-          "label": "Side Effects, New OI and WHO Stage",
+          "label": "",
           "isExpanded": "true",
           "questions": [
             {
@@ -1251,7 +1251,7 @@
       "label": "Cotri-moxazole and Other Medications",
       "sections": [
         {
-          "label": "Cotri-moxazole and Other Medications",
+          "label": "",
           "isExpanded": "true",
           "questions": [
             {
@@ -2012,7 +2012,7 @@
       "label": "ARV Drugs",
       "sections": [
         {
-          "label": "ARV Drugs",
+          "label": "",
           "isExpanded": "true",
           "questions": [
             {
@@ -3181,7 +3181,7 @@
       "label": "Investigations",
       "sections": [
         {
-          "label": "Investigations",
+          "label": "",
           "isExpanded": "true",
           "questions": [
             {
@@ -3470,7 +3470,7 @@
       "label": "Patient Plan",
       "sections": [
         {
-          "label": "Patient Plan",
+          "label": "",
           "isExpanded": "true",
           "questions": [
             {
