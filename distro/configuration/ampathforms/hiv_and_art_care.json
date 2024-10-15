@@ -158,7 +158,7 @@
       "label": "Family history",
       "sections": [
         {
-          "label": "Family History",
+          "label": "",
           "isExpanded": "true",
           "questions": [
             {
@@ -722,7 +722,7 @@
       "label": "Antiretroviral Treatment History",
       "sections": [
         {
-          "label": "Antiretroviral Treatment History",
+          "label": "",
           "isExpanded": "true",
           "questions": [
             {
@@ -965,7 +965,7 @@
       "label": "Milestones",
       "sections": [
         {
-          "label": "Milestones",
+          "label": "",
           "isExpanded": "true",
           "questions": [
             {
@@ -1129,7 +1129,7 @@
       "label": "Antiretroviral Treatment ",
       "sections": [
         {
-          "label": "Antiretroviral Treatment",
+          "label": "",
           "isExpanded": "true",
           "questions": [
             {

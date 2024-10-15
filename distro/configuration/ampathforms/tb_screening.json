@@ -21,25 +21,6 @@
 								"rendering": "ui-select-extended"
 							},
 							"id": "encDate"
-						},
-						{
-							"label": "Provider:",
-							"type": "obs",
-							"questionOptions": {
-							  "rendering": "text",
-							  "concept": "7f77c914-aff6-4378-ad07-755ccf99353a",
-							  "conceptMappings": [],
-							  "answers": []
-							},
-							"id": "encProvider"
-						  },
-						{
-							"label": "Location:",
-							"type": "encounterLocation",
-							"questionOptions": {
-								"rendering": "ui-select-extended"
-							},
-							"id": "encLocation"
 						}
 					]
 				},
