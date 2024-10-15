@@ -33,7 +33,7 @@
 			"label": "Sample information",
 			"sections": [
 				{
-					"label": "Sample information",
+					"label": "",
 					"isExpanded": "true",
 					"questions": [
 						{
@@ -96,7 +96,7 @@
 			"label": "Treatment Information",
 			"sections": [
 				{
-					"label": "Treatment Information",
+					"label": "",
 					"isExpanded": "true",
 					"questions": [
 						{
@@ -382,7 +382,7 @@
 			"label": "Requesting Clinician",
 			"sections": [
 				{
-					"label": "Request Clinician",
+					"label": "",
 					"isExpanded": "true",
 					"questions": [
 						{
@@ -442,7 +442,7 @@
 			"label": "Viral Load (VL) Details",
 			"sections": [
 				{
-					"label": "Viral Load (VL) Details",
+					"label": "",
 					"isExpanded": "true",
 					"questions": [
 						{

@@ -47,7 +47,7 @@
 			"label": "Patient identification",
 			"sections": [
 				{
-					"label": "Patient identification",
+					"label": "",
 					"isExpanded": "true",
 					"questions": [
 						{
@@ -135,7 +135,7 @@
 			"label": "Past Medical History",
 			"sections": [
 				{
-					"label": "Past Medical History",
+					"label": "",
 					"isExpanded": "true",
 					"questions": [
 						{
@@ -356,7 +356,7 @@
 			"label": "Current Symptoms Screen",
 			"sections": [
 				{
-					"label": "Current Symptoms Screen",
+					"label": "",
 					"isExpanded": "true",
 					"questions": [
 						{
@@ -1926,7 +1926,7 @@
 			"label": "WHO Clinical Staging",
 			"sections": [
 				{
-					"label": "WHO Clinical Staging",
+					"label": "",
 					"isExpanded": "true",
 					"questions": [
 						{
