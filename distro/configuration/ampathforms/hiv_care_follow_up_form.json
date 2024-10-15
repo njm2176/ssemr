@@ -51,7 +51,7 @@
             },
             {
               "label": "Follow up Date/Next appointment",
-              "required": true,
+              "required": false,
               "id": "appointmentWorkspaceLauncher",
               "questionOptions": {
                 "rendering": "workspace-launcher",
@@ -125,6 +125,7 @@
             {
               "label": "BMI for adult and children above 5 Years",
               "type": "obs",
+              "required": false,
               "questionOptions": {
                 "rendering": "number",
                 "concept": "1342AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
@@ -143,6 +144,7 @@
               "label": "MUAC for children",
               "type": "obs",
               "id": "muac",
+              "required": false,
               "questionOptions": {
                 "rendering": "number",
                 "concept": "1343AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
@@ -328,6 +330,7 @@
               "label": "MUAC for pregnant mothers",
               "type": "obs",
               "id": "muacAdults",
+              "required": false,
               "questionOptions": {
                 "rendering": "number",
                 "concept": "1343AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
@@ -472,6 +475,7 @@
               "label": "Current cough",
               "type": "obs",
               "id": "coughDuration",
+              "required": false,
               "questionOptions": {
                 "concept": "147b8be8-d657-4e46-8970-6f9983b27722",
                 "rendering": "radio",
@@ -494,6 +498,7 @@
               "label": "Fever:",
               "type": "obs",
               "id": "feverIsh",
+              "required": false,
               "questionOptions": {
                 "concept": "f405d8ec-14d0-485a-b52d-bffdfeb26581",
                 "rendering": "radio",
@@ -516,6 +521,7 @@
               "label": "Weight loss",
               "type": "obs",
               "id": "WeightLossGain",
+              "required": false,
               "questionOptions": {
                 "concept": "78f5bc62-ecbe-457f-87dd-def20dbee82e",
                 "rendering": "radio",
@@ -537,7 +543,7 @@
             {
               "label": "Poor weight gain",
               "type": "obs",
-              "required": "true",
+              "required": false,
               "id": "pWeightGain",
               "questionOptions": {
                 "concept": "0fe4cff0-4646-4180-9d2e-8314ffb7a0f4",
@@ -561,6 +567,7 @@
               "label": "Night sweats:",
               "type": "obs",
               "id": "nightSweats",
+              "required": false,
               "questionOptions": {
                 "concept": "9e0bf1ca-dbbe-4024-9d1c-174f4ab1e80d",
                 "rendering": "radio",
@@ -583,6 +590,7 @@
               "label": "Close contact history with TB patient",
               "type": "obs",
               "id": "contacTbCase",
+              "required": false,
               "questionOptions": {
                 "concept": "51b82f82-0c27-46e3-9f33-6d65cc1f6eed",
                 "rendering": "radio",
@@ -605,6 +613,7 @@
               "label": "TB Status",
               "type": "obs",
               "id": "TBStatus",
+              "required": false,
               "questionOptions": {
                 "concept": "9a1a731e-937b-46fe-aca2-acf83a326b71",
                 "rendering": "select",
@@ -649,6 +658,7 @@
               "label": "Type of test",
               "type": "obs",
               "id": "typeOfTest",
+              "required": false,
               "questionOptions": {
                 "concept": "6ceb4493-a690-46fd-98a2-9f86ee1410b9",
                 "rendering": "select",
@@ -704,6 +714,7 @@
               "label": "Date eligible for TPT",
               "type": "obs",
               "id": "dateEligibleForTPT",
+              "required": false,
               "questionOptions": {
                 "concept": "fffda787-beec-4872-9968-3efeebb73823",
                 "rendering": "date"
@@ -890,6 +901,7 @@
               "label": "Sputum for AFB result",
               "type": "obs",
               "id": "sputumResults",
+              "required": false,
               "questionOptions": {
                 "concept": "fdaa7259-df0b-4e26-9d9c-de2ca68dff1d",
                 "rendering": "radio",
@@ -916,6 +928,7 @@
               "label": "CxR result ",
               "type": "obs",
               "id": "cxrResult",
+              "required": false,
               "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('7c679f4f-cae6-43ba-bf18-0f3bd9f060a8')) ? undefined : HD.getObject('prevEnc').getValue('7c679f4f-cae6-43ba-bf18-0f3bd9f060a8')",
               "questionOptions": {
                 "concept": "7c679f4f-cae6-43ba-bf18-0f3bd9f060a8",
@@ -947,6 +960,7 @@
               "label": "Other Dx Specify",
               "type": "obs",
               "id": "otherDXSpecify",
+              "required": false,
               "questionOptions": {
                 "concept": "598aee3b-470c-4cfb-9b79-6bf34f988093",
                 "rendering": "text"
@@ -959,6 +973,7 @@
               "label": "GeneXpert result",
               "type": "obs",
               "id": "geneXpertResult",
+              "required": false,
               "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('c2f01b10-1b5e-485a-a352-05788359d881')) ? undefined : HD.getObject('prevEnc').getValue('c2f01b10-1b5e-485a-a352-05788359d881')",
               "questionOptions": {
                 "concept": "c2f01b10-1b5e-485a-a352-05788359d881",
@@ -982,6 +997,7 @@
               "label": "Type of TB",
               "type": "obs",
               "id": "tbDiagnosed",
+              "required": false,
               "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('3109983a-98af-4017-a16b-e3bac0c48d25')) ? undefined : HD.getObject('prevEnc').getValue('3109983a-98af-4017-a16b-e3bac0c48d25')",
               "questionOptions": {
                 "concept": "3109983a-98af-4017-a16b-e3bac0c48d25",
@@ -1301,6 +1317,7 @@
               "label": "Reason why Adherence is Poor",
               "type": "obs",
               "id": "reasonWhyAdherenceisPoorCTX",
+              "required": false,
               "questionOptions": {
                 "rendering": "multiCheckbox",
                 "concept": "b0058799-4655-471d-8124-6acd14c6beb1",
@@ -1371,6 +1388,7 @@
               "label": "Other Adherence Reason Why Poor Specify",
               "type": "obs",
               "id": "adherenceOtherPoorCTX",
+              "required": false,
               "questionOptions": {
                 "rendering": "text",
                 "concept": "58ab093d-6cee-4b2d-a85f-dd40e1025a42"
@@ -1384,6 +1402,7 @@
               "label": "Reason why Adherence is Fair",
               "type": "obs",
               "id": "reasonWhyAdherenceisFairCTX",
+              "required": false,
               "questionOptions": {
                 "rendering": "multiCheckbox",
                 "concept": "d0f3605e-f026-4ef8-973a-f471a236049a",
@@ -1454,6 +1473,7 @@
               "label": "Other Adherence Reason Specify",
               "type": "obs",
               "id": "adherenceOtherFairCTX",
+              "required": false,
               "questionOptions": {
                 "rendering": "text",
                 "concept": "66e7bd78-5956-4fda-84a1-80ff8e96c579"
@@ -1666,6 +1686,7 @@
               "label": "Reason why Adherence is Poor",
               "type": "obs",
               "id": "reasonWhyAdherenceisPoorARVDapsone",
+              "required": false,
               "questionOptions": {
                 "rendering": "multiCheckbox",
                 "concept": "b0058799-4655-471d-8124-6acd14c6beb1",
@@ -1736,6 +1757,7 @@
               "label": "Other Adherence Reason Why Poor Specify",
               "type": "obs",
               "id": "adherenceOtherPoorDapsone",
+              "required": false,
               "questionOptions": {
                 "rendering": "text",
                 "concept": "58ab093d-6cee-4b2d-a85f-dd40e1025a42"
@@ -1749,6 +1771,7 @@
               "label": "Reason why Adherence is Fair",
               "type": "obs",
               "id": "reasonWhyAdherenceisFairDapsone",
+              "required": false,
               "questionOptions": {
                 "rendering": "multiCheckbox",
                 "concept": "d0f3605e-f026-4ef8-973a-f471a236049a",
@@ -1819,6 +1842,7 @@
               "label": "Other Adherence Reason Specify",
               "type": "obs",
               "id": "adherenceOtherFairDapsone",
+              "required": false,
               "questionOptions": {
                 "rendering": "text",
                 "concept": "66e7bd78-5956-4fda-84a1-80ff8e96c579"
@@ -1995,6 +2019,7 @@
               "label": "ARV regimen",
               "type": "obs",
               "id": "arvRegimen",
+              "required": false,
               "questionOptions": {
                 "concept": "23322fd6-3dbb-410e-8bee-6210dfcd5f71",
                 "rendering": "select",
@@ -2336,6 +2361,7 @@
               "label": "Reason why Adherence is Poor",
               "type": "obs",
               "id": "reasonWhyAdherenceisPoorARV",
+              "required": false,
               "questionOptions": {
                 "rendering": "multiCheckbox",
                 "concept": "b0058799-4655-471d-8124-6acd14c6beb1",
@@ -2406,6 +2432,7 @@
               "label": "Other Adherence Reason Why Poor Specify",
               "type": "obs",
               "id": "adherenceOtherPoor",
+              "required": false,
               "questionOptions": {
                 "rendering": "text",
                 "concept": "58ab093d-6cee-4b2d-a85f-dd40e1025a42"
@@ -2419,6 +2446,7 @@
               "label": "Reason why Adherence is Fair",
               "type": "obs",
               "id": "reasonWhyAdherenceisFairDapsoneARV",
+              "required": false,
               "questionOptions": {
                 "rendering": "multiCheckbox",
                 "concept": "d0f3605e-f026-4ef8-973a-f471a236049a",
@@ -2489,6 +2517,7 @@
               "label": "Other Adherence Reason Specify",
               "type": "obs",
               "id": "adherenceOtherFair",
+              "required": false,
               "questionOptions": {
                 "rendering": "text",
                 "concept": "66e7bd78-5956-4fda-84a1-80ff8e96c579"
@@ -2751,7 +2780,7 @@
                 {
                   "label": "ART First Line Switch Date",
                   "id": "firstLineSwitch",
-                  "required": true,
+                  "required": false,
                   "questionOptions": {
                     "answers": [],
                     "concept": "ad884e26-5e18-4ec3-b471-c1cd1374387f",
@@ -2768,7 +2797,7 @@
                 {
                   "label": "Reason For Regimen Change(First Line)",
                   "id": "changeReason",
-                  "required": true,
+                  "required": false,
                   "questionOptions": {
                     "concept": "f0941906-3277-4ca0-891a-a58efb541c66",
                     "rendering": "select",
@@ -3074,7 +3103,7 @@
                 {
                   "label": "ART Swith to 2nd Line Date",
                   "id": "switchDate",
-                  "required": true,
+                  "required": false,
                   "questionOptions": {
                     "answers": [],
                     "concept": "55337ca1-c8b5-43e4-bed3-845a01463020",
@@ -3091,7 +3120,7 @@
                 {
                   "label": "Reason For Regimen Switch(2nd Line)",
                   "id": "switchReason",
-                  "required": true,
+                  "required": false,
                   "questionOptions": {
                     "concept": "847b1998-5b2f-4818-a6c0-4284e2f85403",
                     "rendering": "select",
