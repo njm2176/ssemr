@@ -28,22 +28,6 @@
 									"allowFutureDates": "false"
 								}
 							]
-						},
-						{
-							"label": "Provider",
-							"type": "encounterProvider",
-							"questionOptions": {
-								"rendering": "ui-select-extended"
-							},
-							"id": "encProvider "
-						},
-						{
-							"label": "Location",
-							"type": "encounterLocation",
-							"questionOptions": {
-								"rendering": "ui-select-extended"
-							},
-							"id": "encLocation"
 						}
 					]
 				},
