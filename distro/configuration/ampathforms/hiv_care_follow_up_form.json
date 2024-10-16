@@ -2203,12 +2203,12 @@
               "label": "Other Regimen Specify",
               "type": "obs",
               "required": false,
-              "id": "otherRigimenAdult",
+              "id": "otherRegimenSpecify",
               "questionOptions": {
                 "rendering": "text",
-                "concept": "165f04aa-04ac-4b74-81b8-ee8f7af52973",
-                "isSimpleValue": true
+                "concept": "2734f9fc-1bc5-473b-a58f-e2e6e79223d8"
               },
+              "validators": [],
               "hide": {
                 "hideWhenExpression": "arvRegimen !== 'd75c973c-06d4-43d2-a57d-6340fc8c0100'"
               }
