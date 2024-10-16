@@ -179,7 +179,7 @@ d75c973c-06d4-43d2-a57d-6340fc8c0100,,Other ART Regimen,Other ART Regimen,,,,,Mi
 5i = ABC/3TC + LPV/r;
 5j = AZT/3TC (120/60)+DTG10;
 Other ART Regimen"
-b0afac64-54b5-412c-86d0-7cf5dc6afb35,,Other ART Regimen Specify,Other ART Regimen Specify,,,,,Question,Text,
+b0afac64-54b5-412c-86d0-7cf5dc6afb35,,Other Regimen Specify,Other Regimen Specify,Other Regimen Specify,,,,Question,Text,
 4ab28128-7ef3-452d-86d5-73561761b08a,,Number of Days Dispensed,Number of Days,Number of Days Dispensed,,,,Question,Numeric,
 fc684917-4deb-42cf-9245-8a13c6a232bc,,Date VL Sample Collected?,Date VL Sample Collected?,Date VL Sample Collected?,,,,Question,Date,
 62df0577-a1f7-493e-80d2-e458998f1a2f,,Below Detectable (BDL),Below Detectable (BDL),Below Detectable (BDL),,,,Misc,N/A,
