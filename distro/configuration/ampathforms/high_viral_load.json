@@ -220,15 +220,14 @@
 							"validators": []
 						},
 						{
-							"label": "Other ARV Regimen Specify",
-							"id": "otherIArvRegimenSpecify",
-							"required": false,
-							"questionOptions": {
-								"answers": [],
-								"concept": "b0afac64-54b5-412c-86d0-7cf5dc6afb35",
-								"rendering": "Text"
-							},
+							"label": "Other Regimen",
 							"type": "obs",
+							"required": false,
+							"id": "otherSpecifyRegimen",
+							"questionOptions": {
+								"rendering": "text",
+								"concept": "2734f9fc-1bc5-473b-a58f-e2e6e79223d8"
+							},
 							"validators": [],
 							"hide": {
 								"hideWhenExpression": "arvRegimen !== 'b4d8805f-40ff-4c9d-9118-feeab45ad8be'"
@@ -1499,7 +1498,10 @@
 									"failsWhenExpression": "repeatVLResult >= 1000 && repeatVLRGreater !== 'edaf153d-70ff-44f2-8c6e-7242dfd36f5f' || repeatVLResult < 1000 && repeatVLRGreater !== 'ae23fa12-b7fc-49e0-be21-aa2f5bc32f97' ",
 									"message": "The viral load result doesnt match the result chosen"
 								}
-							]
+							],
+							"hide": {
+								"hideWhenExpression": "isEmpty(repeatVLResult)"
+							}
 						},
 						{
 							"label": "Repeat Viral Load date",
