@@ -105,7 +105,7 @@
                 "concept": "e0dbc1f3-f7c4-46cc-a763-7b587a9d8702",
                 "disallowDecimals": true,
                 "calculate": {
-                  "calculateExpression": "moment(dateIfRestarted).isValid() && moment(dateOfLastVisit).isValid() ? moment(dateIfRestarted).diff(moment(dateOfLastVisit), 'days') : ''"
+                  "calculateExpression": "(new Date(dateIfRestarted) - new Date(dateOfLastVisit)) / (1000 * 60 * 60 * 24)"
                 }
               },
               "validators": [],
