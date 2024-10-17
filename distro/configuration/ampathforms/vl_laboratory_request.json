@@ -534,7 +534,13 @@
 								"conceptMappings": [],
 								"answers": []
 							},
-							"validators": []
+							"validators": [
+								{
+									"type": "js_expression",
+									"failsWhenExpression": "new Date(dateResultDispatched) < new Date(dateSampleRecievedLab)",
+									"message": "Date Dispatched can't be before the date sample received"
+								}
+							]
 						},
 						{
 							"label": "Rejection",
