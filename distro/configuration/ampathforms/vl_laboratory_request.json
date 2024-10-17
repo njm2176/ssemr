@@ -538,7 +538,7 @@
 								{
 									"type": "js_expression",
 									"failsWhenExpression": "new Date(dateResultDispatched) < new Date(dateSampleRecievedLab)",
-									"message": "Date Dispatched can't be before the date received"
+									"message": "Date Dispatched can't be before the date sample received"
 								}
 							]
 						},
