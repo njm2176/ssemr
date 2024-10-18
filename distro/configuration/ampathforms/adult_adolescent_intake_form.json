@@ -721,8 +721,6 @@
               "questionOptions": {
                 "rendering": "number",
                 "concept": "1342AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "min": 0,
-                "max": "100",
                 "calculate": {
                   "calculateExpression": "calcBMI(heightForBMI,weightForBMI)"
                 },
