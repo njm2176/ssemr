@@ -25,7 +25,7 @@
     "@ssemr/esm-appointments-app": "1.0.3",
     "@ssemr/esm-reports-dashboard":"next",
     "@ssemr/esm-patient-registration-app": "1.6.4",
-    "@ssemr/esm-patient-hiv-art-app": "6.2.0",
+    "@ssemr/esm-patient-hiv-art-app": "6.2.1",
     "@ssemr/esm-patient-summary-app": "1.2.2",
     "@ssemr/esm-patient-list-management-app": "1.4.2",
     "@ssemr/esm-patient-chart-app": "1.0.3",
