@@ -1492,13 +1492,11 @@
 									}
 								]
 							},
-							"validators": [
-								{
-									"type": "js_expression",
-									"failsWhenExpression": "repeatVLResult >= 1000 && repeatVLRGreater !== 'edaf153d-70ff-44f2-8c6e-7242dfd36f5f' || repeatVLResult < 1000 && repeatVLRGreater !== 'ae23fa12-b7fc-49e0-be21-aa2f5bc32f97' ",
-									"message": "The viral load result doesnt match the result chosen"
-								}
-							],
+							"validators": [],
+							"alert": {
+								"alertWhenExpression": "repeatVLResult >= 1000 && repeatVLRGreater !== 'edaf153d-70ff-44f2-8c6e-7242dfd36f5f' || repeatVLResult < 1000 && repeatVLRGreater !== 'ae23fa12-b7fc-49e0-be21-aa2f5bc32f97' ",
+								"message": "The viral load result doesnt match the result chosen"
+							},
 							"hide": {
 								"hideWhenExpression": "isEmpty(repeatVLResult)"
 							}
