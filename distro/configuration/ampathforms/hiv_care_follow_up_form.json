@@ -104,7 +104,10 @@
               "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')) ? undefined : HD.getObject('prevEnc').getValue('5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')",
               "questionOptions": {
                 "concept": "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "rendering": "numeric"
+                "rendering": "numeric",
+                "calculate": {
+                  "calculateExpression": "resolve(api.getLatestObs('5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA', '0e9f540d-92cb-43c9-a95c-9407f5bf3f2a')).valueNumeric"
+                }
               },
               "type": "obs",
               "validators": []
@@ -117,7 +120,10 @@
               "questionOptions": {
                 "answers": [],
                 "concept": "5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "rendering": "numeric"
+                "rendering": "numeric",
+                "calculate": {
+                  "calculateExpression": "resolve(api.getLatestObs('5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA', '0e9f540d-92cb-43c9-a95c-9407f5bf3f2a')).valueNumeric"
+                }
               },
               "type": "obs",
               "validators": []
@@ -1236,7 +1242,10 @@
                     "label": "WHO Stage 4",
                     "concept": "831d263e-4dfb-4f05-bcfb-629961c07844"
                   }
-                ]
+                ],
+                "calculate": {
+                  "calculateExpression": "resolve(api.getLatestObs(patient.id, 'e38e6ce2-92d9-4382-927b-5555ff9fa850', '0e9f540d-92cb-43c9-a95c-9407f5bf3f2a'))?.valueCodeableConcept?.coding[0]?.code"
+                }
               },
               "type": "obs",
               "validators": []
