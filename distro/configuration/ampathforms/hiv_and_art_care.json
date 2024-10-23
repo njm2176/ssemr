@@ -370,6 +370,7 @@
                       }
                     ]
                   },
+                  "type": "obs",
                   "validators": [],
                   "hide": {
                     "hideWhenExpression": "familyMemberHIVStatus !== '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
@@ -385,7 +386,7 @@
                     "concept": "7bec5791-6cdc-4fe4-bfbb-89cbf3ab03b4"
                   },
                   "hide": {
-                    "hideWhenExpression": "isEmpty(familyMemberOnART) || familyMemberOnART !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                    "hideWhenExpression": "isEmpty(familyMemberOnART) || familyMemberOnART !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || familyMemberHIVStatus !== '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
                   },
                   "validators": [
                     {
