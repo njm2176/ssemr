@@ -2538,6 +2538,26 @@
               }
             },
             {
+              "label": "ART Substition Regimen for Firstline",
+              "type": "obs",
+              "required": false,
+              "id": "firstLineSubstitution",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "00757959-3ccf-4f86-b3e1-0a58080e5696",
+                "answers": [
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes"
+                  },
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
+                  }
+                ]
+              }
+            },
+            {
               "label": "ART Substitution & Switch",
               "type": "obsGroup",
               "required": false,
@@ -2649,7 +2669,7 @@
                   "type": "obs",
                   "validators": [],
                   "hide": {
-                    "hideWhenExpression": "age < 15"
+                    "hideWhenExpression": "age < 15 || firstLineSubstitution !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
                   }
                 },
                 {
@@ -2769,7 +2789,7 @@
                   "type": "obs",
                   "validators": [],
                   "hide": {
-                    "hideWhenExpression": "age >= 15"
+                    "hideWhenExpression": "age >= 15 || firstLineSubstitution !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
                   }
                 },
                 {
@@ -2802,7 +2822,10 @@
                       "type": "date",
                       "allowFutureDates": "false"
                     }
-                  ]
+                  ],
+                  "hide": {
+                    "hideWhenExpression": "firstLineSubstitution !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                  }
                 },
                 {
                   "label": "Reason For Regimen Change(First Line)",
@@ -2840,7 +2863,10 @@
                     ]
                   },
                   "type": "obs",
-                  "validators": []
+                  "validators": [],
+                  "hide": {
+                    "hideWhenExpression": "firstLineSubstitution !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                  }
                 },
                 {
                   "label": "Other Reason For First Line Regimen Change Specify",
@@ -2859,6 +2885,26 @@
                   "validators": []
                 }
               ]
+            },
+            {
+              "label": "Switch to Second Line",
+              "type": "obs",
+              "required": false,
+              "id": "secondSwitchLine",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "a27d3702-8abc-48c0-a275-4981fe0d24ec",
+                "answers": [
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes"
+                  },
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
+                  }
+                ]
+              }
             },
             {
               "label": "Switch to 2nd Line",
@@ -2972,7 +3018,7 @@
                   "type": "obs",
                   "validators": [],
                   "hide": {
-                    "hideWhenExpression": "age < 15"
+                    "hideWhenExpression": "age < 15 || secondSwitchLine !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
                   }
                 },
                 {
@@ -3092,7 +3138,7 @@
                   "type": "obs",
                   "validators": [],
                   "hide": {
-                    "hideWhenExpression": "age >= 15"
+                    "hideWhenExpression": "age >= 15 || secondSwitchLine !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
                   }
                 },
                 {
@@ -3125,7 +3171,10 @@
                       "type": "date",
                       "allowFutureDates": "false"
                     }
-                  ]
+                  ],
+                  "hide": {
+                    "hideWhenExpression": "secondSwitchLine !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                  }
                 },
                 {
                   "label": "Reason For Regimen Switch(2nd Line)",
@@ -3163,7 +3212,10 @@
                     ]
                   },
                   "type": "obs",
-                  "validators": []
+                  "validators": [],
+                  "hide": {
+                    "hideWhenExpression": "secondSwitchLine !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                  }
                 },
                 {
                   "label": "Other Reason For Second Line Regimen Change Specify",
