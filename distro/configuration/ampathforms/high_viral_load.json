@@ -215,7 +215,10 @@
 										"label": "Other",
 										"concept": "b4d8805f-40ff-4c9d-9118-feeab45ad8be"
 									}
-								]
+								],
+								"calculate": {
+									"calculateExpression": "api.getLatestObs(patient.id, '23322fd6-3dbb-410e-8bee-6210dfcd5f71', '0e9f540d-92cb-43c9-a95c-9407f5bf3f2a').then(obs => obs.valueCodeableConcept?.coding[0]?.code)"
+								}
 							},
 							"validators": []
 						},
@@ -239,7 +242,10 @@
 							"id": "dateInitiation",
 							"questionOptions": {
 								"concept": "30f1f347-d72c-4920-9962-6d55d138e8e5",
-								"rendering": "date"
+								"rendering": "date",
+								"calculate": {
+									"calculateExpression": "api.getLatestObs(patient.id, '30f1f347-d72c-4920-9962-6d55d138e8e5', 'f469b65f-a4f6-4723-989a-46090de6a0e5').then(obs => obs.valueString)"
+								}
 							}
 						}
 					]
@@ -287,7 +293,10 @@
 										"concept": "831d263e-4dfb-4f05-bcfb-629961c07844",
 										"label": "Stage 4"
 									}
-								]
+								],
+								"calculate": {
+									"calculateExpression": "api.getLatestObs(patient.id, 'e38e6ce2-92d9-4382-927b-5555ff9fa850', '0e9f540d-92cb-43c9-a95c-9407f5bf3f2a').then(obs => obs.valueCodeableConcept?.coding[0]?.code)"
+								}
 							}
 						}
 					]
