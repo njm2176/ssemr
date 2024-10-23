@@ -106,7 +106,7 @@
                 "concept": "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "numeric",
                 "calculate": {
-                  "calculateExpression": "resolve(api.getLatestObs('5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA', '0e9f540d-92cb-43c9-a95c-9407f5bf3f2a')).valueNumeric"
+                  "calculateExpression": "api.getLatestObs(patient.id, '5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA', '0e9f540d-92cb-43c9-a95c-9407f5bf3f2a').then(obs => obs.valueNumeric)"
                 }
               },
               "type": "obs",
@@ -122,7 +122,7 @@
                 "concept": "5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "numeric",
                 "calculate": {
-                  "calculateExpression": "resolve(api.getLatestObs('5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA', '0e9f540d-92cb-43c9-a95c-9407f5bf3f2a')).valueNumeric"
+                  "calculateExpression": "api.getLatestObs(patient.id, '5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA', '0e9f540d-92cb-43c9-a95c-9407f5bf3f2a').then(obs => obs.valueNumeric)"
                 }
               },
               "type": "obs",
@@ -1244,7 +1244,7 @@
                   }
                 ],
                 "calculate": {
-                  "calculateExpression": "resolve(api.getLatestObs(patient.id, 'e38e6ce2-92d9-4382-927b-5555ff9fa850', '0e9f540d-92cb-43c9-a95c-9407f5bf3f2a'))?.valueCodeableConcept?.coding[0]?.code"
+                  "calculateExpression": "api.getLatestObs(patient.id, 'e38e6ce2-92d9-4382-927b-5555ff9fa850', '0e9f540d-92cb-43c9-a95c-9407f5bf3f2a').then(obs => obs.valueCodeableConcept?.coding[0]?.code)"
                 }
               },
               "type": "obs",
@@ -2203,7 +2203,10 @@
                     "label": "Other Regimen",
                     "concept": "d75c973c-06d4-43d2-a57d-6340fc8c0100"
                   }
-                ]
+                ],
+                "calculate": {
+                  "calculateExpression": "api.getLatestObs(patient.id, '23322fd6-3dbb-410e-8bee-6210dfcd5f71', '0e9f540d-92cb-43c9-a95c-9407f5bf3f2a').then(obs => obs.valueCodeableConcept?.coding[0]?.code)"
+                }
               }
             },
             {
@@ -2547,7 +2550,7 @@
                 {
                   "label": "Substitution Regimen For Adults(First Line)",
                   "id": "substArtAdultRegimen",
-                  "required": true,
+                  "required": false,
                   "questionOptions": {
                     "concept": "23322fd6-3dbb-410e-8bee-6210dfcd5f71",
                     "rendering": "select",
