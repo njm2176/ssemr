@@ -370,6 +370,7 @@
                       }
                     ]
                   },
+                  "type": "obs",
                   "validators": [],
                   "hide": {
                     "hideWhenExpression": "familyMemberHIVStatus !== '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
