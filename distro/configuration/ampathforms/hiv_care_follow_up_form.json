@@ -36,7 +36,6 @@
               "label": "Date scheduled /Visit Date",
               "type": "obs",
               "required": true,
-              "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('494915d8-4cf3-4c24-9efa-371710992cb3')) ? undefined : HD.getObject('prevEnc').getValue('494915d8-4cf3-4c24-9efa-371710992cb3')",
               "id": "dateScheduled",
               "questionOptions": {
                 "rendering": "date",
@@ -100,9 +99,7 @@
             {
               "label": "Weight (Kg)",
               "id": "weight",
-              "required": false,
-              "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')) ? undefined : HD.getObject('prevEnc').getValue('5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')",
-              "questionOptions": {
+              "required": false,"questionOptions": {
                 "concept": "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "numeric",
                 "calculate": {
@@ -116,7 +113,6 @@
               "label": "Height(cm)",
               "id": "height",
               "required": false,
-              "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')) ? undefined : HD.getObject('prevEnc').getValue('5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')",
               "questionOptions": {
                 "answers": [],
                 "concept": "5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
@@ -465,7 +461,6 @@
               "type": "obs",
               "required": false,
               "id": "tbNumber",
-              "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('6cc3d304-26b5-43e1-951a-8a94a30841da')) ? undefined : HD.getObject('prevEnc').getValue('6cc3d304-26b5-43e1-951a-8a94a30841da')",
               "questionOptions": {
                 "rendering": "text",
                 "concept": "6cc3d304-26b5-43e1-951a-8a94a30841da"
@@ -933,7 +928,6 @@
               "type": "obs",
               "id": "cxrResult",
               "required": false,
-              "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('7c679f4f-cae6-43ba-bf18-0f3bd9f060a8')) ? undefined : HD.getObject('prevEnc').getValue('7c679f4f-cae6-43ba-bf18-0f3bd9f060a8')",
               "questionOptions": {
                 "concept": "7c679f4f-cae6-43ba-bf18-0f3bd9f060a8",
                 "rendering": "select",
@@ -978,7 +972,6 @@
               "type": "obs",
               "id": "geneXpertResult",
               "required": false,
-              "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('c2f01b10-1b5e-485a-a352-05788359d881')) ? undefined : HD.getObject('prevEnc').getValue('c2f01b10-1b5e-485a-a352-05788359d881')",
               "questionOptions": {
                 "concept": "c2f01b10-1b5e-485a-a352-05788359d881",
                 "rendering": "radio",
@@ -1002,7 +995,6 @@
               "type": "obs",
               "id": "tbDiagnosed",
               "required": false,
-              "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('3109983a-98af-4017-a16b-e3bac0c48d25')) ? undefined : HD.getObject('prevEnc').getValue('3109983a-98af-4017-a16b-e3bac0c48d25')",
               "questionOptions": {
                 "concept": "3109983a-98af-4017-a16b-e3bac0c48d25",
                 "rendering": "radio",
@@ -1220,7 +1212,6 @@
               "label": "WHO Stage",
               "id": "whoStage",
               "required": true,
-              "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('e38e6ce2-92d9-4382-927b-5555ff9fa850')) ? undefined : HD.getObject('prevEnc').getValue('e38e6ce2-92d9-4382-927b-5555ff9fa850')",
               "questionOptions": {
                 "concept": "e38e6ce2-92d9-4382-927b-5555ff9fa850",
                 "rendering": "select",
@@ -1291,7 +1282,6 @@
               "type": "obs",
               "required": false,
               "id": "adherenceCTX",
-              "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('e360501a-123a-4efb-93ef-4dc19d031921')) ? undefined : HD.getObject('prevEnc').getValue('e360501a-123a-4efb-93ef-4dc19d031921')",
               "questionOptions": {
                 "rendering": "radio",
                 "concept": "e360501a-123a-4efb-93ef-4dc19d031921",
@@ -1616,7 +1606,6 @@
               "type": "obs",
               "required": false,
               "id": "clientDapsone",
-              "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('0cb0b2c1-6609-4d98-9ebf-72ba3f33118d')) ? undefined : HD.getObject('prevEnc').getValue('0cb0b2c1-6609-4d98-9ebf-72ba3f33118d')",
               "questionOptions": {
                 "rendering": "radio",
                 "concept": "0cb0b2c1-6609-4d98-9ebf-72ba3f33118d",
@@ -1661,7 +1650,6 @@
               "type": "obs",
               "required": false,
               "id": "adherenceDapsone",
-              "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('6d125568-df84-430b-92c7-21402e80ce14')) ? undefined : HD.getObject('prevEnc').getValue('6d125568-df84-430b-92c7-21402e80ce14')",
               "questionOptions": {
                 "rendering": "radio",
                 "concept": "6d125568-df84-430b-92c7-21402e80ce14",
@@ -2342,7 +2330,6 @@
               "type": "obs",
               "required": true,
               "id": "adherenceARV",
-              "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('e126652c-8d02-4c4b-a49d-5bac03eb4d03')) ? undefined : HD.getObject('prevEnc').getValue('e126652c-8d02-4c4b-a49d-5bac03eb4d03')",
               "questionOptions": {
                 "rendering": "radio",
                 "concept": "e126652c-8d02-4c4b-a49d-5bac03eb4d03",
