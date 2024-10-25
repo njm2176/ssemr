@@ -38,7 +38,6 @@
 							"label": "ARV regimen",
 							"type": "obs",
 							"id": "arvRegimen",
-							"historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('23322fd6-3dbb-410e-8bee-6210dfcd5f71')) ? undefined : HD.getObject('prevEnc').getValue('23322fd6-3dbb-410e-8bee-6210dfcd5f71')",
 							"questionOptions": {
 								"concept": "23322fd6-3dbb-410e-8bee-6210dfcd5f71",
 								"rendering": "select",

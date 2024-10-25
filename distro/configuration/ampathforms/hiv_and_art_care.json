@@ -1154,7 +1154,6 @@
                 "concept": "436e5ca5-a5ad-42e3-9a73-4325b82693ca",
                 "rendering": "date"
               },
-              "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('436e5ca5-a5ad-42e3-9a73-4325b82693ca')) ? undefined : HD.getObject('prevEnc').getValue('436e5ca5-a5ad-42e3-9a73-4325b82693ca')",
               "type": "obs",
               "validators": [
                 {
@@ -1167,7 +1166,6 @@
               "label": "Initial ART regimen",
               "id": "intialArtRegimen",
               "required": true,
-              "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('23322fd6-3dbb-410e-8bee-6210dfcd5f71')) ? undefined : HD.getObject('prevEnc').getValue('23322fd6-3dbb-410e-8bee-6210dfcd5f71')",
               "questionOptions": {
                 "concept": "23322fd6-3dbb-410e-8bee-6210dfcd5f71",
                 "rendering": "select",
