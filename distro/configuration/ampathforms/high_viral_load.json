@@ -591,29 +591,6 @@
 								"answers": []
 							},
 							"validators": []
-						},
-						{
-							"label": "Pill percentage",
-							"type": "obs",
-							"required": false,
-							"id": "pillPercentage",
-							"questionOptions": {
-								"rendering": "number",
-								"concept": "4ba12b8a-72a4-4135-8c06-be72532b7650",
-								"min": 0,
-								"conceptMappings": [],
-								"answers": [],
-								"calculate": {
-									"calculateExpression": "Number(pillIntake) ? Math.floor((Number(pillIntake) / 30) * 100) : 0"
-								}
-							},
-							"validators": [
-								{
-									"type": "js_expression",
-									"failsWhenExpression": "(function() { var intake = Number(pillIntake); var percentage = (intake / 30) * 100;  return  !isNaN(intake) && (percentage < 0 || percentage > 100); })()",
-									"message": "Pill percentage must be between 0 and 100."
-								}
-							]
 						}
 					]
 				},
@@ -920,13 +897,13 @@
 								"conceptMappings": [],
 								"answers": [],
 								"calculate": {
-									"calculateExpression": "Number(secondEacPillIntake) ?  Math.floor((Number(secondEacPillIntake) / 30) * 100) : 0"
+									"calculateExpression": "Number(secondEacPillIntake) ?  Math.floor((Number(secondEacPillIntake) / (pillIntake)) * 100) : 0"
 								}
 							},
 							"validators": [
 								{
 									"type": "js_expression",
-									"failsWhenExpression": "(function() { var intake = Number(secondEacPillIntake); var percentage = (intake / 30) * 100;  return  !isNaN(intake) && (percentage < 0 || percentage > 100); })()",
+									"failsWhenExpression": "(function() { var intake = Number(secondEacPillIntake); var percentage = (intake / pillIntake) * 100;  return  !isNaN(intake) && (percentage < 0 || percentage > 100); })()",
 									"message": "Pill percentage must be between 0 and 100."
 								}
 							]
@@ -1236,13 +1213,13 @@
 								"conceptMappings": [],
 								"answers": [],
 								"calculate": {
-									"calculateExpression": "Number(thirdEacPillIntake) ? Math.floor((Number(thirdEacPillIntake) / 30) * 100) : 0"
+									"calculateExpression": "Number(thirdEacPillIntake) ? Math.floor((Number(thirdEacPillIntake) / (pillIntake)) * 100) : 0"
 								}
 							},
 							"validators": [
 								{
 									"type": "js_expression",
-									"failsWhenExpression": "(function() { var intake = Number(thirdEacPillIntake); var percentage = (intake / 30) * 100;  return  !isNaN(intake) && (percentage < 0 || percentage > 100); })()",
+									"failsWhenExpression": "(function() { var intake = Number(thirdEacPillIntake); var percentage = (intake / pillIntake) * 100;  return  !isNaN(intake) && (percentage < 0 || percentage > 100); })()",
 									"message": "Pill percentage must be between 0 and 100."
 								}
 							]
