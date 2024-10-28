@@ -59,6 +59,26 @@
               }
             },
             {
+              "label": "At Start of ART Date",
+              "id": "mileStonesDate",
+              "required": true,
+              "questionOptions": {
+                "answers": [],
+                "concept": "73779d67-7e8f-46fe-b723-8879838da5f8",
+                "calculate": {
+                  "calculateExpression": "api.getLatestObs(patient.id, '73779d67-7e8f-46fe-b723-8879838da5f8', '0e9f540d-92cb-43c9-a95c-9407f5bf3f2a').then(obs => obs.valueString)"
+                },
+                "rendering": "date"
+              },
+              "type": "obs",
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ]
+            },
+            {
               "label": "Duration in months since first starting ART",
               "required": true,
               "type": "obs",
@@ -67,6 +87,9 @@
                 "rendering": "numeric",
                 "concept": "a8dd544d-fe87-4ff1-9911-6acdc6847d21",
                 "min": 0,
+                "calculate": {
+                  "calculateExpression": "((new Date(dateScheduled).getFullYear() - new Date(mileStonesDate).getFullYear()) * 12) + (new Date(dateScheduled).getMonth() - new Date(mileStonesDate).getMonth())"
+                },
                 "isSimpleValue": true
               },
               "validators": [
@@ -78,6 +101,19 @@
               ]
             },
             {
+              "label": "Date of Initiation of Current Regimen",
+              "type": "obs",
+              "required": false,
+              "id": "dateInitiateReg",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "30f1f347-d72c-4920-9962-6d55d138e8e5",
+                "conceptMappings": [],
+                "answers": []
+              },
+              "validators": []
+            },
+            {
               "label": "Duration in months since starting current regimen",
               "required": true,
               "type": "obs",
@@ -86,6 +122,9 @@
                 "rendering": "numeric",
                 "concept": "e0e2acbe-f88b-4710-adbd-08637d80ea97",
                 "min": 0,
+                "calculate": {
+                  "calculateExpression": "((new Date(dateScheduled).getFullYear() - new Date(dateInitiateReg).getFullYear()) * 12) + (new Date(dateScheduled).getMonth() - new Date(dateInitiateReg).getMonth())"
+                },
                 "isSimpleValue": true
               },
               "validators": [
@@ -99,7 +138,8 @@
             {
               "label": "Weight (Kg)",
               "id": "weight",
-              "required": false,"questionOptions": {
+              "required": false,
+              "questionOptions": {
                 "concept": "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "numeric",
                 "calculate": {
@@ -616,9 +656,6 @@
               "questionOptions": {
                 "concept": "9a1a731e-937b-46fe-aca2-acf83a326b71",
                 "rendering": "select",
-                "calculate": {
-                  "calculateExpression": "isEmpty(coughDuration) && isEmpty(feverIsh) && isEmpty(WeightLossGain) && isEmpty(nightSweats) && isEmpty(contacTbCase) ? '283858ee-c0b7-4691-ad6e-0785e9b737f4' : coughDuration === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || feverIsh === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || WeightLossGain === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || nightSweats === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || contacTbCase === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' ? '4897c2f3-9d36-4d6c-bf5a-780db6b4ab12' : '33475272-c82b-4476-b6a2-1908d532af8f'"
-                },
                 "answers": [
                   {
                     "concept": "33475272-c82b-4476-b6a2-1908d532af8f",
@@ -640,17 +677,17 @@
                     "concept": "283858ee-c0b7-4691-ad6e-0785e9b737f4",
                     "label": "ND - TB Screening not done"
                   }
-                ]
-              },
-              "validators": [
-                {
-                  "type": "js_expression",
-                  "failsWhenExpression": "TBStatus === '4897c2f3-9d36-4d6c-bf5a-780db6b4ab12' && coughDuration === '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || feverIsh === '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || WeightLossGain === '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || nightSweats === '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || contacTbCase === '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'",
-                  "message": "can’t be on presumptive TB without signs"
+                ],
+                "calculate": {
+                  "calculateExpression": "isEmpty(coughDuration) && isEmpty(feverIsh) && isEmpty(WeightLossGain) && isEmpty(nightSweats) && isEmpty(contacTbCase) ? '283858ee-c0b7-4691-ad6e-0785e9b737f4' : coughDuration === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || feverIsh === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || WeightLossGain === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || nightSweats === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || contacTbCase === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' ? '4897c2f3-9d36-4d6c-bf5a-780db6b4ab12' : '33475272-c82b-4476-b6a2-1908d532af8f'"
                 }
-              ],
+              },
               "hide": {
                 "hideWhenExpression": "currentlyOnTBTreatment !== '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              },
+              "alert": {
+                "alertWhenExpression": "TBStatus === '4897c2f3-9d36-4d6c-bf5a-780db6b4ab12' && coughDuration === '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || feverIsh === '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || WeightLossGain === '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || nightSweats === '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || contacTbCase === '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'",
+                "message": "can’t be on presumptive TB without signs"
               }
             },
             {
