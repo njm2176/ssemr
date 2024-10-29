@@ -37,6 +37,7 @@
               "type": "obs",
               "required": true,
               "id": "dateScheduled",
+              "historicalExpression": "HD.getObject('prevEnc')?.getValue('494915d8-4cf3-4c24-9efa-371710992cb3') || ''",
               "questionOptions": {
                 "rendering": "date",
                 "concept": "494915d8-4cf3-4c24-9efa-371710992cb3"
@@ -62,6 +63,7 @@
               "label": "At Start of ART Date",
               "id": "mileStonesDate",
               "required": true,
+              "historicalExpression": "HD.getObject('prevEnc')?.getValue('73779d67-7e8f-46fe-b723-8879838da5f8') || ''",
               "questionOptions": {
                 "answers": [],
                 "concept": "73779d67-7e8f-46fe-b723-8879838da5f8",
@@ -105,6 +107,7 @@
               "type": "obs",
               "required": false,
               "id": "dateInitiateReg",
+              "historicalExpression": "HD.getObject('prevEnc')?.getValue('30f1f347-d72c-4920-9962-6d55d138e8e5') || ''",
               "questionOptions": {
                 "rendering": "date",
                 "concept": "30f1f347-d72c-4920-9962-6d55d138e8e5",
@@ -139,6 +142,7 @@
               "label": "Weight (Kg)",
               "id": "weight",
               "required": false,
+              "historicalExpression": "HD.getObject('prevEnc')?.getValue('5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA') || ''",
               "questionOptions": {
                 "concept": "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "numeric",
@@ -153,6 +157,7 @@
               "label": "Height(cm)",
               "id": "height",
               "required": false,
+              "historicalExpression": "HD.getObject('prevEnc')?.getValue('5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA') || ''",
               "questionOptions": {
                 "answers": [],
                 "concept": "5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
@@ -454,6 +459,7 @@
               "type": "obs",
               "required": true,
               "id": "currentlyOnTBTreatment",
+              "historicalExpression": "HD.getObject('prevEnc')?.getValue('58ab89cd-6674-480b-95a0-5b761b0275cb') || ''",
               "questionOptions": {
                 "rendering": "select",
                 "concept": "58ab89cd-6674-480b-95a0-5b761b0275cb",
@@ -1294,6 +1300,7 @@
               "type": "obs",
               "required": false,
               "id": "clientCTX",
+              "historicalExpression": "HD.getObject('prevEnc')?.getValue('6e259aec-edea-4ee0-8aa8-4e03f266cd60') || ''",
               "questionOptions": {
                 "rendering": "radio",
                 "concept": "6e259aec-edea-4ee0-8aa8-4e03f266cd60",
@@ -1319,6 +1326,7 @@
               "type": "obs",
               "required": false,
               "id": "adherenceCTX",
+              "historicalExpression": "HD.getObject('prevEnc')?.getValue('e360501a-123a-4efb-93ef-4dc19d031921') || ''",
               "questionOptions": {
                 "rendering": "radio",
                 "concept": "e360501a-123a-4efb-93ef-4dc19d031921",
@@ -1521,6 +1529,7 @@
               "label": "Number of Days Dispensed",
               "required": false,
               "id": "artRegimenNoOfDaysDispensedCTX",
+              "historicalExpression": "HD.getObject('prevEnc')?.getValue('417625de-7d5e-45e4-bec7-60d72c94e657') || ''",
               "questionOptions": {
                 "rendering": "select",
                 "concept": "417625de-7d5e-45e4-bec7-60d72c94e657",
@@ -1643,6 +1652,7 @@
               "type": "obs",
               "required": false,
               "id": "clientDapsone",
+              "historicalExpression": "HD.getObject('prevEnc')?.getValue('0cb0b2c1-6609-4d98-9ebf-72ba3f33118d') || ''",
               "questionOptions": {
                 "rendering": "radio",
                 "concept": "0cb0b2c1-6609-4d98-9ebf-72ba3f33118d",
@@ -1668,6 +1678,7 @@
               "type": "obs",
               "required": false,
               "id": "dateStartedDapsone",
+              "historicalExpression": "HD.getObject('prevEnc')?.getValue('d8a05f0f-3a39-4338-b40e-45567d5fd406') || ''",
               "questionOptions": {
                 "rendering": "date",
                 "concept": "d8a05f0f-3a39-4338-b40e-45567d5fd406"
@@ -1687,6 +1698,7 @@
               "type": "obs",
               "required": false,
               "id": "adherenceDapsone",
+              "historicalExpression": "HD.getObject('prevEnc')?.getValue('6d125568-df84-430b-92c7-21402e80ce14') || ''",
               "questionOptions": {
                 "rendering": "radio",
                 "concept": "6d125568-df84-430b-92c7-21402e80ce14",
@@ -1888,6 +1900,7 @@
               "label": "Number of Days Dispensed",
               "required": false,
               "id": "artRegimenNoOfDaysDispensedDapsone",
+              "historicalExpression": "HD.getObject('prevEnc')?.getValue('4ab28128-7ef3-452d-86d5-73561761b08a') || ''",
               "questionOptions": {
                 "rendering": "select",
                 "concept": "4ab28128-7ef3-452d-86d5-73561761b08a",
@@ -2252,6 +2265,7 @@
               "label": "Number of Days Dispensed",
               "required": true,
               "id": "artRegimenNoOfDaysDispensed",
+              "historicalExpression": "HD.getObject('prevEnc')?.getValue('417625de-7d5e-45e4-bec7-60d72c94e657') || ''",
               "questionOptions": {
                 "rendering": "select",
                 "concept": "417625de-7d5e-45e4-bec7-60d72c94e657",
@@ -2367,6 +2381,7 @@
               "type": "obs",
               "required": true,
               "id": "adherenceARV",
+              "historicalExpression": "HD.getObject('prevEnc')?.getValue('e126652c-8d02-4c4b-a49d-5bac03eb4d03') || ''",
               "questionOptions": {
                 "rendering": "radio",
                 "concept": "e126652c-8d02-4c4b-a49d-5bac03eb4d03",
