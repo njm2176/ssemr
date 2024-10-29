@@ -27,7 +27,7 @@
     "@ssemr/esm-reports-dashboard":"next",
     "@ssemr/esm-patient-registration-app": "1.6.4",
     "@ssemr/esm-patient-hiv-art-app": "6.2.6",
-    "@ssemr/esm-patient-summary-app": "1.2.8",
+    "@ssemr/esm-patient-summary-app": "next",
     "@ssemr/esm-patient-list-management-app": "1.4.3",
     "@ssemr/esm-login-app": "1.0.1",
     "@ssemr/esm-patient-flags-app": "1.0.2",
