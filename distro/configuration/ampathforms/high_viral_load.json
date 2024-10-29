@@ -239,6 +239,7 @@
 							"label": "Date of Initiation:",
 							"type": "obs",
 							"id": "dateInitiation",
+							"historicalExpression": "HD.getObject('prevEnc')?.getValue('30f1f347-d72c-4920-9962-6d55d138e8e5') || ''",
 							"questionOptions": {
 								"concept": "30f1f347-d72c-4920-9962-6d55d138e8e5",
 								"rendering": "date",
