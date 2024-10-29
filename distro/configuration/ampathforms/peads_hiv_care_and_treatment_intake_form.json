@@ -736,6 +736,7 @@
 							"type": "obs",
 							"required": false,
 							"id": "weight",
+							"historicalExpression": "HD.getObject('prevEnc')?.getValue('5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA') || ''",
 							"questionOptions": {
 								"rendering": "number",
 								"concept": "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
@@ -756,6 +757,7 @@
 							"type": "obs",
 							"required": false,
 							"id": "height",
+							"historicalExpression": "HD.getObject('prevEnc')?.getValue('5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA') || ''",
 							"questionOptions": {
 								"rendering": "number",
 								"concept": "5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
@@ -1941,6 +1943,7 @@
 							"type": "obs",
 							"required": false,
 							"id": "whoClinicalStage",
+							"historicalExpression": "HD.getObject('prevEnc')?.getValue('a90652b2-f2c7-471f-a287-64495d2a6791') || ''",
 							"questionOptions": {
 								"rendering": "select",
 								"concept": "a90652b2-f2c7-471f-a287-64495d2a6791",
