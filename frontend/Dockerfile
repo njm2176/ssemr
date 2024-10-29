@@ -20,7 +20,7 @@ RUN npx --legacy-peer-deps openmrs@${APP_SHELL_VERSION:-next} build --build-conf
 # Copying required files
 RUN echo "Copying required files ..." && \
     cp ./assets/login-icon.png ./spa && \
-    cp ./assets/primary-navigation.jpg ./spa && \&& \
+    cp ./assets/primary-navigation.png ./spa && \&& \
     cp ./assets/favicon.ico ./spa && \
     cp spa-build-config.json ./spa
 
