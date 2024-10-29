@@ -64,6 +64,12 @@ Index - Family Member Sex (Close Members);
 Family Member - Relationship;
 Index - Family Member HIV Status (Close Members);
 Family Member,Phone Number;
+Family Member Phone Number;
+HIV status during mapping;
+Date Tested HIV;
+HTS Tested?;
+Result of HTS;
+Is Family Member in ART Care?;
 Index - Family Member Unique ART No/HEI No (Close Members)",Close Family Members (Index Family Members),,Misc,N/A,,
 3480554d-fd52-462d-b3fd-e1c551d6a3eb,,"Index - Family Member Name (Close Members);
 Index - Family Member Age (Close Members);
