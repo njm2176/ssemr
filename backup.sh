@@ -11,7 +11,7 @@ fi
 # Variables
 BACKUP_DIR="/opt"
 DATE=$(date +%d%m%Y_%H%M%S)
-BACKUP_FILE="SSEMR_DATA_BACKUP_${DATE}.sql"
+BACKUP_FILE="${FACILITY_NAME}_DATA_BACKUP_${DATE}.sql"
 LOCAL_DIR="$HOME/Data_Backup"
 
 # Check Docker container status
@@ -38,7 +38,7 @@ if [ ! -d "$LOCAL_DIR" ]; then
 fi
 
 # Identify the latest backup file with the correct naming pattern
-LATEST_BACKUP=$(sudo docker exec $DB_CONTAINER ls -t $BACKUP_DIR | grep -E "^SSEMR_DATA_BACKUP_[0-9]{8}_[0-9]{6}\.sql$" | head -n 1)
+LATEST_BACKUP=$(sudo docker exec $DB_CONTAINER ls -t $BACKUP_DIR | grep -E "^${FACILITY_NAME}_DATA_BACKUP_[0-9]{8}_[0-9]{6}\.sql$" | head -n 1)
 
 # Check if the latest backup file was identified correctly
 if [ -z "$LATEST_BACKUP" ]; then
