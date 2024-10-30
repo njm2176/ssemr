@@ -64,10 +64,11 @@
       }
     }
   },
-  "@ssemr/esm-appointments-app": {
+  "@openmrs/esm-appointments-app": {
     "Translation overrides": {
       "en": {
-        "Appointments": "Appointment Logs"
+        "Appointments": "Appointment Logs",
+        "appointments": "Appointment Logs"
       }
     }
   },
