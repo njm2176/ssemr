@@ -3,7 +3,6 @@
 	"description": "High viral load form",
 	"version": "1.0.0",
 	"published": true,
-	"uuid": "",
 	"retired": false,
 	"encounter": "High Viral Load",
 	"pages": [
@@ -1503,5 +1502,6 @@
 	],
 	"processor": "EncounterFormProcessor",
 	"referencedForms": [],
-	"encounterType": "f7f1c854-69e5-11ee-8c99-0242ac120002"
+	"encounterType": "f7f1c854-69e5-11ee-8c99-0242ac120002",
+	"uuid": ""
 }
