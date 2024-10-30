@@ -736,7 +736,6 @@
 							"type": "obs",
 							"required": false,
 							"id": "weight",
-							"historicalExpression": "HD.getObject('prevEnc')?.getValue('5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA') || ''",
 							"questionOptions": {
 								"rendering": "number",
 								"concept": "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
@@ -757,7 +756,6 @@
 							"type": "obs",
 							"required": false,
 							"id": "height",
-							"historicalExpression": "HD.getObject('prevEnc')?.getValue('5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA') || ''",
 							"questionOptions": {
 								"rendering": "number",
 								"concept": "5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
