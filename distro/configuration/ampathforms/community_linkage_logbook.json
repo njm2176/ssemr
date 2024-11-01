@@ -4,7 +4,6 @@
 	"description": "Community linkage",
 	"version": "1.0.0",
 	"published": true,
-	"uuid": "xxx",
 	"retired": false,
 	"encounter": "Community linkage",
 	"pages": [
@@ -145,5 +144,6 @@
 		}
 	],
 	"processor": "EncounterFormProcessor",
-	"encounterType": "3c2df02e-6856-11ee-8c99-0242ac120002"
+	"encounterType": "3c2df02e-6856-11ee-8c99-0242ac120002",
+	"uuid": "xxxx"
 }
