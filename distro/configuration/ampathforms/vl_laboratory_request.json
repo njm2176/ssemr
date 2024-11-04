@@ -588,7 +588,7 @@
 	"processor": "EncounterFormProcessor",
 	"encounterType": "82024e00-3f10-11e4-adec-0800271c1b75",
 	"referencedForms": [],
-	"uuid": "xxxx",
+	"uuid": "xxxxx",
 	"description": "VL Labaratory request form",
 	"version": "1.0.0"
 }

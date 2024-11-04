@@ -60,27 +60,6 @@
               }
             },
             {
-              "label": "At Start of ART Date",
-              "id": "mileStonesDate",
-              "required": true,
-              "historicalExpression": "HD.getObject('prevEnc')?.getValue('73779d67-7e8f-46fe-b723-8879838da5f8') || ''",
-              "questionOptions": {
-                "answers": [],
-                "concept": "73779d67-7e8f-46fe-b723-8879838da5f8",
-                "calculate": {
-                  "calculateExpression": "api.getLatestObs(patient.id, '73779d67-7e8f-46fe-b723-8879838da5f8', '0e9f540d-92cb-43c9-a95c-9407f5bf3f2a').then(obs => obs.valueString)"
-                },
-                "rendering": "date"
-              },
-              "type": "obs",
-              "validators": [
-                {
-                  "type": "date",
-                  "allowFutureDates": "false"
-                }
-              ]
-            },
-            {
               "label": "Duration in months since first starting ART",
               "required": true,
               "type": "obs",
@@ -88,36 +67,13 @@
               "questionOptions": {
                 "rendering": "numeric",
                 "concept": "a8dd544d-fe87-4ff1-9911-6acdc6847d21",
-                "min": 0,
-                "calculate": {
-                  "calculateExpression": "((new Date(dateScheduled).getFullYear() - new Date(mileStonesDate).getFullYear()) * 12) + (new Date(dateScheduled).getMonth() - new Date(mileStonesDate).getMonth())"
-                },
-                "isSimpleValue": true
+                "min": 0
               },
               "validators": [
                 {
                   "type": "js_expression",
                   "failsWhenExpression": "isEmpty(durationDaysStartingArt) || durationDaysStartingArt < 0",
                   "message": "Duration in months since first starting ART cannot be less than 0"
-                }
-              ]
-            },
-            {
-              "label": "Date of Initiation of Current Regimen",
-              "type": "obs",
-              "required": false,
-              "id": "dateInitiateReg",
-              "historicalExpression": "HD.getObject('prevEnc')?.getValue('30f1f347-d72c-4920-9962-6d55d138e8e5') || ''",
-              "questionOptions": {
-                "rendering": "date",
-                "concept": "30f1f347-d72c-4920-9962-6d55d138e8e5",
-                "conceptMappings": [],
-                "answers": []
-              },
-              "validators": [
-                {
-                  "type": "date",
-                  "allowFutureDates": "false"
                 }
               ]
             },
@@ -129,11 +85,7 @@
               "questionOptions": {
                 "rendering": "numeric",
                 "concept": "e0e2acbe-f88b-4710-adbd-08637d80ea97",
-                "min": 0,
-                "calculate": {
-                  "calculateExpression": "((new Date(dateScheduled).getFullYear() - new Date(dateInitiateReg).getFullYear()) * 12) + (new Date(dateScheduled).getMonth() - new Date(dateInitiateReg).getMonth())"
-                },
-                "isSimpleValue": true
+                "min": 0
               },
               "validators": [
                 {
@@ -3686,5 +3638,5 @@
   "referencedForms": [],
   "description": "HIV Care Follow Up",
   "encounterType": "e8481555-9dd1-4bb5-ba8c-cb721dafb166",
-  "uuid": "xxxx"
+  "uuid": "xxxxx"
 }

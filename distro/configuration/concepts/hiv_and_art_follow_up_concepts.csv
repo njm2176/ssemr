@@ -662,7 +662,7 @@ d56d2c1a-d385-4b75-bfec-a548f286d3c4,,TPT Dispensed?,TPT Dispensed?,,,,,Question
 150 Pills;
 180 Pills;
 180+ Pills"
-8a6393a5-550e-4b6c-90e7-82ac8db39952,,Specify Number of Pills,Specify Number of Pills,,,,,Question,Numeric,
+8a6393a5-550e-4b6c-90e7-82ac8db39952,,Specify Number of Pills,Specify Number of Pill,,,,,Question,Numeric,
 57c785e4-3552-455f-8506-4776987b4801,,Client Finished TPT?,Client Finished TPT?,,,,,Question,Coded,Yes; No
 b236df66-d1af-40ad-ad12-66c9f424dba6,,Date Given/Dispensed TPT,Date Given/Dispensed TPT,,,,,Question,Date,
 01c21238-6f58-4f8f-b0ef-b6554e427875,,Date Completed TPT,Date Completed TPT,,,,,Question,Date,

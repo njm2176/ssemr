@@ -1393,7 +1393,7 @@
   "processor": "EncounterFormProcessor",
   "encounterType": "0e9f540d-92cb-43c9-a95c-9407f5bf3f2a",
   "referencedForms": [],
-  "uuid": "xxxx",
+  "uuid": "xxxxx",
   "description": "A form to capture HIV Care and ART card information",
   "version": "1.0.0"
 }
