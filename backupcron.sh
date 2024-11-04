@@ -76,6 +76,15 @@ else
   echo "Backup file copied to local directory $LOCAL_DIR." | tee -a /opt/ssemr/backup.log
 fi
 
+# Delete the backup file from the container
+/usr/bin/docker exec $DB_CONTAINER rm "$BACKUP_DIR/$LATEST_BACKUP"
+if [ $? -ne 0 ]; then
+  echo "Failed to delete backup file from Docker container $DB_CONTAINER." | tee -a /opt/ssemr/backup.log
+  exit 1
+else
+  echo "Backup file deleted from Docker container $DB_CONTAINER." | tee -a /opt/ssemr/backup.log
+fi
+
 # Send the backup file to the receiving server
 scp "$LOCAL_DIR/$LATEST_BACKUP" $REMOTE_USER@$REMOTE_HOST:$REMOTE_DIR
 if [ $? -ne 0 ]; then
