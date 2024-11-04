@@ -58,7 +58,7 @@ b497171e-0410-4d8d-bbd4-7e1a8f8b504e,,No,No,,,,,Misc,N/A,
 No"
 dc60a613-0676-410b-a3aa-54a9ccfa822f,,Is this section blank?,Is this section blank?,,,,,Question,Coded,"Yes ; 
 No"
-00757959-3ccf-4f86-b3e1-0a58080e5696,,Substitution Regimen(First Line),Substitution Regimen(First Line),,,,,Question,Coded,"Yes ; 
+00757959-3ccf-4f86-b3e1-0a58080e5696,,Substitution Regimen(Switch First Line),Substitution Regimen(First Line),,,,,Question,Coded,"Yes ; 
 No"
-a27d3702-8abc-48c0-a275-4981fe0d24ec,,Substitution Regimen(Second Line),Substitution Regimen(Second Line),,,,,Question,Coded,"Yes ; 
+a27d3702-8abc-48c0-a275-4981fe0d24ec,,Substitution Regimen(Switch Second Line),Substitution Regimen(Second Line),,,,,Question,Coded,"Yes ; 
 No"
