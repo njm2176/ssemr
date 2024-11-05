@@ -13,36 +13,18 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Date",
-              "type": "obs",
-              "required": false,
-              "id": "date",
-              "questionOptions": {
-                "rendering": "date",
-                "concept": "668cdec8-bc73-457d-9026-4c8946816611",
-                "conceptMappings": [],
-                "answers": []
-              },
-              "validators": []
-            },
-            {
-              "label": "Provider:",
-              "type": "obs",
-              "questionOptions": {
-                "rendering": "text",
-                "concept": "7f77c914-aff6-4378-ad07-755ccf99353a",
-                "conceptMappings": [],
-                "answers": []
-              },
-              "id": "encProvider"
-            },
-            {
-              "label": "Health Facility name:",
-              "type": "encounterLocation",
+              "label": "Visit Date",
+              "type": "encounterDatetime",
               "questionOptions": {
                 "rendering": "ui-select-extended"
               },
-              "id": "encLocation"
+              "id": "encDate",
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ]
             },
             {
               "label": "Date of Enrollment",
@@ -53,7 +35,10 @@
                 "rendering": "date",
                 "concept": "73779d67-7e8f-46fe-b723-8879838da5f8",
                 "conceptMappings": [],
-                "answers": []
+                "answers": [],
+                "calculate": {
+                  "calculateExpression": "api.getLatestObs(patient.id, '73779d67-7e8f-46fe-b723-8879838da5f8', '0e9f540d-92cb-43c9-a95c-9407f5bf3f2a').then(obs => obs.valueString)"
+                }
               },
               "validators": []
             }
@@ -65,7 +50,7 @@
       "label": "Past Medical History",
       "sections": [
         {
-          "label": "Past Medical History",
+          "label": "",
           "isExpanded": "true",
           "questions": [
             {
@@ -286,7 +271,7 @@
       "label": "Current Symptoms Screen",
       "sections": [
         {
-          "label": "Current Symptoms Screen",
+          "label": "",
           "isExpanded": "true",
           "questions": [
             {
@@ -702,12 +687,14 @@
               "type": "obs",
               "required": false,
               "id": "weightForBMI",
-              "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')) ? undefined : HD.getObject('prevEnc').getValue('5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')",
               "questionOptions": {
                 "rendering": "number",
                 "concept": "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "conceptMappings": [],
-                "answers": []
+                "answers": [],
+                "calculate": {
+                  "calculateExpression": "api.getLatestObs(patient.id, '5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA', '0e9f540d-92cb-43c9-a95c-9407f5bf3f2a').then(obs => obs.valueNumeric)"
+                }
               },
               "validators": [],
               "hide": {
@@ -719,12 +706,14 @@
               "type": "obs",
               "required": false,
               "id": "heightForBMI",
-              "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')) ? undefined : HD.getObject('prevEnc').getValue('5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')",
               "questionOptions": {
                 "rendering": "number",
                 "concept": "5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "conceptMappings": [],
-                "answers": []
+                "answers": [],
+                "calculate": {
+                  "calculateExpression": "api.getLatestObs(patient.id, '5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA', '0e9f540d-92cb-43c9-a95c-9407f5bf3f2a').then(obs => obs.valueNumeric)"
+                }
               },
               "validators": [],
               "hide": {
@@ -739,8 +728,6 @@
               "questionOptions": {
                 "rendering": "number",
                 "concept": "1342AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "min": 0,
-                "max": "100",
                 "calculate": {
                   "calculateExpression": "calcBMI(heightForBMI,weightForBMI)"
                 },
@@ -1358,7 +1345,7 @@
       "label": "WHO Clinical Staging",
       "sections": [
         {
-          "label": "WHO Clinical Staging",
+          "label": "",
           "isExpanded": "true",
           "questions": [
             {
@@ -1366,6 +1353,7 @@
               "type": "obs",
               "required": false,
               "id": "whoClinicalStage",
+              "historicalExpression": "HD.getObject('prevEnc')?.getValue('a90652b2-f2c7-471f-a287-64495d2a6791') || ''",
               "questionOptions": {
                 "rendering": "select",
                 "concept": "a90652b2-f2c7-471f-a287-64495d2a6791",
@@ -1643,6 +1631,6 @@
   "processor": "EncounterFormProcessor",
   "encounterType": "b645dbdd-7d58-41d4-9b11-eeff023b8ee5",
   "referencedForms": [],
-  "uuid": "7d6941dd-dda4-46c9-ae3a-2b938c9c34b4",
+  "uuid": "xxxxx",
   "description": "Adult and adolescent intake form"
 }

@@ -3,7 +3,6 @@
 	"description": "High viral load form",
 	"version": "1.0.0",
 	"published": true,
-	"uuid": "",
 	"retired": false,
 	"encounter": "High Viral Load",
 	"pages": [
@@ -11,40 +10,22 @@
 			"label": "High viral load form",
 			"sections": [
 				{
-					"label": "Visit details",
+					"label": "Visit Details",
 					"isExpanded": "true",
 					"questions": [
 						{
-							"label": "Date",
-							"type": "obs",
-							"required": false,
-							"id": "date",
-							"questionOptions": {
-								"rendering": "date",
-								"concept": "668cdec8-bc73-457d-9026-4c8946816611",
-								"conceptMappings": [],
-								"answers": []
-							},
-							"validators": []
-						},
-						{
-							"label": "Provider:",
-							"type": "obs",
-							"questionOptions": {
-								"rendering": "text",
-								"concept": "7f77c914-aff6-4378-ad07-755ccf99353a",
-								"conceptMappings": [],
-								"answers": []
-							},
-							"id": "encProvider"
-						},
-						{
-							"label": "Location:",
-							"type": "encounterLocation",
+							"label": "Visit Date",
+							"type": "encounterDatetime",
 							"questionOptions": {
 								"rendering": "ui-select-extended"
 							},
-							"id": "encLocation"
+							"id": "encDate",
+							"validators": [
+								{
+									"type": "date",
+									"allowFutureDates": "false"
+								}
+							]
 						}
 					]
 				},
@@ -56,7 +37,6 @@
 							"label": "ARV regimen",
 							"type": "obs",
 							"id": "arvRegimen",
-							"historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('23322fd6-3dbb-410e-8bee-6210dfcd5f71')) ? undefined : HD.getObject('prevEnc').getValue('23322fd6-3dbb-410e-8bee-6210dfcd5f71')",
 							"questionOptions": {
 								"concept": "23322fd6-3dbb-410e-8bee-6210dfcd5f71",
 								"rendering": "select",
@@ -233,20 +213,22 @@
 										"label": "Other",
 										"concept": "b4d8805f-40ff-4c9d-9118-feeab45ad8be"
 									}
-								]
+								],
+								"calculate": {
+									"calculateExpression": "api.getLatestObs(patient.id, '23322fd6-3dbb-410e-8bee-6210dfcd5f71', '0e9f540d-92cb-43c9-a95c-9407f5bf3f2a').then(obs => obs.valueCodeableConcept?.coding[0]?.code)"
+								}
 							},
 							"validators": []
 						},
 						{
-							"label": "Other ARV Regimen Specify",
-							"id": "otherIArvRegimenSpecify",
-							"required": true,
-							"questionOptions": {
-								"answers": [],
-								"concept": "b0afac64-54b5-412c-86d0-7cf5dc6afb35",
-								"rendering": "Text"
-							},
+							"label": "Other Regimen",
 							"type": "obs",
+							"required": false,
+							"id": "otherSpecifyRegimen",
+							"questionOptions": {
+								"rendering": "text",
+								"concept": "2734f9fc-1bc5-473b-a58f-e2e6e79223d8"
+							},
 							"validators": [],
 							"hide": {
 								"hideWhenExpression": "arvRegimen !== 'b4d8805f-40ff-4c9d-9118-feeab45ad8be'"
@@ -256,9 +238,13 @@
 							"label": "Date of Initiation:",
 							"type": "obs",
 							"id": "dateInitiation",
+							"historicalExpression": "HD.getObject('prevEnc')?.getValue('30f1f347-d72c-4920-9962-6d55d138e8e5') || ''",
 							"questionOptions": {
 								"concept": "30f1f347-d72c-4920-9962-6d55d138e8e5",
-								"rendering": "date"
+								"rendering": "date",
+								"calculate": {
+									"calculateExpression": "api.getLatestObs(patient.id, '30f1f347-d72c-4920-9962-6d55d138e8e5', 'f469b65f-a4f6-4723-989a-46090de6a0e5').then(obs => obs.valueString)"
+								}
 							}
 						}
 					]
@@ -306,7 +292,10 @@
 										"concept": "831d263e-4dfb-4f05-bcfb-629961c07844",
 										"label": "Stage 4"
 									}
-								]
+								],
+								"calculate": {
+									"calculateExpression": "api.getLatestObs(patient.id, 'e38e6ce2-92d9-4382-927b-5555ff9fa850', '0e9f540d-92cb-43c9-a95c-9407f5bf3f2a').then(obs => obs.valueCodeableConcept?.coding[0]?.code)"
+								}
 							}
 						}
 					]
@@ -317,7 +306,7 @@
 			"label": "Enhanced adherence counselling",
 			"sections": [
 				{
-					"label": "Enhanced adherence counselling",
+					"label": "",
 					"isExpanded": "true",
 					"questions": [
 						{
@@ -602,29 +591,6 @@
 								"answers": []
 							},
 							"validators": []
-						},
-						{
-							"label": "Pill percentage",
-							"type": "obs",
-							"required": false,
-							"id": "pillPercentage",
-							"questionOptions": {
-								"rendering": "number",
-								"concept": "4ba12b8a-72a4-4135-8c06-be72532b7650",
-								"min": 0,
-								"conceptMappings": [],
-								"answers": [],
-								"calculate": {
-									"calculateExpression": "pillIntake ? Math.floor((pillIntake / 30) * 100) : 0"
-								}
-							},
-							"validators": [
-								{
-									"type": "js_expression",
-									"failsWhenExpression": "!isNaN(pillIntake) && (pillIntake / 30) * 100 < 0 || (pillIntake / 30) * 100 > 100",
-									"message": "Pill percentage must be between 0 and 100."
-								}
-							]
 						}
 					]
 				},
@@ -928,19 +894,14 @@
 								"rendering": "number",
 								"concept": "5ef9ac25-5db3-4e02-904b-3dce31dc0b06",
 								"min": 0,
+								"max": 100,
 								"conceptMappings": [],
 								"answers": [],
 								"calculate": {
-									"calculateExpression": "secondEacPillIntake ? Math.floor((secondEacPillIntake / 30) * 100) : 0"
+									"calculateExpression": "Number(secondEacPillIntake) ?  Math.floor((Number(secondEacPillIntake) / (pillIntake)) * 100) : 0"
 								}
 							},
-							"validators": [
-								{
-									"type": "js_expression",
-									"failsWhenExpression": "!isNaN(secondEacPillIntake) && (secondEacPillIntake / 30) * 100 < 0 || (secondEacPillIntake / 30) * 100 > 100",
-									"message": "Pill percentage must be between 0 and 100."
-								}
-							]
+							"validators": []
 						}
 					]
 				},
@@ -1244,19 +1205,15 @@
 								"rendering": "number",
 								"concept": "46c39500-d2d9-447a-a159-707ca3d61519",
 								"min": 0,
+								"max": 100,
 								"conceptMappings": [],
 								"answers": [],
+								"disallowDecimals": true,
 								"calculate": {
-									"calculateExpression": "thirdEacPillIntake ? Math.floor((thirdEacPillIntake / 30) * 100) : 0"
+									"calculateExpression": "Number(thirdEacPillIntake) ? Math.floor((Number(thirdEacPillIntake) / (pillIntake)) * 100) : 0"
 								}
 							},
-							"validators": [
-								{
-									"type": "js_expression",
-									"failsWhenExpression": "!isNaN(thirdEacPillIntake) && (thirdEacPillIntake / 30) * 100 < 0 || (thirdEacPillIntake / 30) * 100 > 100",
-									"message": "Pill percentage must be between 0 and 100."
-								}
-							]
+							"validators": []
 						}
 					]
 				}
@@ -1511,13 +1468,14 @@
 									}
 								]
 							},
-							"validators": [
-								{
-									"type": "js_expression",
-									"failsWhenExpression": "repeatVLResult >= 1000 && repeatVLRGreater !== 'edaf153d-70ff-44f2-8c6e-7242dfd36f5f' || repeatVLResult < 1000 && repeatVLRGreater !== 'ae23fa12-b7fc-49e0-be21-aa2f5bc32f97' ",
-									"message": "The viral load result doesnt match the result chosen"
-								}
-							]
+							"validators": [],
+							"alert": {
+								"alertWhenExpression": "repeatVLResult >= 1000 && repeatVLRGreater !== 'edaf153d-70ff-44f2-8c6e-7242dfd36f5f' || repeatVLResult < 1000 && repeatVLRGreater !== 'ae23fa12-b7fc-49e0-be21-aa2f5bc32f97' ",
+								"message": "The viral load result doesnt match the result chosen"
+							},
+							"hide": {
+								"hideWhenExpression": "isEmpty(repeatVLResult)"
+							}
 						},
 						{
 							"label": "Repeat Viral Load date",
@@ -1544,5 +1502,6 @@
 	],
 	"processor": "EncounterFormProcessor",
 	"referencedForms": [],
-	"encounterType": "f7f1c854-69e5-11ee-8c99-0242ac120002"
+	"encounterType": "f7f1c854-69e5-11ee-8c99-0242ac120002",
+	"uuid": "xxxxx"
 }

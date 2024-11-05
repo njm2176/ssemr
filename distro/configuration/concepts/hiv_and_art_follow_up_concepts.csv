@@ -179,7 +179,7 @@ d75c973c-06d4-43d2-a57d-6340fc8c0100,,Other ART Regimen,Other ART Regimen,,,,,Mi
 5i = ABC/3TC + LPV/r;
 5j = AZT/3TC (120/60)+DTG10;
 Other ART Regimen"
-b0afac64-54b5-412c-86d0-7cf5dc6afb35,,Other ART Regimen Specify,Other ART Regimen Specify,,,,,Question,Text,
+b0afac64-54b5-412c-86d0-7cf5dc6afb35,,Other Regimen Specify,Other Regimen Specify,Other Regimen Specify,,,,Question,Text,
 4ab28128-7ef3-452d-86d5-73561761b08a,,Number of Days Dispensed,Number of Days,Number of Days Dispensed,,,,Question,Numeric,
 fc684917-4deb-42cf-9245-8a13c6a232bc,,Date VL Sample Collected?,Date VL Sample Collected?,Date VL Sample Collected?,,,,Question,Date,
 62df0577-a1f7-493e-80d2-e458998f1a2f,,Below Detectable (BDL),Below Detectable (BDL),Below Detectable (BDL),,,,Misc,N/A,
@@ -662,7 +662,7 @@ d56d2c1a-d385-4b75-bfec-a548f286d3c4,,TPT Dispensed?,TPT Dispensed?,,,,,Question
 150 Pills;
 180 Pills;
 180+ Pills"
-8a6393a5-550e-4b6c-90e7-82ac8db39952,,Specify Number of Pills,Specify Number of Pills,,,,,Question,Numeric,
+8a6393a5-550e-4b6c-90e7-82ac8db39952,,Specify Number of Pills,Specify Number of Pill,,,,,Question,Numeric,
 57c785e4-3552-455f-8506-4776987b4801,,Client Finished TPT?,Client Finished TPT?,,,,,Question,Coded,Yes; No
 b236df66-d1af-40ad-ad12-66c9f424dba6,,Date Given/Dispensed TPT,Date Given/Dispensed TPT,,,,,Question,Date,
 01c21238-6f58-4f8f-b0ef-b6554e427875,,Date Completed TPT,Date Completed TPT,,,,,Question,Date,

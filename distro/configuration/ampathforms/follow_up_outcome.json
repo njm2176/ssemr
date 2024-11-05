@@ -8,6 +8,26 @@
       "label": "End of follow up",
       "sections": [
         {
+          "label": "Visit Details",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Visit Date",
+              "type": "encounterDatetime",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "encDate",
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ]
+            }
+          ]
+        },
+        {
           "label": "End of follow up",
           "isExpanded": "true",
           "questions": [
@@ -36,7 +56,7 @@
             {
               "label": "Date of death",
               "type": "obs",
-              "required": true,
+              "required": false,
               "id": "dateOfDeath",
               "questionOptions": {
                 "rendering": "date",
@@ -52,7 +72,7 @@
             {
               "label": "Cause of death",
               "type": "obs",
-              "required": true,
+              "required": false,
               "id": "causeOfDeath",
               "questionOptions": {
                 "rendering": "select",
@@ -89,7 +109,7 @@
             {
               "label": "Specify Other infectious and parasitic disease",
               "type": "obs",
-              "required": true,
+              "required": false,
               "id": "specifyOtherInfectiousDisease",
               "questionOptions": {
                 "rendering": "text",
@@ -176,7 +196,7 @@
             {
               "label": "Date client refused treatment",
               "type": "obs",
-              "required": true,
+              "required": false,
               "id": "dateClientRefusedTreatment",
               "questionOptions": {
                 "rendering": "date",
@@ -210,7 +230,7 @@
   "processor": "EncounterFormProcessor",
   "encounterType": "3bf40d2b-c8a2-4a7d-9da2-adb33860e0f8",
   "referencedForms": [],
-  "uuid": "61c0c516-f240-423f-8fc0-14e478809480",
+  "uuid": "xxxxx",
   "description": "End of follow up form",
   "version": "1.0.0"
 }

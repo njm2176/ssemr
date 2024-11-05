@@ -22,7 +22,7 @@
       "src": "/openmrs/spa/primary-navigation.png"
     }
   },
-  "@ssemr/esm-patient-chart-app": {
+  "@openmrs/esm-patient-chart-app": {
     "logo": {
       "src": "/openmrs/spa/primary-navigation.png"
     },
@@ -64,10 +64,11 @@
       }
     }
   },
-  "@ssemr/esm-appointments-app": {
+  "@openmrs/esm-appointments-app": {
     "Translation overrides": {
       "en": {
-        "Appointments": "Appointment Logs"
+        "Appointments": "Appointment Logs",
+        "appointments": "Appointment Logs"
       }
     }
   },
@@ -383,6 +384,37 @@
           }
         }
       }
+    }
+  },
+  "@openmrs/esm-patient-vitals-app": {
+    "vitals": {
+      "useFormEngine": true,
+      "formName": "F. 8 - Follow up",
+      "formUuid": "0ea6b2d5-28cc-3a65-9155-b60e0c09d118",
+      "encounterTypeUuid": "e8481555-9dd1-4bb5-ba8c-cb721dafb166"
+    },
+    "concepts": {
+      "systolicBloodPressureUuid": "5085AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "diastolicBloodPressureUuid": "5086AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "pulseUuid":"5087AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "temperatureUuid":"5088AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "oxygenSaturationUuid":"5092AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "heightUuid":"5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "weightUuid":"5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "respiratoryRateUuid":"5242AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "midUpperArmCircumferenceUuid":"1343AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "generalPatientNoteUuid": "160632AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    "Translation overrides": {
+      "en": {
+        "vitalsAndBiometrics": "Vitals & Biometrics",
+        "Vitals & Biometrics": "Vitals & Biometrics",
+        "biometricDisplayed": "Biometrics displayed",
+        "biometrics": "Biometrics"
+      }
+    },
+    "Display conditions": {
+      "privileges": ["View Vitals and Biometrics"]
     }
   }
 }
