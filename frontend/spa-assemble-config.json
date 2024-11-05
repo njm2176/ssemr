@@ -31,7 +31,8 @@
     "@ssemr/esm-patient-hiv-art-app": "6.2.9",
     "@ssemr/esm-patient-flags-app": "1.0.2",
     "@ssemr/esm-patient-list-management-app": "1.4.5",
-    "@ssemr/esm-reports-dashboard":"next"
+    "@ssemr/esm-reports-dashboard":"next",
+    "@ohri/openmrs-esm-ohri-form-render-app":"2.3.7-pre.507"
   },
   "excludedFrontendModules": []
 }
