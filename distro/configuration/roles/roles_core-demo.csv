@@ -16,3 +16,8 @@ fb393086-d6ec-4bcb-a300-5815a554c4ae,Application: Has Super User Privileges,Exte
 2749cd1b-251a-4d8b-bc35-0165f2b1af3e,Organizational: Nurse,Nurse,Application: Records Allergies; Application: Enters ADT Events; Application: Uses Patient Summary; Application: Enters Vitals,
 fab43ac4-79bc-4f3d-805b-bd3a82ce41e9,Organizational: Registration Clerk,Registration Clerk,Application: Registers Patients;,,
 2f087f90-9c47-4262-bfce-23c7862e727e,Organizational: System Administrator,System Administrator,Application: Configures Forms; Application: Configures Metadata; Application: Administers System,,
+b864b555-71e4-4d1b-a9ed-d8548a541b50,Organizational: Clinician, Application: Records Allergies; Application: Writes Clinical Notes; Application: Enters ADT Events; Application: Uses Patient Summary,,
+66ddc5dc-3ec9-4a5a-8a0c-e879e4a8f6ba,Organizational: EAC focal person, Application: Records Allergies; Application: Writes Clinical Notes; Application: Enters ADT Events; Application: Uses Patient Summary,,
+c6277bc2-5b37-430a-ace8-a349eecec046,Organizational: Above site staff (Supervisors), Application: Records Allergies; Application: Writes Clinical Notes; Application: Enters ADT Events; Application: Uses Patient Summary,,
+0b21e736-06cd-4c8a-a5a3-d3d8f89b5bf8,Organizational: Above site staff (Mentors), Application: Records Allergies; Application: Writes Clinical Notes; Application: Enters ADT Events; Application: Uses Patient Summary,,
+9262f16c-a76e-4a9f-a6a7-61afbabecb15, Organizational: Data Clerk, , Application: Records Allergies; Application: Writes Clinical Notes; Application: Enters ADT Events; Application: Uses Patient Summary,,
