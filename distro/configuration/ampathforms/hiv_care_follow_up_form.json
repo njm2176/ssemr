@@ -438,7 +438,10 @@
                   }
                 ]
               },
-              "validators": []
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "clientRepresented === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              }
             },
             {
               "label": "Date started on TB",
@@ -642,7 +645,7 @@
                   }
                 ],
                 "calculate": {
-                  "calculateExpression": "isEmpty(coughDuration) && isEmpty(feverIsh) && isEmpty(WeightLossGain) && isEmpty(nightSweats) && isEmpty(contacTbCase) ? '283858ee-c0b7-4691-ad6e-0785e9b737f4' : coughDuration === '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && feverIsh === '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && WeightLossGain === '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && nightSweats === '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' ? '33475272-c82b-4476-b6a2-1908d532af8f' : coughDuration !== '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || feverIsh !== '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || WeightLossGain !== '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || nightSweats !== '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' ? '4897c2f3-9d36-4d6c-bf5a-780db6b4ab12' : null "
+                  "calculateExpression": "isEmpty(coughDuration) && isEmpty(feverIsh) && isEmpty(WeightLossGain) && isEmpty(nightSweats) && isEmpty(contacTbCase) ? '283858ee-c0b7-4691-ad6e-0785e9b737f4' : coughDuration === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || feverIsh === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || WeightLossGain === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || nightSweats === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || contacTbCase === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' ? '4897c2f3-9d36-4d6c-bf5a-780db6b4ab12' : coughDuration !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && feverIsh !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && WeightLossGain !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && nightSweats !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && contacTbCase !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' ? '33475272-c82b-4476-b6a2-1908d532af8f' : null "
                 }
               },
               "hide": {
@@ -677,7 +680,7 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "coughDuration !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && feverIsh !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && WeightLossGain !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && nightSweats !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                "hideWhenExpression": "TBStatus !== '4897c2f3-9d36-4d6c-bf5a-780db6b4ab12'"
               }
             },
             {
@@ -702,7 +705,7 @@
               },
               "validators": [],
               "hide": {
-                "hideWhenExpression": "coughDuration !== '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && feverIsh !== '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && WeightLossGain !== '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && nightSweats !== '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                "hideWhenExpression": "TBStatus !== '33475272-c82b-4476-b6a2-1908d532af8f' || '8942c092-9ea4-4128-bade-060cd1a97c34' "
               }
             },
             {
