@@ -37,7 +37,7 @@
               "type": "obs",
               "required": true,
               "id": "dateScheduled",
-              "historicalExpression": "HD.getObject('prevEnc')?.getValue('494915d8-4cf3-4c24-9efa-371710992cb3') || ''",
+              "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('494915d8-4cf3-4c24-9efa-371710992cb3')) ? undefined : HD.getObject('prevEnc').getValue('494915d8-4cf3-4c24-9efa-371710992cb3')",
               "questionOptions": {
                 "rendering": "date",
                 "concept": "494915d8-4cf3-4c24-9efa-371710992cb3"
@@ -99,7 +99,7 @@
               "label": "Weight (Kg)",
               "id": "weight",
               "required": false,
-              "historicalExpression": "HD.getObject('prevEnc')?.getValue('5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA') || ''",
+              "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')) ? undefined : HD.getObject('prevEnc').getValue('5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')",
               "questionOptions": {
                 "concept": "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "numeric",
@@ -114,7 +114,7 @@
               "label": "Height(cm)",
               "id": "height",
               "required": false,
-              "historicalExpression": "HD.getObject('prevEnc')?.getValue('5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA') || ''",
+              "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')) ? undefined : HD.getObject('prevEnc').getValue('5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')",
               "questionOptions": {
                 "answers": [],
                 "concept": "5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
@@ -416,7 +416,7 @@
               "type": "obs",
               "required": true,
               "id": "currentlyOnTBTreatment",
-              "historicalExpression": "HD.getObject('prevEnc')?.getValue('58ab89cd-6674-480b-95a0-5b761b0275cb') || ''",
+              "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('58ab89cd-6674-480b-95a0-5b761b0275cb')) ? undefined : HD.getObject('prevEnc').getValue('58ab89cd-6674-480b-95a0-5b761b0275cb')",
               "questionOptions": {
                 "rendering": "select",
                 "concept": "58ab89cd-6674-480b-95a0-5b761b0275cb",
@@ -438,7 +438,10 @@
                   }
                 ]
               },
-              "validators": []
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "clientRepresented === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              }
             },
             {
               "label": "Date started on TB",
@@ -642,7 +645,7 @@
                   }
                 ],
                 "calculate": {
-                  "calculateExpression": "isEmpty(coughDuration) && isEmpty(feverIsh) && isEmpty(WeightLossGain) && isEmpty(nightSweats) && isEmpty(contacTbCase) ? '283858ee-c0b7-4691-ad6e-0785e9b737f4' : coughDuration === '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && feverIsh === '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && WeightLossGain === '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && nightSweats === '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' ? '33475272-c82b-4476-b6a2-1908d532af8f' : coughDuration !== '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || feverIsh !== '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || WeightLossGain !== '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || nightSweats !== '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' ? '4897c2f3-9d36-4d6c-bf5a-780db6b4ab12' : null "
+                  "calculateExpression": "isEmpty(coughDuration) && isEmpty(feverIsh) && isEmpty(WeightLossGain) && isEmpty(nightSweats) && isEmpty(contacTbCase) ? '283858ee-c0b7-4691-ad6e-0785e9b737f4' : coughDuration === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || feverIsh === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || WeightLossGain === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || nightSweats === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || contacTbCase === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' ? '4897c2f3-9d36-4d6c-bf5a-780db6b4ab12' : coughDuration !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && feverIsh !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && WeightLossGain !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && nightSweats !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && contacTbCase !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' ? '33475272-c82b-4476-b6a2-1908d532af8f' : null "
                 }
               },
               "hide": {
@@ -677,7 +680,7 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "coughDuration !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && feverIsh !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && WeightLossGain !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && nightSweats !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                "hideWhenExpression": "TBStatus !== '4897c2f3-9d36-4d6c-bf5a-780db6b4ab12'"
               }
             },
             {
@@ -702,7 +705,7 @@
               },
               "validators": [],
               "hide": {
-                "hideWhenExpression": "coughDuration !== '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && feverIsh !== '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && WeightLossGain !== '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && nightSweats !== '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                "hideWhenExpression": "TBStatus !== '33475272-c82b-4476-b6a2-1908d532af8f' || '8942c092-9ea4-4128-bade-060cd1a97c34' "
               }
             },
             {
@@ -1208,6 +1211,7 @@
               "label": "WHO Stage",
               "id": "whoStage",
               "required": true,
+              "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('e38e6ce2-92d9-4382-927b-5555ff9fa850')) ? undefined : HD.getObject('prevEnc').getValue('e38e6ce2-92d9-4382-927b-5555ff9fa850')",
               "questionOptions": {
                 "concept": "e38e6ce2-92d9-4382-927b-5555ff9fa850",
                 "rendering": "select",
@@ -1253,7 +1257,7 @@
               "type": "obs",
               "required": false,
               "id": "clientCTX",
-              "historicalExpression": "HD.getObject('prevEnc')?.getValue('6e259aec-edea-4ee0-8aa8-4e03f266cd60') || ''",
+              "historicalExpression": "HD.getObject('prevEnc')?.getValue('6e259aec-edea-4ee0-8aa8-4e03f266cd60') || undefined",
               "questionOptions": {
                 "rendering": "radio",
                 "concept": "6e259aec-edea-4ee0-8aa8-4e03f266cd60",
@@ -1603,7 +1607,7 @@
               "type": "obs",
               "required": false,
               "id": "clientDapsone",
-              "historicalExpression": "HD.getObject('prevEnc')?.getValue('0cb0b2c1-6609-4d98-9ebf-72ba3f33118d') || ''",
+              "historicalExpression": "HD.getObject('prevEnc')?.getValue('0cb0b2c1-6609-4d98-9ebf-72ba3f33118d') || undefined",
               "questionOptions": {
                 "rendering": "radio",
                 "concept": "0cb0b2c1-6609-4d98-9ebf-72ba3f33118d",
@@ -2213,7 +2217,7 @@
               "label": "Number of Days Dispensed",
               "required": true,
               "id": "artRegimenNoOfDaysDispensed",
-              "historicalExpression": "HD.getObject('prevEnc')?.getValue('417625de-7d5e-45e4-bec7-60d72c94e657') || ''",
+              "historicalExpression": "HD.getObject('prevEnc')?.getValue('417625de-7d5e-45e4-bec7-60d72c94e657') || undefined",
               "questionOptions": {
                 "rendering": "select",
                 "concept": "417625de-7d5e-45e4-bec7-60d72c94e657",
@@ -2329,7 +2333,7 @@
               "type": "obs",
               "required": true,
               "id": "adherenceARV",
-              "historicalExpression": "HD.getObject('prevEnc')?.getValue('e126652c-8d02-4c4b-a49d-5bac03eb4d03') || ''",
+              "historicalExpression": "HD.getObject('prevEnc')?.getValue('e126652c-8d02-4c4b-a49d-5bac03eb4d03') || undefined",
               "questionOptions": {
                 "rendering": "radio",
                 "concept": "e126652c-8d02-4c4b-a49d-5bac03eb4d03",
