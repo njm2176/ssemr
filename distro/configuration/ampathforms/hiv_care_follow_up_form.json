@@ -305,7 +305,7 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "sex === 'M' || age < 15"
+                "hideWhenExpression": "sex === 'M' || age < 15 || clientRepresented === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               },
               "validators": []
             },
@@ -371,7 +371,7 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "sex === 'M' || age < 15"
+                "hideWhenExpression": "sex === 'M' || age < 15 || clientRepresented === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               },
               "validators": []
             },
