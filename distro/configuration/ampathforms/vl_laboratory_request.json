@@ -283,7 +283,7 @@
 						},
 						{
 							"label": "VL Results",
-							"required": true,
+							"required": false,
 							"type": "obs",
 							"id": "ValueRepeatVL",
 							"questionOptions": {
@@ -339,7 +339,7 @@
 						},
 						{
 							"label": "VL Results",
-							"required": true,
+							"required": false,
 							"type": "obs",
 							"id": "valueTreatFailure",
 							"questionOptions": {
