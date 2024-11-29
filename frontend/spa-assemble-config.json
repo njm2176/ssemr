@@ -13,7 +13,6 @@
     "@openmrs/esm-openconceptlab-app": "next",
     "@openmrs/esm-patient-banner-app": "next",
     "@openmrs/esm-patient-flags-app": "next",
-    "@openmrs/esm-patient-forms-app": "next",
     "@openmrs/esm-patient-lists-app": "next",
     "@openmrs/esm-patient-notes-app": "next",
     "@openmrs/esm-patient-search-app": "next",
@@ -32,6 +31,7 @@
     "@ssemr/esm-patient-flags-app": "1.0.2",
     "@ssemr/esm-patient-list-management-app": "next",
     "@ssemr/esm-reports-dashboard":"next",
+    "@ssemr/esm-patient-forms-app": "next",
     "@ohri/openmrs-esm-ohri-form-render-app":"2.3.7-pre.507"
   },
   "excludedFrontendModules": []
