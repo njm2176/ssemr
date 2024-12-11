@@ -32,7 +32,9 @@ Sexual Partner Relationship;
 Other sexual Partner Relationship Specify;
 Sexual partner names ;
 Family Member names;
+Family Member age Known?;
 Family Member - Age ; 
+Family Member DOB;
 Sexual Partner - Age ; 
 Family Member - Sex ;
 Sexual Partner - Sex ; 
@@ -59,7 +61,9 @@ Unique ART No/HEI No",General Family Information,,Misc,N/A,,
 c2a6c127-e3ba-426f-a4ae-83713dde0736,,Family History Marital Status And Occupation ; General Family Information,HIV CARE - Family History Data,,Misc,N/A,,
 0ca3ffa7-0d29-4043-8b78-3dd40f5806d1,Yes ; No,,Drug Allergies,,Question,Coded,,
 1c0765df-7108-4353-9970-06cf3ce0782e,,"Index - Family Member Name (Close Members);
+Index Family Member age Known?
 Index - Family Member Age (Close Members);
+Index - Family Member DOB (Close Members);
 Index - Family Member Sex (Close Members);
 Family Member - Relationship;
 Index - Family Member HIV Status (Close Members);
@@ -72,7 +76,9 @@ Result of HTS;
 Is Family Member in ART Care?;
 Index - Family Member Unique ART No/HEI No (Close Members)",Index Family Member Information (Close Family),Index Family Member Information (Close Family),Misc,N/A,,
 3480554d-fd52-462d-b3fd-e1c551d6a3eb,,"Index - Family Member Name (Close Members);
+Index Family Member age Known?;
 Index - Family Member Age (Close Members);
+Index - Family Member DOB (Close Members);
 Index - Family Member Sex (Close Members);
 Family Member - Relationship;
 Family Member Phone Number;
@@ -84,3 +90,5 @@ HTS Tested?;
 Result of HTS;
 Is Family Member in ART Care?;
 Unique ART No/HEI No",Index-Family Information,Index-Family Information,Misc,N/A,,
+320d6da4-b148-4392-ab22-0564d898f9a1,Yes ; No,,Family Member age Known?,Family Member age Known?,Question,Coded,,
+5f047a36-063c-4ad5-bbb6-65641a37fe75,Yes ; No,,Index Family Member age Known?,,Question,Coded,,
