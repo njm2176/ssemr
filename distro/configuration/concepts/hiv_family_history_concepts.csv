@@ -41,6 +41,7 @@ e2f0fc53-de7a-48b7-88fb-1d2c93527829,,Sexual Partner Relationship,Relationship,S
 e916b8fb-f170-43ac-9583-c60504b1438d,,Is Sexual Partner in ART Care?,,,,,,Question,Boolean,
 15c72e37-bd8f-47ef-8f12-96e69e241b1a,,Family Member ART Number,,,,,,Question,Text,
 db25b3c5-10da-49a9-9137-cc8a2507585a,,Family Member - Age,Age,Family Member - Age,,,,Question,Numeric,
+c6bc4aaa-2389-43c7-b108-40b00abf80e3,,Family Member DOB,Family Member DOB,Family Member Date of Birth,,,,Question,Date,
 f33e32c4-34f9-40a6-97c9-090e6ae4dbaa,,Sexual Partner - Age,Age,,,,,Question,Numeric,
 544634f2-4c08-48b0-9b2b-35251189a59b,,Male,Male,Male,,,,Misc,N/A,
 e74aebd1-51b5-424f-b9f0-339fd8cd3588,,Female,Female,Female,,,,Misc,N/A,
