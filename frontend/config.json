@@ -6,6 +6,7 @@
     "includePhoneNumberInExcelSpreadsheet": true,
     "allowAllDayAppointments": true,
     "showServiceQueueFields": true,
+    "showIfActiveVisit": true,
     "patientIdentifierType": "Unique ART Number",
     "showUnscheduledAppointmentsTab": false,
     "appointmentStatuses": [
