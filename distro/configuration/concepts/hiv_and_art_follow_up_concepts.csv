@@ -562,11 +562,6 @@ bc8f2249-10f4-40a8-a960-952ea5f29b30,,180+ Days,180+ Days,,,,,Misc,N/A,
 150 Pills;
 180 Pills;
 180+ Pills"
-8cc8c347-c558-48e1-9108-e79a1a597f64,,Pill Intake First EAC,Pill Intake First EAC,,,,,Question,Numeric,
-298d22a4-dc21-4f3a-a081-ee6f1c393d0a,,Pill Intake Second EAC,Pill Intake Second EAC,,,,,Question,Numeric,
-5ef9ac25-5db3-4e02-904b-3dce31dc0b06,,Second EAC Pill percentage,Second EAC Pill percentage,,,,,Question,Numeric,
-05f55c2f-ce57-4738-8ca3-10260725a9dc,,Pill Intake Third EAC,Pill Intake THird EAC,,,,,Question,Numeric,
-46c39500-d2d9-447a-a159-707ca3d61519,,Third EAC Pill percentage,Third EAC Pill percentage,,,,,Question,Numeric,
 ef1c0931-32ee-47f5-9ecc-8c18eef2d706,,RPR,RPR,,,,,Misc,N/A,
 cfecd49f-41ed-405e-994f-3bf346413c7b,,HB - Lab Test,HB - Lab Test,,,,,Misc,N/A,
 b36e7148-6d1b-4347-901e-e5811f1fa899,,Sputum - Lab Test,Sputum - Lab Test,,,,,Misc,N/A,
@@ -662,7 +657,14 @@ d56d2c1a-d385-4b75-bfec-a548f286d3c4,,TPT Dispensed?,TPT Dispensed?,,,,,Question
 150 Pills;
 180 Pills;
 180+ Pills"
-8a6393a5-550e-4b6c-90e7-82ac8db39952,,Specify Number of Pills,Specify Number of Pill,,,,,Question,Numeric,
+8a6393a5-550e-4b6c-90e7-82ac8db39952,,Specify Number of Pills,Specify Number of Pills,,,,,Question,Numeric,
 57c785e4-3552-455f-8506-4776987b4801,,Client Finished TPT?,Client Finished TPT?,,,,,Question,Coded,Yes; No
 b236df66-d1af-40ad-ad12-66c9f424dba6,,Date Given/Dispensed TPT,Date Given/Dispensed TPT,,,,,Question,Date,
 01c21238-6f58-4f8f-b0ef-b6554e427875,,Date Completed TPT,Date Completed TPT,,,,,Question,Date,
+eda2ee9f-627d-472d-8f01-aa7cd246bf63,,Not eligible for TPT,Not eligible for TPT,,,,,Question,Coded,"Client has just completed TPT;
+Client is presumptive TB;
+Client is currently on TB treatment"
+6ac9ad39-19aa-4a8a-a5bc-19f4048b32ab,,Client has just completed TPT,Client has just completed TPT,,,,,Misc,N/A,
+ab54b8a4-95a5-48ed-b22b-cdb18a7a9b9b,,Client is presumptive TB,Client is presumptive TB,,,,,Misc,N/A,
+528b8898-5ef4-4f03-87f4-c14945fc9116,,Client is currently on TB treatment,Client is currently on TB treatment,,,,,Misc,N/A,
+31bb4874-196a-4f33-a6bf-b9e441d02a5d,,Date Started TPT,Date Started TPT,,,,,Question,Date,
