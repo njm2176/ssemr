@@ -10,7 +10,7 @@
     "patientIdentifierType": "Unique ART Number",
     "showUnscheduledAppointmentsTab": false,
     "appointmentStatuses": [
-      "Scheduled"
+      "Scheduled", "Requested", "CheckedIn", "Completed", "Cancelled", "Missed"
     ],
     "appointmentTypes": [
       "Scheduled"
