@@ -884,6 +884,9 @@
                     "label": "Client is presumptive TB"
                   }
                 ]
+              },
+              "hide": {
+                "hideWhenExpression": "clientCompletedTPT !== '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
             },
             {
