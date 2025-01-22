@@ -207,7 +207,7 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "sex === 'M' || age < 15 || clientRepresented === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                "hideWhenExpression": "sex === 'M' || age < 15"
               },
               "validators": []
             },
@@ -305,7 +305,7 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "sex === 'M' || age < 15 || clientRepresented === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                "hideWhenExpression": "sex === 'M' || age < 15 "
               },
               "validators": []
             },
@@ -371,7 +371,7 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "sex === 'M' || age < 15 || clientRepresented === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                "hideWhenExpression": "sex === 'M' || age < 15 "
               },
               "validators": []
             },
@@ -420,9 +420,6 @@
               "questionOptions": {
                 "rendering": "select",
                 "concept": "58ab89cd-6674-480b-95a0-5b761b0275cb",
-                "calculate": {
-                  "calculateExpression": "clientRepresented === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' ? '608f6df4-bc19-4afa-a1ff-58f407389221' : ''"
-                },
                 "answers": [
                   {
                     "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
@@ -438,10 +435,7 @@
                   }
                 ]
               },
-              "validators": [],
-              "hide": {
-                "hideWhenExpression": "clientRepresented === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
-              }
+              "validators": []
             },
             {
               "label": "Date started on TB",
@@ -1193,10 +1187,7 @@
                   "failsWhenExpression": "arrayContains(sideEfects, '2b663228-adaa-4cf0-ae77-5a2559e3f3a0') && arrayContainsAny(sideEfects, ['e31c3a3c-8156-4896-812c-be78fee13273', '512AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA', 'f2cc0f34-6546-4af3-bd2d-3466047c0ce5', '121629AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA', 'acecabeb-008a-4924-981f-fcc2807087f6', '50622f1f-9367-4a4e-a510-e969681d8df0', 'db99694b-a058-48a9-832c-64c28847a1a9', 'f20b15b2-4e14-11e4-8a57-0800271c1b75', '1dfb0948-4e15-11e4-8a57-0800271c1b75', '47be2dc7-acfc-43e8-8c27-4331856164db', '608f6df4-bc19-4afa-a1ff-58f407389221']) || arrayContains(sideEfects, '608f6df4-bc19-4afa-a1ff-58f407389221') && arrayContainsAny(sideEfects, ['e31c3a3c-8156-4896-812c-be78fee13273', '512AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA', 'f2cc0f34-6546-4af3-bd2d-3466047c0ce5', '121629AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA', 'acecabeb-008a-4924-981f-fcc2807087f6', '50622f1f-9367-4a4e-a510-e969681d8df0', 'db99694b-a058-48a9-832c-64c28847a1a9', 'f20b15b2-4e14-11e4-8a57-0800271c1b75', '1dfb0948-4e15-11e4-8a57-0800271c1b75', '47be2dc7-acfc-43e8-8c27-4331856164db', '2b663228-adaa-4cf0-ae77-5a2559e3f3a0'])",
                   "message": "You cannot select 'No side effects' or 'No information' along with other side effect options. Please deselect conflicting choices."
                 }
-              ],
-              "hide": {
-                "hideWhenExpression": "clientRepresented === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
-              }
+              ]
             },
             {
               "label": "Opportunistic Infections",
@@ -1264,10 +1255,7 @@
                   "failsWhenExpression": "arrayContains(oi, '26706674-eda4-49e8-a48b-3ccf0293bebf') && arrayContainsAny(oi, ['d9a0a7c1-66d8-4f71-aef6-e0aef4a5f2b1', '99e4878e-16ea-49d3-aa0e-585def370014', '0cf0ac7e-a631-474e-8fcd-f1dbba986589', 'd0a66c85-1bd1-4ae9-aed3-7fddf87680cf', 'f5efbdba-0950-421a-bf08-451fb6fe1752', '4ec32e51-cf72-4e93-a586-da62bd0ba703', '7b542ebb-dedd-4f3d-903e-a33e7118dcd8', '8ee9d84c-8ad4-483c-8951-d6ec976822fc', '9c7b5817-5b77-4601-a11f-bc4508998c56', '1eb028a7-d8eb-4fcc-a99c-e47f3dc00d5b', 'ef5d7595-87f6-4814-95e0-41533a517783'])",
                   "message": "You cannot select 'No Opportunistic Infections' along with other opportunistic infections options. Please deselect conflicting choices."
                 }
-              ],
-              "hide": {
-                "hideWhenExpression": "clientRepresented === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
-              }
+              ]
             },
             {
               "label": "Any new Opportunistic Infections",
