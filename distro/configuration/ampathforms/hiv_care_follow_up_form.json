@@ -305,7 +305,7 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "sex === 'M' || age < 15"
+                "hideWhenExpression": "sex === 'M' || age < 15 "
               },
               "validators": []
             },
@@ -371,7 +371,7 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "sex === 'M' || age < 15"
+                "hideWhenExpression": "sex === 'M' || age < 15 "
               },
               "validators": []
             },
@@ -710,6 +710,33 @@
               }
             },
             {
+              "label": "Reason for not eligible for TPT",
+              "type": "obs",
+              "required": false,
+              "id": "notEligibleForTPT",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "eda2ee9f-627d-472d-8f01-aa7cd246bf63",
+                "answers": [
+                  {
+                    "concept": "6ac9ad39-19aa-4a8a-a5bc-19f4048b32ab",
+                    "label": "Client has just completed TPT"
+                  },
+                  {
+                    "concept": "528b8898-5ef4-4f03-87f4-c14945fc9116",
+                    "label": "Client is currently on TB treatment"
+                  },
+                  {
+                    "concept": "ab54b8a4-95a5-48ed-b22b-cdb18a7a9b9b",
+                    "label": "Client is presumptive TB"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": "isClientEligibleForTPT !== '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              }
+            },
+            {
               "label": "Date eligible for TPT",
               "type": "obs",
               "id": "dateEligibleForTPT",
@@ -827,6 +854,47 @@
               },
               "hide": {
                 "hideWhenExpression": "isTptDispensed !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              }
+            },
+            {
+              "label": "Reason for not completed TPT",
+              "type": "obs",
+              "required": false,
+              "id": "notCompletedTPT",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "eda2ee9f-627d-472d-8f01-aa7cd246bf63",
+                "answers": [
+                  {
+                    "concept": "6ac9ad39-19aa-4a8a-a5bc-19f4048b32ab",
+                    "label": "Client has just completed TPT"
+                  },
+                  {
+                    "concept": "528b8898-5ef4-4f03-87f4-c14945fc9116",
+                    "label": "Client is currently on TB treatment"
+                  },
+                  {
+                    "concept": "ab54b8a4-95a5-48ed-b22b-cdb18a7a9b9b",
+                    "label": "Client is presumptive TB"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": "clientCompletedTPT !== '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              }
+            },
+            {
+              "label": "Date Started TPT",
+              "type": "obs",
+              "required": false,
+              "id": "dateStartedTPT",
+              "datePickerFormat": "calendar",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "31bb4874-196a-4f33-a6bf-b9e441d02a5d"
+              },
+              "hide": {
+                "hideWhenExpression": "clientCompletedTPT !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
             },
             {
