@@ -737,6 +737,20 @@
               }
             },
             {
+              "label": "Date Completed TPT",
+              "type": "obs",
+              "required": false,
+              "id": "dateClientCompletedTPT",
+              "datePickerFormat": "calendar",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "01c21238-6f58-4f8f-b0ef-b6554e427875"
+              },
+              "hide": {
+                "hideWhenExpression": "notEligibleForTPT !== '6ac9ad39-19aa-4a8a-a5bc-19f4048b32ab'"
+              }
+            },
+            {
               "label": "Date eligible for TPT",
               "type": "obs",
               "id": "dateEligibleForTPT",
