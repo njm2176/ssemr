@@ -616,9 +616,6 @@
               "questionOptions": {
                 "concept": "9a1a731e-937b-46fe-aca2-acf83a326b71",
                 "rendering": "select",
-                "calculate": {
-                  "calculateExpression": "isEmpty(coughDuration) && isEmpty(feverIsh) && isEmpty(WeightLossGain) && isEmpty(nightSweats) && isEmpty(contacTbCase) ? '283858ee-c0b7-4691-ad6e-0785e9b737f4' : TBStatus"
-                },
                 "answers": [
                   {
                     "concept": "33475272-c82b-4476-b6a2-1908d532af8f",
@@ -640,15 +637,15 @@
                     "concept": "283858ee-c0b7-4691-ad6e-0785e9b737f4",
                     "label": "ND - TB Screening not done"
                   }
-                ]
-              },
-              "validators": [
-                {
-                  "type": "js_expression",
-                  "failsWhenExpression": "((TBStatus === '4897c2f3-9d36-4d6c-bf5a-780db6b4ab12' && (coughDuration === '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && feverIsh === '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && WeightLossGain === '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && nightSweats === '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && contacTbCase === '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')) || (TBStatus === '33475272-c82b-4476-b6a2-1908d532af8f' && (coughDuration === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || feverIsh === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || WeightLossGain === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || nightSweats === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || contacTbCase === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')))",
-                  "message": "If all the TB screening questions are no, the TB status should be no sign otherwise it should be presumptive TB"
+                ],
+                "calculate": {
+                  "calculateExpression": "isEmpty(coughDuration) && isEmpty(feverIsh) && isEmpty(WeightLossGain) && isEmpty(nightSweats) && isEmpty(contacTbCase) ? '283858ee-c0b7-4691-ad6e-0785e9b737f4' : coughDuration === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || feverIsh === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || WeightLossGain === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || nightSweats === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || pWeightGain === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || contacTbCase === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' ? '4897c2f3-9d36-4d6c-bf5a-780db6b4ab12' : '33475272-c82b-4476-b6a2-1908d532af8f'"
                 }
-              ],
+              },
+              "alert": {
+                "alertWhenExpression": "(TBStatus === '4897c2f3-9d36-4d6c-bf5a-780db6b4ab12' && (coughDuration === '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && feverIsh === '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && WeightLossGain === '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && nightSweats === '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && contacTbCase === '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')) || (TBStatus === '33475272-c82b-4476-b6a2-1908d532af8f' && (coughDuration === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || feverIsh === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || WeightLossGain === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || nightSweats === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || contacTbCase === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'))",
+                "message": "If all the TB screening questions are no, the TB status should be no sign otherwise it should be presumptive TB"
+              },
               "hide": {
                 "hideWhenExpression": "currentlyOnTBTreatment !== '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
@@ -681,7 +678,7 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "TBStatus !== '4897c2f3-9d36-4d6c-bf5a-780db6b4ab12'"
+                "hideWhenExpression": " coughDuration !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && feverIsh !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && WeightLossGain !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && nightSweats !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && pWeightGain !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && contacTbCase !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
             },
             {
@@ -706,7 +703,7 @@
               },
               "validators": [],
               "hide": {
-                "hideWhenExpression": "TBStatus === '4897c2f3-9d36-4d6c-bf5a-780db6b4ab12' || TBStatus === '283858ee-c0b7-4691-ad6e-0785e9b737f4' "
+                "hideWhenExpression": "coughDuration !== '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || feverIsh !== '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || WeightLossGain !== '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
             },
             {
