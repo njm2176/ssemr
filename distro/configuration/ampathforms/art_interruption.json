@@ -1,5 +1,5 @@
 {
-  "name": "I. 11 - ART treatment interruption",
+  "name": "I. 11 - Return to treatment form",
   "published": true,
   "retired": false,
   "encounter": "ART treatment interruption",
@@ -268,6 +268,6 @@
   "encounterType": "81852aee-3f10-11e4-adec-0800271c1b75",
   "referencedForms": [],
   "uuid": "xxxxx",
-  "description": "ART treatment interruption form",
+  "description": "Return to treatment form",
   "version": "1.0.0"
 }
