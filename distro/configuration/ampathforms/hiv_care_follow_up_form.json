@@ -703,7 +703,7 @@
               },
               "validators": [],
               "hide": {
-                "hideWhenExpression": "coughDuration !== '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || feverIsh !== '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || WeightLossGain !== '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                "hideWhenExpression": "coughDuration !== '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || feverIsh !== '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || WeightLossGain !== '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || nightSweats === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || pWeightGain === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || contacTbCase === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' "
               }
             },
             {
