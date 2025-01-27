@@ -42,6 +42,20 @@
       }
     }
   },
+ "@openmrs/esm-active-visits-app": {
+    "activeVisits": {
+      "identifiers": [
+        {
+          "header": {
+            "key": "uniqueArtNumber",
+            "default": "Unique ART Number"
+          },
+          "identifierName": "Unique ART Number"
+        }
+      ],
+      "obs": []
+    }
+  },
   "@openmrs/esm-patient-test-results-app": {
     "concepts": [
       {
