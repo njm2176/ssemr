@@ -23,7 +23,7 @@
     "@openmrs/esm-user-onboarding-app": "next",
     "@openmrs/esm-patient-labs-app": "next",
     "@openmrs/esm-patient-chart-app": "next",
-    "@openmrs/esm-appointments-app": "next",
+    "@ssemr/esm-appointments-app": "next",
     "@ssemr/esm-login-app": "1.0.1",
     "@ssemr/esm-patient-summary-app": "next",
     "@ssemr/esm-patient-registration-app": "next",
