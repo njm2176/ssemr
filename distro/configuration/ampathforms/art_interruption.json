@@ -5,7 +5,7 @@
   "encounter": "ART treatment interruption",
   "pages": [
     {
-      "label": "ART treatment interruption – Stop or Lost (missed drug pick-up)",
+      "label": "Return to treatment form",
       "sections": [
         {
           "label": "Visit Details",
@@ -28,22 +28,9 @@
           ]
         },
         {
-          "label": "ART treatment interruption – Stop or Lost (missed drug pick-up)",
+          "label": "Return to treatment form",
           "isExpanded": "true",
           "questions": [
-            {
-              "label": "Date",
-              "type": "obs",
-              "required": true,
-              "id": "dateOfInteruptionOfTreatment",
-              "questionOptions": {
-                "rendering": "date",
-                "concept": "84c23dc4-40f4-4d9a-a2f5-ebeb4b4f3250",
-                "conceptMappings": [],
-                "answers": []
-              },
-              "validators": []
-            },
             {
               "label": "Date of last visit",
               "type": "obs",
