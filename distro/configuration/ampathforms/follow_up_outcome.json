@@ -8,6 +8,26 @@
       "label": "End of follow up",
       "sections": [
         {
+          "label": "Visit Details",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Visit Date",
+              "type": "encounterDatetime",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "encDate",
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ]
+            }
+          ]
+        },
+        {
           "label": "End of follow up",
           "isExpanded": "true",
           "questions": [
