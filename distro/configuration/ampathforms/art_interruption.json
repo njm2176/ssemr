@@ -223,28 +223,6 @@
               "hide": {
                 "hideWhenExpression": "isEmpty(reasonForARTInt) || !arrayContains(reasonForARTInt, 'f6ae430a-a197-426e-b54f-08f45fae0ad0')"
               }
-            },
-            {
-              "label": " Lost to follow-up",
-              "type": "obs",
-              "required": true,
-              "id": "lostToFollowUp",
-              "questionOptions": {
-                "rendering": "radio",
-                "concept": "7053eaca-fc21-4b73-b246-b6e9ae3b3f67",
-                "conceptMappings": [],
-                "answers": [
-                  {
-                    "label": "Yes",
-                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-                  },
-                  {
-                    "label": "No",
-                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-                  }
-                ]
-              },
-              "validators": []
             }
           ]
         }
