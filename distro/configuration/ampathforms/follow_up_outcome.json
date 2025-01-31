@@ -8,26 +8,6 @@
       "label": "End of follow up",
       "sections": [
         {
-          "label": "Visit Details",
-          "isExpanded": "true",
-          "questions": [
-            {
-              "label": "Visit Date",
-              "type": "encounterDatetime",
-              "questionOptions": {
-                "rendering": "ui-select-extended"
-              },
-              "id": "encDate",
-              "validators": [
-                {
-                  "type": "date",
-                  "allowFutureDates": "false"
-                }
-              ]
-            }
-          ]
-        },
-        {
           "label": "End of follow up",
           "isExpanded": "true",
           "questions": [
@@ -142,7 +122,10 @@
                   }
                 ]
               },
-              "validators": []
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "isDeath === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              }
             },
             {
               "label": "Transferred Out Date",
@@ -191,7 +174,10 @@
                   }
                 ]
               },
-              "validators": []
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "isDeath === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              }
             },
             {
               "label": "Date client refused treatment",
@@ -220,7 +206,10 @@
                 "conceptMappings": [],
                 "answers": []
               },
-              "validators": []
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "isDeath === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              }
             }
           ]
         }
