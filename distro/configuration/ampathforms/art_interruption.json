@@ -62,7 +62,10 @@
                     "label": "No",
                     "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
                   }
-                ]
+                ],
+                "calculate": {
+                  "calculateExpression": "'1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                }
               },
               "validators": []
             },
