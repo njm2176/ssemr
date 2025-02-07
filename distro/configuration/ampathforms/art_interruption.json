@@ -32,7 +32,7 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Date client became IIT",
+              "label": "Date Client became IIT",
               "type": "obs",
               "required": false,
               "id": "dateOfLastVisit",
