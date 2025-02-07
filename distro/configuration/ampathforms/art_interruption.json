@@ -42,7 +42,12 @@
                 "conceptMappings": [],
                 "answers": []
               },
-              "validators": []
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ]
             },
             {
               "label": "Restarted?",
@@ -80,7 +85,12 @@
                 "conceptMappings": [],
                 "answers": []
               },
-              "validators": [],
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ],
               "hide": {
                 "hideWhenExpression": "restartedInTreatment !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
