@@ -47,7 +47,12 @@
 								"conceptMappings": [],
 								"answers": []
 							},
-							"validators": []
+							"validators": [
+								{
+									"type": "date",
+									"isAllowedFutureDates": "false"
+								}
+							]
 						},
 						{
 							"label": "Time Sample Collected",
@@ -110,7 +115,12 @@
 								"conceptMappings": [],
 								"answers": []
 							},
-							"validators": []
+							"validators": [
+								{
+									"type": "date",
+									"isAllowedFutureDates": "false"
+								}
+							]
 						},
 						{
 							"label": "Date of Initiation of Current Regimen",
@@ -123,7 +133,12 @@
 								"conceptMappings": [],
 								"answers": []
 							},
-							"validators": []
+							"validators": [
+								{
+									"type": "date",
+									"isAllowedFutureDates": "false"
+								}
+							]
 						},
 						{
 							"label": "Is patient pregnant",
@@ -223,7 +238,12 @@
 								"conceptMappings": [],
 								"answers": []
 							},
-							"validators": []
+							"validators": [
+								{
+									"type": "date",
+									"isAllowedFutureDates": "false"
+								}
+							]
 						},
 						{
 							"label": "VL Results",
@@ -279,7 +299,12 @@
 								"conceptMappings": [],
 								"answers": []
 							},
-							"validators": []
+							"validators": [
+								{
+									"type": "date",
+									"isAllowedFutureDates": "false"
+								}
+							]
 						},
 						{
 							"label": "VL Results",
@@ -335,7 +360,12 @@
 								"conceptMappings": [],
 								"answers": []
 							},
-							"validators": []
+							"validators": [
+								{
+									"type": "date",
+									"isAllowedFutureDates": "false"
+								}
+							]
 						},
 						{
 							"label": "VL Results",
@@ -521,7 +551,12 @@
 								"conceptMappings": [],
 								"answers": []
 							},
-							"validators": []
+							"validators": [
+								{
+									"type": "date",
+									"isAllowedFutureDates": "false"
+								}
+							]
 						},
 						{
 							"label": "Date Results Dispatched",
@@ -539,6 +574,10 @@
 									"type": "js_expression",
 									"failsWhenExpression": "new Date(dateResultDispatched) < new Date(dateSampleRecievedLab)",
 									"message": "Date Dispatched can't be before the date sample received"
+								},
+								{
+									"type": "date",
+									"isAllowedFutureDates": "false"
 								}
 							]
 						},
