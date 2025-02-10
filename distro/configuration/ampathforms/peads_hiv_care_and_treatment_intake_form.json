@@ -670,10 +670,9 @@
 								"answers": []
 							},
 							"alert": {
-								"alertWhenExpression": "myValue && (myValue >= 100.5 || myValue < 59.5)",
+								"alertWhenExpression": "pulseRate >= 100.5 || pulseRate < 59.5",
 								"message": "Pulse Rate is out of range (Normal range 60-100)"
 							},
-							"validators": [],
 							"hide": {
 								"hideWhenExpression": "generalAppearance === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
 							}
@@ -691,10 +690,9 @@
 								"answers": []
 							},
 							"alert": {
-								"alertWhenExpression": "myValue && (myValue >= 16.5 || myValue < 11.5)",
+								"alertWhenExpression": "rr >= 16.5 || rr < 11.5",
 								"message": "Respiratory Rate is out of range (Normal range 12-16)"
 							},
-							"validators": [],
 							"hide": {
 								"hideWhenExpression": "generalAppearance === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
 							}
