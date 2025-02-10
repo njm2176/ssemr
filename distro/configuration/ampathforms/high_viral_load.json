@@ -245,7 +245,13 @@
 								"calculate": {
 									"calculateExpression": "api.getLatestObs(patient.id, '30f1f347-d72c-4920-9962-6d55d138e8e5', 'f469b65f-a4f6-4723-989a-46090de6a0e5').then(obs => obs.valueString)"
 								}
-							}
+							},
+							"validators": [
+						{
+							"type": "date",
+							"allowFutureDates": "false"
+						}
+							]
 						}
 					]
 				},
@@ -260,7 +266,13 @@
 							"questionOptions": {
 								"concept": "ed520e2d-acb4-4ea9-8ae5-16ca27ace96d",
 								"rendering": "date"
-							}
+							},
+							"validators": [
+								{
+									"type": "date",
+									"allowFutureDates": "false"
+								}
+							]
 						}
 					]
 				},
@@ -1351,7 +1363,12 @@
 								"conceptMappings": [],
 								"answers": []
 							},
-							"validators": []
+							"validators": [
+								{
+									"type": "date",
+									"isAllowedFutureDates": "false"
+								}
+							]
 						},
 						{
 							"label": "Pill intake",
@@ -1391,7 +1408,12 @@
 								"conceptMappings": [],
 								"answers": []
 							},
-							"validators": []
+							"validators": [
+								{
+									"type": "date",
+									"isAllowedFutureDates": "false"
+								}
+							]
 						},
 						{
 							"label": "Counsellor",
@@ -1404,7 +1426,13 @@
 								"conceptMappings": [],
 								"answers": []
 							},
-							"validators": []
+							"validators": [
+								{
+									"type": "js_expression",
+									"failsWhenExpression": "!/[a-zA-Z]/.test(counsellor)",
+									"message": "Input must include at least one letter."
+								}
+							]
 						},
 						{
 							"label": "Date of assessment",
@@ -1417,7 +1445,12 @@
 								"conceptMappings": [],
 								"answers": []
 							},
-							"validators": []
+							"validators": [
+								{
+									"type": "date",
+									"isAllowedFutureDates": "false"
+								}
+							]
 						}
 					]
 				}
