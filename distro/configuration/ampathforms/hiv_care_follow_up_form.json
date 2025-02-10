@@ -3554,7 +3554,14 @@
                     "concept": "608f6df4-bc19-4afa-a1ff-58f407389221"
                   }
                 ]
-              }
+              },
+              "validators": [
+                {
+                  "type": "js_expression",
+                  "failsWhenExpression": "(labTests.includes('6cfc61ed-08ec-45cf-8317-325958dfdb9a') || labTests.includes('608f6df4-bc19-4afa-a1ff-58f407389221')) && labTests.length > 1",
+                  "message": "If Not Applicable or No information is chosen you can't choose other lab tests"
+                }
+              ]
             },
             {
               "label": "Other Investigations Done?",
