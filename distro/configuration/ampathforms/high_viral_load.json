@@ -634,6 +634,11 @@
 								{
 									"type": "date",
 									"isAllowedFutureDates": "false"
+								},
+								{
+									"type": "js_expression",
+									"failsWhenExpression": "(adherenceDate && secondEACDate) ? new Date(adherenceDate).getTime() > new Date(secondEACDate).getTime() : false",
+									"message": "The second EAC date cannot be before the First EAC date"
 								}
 							]
 						},
@@ -950,6 +955,11 @@
 								{
 									"type": "date",
 									"isAllowedFutureDates": "false"
+								},
+								{
+									"type": "js_expression",
+									"failsWhenExpression": "(adherenceDate && secondEACDate && thirdEACDate) ? new Date(adherenceDate).getTime() && new Date(secondEACDate).getTime() > new Date(thirdEACDate).getTime() : false",
+									"message": "The third EAC date cannot be before the First and Second EAC date"
 								}
 							]
 						},
