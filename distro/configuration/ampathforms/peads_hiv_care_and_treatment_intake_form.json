@@ -667,6 +667,8 @@
 								"concept": "5087AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 								"conceptMappings": [],
 								"isSimpleValue": true,
+								"min": "0",
+								"max": "200",
 								"answers": []
 							},
 							"alert": {
@@ -687,6 +689,8 @@
 								"concept": "5242AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 								"isSimpleValue": true,
 								"conceptMappings": [],
+								"min": "0",
+								"max": "60",
 								"answers": []
 							},
 							"alert": {
