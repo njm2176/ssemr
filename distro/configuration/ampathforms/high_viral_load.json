@@ -958,7 +958,7 @@
 								},
 								{
 									"type": "js_expression",
-									"failsWhenExpression": "(adherenceDate && secondEACDate && thirdEACDate) ? new Date(adherenceDate).getTime() && new Date(secondEACDate).getTime() > new Date(thirdEACDate).getTime() : false",
+									"failsWhenExpression": "(adherenceDate && secondEACDate && thirdEACDate) ? new Date(adherenceDate).getTime() || new Date(secondEACDate).getTime() > new Date(thirdEACDate).getTime() : false",
 									"message": "The third EAC date cannot be before the First and Second EAC date"
 								}
 							]
