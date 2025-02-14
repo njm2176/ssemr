@@ -188,7 +188,8 @@
         "uuid": "80fcb21b-f0af-493e-bcd2-75d587fcbbe9",
         "label": "Treatment supporter's name(if disclosed)",
         "validation": {
-          "required": false
+          "required": false,
+          "matches": "^[a-zA-Z\\\\s'\\\\.-]+$"
         }
       },     
       {

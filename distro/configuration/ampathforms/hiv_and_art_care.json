@@ -317,7 +317,12 @@
                     "rendering": "date"
                   },
                   "type": "obs",
-                  "validators": [],
+                  "validators": [
+                    {
+                      "type": "date",
+                      "allowFutureDates": "false"
+                    }
+                  ],
                   "hide": {
                     "hideWhenExpression": "familyMemberAgeKnown !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
                   }
@@ -503,7 +508,12 @@
                     "rendering": "date"
                   },
                   "type": "obs",
-                  "validators": [],
+                  "validators": [
+                    {
+                      "type": "date",
+                      "isAllowedFutureDates": "false"
+                    }
+                  ],
                   "hide": {
                     "hideWhenExpression": "indexFamilyMemberAgeKnown !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
                   }
@@ -1229,7 +1239,13 @@
                 "rendering": "text"
               },
               "type": "obs",
-              "validators": []
+              "validators": [
+                {
+                  "type": "js_expression",
+                  "failsWhenExpression": "!/[a-zA-Z]/.test(artReadinessConfirmed)",
+                  "message": "Input must include at least one letter."
+                }
+              ]
             },
             {
               "label": "ART Readiness Confirmation Date",

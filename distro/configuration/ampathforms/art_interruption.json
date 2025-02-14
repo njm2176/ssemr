@@ -32,7 +32,7 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Date of last visit",
+              "label": "Date Client became IIT",
               "type": "obs",
               "required": false,
               "id": "dateOfLastVisit",
@@ -42,7 +42,12 @@
                 "conceptMappings": [],
                 "answers": []
               },
-              "validators": []
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ]
             },
             {
               "label": "Restarted?",
@@ -80,7 +85,12 @@
                 "conceptMappings": [],
                 "answers": []
               },
-              "validators": [],
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ],
               "hide": {
                 "hideWhenExpression": "restartedInTreatment !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
@@ -98,7 +108,13 @@
                   "calculateExpression": "(new Date(dateIfRestarted) - new Date(dateOfLastVisit)) / (1000 * 60 * 60 * 24)"
                 }
               },
-              "validators": [],
+              "validators": [
+                {
+                  "type": "js_expression",
+                  "failsWhenExpression": "daysLost < 0",
+                  "message": "Number of days Lost can't be less than 0"
+                }
+              ],
               "hide": {
                 "hideWhenExpression": "restartedInTreatment !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }

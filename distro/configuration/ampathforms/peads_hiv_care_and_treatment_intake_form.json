@@ -667,13 +667,14 @@
 								"concept": "5087AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 								"conceptMappings": [],
 								"isSimpleValue": true,
+								"min": "0",
+								"max": "200",
 								"answers": []
 							},
 							"alert": {
-								"alertWhenExpression": "myValue && (myValue >= 100.5 || myValue < 59.5)",
+								"alertWhenExpression": "pulseRate >= 100.5 || pulseRate < 59.5",
 								"message": "Pulse Rate is out of range (Normal range 60-100)"
 							},
-							"validators": [],
 							"hide": {
 								"hideWhenExpression": "generalAppearance === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
 							}
@@ -688,13 +689,14 @@
 								"concept": "5242AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 								"isSimpleValue": true,
 								"conceptMappings": [],
+								"min": "0",
+								"max": "60",
 								"answers": []
 							},
 							"alert": {
-								"alertWhenExpression": "myValue && (myValue >= 16.5 || myValue < 11.5)",
+								"alertWhenExpression": "rr >= 16.5 || rr < 11.5",
 								"message": "Respiratory Rate is out of range (Normal range 12-16)"
 							},
-							"validators": [],
 							"hide": {
 								"hideWhenExpression": "generalAppearance === '6cfc61ed-08ec-45cf-8317-325958dfdb9a'"
 							}
@@ -741,6 +743,8 @@
 								"concept": "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 								"isSimpleValue": true,
 								"conceptMappings": [],
+								"min": "0",
+								"max": "200",
 								"answers": [],
 								"calculate": {
 									"calculateExpression": "api.getLatestObs(patient.id, '5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA', '0e9f540d-92cb-43c9-a95c-9407f5bf3f2a').then(obs => obs.valueNumeric)"
@@ -762,6 +766,8 @@
 								"isSimpleValue": true,
 								"conceptMappings": [],
 								"answers": [],
+								"min": "0",
+								"max": "200",
 								"calculate": {
 									"calculateExpression": "api.getLatestObs(patient.id, '5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA', '0e9f540d-92cb-43c9-a95c-9407f5bf3f2a').then(obs => obs.valueNumeric)"
 								}
@@ -781,6 +787,8 @@
 								"concept": "f9cd0050-c316-11e9-9cb5-2a2ae2dbcce4",
 								"isSimpleValue": true,
 								"conceptMappings": [],
+								"min": "0",
+								"max": "100",
 								"answers": []
 							},
 							"validators": [],
@@ -798,6 +806,8 @@
 								"concept": "1343AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 								"isSimpleValue": true,
 								"conceptMappings": [],
+								"min": "0",
+								"max": "100",
 								"answers": []
 							},
 							"validators": [],
