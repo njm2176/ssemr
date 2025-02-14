@@ -108,7 +108,13 @@
                   "calculateExpression": "(new Date(dateIfRestarted) - new Date(dateOfLastVisit)) / (1000 * 60 * 60 * 24)"
                 }
               },
-              "validators": [],
+              "validators": [
+                {
+                  "type": "js_expression",
+                  "failsWhenExpression": "daysLost < 0",
+                  "message": "Number of days Lost can't be less than 0"
+                }
+              ],
               "hide": {
                 "hideWhenExpression": "restartedInTreatment !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
