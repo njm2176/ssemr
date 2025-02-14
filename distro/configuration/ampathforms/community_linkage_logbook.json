@@ -91,7 +91,13 @@
 								"conceptMappings": [],
 								"answers": []
 							},
-							"validators": []
+							"validators": [
+								{
+									"type": "js_expression",
+									"failsWhenExpression": "!/[a-zA-Z]/.test(covAssigned)",
+									"message": "Input must include at least one letter."
+								}
+							]
 						},
 						{
 							"label": "CHW Phone number",
@@ -136,7 +142,12 @@
 								"conceptMappings": [],
 								"answers": []
 							},
-							"validators": []
+							"validators": [
+								{
+									"type": "date",
+									"isAllowedFutureDates": "false"
+								}
+							]
 						}
 					]
 				}
