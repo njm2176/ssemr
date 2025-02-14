@@ -743,6 +743,8 @@
 								"concept": "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 								"isSimpleValue": true,
 								"conceptMappings": [],
+								"min": "0",
+								"max": "200",
 								"answers": [],
 								"calculate": {
 									"calculateExpression": "api.getLatestObs(patient.id, '5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA', '0e9f540d-92cb-43c9-a95c-9407f5bf3f2a').then(obs => obs.valueNumeric)"
@@ -764,6 +766,8 @@
 								"isSimpleValue": true,
 								"conceptMappings": [],
 								"answers": [],
+								"min": "0",
+								"max": "200",
 								"calculate": {
 									"calculateExpression": "api.getLatestObs(patient.id, '5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA', '0e9f540d-92cb-43c9-a95c-9407f5bf3f2a').then(obs => obs.valueNumeric)"
 								}
@@ -783,6 +787,8 @@
 								"concept": "f9cd0050-c316-11e9-9cb5-2a2ae2dbcce4",
 								"isSimpleValue": true,
 								"conceptMappings": [],
+								"min": "0",
+								"max": "100",
 								"answers": []
 							},
 							"validators": [],
@@ -800,6 +806,8 @@
 								"concept": "1343AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 								"isSimpleValue": true,
 								"conceptMappings": [],
+								"min": "0",
+								"max": "100",
 								"answers": []
 							},
 							"validators": [],
