@@ -110,8 +110,8 @@
 							"validators": [
 								{
 									"type": "js_expression",
-									"failsWhenExpression": "(communityCadre && communityCadre.length > 2)",
-									"message": "You can't have more than 2 Community Cadre"
+									"failsWhenExpression": "(communityCadre && communityCadre.length > 2) || (communityCadre.includes('31f9b45c-ead7-49da-929e-50b790f612a6') && !communityCadre.includes('ca0f0f35-e572-4980-b8ec-a00cf56427b8'))",
+									"message": "You can't have more than 2 Community Cadre, Also if you select Senior Mentor Mother you should also have a Mentor Mother"
 								}
 							]
 						},
