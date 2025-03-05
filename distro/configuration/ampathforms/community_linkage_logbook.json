@@ -40,7 +40,7 @@
 							"required": false,
 							"id": "clientCategory",
 							"questionOptions": {
-								"rendering": "select",
+								"rendering": "checkbox-searchable",
 								"concept": "579c3be1-7012-4956-b25d-77b686b70081",
 								"conceptMappings": [],
 								"answers": [
