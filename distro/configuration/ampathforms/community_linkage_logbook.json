@@ -225,6 +225,19 @@
 							}
 						},
 						{
+							"id": "addressOfMm",
+							"label": "Address of MM",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "text",
+								"concept": "71d7aa03-28bb-44a9-bf9b-e0b3e5d4f40f"
+							},
+							"validators": [],
+							"hide": {
+								"hideWhenExpression": "!(communityCadre && communityCadre.includes('ca0f0f35-e572-4980-b8ec-a00cf56427b8'))"
+							}
+						},
+						{
 							"id": "nameOfCow",
 							"label": "Name of COW",
 							"type": "obs",
@@ -261,49 +274,17 @@
 							}
 						},
 						{
-							"label": "Name of CHW",
+							"id": "addressOfCow",
+							"label": "Address of COW",
 							"type": "obs",
-							"required": false,
-							"id": "covAssigned",
 							"questionOptions": {
 								"rendering": "text",
-								"concept": "5b258179-1872-4339-8b29-5ecf618bd4d3",
-								"conceptMappings": [],
-								"answers": []
+								"concept": "885a341c-068c-4a39-9543-f56e7cd3633c"
 							},
-							"validators": []
-						},
-						{
-							"label": "CHW Phone number",
-							"type": "obs",
-							"required": false,
-							"id": "chwPhone",
-							"questionOptions": {
-								"rendering": "text",
-								"concept": "cb3385ee-18c3-4856-a410-c7b4d105a779"
-							},
-							"validators": [
-								{
-									"type": "js_expression",
-									"failsWhenExpression": "chwPhone && !chwPhone.match(/^\\+[0-9]{1,3}[0-9]{9,9}$/)",
-									"message": "The phone number should start with a country code, e.g., +211 and should be at least 9 digits long."
-								}
-							],
-							"alert": {
-								"alertWhenExpression": "chwPhone && !chwPhone.match(/^\\+[0-9]{1,3}[0-9]{9,9}$/)",
-								"message": "The phone number should start with a country code, e.g., +211 and should be at least 9 digits long."
+							"validators": [],
+							"hide": {
+								"hideWhenExpression": "!(communityCadre && communityCadre.includes('11e6ac1b-147d-4423-8495-5dd47e777dce'))"
 							}
-						},
-						{
-							"label": "CHW Address",
-							"type": "obs",
-							"required": false,
-							"id": "chwAddress",
-							"questionOptions": {
-								"rendering": "text",
-								"concept": "77a35b01-7713-437a-a82b-7f74c75ea41d"
-							},
-							"validators": []
 						},
 						{
 							"label": "Date of Linkage",
