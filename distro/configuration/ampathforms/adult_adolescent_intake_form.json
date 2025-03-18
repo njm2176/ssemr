@@ -657,16 +657,16 @@
               "id": "temperature",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "5088AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "min": 0,
-                "conceptMappings": [],
-                "answers": []
+                "concept": "5088AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
               },
-              "validators": [
+              "alert": [
                 {
-                  "type": "js_expression",
-                  "failsWhenExpression": "temperature < 32 || temperature > 40",
-                  "message": "Temperature should not be less than 32 or more than 40"
+                  "alertWhenExpression": "temperature < 35",
+                  "message": "Low temperature (Hypopyrexia), treat immediately"
+                },
+                {
+                  "alertWhenExpression": "temperature > 38",
+                  "message": "High temperature (Hyperpyrexia), treat immediately"
                 }
               ],
               "hide": {
