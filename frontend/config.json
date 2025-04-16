@@ -189,7 +189,7 @@
         "label": "Treatment supporter's name(if disclosed)",
         "validation": {
           "required": false,
-          "matches": "^[a-zA-Z\\\\s'\\\\.-]+$"
+          "matches": "^[a-zA-Z\\s'\\.-]+$"
         }
       },     
       {
