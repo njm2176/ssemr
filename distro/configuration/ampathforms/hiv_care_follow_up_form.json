@@ -383,7 +383,6 @@
               "questionOptions": {
                 "rendering": "radio",
                 "concept": "da20f4fc-94b4-421c-896c-cf16a834227a",
-                "conceptMappings": [],
                 "answers": [
                   {
                     "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
@@ -393,7 +392,10 @@
                     "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "No"
                   }
-                ]
+                ],
+                "calculate": {
+                  "calculateExpression": "isEmpty(pregStatus) && isEmpty(isClientBreastFeeding) ? '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' : pregStatus === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || isClientBreastFeeding === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' ? '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' : '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                }
               },
               "hide": {
                 "hideWhenExpression": "sex === 'M' || age < 15"
