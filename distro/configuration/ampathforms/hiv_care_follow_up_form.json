@@ -381,7 +381,7 @@
               "required": false,
               "id": "clientPmtct",
               "questionOptions": {
-                "rendering": "select",
+                "rendering": "radio",
                 "concept": "da20f4fc-94b4-421c-896c-cf16a834227a",
                 "answers": [
                   {
