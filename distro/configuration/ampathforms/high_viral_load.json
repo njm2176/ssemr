@@ -227,7 +227,7 @@
 							"id": "otherSpecifyRegimen",
 							"questionOptions": {
 								"rendering": "text",
-								"concept": "2734f9fc-1bc5-473b-a58f-e2e6e79223d8"
+								"concept": "b0afac64-54b5-412c-86d0-7cf5dc6afb35"
 							},
 							"validators": [],
 							"hide": {
@@ -1454,7 +1454,7 @@
 							"validators": [
 								{
 									"type": "js_expression",
-									"failsWhenExpression": "!/[a-zA-Z]/.test(counsellor)",
+									"failsWhenExpression": "!/[a-zA-Z]/.test(value)",
 									"message": "Input must include at least one letter."
 								}
 							]
