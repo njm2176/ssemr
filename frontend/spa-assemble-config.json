@@ -5,7 +5,7 @@
     "@openmrs/esm-devtools-app": "next",
     "@openmrs/esm-fast-data-entry-app": "next",
     "@openmrs/esm-form-builder-app": "next",
-    "@openmrs/esm-form-engine-app": "next",
+    "@openmrs/esm-form-engine-app": "10.1.1-pre.7647",
     "@openmrs/esm-generic-patient-widgets-app": "next",
     "@openmrs/esm-help-menu-app": "next",
     "@openmrs/esm-home-app": "next",

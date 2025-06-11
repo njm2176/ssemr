@@ -164,15 +164,18 @@
               "validators": []
             },
             {
-              "label": "Transfer To",
-              "type": "encounterLocation",
+              "label": "Transfer To (specify facility)",
+              "type": "obs",
+              "required": false,
+              "id": "transferToSpecifyFacility",
               "questionOptions": {
-                "rendering": "ui-select-extended"
+                "rendering": "text",
+                "concept": "ccdfc79c-0c19-4731-ab95-f41a82480069"
               },
-              "id": "transferTo",
               "hide": {
                 "hideWhenExpression": "transferOut !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
-              }
+              },
+              "validators": []
             },
             {
               "label": "Has client refused treatment?",
