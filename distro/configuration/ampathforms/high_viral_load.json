@@ -479,9 +479,8 @@
 								"rendering": "text",
 								"concept": "f481d175-85fa-45d6-bfd7-66d9deb34eaf"
 							},
-							"validators": [],
 							"hide": {
-								"hideWhenExpression": "adherenceBarriers !== 'a393d1ee-e6eb-4f84-b75c-848a99343760'"
+								"hideWhenExpression": "!adherenceBarriers.includes('a393d1ee-e6eb-4f84-b75c-848a99343760')"
 							}
 						},
 						{
@@ -784,7 +783,7 @@
 							},
 							"validators": [],
 							"hide": {
-								"hideWhenExpression": "secondAdherenceBarriers !== 'a393d1ee-e6eb-4f84-b75c-848a99343760'"
+								"hideWhenExpression": "!secondAdherenceBarriers.includes('a393d1ee-e6eb-4f84-b75c-848a99343760')"
 							}
 						},
 						{
@@ -1105,7 +1104,7 @@
 							},
 							"validators": [],
 							"hide": {
-								"hideWhenExpression": "thirdAdherenceBarriers !== 'a393d1ee-e6eb-4f84-b75c-848a99343760'"
+								"hideWhenExpression": "!thirdAdherenceBarriers.includes('a393d1ee-e6eb-4f84-b75c-848a99343760')"
 							}
 						},
 						{
