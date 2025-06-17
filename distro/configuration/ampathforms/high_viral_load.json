@@ -1489,21 +1489,40 @@
 					"isExpanded": "true",
 					"questions": [
 						{
-							"label": "Repeat Viral Load result",
+							"label": "Repeat Viral Load results",
+							"required": false,
+							"type": "obs",
+							"id": "vlResultResult",
+							"questionOptions": {
+								"rendering": "select",
+								"concept": "8b5ef5c4-3c88-49b8-87e5-cb8d30caa77d",
+								"answers": [
+								{
+									"concept": "62df0577-a1f7-493e-80d2-e458998f1a2f",
+									"label": "Below Detectable (BDL)"
+								},
+								{
+									"concept": "12e201ff-c83a-4f3f-920e-37288d39fa55",
+									"label": "Viral Load value"
+								}
+								]
+							}
+						},
+						{
+							"label": "Repeat Viral Load value",
 							"type": "obs",
 							"required": false,
-							"id": "repeatVLResult",
+							"id": "viralLoadValue",
 							"questionOptions": {
-								"rendering": "number",
-								"concept": "68c60487-62b5-45af-9773-0bc163b9e076",
-								"min": 0,
-								"conceptMappings": [],
-								"answers": []
+								"rendering": "numeric",
+								"concept": "01c3ce55-b7eb-45f5-93d5-bace353e3cfd"
 							},
-							"validators": [],
+							"hide": {
+								"hideWhenExpression": "vlResultResult !== '12e201ff-c83a-4f3f-920e-37288d39fa55'"
+							},
 							"alert": {
-								"alertWhenExpression": "repeatVLResult >= 1000",
-								"message": "VL is 1000 or above, please fill the EAC Details"
+								"alertWhenExpression": "viralLoadValue >= 1000",
+								"message": "VL Value is above 1000, please fill the EAC Form"
 							}
 						},
 						{
@@ -1528,11 +1547,11 @@
 							},
 							"validators": [],
 							"alert": {
-								"alertWhenExpression": "repeatVLResult >= 1000 && repeatVLRGreater !== 'edaf153d-70ff-44f2-8c6e-7242dfd36f5f' || repeatVLResult < 1000 && repeatVLRGreater !== 'ae23fa12-b7fc-49e0-be21-aa2f5bc32f97' ",
+								"alertWhenExpression": "viralLoadValue >= 1000 && repeatVLRGreater !== 'edaf153d-70ff-44f2-8c6e-7242dfd36f5f' || viralLoadValue < 1000 && repeatVLRGreater !== 'ae23fa12-b7fc-49e0-be21-aa2f5bc32f97' ",
 								"message": "The viral load result doesnt match the result chosen"
 							},
 							"hide": {
-								"hideWhenExpression": "isEmpty(repeatVLResult)"
+								"hideWhenExpression": "isEmpty(viralLoadValue)"
 							}
 						},
 						{
