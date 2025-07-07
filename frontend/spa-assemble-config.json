@@ -18,7 +18,7 @@
     "@openmrs/esm-primary-navigation-app": "6.3.1-pre.3149",
     "@openmrs/esm-system-admin-app": "4.1.1-pre.256",
     "@openmrs/esm-user-onboarding-app": "4.0.1-pre.71",
-    "@openmrs/esm-patient-chart-app": "10.2.1-pre.8168",
+    "@openmrs/esm-patient-chart-app": "10.2.1-pre.8172",
     "@openmrs/esm-appointments-app": "8.5.1-pre.5690",
     "@ssemr/esm-login-app": "1.0.1",
     "@ssemr/esm-patient-summary-app": "next",
