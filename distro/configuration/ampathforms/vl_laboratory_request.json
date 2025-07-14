@@ -247,7 +247,7 @@
 						},
 						{
 							"label": "VL Results",
-							"required": true,
+							"required": false,
 							"type": "obs",
 							"id": "valueMonitoringResult",
 							"questionOptions": {
