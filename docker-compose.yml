@@ -10,6 +10,8 @@ services:
       - backend
     ports:
       - "80:80"
+    networks:
+      - ssemr-network
     
   frontend:
     image: openmrs/openmrs-reference-application-3-frontend:${TAG:-qa}
@@ -24,6 +26,8 @@ services:
       timeout: 5s
     depends_on:
       - backend
+    networks:
+      - ssemr-network
 
   backend:
     image: openmrs/openmrs-reference-application-3-backend:${TAG:-qa}
@@ -43,6 +47,8 @@ services:
       timeout: 5s
     volumes:
       - openmrs-data:/openmrs/data
+    networks:
+      - ssemr-network
 
   # MariaDB
   db:
@@ -61,7 +67,13 @@ services:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-openmrs}
     volumes:
       - db-data:/var/lib/mysql
+    networks:
+      - ssemr-network
 
 volumes:
   openmrs-data: ~
   db-data: ~
+
+networks:
+  ssemr-network:
+    driver: bridge
