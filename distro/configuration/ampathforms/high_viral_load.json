@@ -528,10 +528,27 @@
 									{
 										"concept": "3bbe3de8-66bb-4873-8355-78b672a4cd4f",
 										"label": "Treatment Buddy"
+									},
+									{
+										"concept": "310bb82c-77d7-4628-aa3a-8625a3dfa819",
+										"label": "Other First EAC interventions"
 									}
 								]
 							},
 							"validators": []
+						},
+						{
+							"label": "Specify Other First EAC intervention",
+							"type": "obs",
+							"id": "otherFirstEACIntervention",
+							"questionOptions": {
+								"rendering": "text",
+								"concept": "ef4afbd5-3320-4e89-ad49-853e979575b3"
+							},
+							"validators": [],
+							"hide": {
+								"hideWhenExpression": "isEmpty(intervention) || !arrayContains(intervention, '310bb82c-77d7-4628-aa3a-8625a3dfa819')"
+							}
 						},
 						{
 							"label": "First EAC Tools",
@@ -831,10 +848,26 @@
 									{
 										"concept": "3bbe3de8-66bb-4873-8355-78b672a4cd4f",
 										"label": "Treatment Buddy"
+									},
+									{
+										"concept": "310bb82c-77d7-4628-aa3a-8625a3dfa819",
+										"label": "Other Second EAC Intervention"
 									}
 								]
 							},
 							"validators": []
+						},
+						{
+							"label": "Specify Other Second EAC Interventions",
+							"id": "otherSecondEacIntervention",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "text",
+								"concept": "d3ccbd8f-23ea-4d8a-b9fb-73917f4eb3af"
+							},
+							"hide": {
+								"hideWhenExpression": "isEmpty('759a95da-c775-497d-8df9-8e8d7c4ff960') || !arrayContains(secondEacIntervention,'310bb82c-77d7-4628-aa3a-8625a3dfa819')"
+							}
 						},
 						{
 							"label": "Second EAC Tools",
@@ -1152,10 +1185,26 @@
 									{
 										"concept": "3bbe3de8-66bb-4873-8355-78b672a4cd4f",
 										"label": "Treatment Buddy"
+									},
+									{
+										"concept": "310bb82c-77d7-4628-aa3a-8625a3dfa819",
+										"label": "Other Third EAC Intervention"
 									}
 								]
 							},
 							"validators": []
+						},
+						{
+							"label": "Specify Other Third EAC Interventions",
+							"id": "otherThirdEacIntervention",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "text",
+								"concept": "8046f1c6-c410-4a0a-9bbc-d83d84585721"
+							},
+							"hide": {
+								"hideWhenExpression": "isEmpty('29d17d06-1e19-4977-a3c7-449ac9124955') || !arrayContains(thirdEacIntervention,'310bb82c-77d7-4628-aa3a-8625a3dfa819')"
+							}
 						},
 						{
 							"label": "Third EAC Tools",
