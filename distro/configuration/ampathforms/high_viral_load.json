@@ -238,7 +238,6 @@
 							"label": "Date of Initiation:",
 							"type": "obs",
 							"id": "dateInitiation",
-							"historicalExpression": "HD.getObject('prevEnc')?.getValue('30f1f347-d72c-4920-9962-6d55d138e8e5') || ''",
 							"questionOptions": {
 								"concept": "30f1f347-d72c-4920-9962-6d55d138e8e5",
 								"rendering": "date",
@@ -265,7 +264,10 @@
 							"id": "dateSampleCollection",
 							"questionOptions": {
 								"concept": "ed520e2d-acb4-4ea9-8ae5-16ca27ace96d",
-								"rendering": "date"
+								"rendering": "date",
+								"calculate": {
+									"calculateExpression": "api.getLatestObs(patient.id, 'ed520e2d-acb4-4ea9-8ae5-16ca27ace96d', '82024e00-3f10-11e4-adec-0800271c1b75').then(obs => obs.valueDateTime)"
+								}
 							},
 							"validators": [
 								{
