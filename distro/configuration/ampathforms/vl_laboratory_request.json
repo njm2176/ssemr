@@ -131,7 +131,10 @@
 								"rendering": "date",
 								"concept": "30f1f347-d72c-4920-9962-6d55d138e8e5",
 								"conceptMappings": [],
-								"answers": []
+								"answers": [],
+								"calculate": {
+									"calculateExpression": "api.getLatestObs(patient.id, '73779d67-7e8f-46fe-b723-8879838da5f8').then(obs => obs.valueDateTime)"
+								}
 							},
 							"validators": [
 								{

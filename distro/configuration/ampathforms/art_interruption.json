@@ -40,7 +40,10 @@
                 "rendering": "date",
                 "concept": "773cd838-7b21-4f34-9b33-0a071140f817",
                 "conceptMappings": [],
-                "answers": []
+                "answers": [],
+                "calculate": {
+                  "calculateExpression": "api.getLatestObs(patient.id, '494915d8-4cf3-4c24-9efa-371710992cb3').then(obs => obs && obs.valueDateTime ? new Date(new Date(obs.valueDateTime).setDate(new Date(obs.valueDateTime).getDate() + 28)).toISOString().split('T')[0] : '')"
+                }
               },
               "validators": [
                 {
