@@ -2,8 +2,8 @@ version: "3.7"
 
 services:
   gateway:
-    # image: openmrs/openmrs-reference-application-3-gateway:${TAG:-qa}
-    image: nginx:alpine
+    # image: nginx:alpine
+    image: openmrs/openmrs-reference-application-3-gateway:${TAG:-qa}
     restart: "unless-stopped"
     depends_on:
       - frontend
