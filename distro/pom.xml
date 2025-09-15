@@ -2,12 +2,12 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.openmrs.distro</groupId>
-    <artifactId>referenceapplication</artifactId>
-    <version>3.3.0-SNAPSHOT</version>
+    <groupId>org.openmrs</groupId>
+    <artifactId>distro-emr</artifactId>
+    <version>3.6.0-SNAPSHOT</version>
   </parent>
 
-  <artifactId>referenceapplication-distro</artifactId>
+  <artifactId>distro-emr-configuration</artifactId>
   <name>OpenMRS distro</name>
   <packaging>pom</packaging>
 
@@ -40,6 +40,7 @@
     <appointments.version>2.1.0-20250318.070530-1</appointments.version>
     <teleconsultation.version>2.0.0-20230831.113926-1</teleconsultation.version>
     <cohort.version>3.7.1</cohort.version>
+    <authentication.version>2.0.0-SNAPSHOT</authentication.version>
     <!-- start required for reporting -->
     <reporting.version>1.28.0</reporting.version>
     <reportingrest.version>1.15.0</reportingrest.version>
@@ -73,6 +74,12 @@
       <groupId>org.openmrs.module</groupId>
       <artifactId>initializer-omod</artifactId>
       <version>${initializer.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.openmrs.module</groupId>
+      <artifactId>authentication-omod</artifactId>
+      <version>${authentication.version}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
