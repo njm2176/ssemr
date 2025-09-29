@@ -59,7 +59,7 @@
     <emrapi.version>2.1.0</emrapi.version>
     <event.version>2.10.0</event.version>
 
-    <!-- Added for SSEMR Modules -->
+    <!--SSEMR Modules-->
     <ssemrws.version>1.0.0-SNAPSHOT</ssemrws.version>
   </properties>
 
