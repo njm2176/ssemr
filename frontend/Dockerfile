@@ -8,6 +8,8 @@ ARG APP_SHELL_VERSION=next
 
 RUN mkdir -p /app
 WORKDIR /app
+RUN echo "@ssemreregister:registry=https://repo.repsy.io/npm/njm2176/npm/" > .npmrc && \
+    echo "registry=https://registry.npmjs.org/" >> .npmrc
 
 COPY spa-assemble-config.json .
 COPY spa-build-config.json .
