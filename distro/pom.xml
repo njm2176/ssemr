@@ -62,6 +62,12 @@
     <!--SSEMR Modules-->
     <ssemrws.version>1.0.0-SNAPSHOT</ssemrws.version>
   </properties>
+  <repositories>
+        <repository>
+            <id>repsy</id>
+            <url>https://repo.repsy.io/maven/njm2176/maven</url>
+        </repository>
+  </repositories>
 
    <dependencies>
     <dependency>
@@ -352,6 +358,15 @@
   </build>
 
   <profiles>
+  <profile>
+      <id>repsy</id>
+      <repositories>
+        <repository>
+          <id>repsy</id>
+          <url>https://repo.repsy.io/maven/njm2176/maven</url>
+        </repository>
+      </repositories>
+    </profile>
     <profile>
       <id>validator</id>
       <build>
