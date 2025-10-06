@@ -65,7 +65,7 @@
   <repositories>
         <repository>
             <id>repsy</id>
-            <url>https://repo.repsy.io/maven/njm2176/maven</url>
+            <url>https://repsy.io/maven/njm2176/maven</url>
         </repository>
   </repositories>
 
@@ -363,7 +363,7 @@
       <repositories>
         <repository>
           <id>repsy</id>
-          <url>https://repo.repsy.io/maven/njm2176/maven</url>
+          <url>https://repsy.io/maven/njm2176/maven</url>
         </repository>
       </repositories>
     </profile>
