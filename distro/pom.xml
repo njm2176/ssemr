@@ -61,6 +61,7 @@
 
     <!--SSEMR Modules-->
     <ssemrws.version>1.0.0-SNAPSHOT</ssemrws.version>
+    <ssemrreports.version>1.0.0-SNAPSHOT</ssemrreports.version>
   </properties>
   <repositories>
         <repository>
@@ -265,6 +266,12 @@
       <groupId>org.openmrs.module</groupId>
       <artifactId>ssemrws-omod</artifactId>
       <version>${ssemrws.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.openmrs.module</groupId>
+      <artifactId>ssemrreports-omod</artifactId>
+      <version>${ssemrreports.version}</version>
       <scope>provided</scope>
     </dependency>
   </dependencies>
