@@ -328,8 +328,36 @@
         "validation": {
           "required": false
         }
+      },
+      {
+        "id": "address.country",
+        "type": "address",
+        "label": "Country"
+      },
+      {
+        "id": "address.countyDistrict",
+        "type": "address",
+        "label": "County"
+      },
+      {
+        "id": "address.stateProvince",
+        "type": "address",
+        "label": "State"
+      },
+      {
+        "id": "address.address3",
+        "type": "address",
+        "label": "Payam"
+      },
+      {
+        "id": "address.cityVillage",
+        "type": "address",
+        "label": "Village/Town",
+        "validation": {
+          "required": true
+        }
       }
-      ],
+    ],
     "registrationObs": {
       "encounterTypeUuid": "f469b65f-a4f6-4723-989a-46090de6a0e5",
       "registrationFormUuid": "50d7605c-9670-331c-bf19-5794548c8540"
@@ -361,6 +389,13 @@
       "address": {
         "label":"Address (search by payam)",
         "useAddressHierarchy": {
+          "useAddressHierarchyLabel": {
+            "country": "Country",
+            "countyDistrict": "County",
+            "stateProvince": "State",
+            "address3": "Payam",
+            "cityVillage": "Village/Town"
+          },
           "searchAddressByLevel": true
         }
       },
@@ -466,6 +501,19 @@
     },
     "Display conditions": {
       "privileges": ["View Vitals and Biometrics"]
+    }
+  },
+  "@ssemr/esm-patient-summary-app": {
+    "viralLoad": {
+      "useFormEngine": true,
+      "formName": "F. 8 - Follow up",
+      "formUuid": "0ea6b2d5-28cc-3a65-9155-b60e0c09d118",
+      "encounterTypeUuid": "e8481555-9dd1-4bb5-ba8c-cb721dafb166"
+    },
+    "concepts": {
+      "dateCollected": "fc684917-4deb-42cf-9245-8a13c6a232bc",
+      "dateVLResultsReceived": "80e34f1b-26e8-49ea-9b6e-d7d903a91e26",
+      "viralLoadValue": "01c3ce55-b7eb-45f5-93d5-bace353e3cfd"
     }
   }
 }

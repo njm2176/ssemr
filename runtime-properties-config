@@ -1,5 +1,5 @@
-mambaetl.analysis.db.username=username // change this with your db username
-mambaetl.analysis.db.password=4****** // change this with your db password
+mambaetl.analysis.db.username=root
+mambaetl.analysis.db.password=openmrs
 mambaetl.analysis.db.openmrs_database=openmrs
 mambaetl.analysis.db.etl_database=ssemr_etl
 
@@ -12,4 +12,4 @@ mambaetl.analysis.incremental_mode=1
 #MambaETL will automatically flatten all encounters in the OpenMRS database if set to 1
 mambaetl.analysis.automated_flattening=0
 #The ETL interval in seconds. ETL will run every number of seconds specified here
-mambaetl.analysis.etl_interval=43200
+mambaetl.analysis.etl_interval=3600
